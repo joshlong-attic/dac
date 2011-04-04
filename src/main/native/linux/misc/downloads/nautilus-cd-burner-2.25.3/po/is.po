@@ -1,0 +1,562 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Victor Jónsson  <victor@tfa.is>, 2004.
+msgid ""
+msgstr ""
+"Project-Id-Version: nautilus-cd-burner 2.9.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-08-17 11:56+0200\n"
+"PO-Revision-Date: 2004-04-18 20:46-0000\n"
+"Last-Translator: Victor Jónsson <victor@tfa.is>\n"
+"Language-Team: ICELANDIC <victor@tfa.is>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: bacon-cd-selection.c:187
+#, fuzzy
+msgid "Unnamed CDROM"
+msgstr "Ónefnt SCSI geisladrif (%s)"
+
+#: burn-extension.c:64
+msgid "Unable to launch the cd burner application"
+msgstr "Gat ekki keyrt brennsluforritið"
+
+#: burn-extension.c:66
+msgid "Can't launch cd burner"
+msgstr "Get ekki keyrt brennsluforritið"
+
+#: burn-extension.c:146 burn-extension.c:173
+#, fuzzy
+msgid "_Write to Disc..."
+msgstr "Skrifa á geisladisk..."
+
+#: burn-extension.c:147
+#, fuzzy
+msgid "Write disc image to a CD or DVD disc"
+msgstr "Skrifa ISO mynd á geisladisk"
+
+#: burn-extension.c:174 burn-extension.c:203
+#, fuzzy
+msgid "Write contents to a CD or DVD disc"
+msgstr "Skrifa innihald á geisladisk"
+
+#: burn-extension.c:202 cdburn.glade.h:15
+#, fuzzy
+msgid "Write to Disc"
+msgstr "Skrifa á geisladisk"
+
+#: cd-drive.c:744
+#, fuzzy, c-format
+msgid "Unnamed SCSI Drive (%s)"
+msgstr "Ónefnt SCSI geisladrif (%s)"
+
+#: cd-drive.c:1304
+msgid "File image"
+msgstr "Skráarmynd"
+
+#  This fits the "open64" and "open"-like messages
+#. This fits the "open64" and "open"-like messages
+#: cd-recorder.c:313
+msgid "The recorder could not be accessed"
+msgstr "Gat ekki fengið aðgang að geislaskrifaranum"
+
+#: cd-recorder.c:316
+msgid "Not enough space available on the disc"
+msgstr "Ekki nægt pláss til á geisladisknum"
+
+#: cd-recorder.c:319 cd-recorder.c:322 cd-recorder.c:373
+msgid "The files selected did not fit on the CD"
+msgstr "Skrárnar sem þú valdir komast ekki fyrir á geisladisknum"
+
+#: cd-recorder.c:330
+#, fuzzy
+msgid "Unhandled error, aborting"
+msgstr "Óþekkt villa, hætti við"
+
+#: cd-recorder.c:367
+msgid "The CD has already been recorded"
+msgstr ""
+
+#: cd-recorder.c:377
+msgid ""
+"All audio files must be stereo, 16-bit digital audio with 44100Hz samples"
+msgstr ""
+"Allar hljóðskrár verða að vera steríó, 16-bita stafrænt hljóð á 44100hz tíðni"
+
+#: cd-recorder.c:384
+msgid ""
+"The system is too slow to write the CD at this speed. Try a lower speed."
+msgstr ""
+
+#: cd-recorder.c:503
+msgid "You can only burn 99 tracks on one disc"
+msgstr ""
+
+#: cdburn.glade.h:1
+msgid "    "
+msgstr ""
+
+#: cdburn.glade.h:2
+msgid "*"
+msgstr "*"
+
+#: cdburn.glade.h:3
+msgid "<b>After Writing</b>"
+msgstr ""
+
+#: cdburn.glade.h:4
+msgid "<b>Information</b>"
+msgstr ""
+
+#: cdburn.glade.h:5
+msgid "<b>Write Options</b>"
+msgstr ""
+
+#: cdburn.glade.h:6
+msgid "<big><b>Writing files to disc progress</b></big>"
+msgstr ""
+
+#: cdburn.glade.h:7
+#, fuzzy
+msgid "<i>Initializing...</i>"
+msgstr "Frumstilli..."
+
+#: cdburn.glade.h:8
+msgid "Data size:"
+msgstr ""
+
+#: cdburn.glade.h:9
+#, fuzzy
+msgid "Disc _name:"
+msgstr "Nafn geisladisks:"
+
+#: cdburn.glade.h:10
+msgid "E_ject disc"
+msgstr ""
+
+#: cdburn.glade.h:11
+#, fuzzy
+msgid "Label to identify disc"
+msgstr "Nafn til að greina geisladiskinn"
+
+#: cdburn.glade.h:12
+msgid "Select the speed to use for the write"
+msgstr "Hraði til að brenna á"
+
+#: cdburn.glade.h:13
+msgid ""
+"Selected files are to be written to a CD or DVD disc. This operation may "
+"take a long time, depending on data size and write speed."
+msgstr ""
+
+#: cdburn.glade.h:14
+#, fuzzy
+msgid "Write _speed:"
+msgstr "Skrifhraði:"
+
+#: cdburn.glade.h:16
+#, fuzzy
+msgid "Writing Files to Disc Progress"
+msgstr "Skrifa skrár í geisladiskabrennara"
+
+#: cdburn.glade.h:17
+msgid "_Dummy write"
+msgstr ""
+
+#: cdburn.glade.h:18
+#, fuzzy
+msgid "_Reuse these files for another disc"
+msgstr "Endurnýta þessar skrár á annan geisladisk"
+
+#: cdburn.glade.h:19
+#, fuzzy
+msgid "_Write"
+msgstr "_Skrifa á geisladisk"
+
+#: cdburn.glade.h:20
+#, fuzzy
+msgid "_Write disc to:"
+msgstr "Skrifa skrárnar á geisladisk"
+
+#: make-iso.c:251
+msgid ""
+"Some files don't have a suitable name for a Windows-compatible CD.\n"
+"Do you want to continue with Windows compatibility disabled?"
+msgstr ""
+"Sumar skrár hafa ekki gilt nafn fyrir Windows-samhæfða geisladiska.\n"
+"Viltu halda áfram án Windows samhæfingar?"
+
+#: make-iso.c:252
+msgid "Windows compatibility"
+msgstr "Windows samhæfing"
+
+#: make-iso.c:576
+msgid "No files selected to write to CD."
+msgstr "Engar skrár valdar til að skrifa á geisladisk."
+
+#: make-iso.c:578 nautilus-cd-burner.c:1134
+msgid "No files selected"
+msgstr "Engar skrár valdar"
+
+#: make-iso.c:659
+#, c-format
+msgid "Not enough space to store CD image (%ld Megabyte needed)"
+msgid_plural "Not enough space to store CD image (%ld Megabytes needed)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: make-iso.c:664
+msgid "Not enough space"
+msgstr "Ekki nóg pláss"
+
+#: make-iso.c:700
+msgid "Creating CD image"
+msgstr "Bý til mynd af geisladisk"
+
+#: nautilus-cd-burner.c:137
+msgid " (invalid Unicode)"
+msgstr ""
+
+#: nautilus-cd-burner.c:283
+msgid "Preparing to write CD"
+msgstr "Undirbý að skrifa geisladisk"
+
+#: nautilus-cd-burner.c:285
+#, fuzzy
+msgid "Preparing to write DVD"
+msgstr "Undirbý að skrifa geisladisk"
+
+#: nautilus-cd-burner.c:290
+msgid "Writing CD"
+msgstr "Skrifa á geisladisk"
+
+#: nautilus-cd-burner.c:292
+#, fuzzy
+msgid "Writing DVD"
+msgstr "Skrifa á geisladisk"
+
+#: nautilus-cd-burner.c:297
+msgid "Fixating CD"
+msgstr "Stilli geisladisk"
+
+#: nautilus-cd-burner.c:299
+#, fuzzy
+msgid "Fixating DVD"
+msgstr "Stilli geisladisk"
+
+#: nautilus-cd-burner.c:304
+msgid "Erasing CD"
+msgstr "Hreinsa geisladisk"
+
+#: nautilus-cd-burner.c:306
+#, fuzzy
+msgid "Erasing DVD"
+msgstr "Hreinsa geisladisk"
+
+#: nautilus-cd-burner.c:332
+msgid "Please make sure another application is not using the disc."
+msgstr ""
+
+#: nautilus-cd-burner.c:333
+msgid "Disc is busy"
+msgstr ""
+
+#: nautilus-cd-burner.c:335
+#, fuzzy
+msgid "Please insert a rewritable or blank media in the drive tray."
+msgstr "Vinsamlegast settu inn endurskrifanlegan miðil í drifið"
+
+#: nautilus-cd-burner.c:336
+#, fuzzy
+msgid "Insert rewritable or blank media"
+msgstr "Settu inn endurskrifanlegan miðil"
+
+#: nautilus-cd-burner.c:338
+msgid "Please insert a blank media in the drive tray."
+msgstr "Vinsamlegast settu inn tóman miðil í drifið"
+
+#: nautilus-cd-burner.c:339
+msgid "Insert blank media"
+msgstr "Settu inn tóman miðil"
+
+#: nautilus-cd-burner.c:341
+#, fuzzy
+msgid "Please replace the in-drive media by a rewritable or blank media."
+msgstr ""
+"Vinsamlegast skiptu út því sem er í drifinu í staðinn fyrir "
+"endurskrifanlegan miðil."
+
+#: nautilus-cd-burner.c:342
+#, fuzzy
+msgid "Reload rewritable or blank media"
+msgstr "Endurhladdu endurskrifanlega miðilinn"
+
+#: nautilus-cd-burner.c:344
+msgid "Please replace the in-drive media by a blank media."
+msgstr ""
+"Vinsamlegast skiptu út því sem er í drifinu í staðinn fyrir tóman miðil."
+
+#: nautilus-cd-burner.c:345
+msgid "Reload blank media"
+msgstr "Endurhlaða tóman miðil"
+
+#: nautilus-cd-burner.c:373
+#, fuzzy
+msgid "Disc writing error details"
+msgstr "Nánari upplýsingar um villumeldingu skrifarans"
+
+#: nautilus-cd-burner.c:379
+msgid "Detailed error output from cdrecord:"
+msgstr "Nákvæm villuskilaboð frá cdrecord:"
+
+#: nautilus-cd-burner.c:420
+#, c-format
+msgid ""
+"There was an error writing to the CD:\n"
+"%s"
+msgstr ""
+"Það kom upp villa við skrifun geisladisksins:\n"
+"%s"
+
+#: nautilus-cd-burner.c:421
+msgid "There was an error writing to the CD"
+msgstr "Það kom upp villa við skrifun geisladisksins"
+
+#: nautilus-cd-burner.c:422
+msgid "Error writing to CD"
+msgstr "Villa við skrif á geisladisk"
+
+#: nautilus-cd-burner.c:428
+msgid "_Details"
+msgstr "_Smáatriði"
+
+#: nautilus-cd-burner.c:501
+#, c-format
+msgid ""
+"A file named \"%s\" already exists.\n"
+"Do you want to overwrite it?"
+msgstr ""
+"Skrá sem heitir \"%s\" er til nú þegar.\n"
+"Viltu skrifa yfir hana?"
+
+#: nautilus-cd-burner.c:503 nautilus-cd-burner.c:512
+msgid "_Overwrite"
+msgstr "_Yfirskrifa"
+
+#: nautilus-cd-burner.c:530
+msgid "Choose a filename for the cdrom image"
+msgstr "Veldu skráarnafn fyrir geisladiskamyndina"
+
+#: nautilus-cd-burner.c:585
+#, fuzzy, c-format
+msgid "You do not have permissions to overwrite that file (%s)."
+msgstr "Hef ekki réttindi til að skrifa yfir skránna."
+
+#: nautilus-cd-burner.c:586 nautilus-cd-burner.c:599
+msgid "File image creation failed"
+msgstr ""
+
+#: nautilus-cd-burner.c:598
+#, fuzzy, c-format
+msgid "You do not have permissions to create that file (%s)."
+msgstr "Hef ekki réttindi til að búa til skrá."
+
+#: nautilus-cd-burner.c:661
+#, c-format
+msgid "Completed writing %s"
+msgstr "Skrift lokið %s"
+
+#: nautilus-cd-burner.c:719
+msgid "Complete"
+msgstr "Lokið"
+
+#: nautilus-cd-burner.c:782
+msgid "Maximum Possible"
+msgstr "Hámark"
+
+#: nautilus-cd-burner.c:859
+#, c-format
+msgid "%d MB"
+msgstr ""
+
+#  translators: see strftime man page for meaning of %b, %d and %Y
+#  the maximum length for this field is 32 characters
+#.
+#. translators: see strftime man page for meaning of %b, %d and %Y
+#. the maximum length for this field is 32 bytes
+#.
+#: nautilus-cd-burner.c:887
+msgid "Personal Data, %b %d, %Y"
+msgstr "Persónulegar upplýsingar, %b %d, %Y"
+
+#: nautilus-cd-burner.c:920
+msgid "Cancel write"
+msgstr ""
+
+#: nautilus-cd-burner.c:921
+#, fuzzy
+msgid ""
+"Are you sure you want to cancel the disc write operation?\n"
+"Some optical media drives may require that you restart the machine to get it "
+"working again."
+msgstr ""
+"Ertu viss um að þú viljir hætta við skrift geisladisksins?\n"
+"Sumir geislaskrifarar krefjast þess að þú endurræsir tölvuna til að fá "
+"skrifarann aftur í gang."
+
+#: nautilus-cd-burner.c:925
+msgid "Continue"
+msgstr ""
+
+#: nautilus-cd-burner.c:977
+#, c-format
+msgid "There was a problem displaying the help contents: %s."
+msgstr "Það kom upp vandamál við birtingu hjálpargagna: %s."
+
+#: nautilus-cd-burner.c:978
+msgid "Cannot display help"
+msgstr ""
+
+#: nautilus-cd-burner.c:1093
+msgid "Too many parameters"
+msgstr "Of margar færibreytur"
+
+#: nautilus-cd-burner.c:1094
+msgid "Too many parameters were passed to the application."
+msgstr ""
+
+#: nautilus-cd-burner.c:1116
+#, c-format
+msgid "The file '%s' is not a valid CD image."
+msgstr "Skráin '%s' er ekki gild mynd af geisladisk"
+
+#: nautilus-cd-burner.c:1119
+msgid "Not a valid CD image"
+msgstr "Ekki gild mynd af geisladisk"
+
+#: nautilus-cd-burner.c:1135
+#, fuzzy
+msgid ""
+"You need to copy the files you want to write to disc to the CD/DVD Creator "
+"window. Would you like to open it now?"
+msgstr ""
+"Þú verður að afrita skrárnar sem þú vilt skrifa yfir í CD Creator gluggann. "
+"Viltu opna hann núna?"
+
+#: nautilus-cd-burner.c:1137
+#, fuzzy
+msgid "Open CD/DVD Creator"
+msgstr "Opna CD Creator"
+
+#: ncb.schemas.in.h:1
+msgid "Default burn speed"
+msgstr "Sjálfgefinn skrifhraði"
+
+#: ncb.schemas.in.h:2
+msgid "Default speed at which the media will be written."
+msgstr "Sjálfgefinn hraði skriftar á miðilinn."
+
+#: ncb.schemas.in.h:3
+msgid "Directory for the temporary ISO images"
+msgstr "Mappa fyrir bráðabirgða ISO myndir"
+
+#: ncb.schemas.in.h:4
+msgid ""
+"Directory used for the temporary ISO images, leave blank to use the default "
+"system temporary directory."
+msgstr ""
+"Mappa fyrir bráðabirgða ISO myndir. Skilja eftir autt ef á að nota "
+"sjálfgefna bráðabirgðamöppu stýrikerfisins."
+
+#: ncb.schemas.in.h:5
+msgid "Enable Burnproof option"
+msgstr ""
+
+#: ncb.schemas.in.h:6
+msgid "Enable debug"
+msgstr ""
+
+#: ncb.schemas.in.h:7
+msgid "Enable overburn"
+msgstr ""
+
+#: ncb.schemas.in.h:8
+msgid "Whether to allow the data to exceed the size of the physical medium."
+msgstr ""
+
+#: ncb.schemas.in.h:9
+msgid "Whether to enable the debugging for CD Recording."
+msgstr ""
+
+#: ncb.schemas.in.h:10
+msgid "Whether to use the Burnproof option available on some recorders."
+msgstr ""
+
+#~ msgid "<b>Writing to CD. Please wait.</b>"
+#~ msgstr "<b>Skrifa á geisladisk. Vinsamlegast bíðið.</b>"
+
+#~ msgid "Dummy write (debug build)"
+#~ msgstr "Plat skrif (debug build)"
+
+#~ msgid "Eject CD when done"
+#~ msgstr "Opna geisladrif þegar brennslu er lokið"
+
+#~ msgid "Erase CD"
+#~ msgstr "Hreinsa geisladisk"
+
+#~ msgid "Erase entire contents of CD before writing"
+#~ msgstr "Hreinsa allt innihald af geisladisknum áður en skrifað er á hann"
+
+#~ msgid "Keep the selected files so that you can use them for another CD"
+#~ msgstr ""
+#~ "Halda skránum sem þú valdir svo þú getir notað þær á annan geisladisk"
+
+#~ msgid "Select a CD writer or image file"
+#~ msgstr "Veldu geislaskrifara eða myndaskrá"
+
+#~ msgid "Target to write to:"
+#~ msgstr "Viðtakandi brennslu:"
+
+#~ msgid "When the write is done, eject the CD tray"
+#~ msgstr "Þegar brennslu er lokið, opna geisladrifið"
+
+#~ msgid "Please reload the CD in the CD writer."
+#~ msgstr "Vinsamlegast endurhladdu geisladisknum í geisladrifinu."
+
+#~ msgid "Reload CD"
+#~ msgstr "Endurhlaða geisladisk"
+
+#~ msgid "Please insert a blank CD in the CD writer."
+#~ msgstr "Vinsamlegast settu inn tóman geisladisk í geislaskrifarann."
+
+#~ msgid "Insert blank CD"
+#~ msgstr "Settu inn tóman geisladisk"
+
+#~ msgid "Please insert a blank CD-RW in the CD writer."
+#~ msgstr ""
+#~ "Vinsamlegast settu inn tóman endurskrifanlegan disk í geislaskrifarann."
+
+#~ msgid "Insert blank CD-RW"
+#~ msgstr "Settu inn tóman endurskrifanlegan geisladisk"
+
+#~ msgid "You have selected %d megabyte of files to be written to the CD."
+#~ msgstr "Þú hefur valið %d megabæti af skrám til að skrifa á geisladiskinn."
+
+#~ msgid "Are you sure you want to cancel?"
+#~ msgstr "Ertu viss um að þú viljir hætta við?"
+
+#~ msgid "Too many parameters to nautilus-cd-burner"
+#~ msgstr "Of margar færibreytur fyrir nautilus-cd-burner"
+
+#~ msgid ""
+#~ "You do not seem to have any CD recorder in your machine. Please verify "
+#~ "your setup."
+#~ msgstr ""
+#~ "Þú virðist ekki hafa geislaskrifara í tölvunni. Vinsamlegast athugaðu "
+#~ "uppsetninguna."
+
+#~ msgid "No CD recorder available"
+#~ msgstr "Enginn skrifari aðgengilegur"

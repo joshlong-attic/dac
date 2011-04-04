@@ -1,0 +1,12 @@
+diff -Nur -x '*.orig' -x '*~' nautilus-cd-burner-2.25.3/configure nautilus-cd-burner-2.25.3.new/configure
+--- nautilus-cd-burner-2.25.3/configure	2009-03-19 01:03:51.217338000 +0100
++++ nautilus-cd-burner-2.25.3.new/configure	2009-03-19 01:07:51.457340404 +0100
+@@ -24080,7 +24080,7 @@
+   (exit $ac_status); }; then
+   pkg_cv_GNOME_MOUNT_LIBS=`$PKG_CONFIG --libs "gnome-mount >= 0.4" 2>/dev/null`
+ else
+-  pkg_failed=yes
++  pkg_failed=no
+ fi
+  else
+     pkg_failed=untried

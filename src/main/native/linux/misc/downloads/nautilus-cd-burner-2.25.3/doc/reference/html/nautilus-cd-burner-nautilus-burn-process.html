@@ -1,0 +1,439 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>nautilus-burn-process</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.74.0">
+<link rel="home" href="index.html" title="libnautilus-burn Reference Manual">
+<link rel="up" href="ch01.html" title="libnautilus-burn Reference Manual">
+<link rel="prev" href="nautilus-cd-burner-nautilus-burn-recorder.html" title="nautilus-burn-recorder">
+<meta name="generator" content="GTK-Doc V1.10 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="chapter" href="ch01.html" title="libnautilus-burn Reference Manual">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="nautilus-cd-burner-nautilus-burn-recorder.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">libnautilus-burn Reference Manual</th>
+<td> </td>
+</tr>
+<tr><td colspan="5" class="shortcuts"><nobr><a href="#nautilus-cd-burner-nautilus-burn-process.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#nautilus-cd-burner-nautilus-burn-process.description" class="shortcut">Description</a></nobr></td></tr>
+</table>
+<div class="refentry" lang="en">
+<a name="nautilus-cd-burner-nautilus-burn-process"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="nautilus-cd-burner-nautilus-burn-process.top_of_page"></a>nautilus-burn-process</span></h2>
+<p>nautilus-burn-process</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="nautilus-cd-burner-nautilus-burn-process.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">
+                    <a class="link" href="nautilus-cd-burner-nautilus-burn-process.html#NautilusBurnProcess" title="NautilusBurnProcess">NautilusBurnProcess</a>;
+                    <a class="link" href="nautilus-cd-burner-nautilus-burn-process.html#NautilusBurnProcessFuncs" title="NautilusBurnProcessFuncs">NautilusBurnProcessFuncs</a>;
+<a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            (<a class="link" href="nautilus-cd-burner-nautilus-burn-process.html#NautilusBurnProcessLineFunc" title="NautilusBurnProcessLineFunc ()">*NautilusBurnProcessLineFunc</a>)      (<a class="link" href="nautilus-cd-burner-nautilus-burn-process.html#NautilusBurnProcess" title="NautilusBurnProcess">NautilusBurnProcess</a> *process,
+                                                         const char *line,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"
+>gpointer</a> data);
+#define             <a class="link" href="nautilus-cd-burner-nautilus-burn-process.html#NAUTILUS-BURN-PROCESS-ERROR:CAPS" title="NAUTILUS_BURN_PROCESS_ERROR">NAUTILUS_BURN_PROCESS_ERROR</a>
+<a
+href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"
+>GQuark</a>              <a class="link" href="nautilus-cd-burner-nautilus-burn-process.html#nautilus-burn-process-error-quark" title="nautilus_burn_process_error_quark ()">nautilus_burn_process_error_quark</a>   (void);
+enum                <a class="link" href="nautilus-cd-burner-nautilus-burn-process.html#NautilusBurnProcessError" title="enum NautilusBurnProcessError">NautilusBurnProcessError</a>;
+<a class="link" href="nautilus-cd-burner-nautilus-burn-process.html#NautilusBurnProcess" title="NautilusBurnProcess">NautilusBurnProcess</a>* <a class="link" href="nautilus-cd-burner-nautilus-burn-process.html#nautilus-burn-process-new" title="nautilus_burn_process_new ()">nautilus_burn_process_new</a>          (void);
+void                <a class="link" href="nautilus-cd-burner-nautilus-burn-process.html#nautilus-burn-process-free" title="nautilus_burn_process_free ()">nautilus_burn_process_free</a>          (<a class="link" href="nautilus-cd-burner-nautilus-burn-process.html#NautilusBurnProcess" title="NautilusBurnProcess">NautilusBurnProcess</a> *process);
+<a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            <a class="link" href="nautilus-cd-burner-nautilus-burn-process.html#nautilus-burn-process-cancel" title="nautilus_burn_process_cancel ()">nautilus_burn_process_cancel</a>        (<a class="link" href="nautilus-cd-burner-nautilus-burn-process.html#NautilusBurnProcess" title="NautilusBurnProcess">NautilusBurnProcess</a> *process,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> skip_if_dangerous);
+int                 <a class="link" href="nautilus-cd-burner-nautilus-burn-process.html#nautilus-burn-process-run" title="nautilus_burn_process_run ()">nautilus_burn_process_run</a>           (<a class="link" href="nautilus-cd-burner-nautilus-burn-process.html#NautilusBurnProcess" title="NautilusBurnProcess">NautilusBurnProcess</a> *process,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Pointer-Arrays.html#GPtrArray"
+>GPtrArray</a> *argv,
+                                                         <a class="link" href="nautilus-cd-burner-nautilus-burn-process.html#NautilusBurnProcessLineFunc" title="NautilusBurnProcessLineFunc ()">NautilusBurnProcessLineFunc</a> out_line_func,
+                                                         <a class="link" href="nautilus-cd-burner-nautilus-burn-process.html#NautilusBurnProcessLineFunc" title="NautilusBurnProcessLineFunc ()">NautilusBurnProcessLineFunc</a> err_line_func,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"
+>gpointer</a> data,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"
+>GError</a> **error);
+<a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            <a class="link" href="nautilus-cd-burner-nautilus-burn-process.html#nautilus-burn-process-set-error" title="nautilus_burn_process_set_error ()">nautilus_burn_process_set_error</a>     (<a class="link" href="nautilus-cd-burner-nautilus-burn-process.html#NautilusBurnProcess" title="NautilusBurnProcess">NautilusBurnProcess</a> *process,
+                                                         const char *message,
+                                                         int code);
+<a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            <a class="link" href="nautilus-cd-burner-nautilus-burn-process.html#nautilus-burn-process-get-error" title="nautilus_burn_process_get_error ()">nautilus_burn_process_get_error</a>     (<a class="link" href="nautilus-cd-burner-nautilus-burn-process.html#NautilusBurnProcess" title="NautilusBurnProcess">NautilusBurnProcess</a> *process,
+                                                         char **message,
+                                                         int *code);
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="nautilus-cd-burner-nautilus-burn-process.description"></a><h2>Description</h2>
+<p>
+
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="nautilus-cd-burner-nautilus-burn-process.details"></a><h2>Details</h2>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnProcess"></a><h3>NautilusBurnProcess</h3>
+<pre class="programlisting">typedef struct {
+        GMainLoop                *loop;
+        GPid                      pid;
+
+        int                       result;
+        char                     *last_error;
+
+        GString                  *line;
+        GString                  *line_stderr;
+        NautilusBurnProcessFuncs *funcs;
+
+        int                       pipe_stdin;
+
+        time_t                    start_time;
+        gint64                    start_num;
+        GList                    *rates;
+
+        gboolean                  changed_text;
+        gboolean                  expect_process_to_die;
+
+        gboolean                  dangerous;
+        gboolean                  debug;
+
+        guint                     hup_refcount;
+} NautilusBurnProcess;
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnProcessFuncs"></a><h3>NautilusBurnProcessFuncs</h3>
+<pre class="programlisting">typedef struct {
+        gboolean (* out_line) (NautilusBurnProcess *process,
+                               const char          *line,
+                               gpointer             data);
+        gboolean (* err_line) (NautilusBurnProcess *process,
+                               const char          *line,
+                               gpointer             data);
+} NautilusBurnProcessFuncs;
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnProcessLineFunc"></a><h3>NautilusBurnProcessLineFunc ()</h3>
+<pre class="programlisting"><a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            (*NautilusBurnProcessLineFunc)      (<a class="link" href="nautilus-cd-burner-nautilus-burn-process.html#NautilusBurnProcess" title="NautilusBurnProcess">NautilusBurnProcess</a> *process,
+                                                         const char *line,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"
+>gpointer</a> data);</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>process</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>line</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>data</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NAUTILUS-BURN-PROCESS-ERROR:CAPS"></a><h3>NAUTILUS_BURN_PROCESS_ERROR</h3>
+<pre class="programlisting">#define NAUTILUS_BURN_PROCESS_ERROR nautilus_burn_process_error_quark ()
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-process-error-quark"></a><h3>nautilus_burn_process_error_quark ()</h3>
+<pre class="programlisting"><a
+href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"
+>GQuark</a>              nautilus_burn_process_error_quark   (void);</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+
+
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnProcessError"></a><h3>enum NautilusBurnProcessError</h3>
+<pre class="programlisting">typedef enum {
+        NAUTILUS_BURN_PROCESS_ERROR_INTERNAL,
+        NAUTILUS_BURN_PROCESS_ERROR_GENERAL
+} NautilusBurnProcessError;
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-process-new"></a><h3>nautilus_burn_process_new ()</h3>
+<pre class="programlisting"><a class="link" href="nautilus-cd-burner-nautilus-burn-process.html#NautilusBurnProcess" title="NautilusBurnProcess">NautilusBurnProcess</a>* nautilus_burn_process_new          (void);</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+
+
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-process-free"></a><h3>nautilus_burn_process_free ()</h3>
+<pre class="programlisting">void                nautilus_burn_process_free          (<a class="link" href="nautilus-cd-burner-nautilus-burn-process.html#NautilusBurnProcess" title="NautilusBurnProcess">NautilusBurnProcess</a> *process);</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>process</code></em> :</span></p></td>
+<td>
+
+
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-process-cancel"></a><h3>nautilus_burn_process_cancel ()</h3>
+<pre class="programlisting"><a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            nautilus_burn_process_cancel        (<a class="link" href="nautilus-cd-burner-nautilus-burn-process.html#NautilusBurnProcess" title="NautilusBurnProcess">NautilusBurnProcess</a> *process,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> skip_if_dangerous);</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>process</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>skip_if_dangerous</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-process-run"></a><h3>nautilus_burn_process_run ()</h3>
+<pre class="programlisting">int                 nautilus_burn_process_run           (<a class="link" href="nautilus-cd-burner-nautilus-burn-process.html#NautilusBurnProcess" title="NautilusBurnProcess">NautilusBurnProcess</a> *process,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Pointer-Arrays.html#GPtrArray"
+>GPtrArray</a> *argv,
+                                                         <a class="link" href="nautilus-cd-burner-nautilus-burn-process.html#NautilusBurnProcessLineFunc" title="NautilusBurnProcessLineFunc ()">NautilusBurnProcessLineFunc</a> out_line_func,
+                                                         <a class="link" href="nautilus-cd-burner-nautilus-burn-process.html#NautilusBurnProcessLineFunc" title="NautilusBurnProcessLineFunc ()">NautilusBurnProcessLineFunc</a> err_line_func,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"
+>gpointer</a> data,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"
+>GError</a> **error);</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>process</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>argv</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>out_line_func</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>err_line_func</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>data</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-process-set-error"></a><h3>nautilus_burn_process_set_error ()</h3>
+<pre class="programlisting"><a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            nautilus_burn_process_set_error     (<a class="link" href="nautilus-cd-burner-nautilus-burn-process.html#NautilusBurnProcess" title="NautilusBurnProcess">NautilusBurnProcess</a> *process,
+                                                         const char *message,
+                                                         int code);</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>process</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>message</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>code</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-process-get-error"></a><h3>nautilus_burn_process_get_error ()</h3>
+<pre class="programlisting"><a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            nautilus_burn_process_get_error     (<a class="link" href="nautilus-cd-burner-nautilus-burn-process.html#NautilusBurnProcess" title="NautilusBurnProcess">NautilusBurnProcess</a> *process,
+                                                         char **message,
+                                                         int *code);</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>process</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>message</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>code</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.10</div>
+</body>
+</html>

@@ -1,0 +1,1031 @@
+# Ukrainian translation of nautilus-cd-burner.
+# Copyright (C) 2003
+# This file is distributed under the same license as the nautilus-cd-burner package.
+# Yuriy Syrota <yuriy@beer.com>, 2003.
+# Maxim Dziumanenko <dziumanenko@gmail.com>, 2004-2008
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: nautilus-cd-burner\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-03-07 16:29+0200\n"
+"PO-Revision-Date: 2008-03-07 14:10+0300\n"
+"Last-Translator: Maxim Dziumanenko <dziumanenko@gmail.com>\n"
+"Language-Team: Ukrainian <uk@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: ../data/nautilus-cd-burner.desktop.in.h:1
+#: ../data/nautilus-cd-burner-open-iso.desktop.in.h:1
+#: ../src/ncb-operation.c:1635
+msgid "CD/DVD Creator"
+msgstr "Створення CD/DVD"
+
+#: ../data/nautilus-cd-burner.desktop.in.h:2
+msgid "Open a folder into which you can drag files to burn to a CD or DVD"
+msgstr "Відкрити теку, у яку можна перетягнути файли для запису на CD чи DVD"
+
+#: ../data/nautilus-cd-burner-open-iso.desktop.in.h:2
+msgid "Open the CD/DVD Creator"
+msgstr "Відкрити програму створення CD/DVD"
+
+#: ../data/nautilus-cd-burner.glade.h:1
+msgid "    "
+msgstr "    "
+
+#: ../data/nautilus-cd-burner.glade.h:2
+msgid "<b>Information</b>"
+msgstr "<b>Інформація</b>"
+
+#: ../data/nautilus-cd-burner.glade.h:3
+msgid "<b>Write Options</b>"
+msgstr "<b>Параметри запису</b>"
+
+#: ../data/nautilus-cd-burner.glade.h:4
+msgid "<big><b>Some files have invalid filenames</b></big>"
+msgstr "<big><b>Деякі файли мають неправильні імена</b></big>"
+
+#: ../data/nautilus-cd-burner.glade.h:5
+msgid "<big><b>Writing files to disc</b></big>"
+msgstr "<big><b>Запис файлів на диск</b></big>"
+
+#: ../data/nautilus-cd-burner.glade.h:6
+msgid "<i>Initializing...</i>"
+msgstr "<i>Ініціалізація...</i>"
+
+#: ../data/nautilus-cd-burner.glade.h:7
+msgid "Data size:"
+msgstr "Розмір даних:"
+
+#: ../data/nautilus-cd-burner.glade.h:8
+msgid "Disc _name:"
+msgstr "_Назва диску:"
+
+#: ../data/nautilus-cd-burner.glade.h:9
+msgid "Label to identify disc"
+msgstr "Позначка для ідентифікації диску"
+
+#: ../data/nautilus-cd-burner.glade.h:10
+msgid ""
+"The following filenames are not valid.  Please provide new names for each of "
+"them."
+msgstr ""
+"Наступні назви файлів некоректні.  Вкажіть нову назву для кожного з них."
+
+#: ../data/nautilus-cd-burner.glade.h:11
+msgid "Write _speed:"
+msgstr "_Швидкість запису:"
+
+#: ../data/nautilus-cd-burner.glade.h:12
+msgid "Write disc _to:"
+msgstr "Записати диск н_а:"
+
+#: ../data/nautilus-cd-burner.glade.h:13 ../src/ncb-operation.c:902
+msgid "Writing Files to Disc"
+msgstr "Запис файлів на диск"
+
+#: ../data/nautilus-cd-burner.glade.h:14
+msgid "_Dummy write"
+msgstr "_Імітація запису"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:1
+msgid "Default burn speed"
+msgstr "Типова швидкість запису"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:2
+msgid "Default speed at which the media will be written."
+msgstr "Типова швидкість для запису інформація на носій."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:3
+msgid "Directory for the temporary ISO images"
+msgstr "Каталог для тимчасових ISO образів"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:4
+msgid ""
+"Directory used for the temporary ISO images, leave blank to use the default "
+"system temporary directory."
+msgstr ""
+"Каталог для тимчасових ISO образів, залишить поле порожнім, щоб "
+"користуватись типовим системним каталогом для тимчасових файлів,"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:5
+msgid "Enable Burnproof option"
+msgstr "Увімкнути параметр Burnproof"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:6
+msgid "Enable debug"
+msgstr "Увімкнути налагодження"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:7
+msgid "Enable overburn"
+msgstr "Увімкнути функцію overburn"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:8
+msgid "Whether to allow the data to exceed the size of the physical medium."
+msgstr "Дозволити запис даних, що перевищують об'єм фізичного носія."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:9
+msgid "Whether to enable the debugging for CD Recording."
+msgstr "Увімкнути налагодження процесу запису CD."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:10
+msgid "Whether to use the Burnproof option available on some recorders."
+msgstr "Увімкнути функцію Burnproof, наявну на деяких пристроях запису."
+
+#: ../src/burn-extension.c:141 ../src/burn-extension.c:145
+msgid "Unable to launch the cd burner application"
+msgstr "Не вдається запустити програму запису CD"
+
+#: ../src/burn-extension.c:453 ../src/burn-extension.c:463
+#: ../src/burn-extension.c:551
+msgid "_Write to Disc..."
+msgstr "_Записати на CD..."
+
+#: ../src/burn-extension.c:454
+msgid "Write disc image to a CD or DVD disc"
+msgstr "Записати образ на CD чи DVD"
+
+#: ../src/burn-extension.c:464
+msgid "Write disc image cuesheet to a CD or DVD disc"
+msgstr "Записати образ на CD чи DVD"
+
+#: ../src/burn-extension.c:510
+msgid "_Copy Disc..."
+msgstr "_Копіювати диск..."
+
+#: ../src/burn-extension.c:511
+msgid "Create a copy of this CD or DVD disc"
+msgstr "Створити копію цього диску на CD чи DVD"
+
+#: ../src/burn-extension.c:552 ../src/nautilus-burn-bar.c:151
+msgid "Write contents to a CD or DVD disc"
+msgstr "Записати вміст на CD чи DVD"
+
+#: ../src/make-iso.c:306
+msgid "Disable Microsoft Windows compatibility?"
+msgstr "Вимкнути сумісність з Microsoft Windows?"
+
+#: ../src/make-iso.c:309
+msgid ""
+"Some files don't have a suitable name for a Windows-compatible CD.\n"
+"Do you want to continue with Windows compatibility disabled?"
+msgstr ""
+"Назви деяких файлів містять символи, що заборонені для з Windows-сумісних "
+"CD.\n"
+"Бажаєте вимкнути сумісність з Windows та продовжити?"
+
+#: ../src/make-iso.c:310
+msgid "Windows compatibility"
+msgstr "Сумісність з Windows"
+
+#: ../src/make-iso.c:707
+msgid " (invalid Unicode)"
+msgstr " (неправильний Юнікод)"
+
+#: ../src/make-iso.c:868
+#, c-format
+msgid ""
+"The selected location does not have enough space to store the disc image (%s "
+"MiB needed)."
+msgstr ""
+"За вказаною адресою не вистачає місця зберігання образу диску (потрібно %s "
+"Мб)"
+
+#: ../src/make-iso.c:1012 ../src/make-iso.c:1402
+#, c-format
+msgid "Could not run sub process: %s."
+msgstr "Не вдається створити дочірній процес: %s."
+
+#: ../src/make-iso.c:1039
+#, c-format
+msgid "The operation was cancelled by the user."
+msgstr "Операція була перервана користувачем."
+
+#: ../src/make-iso.c:1140
+#, c-format
+msgid ""
+"Some files have invalid filenames: \n"
+"%s"
+msgstr ""
+"Деякі файли мають неправильні імена: \n"
+"%s"
+
+#: ../src/make-iso.c:1153
+msgid "Unknown character encoding."
+msgstr "Невідоме кодування символів."
+
+#: ../src/make-iso.c:1157
+msgid "There is no space left on the device."
+msgstr "На пристрої не залишилось вільного місця."
+
+#. TODO: get filename from error message
+#: ../src/make-iso.c:1162
+msgid "File too large for filesystem."
+msgstr "Файл занадто великий для файлової системи."
+
+#: ../src/make-iso.c:1215
+#, c-format
+msgid "The label for the image is too long."
+msgstr "Занадто довга позначка тому."
+
+#: ../src/make-iso.c:1323
+#, c-format
+msgid "There are no files to write to disc."
+msgstr "Немає файлів для запису на диск."
+
+#: ../src/make-iso.c:1674
+msgid "Not a valid disc image."
+msgstr "Не є правильним образом диску."
+
+#: ../src/nautilus-burn-bar.c:137
+msgid "CD/DVD Creator Folder"
+msgstr "Каталог програми створення CD/DVD"
+
+#: ../src/nautilus-burn-bar.c:141 ../src/ncb-selection-dialog.c:175
+msgid "Write to Disc"
+msgstr "Запис на диск"
+
+#: ../src/nautilus-burn-drive.c:1252
+msgid "Could not determine media type because CD drive is busy"
+msgstr "Не вдається визначити тип носія, тому що пристрій CD зайнятий"
+
+#: ../src/nautilus-burn-drive.c:1254
+msgid "Couldn't open media"
+msgstr "Не вдається відкрити носій"
+
+#: ../src/nautilus-burn-drive.c:1256
+msgid "Unknown Media"
+msgstr "Невідомий носій"
+
+#: ../src/nautilus-burn-drive.c:1258
+msgid "Commercial CD or Audio CD"
+msgstr "Комерційний CD або аудіо CD"
+
+#: ../src/nautilus-burn-drive.c:1260
+msgid "CD-R"
+msgstr "CD-R"
+
+#: ../src/nautilus-burn-drive.c:1262
+msgid "CD-RW"
+msgstr "CD-RW"
+
+#: ../src/nautilus-burn-drive.c:1264
+msgid "DVD"
+msgstr "DVD"
+
+#: ../src/nautilus-burn-drive.c:1266
+msgid "DVD-R, or DVD-RAM"
+msgstr "DVD-R, чи DVD-RAM"
+
+#: ../src/nautilus-burn-drive.c:1268
+msgid "DVD-RW"
+msgstr "DVD-RW"
+
+#: ../src/nautilus-burn-drive.c:1270
+msgid "DVD-RAM"
+msgstr "DVD-RAM"
+
+#: ../src/nautilus-burn-drive.c:1272
+msgid "DVD+R"
+msgstr "DVD+R"
+
+#: ../src/nautilus-burn-drive.c:1274
+msgid "DVD+RW"
+msgstr "DVD+RW"
+
+#: ../src/nautilus-burn-drive.c:1276
+msgid "DVD+R DL"
+msgstr "DVD+R DL"
+
+#: ../src/nautilus-burn-drive.c:1281
+msgid "Broken media type"
+msgstr "Неправильний тип носія"
+
+#: ../src/nautilus-burn-drive-monitor.c:452
+msgid "File image"
+msgstr "Файловий образ"
+
+#: ../src/nautilus-burn-drive-selection.c:107 ../src/ncb-selection.c:1022
+msgid "Drive"
+msgstr "Пристрій"
+
+#: ../src/nautilus-burn-drive-selection.c:237
+msgid "Unnamed CD/DVD Drive"
+msgstr "Неназваний пристрій CD/DVD"
+
+#: ../src/nautilus-burn-recorder.c:602
+msgid "The recorder could not be accessed."
+msgstr "Пристрій запису недоступний."
+
+#: ../src/nautilus-burn-recorder.c:606
+msgid "Not enough space available on the disc."
+msgstr "Не вистачає вільного місця на диску."
+
+#: ../src/nautilus-burn-recorder.c:610 ../src/nautilus-burn-recorder.c:614
+msgid "The files selected did not fit on the DVD."
+msgstr "Вибрані файли не уміщуються на DVD."
+
+#: ../src/nautilus-burn-recorder.c:626
+msgid "The target DVD drive is still in use."
+msgstr "Цільовий пристрій DVD досі зайнятий."
+
+#: ../src/nautilus-burn-recorder.c:632
+msgid "Unhandled error, aborting"
+msgstr "Невідома помилка, зупинка"
+
+#: ../src/nautilus-burn-recorder.c:697
+msgid "The CD has already been recorded."
+msgstr "Компакт-диск вже був записаний."
+
+#: ../src/nautilus-burn-recorder.c:717
+msgid "The files selected did not fit on the CD."
+msgstr "Вибрані файли не уміщаються на CD."
+
+#: ../src/nautilus-burn-recorder.c:721
+msgid ""
+"All audio files must be stereo, 16-bit digital audio with 44100Hz samples."
+msgstr ""
+"Всі звукові файли мають бути у форматі 16-бітного цифрового стереозвуку з "
+"частотою 44100Гц."
+
+#: ../src/nautilus-burn-recorder.c:745
+msgid "Error while writing to disc.  Try a lower speed."
+msgstr "Помилка запису на диск. Спробуйте більш низьку швидкість."
+
+#: ../src/nautilus-burn-recorder.c:750
+msgid ""
+"The system is too slow to write the CD at this speed. Try a lower speed."
+msgstr ""
+"Система надто повільна для запису CD на цій швидкості. Спробуйте меншу "
+"швидкість."
+
+#: ../src/nautilus-burn-recorder.c:884
+#, c-format
+msgid "You can only burn 99 tracks on one disc"
+msgstr "Можна створити лише 99 доріжок на одному диску"
+
+#: ../src/nautilus-burn-recorder.c:891
+#, c-format
+msgid "No tracks given to write"
+msgstr "Не вибрана доріжка для запису"
+
+#: ../src/nautilus-burn-recorder.c:896
+msgid "Burning CD/DVD"
+msgstr "Запис CD/DVD"
+
+#: ../src/nautilus-burn-recorder.c:1101
+#, c-format
+msgid "Can only use growisofs on a single track"
+msgstr "growisofs можна використовувати лише на одній доріжці"
+
+#: ../src/nautilus-burn-recorder.c:1112
+#, c-format
+msgid "Can only use growisofs on a data or graft list track"
+msgstr "growisofs можна використовувати лише на доріжці з даними чи списом"
+
+#: ../src/nautilus-burn-recorder.c:1480
+msgid "Blanking CD"
+msgstr "Очищення CD"
+
+#: ../src/nautilus-burn-recorder.c:1550
+msgid "Blanking DVD"
+msgstr "Очищення DVD"
+
+#: ../src/nautilus-burn-process.c:497
+#, c-format
+msgid "Could not run the necessary command: %s"
+msgstr "Не вдається запустити потрібну команду: %s."
+
+#: ../src/nautilus-cd-burner.c:157
+#, c-format
+msgid "There was a problem displaying the help contents: %s."
+msgstr "Виникла помилка на відображенні змісту довідки: %s."
+
+#: ../src/nautilus-cd-burner.c:158
+msgid "Cannot display help"
+msgstr "Не вдається відобразити довідку"
+
+#: ../src/nautilus-cd-burner.c:293
+msgid "Use CD/DVD device as source instead of burn:///"
+msgstr "Використовувати пристрій CD/DVD замість burn:///"
+
+#: ../src/nautilus-cd-burner.c:293
+msgid "DEVICE"
+msgstr "ПРИСТРІЙ"
+
+#: ../src/nautilus-cd-burner.c:295
+msgid "Use ISO image as source instead of burn:///"
+msgstr "Використовувати ISO-образ замість burn:///"
+
+#: ../src/nautilus-cd-burner.c:295 ../src/nautilus-cd-burner.c:297
+msgid "FILENAME"
+msgstr "НАЗВАФАЙЛУ"
+
+#: ../src/nautilus-cd-burner.c:297
+msgid "Use CUE/TOC file as source instead of burn:///"
+msgstr "Використовувати файл CUE/TOC замість burn:///"
+
+#: ../src/ncb-selection.c:442
+msgid ""
+"It appears that the disc, when created, will contain a single disc image "
+"file.  Do you want to create a disc from the contents of the image or with "
+"the image file inside?"
+msgstr ""
+"Схоже що диск, який ви створюєте буде містити лише один файл з ISO-образом. "
+"Ви хочете створити диск, на якому буде вміст цього образу, чи диск з образом "
+"у вигляді файлу?"
+
+#: ../src/ncb-selection.c:445
+msgid "Create disc containing a single disc image file?"
+msgstr "Створити диск, що містить лише образ диску?"
+
+#: ../src/ncb-selection.c:448
+msgid "Create From Image"
+msgstr "Створити з образу"
+
+#: ../src/ncb-selection.c:450
+msgid "Create With File"
+msgstr "Створити з файлом"
+
+#: ../src/ncb-selection.c:453
+msgid ""
+"It appears that the disc, when created, will contain only disc image files.  "
+"Do you want to continue and write them to the disc as files?"
+msgstr ""
+"Схоже що диск, який ви створюєте буде містити лише ISO-образи. Записати їх "
+"як файли?"
+
+#: ../src/ncb-selection.c:456
+msgid "Create disc containing only disc image files?"
+msgstr "Створити диск, що містить лише ISO-образи?"
+
+#: ../src/ncb-selection.c:460
+msgid "Create With Files"
+msgstr "Записати файли"
+
+#: ../src/ncb-selection.c:491
+#, c-format
+msgid ""
+"The file '%s' is unreadable.  Do you wish to skip this file and continue?"
+msgstr ""
+"Не вдається прочитати файл '%s'. Бажаєте пропустити цей файл та продовжити?"
+
+#: ../src/ncb-selection.c:494
+msgid "Skip unreadable file?"
+msgstr "Пропустити файл, що неможливо прочитати?"
+
+#: ../src/ncb-selection.c:499
+msgid "Skip"
+msgstr "Пропустити"
+
+#: ../src/ncb-selection.c:499
+msgid "Skip All"
+msgstr "Пропустити все"
+
+#: ../src/ncb-selection.c:522
+#, c-format
+msgid "No files were selected."
+msgstr "Не вибрано файли."
+
+#: ../src/ncb-selection.c:553
+#, c-format
+msgid "The file '%s' is not a valid disc image."
+msgstr "Файл \"%s\" не є правильним образом диску."
+
+#: ../src/ncb-selection.c:628
+#, c-format
+msgid "The specified device '%s' is not a valid CD/DVD drive."
+msgstr "Вказаний пристрій \"%s\" не є допустимим пристроєм CD/DVD."
+
+#: ../src/ncb-selection.c:652
+#, c-format
+msgid "There doesn't seem to be any media in the selected drive."
+msgstr "У вказаному пристрої. схоже, відсутній носій."
+
+#: ../src/ncb-selection.c:659
+#, c-format
+msgid "The media is blank."
+msgstr "Цей носій чистий."
+
+#: ../src/ncb-selection.c:692
+#, c-format
+msgid "File not found: %s"
+msgstr "Файл не існує: %s"
+
+#: ../src/ncb-selection.c:701
+#, c-format
+msgid "File does not appear to be a valid CUE sheet: %s"
+msgstr "Файл не є допустимою таблицею CUE: %s"
+
+#.
+#. translators: see strftime man page for meaning of %b, %d and %Y
+#. the maximum length for this field is 32 bytes
+#.
+#: ../src/ncb-selection.c:745
+msgid "Personal Data, %b %d, %Y"
+msgstr "Особисті дані, %d.%m.%Y"
+
+#: ../src/ncb-selection.c:817
+msgid "Unable to create CD/DVD"
+msgstr "Не вдається створити CD/DVD"
+
+#: ../src/ncb-selection.c:981
+msgid "Source name"
+msgstr "Назва джерела"
+
+#: ../src/ncb-selection.c:988
+msgid "Source type"
+msgstr "Тип джерела"
+
+#: ../src/ncb-selection.c:996
+msgid "Source size"
+msgstr "Розмір джерела"
+
+#: ../src/ncb-selection.c:1005
+msgid "Disc label"
+msgstr "Назва диску"
+
+#: ../src/ncb-selection.c:1012
+msgid "Write speed"
+msgstr "Швидкість запису"
+
+#: ../src/ncb-selection-dialog.c:171
+msgid "Copy Disc"
+msgstr "Копіювати диск"
+
+#: ../src/ncb-selection-dialog.c:173
+msgid "Copy disc _to:"
+msgstr "Копіювати диск н_а:"
+
+#: ../src/ncb-selection-dialog.c:345
+msgid "Maximum possible"
+msgstr "Максимально можлива"
+
+#: ../src/ncb-selection-dialog.c:558
+msgid "Calculating..."
+msgstr "Обчислення..."
+
+#: ../src/ncb-selection-dialog.c:637
+msgid "_Write"
+msgstr "_Записати"
+
+#: ../src/ncb-operation.c:242
+msgid "Preparing to write CD"
+msgstr "Підготовка до запису CD"
+
+#: ../src/ncb-operation.c:244
+msgid "Preparing to write DVD"
+msgstr "Підготовка до запису DVD"
+
+#: ../src/ncb-operation.c:249
+msgid "Writing CD"
+msgstr "Запис на CD"
+
+#: ../src/ncb-operation.c:251
+msgid "Writing DVD"
+msgstr "Запис на DVD"
+
+#: ../src/ncb-operation.c:256 ../src/ncb-operation.c:258
+msgid "Finishing write"
+msgstr "Закінчення запису"
+
+#: ../src/ncb-operation.c:263
+msgid "Erasing CD"
+msgstr "Стирання CD"
+
+#: ../src/ncb-operation.c:265
+msgid "Erasing DVD"
+msgstr "Стирання DVD"
+
+#: ../src/ncb-operation.c:349
+msgid "None"
+msgstr "Немає"
+
+#: ../src/ncb-operation.c:356
+msgid "Please make sure another application is not using the drive."
+msgstr "Переконайтесь, що інша програма не використовує цей пристрій."
+
+#: ../src/ncb-operation.c:357
+msgid "Drive is busy"
+msgstr "Пристрій зайнятий"
+
+#: ../src/ncb-operation.c:359 ../src/ncb-operation.c:364
+#, c-format
+msgid ""
+"Please put a disc, with at least %s free, into the drive.  The following "
+"disc types are supported:\n"
+"%s"
+msgstr ""
+"Вставте у пристрій диск, на якому вільно не менш ніж %s. Підтримуються диски "
+"наступних типів:\n"
+"%s"
+
+#: ../src/ncb-operation.c:362
+msgid "Insert a rewritable or blank disc"
+msgstr "Вставте носій з перезаписом або чистий носій"
+
+#: ../src/ncb-operation.c:367
+msgid "Insert a blank disc"
+msgstr "Вставте чистий носій"
+
+#: ../src/ncb-operation.c:370 ../src/ncb-operation.c:376
+#, c-format
+msgid ""
+"Please replace the disc in the drive with a supported disc with at least %s "
+"free.  The following disc types are supported:\n"
+"%s"
+msgstr ""
+"Замініть носій у пристрої на підтримуваний, на якому вільно не менш ніж %s. "
+"Підтримуються диски типів:\n"
+"%s"
+
+#: ../src/ncb-operation.c:373
+msgid "Reload a rewritable or blank disc"
+msgstr "Вставте носій з перезаписом або чистий носій"
+
+#: ../src/ncb-operation.c:379
+msgid "Reload a blank disc"
+msgstr "Встановіть чистий диск"
+
+#: ../src/ncb-operation.c:390
+msgid "_Eject"
+msgstr "Вит_ягнути"
+
+#: ../src/ncb-operation.c:457
+#, c-format
+msgid "This %s appears to have information already recorded on it."
+msgstr "Інформація вже записана на %s."
+
+#: ../src/ncb-operation.c:461
+msgid "Erase information on this disc?"
+msgstr "Стерти інформацію з цього диску?"
+
+#: ../src/ncb-operation.c:469
+msgid "_Try Another"
+msgstr "Спробувати _інший"
+
+#: ../src/ncb-operation.c:480
+msgid "_Erase Disc"
+msgstr "_Стерти диск"
+
+#: ../src/ncb-operation.c:512
+#, c-format
+msgid ""
+"There was an error writing to the disc:\n"
+"%s"
+msgstr ""
+"Під час запису CD виникла помилка:\n"
+"%s"
+
+#: ../src/ncb-operation.c:515
+msgid "There was an error writing to the disc"
+msgstr "Помилка запису на CD"
+
+#: ../src/ncb-operation.c:518
+msgid "Error writing to disc"
+msgstr "Помилка запису на диск"
+
+#: ../src/ncb-operation.c:573
+#, c-format
+msgid "A file named \"%s\" already exists.  Do you want to overwrite it?"
+msgstr "Файл з назвою \"%s\" вже існує. Перезаписати його?"
+
+#: ../src/ncb-operation.c:575
+msgid "Overwrite existing file?"
+msgstr "Перезаписати існуючий файл?"
+
+#: ../src/ncb-operation.c:584
+msgid "_Overwrite"
+msgstr "_Переписати"
+
+#: ../src/ncb-operation.c:603
+msgid "Choose a filename for the disc image"
+msgstr "Виберіть назву файлу для образу диску"
+
+#. Translators: this is the filename of the image
+#: ../src/ncb-operation.c:739
+msgid "image.iso"
+msgstr "image.iso"
+
+#: ../src/ncb-operation.c:760
+#, c-format
+msgid "You do not have permissions to overwrite that file (%s)."
+msgstr "Немає прав для перезапису цього файлу (%s)."
+
+#: ../src/ncb-operation.c:761 ../src/ncb-operation.c:776
+#: ../src/ncb-operation.c:1582
+msgid "File image creation failed"
+msgstr "Помилка при створенні файлу образу"
+
+#: ../src/ncb-operation.c:775
+#, c-format
+msgid "You do not have permissions to create that file (%s)."
+msgstr "Немає прав для створення файлу (%s)."
+
+#: ../src/ncb-operation.c:840
+msgid "Complete"
+msgstr "Завершено"
+
+#: ../src/ncb-operation.c:843
+msgid "An error occurred while writing"
+msgstr "Помилка під час запису"
+
+#: ../src/ncb-operation.c:903
+msgid "Writing Files to a Disc Image"
+msgstr "Запис файлів у образ диску"
+
+#: ../src/ncb-operation.c:904
+msgid "Writing Files to CD"
+msgstr "Запис файлів на CD"
+
+#: ../src/ncb-operation.c:905
+msgid "Writing Files to DVD"
+msgstr "Запис файлів на DVD"
+
+#: ../src/ncb-operation.c:908
+msgid "Writing Image to Disc"
+msgstr "Запис образу на диск"
+
+#: ../src/ncb-operation.c:909
+msgid "Copying Disc Image"
+msgstr "Копіювання образу диску"
+
+#: ../src/ncb-operation.c:910
+msgid "Writing Image to CD"
+msgstr "Запис образу на CD"
+
+#: ../src/ncb-operation.c:911
+msgid "Writing Image to DVD"
+msgstr "Запис образу на DVD"
+
+#: ../src/ncb-operation.c:914
+msgid "Copying Disc"
+msgstr "Копіювання диску"
+
+#: ../src/ncb-operation.c:915
+msgid "Copying Disc to a Disc Image"
+msgstr "Копіювання диску у образ диску"
+
+#: ../src/ncb-operation.c:916
+msgid "Copying Disc to CD"
+msgstr "Копіювання диску на CD"
+
+#: ../src/ncb-operation.c:917
+msgid "Copying Disc to DVD"
+msgstr "Копіювання диску на DVD"
+
+#: ../src/ncb-operation.c:921
+msgid "Writing files to disc"
+msgstr "Запис файлів на диск"
+
+#: ../src/ncb-operation.c:922
+msgid "Writing files to a disc image"
+msgstr "Запис файлів у образ диску"
+
+#: ../src/ncb-operation.c:923
+msgid "Writing files to CD"
+msgstr "Запис файлів на CD"
+
+#: ../src/ncb-operation.c:924
+msgid "Writing files to DVD"
+msgstr "Запис файлів на DVD"
+
+#: ../src/ncb-operation.c:927
+msgid "Writing image to disc"
+msgstr "Запис образу на диск"
+
+#: ../src/ncb-operation.c:928
+msgid "Copying disc image"
+msgstr "Копіювання образу диску"
+
+#: ../src/ncb-operation.c:929
+msgid "Writing image to CD"
+msgstr "Запис образу на диск"
+
+#: ../src/ncb-operation.c:930
+msgid "Writing image to DVD"
+msgstr "Запис образу на DVD"
+
+#: ../src/ncb-operation.c:933
+msgid "Copying disc"
+msgstr "Копіювання диску"
+
+#: ../src/ncb-operation.c:934
+msgid "Copying disc to a disc image"
+msgstr "Копіювання диску у образ диску"
+
+#: ../src/ncb-operation.c:935
+msgid "Copying disc to CD"
+msgstr "Копіювання диску на CD"
+
+#: ../src/ncb-operation.c:936
+msgid "Copying disc to DVD"
+msgstr "Копіювання диску на DVD"
+
+#: ../src/ncb-operation.c:940
+msgid ""
+"The selected files are being written to a CD or DVD.  This operation may "
+"take a long time, depending on data size and write speed."
+msgstr ""
+"Вибрані файли записуються на CD чи DVD. Операція може зайняти тривалий час, "
+"у залежності від розміру даних та швидкості запису."
+
+#: ../src/ncb-operation.c:941
+msgid "The selected files are being written to a disc image file."
+msgstr "Вибрані файли записуються у файл образу диску."
+
+#: ../src/ncb-operation.c:942
+msgid ""
+"The selected files are being written to a CD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr ""
+"Вибрані файли записуються на CD. Операція може зайняти тривалий час, у "
+"залежності від розміру даних та швидкості запису."
+
+#: ../src/ncb-operation.c:943
+msgid ""
+"The selected files are being written to a DVD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr ""
+"Вибрані файли  записуються на DVD. Операція може зайняти тривалий час, у "
+"залежності від розміру даних та швидкості запису."
+
+#: ../src/ncb-operation.c:946
+msgid ""
+"The selected disc image is being written to a CD or DVD.  This operation may "
+"take a long time, depending on data size and write speed."
+msgstr ""
+"Вибраний образ диску записується на CD чи DVD. Операція може зайняти "
+"тривалий час, у залежності від розміру даних та швидкості запису."
+
+#: ../src/ncb-operation.c:947
+msgid "The selected disc image is being copied to a disc image file."
+msgstr "Вибраний образ диску записується у файл образ диску."
+
+#: ../src/ncb-operation.c:948
+msgid ""
+"The selected disc image is being written to a CD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr ""
+"Вибрані файли будуть записані на %s. Операція може зайняти тривалий час, у "
+"залежності від розміру даних та швидкості запису."
+
+#: ../src/ncb-operation.c:949
+msgid ""
+"The selected disc image is being written to a DVD.  This operation may take "
+"a long time, depending on data size and write speed."
+msgstr ""
+"Вибраний образ диску записується на DVD. Операція може зайняти тривалий час, "
+"у залежності від розміру даних та швидкості запису."
+
+#: ../src/ncb-operation.c:952
+msgid ""
+"The selected disc is being copied to a CD or DVD.  This operation may take a "
+"long time, depending on data size and drive speed."
+msgstr ""
+"Вибраний диск копіюється на CD чи DVD. Операція може зайняти тривалий час, у "
+"залежності від розміру даних та швидкості запису."
+
+#: ../src/ncb-operation.c:953
+msgid ""
+"The selected disc is being copied to a disc image file.  This operation may "
+"take a long time, depending on data size and drive speed."
+msgstr ""
+"Вибраний диск копіюється у файл образу диска. Операція може зайняти тривалий "
+"час, у залежності від розміру даних та швидкості запису."
+
+#: ../src/ncb-operation.c:954
+msgid ""
+"The selected disc is being copied to a CD.  This operation may take a long "
+"time, depending on data size and drive speed."
+msgstr ""
+"Вибраний диск копіюється на CD. Операція може зайняти тривалий час, у "
+"залежності від розміру даних та швидкості запису."
+
+#: ../src/ncb-operation.c:955
+msgid ""
+"The selected disc is being copied to a DVD.  This operation may take a long "
+"time, depending on data size and drive speed."
+msgstr ""
+"Вибраний диск копіюється на DVD. Операція може зайняти тривалий час, у "
+"залежності від розміру даних та швидкості запису."
+
+#: ../src/ncb-operation.c:1012
+msgid "Burning CD"
+msgstr "Запис CD"
+
+#: ../src/ncb-operation.c:1179 ../src/ncb-operation.c:1403
+msgid "Creating disc image"
+msgstr "Створення образу диску"
+
+#: ../src/ncb-operation.c:1621
+#, c-format
+msgid "Writing CD/DVD-Image '%s'."
+msgstr "Запис образу CD/DVD '%s'."
+
+#: ../src/ncb-operation.c:1626
+#, c-format
+msgid "Writing disc '%s'."
+msgstr "Запис диску '%s'."
+
+#: ../src/ncb-operation.c:1628
+#, c-format
+msgid "Writing %s '%s'."
+msgstr "Запис %s '%s'."
+
+#: ../src/ncb-operation.c:1717
+#, c-format
+msgid "Completed writing %s"
+msgstr "Запис %s завершено"
+
+#: ../src/ncb-operation.c:1822
+msgid "Interrupt writing files to disc?"
+msgstr "Припинити запис файлів на диск?"
+
+#: ../src/ncb-operation.c:1823
+msgid ""
+"Are you sure you want to interrupt the disc write operation? Some drives may "
+"require that you restart the computer to get them working again."
+msgstr ""
+"Дійсно хочете припинити запис на диск? Для приведення до робочого стану "
+"деяких оптичних пристроїв після переривання запису може знадобитись "
+"перезапуск комп'ютера."
+
+#: ../src/ncb-operation.c:1829
+msgid "Interrupt"
+msgstr "Припинити"
+
+#: ../src/ncb-operation.c:1831
+msgid "Continue"
+msgstr "Продовжити"
+
+#: ../src/ncb-progress-dialog.c:146
+#, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d година"
+msgstr[1] "%d години"
+msgstr[2] "%d годин"
+
+#: ../src/ncb-progress-dialog.c:148
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d хвилина"
+msgstr[1] "%d хвилини"
+msgstr[2] "%d хвилин"
+
+#: ../src/ncb-progress-dialog.c:151
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d секунда"
+msgstr[1] "%d секунди"
+msgstr[2] "%d секунд"
+
+#. hour:minutes:seconds
+#: ../src/ncb-progress-dialog.c:156
+#, c-format
+msgid "%s %s %s"
+msgstr "%s %s %s"
+
+#. minutes:seconds
+#: ../src/ncb-progress-dialog.c:159
+#, c-format
+msgid "%s %s"
+msgstr "%s %s"
+
+#. seconds
+#: ../src/ncb-progress-dialog.c:162
+#, c-format
+msgid "%s"
+msgstr "%s"
+
+#. 0 seconds
+#: ../src/ncb-progress-dialog.c:165
+msgid "0 seconds"
+msgstr "0 секунд"
+
+#: ../src/ncb-progress-dialog.c:189
+#, c-format
+msgid "About %s left"
+msgstr "Залишилось приблизно %s"
+
+#: ../src/ncb-progress-dialog.c:439
+msgid "_Make Another Copy"
+msgstr "З_робити іншу копію"
+
+#: ../src/ncb-rename-dialog.c:479
+msgid "C_ontinue"
+msgstr "П_родовжити"
+
+#: ../src/ncb-rename-dialog.c:507
+msgid "Filename"
+msgstr "Назва файлу"
+
+#: ../src/ncb-rename-dialog.c:523
+msgid "Rename file"
+msgstr "Перейменувати файл"

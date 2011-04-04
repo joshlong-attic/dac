@@ -1,0 +1,456 @@
+# translation of nautilus-cd-burner.HEAD.az.po to Azerbaijani Turkish
+# Copyright (C) 2003 Mətin Əmirov
+# This file is distributed under the same license as the nautilus-cd-burner package.
+# Mətin Əmirov <metin@karegen.com>, 2003, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: nautilus-cd-burner.HEAD.az\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-09-14 12:17+0200\n"
+"PO-Revision-Date: 2004-09-14 17:20+0200\n"
+"Last-Translator: Mətin Əmirov <metin@karegen.com>\n"
+"Language-Team: Azerbaijani Turkish <translation-team-az@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: bacon-cd-selection.c:187
+msgid "Unnamed CDROM"
+msgstr "Adsız CD-ROM"
+
+#: burn-extension.c:64
+msgid "Unable to launch the cd burner application"
+msgstr "CD yazma proqramı başladıla bilmədi"
+
+#: burn-extension.c:66
+msgid "Can't launch cd burner"
+msgstr "CD yazma proqramı başladıla bilmir"
+
+#: burn-extension.c:146
+#: burn-extension.c:173
+msgid "_Write to Disc..."
+msgstr "CD-yə _Yaz..."
+
+#: burn-extension.c:147
+msgid "Write disc image to a CD or DVD disc"
+msgstr "Disk əksini CD ya da DVD diskinə yaz"
+
+#: burn-extension.c:174
+#: burn-extension.c:203
+msgid "Write contents to a CD or DVD disc"
+msgstr "Məzmunu CD ya da DVD diskinə yaz"
+
+#: burn-extension.c:202
+#: cdburn.glade.h:15
+msgid "Write to Disc"
+msgstr "Diskə Yaz"
+
+#: cd-drive.c:744
+#, c-format
+msgid "Unnamed SCSI Drive (%s)"
+msgstr "Adsız SCSI Sürücü (%s)"
+
+#: cd-drive.c:1304
+msgid "File image"
+msgstr "Fayl əksi"
+
+#. This fits the "open64" and "open"-like messages
+#: cd-recorder.c:313
+msgid "The recorder could not be accessed"
+msgstr "Yazıcıya yetişilə bilmədi"
+
+#: cd-recorder.c:316
+msgid "Not enough space available on the disc"
+msgstr "Diskdə kifayət qədər yer yoxdur"
+
+#: cd-recorder.c:319
+#: cd-recorder.c:322
+#: cd-recorder.c:373
+msgid "The files selected did not fit on the CD"
+msgstr "Seçili fayllar CD-yə sığışmadı"
+
+#: cd-recorder.c:330
+msgid "Unhandled error, aborting"
+msgstr "Namə'lum xəta, ləğv edilir"
+
+#: cd-recorder.c:367
+msgid "The CD has already been recorded"
+msgstr "Bu CD onsuz da yazılıb"
+
+#: cd-recorder.c:377
+msgid "All audio files must be stereo, 16-bit digital audio with 44100Hz samples"
+msgstr "Bütün musiqi faylları stereo, 44100 nümunəli 16-bit digital audio növündə olmalıdır"
+
+#: cd-recorder.c:384
+msgid "The system is too slow to write the CD at this speed. Try a lower speed."
+msgstr "Bu sürətdə CD yazmaq üçün sistemin sürəti çox zəyifdir. Daha alçaq sürət seçin."
+
+#: cd-recorder.c:503
+msgid "You can only burn 99 tracks on one disc"
+msgstr "Bir diskə sadəcə olaraq 99 mahnı yaza bilərsiniz"
+
+#: cdburn.glade.h:1
+msgid "    "
+msgstr "    "
+
+#: cdburn.glade.h:2
+msgid "*"
+msgstr "*"
+
+#: cdburn.glade.h:3
+msgid "<b>After Writing</b>"
+msgstr "<b>Yazdıqdan Sonra</b>"
+
+#: cdburn.glade.h:4
+msgid "<b>Information</b>"
+msgstr "<b>Məlumat</b>"
+
+#: cdburn.glade.h:5
+msgid "<b>Write Options</b>"
+msgstr "<b>Yazma Seçimləri</b>"
+
+#: cdburn.glade.h:6
+msgid "<big><b>Writing files to disc progress</b></big>"
+msgstr "<big><b>Faylların CD-yə yazma irəliləyişi</b></big>"
+
+#: cdburn.glade.h:7
+msgid "<i>Initializing...</i>"
+msgstr "<i>Hazırlanır...</i>"
+
+#: cdburn.glade.h:8
+msgid "Data size:"
+msgstr "Data böyüklüyü:"
+
+#: cdburn.glade.h:9
+msgid "Disc _name:"
+msgstr "Disk _adı:"
+
+#: cdburn.glade.h:10
+msgid "E_ject disc"
+msgstr "Diski çı_xart"
+
+#: cdburn.glade.h:11
+msgid "Label to identify disc"
+msgstr "Diski tanıda bilmək üçün etiket"
+
+#: cdburn.glade.h:12
+msgid "Select the speed to use for the write"
+msgstr "Yazma sür'ətini seçin"
+
+#: cdburn.glade.h:13
+msgid "Selected files are to be written to a CD or DVD disc. This operation may take a long time, depending on data size and write speed."
+msgstr "Seçili fayllar CD ya da DVD diskə yazlacaqdır. Bu əməliyyat, data böyüklüyü və yazma sürətinə bağlı olaraq uzun vaxt ala bilər."
+
+#: cdburn.glade.h:14
+msgid "Write _speed:"
+msgstr "Yazma _sürəti:"
+
+#: cdburn.glade.h:16
+msgid "Writing Files to Disc Progress"
+msgstr "Faylları CD-yə Yazma İrəliləyişi"
+
+#: cdburn.glade.h:17
+msgid "_Dummy write"
+msgstr "_Sınana yazması"
+
+#: cdburn.glade.h:18
+msgid "_Reuse these files for another disc"
+msgstr "Bu faylları başqa disk üçün _yenidən işlət"
+
+#: cdburn.glade.h:19
+msgid "_Write"
+msgstr "_Yaz"
+
+#: cdburn.glade.h:20
+msgid "_Write disc to:"
+msgstr "Diski buraya _yaz:"
+
+#: make-iso.c:251
+msgid ""
+"Some files don't have a suitable name for a Windows-compatible CD.\n"
+"Do you want to continue with Windows compatibility disabled?"
+msgstr ""
+"Bə'zi faylların adları Windows ilə uyğun CD yaratmaq üçün əngəl təşkil edir.\n"
+"Windows ilə uyğunluğu rədd edərək davam etmək istəyirsiniz?"
+
+#: make-iso.c:252
+msgid "Windows compatibility"
+msgstr "Windows ilə uyğunluq"
+
+#: make-iso.c:576
+msgid "No files selected to write to CD."
+msgstr "CD-yə yazmaq üçün heç bir fayl seçili deyil."
+
+#: make-iso.c:578
+#: nautilus-cd-burner.c:1134
+msgid "No files selected"
+msgstr "Heç bir fayl seçilməyib"
+
+#: make-iso.c:659
+#, c-format
+msgid "Not enough space to store CD image (%ld Megabyte needed)"
+msgid_plural "Not enough space to store CD image (%ld Megabytes needed)"
+msgstr[0] "CD əksini qeyd etmək üçün kifayət qədər yer yoxdur (%ld Meqabayt lazımdır)"
+msgstr[1] "CD əksini qeyd etmək üçün kifayət qədər yer yoxdur (%ld Meqabayt lazımdır)"
+
+#: make-iso.c:664
+msgid "Not enough space"
+msgstr "Kifayət qədər yer yoxdur"
+
+#: make-iso.c:700
+msgid "Creating CD image"
+msgstr "CD əksi yaradılır"
+
+#: nautilus-cd-burner.c:137
+msgid " (invalid Unicode)"
+msgstr "  (səhv Yunikod)"
+
+#: nautilus-cd-burner.c:283
+msgid "Preparing to write CD"
+msgstr "CD-yə yazmaq üçün hazırlanır"
+
+#: nautilus-cd-burner.c:285
+msgid "Preparing to write DVD"
+msgstr "DVD yazmaq üçün hazırlanır"
+
+#: nautilus-cd-burner.c:290
+msgid "Writing CD"
+msgstr "CD Yazılır"
+
+#: nautilus-cd-burner.c:292
+msgid "Writing DVD"
+msgstr "DVD Yazılır"
+
+#: nautilus-cd-burner.c:297
+msgid "Fixating CD"
+msgstr "CD Sabitlənir"
+
+#: nautilus-cd-burner.c:299
+msgid "Fixating DVD"
+msgstr "DVD Sabitlənir"
+
+#: nautilus-cd-burner.c:304
+msgid "Erasing CD"
+msgstr "CD Silinir"
+
+#: nautilus-cd-burner.c:306
+msgid "Erasing DVD"
+msgstr "DVD Silinir"
+
+#: nautilus-cd-burner.c:332
+msgid "Please make sure another application is not using the disc."
+msgstr "Xahiş edirik, diski işlədən başqa proqramları bağlayın."
+
+#: nautilus-cd-burner.c:333
+msgid "Disc is busy"
+msgstr "Sürücü məşğuldur"
+
+#: nautilus-cd-burner.c:335
+msgid "Please insert a rewritable or blank media in the drive tray."
+msgstr "Xahiş edirik, sürücüyə yenidən yazıla bilən ya da boş mediya daxil edin."
+
+#: nautilus-cd-burner.c:336
+msgid "Insert rewritable or blank media"
+msgstr "Yenidən yazıla bilən ya da boş mediya daxil edin"
+
+#: nautilus-cd-burner.c:338
+msgid "Please insert a blank media in the drive tray."
+msgstr "Xahiş edirik, sürücüyə boş mediya daxil edin."
+
+#: nautilus-cd-burner.c:339
+msgid "Insert blank media"
+msgstr "Boş mediya daxil edin"
+
+#: nautilus-cd-burner.c:341
+msgid "Please replace the in-drive media by a rewritable or blank media."
+msgstr "Xahiş edirik, sürücüdəki mediyanı boş ya da yenidən yazıla bilən mediya ilə əvəz edin."
+
+#: nautilus-cd-burner.c:342
+msgid "Reload rewritable or blank media"
+msgstr "Yenidən yazıla bilən mediyanı yenidən yüklə"
+
+#: nautilus-cd-burner.c:344
+msgid "Please replace the in-drive media by a blank media."
+msgstr "Xahiş edirik, sürücüdəki mediyanı boş mediya ilə əvəz edin."
+
+#: nautilus-cd-burner.c:345
+msgid "Reload blank media"
+msgstr "Boş mediyanı yenidən yüklə"
+
+#: nautilus-cd-burner.c:373
+msgid "Disc writing error details"
+msgstr "Disk yazma xətası təfərruatları"
+
+#: nautilus-cd-burner.c:379
+msgid "Detailed error output from cdrecord:"
+msgstr "CD yazmadan təfərruatlı xəta çıxışı:"
+
+#: nautilus-cd-burner.c:420
+#, c-format
+msgid ""
+"There was an error writing to the CD:\n"
+"%s"
+msgstr ""
+"CD-yə yazarkən xəta yarandı: \n"
+"%s"
+
+#: nautilus-cd-burner.c:421
+msgid "There was an error writing to the CD"
+msgstr "CD-yə yazarkən xəta yarandı"
+
+#: nautilus-cd-burner.c:422
+msgid "Error writing to CD"
+msgstr "CD-yə yazarkən xəta"
+
+#: nautilus-cd-burner.c:428
+msgid "_Details"
+msgstr "_Təfərruatlar"
+
+#: nautilus-cd-burner.c:501
+#, c-format
+msgid ""
+"A file named \"%s\" already exists.\n"
+"Do you want to overwrite it?"
+msgstr ""
+"\"%s\" adlı fayl onsuzda mövcuddur.\n"
+"Üstünə yazmaq istəyirsiniz?"
+
+#: nautilus-cd-burner.c:503
+#: nautilus-cd-burner.c:512
+msgid "_Overwrite"
+msgstr "Ü_stünə Yaz"
+
+#: nautilus-cd-burner.c:530
+msgid "Choose a filename for the cdrom image"
+msgstr "CDRom əksi üçün fayl adı seçin"
+
+#: nautilus-cd-burner.c:585
+#, c-format
+msgid "You do not have permissions to overwrite that file (%s)."
+msgstr "(%s) faylının üstünə yazmaq üçün səlahiyyətləriniz yoxdur."
+
+#: nautilus-cd-burner.c:586
+#: nautilus-cd-burner.c:599
+msgid "File image creation failed"
+msgstr "Fayl əksinin yaradılması bacarılmadı"
+
+#: nautilus-cd-burner.c:598
+#, c-format
+msgid "You do not have permissions to create that file (%s)."
+msgstr "(%s) faylını yaratmaq üçün səlahiyyətləriniz yoxdur."
+
+#: nautilus-cd-burner.c:661
+#, c-format
+msgid "Completed writing %s"
+msgstr "%s yazılması başa çatdı"
+
+#: nautilus-cd-burner.c:719
+msgid "Complete"
+msgstr "Başa Çatdı"
+
+#: nautilus-cd-burner.c:782
+msgid "Maximum Possible"
+msgstr "Maksimal Mümkün Olan"
+
+#: nautilus-cd-burner.c:859
+#, c-format
+msgid "%d MB"
+msgstr "%d MB"
+
+#. translators: see strftime man page for meaning of %b, %d and %Y
+#: nautilus-cd-burner.c:887
+msgid "Personal Data, %b %d, %Y"
+msgstr "Şəxsi Səndlər, %b %d, %Y"
+
+#: nautilus-cd-burner.c:920
+msgid "Cancel write"
+msgstr "Yazmağı ləğv et"
+
+#: nautilus-cd-burner.c:921
+msgid ""
+"Are you sure you want to cancel the disc write operation?\n"
+"Some optical media drives may require that you restart the machine to get it working again."
+msgstr ""
+"Disk yazma əməliyyatını ləğv etmək istəyirsinizmi?\n"
+"Bəzi optik sürücülərin yenidən işləyə bilməsi üçün sistemi yenidən başlatmaq məcburiyyətinə ola bilərsiniz."
+
+#: nautilus-cd-burner.c:925
+msgid "Continue"
+msgstr "Davam et"
+
+#: nautilus-cd-burner.c:977
+#, c-format
+msgid "There was a problem displaying the help contents: %s."
+msgstr "Yardım məzmunu göstərilirkən xəta yarandı: %s."
+
+#: nautilus-cd-burner.c:978
+msgid "Cannot display help"
+msgstr "yardım göstərilə bilmir"
+
+#: nautilus-cd-burner.c:1093
+msgid "Too many parameters"
+msgstr "Həddindən artıq parametr"
+
+#: nautilus-cd-burner.c:1094
+msgid "Too many parameters were passed to the application."
+msgstr "Programa birdən çox parametr verildi"
+
+#: nautilus-cd-burner.c:1116
+#, c-format
+msgid "The file '%s' is not a valid CD image."
+msgstr "'%s' faylı hökmlü CD rəsmi deyil"
+
+#: nautilus-cd-burner.c:1119
+msgid "Not a valid CD image"
+msgstr "Hökmlü CD əksi deyil"
+
+#: nautilus-cd-burner.c:1135
+msgid "You need to copy the files you want to write to disc to the CD/DVD Creator window. Would you like to open it now?"
+msgstr "Diskə yazmaq istədiyiniz faylları CD/DVD Yaradıcısı pəncərəsinə köçürməlisiniz. İndi pəncərəni açmaq istəyirsinizmi?"
+
+#: nautilus-cd-burner.c:1137
+msgid "Open CD/DVD Creator"
+msgstr "CD/DVD Yaradıcısını Aç"
+
+#: ncb.schemas.in.h:1
+msgid "Default burn speed"
+msgstr "Ön qurğulu yazma sür'əti"
+
+#: ncb.schemas.in.h:2
+msgid "Default speed at which the media will be written."
+msgstr "Mediyanın yazılacağı ön qurğulu sür'ət."
+
+#: ncb.schemas.in.h:3
+msgid "Directory for the temporary ISO images"
+msgstr "Müvəqqəti ISO əksləri üçün cərgə"
+
+#: ncb.schemas.in.h:4
+msgid "Directory used for the temporary ISO images, leave blank to use the default system temporary directory."
+msgstr "Müvəqqəti ISO əkslərinin saxlanacağı qovluqdur, sistemin ön qurğulu müvəqqəti qovluğunu işlətmək üçün buranı boş buraxın."
+
+#: ncb.schemas.in.h:5
+msgid "Enable Burnproof option"
+msgstr "Yanmağa qarşı qoruma işlət"
+
+#: ncb.schemas.in.h:6
+msgid "Enable debug"
+msgstr "Xəta ayırmasını fəallaşdır"
+
+#: ncb.schemas.in.h:7
+msgid "Enable overburn"
+msgstr "Tərkibdən çox yazmağı fəallaşdır"
+
+#: ncb.schemas.in.h:8
+msgid "Whether to allow the data to exceed the size of the physical medium."
+msgstr "Datanın, mediumun fizikal böyüklüyünü keçməsinə icazə"
+
+#: ncb.schemas.in.h:9
+msgid "Whether to enable the debugging for CD Recording."
+msgstr "CD yazımı üçün xəta ayırmasının fəallaşdırılması."
+
+#: ncb.schemas.in.h:10
+msgid "Whether to use the Burnproof option available on some recorders."
+msgstr "Bəzi yazıcılarda mövcud olan Burnproof xassəsini işlətmək üçün."
+

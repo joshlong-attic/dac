@@ -1,0 +1,438 @@
+<!-- ##### SECTION Title ##### -->
+nautilus-burn-drive
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### ENUM NautilusBurnMediaType ##### -->
+<para>
+
+</para>
+
+@NAUTILUS_BURN_MEDIA_TYPE_BUSY: 
+@NAUTILUS_BURN_MEDIA_TYPE_ERROR: 
+@NAUTILUS_BURN_MEDIA_TYPE_UNKNOWN: 
+@NAUTILUS_BURN_MEDIA_TYPE_CD: 
+@NAUTILUS_BURN_MEDIA_TYPE_CDR: 
+@NAUTILUS_BURN_MEDIA_TYPE_CDRW: 
+@NAUTILUS_BURN_MEDIA_TYPE_DVD: 
+@NAUTILUS_BURN_MEDIA_TYPE_DVDR: 
+@NAUTILUS_BURN_MEDIA_TYPE_DVDRW: 
+@NAUTILUS_BURN_MEDIA_TYPE_DVD_RAM: 
+@NAUTILUS_BURN_MEDIA_TYPE_DVD_PLUS_R: 
+@NAUTILUS_BURN_MEDIA_TYPE_DVD_PLUS_RW: 
+@NAUTILUS_BURN_MEDIA_TYPE_DVD_PLUS_R_DL: 
+
+<!-- ##### MACRO NAUTILUS_BURN_MEDIA_SIZE_UNKNOWN ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO NAUTILUS_BURN_MEDIA_SIZE_NA ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO NAUTILUS_BURN_MEDIA_SIZE_BUSY ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### ENUM NautilusBurnDriveType ##### -->
+<para>
+
+</para>
+
+@NAUTILUS_BURN_DRIVE_TYPE_FILE: 
+@NAUTILUS_BURN_DRIVE_TYPE_CD_RECORDER: 
+@NAUTILUS_BURN_DRIVE_TYPE_CDRW_RECORDER: 
+@NAUTILUS_BURN_DRIVE_TYPE_DVD_RAM_RECORDER: 
+@NAUTILUS_BURN_DRIVE_TYPE_DVD_RW_RECORDER: 
+@NAUTILUS_BURN_DRIVE_TYPE_DVD_PLUS_R_RECORDER: 
+@NAUTILUS_BURN_DRIVE_TYPE_DVD_PLUS_RW_RECORDER: 
+@NAUTILUS_BURN_DRIVE_TYPE_CD_DRIVE: 
+@NAUTILUS_BURN_DRIVE_TYPE_DVD_DRIVE: 
+@NAUTILUS_BURN_DRIVE_TYPE_DVD_PLUS_R_DL_RECORDER: 
+
+<!-- ##### TYPEDEF NautilusBurnDrive ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL NautilusBurnDrive::disconnected ##### -->
+<para>
+
+</para>
+
+@nautilusburndrive: the object which received the signal.
+
+<!-- ##### SIGNAL NautilusBurnDrive::media-added ##### -->
+<para>
+
+</para>
+
+@nautilusburndrive: the object which received the signal.
+
+<!-- ##### SIGNAL NautilusBurnDrive::media-removed ##### -->
+<para>
+
+</para>
+
+@nautilusburndrive: the object which received the signal.
+
+<!-- ##### ARG NautilusBurnDrive:enable-monitor ##### -->
+<para>
+
+</para>
+
+<!-- ##### TYPEDEF NautilusBurnDriveClass ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### TYPEDEF NautilusBurnDrivePrivate ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION media_added ##### -->
+<para>
+
+</para>
+
+@drive: 
+
+
+<!-- ##### FUNCTION media_removed ##### -->
+<para>
+
+</para>
+
+@drive: 
+
+
+<!-- ##### FUNCTION disconnected ##### -->
+<para>
+
+</para>
+
+@drive: 
+
+
+<!-- ##### MACRO NAUTILUS_BURN_DRIVE_SIZE_TO_TIME ##### -->
+<para>
+
+</para>
+
+@size: 
+
+
+<!-- ##### MACRO NAUTILUS_BURN_DRIVE_CD_SPEED ##### -->
+<para>
+
+</para>
+
+@speed: 
+
+
+<!-- ##### MACRO NAUTILUS_BURN_DRIVE_DVD_SPEED ##### -->
+<para>
+
+</para>
+
+@speed: 
+
+
+<!-- ##### MACRO NAUTILUS_BURN_DRIVE_MEDIA_TYPE_IS_DVD ##### -->
+<para>
+
+</para>
+
+@media_type: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_ref ##### -->
+<para>
+
+</para>
+
+@drive: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_unref ##### -->
+<para>
+
+</para>
+
+@drive: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_equal ##### -->
+<para>
+
+</para>
+
+@a: 
+@b: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_lock ##### -->
+<para>
+
+</para>
+
+@drive: 
+@reason: 
+@reason_for_failure: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_unlock ##### -->
+<para>
+
+</para>
+
+@drive: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_unmount ##### -->
+<para>
+
+</para>
+
+@drive: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_is_mounted ##### -->
+<para>
+
+</para>
+
+@drive: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_eject ##### -->
+<para>
+
+</para>
+
+@drive: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_door_is_open ##### -->
+<para>
+
+</para>
+
+@drive: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_get_drive_type ##### -->
+<para>
+
+</para>
+
+@drive: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_get_name_for_display ##### -->
+<para>
+
+</para>
+
+@drive: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_get_device ##### -->
+<para>
+
+</para>
+
+@drive: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_can_write ##### -->
+<para>
+
+</para>
+
+@drive: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_can_rewrite ##### -->
+<para>
+
+</para>
+
+@drive: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_get_max_speed_write ##### -->
+<para>
+
+</para>
+
+@drive: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_get_max_speed_read ##### -->
+<para>
+
+</para>
+
+@drive: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_get_write_speeds ##### -->
+<para>
+
+</para>
+
+@drive: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_can_eject ##### -->
+<para>
+
+</para>
+
+@drive: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_get_media_type ##### -->
+<para>
+
+</para>
+
+@drive: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_get_media_type_full ##### -->
+<para>
+
+</para>
+
+@drive: 
+@is_rewritable: 
+@is_blank: 
+@has_data: 
+@has_audio: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_get_media_capacity ##### -->
+<para>
+
+</para>
+
+@drive: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_get_media_size ##### -->
+<para>
+
+</para>
+
+@drive: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_get_media_label ##### -->
+<para>
+
+</para>
+
+@drive: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_media_is_appendable ##### -->
+<para>
+
+</para>
+
+@drive: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_media_type_get_string ##### -->
+<para>
+
+</para>
+
+@type: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_get_supported_media_string ##### -->
+<para>
+
+</para>
+
+@drive: 
+@writable_only: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_get_supported_media_string_for_size ##### -->
+<para>
+
+</para>
+
+@drive: 
+@size: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_media_type_is_writable ##### -->
+<para>
+
+</para>
+
+@type: 
+@is_blank: 
+@Returns: 
+
+

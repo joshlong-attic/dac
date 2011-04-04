@@ -1,0 +1,1029 @@
+# Czech translation of nautilus-cd-burner.
+# Copyright (C) 2003, 2004, 2005, 2008 Free Software Foundation, Inc.
+# Copyright (C) 2003, 2004, 2005 Miloslav Trmac <mitr@volny.cz>.
+# Copyright (C) 2007 Martin Picek <picek.martin@gmail.com>.
+# Copyright (C) 2008 Pavel Šefránek <ps@pjoul.cz>.
+# This file is distributed under the same license as the nautilus-cd-burner package.
+# Miloslav Trmac <mitr@volny.cz>, 2002, 2003, 2004, 2005.
+# Petr Tomeš <ptomes@gmail.com>, 2006.
+# Martin Picek <picek.martin@gmail.com>, 2007.
+# Pavel Šefránek <ps@pjoul.cz>, 2008.
+# Petr Kovar <pknbe@volny.cz>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: nautilus-cd-burner\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-03-02 16:47+0100\n"
+"PO-Revision-Date: 2008-03-02 16:45+0100\n"
+"Last-Translator: Petr Kovar <pknbe@volny.cz>\n"
+"Language-Team: Czech <gnome-cs-list@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: ../data/nautilus-cd-burner.desktop.in.h:1
+#: ../data/nautilus-cd-burner-open-iso.desktop.in.h:1
+#: ../src/ncb-operation.c:1635
+msgid "CD/DVD Creator"
+msgstr "Tvůrce CD a DVD"
+
+#: ../data/nautilus-cd-burner.desktop.in.h:2
+msgid "Open a folder into which you can drag files to burn to a CD or DVD"
+msgstr ""
+"Otevřít adresář, do kterého můžete přetahovat soubory k vypálení na CD nebo "
+"DVD"
+
+#: ../data/nautilus-cd-burner-open-iso.desktop.in.h:2
+msgid "Open the CD/DVD Creator"
+msgstr "Otevřít Tvůrce CD a DVD"
+
+#: ../data/nautilus-cd-burner.glade.h:1
+msgid "    "
+msgstr "    "
+
+#: ../data/nautilus-cd-burner.glade.h:2
+msgid "<b>Information</b>"
+msgstr "<b>Informace</b>"
+
+#: ../data/nautilus-cd-burner.glade.h:3
+msgid "<b>Write Options</b>"
+msgstr "<b>Možnosti zápisu</b>"
+
+#: ../data/nautilus-cd-burner.glade.h:4
+msgid "<big><b>Some files have invalid filenames</b></big>"
+msgstr "<big><b>Některé soubory mají neplatné názvy</b></big>"
+
+#: ../data/nautilus-cd-burner.glade.h:5
+msgid "<big><b>Writing files to disc</b></big>"
+msgstr "<big><b>Zapisují se soubory na disk</b></big>"
+
+#: ../data/nautilus-cd-burner.glade.h:6
+msgid "<i>Initializing...</i>"
+msgstr "<i>Inicializuje se…</i>"
+
+#: ../data/nautilus-cd-burner.glade.h:7
+msgid "Data size:"
+msgstr "Velikost dat:"
+
+#: ../data/nautilus-cd-burner.glade.h:8
+msgid "Disc _name:"
+msgstr "_Název disku:"
+
+#: ../data/nautilus-cd-burner.glade.h:9
+msgid "Label to identify disc"
+msgstr "Jmenovka pro identifikaci disku"
+
+#: ../data/nautilus-cd-burner.glade.h:10
+msgid ""
+"The following filenames are not valid.  Please provide new names for each of "
+"them."
+msgstr ""
+"Následující názvy souborů nejsou platné. Prosím, vytvořte pro každý ze "
+"souborů nový název."
+
+#: ../data/nautilus-cd-burner.glade.h:11
+msgid "Write _speed:"
+msgstr "_Rychlost zápisu:"
+
+#: ../data/nautilus-cd-burner.glade.h:12
+msgid "Write disc _to:"
+msgstr "_Zapsat disk do:"
+
+#: ../data/nautilus-cd-burner.glade.h:13 ../src/ncb-operation.c:902
+msgid "Writing Files to Disc"
+msgstr "Zapisují se soubory na disk"
+
+#: ../data/nautilus-cd-burner.glade.h:14
+msgid "_Dummy write"
+msgstr "_Testovací zápis"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:1
+msgid "Default burn speed"
+msgstr "Výchozí rychlost vypalování"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:2
+msgid "Default speed at which the media will be written."
+msgstr "Výchozí rychlost, kterou se bude zapisovat na média."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:3
+msgid "Directory for the temporary ISO images"
+msgstr "Adresář pro dočasné obrazy ISO"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:4
+msgid ""
+"Directory used for the temporary ISO images, leave blank to use the default "
+"system temporary directory."
+msgstr ""
+"Adresář pro dočasné obrazy ISO, nechte prázdné, chcete-li použít výchozí "
+"systémový dočasný adresář."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:5
+msgid "Enable Burnproof option"
+msgstr "Povolit možnost Burnproof"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:6
+msgid "Enable debug"
+msgstr "Povolit ladění"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:7
+msgid "Enable overburn"
+msgstr "Povolit přesáhnutí kapacity disku"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:8
+msgid "Whether to allow the data to exceed the size of the physical medium."
+msgstr "Jestli povolit, aby data přesáhla velikost fyzického média."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:9
+msgid "Whether to enable the debugging for CD Recording."
+msgstr "Jestli povolit ladění vypalování CD."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:10
+msgid "Whether to use the Burnproof option available on some recorders."
+msgstr ""
+"Jestli používat možnost Burnproof, dostupnou v některých vypalovacích "
+"mechanikách."
+
+#: ../src/burn-extension.c:141 ../src/burn-extension.c:145
+msgid "Unable to launch the cd burner application"
+msgstr "Nepodařilo se spustit aplikaci pro vypalování CD"
+
+#: ../src/burn-extension.c:453 ../src/burn-extension.c:463
+#: ../src/burn-extension.c:551
+msgid "_Write to Disc..."
+msgstr "_Zapsat na disk…"
+
+#: ../src/burn-extension.c:454
+msgid "Write disc image to a CD or DVD disc"
+msgstr "Zapsat obraz disku na CD nebo DVD"
+
+#: ../src/burn-extension.c:464
+msgid "Write disc image cuesheet to a CD or DVD disc"
+msgstr "Zapsat cuesheet obrazu disku na CD nebo DVD"
+
+#: ../src/burn-extension.c:510
+msgid "_Copy Disc..."
+msgstr "_Kopírovat disk…"
+
+#: ../src/burn-extension.c:511
+msgid "Create a copy of this CD or DVD disc"
+msgstr "Vytvořit kopii tohoto CD nebo DVD"
+
+#: ../src/burn-extension.c:552 ../src/nautilus-burn-bar.c:151
+msgid "Write contents to a CD or DVD disc"
+msgstr "Zapsat obsah na CD nebo DVD"
+
+#: ../src/make-iso.c:306
+msgid "Disable Microsoft Windows compatibility?"
+msgstr "Zakázat kompatibilitu s Microsoft Windows?"
+
+#: ../src/make-iso.c:309
+msgid ""
+"Some files don't have a suitable name for a Windows-compatible CD.\n"
+"Do you want to continue with Windows compatibility disabled?"
+msgstr ""
+"Některé soubory nemají názvy vhodné pro CD kompatibilní s Windows.\n"
+"Chcete pokračovat bez kompatibility s Windows?"
+
+#: ../src/make-iso.c:310
+msgid "Windows compatibility"
+msgstr "Kompatibilita s Windows"
+
+#: ../src/make-iso.c:707
+msgid " (invalid Unicode)"
+msgstr " (neplatné Unicode)"
+
+#: ../src/make-iso.c:868
+#, c-format
+msgid ""
+"The selected location does not have enough space to store the disc image (%s "
+"MiB needed)."
+msgstr ""
+"Zvolené umístění nemá dostatek místa na uložení obrazu disku (je potřeba %s "
+"MiB)."
+
+#: ../src/make-iso.c:1012 ../src/make-iso.c:1402
+#, c-format
+msgid "Could not run sub process: %s."
+msgstr "Nepodařilo se spustit podřízený proces: %s."
+
+#: ../src/make-iso.c:1039
+msgid "The operation was cancelled by the user."
+msgstr "Operace byla přerušena uživatelem."
+
+#: ../src/make-iso.c:1140
+#, c-format
+msgid ""
+"Some files have invalid filenames: \n"
+"%s"
+msgstr ""
+"Některé soubory mají neplatné názvy: \n"
+"%s"
+
+#: ../src/make-iso.c:1153
+msgid "Unknown character encoding."
+msgstr "Neznámé kódování znaků."
+
+#: ../src/make-iso.c:1157
+msgid "There is no space left on the device."
+msgstr "Na zařízení není dost volného místa."
+
+#. TODO: get filename from error message
+#: ../src/make-iso.c:1162
+msgid "File too large for filesystem."
+msgstr "Soubor je pro souborový systém příliš velký."
+
+#: ../src/make-iso.c:1215
+msgid "The label for the image is too long."
+msgstr "Jmenovka obrazu je příliš dlouhá."
+
+#: ../src/make-iso.c:1323
+msgid "There are no files to write to disc."
+msgstr "Nebyly vybrány žádné soubory k zápisu na disk."
+
+#: ../src/make-iso.c:1674
+msgid "Not a valid disc image."
+msgstr "Není platným obrazem disku."
+
+#: ../src/nautilus-burn-bar.c:137
+msgid "CD/DVD Creator Folder"
+msgstr "Adresář Tvůrce CD a DVD"
+
+#: ../src/nautilus-burn-bar.c:141 ../src/ncb-selection-dialog.c:175
+msgid "Write to Disc"
+msgstr "Zapsat na disk"
+
+#: ../src/nautilus-burn-drive.c:1252
+msgid "Could not determine media type because CD drive is busy"
+msgstr "Nepodařilo se určit typ média, protože mechanika CD je zaneprázdněna"
+
+#: ../src/nautilus-burn-drive.c:1254
+msgid "Couldn't open media"
+msgstr "Nepodařilo se otevřít médium"
+
+#: ../src/nautilus-burn-drive.c:1256
+msgid "Unknown Media"
+msgstr "Neznámé médium"
+
+#: ../src/nautilus-burn-drive.c:1258
+msgid "Commercial CD or Audio CD"
+msgstr "Komerční CD, nebo zvukové CD"
+
+#: ../src/nautilus-burn-drive.c:1260
+msgid "CD-R"
+msgstr "CD-R"
+
+#: ../src/nautilus-burn-drive.c:1262
+msgid "CD-RW"
+msgstr "CD-RW"
+
+#: ../src/nautilus-burn-drive.c:1264
+msgid "DVD"
+msgstr "DVD"
+
+#: ../src/nautilus-burn-drive.c:1266
+msgid "DVD-R, or DVD-RAM"
+msgstr "DVD-R, nebo DVD-RAM"
+
+#: ../src/nautilus-burn-drive.c:1268
+msgid "DVD-RW"
+msgstr "DVD-RW"
+
+#: ../src/nautilus-burn-drive.c:1270
+msgid "DVD-RAM"
+msgstr "DVD-RAM"
+
+#: ../src/nautilus-burn-drive.c:1272
+msgid "DVD+R"
+msgstr "DVD+R"
+
+#: ../src/nautilus-burn-drive.c:1274
+msgid "DVD+RW"
+msgstr "DVD+RW"
+
+#: ../src/nautilus-burn-drive.c:1276
+msgid "DVD+R DL"
+msgstr "DVD+R DL"
+
+#: ../src/nautilus-burn-drive.c:1281
+msgid "Broken media type"
+msgstr "Špatný typ média"
+
+#: ../src/nautilus-burn-drive-monitor.c:452
+msgid "File image"
+msgstr "Soubor obrazu"
+
+#: ../src/nautilus-burn-drive-selection.c:107 ../src/ncb-selection.c:1022
+msgid "Drive"
+msgstr "Mechanika"
+
+#: ../src/nautilus-burn-drive-selection.c:237
+msgid "Unnamed CD/DVD Drive"
+msgstr "Nepojmenovaná mechanika CD nebo DVD"
+
+#: ../src/nautilus-burn-recorder.c:602
+msgid "The recorder could not be accessed."
+msgstr "Nepodařilo se přistoupit k vypalovací mechanice."
+
+#: ../src/nautilus-burn-recorder.c:606
+msgid "Not enough space available on the disc."
+msgstr "Na disku není dost volného místa."
+
+#: ../src/nautilus-burn-recorder.c:610 ../src/nautilus-burn-recorder.c:614
+msgid "The files selected did not fit on the DVD."
+msgstr "Vybrané soubory se nevešly na DVD."
+
+#: ../src/nautilus-burn-recorder.c:626
+msgid "The target DVD drive is still in use."
+msgstr "Cílová mechanika DVD se stále používá."
+
+#: ../src/nautilus-burn-recorder.c:632
+msgid "Unhandled error, aborting"
+msgstr "Neobsloužená chyba, ukončuje se"
+
+#: ../src/nautilus-burn-recorder.c:697
+msgid "The CD has already been recorded."
+msgstr "Na toto CD již bylo zapsáno."
+
+#: ../src/nautilus-burn-recorder.c:717
+msgid "The files selected did not fit on the CD."
+msgstr "Vybrané soubory se nevešly na CD."
+
+#: ../src/nautilus-burn-recorder.c:721
+msgid ""
+"All audio files must be stereo, 16-bit digital audio with 44100Hz samples."
+msgstr ""
+"Všechny zvukové soubory musí být stereo, 16bitové digitální zvuky se "
+"vzorkováním 44100 Hz."
+
+#: ../src/nautilus-burn-recorder.c:745
+msgid "Error while writing to disc.  Try a lower speed."
+msgstr "Chyba při zápisu na disk. Zkuste nižší rychlost."
+
+#: ../src/nautilus-burn-recorder.c:750
+msgid ""
+"The system is too slow to write the CD at this speed. Try a lower speed."
+msgstr ""
+"Systém ji příliš pomalý na zápis na CD touto rychlostí. Zkuste nižší "
+"rychlost."
+
+#: ../src/nautilus-burn-recorder.c:884
+msgid "You can only burn 99 tracks on one disc"
+msgstr "Na jeden disk lze vypálit jen 99 stop"
+
+#: ../src/nautilus-burn-recorder.c:891
+msgid "No tracks given to write"
+msgstr "Nezadány žádné stopy k zápisu"
+
+#: ../src/nautilus-burn-recorder.c:896
+msgid "Burning CD/DVD"
+msgstr "Vypaluje se CD nebo DVD"
+
+#: ../src/nautilus-burn-recorder.c:1101
+msgid "Can only use growisofs on a single track"
+msgstr "Growisofs lze použít jen pro jednu stopu"
+
+# ten graft list nepřekládám, protože stejně asi nikdo neví, co to je a v češtině pro to pravděpodobně nemáme termín...
+#: ../src/nautilus-burn-recorder.c:1112
+msgid "Can only use growisofs on a data or graft list track"
+msgstr "Growisofs lze použít jen pro datovou stopu"
+
+#: ../src/nautilus-burn-recorder.c:1480
+msgid "Blanking CD"
+msgstr "Maže se CD"
+
+#: ../src/nautilus-burn-recorder.c:1550
+msgid "Blanking DVD"
+msgstr "Maže se DVD"
+
+#: ../src/nautilus-burn-process.c:497
+#, c-format
+msgid "Could not run the necessary command: %s"
+msgstr "Nepodařilo se spustit potřebný příkaz: %s"
+
+#: ../src/nautilus-cd-burner.c:157
+#, c-format
+msgid "There was a problem displaying the help contents: %s."
+msgstr "Při zobrazování obsahu nápovědy se vyskytl problém: %s."
+
+#: ../src/nautilus-cd-burner.c:158
+msgid "Cannot display help"
+msgstr "Nelze zobrazit nápovědu"
+
+#: ../src/nautilus-cd-burner.c:293
+msgid "Use CD/DVD device as source instead of burn:///"
+msgstr "Použijte zařízení CD nebo DVD jako zdroj namísto burn:///"
+
+#: ../src/nautilus-cd-burner.c:293
+msgid "DEVICE"
+msgstr "ZAŘÍZENÍ"
+
+#: ../src/nautilus-cd-burner.c:295
+msgid "Use ISO image as source instead of burn:///"
+msgstr "Použijte ISO obraz jako zdroj namísto burn:///"
+
+#: ../src/nautilus-cd-burner.c:295 ../src/nautilus-cd-burner.c:297
+msgid "FILENAME"
+msgstr "NÁZEV SOUBORU"
+
+#: ../src/nautilus-cd-burner.c:297
+msgid "Use CUE/TOC file as source instead of burn:///"
+msgstr "Použijte soubor CUE nebo TOC jako zdroj namísto burn:///"
+
+#: ../src/ncb-selection.c:442
+msgid ""
+"It appears that the disc, when created, will contain a single disc image "
+"file.  Do you want to create a disc from the contents of the image or with "
+"the image file inside?"
+msgstr ""
+"Zdá se, že vytvořený disk by obsahoval jediný soubor představující obraz "
+"disku. Chcete vytvořit disk z obsahu tohoto obrazu, nebo disk obsahující "
+"pouze tento soubor?"
+
+#: ../src/ncb-selection.c:445
+msgid "Create disc containing a single disc image file?"
+msgstr "Vytvořit disk obsahující jeden soubor s obrazem disku?"
+
+#: ../src/ncb-selection.c:448
+msgid "Create From Image"
+msgstr "Vytvořit z obrazu"
+
+#: ../src/ncb-selection.c:450
+msgid "Create With File"
+msgstr "Vytvořit se souborem"
+
+#: ../src/ncb-selection.c:453
+msgid ""
+"It appears that the disc, when created, will contain only disc image files.  "
+"Do you want to continue and write them to the disc as files?"
+msgstr ""
+"Zdá se, že vytvořený disk by obsahoval jen soubory s obrazy disků. Chcete "
+"pokračovat a zapsat je na disk jako soubory?"
+
+#: ../src/ncb-selection.c:456
+msgid "Create disc containing only disc image files?"
+msgstr "Vytvořit disk obsahující jen obrazy disků?"
+
+#: ../src/ncb-selection.c:460
+msgid "Create With Files"
+msgstr "Vytvořit se soubory"
+
+#: ../src/ncb-selection.c:491
+#, c-format
+msgid ""
+"The file '%s' is unreadable.  Do you wish to skip this file and continue?"
+msgstr "Soubor „%s“ nelze číst. Chcete tento soubor přeskočit a pokračovat?"
+
+#: ../src/ncb-selection.c:494
+msgid "Skip unreadable file?"
+msgstr "Přeskočit nečitelný soubor?"
+
+#: ../src/ncb-selection.c:499
+msgid "Skip"
+msgstr "Přeskočit"
+
+#: ../src/ncb-selection.c:499
+msgid "Skip All"
+msgstr "Přeskočit vše"
+
+#: ../src/ncb-selection.c:522
+msgid "No files were selected."
+msgstr "Nebyly vybrány žádné soubory."
+
+#: ../src/ncb-selection.c:553
+#, c-format
+msgid "The file '%s' is not a valid disc image."
+msgstr "Soubor „%s“ není platným obrazem disku."
+
+#: ../src/ncb-selection.c:628
+#, c-format
+msgid "The specified device '%s' is not a valid CD/DVD drive."
+msgstr "Určené zařízení „%s“ není platnou mechanikou CD nebo DVD."
+
+#: ../src/ncb-selection.c:652
+msgid "There doesn't seem to be any media in the selected drive."
+msgstr "Ve zvolené mechanice zřejmě není žádné médium."
+
+#: ../src/ncb-selection.c:659
+msgid "The media is blank."
+msgstr "Médium je prázdné."
+
+#: ../src/ncb-selection.c:692
+#, c-format
+msgid "File not found: %s"
+msgstr "Soubor nenalezen: %s"
+
+#: ../src/ncb-selection.c:701
+#, c-format
+msgid "File does not appear to be a valid CUE sheet: %s"
+msgstr "Soubor se nezdá být platným souborem CUE: %s"
+
+#.
+#. translators: see strftime man page for meaning of %b, %d and %Y
+#. the maximum length for this field is 32 bytes
+#.
+#: ../src/ncb-selection.c:745
+msgid "Personal Data, %b %d, %Y"
+msgstr "Osobní data, %d. %B %Y"
+
+#: ../src/ncb-selection.c:817
+msgid "Unable to create CD/DVD"
+msgstr "Nepodařilo se vytvořit CD nebo DVD"
+
+#: ../src/ncb-selection.c:981
+msgid "Source name"
+msgstr "Název zdroje"
+
+#: ../src/ncb-selection.c:988
+msgid "Source type"
+msgstr "Typ zdroje"
+
+#: ../src/ncb-selection.c:996
+msgid "Source size"
+msgstr "Velikost zdroje"
+
+#: ../src/ncb-selection.c:1005
+msgid "Disc label"
+msgstr "Popisek disku"
+
+#: ../src/ncb-selection.c:1012
+msgid "Write speed"
+msgstr "Rychlost zápisu"
+
+#: ../src/ncb-selection-dialog.c:171
+msgid "Copy Disc"
+msgstr "Kopírovat disk"
+
+#: ../src/ncb-selection-dialog.c:173
+msgid "Copy disc _to:"
+msgstr "Kopírovat disk _do:"
+
+#: ../src/ncb-selection-dialog.c:345
+msgid "Maximum possible"
+msgstr "Maximální možná"
+
+#: ../src/ncb-selection-dialog.c:558
+msgid "Calculating..."
+msgstr "Počítá se…"
+
+#: ../src/ncb-selection-dialog.c:637
+msgid "_Write"
+msgstr "_Zapsat"
+
+#: ../src/ncb-operation.c:242
+msgid "Preparing to write CD"
+msgstr "Připravuje se zápis na CD"
+
+#: ../src/ncb-operation.c:244
+msgid "Preparing to write DVD"
+msgstr "Připravuje se zápis na DVD"
+
+#: ../src/ncb-operation.c:249
+msgid "Writing CD"
+msgstr "Zapisuje se na CD"
+
+#: ../src/ncb-operation.c:251
+msgid "Writing DVD"
+msgstr "Zapisuje se na DVD"
+
+#: ../src/ncb-operation.c:256 ../src/ncb-operation.c:258
+msgid "Finishing write"
+msgstr "Dokončuje se zápis"
+
+#: ../src/ncb-operation.c:263
+msgid "Erasing CD"
+msgstr "Maže se CD"
+
+#: ../src/ncb-operation.c:265
+msgid "Erasing DVD"
+msgstr "Maže se DVD"
+
+#: ../src/ncb-operation.c:349
+msgid "None"
+msgstr "Nic"
+
+#: ../src/ncb-operation.c:356
+msgid "Please make sure another application is not using the drive."
+msgstr "Prosím, přesvědčte se, že mechaniku nepoužívá jiná aplikace."
+
+#: ../src/ncb-operation.c:357
+msgid "Drive is busy"
+msgstr "Mechanika je zaneprázdněna"
+
+#: ../src/ncb-operation.c:359 ../src/ncb-operation.c:364
+#, c-format
+msgid ""
+"Please put a disc, with at least %s free, into the drive.  The following "
+"disc types are supported:\n"
+"%s"
+msgstr ""
+"Prosím, vložte do mechaniky disk s alespoň %s MiB volnými. Jsou podporovány "
+"následující typy disků:\n"
+"%s"
+
+#: ../src/ncb-operation.c:362
+msgid "Insert a rewritable or blank disc"
+msgstr "Vložte přepisovatelný, nebo prázdný disk"
+
+#: ../src/ncb-operation.c:367
+msgid "Insert a blank disc"
+msgstr "Vložte prázdný disk"
+
+#: ../src/ncb-operation.c:370 ../src/ncb-operation.c:376
+#, c-format
+msgid ""
+"Please replace the disc in the drive with a supported disc with at least %s "
+"free.  The following disc types are supported:\n"
+"%s"
+msgstr ""
+"Prosím, nahraďte disk v mechanice podporovaným diskem s alespoň %s MiB "
+"volnými. Jsou podporovány následující typy disků:\n"
+"%s"
+
+#: ../src/ncb-operation.c:373
+msgid "Reload a rewritable or blank disc"
+msgstr "Znovu vložit přepisovatelný, nebo prázdný disk"
+
+#: ../src/ncb-operation.c:379
+msgid "Reload a blank disc"
+msgstr "Znovu vložit prázdný disk"
+
+#: ../src/ncb-operation.c:390
+msgid "_Eject"
+msgstr "_Vysunout"
+
+#: ../src/ncb-operation.c:457
+#, c-format
+msgid "This %s appears to have information already recorded on it."
+msgstr "Na tomto %s již zřejmě byly zaznamenány informace."
+
+#: ../src/ncb-operation.c:461
+msgid "Erase information on this disc?"
+msgstr "Vymazat informace z tohoto disku?"
+
+#: ../src/ncb-operation.c:469
+msgid "_Try Another"
+msgstr "_Zkusit jiné"
+
+#: ../src/ncb-operation.c:480
+msgid "_Erase Disc"
+msgstr "_Vymazat disk"
+
+#: ../src/ncb-operation.c:512
+#, c-format
+msgid ""
+"There was an error writing to the disc:\n"
+"%s"
+msgstr ""
+"Při zápisu na disk se vyskytla chyba:\n"
+"%s"
+
+#: ../src/ncb-operation.c:515
+msgid "There was an error writing to the disc"
+msgstr "Při zápisu na disk se vyskytla chyba"
+
+#: ../src/ncb-operation.c:518
+msgid "Error writing to disc"
+msgstr "Chyba při zápisu na disk"
+
+#: ../src/ncb-operation.c:573
+#, c-format
+msgid "A file named \"%s\" already exists.  Do you want to overwrite it?"
+msgstr "Soubor nazvaný „%s“ již existuje. Chcete jej přepsat?"
+
+#: ../src/ncb-operation.c:575
+msgid "Overwrite existing file?"
+msgstr "Přepsat existující soubor?"
+
+#: ../src/ncb-operation.c:584
+msgid "_Overwrite"
+msgstr "_Přepsat"
+
+#: ../src/ncb-operation.c:603
+msgid "Choose a filename for the disc image"
+msgstr "Zvolte název souboru pro obraz disku"
+
+#. Translators: this is the filename of the image
+#: ../src/ncb-operation.c:739
+msgid "image.iso"
+msgstr "obraz.iso"
+
+#: ../src/ncb-operation.c:760
+#, c-format
+msgid "You do not have permissions to overwrite that file (%s)."
+msgstr "Nemáte oprávnění přepsat tento soubor (%s)."
+
+#: ../src/ncb-operation.c:761 ../src/ncb-operation.c:776
+#: ../src/ncb-operation.c:1582
+msgid "File image creation failed"
+msgstr "Tvorba souboru s obrazem selhala"
+
+#: ../src/ncb-operation.c:775
+#, c-format
+msgid "You do not have permissions to create that file (%s)."
+msgstr "Nemáte oprávnění vytvořit tento soubor (%s)."
+
+#: ../src/ncb-operation.c:840
+msgid "Complete"
+msgstr "Dokončeno"
+
+#: ../src/ncb-operation.c:843
+msgid "An error occurred while writing"
+msgstr "Při zápisu došlo k chybě"
+
+#: ../src/ncb-operation.c:903
+msgid "Writing Files to a Disc Image"
+msgstr "Do obrazu disku se zapisují soubory"
+
+#: ../src/ncb-operation.c:904
+msgid "Writing Files to CD"
+msgstr "Na CD se zapisují soubory"
+
+#: ../src/ncb-operation.c:905
+msgid "Writing Files to DVD"
+msgstr "Na DVD se zapisují soubory"
+
+#: ../src/ncb-operation.c:908
+msgid "Writing Image to Disc"
+msgstr "Na disk se zapisuje obraz"
+
+#: ../src/ncb-operation.c:909
+msgid "Copying Disc Image"
+msgstr "Kopíruje se obraz disku"
+
+#: ../src/ncb-operation.c:910
+msgid "Writing Image to CD"
+msgstr "Na CD se zapisuje obraz"
+
+#: ../src/ncb-operation.c:911
+msgid "Writing Image to DVD"
+msgstr "Na DVD se zapisuje obraz"
+
+#: ../src/ncb-operation.c:914
+msgid "Copying Disc"
+msgstr "Kopíruje se disk"
+
+#: ../src/ncb-operation.c:915
+msgid "Copying Disc to a Disc Image"
+msgstr "Do obrazu disku se kopíruje disk"
+
+#: ../src/ncb-operation.c:916
+msgid "Copying Disc to CD"
+msgstr "Na CD se kopíruje disk"
+
+#: ../src/ncb-operation.c:917
+msgid "Copying Disc to DVD"
+msgstr "Na DVD se kopíruje disk"
+
+#: ../src/ncb-operation.c:921
+msgid "Writing files to disc"
+msgstr "Na disk se zapisují soubory"
+
+#: ../src/ncb-operation.c:922
+msgid "Writing files to a disc image"
+msgstr "Do obrazu disku se zapisují soubory"
+
+#: ../src/ncb-operation.c:923
+msgid "Writing files to CD"
+msgstr "Na CD se zapisují soubory"
+
+#: ../src/ncb-operation.c:924
+msgid "Writing files to DVD"
+msgstr "Na DVD se zapisují soubory"
+
+#: ../src/ncb-operation.c:927
+msgid "Writing image to disc"
+msgstr "Na disk se zapisuje se obraz"
+
+#: ../src/ncb-operation.c:928
+msgid "Copying disc image"
+msgstr "Kopíruje se obraz disku"
+
+#: ../src/ncb-operation.c:929
+msgid "Writing image to CD"
+msgstr "Na CD se zapisuje obraz"
+
+#: ../src/ncb-operation.c:930
+msgid "Writing image to DVD"
+msgstr "Na DVD se zapisuje obraz"
+
+#: ../src/ncb-operation.c:933
+msgid "Copying disc"
+msgstr "Kopíruje se disk"
+
+#: ../src/ncb-operation.c:934
+msgid "Copying disc to a disc image"
+msgstr "Do obrazu disku se kopíruje disk"
+
+#: ../src/ncb-operation.c:935
+msgid "Copying disc to CD"
+msgstr "Na CD se kopíruje disk"
+
+#: ../src/ncb-operation.c:936
+msgid "Copying disc to DVD"
+msgstr "Na DVD se kopíruje disk"
+
+#: ../src/ncb-operation.c:940
+msgid ""
+"The selected files are being written to a CD or DVD.  This operation may "
+"take a long time, depending on data size and write speed."
+msgstr ""
+"Vybrané soubory se zapisují na CD nebo DVD. Tato operace může podle "
+"velikosti dat a rychlosti zápisu trvat dlouho."
+
+#: ../src/ncb-operation.c:941
+msgid "The selected files are being written to a disc image file."
+msgstr "Vybrané soubory se zapisují do souboru s obrazem disku."
+
+#: ../src/ncb-operation.c:942
+msgid ""
+"The selected files are being written to a CD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr ""
+"Vybrané soubory se zapisují na CD. Tato operace může podle velikosti dat a "
+"rychlosti zápisu trvat dlouho."
+
+#: ../src/ncb-operation.c:943
+msgid ""
+"The selected files are being written to a DVD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr ""
+"Vybrané soubory se zapisují na DVD. Tato operace může podle velikosti dat a "
+"rychlosti zápisu trvat dlouho."
+
+#: ../src/ncb-operation.c:946
+msgid ""
+"The selected disc image is being written to a CD or DVD.  This operation may "
+"take a long time, depending on data size and write speed."
+msgstr ""
+"Vybraný obraz disku se zapisuje na CD nebo DVD. Tato operace může podle "
+"velikosti dat a rychlosti zápisu trvat dlouho."
+
+#: ../src/ncb-operation.c:947
+msgid "The selected disc image is being copied to a disc image file."
+msgstr "Vybraný obraz disku se zapisuje do souboru s obrazem disku."
+
+#: ../src/ncb-operation.c:948
+msgid ""
+"The selected disc image is being written to a CD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr ""
+"Vybraný obraz disku se zapisuje na CD. Tato operace může podle velikosti dat "
+"a rychlosti zápisu trvat dlouho."
+
+#: ../src/ncb-operation.c:949
+msgid ""
+"The selected disc image is being written to a DVD.  This operation may take "
+"a long time, depending on data size and write speed."
+msgstr ""
+"Vybraný obraz disku se zapisuje na DVD. Tato operace může podle velikosti "
+"dat a rychlosti zápisu trvat dlouho."
+
+#: ../src/ncb-operation.c:952
+msgid ""
+"The selected disc is being copied to a CD or DVD.  This operation may take a "
+"long time, depending on data size and drive speed."
+msgstr ""
+"Vybraný disk se kopíruje na CD nebo DVD. Tato operace může podle velikosti "
+"dat a rychlosti zápisu trvat dlouho."
+
+#: ../src/ncb-operation.c:953
+msgid ""
+"The selected disc is being copied to a disc image file.  This operation may "
+"take a long time, depending on data size and drive speed."
+msgstr ""
+"Vybraný disk se kopíruje do souboru s obrazem disku. Tato operace může podle "
+"velikosti dat a rychlosti zápisu trvat dlouho."
+
+#: ../src/ncb-operation.c:954
+msgid ""
+"The selected disc is being copied to a CD.  This operation may take a long "
+"time, depending on data size and drive speed."
+msgstr ""
+"Vybraný disk se kopíruje na CD. Tato operace může podle velikosti dat a "
+"rychlosti zápisu trvat dlouho."
+
+#: ../src/ncb-operation.c:955
+msgid ""
+"The selected disc is being copied to a DVD.  This operation may take a long "
+"time, depending on data size and drive speed."
+msgstr ""
+"Vybraný disk se kopíruje na DVD. Tato operace může podle velikosti dat a "
+"rychlosti zápisu trvat dlouho."
+
+#: ../src/ncb-operation.c:1012
+msgid "Burning CD"
+msgstr "Vypaluje se CD"
+
+#: ../src/ncb-operation.c:1179 ../src/ncb-operation.c:1403
+msgid "Creating disc image"
+msgstr "Vytváří se obraz disku"
+
+#: ../src/ncb-operation.c:1621
+#, c-format
+msgid "Writing CD/DVD-Image '%s'."
+msgstr "Zapisuji obraz CD/DVD \"%s\"."
+
+#: ../src/ncb-operation.c:1626
+#, c-format
+msgid "Writing disc '%s'."
+msgstr "Zapisuje se CD/DVD disk \"%s\"."
+
+#: ../src/ncb-operation.c:1628
+#, c-format
+msgid "Writing %s '%s'."
+msgstr "Zapisuje se %s \"%s\"."
+
+#: ../src/ncb-operation.c:1717
+#, c-format
+msgid "Completed writing %s"
+msgstr "Zápis %s byl dokončen"
+
+#: ../src/ncb-operation.c:1822
+msgid "Interrupt writing files to disc?"
+msgstr "Přerušit zápis souborů na disk?"
+
+#: ../src/ncb-operation.c:1823
+msgid ""
+"Are you sure you want to interrupt the disc write operation? Some drives may "
+"require that you restart the computer to get them working again."
+msgstr ""
+"Opravdu chcete přerušit operaci zápisu na disk? Některé mechaniky vyžadují, "
+"abyste k jejich opětovnému zprovoznění restartovali počítač."
+
+#: ../src/ncb-operation.c:1829
+msgid "Interrupt"
+msgstr "Přerušit"
+
+#: ../src/ncb-operation.c:1831
+msgid "Continue"
+msgstr "Pokračovat"
+
+#: ../src/ncb-progress-dialog.c:146
+#, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d hodina"
+msgstr[1] "%d hodiny"
+msgstr[2] "%d hodin"
+
+#: ../src/ncb-progress-dialog.c:148
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d minuta"
+msgstr[1] "%d minuty"
+msgstr[2] "%d minut"
+
+#: ../src/ncb-progress-dialog.c:151
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d sekunda"
+msgstr[1] "%d sekundy"
+msgstr[2] "%d sekund"
+
+#. hour:minutes:seconds
+#: ../src/ncb-progress-dialog.c:156
+#, c-format
+msgid "%s %s %s"
+msgstr "%s %s %s"
+
+#. minutes:seconds
+#: ../src/ncb-progress-dialog.c:159
+#, c-format
+msgid "%s %s"
+msgstr "%s %s"
+
+#. seconds
+#: ../src/ncb-progress-dialog.c:162
+#, c-format
+msgid "%s"
+msgstr "%s"
+
+#. 0 seconds
+#: ../src/ncb-progress-dialog.c:165
+msgid "0 seconds"
+msgstr "0 sekund"
+
+#: ../src/ncb-progress-dialog.c:189
+#, c-format
+msgid "About %s left"
+msgstr "Zbývá asi %s"
+
+#: ../src/ncb-progress-dialog.c:439
+msgid "_Make Another Copy"
+msgstr "Vytvořit další _kopii"
+
+#: ../src/ncb-rename-dialog.c:479
+msgid "C_ontinue"
+msgstr "P_okračovat"
+
+#: ../src/ncb-rename-dialog.c:507
+msgid "Filename"
+msgstr "Název souboru"
+
+#: ../src/ncb-rename-dialog.c:523
+msgid "Rename file"
+msgstr "Přejmenovat soubor"

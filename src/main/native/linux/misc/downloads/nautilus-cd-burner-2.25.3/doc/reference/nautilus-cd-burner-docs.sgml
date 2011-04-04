@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<book id="index" xmlns:xi="http://www.w3.org/2003/XInclude">
+  <bookinfo>
+    <title>libnautilus-burn Reference Manual</title>
+    <xi:include href="version.xml"/>
+  </bookinfo>
+
+  <chapter>
+    <title>libnautilus-burn Reference Manual</title>
+    <xi:include href="xml/nautilus-burn-init.xml"/>
+    <xi:include href="xml/nautilus-burn-features.xml"/>
+    <xi:include href="xml/nautilus-burn-drive.xml"/>
+    <xi:include href="xml/nautilus-burn-drive-selection.xml"/>
+    <xi:include href="xml/nautilus-burn-drive-monitor.xml"/>
+    <xi:include href="xml/nautilus-burn-recorder.xml"/>
+    <xi:include href="xml/nautilus-burn-process.xml"/>
+  </chapter>
+</book>

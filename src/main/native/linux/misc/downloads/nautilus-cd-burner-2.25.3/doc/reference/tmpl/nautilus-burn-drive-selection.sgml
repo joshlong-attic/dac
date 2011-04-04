@@ -1,0 +1,131 @@
+<!-- ##### SECTION Title ##### -->
+NautilusBurnDriveSelection
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### TYPEDEF NautilusBurnDriveSelectionPrivate ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT NautilusBurnDriveSelection ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL NautilusBurnDriveSelection::device-changed ##### -->
+<para>
+
+</para>
+
+@nautilusburndriveselection: the object which received the signal.
+@arg1: 
+
+<!-- ##### SIGNAL NautilusBurnDriveSelection::drive-changed ##### -->
+<para>
+
+</para>
+
+@nautilusburndriveselection: the object which received the signal.
+@arg1: 
+
+<!-- ##### ARG NautilusBurnDriveSelection:device ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG NautilusBurnDriveSelection:drive ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG NautilusBurnDriveSelection:file-image ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG NautilusBurnDriveSelection:show-recorders-only ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION nautilus_burn_drive_selection_new ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_selection_set_active ##### -->
+<para>
+
+</para>
+
+@selection: 
+@drive: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_selection_get_active ##### -->
+<para>
+
+</para>
+
+@selection: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_selection_get_drive ##### -->
+<para>
+
+</para>
+
+@selection: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_selection_set_device ##### -->
+<para>
+
+</para>
+
+@selection: 
+@device: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_selection_get_device ##### -->
+<para>
+
+</para>
+
+@selection: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_selection_get_default_device ##### -->
+<para>
+
+</para>
+
+@selection: 
+@Returns: 
+
+

@@ -1,0 +1,21 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+data/nautilus-cd-burner.desktop.in
+data/nautilus-cd-burner-open-iso.desktop.in
+data/nautilus-cd-burner.glade
+data/nautilus-cd-burner.schemas.in
+src/burn-extension.c
+src/make-iso.c
+src/nautilus-burn-bar.c
+src/nautilus-burn-drive.c
+src/nautilus-burn-drive-monitor.c
+src/nautilus-burn-drive-selection.c
+src/nautilus-burn-init.c
+src/nautilus-burn-recorder.c
+src/nautilus-burn-process.c
+src/nautilus-cd-burner.c
+src/ncb-selection.c
+src/ncb-selection-dialog.c
+src/ncb-operation.c
+src/ncb-progress-dialog.c
+src/ncb-rename-dialog.c

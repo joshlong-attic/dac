@@ -1,0 +1,31 @@
+diff -Nur -x '*.orig' -x '*~' nautilus-cd-burner-2.23.90/ltmain.sh nautilus-cd-burner-2.23.90.new/ltmain.sh
+--- nautilus-cd-burner-2.23.90/ltmain.sh	2008-08-18 17:06:11.000000000 +0200
++++ nautilus-cd-burner-2.23.90.new/ltmain.sh	2008-08-20 21:12:53.000000000 +0200
+@@ -1806,7 +1806,10 @@
+ 	IFS="$save_ifs"
+ 	arg=`$echo "X$arg" | $Xsed -e "s/^ //"`
+ 	;;
+-
++      -Wl,--as-needed)
++	deplibs="$deplibs $arg"
++	continue
++	;;
+       -Wl,*)
+ 	args=`$echo "X$arg" | $Xsed -e "$sed_quote_subst" -e 's/^-Wl,//'`
+ 	arg=
+@@ -2147,6 +2150,15 @@
+ 	lib=
+ 	found=no
+ 	case $deplib in
++	-Wl,--as-needed)
++	  if test "$linkmode,$pass" = "prog,link"; then
++	    compile_deplibs="$deplib $compile_deplibs"
++	    finalize_deplibs="$deplib $finalize_deplibs"
++	  else
++	    deplibs="$deplib $deplibs"
++	  fi
++	  continue
++	  ;;
+ 	-mt|-mthreads|-kthread|-Kthread|-pthread|-pthreads|--thread-safe|-threads)
+ 	  if test "$linkmode,$pass" = "prog,link"; then
+ 	    compile_deplibs="$deplib $compile_deplibs"

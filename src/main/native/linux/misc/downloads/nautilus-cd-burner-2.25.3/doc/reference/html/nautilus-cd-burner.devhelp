@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
+<book xmlns="http://www.devhelp.net/book" title="libnautilus-burn Reference Manual" link="index.html" author="" name="nautilus-cd-burner">
+  <chapters>
+    <sub name="libnautilus-burn Reference Manual" link="ch01.html">
+      <sub name="nautilus-burn-init" link="nautilus-cd-burner-nautilus-burn-init.html"/>
+      <sub name="nautilus-burn-features" link="nautilus-cd-burner-nautilus-burn-features.html"/>
+      <sub name="nautilus-burn-drive" link="nautilus-cd-burner-nautilus-burn-drive.html"/>
+      <sub name="NautilusBurnDriveSelection" link="NautilusBurnDriveSelection.html"/>
+      <sub name="nautilus-burn-drive-monitor" link="nautilus-cd-burner-nautilus-burn-drive-monitor.html"/>
+      <sub name="nautilus-burn-recorder" link="nautilus-cd-burner-nautilus-burn-recorder.html"/>
+      <sub name="nautilus-burn-process" link="nautilus-cd-burner-nautilus-burn-process.html"/>
+    </sub>
+  </chapters>
+  <functions>
+    <function name="nautilus_burn_init ()" link="nautilus-cd-burner-nautilus-burn-init.html#nautilus-burn-init"/>
+    <function name="nautilus_burn_initialized ()" link="nautilus-cd-burner-nautilus-burn-init.html#nautilus-burn-initialized"/>
+    <function name="nautilus_burn_shutdown ()" link="nautilus-cd-burner-nautilus-burn-init.html#nautilus-burn-shutdown"/>
+    <function name="NAUTILUS_BURN_VERSION_MAJOR" link="nautilus-cd-burner-nautilus-burn-features.html#NAUTILUS-BURN-VERSION-MAJOR:CAPS"/>
+    <function name="NAUTILUS_BURN_VERSION_MINOR" link="nautilus-cd-burner-nautilus-burn-features.html#NAUTILUS-BURN-VERSION-MINOR:CAPS"/>
+    <function name="NAUTILUS_BURN_VERSION_MICRO" link="nautilus-cd-burner-nautilus-burn-features.html#NAUTILUS-BURN-VERSION-MICRO:CAPS"/>
+    <function name="NAUTILUS_BURN_CHECK_VERSION()" link="nautilus-cd-burner-nautilus-burn-features.html#NAUTILUS-BURN-CHECK-VERSION:CAPS"/>
+    <function name="enum NautilusBurnMediaType" link="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnMediaType"/>
+    <function name="NAUTILUS_BURN_MEDIA_SIZE_UNKNOWN" link="nautilus-cd-burner-nautilus-burn-drive.html#NAUTILUS-BURN-MEDIA-SIZE-UNKNOWN:CAPS"/>
+    <function name="NAUTILUS_BURN_MEDIA_SIZE_NA" link="nautilus-cd-burner-nautilus-burn-drive.html#NAUTILUS-BURN-MEDIA-SIZE-NA:CAPS"/>
+    <function name="NAUTILUS_BURN_MEDIA_SIZE_BUSY" link="nautilus-cd-burner-nautilus-burn-drive.html#NAUTILUS-BURN-MEDIA-SIZE-BUSY:CAPS"/>
+    <function name="enum NautilusBurnDriveType" link="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDriveType"/>
+    <function name="NautilusBurnDrive" link="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"/>
+    <function name="NautilusBurnDriveClass" link="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDriveClass"/>
+    <function name="NautilusBurnDrivePrivate" link="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrivePrivate"/>
+    <function name="media_added ()" link="nautilus-cd-burner-nautilus-burn-drive.html#media-added"/>
+    <function name="media_removed ()" link="nautilus-cd-burner-nautilus-burn-drive.html#media-removed"/>
+    <function name="disconnected ()" link="nautilus-cd-burner-nautilus-burn-drive.html#disconnected"/>
+    <function name="NAUTILUS_BURN_DRIVE_SIZE_TO_TIME()" link="nautilus-cd-burner-nautilus-burn-drive.html#NAUTILUS-BURN-DRIVE-SIZE-TO-TIME:CAPS"/>
+    <function name="NAUTILUS_BURN_DRIVE_CD_SPEED()" link="nautilus-cd-burner-nautilus-burn-drive.html#NAUTILUS-BURN-DRIVE-CD-SPEED:CAPS"/>
+    <function name="NAUTILUS_BURN_DRIVE_DVD_SPEED()" link="nautilus-cd-burner-nautilus-burn-drive.html#NAUTILUS-BURN-DRIVE-DVD-SPEED:CAPS"/>
+    <function name="NAUTILUS_BURN_DRIVE_MEDIA_TYPE_IS_DVD()" link="nautilus-cd-burner-nautilus-burn-drive.html#NAUTILUS-BURN-DRIVE-MEDIA-TYPE-IS-DVD:CAPS"/>
+    <function name="nautilus_burn_drive_ref ()" link="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-ref"/>
+    <function name="nautilus_burn_drive_unref ()" link="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-unref"/>
+    <function name="nautilus_burn_drive_equal ()" link="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-equal"/>
+    <function name="nautilus_burn_drive_lock ()" link="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-lock"/>
+    <function name="nautilus_burn_drive_unlock ()" link="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-unlock"/>
+    <function name="nautilus_burn_drive_unmount ()" link="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-unmount"/>
+    <function name="nautilus_burn_drive_is_mounted ()" link="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-is-mounted"/>
+    <function name="nautilus_burn_drive_eject ()" link="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-eject"/>
+    <function name="nautilus_burn_drive_door_is_open ()" link="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-door-is-open"/>
+    <function name="nautilus_burn_drive_get_drive_type ()" link="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-get-drive-type"/>
+    <function name="nautilus_burn_drive_get_name_for_display ()" link="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-get-name-for-display"/>
+    <function name="nautilus_burn_drive_get_device ()" link="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-get-device"/>
+    <function name="nautilus_burn_drive_can_write ()" link="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-can-write"/>
+    <function name="nautilus_burn_drive_can_rewrite ()" link="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-can-rewrite"/>
+    <function name="nautilus_burn_drive_get_max_speed_write ()" link="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-get-max-speed-write"/>
+    <function name="nautilus_burn_drive_get_max_speed_read ()" link="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-get-max-speed-read"/>
+    <function name="nautilus_burn_drive_get_write_speeds ()" link="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-get-write-speeds"/>
+    <function name="nautilus_burn_drive_can_eject ()" link="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-can-eject"/>
+    <function name="nautilus_burn_drive_get_media_type ()" link="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-get-media-type"/>
+    <function name="nautilus_burn_drive_get_media_type_full ()" link="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-get-media-type-full"/>
+    <function name="nautilus_burn_drive_get_media_capacity ()" link="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-get-media-capacity"/>
+    <function name="nautilus_burn_drive_get_media_size ()" link="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-get-media-size"/>
+    <function name="nautilus_burn_drive_get_media_label ()" link="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-get-media-label"/>
+    <function name="nautilus_burn_drive_media_is_appendable ()" link="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-media-is-appendable"/>
+    <function name="nautilus_burn_drive_media_type_get_string ()" link="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-media-type-get-string"/>
+    <function name="nautilus_burn_drive_get_supported_media_string ()" link="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-get-supported-media-string"/>
+    <function name="nautilus_burn_drive_get_supported_media_string_for_size ()" link="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-get-supported-media-string-for-size"/>
+    <function name="nautilus_burn_drive_media_type_is_writable ()" link="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-media-type-is-writable"/>
+    <function name="The &quot;enable-monitor&quot; property" link="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive--enable-monitor"/>
+    <function name="The &quot;disconnected&quot; signal" link="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive-disconnected"/>
+    <function name="The &quot;media-added&quot; signal" link="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive-media-added"/>
+    <function name="The &quot;media-removed&quot; signal" link="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive-media-removed"/>
+    <function name="NautilusBurnDriveSelectionPrivate" link="NautilusBurnDriveSelection.html#NautilusBurnDriveSelectionPrivate"/>
+    <function name="NautilusBurnDriveSelection" link="NautilusBurnDriveSelection.html#NautilusBurnDriveSelection-struct"/>
+    <function name="nautilus_burn_drive_selection_new ()" link="NautilusBurnDriveSelection.html#nautilus-burn-drive-selection-new"/>
+    <function name="nautilus_burn_drive_selection_set_active ()" link="NautilusBurnDriveSelection.html#nautilus-burn-drive-selection-set-active"/>
+    <function name="nautilus_burn_drive_selection_get_active ()" link="NautilusBurnDriveSelection.html#nautilus-burn-drive-selection-get-active"/>
+    <function name="nautilus_burn_drive_selection_get_drive ()" link="NautilusBurnDriveSelection.html#nautilus-burn-drive-selection-get-drive"/>
+    <function name="nautilus_burn_drive_selection_set_device ()" link="NautilusBurnDriveSelection.html#nautilus-burn-drive-selection-set-device"/>
+    <function name="nautilus_burn_drive_selection_get_device ()" link="NautilusBurnDriveSelection.html#nautilus-burn-drive-selection-get-device"/>
+    <function name="nautilus_burn_drive_selection_get_default_device ()" link="NautilusBurnDriveSelection.html#nautilus-burn-drive-selection-get-default-device"/>
+    <function name="The &quot;device&quot; property" link="NautilusBurnDriveSelection.html#NautilusBurnDriveSelection--device"/>
+    <function name="The &quot;drive&quot; property" link="NautilusBurnDriveSelection.html#NautilusBurnDriveSelection--drive"/>
+    <function name="The &quot;file-image&quot; property" link="NautilusBurnDriveSelection.html#NautilusBurnDriveSelection--file-image"/>
+    <function name="The &quot;show-recorders-only&quot; property" link="NautilusBurnDriveSelection.html#NautilusBurnDriveSelection--show-recorders-only"/>
+    <function name="The &quot;device-changed&quot; signal" link="NautilusBurnDriveSelection.html#NautilusBurnDriveSelection-device-changed"/>
+    <function name="The &quot;drive-changed&quot; signal" link="NautilusBurnDriveSelection.html#NautilusBurnDriveSelection-drive-changed"/>
+    <function name="NautilusBurnDriveMonitorPrivate" link="nautilus-cd-burner-nautilus-burn-drive-monitor.html#NautilusBurnDriveMonitorPrivate"/>
+    <function name="media_added ()" link="nautilus-cd-burner-nautilus-burn-drive-monitor.html#media-added"/>
+    <function name="media_removed ()" link="nautilus-cd-burner-nautilus-burn-drive-monitor.html#media-removed"/>
+    <function name="drive_connected ()" link="nautilus-cd-burner-nautilus-burn-drive-monitor.html#drive-connected"/>
+    <function name="drive_disconnected ()" link="nautilus-cd-burner-nautilus-burn-drive-monitor.html#drive-disconnected"/>
+    <function name="nautilus_burn_get_drive_monitor ()" link="nautilus-cd-burner-nautilus-burn-drive-monitor.html#nautilus-burn-get-drive-monitor"/>
+    <function name="nautilus_burn_drive_monitor_get_drives ()" link="nautilus-cd-burner-nautilus-burn-drive-monitor.html#nautilus-burn-drive-monitor-get-drives"/>
+    <function name="nautilus_burn_drive_monitor_get_recorder_drives ()" link="nautilus-cd-burner-nautilus-burn-drive-monitor.html#nautilus-burn-drive-monitor-get-recorder-drives"/>
+    <function name="nautilus_burn_drive_monitor_get_drive_for_device ()" link="nautilus-cd-burner-nautilus-burn-drive-monitor.html#nautilus-burn-drive-monitor-get-drive-for-device"/>
+    <function name="nautilus_burn_drive_monitor_get_drive_for_image ()" link="nautilus-cd-burner-nautilus-burn-drive-monitor.html#nautilus-burn-drive-monitor-get-drive-for-image"/>
+    <function name="NAUTILUS_BURN_RECORDER_ERROR" link="nautilus-cd-burner-nautilus-burn-recorder.html#NAUTILUS-BURN-RECORDER-ERROR:CAPS"/>
+    <function name="nautilus_burn_recorder_error_quark ()" link="nautilus-cd-burner-nautilus-burn-recorder.html#nautilus-burn-recorder-error-quark"/>
+    <function name="enum NautilusBurnRecorderError" link="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderError"/>
+    <function name="CancelFunc ()" link="nautilus-cd-burner-nautilus-burn-recorder.html#CancelFunc"/>
+    <function name="enum NautilusBurnRecorderResult" link="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderResult"/>
+    <function name="enum NautilusBurnRecorderResponse" link="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderResponse"/>
+    <function name="enum NautilusBurnRecorderTrackType" link="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderTrackType"/>
+    <function name="NautilusBurnRecorderTrack" link="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderTrack"/>
+    <function name="enum NautilusBurnRecorderWriteFlags" link="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderWriteFlags"/>
+    <function name="enum NautilusBurnRecorderBlankFlags" link="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderBlankFlags"/>
+    <function name="enum NautilusBurnRecorderBlankType" link="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderBlankType"/>
+    <function name="NautilusBurnRecorder" link="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder"/>
+    <function name="NautilusBurnRecorderClass" link="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderClass"/>
+    <function name="NautilusBurnRecorderPrivate" link="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderPrivate"/>
+    <function name="enum NautilusBurnRecorderActions" link="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderActions"/>
+    <function name="enum NautilusBurnRecorderMedia" link="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderMedia"/>
+    <function name="progress_changed ()" link="nautilus-cd-burner-nautilus-burn-recorder.html#progress-changed"/>
+    <function name="action_changed ()" link="nautilus-cd-burner-nautilus-burn-recorder.html#action-changed"/>
+    <function name="animation_changed ()" link="nautilus-cd-burner-nautilus-burn-recorder.html#animation-changed"/>
+    <function name="insert_cd_request ()" link="nautilus-cd-burner-nautilus-burn-recorder.html#insert-cd-request"/>
+    <function name="warn_data_loss ()" link="nautilus-cd-burner-nautilus-burn-recorder.html#warn-data-loss"/>
+    <function name="nautilus_burn_recorder_new ()" link="nautilus-cd-burner-nautilus-burn-recorder.html#nautilus-burn-recorder-new"/>
+    <function name="nautilus_burn_recorder_write_tracks ()" link="nautilus-cd-burner-nautilus-burn-recorder.html#nautilus-burn-recorder-write-tracks"/>
+    <function name="nautilus_burn_recorder_blank_disc ()" link="nautilus-cd-burner-nautilus-burn-recorder.html#nautilus-burn-recorder-blank-disc"/>
+    <function name="nautilus_burn_recorder_cancel ()" link="nautilus-cd-burner-nautilus-burn-recorder.html#nautilus-burn-recorder-cancel"/>
+    <function name="nautilus_burn_recorder_track_free ()" link="nautilus-cd-burner-nautilus-burn-recorder.html#nautilus-burn-recorder-track-free"/>
+    <function name="The &quot;action-changed&quot; signal" link="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder-action-changed"/>
+    <function name="The &quot;animation-changed&quot; signal" link="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder-animation-changed"/>
+    <function name="The &quot;insert-media-request&quot; signal" link="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder-insert-media-request"/>
+    <function name="The &quot;progress-changed&quot; signal" link="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder-progress-changed"/>
+    <function name="The &quot;warn-data-loss&quot; signal" link="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder-warn-data-loss"/>
+    <function name="NautilusBurnProcess" link="nautilus-cd-burner-nautilus-burn-process.html#NautilusBurnProcess"/>
+    <function name="NautilusBurnProcessFuncs" link="nautilus-cd-burner-nautilus-burn-process.html#NautilusBurnProcessFuncs"/>
+    <function name="NautilusBurnProcessLineFunc ()" link="nautilus-cd-burner-nautilus-burn-process.html#NautilusBurnProcessLineFunc"/>
+    <function name="NAUTILUS_BURN_PROCESS_ERROR" link="nautilus-cd-burner-nautilus-burn-process.html#NAUTILUS-BURN-PROCESS-ERROR:CAPS"/>
+    <function name="nautilus_burn_process_error_quark ()" link="nautilus-cd-burner-nautilus-burn-process.html#nautilus-burn-process-error-quark"/>
+    <function name="enum NautilusBurnProcessError" link="nautilus-cd-burner-nautilus-burn-process.html#NautilusBurnProcessError"/>
+    <function name="nautilus_burn_process_new ()" link="nautilus-cd-burner-nautilus-burn-process.html#nautilus-burn-process-new"/>
+    <function name="nautilus_burn_process_free ()" link="nautilus-cd-burner-nautilus-burn-process.html#nautilus-burn-process-free"/>
+    <function name="nautilus_burn_process_cancel ()" link="nautilus-cd-burner-nautilus-burn-process.html#nautilus-burn-process-cancel"/>
+    <function name="nautilus_burn_process_run ()" link="nautilus-cd-burner-nautilus-burn-process.html#nautilus-burn-process-run"/>
+    <function name="nautilus_burn_process_set_error ()" link="nautilus-cd-burner-nautilus-burn-process.html#nautilus-burn-process-set-error"/>
+    <function name="nautilus_burn_process_get_error ()" link="nautilus-cd-burner-nautilus-burn-process.html#nautilus-burn-process-get-error"/>
+  </functions>
+</book>

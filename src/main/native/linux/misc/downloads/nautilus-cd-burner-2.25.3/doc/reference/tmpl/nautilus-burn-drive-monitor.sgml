@@ -1,0 +1,106 @@
+<!-- ##### SECTION Title ##### -->
+nautilus-burn-drive-monitor
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### TYPEDEF NautilusBurnDriveMonitorPrivate ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION media_added ##### -->
+<para>
+
+</para>
+
+@drive: 
+
+
+<!-- ##### FUNCTION media_removed ##### -->
+<para>
+
+</para>
+
+@drive: 
+
+
+<!-- ##### FUNCTION drive_connected ##### -->
+<para>
+
+</para>
+
+@monitor: 
+@drive: 
+
+
+<!-- ##### FUNCTION drive_disconnected ##### -->
+<para>
+
+</para>
+
+@monitor: 
+@drive: 
+
+
+<!-- ##### FUNCTION nautilus_burn_get_drive_monitor ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_monitor_get_drives ##### -->
+<para>
+
+</para>
+
+@monitor: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_monitor_get_recorder_drives ##### -->
+<para>
+
+</para>
+
+@monitor: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_monitor_get_drive_for_device ##### -->
+<para>
+
+</para>
+
+@monitor: 
+@path: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_drive_monitor_get_drive_for_image ##### -->
+<para>
+
+</para>
+
+@monitor: 
+@Returns: 
+
+

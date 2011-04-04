@@ -1,0 +1,920 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>nautilus-burn-recorder</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.74.0">
+<link rel="home" href="index.html" title="libnautilus-burn Reference Manual">
+<link rel="up" href="ch01.html" title="libnautilus-burn Reference Manual">
+<link rel="prev" href="nautilus-cd-burner-nautilus-burn-drive-monitor.html" title="nautilus-burn-drive-monitor">
+<link rel="next" href="nautilus-cd-burner-nautilus-burn-process.html" title="nautilus-burn-process">
+<meta name="generator" content="GTK-Doc V1.10 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="chapter" href="ch01.html" title="libnautilus-burn Reference Manual">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="nautilus-cd-burner-nautilus-burn-drive-monitor.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">libnautilus-burn Reference Manual</th>
+<td><a accesskey="n" href="nautilus-cd-burner-nautilus-burn-process.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts"><nobr><a href="#nautilus-cd-burner-nautilus-burn-recorder.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#nautilus-cd-burner-nautilus-burn-recorder.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#nautilus-cd-burner-nautilus-burn-recorder.object-hierarchy" class="shortcut">Object Hierarchy</a>
+                   | 
+                  <a href="#nautilus-cd-burner-nautilus-burn-recorder.signals" class="shortcut">Signals</a></nobr></td></tr>
+</table>
+<div class="refentry" lang="en">
+<a name="nautilus-cd-burner-nautilus-burn-recorder"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="nautilus-cd-burner-nautilus-burn-recorder.top_of_page"></a>nautilus-burn-recorder</span></h2>
+<p>nautilus-burn-recorder</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="nautilus-cd-burner-nautilus-burn-recorder.synopsis"></a><h2>Synopsis</h2>
+<a name="NautilusBurnRecorder"></a><pre class="synopsis">
+#define             <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NAUTILUS-BURN-RECORDER-ERROR:CAPS" title="NAUTILUS_BURN_RECORDER_ERROR">NAUTILUS_BURN_RECORDER_ERROR</a>
+<a
+href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"
+>GQuark</a>              <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#nautilus-burn-recorder-error-quark" title="nautilus_burn_recorder_error_quark ()">nautilus_burn_recorder_error_quark</a>  (void);
+enum                <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderError" title="enum NautilusBurnRecorderError">NautilusBurnRecorderError</a>;
+void                (<a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#CancelFunc" title="CancelFunc ()">*CancelFunc</a>)                       (<a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"
+>gpointer</a> data);
+enum                <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderResult" title="enum NautilusBurnRecorderResult">NautilusBurnRecorderResult</a>;
+enum                <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderResponse" title="enum NautilusBurnRecorderResponse">NautilusBurnRecorderResponse</a>;
+enum                <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderTrackType" title="enum NautilusBurnRecorderTrackType">NautilusBurnRecorderTrackType</a>;
+typedef             <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderTrack" title="NautilusBurnRecorderTrack">NautilusBurnRecorderTrack</a>;
+enum                <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderWriteFlags" title="enum NautilusBurnRecorderWriteFlags">NautilusBurnRecorderWriteFlags</a>;
+enum                <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderBlankFlags" title="enum NautilusBurnRecorderBlankFlags">NautilusBurnRecorderBlankFlags</a>;
+enum                <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderBlankType" title="enum NautilusBurnRecorderBlankType">NautilusBurnRecorderBlankType</a>;
+typedef             <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder">NautilusBurnRecorder</a>;
+typedef             <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderClass" title="NautilusBurnRecorderClass">NautilusBurnRecorderClass</a>;
+typedef             <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderPrivate" title="NautilusBurnRecorderPrivate">NautilusBurnRecorderPrivate</a>;
+enum                <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderActions" title="enum NautilusBurnRecorderActions">NautilusBurnRecorderActions</a>;
+enum                <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderMedia" title="enum NautilusBurnRecorderMedia">NautilusBurnRecorderMedia</a>;
+void                <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#progress-changed" title="progress_changed ()">progress_changed</a>                    (<a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder">NautilusBurnRecorder</a> *recorder,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> fraction,
+                                                         long seconds );
+void                <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#action-changed" title="action_changed ()">action_changed</a>                      (<a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder">NautilusBurnRecorder</a> *recorder,
+                                                         <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderActions" title="enum NautilusBurnRecorderActions">NautilusBurnRecorderActions</a> action,
+                                                         <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderMedia" title="enum NautilusBurnRecorderMedia">NautilusBurnRecorderMedia</a> media);
+void                <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#animation-changed" title="animation_changed ()">animation_changed</a>                   (<a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder">NautilusBurnRecorder</a> *recorder,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> spinning);
+<a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#insert-cd-request" title="insert_cd_request ()">insert_cd_request</a>                   (<a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder">NautilusBurnRecorder</a> *recorder,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> is_reload,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> can_rewrite,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> busy);
+int                 <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#warn-data-loss" title="warn_data_loss ()">warn_data_loss</a>                      (<a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder">NautilusBurnRecorder</a> *recorder);
+<a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder">NautilusBurnRecorder</a>* <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#nautilus-burn-recorder-new" title="nautilus_burn_recorder_new ()">nautilus_burn_recorder_new</a>        (void);
+int                 <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#nautilus-burn-recorder-write-tracks" title="nautilus_burn_recorder_write_tracks ()">nautilus_burn_recorder_write_tracks</a> (<a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder">NautilusBurnRecorder</a> *recorder,
+                                                         <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"
+>GList</a> *tracks,
+                                                         int speed,
+                                                         <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderWriteFlags" title="enum NautilusBurnRecorderWriteFlags">NautilusBurnRecorderWriteFlags</a> flags,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"
+>GError</a> **error);
+int                 <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#nautilus-burn-recorder-blank-disc" title="nautilus_burn_recorder_blank_disc ()">nautilus_burn_recorder_blank_disc</a>   (<a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder">NautilusBurnRecorder</a> *recorder,
+                                                         <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive,
+                                                         <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderBlankType" title="enum NautilusBurnRecorderBlankType">NautilusBurnRecorderBlankType</a> type,
+                                                         <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderBlankFlags" title="enum NautilusBurnRecorderBlankFlags">NautilusBurnRecorderBlankFlags</a> flags,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"
+>GError</a> **error);
+<a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#nautilus-burn-recorder-cancel" title="nautilus_burn_recorder_cancel ()">nautilus_burn_recorder_cancel</a>       (<a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder">NautilusBurnRecorder</a> *recorder,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> skip_if_dangerous);
+void                <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#nautilus-burn-recorder-track-free" title="nautilus_burn_recorder_track_free ()">nautilus_burn_recorder_track_free</a>   (<a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderTrack" title="NautilusBurnRecorderTrack">NautilusBurnRecorderTrack</a> *track);
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="nautilus-cd-burner-nautilus-burn-recorder.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  <a
+href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject"
+>GObject</a>
+   +----NautilusBurnRecorder
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="nautilus-cd-burner-nautilus-burn-recorder.signals"></a><h2>Signals</h2>
+<pre class="synopsis">
+  "<a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder-action-changed" title='The "action-changed" signal'>action-changed</a>"                                 : Run Last
+  "<a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder-animation-changed" title='The "animation-changed" signal'>animation-changed</a>"                              : Run Last
+  "<a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder-insert-media-request" title='The "insert-media-request" signal'>insert-media-request</a>"                           : Run Last
+  "<a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder-progress-changed" title='The "progress-changed" signal'>progress-changed</a>"                               : Run Last
+  "<a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder-warn-data-loss" title='The "warn-data-loss" signal'>warn-data-loss</a>"                                 : Run Last
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="nautilus-cd-burner-nautilus-burn-recorder.description"></a><h2>Description</h2>
+<p>
+
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="nautilus-cd-burner-nautilus-burn-recorder.details"></a><h2>Details</h2>
+<div class="refsect2" lang="en">
+<a name="NAUTILUS-BURN-RECORDER-ERROR:CAPS"></a><h3>NAUTILUS_BURN_RECORDER_ERROR</h3>
+<pre class="programlisting">#define NAUTILUS_BURN_RECORDER_ERROR nautilus_burn_recorder_error_quark ()
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-recorder-error-quark"></a><h3>nautilus_burn_recorder_error_quark ()</h3>
+<pre class="programlisting"><a
+href="/usr/share/gtk-doc/html/glib/glib-Quarks.html#GQuark"
+>GQuark</a>              nautilus_burn_recorder_error_quark  (void);</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+
+
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnRecorderError"></a><h3>enum NautilusBurnRecorderError</h3>
+<pre class="programlisting">typedef enum {
+        NAUTILUS_BURN_RECORDER_ERROR_INTERNAL,
+        NAUTILUS_BURN_RECORDER_ERROR_GENERAL
+} NautilusBurnRecorderError;
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="CancelFunc"></a><h3>CancelFunc ()</h3>
+<pre class="programlisting">void                (*CancelFunc)                       (<a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"
+>gpointer</a> data);</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>data</code></em> :</span></p></td>
+<td>
+
+
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnRecorderResult"></a><h3>enum NautilusBurnRecorderResult</h3>
+<pre class="programlisting">typedef enum {
+        NAUTILUS_BURN_RECORDER_RESULT_ERROR     = -1,
+        NAUTILUS_BURN_RECORDER_RESULT_CANCEL    = -2,
+        NAUTILUS_BURN_RECORDER_RESULT_FINISHED  = -3,
+        NAUTILUS_BURN_RECORDER_RESULT_RETRY     = -4
+} NautilusBurnRecorderResult;
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnRecorderResponse"></a><h3>enum NautilusBurnRecorderResponse</h3>
+<pre class="programlisting">typedef enum {
+        NAUTILUS_BURN_RECORDER_RESPONSE_NONE   =  0,
+        NAUTILUS_BURN_RECORDER_RESPONSE_CANCEL = -1,
+        NAUTILUS_BURN_RECORDER_RESPONSE_ERASE  = -2,
+        NAUTILUS_BURN_RECORDER_RESPONSE_RETRY  = -3
+} NautilusBurnRecorderResponse;
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnRecorderTrackType"></a><h3>enum NautilusBurnRecorderTrackType</h3>
+<pre class="programlisting">typedef enum {
+        NAUTILUS_BURN_RECORDER_TRACK_TYPE_UNKNOWN,
+        NAUTILUS_BURN_RECORDER_TRACK_TYPE_AUDIO,
+        NAUTILUS_BURN_RECORDER_TRACK_TYPE_DATA,
+        NAUTILUS_BURN_RECORDER_TRACK_TYPE_CUE,
+        NAUTILUS_BURN_RECORDER_TRACK_TYPE_GRAFT_LIST
+} NautilusBurnRecorderTrackType;
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnRecorderTrack"></a><h3>NautilusBurnRecorderTrack</h3>
+<pre class="programlisting">typedef struct NautilusBurnRecorderTrack NautilusBurnRecorderTrack;
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnRecorderWriteFlags"></a><h3>enum NautilusBurnRecorderWriteFlags</h3>
+<pre class="programlisting">typedef enum {
+        NAUTILUS_BURN_RECORDER_WRITE_NONE               = 0,
+        NAUTILUS_BURN_RECORDER_WRITE_EJECT              = 1 &lt;&lt; 0,
+        NAUTILUS_BURN_RECORDER_WRITE_BLANK              = 1 &lt;&lt; 1,
+        NAUTILUS_BURN_RECORDER_WRITE_DUMMY_WRITE        = 1 &lt;&lt; 2,
+        NAUTILUS_BURN_RECORDER_WRITE_DISC_AT_ONCE       = 1 &lt;&lt; 3,
+        NAUTILUS_BURN_RECORDER_WRITE_DEBUG              = 1 &lt;&lt; 4,
+        NAUTILUS_BURN_RECORDER_WRITE_OVERBURN           = 1 &lt;&lt; 5,
+        NAUTILUS_BURN_RECORDER_WRITE_BURNPROOF          = 1 &lt;&lt; 6,
+        NAUTILUS_BURN_RECORDER_WRITE_JOLIET             = 1 &lt;&lt; 7,
+        NAUTILUS_BURN_RECORDER_WRITE_UDF                = 1 &lt;&lt; 8
+} NautilusBurnRecorderWriteFlags;
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnRecorderBlankFlags"></a><h3>enum NautilusBurnRecorderBlankFlags</h3>
+<pre class="programlisting">typedef enum {
+        NAUTILUS_BURN_RECORDER_BLANK_NONE               = 0,
+        NAUTILUS_BURN_RECORDER_BLANK_DUMMY_WRITE        = 1 &lt;&lt; 1,
+        NAUTILUS_BURN_RECORDER_BLANK_DEBUG              = 1 &lt;&lt; 2,
+} NautilusBurnRecorderBlankFlags;
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnRecorderBlankType"></a><h3>enum NautilusBurnRecorderBlankType</h3>
+<pre class="programlisting">typedef enum {
+        NAUTILUS_BURN_RECORDER_BLANK_FAST,
+        NAUTILUS_BURN_RECORDER_BLANK_FULL
+} NautilusBurnRecorderBlankType;
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnRecorder"></a><h3>NautilusBurnRecorder</h3>
+<pre class="programlisting">typedef struct NautilusBurnRecorder                NautilusBurnRecorder;
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnRecorderClass"></a><h3>NautilusBurnRecorderClass</h3>
+<pre class="programlisting">typedef struct NautilusBurnRecorderClass           NautilusBurnRecorderClass;
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnRecorderPrivate"></a><h3>NautilusBurnRecorderPrivate</h3>
+<pre class="programlisting">typedef struct NautilusBurnRecorderPrivate         NautilusBurnRecorderPrivate;
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnRecorderActions"></a><h3>enum NautilusBurnRecorderActions</h3>
+<pre class="programlisting">typedef enum {
+        NAUTILUS_BURN_RECORDER_ACTION_PREPARING_WRITE,
+        NAUTILUS_BURN_RECORDER_ACTION_WRITING,
+        NAUTILUS_BURN_RECORDER_ACTION_FIXATING,
+        NAUTILUS_BURN_RECORDER_ACTION_BLANKING
+} NautilusBurnRecorderActions;
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnRecorderMedia"></a><h3>enum NautilusBurnRecorderMedia</h3>
+<pre class="programlisting">typedef enum {
+        NAUTILUS_BURN_RECORDER_MEDIA_CD,
+        NAUTILUS_BURN_RECORDER_MEDIA_DVD,
+} NautilusBurnRecorderMedia;
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="progress-changed"></a><h3>progress_changed ()</h3>
+<pre class="programlisting">void                progress_changed                    (<a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder">NautilusBurnRecorder</a> *recorder,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"
+>gdouble</a> fraction,
+                                                         long seconds );</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>recorder</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>fraction</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>Param3</code></em> :</span></p></td>
+<td>
+
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="action-changed"></a><h3>action_changed ()</h3>
+<pre class="programlisting">void                action_changed                      (<a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder">NautilusBurnRecorder</a> *recorder,
+                                                         <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderActions" title="enum NautilusBurnRecorderActions">NautilusBurnRecorderActions</a> action,
+                                                         <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderMedia" title="enum NautilusBurnRecorderMedia">NautilusBurnRecorderMedia</a> media);</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>recorder</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>action</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>media</code></em> :</span></p></td>
+<td>
+
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="animation-changed"></a><h3>animation_changed ()</h3>
+<pre class="programlisting">void                animation_changed                   (<a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder">NautilusBurnRecorder</a> *recorder,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> spinning);</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>recorder</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>spinning</code></em> :</span></p></td>
+<td>
+
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="insert-cd-request"></a><h3>insert_cd_request ()</h3>
+<pre class="programlisting"><a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            insert_cd_request                   (<a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder">NautilusBurnRecorder</a> *recorder,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> is_reload,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> can_rewrite,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> busy);</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>recorder</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>is_reload</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>can_rewrite</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>busy</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="warn-data-loss"></a><h3>warn_data_loss ()</h3>
+<pre class="programlisting">int                 warn_data_loss                      (<a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder">NautilusBurnRecorder</a> *recorder);</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>recorder</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-recorder-new"></a><h3>nautilus_burn_recorder_new ()</h3>
+<pre class="programlisting"><a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder">NautilusBurnRecorder</a>* nautilus_burn_recorder_new        (void);</pre>
+<p>
+Create a new <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder"><span class="type">NautilusBurnRecorder</span></a>.</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> The new recorder.
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-recorder-write-tracks"></a><h3>nautilus_burn_recorder_write_tracks ()</h3>
+<pre class="programlisting">int                 nautilus_burn_recorder_write_tracks (<a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder">NautilusBurnRecorder</a> *recorder,
+                                                         <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"
+>GList</a> *tracks,
+                                                         int speed,
+                                                         <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderWriteFlags" title="enum NautilusBurnRecorderWriteFlags">NautilusBurnRecorderWriteFlags</a> flags,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"
+>GError</a> **error);</pre>
+<p>
+Write tracks to the specified drive.</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>recorder</code></em> :</span></p></td>
+<td> <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder"><span class="type">NautilusBurnRecorder</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td> <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a> to write to
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>tracks</code></em> :</span></p></td>
+<td> list of tracks to write
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>speed</code></em> :</span></p></td>
+<td> speed at which to write data
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>flags</code></em> :</span></p></td>
+<td> <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderWriteFlags" title="enum NautilusBurnRecorderWriteFlags"><span class="type">NautilusBurnRecorderWriteFlags</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td> return location for errors
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderResult" title="enum NautilusBurnRecorderResult"><span class="type">NautilusBurnRecorderResult</span></a>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-recorder-blank-disc"></a><h3>nautilus_burn_recorder_blank_disc ()</h3>
+<pre class="programlisting">int                 nautilus_burn_recorder_blank_disc   (<a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder">NautilusBurnRecorder</a> *recorder,
+                                                         <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive,
+                                                         <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderBlankType" title="enum NautilusBurnRecorderBlankType">NautilusBurnRecorderBlankType</a> type,
+                                                         <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderBlankFlags" title="enum NautilusBurnRecorderBlankFlags">NautilusBurnRecorderBlankFlags</a> flags,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Error-Reporting.html#GError"
+>GError</a> **error);</pre>
+<p>
+Blank the media in the specified drive.</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>recorder</code></em> :</span></p></td>
+<td> <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder"><span class="type">NautilusBurnRecorder</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td> <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a> to use
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>type</code></em> :</span></p></td>
+<td> <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderBlankType" title="enum NautilusBurnRecorderBlankType"><span class="type">NautilusBurnRecorderBlankType</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>flags</code></em> :</span></p></td>
+<td> <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderBlankFlags" title="enum NautilusBurnRecorderBlankFlags"><span class="type">NautilusBurnRecorderBlankFlags</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td> return location for errors
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderResult" title="enum NautilusBurnRecorderResult"><span class="type">NautilusBurnRecorderResult</span></a>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-recorder-cancel"></a><h3>nautilus_burn_recorder_cancel ()</h3>
+<pre class="programlisting"><a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            nautilus_burn_recorder_cancel       (<a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder">NautilusBurnRecorder</a> *recorder,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> skip_if_dangerous);</pre>
+<p>
+Cancel active writing process.</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>recorder</code></em> :</span></p></td>
+<td> <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder"><span class="type">NautilusBurnRecorder</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>skip_if_dangerous</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> <code class="literal">TRUE</code> if succesfully cancelled, <code class="literal">FALSE</code> otherwise
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-recorder-track-free"></a><h3>nautilus_burn_recorder_track_free ()</h3>
+<pre class="programlisting">void                nautilus_burn_recorder_track_free   (<a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderTrack" title="NautilusBurnRecorderTrack">NautilusBurnRecorderTrack</a> *track);</pre>
+<p>
+Free track data.</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>track</code></em> :</span></p></td>
+<td> <a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorderTrack" title="NautilusBurnRecorderTrack"><span class="type">NautilusBurnRecorderTrack</span></a>
+</td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1" lang="en">
+<a name="nautilus-cd-burner-nautilus-burn-recorder.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnRecorder-action-changed"></a><h3>The <code class="literal">"action-changed"</code> signal</h3>
+<pre class="programlisting">void                user_function                      (<a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder">NautilusBurnRecorder</a> *nautilusburnrecorder,
+                                                        <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"
+>gint</a>                  arg1,
+                                                        <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"
+>gint</a>                  arg2,
+                                                        <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"
+>gpointer</a>              user_data)                 : Run Last</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>nautilusburnrecorder</code></em> :</span></p></td>
+<td>the object which received the signal.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>arg1</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>arg2</code></em> :</span></p></td>
+<td>
+
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnRecorder-animation-changed"></a><h3>The <code class="literal">"animation-changed"</code> signal</h3>
+<pre class="programlisting">void                user_function                      (<a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder">NautilusBurnRecorder</a> *nautilusburnrecorder,
+                                                        <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>              arg1,
+                                                        <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"
+>gpointer</a>              user_data)                 : Run Last</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>nautilusburnrecorder</code></em> :</span></p></td>
+<td>the object which received the signal.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>arg1</code></em> :</span></p></td>
+<td>
+
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnRecorder-insert-media-request"></a><h3>The <code class="literal">"insert-media-request"</code> signal</h3>
+<pre class="programlisting"><a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            user_function                      (<a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder">NautilusBurnRecorder</a> *nautilusburnrecorder,
+                                                        <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>              arg1,
+                                                        <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>              arg2,
+                                                        <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>              arg3,
+                                                        <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"
+>gpointer</a>              user_data)                 : Run Last</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>nautilusburnrecorder</code></em> :</span></p></td>
+<td>the object which received the signal.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>arg1</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>arg2</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>arg3</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnRecorder-progress-changed"></a><h3>The <code class="literal">"progress-changed"</code> signal</h3>
+<pre class="programlisting">void                user_function                      (<a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder">NautilusBurnRecorder</a> *nautilusburnrecorder,
+                                                        <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"
+>gdouble</a>               arg1,
+                                                        <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#glong"
+>glong</a>                 arg2,
+                                                        <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"
+>gpointer</a>              user_data)                 : Run Last</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>nautilusburnrecorder</code></em> :</span></p></td>
+<td>the object which received the signal.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>arg1</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>arg2</code></em> :</span></p></td>
+<td>
+
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnRecorder-warn-data-loss"></a><h3>The <code class="literal">"warn-data-loss"</code> signal</h3>
+<pre class="programlisting"><a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"
+>gint</a>                user_function                      (<a class="link" href="nautilus-cd-burner-nautilus-burn-recorder.html#NautilusBurnRecorder">NautilusBurnRecorder</a> *nautilusburnrecorder,
+                                                        <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"
+>gpointer</a>              user_data)                 : Run Last</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>nautilusburnrecorder</code></em> :</span></p></td>
+<td>the object which received the signal.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.10</div>
+</body>
+</html>

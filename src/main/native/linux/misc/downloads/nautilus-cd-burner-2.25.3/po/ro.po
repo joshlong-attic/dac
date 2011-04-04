@@ -1,0 +1,1032 @@
+# translation of nautilus-cd-burner.HEAD.ro.po to Română
+# translation of ro.po to
+# Romanian translation of gnome-cd-burner.
+# Copyright (C) 2003 THE gnome-cd-burner'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-cd-burner package.
+#
+# Mugurel Tudor <mugurelu@gnome.ro>, 2003-2004, 2005, 2006, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: nautilus-cd-burner.HEAD.ro\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-01-21 16:08+0000\n"
+"PO-Revision-Date: 2007-09-15 18:14+0300\n"
+"Last-Translator: Mugurel Tudor <mugurelu@gnome.ro>\n"
+"Language-Team: Română <gnomero@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3;plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
+"2:1))\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: ../data/nautilus-cd-burner.desktop.in.h:1
+#: ../data/nautilus-cd-burner-open-iso.desktop.in.h:1
+#: ../src/ncb-operation.c:1635
+msgid "CD/DVD Creator"
+msgstr "Creare CD/DVD"
+
+#: ../data/nautilus-cd-burner.desktop.in.h:2
+msgid "Open a folder into which you can drag files to burn to a CD or DVD"
+msgstr ""
+"Deschide un dosar în care puteți trage fișiere pentru a fi scrise pe CD sau "
+"DVD"
+
+#: ../data/nautilus-cd-burner-open-iso.desktop.in.h:2
+msgid "Open the CD/DVD Creator"
+msgstr "Deschideți Creare CD/DVD"
+
+#: ../data/nautilus-cd-burner.glade.h:1
+msgid "    "
+msgstr "    "
+
+#: ../data/nautilus-cd-burner.glade.h:2
+msgid "<b>Information</b>"
+msgstr "<b>Informație</b>"
+
+#: ../data/nautilus-cd-burner.glade.h:3
+msgid "<b>Write Options</b>"
+msgstr "<b>Opțiuni scriere</b>"
+
+#: ../data/nautilus-cd-burner.glade.h:4
+msgid "<big><b>Some files have invalid filenames</b></big>"
+msgstr "<big><b>Unele fișiere au nume invalide</b></big>"
+
+#: ../data/nautilus-cd-burner.glade.h:5
+msgid "<big><b>Writing files to disc</b></big>"
+msgstr "<big><b>Scriu fișierele pe disc</b></big>"
+
+#: ../data/nautilus-cd-burner.glade.h:6
+msgid "<i>Initializing...</i>"
+msgstr "<i>Inițializare...</i>"
+
+#: ../data/nautilus-cd-burner.glade.h:7
+msgid "Data size:"
+msgstr "Mărime date:"
+
+#: ../data/nautilus-cd-burner.glade.h:8
+msgid "Disc _name:"
+msgstr "_Nume disc:"
+
+#: ../data/nautilus-cd-burner.glade.h:9
+msgid "Label to identify disc"
+msgstr "Eticheta pentru identificarea discului"
+
+#: ../data/nautilus-cd-burner.glade.h:10
+msgid ""
+"The following filenames are not valid.  Please provide new names for each of "
+"them."
+msgstr ""
+"Următoarele nume de fișiere nu sunt valide.  Vă rugăm furnizați nume noi "
+"pentru fiecare dintre ele."
+
+#: ../data/nautilus-cd-burner.glade.h:11
+msgid "Write _speed:"
+msgstr "Viteza de _scriere:"
+
+#: ../data/nautilus-cd-burner.glade.h:12
+msgid "Write disc _to:"
+msgstr "Scrie discul _către:"
+
+#: ../data/nautilus-cd-burner.glade.h:13 ../src/ncb-operation.c:902
+msgid "Writing Files to Disc"
+msgstr "Scriu fișierele pe disc"
+
+#: ../data/nautilus-cd-burner.glade.h:14
+msgid "_Dummy write"
+msgstr "_Simulare scriere"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:1
+msgid "Default burn speed"
+msgstr "Viteza de scriere implicită"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:2
+msgid "Default speed at which the media will be written."
+msgstr "Viteza implicită la care va fi scris mediul."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:3
+msgid "Directory for the temporary ISO images"
+msgstr "Directorul pentru imaginea temporară ISO"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:4
+msgid ""
+"Directory used for the temporary ISO images, leave blank to use the default "
+"system temporary directory."
+msgstr ""
+"Directorul folosit pentru imaginile temporare ISO, dacă nu este specificat "
+"va fi folosit directorul implicit temporar de sistem."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:5
+msgid "Enable Burnproof option"
+msgstr "Activare Burnproof"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:6
+msgid "Enable debug"
+msgstr "Activare mesaje pentru depanare"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:7
+msgid "Enable overburn"
+msgstr "Activare overburn"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:8
+msgid "Whether to allow the data to exceed the size of the physical medium."
+msgstr ""
+"Dacă se va permite datelor să depășească capacitatea mediului de scriere."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:9
+msgid "Whether to enable the debugging for CD Recording."
+msgstr "Dacă să se activeze depanarea pentru Înregistrare CD."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:10
+msgid "Whether to use the Burnproof option available on some recorders."
+msgstr ""
+"Dacă să se folosească optiunea Burnproof disponibilă la unele dintre unități."
+
+#: ../src/burn-extension.c:143 ../src/burn-extension.c:147
+msgid "Unable to launch the cd burner application"
+msgstr "Nu am putut lansa aplicația de scris cd-uri"
+
+#: ../src/burn-extension.c:430 ../src/burn-extension.c:440
+#: ../src/burn-extension.c:526
+msgid "_Write to Disc..."
+msgstr "_Scrie pe disc..."
+
+#: ../src/burn-extension.c:431
+msgid "Write disc image to a CD or DVD disc"
+msgstr "Scrie imaginea de disc pe un CD or DVD"
+
+#: ../src/burn-extension.c:441
+msgid "Write disc image cuesheet to a CD or DVD disc"
+msgstr "Scrie imaginea de disc cuesheet pe un CD or DVD"
+
+#: ../src/burn-extension.c:487
+msgid "_Copy Disc..."
+msgstr "_Copiere Disc..."
+
+#: ../src/burn-extension.c:488
+msgid "Create a copy of this CD or DVD disc"
+msgstr "Creează o copie a acestui disc CD sau DVD"
+
+#: ../src/burn-extension.c:527 ../src/nautilus-burn-bar.c:151
+msgid "Write contents to a CD or DVD disc"
+msgstr "Scrie conținutul pe un CD sau DVD"
+
+#: ../src/make-iso.c:306
+msgid "Disable Microsoft Windows compatibility?"
+msgstr "Dezactivați compatibilitatea Microsoft Windows?"
+
+#: ../src/make-iso.c:309
+msgid ""
+"Some files don't have a suitable name for a Windows-compatible CD.\n"
+"Do you want to continue with Windows compatibility disabled?"
+msgstr ""
+"Unele fișiere nu au un nume compatibil cu un CD compatibil Windows.\n"
+"Doriți să dezactivați compatibilitatea Windows?"
+
+#: ../src/make-iso.c:310
+msgid "Windows compatibility"
+msgstr "Compatibilitate Windows"
+
+#: ../src/make-iso.c:707
+msgid " (invalid Unicode)"
+msgstr " (Unicode invalid)"
+
+#: ../src/make-iso.c:868
+#, c-format
+msgid ""
+"The selected location does not have enough space to store the disc image (%s "
+"MiB needed)."
+msgstr ""
+"Locația selectată nu are destul spațiu liber pentru a stoca imaginea "
+"discului (%s MiB necesari)."
+
+#: ../src/make-iso.c:1012 ../src/make-iso.c:1402
+#, c-format
+msgid "Could not run sub process: %s."
+msgstr "Nu am putut rula sub-procesul: %s."
+
+#: ../src/make-iso.c:1039
+msgid "The operation was cancelled by the user."
+msgstr "Operațiunea a fost anulată de către utilizator."
+
+#: ../src/make-iso.c:1140
+#, c-format
+msgid ""
+"Some files have invalid filenames: \n"
+"%s"
+msgstr ""
+"Unele fișiere au nume invalide: \n"
+"%s"
+
+#: ../src/make-iso.c:1153
+msgid "Unknown character encoding."
+msgstr "Codare de caractere necunoscută."
+
+#: ../src/make-iso.c:1157
+msgid "There is no space left on the device."
+msgstr "Nu mai există spațiu liber pe disc."
+
+#. TODO: get filename from error message
+#: ../src/make-iso.c:1162
+msgid "File too large for filesystem."
+msgstr "Fișierul este prea mare pentru sistemul de fișiere."
+
+#: ../src/make-iso.c:1215
+msgid "The label for the image is too long."
+msgstr "Eticheta pentru imagine este prea lungă."
+
+#: ../src/make-iso.c:1323
+msgid "There are no files to write to disc."
+msgstr "Nu există nici un fișier pentru scriere pe disc."
+
+#: ../src/make-iso.c:1674
+msgid "Not a valid disc image."
+msgstr "Imagine de disc invalidă."
+
+#: ../src/nautilus-burn-bar.c:137
+msgid "CD/DVD Creator Folder"
+msgstr "Dosarul pentru creare CD/DVD"
+
+#: ../src/nautilus-burn-bar.c:141 ../src/ncb-selection-dialog.c:176
+msgid "Write to Disc"
+msgstr "Scrie pe disc"
+
+#: ../src/nautilus-burn-drive.c:1252
+msgid "Could not determine media type because CD drive is busy"
+msgstr "Nu am putut determina tipul de media deoarece unitatea CD este ocupată"
+
+#: ../src/nautilus-burn-drive.c:1254
+msgid "Couldn't open media"
+msgstr "Nu am putut deschide mediul"
+
+#: ../src/nautilus-burn-drive.c:1256
+msgid "Unknown Media"
+msgstr "Mediu necunoscut"
+
+#: ../src/nautilus-burn-drive.c:1258
+msgid "Commercial CD or Audio CD"
+msgstr "CD comercial sau CD audio"
+
+#: ../src/nautilus-burn-drive.c:1260
+msgid "CD-R"
+msgstr "CD-R"
+
+#: ../src/nautilus-burn-drive.c:1262
+msgid "CD-RW"
+msgstr "CD-RW"
+
+#: ../src/nautilus-burn-drive.c:1264
+msgid "DVD"
+msgstr "DVD"
+
+#: ../src/nautilus-burn-drive.c:1266
+msgid "DVD-R, or DVD-RAM"
+msgstr "DVD-R, sau DVD-RAM"
+
+#: ../src/nautilus-burn-drive.c:1268
+msgid "DVD-RW"
+msgstr "DVD-RW"
+
+#: ../src/nautilus-burn-drive.c:1270
+msgid "DVD-RAM"
+msgstr "DVD-RAM"
+
+#: ../src/nautilus-burn-drive.c:1272
+msgid "DVD+R"
+msgstr "DVD+R"
+
+#: ../src/nautilus-burn-drive.c:1274
+msgid "DVD+RW"
+msgstr "DVD+RW"
+
+#: ../src/nautilus-burn-drive.c:1276
+msgid "DVD+R DL"
+msgstr "DVD+R DL"
+
+#: ../src/nautilus-burn-drive.c:1281
+msgid "Broken media type"
+msgstr "Mediu defect"
+
+#: ../src/nautilus-burn-drive-monitor.c:452
+msgid "File image"
+msgstr "Fișier imagine"
+
+#: ../src/nautilus-burn-drive-selection.c:107 ../src/ncb-selection.c:1022
+msgid "Drive"
+msgstr "Unitate"
+
+#: ../src/nautilus-burn-drive-selection.c:237
+msgid "Unnamed CD/DVD Drive"
+msgstr "Unitate CD/DVD fără nume"
+
+#: ../src/nautilus-burn-recorder.c:602
+msgid "The recorder could not be accessed."
+msgstr "Recorderul nu a putut fi accesat."
+
+#: ../src/nautilus-burn-recorder.c:606
+msgid "Not enough space available on the disc."
+msgstr "Nu este destul spațiu liber pe disc."
+
+#: ../src/nautilus-burn-recorder.c:610 ../src/nautilus-burn-recorder.c:614
+msgid "The files selected did not fit on the DVD."
+msgstr "Fișierele selectate nu au încăput pe DVD."
+
+#: ../src/nautilus-burn-recorder.c:626
+msgid "The target DVD drive is still in use."
+msgstr "Unitatea DVD destinație este încă ocupată."
+
+#: ../src/nautilus-burn-recorder.c:632
+msgid "Unhandled error, aborting"
+msgstr "Eroare necunoscută, ies din execuție"
+
+#: ../src/nautilus-burn-recorder.c:697
+msgid "The CD has already been recorded."
+msgstr "CD-ul a fost deja înregistrat."
+
+#: ../src/nautilus-burn-recorder.c:717
+msgid "The files selected did not fit on the CD."
+msgstr "Fișierele selectate nu au încăput pe CD."
+
+#: ../src/nautilus-burn-recorder.c:721
+msgid ""
+"All audio files must be stereo, 16-bit digital audio with 44100Hz samples."
+msgstr ""
+"Toate fișierele audio trebuie să fie stereo, pe 16 biți cu 44100Hz rata de "
+"eșantionare."
+
+#: ../src/nautilus-burn-recorder.c:745
+msgid "Error while writing to disc.  Try a lower speed."
+msgstr "Eroare la scrierea pe disc.  Încercați cu o viteză mai mică."
+
+#: ../src/nautilus-burn-recorder.c:750
+msgid ""
+"The system is too slow to write the CD at this speed. Try a lower speed."
+msgstr ""
+"Sistemul este prea lent pentru a putea scrie CD-ul la această viteză. "
+"Încercați o viteză mai mică."
+
+#: ../src/nautilus-burn-recorder.c:884
+msgid "You can only burn 99 tracks on one disc"
+msgstr "Puteți scrie doar 99 de melodii pe un disc"
+
+#: ../src/nautilus-burn-recorder.c:891
+msgid "No tracks given to write"
+msgstr "Nici o pistă furnizată pentru scriere"
+
+#: ../src/nautilus-burn-recorder.c:896
+msgid "Burning CD/DVD"
+msgstr "Scriu CD/DVD-ul"
+
+#: ../src/nautilus-burn-recorder.c:1101
+msgid "Can only use growisofs on a single track"
+msgstr "Growisofs poate fi folosit doar pe o singură pistă"
+
+#: ../src/nautilus-burn-recorder.c:1112
+msgid "Can only use growisofs on a data or graft list track"
+msgstr "Growisofs poate fi folosit doar pe o pistă de date sau un graft list"
+
+#: ../src/nautilus-burn-recorder.c:1480
+msgid "Blanking CD"
+msgstr "Șterg CD-ul"
+
+#: ../src/nautilus-burn-recorder.c:1550
+msgid "Blanking DVD"
+msgstr "Șterg DVD-ul"
+
+#: ../src/nautilus-burn-process.c:497
+#, c-format
+msgid "Could not run the necessary command: %s"
+msgstr "Nu am putut rula comanda necesară: %s"
+
+#: ../src/nautilus-cd-burner.c:157
+#, c-format
+msgid "There was a problem displaying the help contents: %s."
+msgstr "A intervenit o eroare la afișarea ajutorului: %s"
+
+#: ../src/nautilus-cd-burner.c:158
+msgid "Cannot display help"
+msgstr "Ajutorul nu a putut fi afișat"
+
+#: ../src/nautilus-cd-burner.c:293
+msgid "Use CD/DVD device as source instead of burn:///"
+msgstr "Folosește unitatea CD/DVD ca sursă în loc de burn:///"
+
+#: ../src/nautilus-cd-burner.c:293
+msgid "DEVICE"
+msgstr "DISPOZITIV"
+
+#: ../src/nautilus-cd-burner.c:295
+msgid "Use ISO image as source instead of burn:///"
+msgstr "Folosește imaginea ISO ca sursă în loc de burn:///"
+
+#: ../src/nautilus-cd-burner.c:295 ../src/nautilus-cd-burner.c:297
+msgid "FILENAME"
+msgstr "NUMEFIȘIER"
+
+#: ../src/nautilus-cd-burner.c:297
+msgid "Use CUE/TOC file as source instead of burn:///"
+msgstr "Folosește fișierul CUE/TOC ca sursă în loc de burn:///"
+
+#: ../src/ncb-selection.c:442
+msgid ""
+"It appears that the disc, when created, will contain a single disc image "
+"file.  Do you want to create a disc from the contents of the image or with "
+"the image file inside?"
+msgstr ""
+"Se pare că discul, în momentul în care va fi creat, va conține doar o "
+"imagine de disc.  Doriți să creați un disc din conținutul imaginii sau "
+"conținând fișierul imagine?"
+
+#: ../src/ncb-selection.c:445
+msgid "Create disc containing a single disc image file?"
+msgstr "Creează discul conținând doar o singură imagine de disc?"
+
+#: ../src/ncb-selection.c:448
+msgid "Create From Image"
+msgstr "Creează din imagine"
+
+#: ../src/ncb-selection.c:450
+msgid "Create With File"
+msgstr "Creează cu fișier"
+
+#: ../src/ncb-selection.c:453
+msgid ""
+"It appears that the disc, when created, will contain only disc image files.  "
+"Do you want to continue and write them to the disc as files?"
+msgstr ""
+"Se pare că discul, în momentul în care va fi creat, va conține doar imagini "
+"de disc. Doriți să continuați și să le scrieți pe disc ca fișiere?"
+
+#: ../src/ncb-selection.c:456
+msgid "Create disc containing only disc image files?"
+msgstr "Creează discul conținând doar imagini de disc?"
+
+#: ../src/ncb-selection.c:460
+msgid "Create With Files"
+msgstr "Creează cu fișiere"
+
+#: ../src/ncb-selection.c:491
+#, c-format
+msgid ""
+"The file '%s' is unreadable.  Do you wish to skip this file and continue?"
+msgstr ""
+"Fișierul „%s” nu poate fi citit. Doriți să exceptați acest fișier de la "
+"scriere și să continuați?"
+
+#: ../src/ncb-selection.c:494
+msgid "Skip unreadable file?"
+msgstr "Exceptați fișierul ce nu poate fi citit?"
+
+#: ../src/ncb-selection.c:499
+msgid "Skip"
+msgstr "Exceptează"
+
+#: ../src/ncb-selection.c:499
+msgid "Skip All"
+msgstr "Exceptează tot"
+
+#: ../src/ncb-selection.c:522
+msgid "No files were selected."
+msgstr "Nici un fișier selectat."
+
+#: ../src/ncb-selection.c:553
+#, c-format
+msgid "The file '%s' is not a valid disc image."
+msgstr "Fișierul „%s” nu este o imagine validă de disc."
+
+#: ../src/ncb-selection.c:628
+#, c-format
+msgid "The specified device '%s' is not a valid CD/DVD drive."
+msgstr "Dispozitivul specificat „%s” nu este o unitate validă CD/DVD."
+
+#: ../src/ncb-selection.c:652
+msgid "There doesn't seem to be any media in the selected drive."
+msgstr "Se pare că nu este nici un mediu în unitatea selectată."
+
+#: ../src/ncb-selection.c:659
+msgid "The media is blank."
+msgstr "Mediul este gol."
+
+#: ../src/ncb-selection.c:692
+#, c-format
+msgid "File not found: %s"
+msgstr "Fișierul nu a fost găsit: %s"
+
+#: ../src/ncb-selection.c:701
+#, c-format
+msgid "File does not appear to be a valid CUE sheet: %s"
+msgstr "Fișierul nu pare să fie un CUE sheet valid: %s"
+
+#.
+#. translators: see strftime man page for meaning of %b, %d and %Y
+#. the maximum length for this field is 32 bytes
+#.
+#: ../src/ncb-selection.c:745
+msgid "Personal Data, %b %d, %Y"
+msgstr "Date Personale, %d %b %Y"
+
+#: ../src/ncb-selection.c:817
+msgid "Unable to create CD/DVD"
+msgstr "Nu am putut crea CD/DVD"
+
+#: ../src/ncb-selection.c:981
+msgid "Source name"
+msgstr "Nume sursă"
+
+#: ../src/ncb-selection.c:988
+msgid "Source type"
+msgstr "Tip sursă"
+
+#: ../src/ncb-selection.c:996
+msgid "Source size"
+msgstr "Mărime sursă"
+
+#: ../src/ncb-selection.c:1005
+msgid "Disc label"
+msgstr "Etichetă disc"
+
+#: ../src/ncb-selection.c:1012
+msgid "Write speed"
+msgstr "Viteza de scriere"
+
+#: ../src/ncb-selection-dialog.c:172
+msgid "Copy Disc"
+msgstr "Copiere Disc"
+
+#: ../src/ncb-selection-dialog.c:174
+msgid "Copy disc _to:"
+msgstr "Copiere disc _către:"
+
+#: ../src/ncb-selection-dialog.c:346
+msgid "Maximum possible"
+msgstr "Maxim posibil"
+
+#: ../src/ncb-selection-dialog.c:559
+msgid "Calculating..."
+msgstr "Calculez..."
+
+#: ../src/ncb-selection-dialog.c:638
+msgid "_Write"
+msgstr "_Scrie"
+
+#: ../src/ncb-operation.c:242
+msgid "Preparing to write CD"
+msgstr "Mă pregătesc să scriu CD-ul"
+
+#: ../src/ncb-operation.c:244
+msgid "Preparing to write DVD"
+msgstr "Mă pregătesc să scriu DVD-ul"
+
+#: ../src/ncb-operation.c:249
+msgid "Writing CD"
+msgstr "Scriu CD-ul"
+
+#: ../src/ncb-operation.c:251
+msgid "Writing DVD"
+msgstr "Scriu DVD-ul"
+
+#: ../src/ncb-operation.c:256 ../src/ncb-operation.c:258
+msgid "Finishing write"
+msgstr "Închei scrierea"
+
+#: ../src/ncb-operation.c:263
+msgid "Erasing CD"
+msgstr "Șterg CD-ul"
+
+#: ../src/ncb-operation.c:265
+msgid "Erasing DVD"
+msgstr "Șterg DVD-ul"
+
+#: ../src/ncb-operation.c:349
+msgid "None"
+msgstr "Nici unul"
+
+#: ../src/ncb-operation.c:356
+msgid "Please make sure another application is not using the drive."
+msgstr ""
+"Vă rugăm să vă asigurați că dispozitivul nu este folosit de către o altă "
+"aplicație."
+
+#: ../src/ncb-operation.c:357
+msgid "Drive is busy"
+msgstr "Dispozitivul nu este disponibil"
+
+#: ../src/ncb-operation.c:359 ../src/ncb-operation.c:364
+#, c-format
+msgid ""
+"Please put a disc, with at least %s free, into the drive.  The following "
+"disc types are supported:\n"
+"%s"
+msgstr ""
+"Vă rugăm introduceți un disc, cu cel putin %s liberi, în unitate.  "
+"Următoarele tipuri de discuri sunt suportate:\n"
+"%s"
+
+#: ../src/ncb-operation.c:362
+msgid "Insert a rewritable or blank disc"
+msgstr "Introduceți un disc reinscriptibil sau gol"
+
+#: ../src/ncb-operation.c:367
+msgid "Insert a blank disc"
+msgstr "Introduceți un disc gol"
+
+#: ../src/ncb-operation.c:370 ../src/ncb-operation.c:376
+#, c-format
+msgid ""
+"Please replace the disc in the drive with a supported disc with at least %s "
+"free.  The following disc types are supported:\n"
+"%s"
+msgstr ""
+"Vă rugăm înlocuiți discul din unitate cu un disc suportat având cel puțin %s "
+"liberi.  Următoarele tipuri de discuri sunt suportate:\n"
+"%s"
+
+#: ../src/ncb-operation.c:373
+msgid "Reload a rewritable or blank disc"
+msgstr "Reîncărcați discul reinscriptibil sau gol"
+
+#: ../src/ncb-operation.c:379
+msgid "Reload a blank disc"
+msgstr "Reîncărcați discul nescris"
+
+#: ../src/ncb-operation.c:390
+msgid "_Eject"
+msgstr "_Eject"
+
+#: ../src/ncb-operation.c:457
+#, c-format
+msgid "This %s appears to have information already recorded on it."
+msgstr "Acest %s se pare că are deja informație scrisă pe el."
+
+#: ../src/ncb-operation.c:461
+msgid "Erase information on this disc?"
+msgstr "Ștergeți informația de pe acest disc?"
+
+#: ../src/ncb-operation.c:469
+msgid "_Try Another"
+msgstr "Î_ncercați altul"
+
+#: ../src/ncb-operation.c:480
+msgid "_Erase Disc"
+msgstr "Ște_rge discul"
+
+#: ../src/ncb-operation.c:512
+#, c-format
+msgid ""
+"There was an error writing to the disc:\n"
+"%s"
+msgstr ""
+"A intervenit o eroare la scrierea discului:\n"
+"%s"
+
+#: ../src/ncb-operation.c:515
+msgid "There was an error writing to the disc"
+msgstr "A intervenit o eroare la scrierea discului"
+
+#: ../src/ncb-operation.c:518
+msgid "Error writing to disc"
+msgstr "Eroare la scrierea pe disc"
+
+#: ../src/ncb-operation.c:573
+#, c-format
+msgid "A file named \"%s\" already exists.  Do you want to overwrite it?"
+msgstr "Un fișier numit „%s” deja există. Doriți să îl suprascrieți?"
+
+#: ../src/ncb-operation.c:575
+msgid "Overwrite existing file?"
+msgstr "Suprascieți fișierul existent?"
+
+#: ../src/ncb-operation.c:584
+msgid "_Overwrite"
+msgstr "_Suprascrie"
+
+#: ../src/ncb-operation.c:603
+msgid "Choose a filename for the disc image"
+msgstr "Alegeți un nume de fișier pentru imaginea discului"
+
+#. Translators: this is the filename of the image
+#: ../src/ncb-operation.c:739
+msgid "image.iso"
+msgstr "imagine.iso"
+
+#: ../src/ncb-operation.c:760
+#, c-format
+msgid "You do not have permissions to overwrite that file (%s)."
+msgstr "Nu aveți permisiunile necesare pentru a suprascrie acel fișier (%s)."
+
+#: ../src/ncb-operation.c:761 ../src/ncb-operation.c:776
+#: ../src/ncb-operation.c:1582
+msgid "File image creation failed"
+msgstr "Fișierul imagine nu a putut fi creat"
+
+#: ../src/ncb-operation.c:775
+#, c-format
+msgid "You do not have permissions to create that file (%s)."
+msgstr "Nu aveți permisiunile necesare pentru a crea acel fișier (%s)."
+
+#: ../src/ncb-operation.c:840
+msgid "Complete"
+msgstr "Scriere terminată"
+
+#: ../src/ncb-operation.c:843
+msgid "An error occurred while writing"
+msgstr "A intervenit o eroare la scriere"
+
+#: ../src/ncb-operation.c:903
+msgid "Writing Files to a Disc Image"
+msgstr "Scriu fișierele către o imagine de disc"
+
+#: ../src/ncb-operation.c:904
+msgid "Writing Files to CD"
+msgstr "Scriu fișierele pe CD"
+
+#: ../src/ncb-operation.c:905
+msgid "Writing Files to DVD"
+msgstr "Scriu fișierele pe DVD"
+
+#: ../src/ncb-operation.c:908
+msgid "Writing Image to Disc"
+msgstr "Scriu fișierele pe disc"
+
+#: ../src/ncb-operation.c:909
+msgid "Copying Disc Image"
+msgstr "Copiez imaginea discului"
+
+#: ../src/ncb-operation.c:910
+msgid "Writing Image to CD"
+msgstr "Scriu imaginea pe CD"
+
+#: ../src/ncb-operation.c:911
+msgid "Writing Image to DVD"
+msgstr "Scriu imaginea pe DVD"
+
+#: ../src/ncb-operation.c:914
+msgid "Copying Disc"
+msgstr "Copiere disc"
+
+#: ../src/ncb-operation.c:915
+msgid "Copying Disc to a Disc Image"
+msgstr "Copiez discul către o imagine de disc"
+
+#: ../src/ncb-operation.c:916
+msgid "Copying Disc to CD"
+msgstr "Copiez discul pe CD"
+
+#: ../src/ncb-operation.c:917
+msgid "Copying Disc to DVD"
+msgstr "Copiez discul pe DVD"
+
+#: ../src/ncb-operation.c:921
+msgid "Writing files to disc"
+msgstr "Scriu fișierele pe disc"
+
+#: ../src/ncb-operation.c:922
+msgid "Writing files to a disc image"
+msgstr "Scriu fișierele către o imagine de disc"
+
+#: ../src/ncb-operation.c:923
+msgid "Writing files to CD"
+msgstr "Scriu fișierele pe CD"
+
+#: ../src/ncb-operation.c:924
+msgid "Writing files to DVD"
+msgstr "Scriu fișierele pe DVD"
+
+#: ../src/ncb-operation.c:927
+msgid "Writing image to disc"
+msgstr "Scriu fișierele pe disc"
+
+#: ../src/ncb-operation.c:928
+msgid "Copying disc image"
+msgstr "Copiez imaginea discului"
+
+#: ../src/ncb-operation.c:929
+msgid "Writing image to CD"
+msgstr "Scriu imaginea pe CD"
+
+#: ../src/ncb-operation.c:930
+msgid "Writing image to DVD"
+msgstr "Scriu imaginea pe DVD"
+
+#: ../src/ncb-operation.c:933
+msgid "Copying disc"
+msgstr "Copiez discul"
+
+#: ../src/ncb-operation.c:934
+msgid "Copying disc to a disc image"
+msgstr "Copiez discul către o imagine de disc"
+
+#: ../src/ncb-operation.c:935
+msgid "Copying disc to CD"
+msgstr "Copiez discul pe CD"
+
+#: ../src/ncb-operation.c:936
+msgid "Copying disc to DVD"
+msgstr "Copiez discul pe DVD"
+
+#: ../src/ncb-operation.c:940
+msgid ""
+"The selected files are being written to a CD or DVD.  This operation may "
+"take a long time, depending on data size and write speed."
+msgstr ""
+"Fișierele selectate sunt scrise pe un CD sau DVD.  Această operație poate "
+"dura destul de mult, funcție de mărimea datelor și viteza de scriere."
+
+#: ../src/ncb-operation.c:941
+msgid "The selected files are being written to a disc image file."
+msgstr "Fișierele selectate sunt scrise într-un fișier imagine de disc."
+
+#: ../src/ncb-operation.c:942
+msgid ""
+"The selected files are being written to a CD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr ""
+"Fișierele selectate sunt scrise pe un CD.  Această operație poate dura "
+"destul de mult, funcție de mărimea datelor și viteza de scriere."
+
+#: ../src/ncb-operation.c:943
+msgid ""
+"The selected files are being written to a DVD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr ""
+"Fișierele selectate sunt scrise pe un DVD.  Această operație poate dura "
+"destul de mult, funcție de mărimea datelor și viteza de scriere."
+
+#: ../src/ncb-operation.c:946
+msgid ""
+"The selected disc image is being written to a CD or DVD.  This operation may "
+"take a long time, depending on data size and write speed."
+msgstr ""
+"Imaginea de disc selectată este scrisă pe un CD sau DVD.  Această operație "
+"poate dura destul de mult, funcție de mărimea datelor și viteza de scriere."
+
+#: ../src/ncb-operation.c:947
+msgid "The selected disc image is being copied to a disc image file."
+msgstr ""
+"Imaginea de disc selectată este copiată către un fișier de tip imagine de "
+"disc."
+
+#: ../src/ncb-operation.c:948
+msgid ""
+"The selected disc image is being written to a CD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr ""
+"Imaginea de disc selectată este scrisă pe un CD.  Această operație poate "
+"dura destul de mult, funcție de mărimea datelor și viteza de scriere."
+
+#: ../src/ncb-operation.c:949
+msgid ""
+"The selected disc image is being written to a DVD.  This operation may take "
+"a long time, depending on data size and write speed."
+msgstr ""
+"Imaginea de disc selectată este scrisă pe un DVD.  Această operație poate "
+"dura destul de mult, funcție de mărimea datelor și viteza de scriere."
+
+#: ../src/ncb-operation.c:952
+msgid ""
+"The selected disc is being copied to a CD or DVD.  This operation may take a "
+"long time, depending on data size and drive speed."
+msgstr ""
+"Discul selectat este copiat pe un CD sau DVD.  Această operație poate dura "
+"destul de mult, funcție de mărimea datelor și viteza de scriere."
+
+#: ../src/ncb-operation.c:953
+msgid ""
+"The selected disc is being copied to a disc image file.  This operation may "
+"take a long time, depending on data size and drive speed."
+msgstr ""
+"Discul selectat este copiat către un fișier de tip imagine de disc.  Această "
+"operație poate dura destul de mult, funcție de mărimea datelor și viteza de "
+"scriere."
+
+#: ../src/ncb-operation.c:954
+msgid ""
+"The selected disc is being copied to a CD.  This operation may take a long "
+"time, depending on data size and drive speed."
+msgstr ""
+"Discul selectat este copiat pe un CD.  Această operație poate dura destul de "
+"mult, funcție de mărimea datelor și viteza de scriere."
+
+#: ../src/ncb-operation.c:955
+msgid ""
+"The selected disc is being copied to a DVD.  This operation may take a long "
+"time, depending on data size and drive speed."
+msgstr ""
+"Discul selectat este copiat pe un DVD.  Această operație poate dura destul "
+"de mult, funcție de mărimea datelor și viteza de scriere."
+
+#: ../src/ncb-operation.c:1012
+msgid "Burning CD"
+msgstr "Scriu CD-ul"
+
+#: ../src/ncb-operation.c:1179 ../src/ncb-operation.c:1403
+msgid "Creating disc image"
+msgstr "Creez imaginea discului"
+
+#: ../src/ncb-operation.c:1621
+#, fuzzy, c-format
+msgid "Writing CD/DVD-Image '%s'."
+msgstr "Scriu fișierele pe disc"
+
+#: ../src/ncb-operation.c:1626
+#, fuzzy, c-format
+msgid "Writing disc '%s'."
+msgstr "Scriu fișierele pe disc"
+
+#: ../src/ncb-operation.c:1628
+#, fuzzy, c-format
+msgid "Writing %s '%s'."
+msgstr "Scriu CD-ul"
+
+#: ../src/ncb-operation.c:1717
+#, c-format
+msgid "Completed writing %s"
+msgstr "S-a încheiat scrierea pentru %s"
+
+#: ../src/ncb-operation.c:1822
+msgid "Interrupt writing files to disc?"
+msgstr "Întrerupeți scrierea fișierelor pe disc?"
+
+#: ../src/ncb-operation.c:1823
+msgid ""
+"Are you sure you want to interrupt the disc write operation? Some drives may "
+"require that you restart the computer to get them working again."
+msgstr ""
+"Sunteți sigur că doriți să anulați scrierea pe disc? Unele unități pot avea "
+"nevoie de o restartare a calculatorului pentru a putea funcționa din nou."
+
+#: ../src/ncb-operation.c:1829
+msgid "Interrupt"
+msgstr "Întrerupe"
+
+#: ../src/ncb-operation.c:1831
+msgid "Continue"
+msgstr "Continuă"
+
+#: ../src/ncb-progress-dialog.c:146
+#, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d oră"
+msgstr[1] "%d ore"
+msgstr[2] "%d de ore"
+
+#: ../src/ncb-progress-dialog.c:148
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d minut"
+msgstr[1] "%d minute"
+msgstr[2] "%d de minute"
+
+#: ../src/ncb-progress-dialog.c:151
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d secundă"
+msgstr[1] "%d secunde"
+msgstr[2] "%d de secunde"
+
+#. hour:minutes:seconds
+#: ../src/ncb-progress-dialog.c:156
+#, c-format
+msgid "%s %s %s"
+msgstr "%s %s %s"
+
+#. minutes:seconds
+#: ../src/ncb-progress-dialog.c:159
+#, c-format
+msgid "%s %s"
+msgstr "%s %s"
+
+#. seconds
+#: ../src/ncb-progress-dialog.c:162
+#, c-format
+msgid "%s"
+msgstr "%s"
+
+#. 0 seconds
+#: ../src/ncb-progress-dialog.c:165
+msgid "0 seconds"
+msgstr "0 secunde"
+
+#: ../src/ncb-progress-dialog.c:189
+#, c-format
+msgid "About %s left"
+msgstr "Aproximativ %s rămase"
+
+#: ../src/ncb-progress-dialog.c:439
+msgid "_Make Another Copy"
+msgstr "_Creați încă o copie"
+
+#: ../src/ncb-rename-dialog.c:479
+msgid "C_ontinue"
+msgstr "C_ontinuă"
+
+#: ../src/ncb-rename-dialog.c:507
+msgid "Filename"
+msgstr "Nume fișier"
+
+#: ../src/ncb-rename-dialog.c:523
+msgid "Rename file"
+msgstr "Redenumire fișier"

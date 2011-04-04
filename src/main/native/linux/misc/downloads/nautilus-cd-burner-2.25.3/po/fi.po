@@ -1,0 +1,1112 @@
+# nautilus-cd-burner Finnish translation
+# Copyright (C) 2003  The Free Software Foundation
+# This file is distributed under the same license as the nautilus-cd-burner package.
+# Timo Jyrinki <timo.jyrinki@iki.fi>, 2008
+# Ilkka Tuohela <hile@iki.fi>, 2005-2006
+# Pauli Virtanen <pauli.virtanen@hut.fi>, 2003-2005
+# Sami Pesonen <sampeson@iki.fi>, 2004
+#
+# Suomennos: http://gnome.fi/
+#
+# [disk] image = [levy]vedos
+# CD-writer = kirjoittava CD-asema
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: nautilus-cd-burner\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-22 12:21+0300\n"
+"PO-Revision-Date: 2008-09-22 12:23+0300\n"
+"Last-Translator: Timo Jyrinki <timo.jyrinki@iki.fi>\n"
+"Language-Team: Finnish <gnome-fi-laatu@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n == 1 ? 0 : 1;\n"
+
+#: ../data/nautilus-cd-burner.desktop.in.h:1
+#: ../data/nautilus-cd-burner-open-iso.desktop.in.h:1
+#: ../src/ncb-operation.c:1753
+msgid "CD/DVD Creator"
+msgstr "CD/DVD-luontityökalu"
+
+#: ../data/nautilus-cd-burner.desktop.in.h:2
+msgid "Open a folder into which you can drag files to burn to a CD or DVD"
+msgstr ""
+"Avaa kansio, jonka sisällön voit kirjoittaa helposti CD- tai DVD-levylle"
+
+#: ../data/nautilus-cd-burner-open-iso.desktop.in.h:2
+msgid "Open the CD/DVD Creator"
+msgstr "Avaa CD/DVD-luontityökalu"
+
+#: ../data/nautilus-cd-burner.glade.h:1
+msgid "    "
+msgstr "    "
+
+#: ../data/nautilus-cd-burner.glade.h:2
+msgid "<b>Information</b>"
+msgstr "<b>Tietoja</b>"
+
+#: ../data/nautilus-cd-burner.glade.h:3
+msgid "<b>Write Options</b>"
+msgstr "<b>Kirjoitusasetukset</b>"
+
+#: ../data/nautilus-cd-burner.glade.h:4
+msgid "<big><b>Some files have invalid filenames</b></big>"
+msgstr "<big><b>Joillain tiedostoilla on virheellisiä tiedostonimiä</b></big>"
+
+#: ../data/nautilus-cd-burner.glade.h:5
+msgid "<big><b>Writing files to disc</b></big>"
+msgstr "<big><b>Tiedostojen levylle kirjoittaminen meneillään</b></big>"
+
+#: ../data/nautilus-cd-burner.glade.h:6
+msgid "<i>Initializing...</i>"
+msgstr "<i>Käynnistyy...</i>"
+
+#: ../data/nautilus-cd-burner.glade.h:7
+msgid "Data size:"
+msgstr "Tietojen koko:"
+
+#: ../data/nautilus-cd-burner.glade.h:8
+msgid "Disc _name:"
+msgstr "Levyn _nimi:"
+
+#: ../data/nautilus-cd-burner.glade.h:9
+msgid "Label to identify disc"
+msgstr "Levyn tunnusnimike"
+
+#: ../data/nautilus-cd-burner.glade.h:10
+msgid ""
+"The following filenames are not valid.  Please provide new names for each of "
+"them."
+msgstr ""
+"Seuraavat tiedostonimet eivät ole kelvollisia. Anna kullekin tiedostolle "
+"uusi kelvollinen nimi."
+
+#: ../data/nautilus-cd-burner.glade.h:11
+msgid "Write _speed:"
+msgstr "Kirjoitus_nopeus:"
+
+#: ../data/nautilus-cd-burner.glade.h:12
+msgid "Write disc _to:"
+msgstr "_Kirjoita levy kohteeseen:"
+
+#: ../data/nautilus-cd-burner.glade.h:13 ../src/ncb-operation.c:913
+msgid "Writing Files to Disc"
+msgstr "Tiedostoja kirjoitetaan levylle"
+
+#: ../data/nautilus-cd-burner.glade.h:14
+msgid "_Dummy write"
+msgstr "_Testikirjoitus"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:1
+msgid "Default burn speed"
+msgstr "Oletusarvoinen kirjoitusnopeus"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:2
+msgid "Default speed at which the media will be written."
+msgstr "Oletusarvoinen nopeus, jolla taltiolle kirjoitetaan."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:3
+msgid "Directory for the temporary ISO images"
+msgstr "Kansio väliaikaisille ISO-vedostiedostoille"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:4
+msgid ""
+"Directory used for the temporary ISO images, leave blank to use the default "
+"system temporary directory."
+msgstr ""
+"Kansio, johon väliaikaiset ISO-vedostiedostot tallentuvat. Jos ei annettu, "
+"käytetään järjestelmän väliaikaiskansiota."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:5
+msgid "Enable Burnproof option"
+msgstr "Käytä Burnproof-ominaisuutta"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:6
+msgid "Enable debug"
+msgstr "Etsi vikoja"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:7
+msgid "Enable overburn"
+msgstr "Salli lopun yli kirjoitus"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:8
+msgid "Whether to allow the data to exceed the size of the physical medium."
+msgstr "Voiko datan koko ylittää tallennusvälineen koon"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:9
+msgid "Whether to enable the debugging for CD Recording."
+msgstr "Etsitäänkö CD-kirjoittamisesta vikoja"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:10
+msgid "Whether to use the Burnproof option available on some recorders."
+msgstr "Käytetäänkö eräiden levyasemien Burnproof-ominaisuutta."
+
+#: ../src/burn-extension.c:141 ../src/burn-extension.c:145
+msgid "Unable to launch the cd burner application"
+msgstr "CD-kirjoitinsovelluksen käynnistäminen ei onnistu"
+
+#: ../src/burn-extension.c:452 ../src/burn-extension.c:462
+#: ../src/burn-extension.c:555
+msgid "_Write to Disc..."
+msgstr "_Kirjoita CD:lle..."
+
+#: ../src/burn-extension.c:453
+msgid "Write disc image to a CD or DVD disc"
+msgstr "Kirjoita levyvedostiedosto CD- tai DVD-levylle"
+
+#: ../src/burn-extension.c:463
+msgid "Write disc image cuesheet to a CD or DVD disc"
+msgstr "Kirjoita levyvedostiedosto CD- tai DVD-levylle"
+
+#: ../src/burn-extension.c:514
+msgid "_Copy Disc..."
+msgstr "_Kopioi levy..."
+
+#: ../src/burn-extension.c:515
+msgid "Create a copy of this CD or DVD disc"
+msgstr "Tee kopio tästä CD- tai DVD-levystä"
+
+#: ../src/burn-extension.c:556 ../src/nautilus-burn-bar.c:151
+msgid "Write contents to a CD or DVD disc"
+msgstr "Kirjoita sisältö CD- tai DVD-levylle"
+
+#: ../src/make-iso.c:306
+msgid "Disable Microsoft Windows compatibility?"
+msgstr "Poistetaanko Microsoft Windows -yhteensopivuus käytöstä?"
+
+#: ../src/make-iso.c:309
+msgid ""
+"Some files don't have a suitable name for a Windows-compatible CD.\n"
+"Do you want to continue with Windows compatibility disabled?"
+msgstr ""
+"Joidenkin tiedostojen nimet eivät ole sopivia Windows-yhteensopivalle CD:"
+"lle.\n"
+"Haluatko jatkaa ilman Windows-yhteensopivuutta?"
+
+#: ../src/make-iso.c:310
+msgid "Windows compatibility"
+msgstr "Windows-yhteensopivuus"
+
+#: ../src/make-iso.c:707
+msgid " (invalid Unicode)"
+msgstr " (virheellistä Unicodea)"
+
+#: ../src/make-iso.c:868
+#, c-format
+msgid ""
+"The selected location does not have enough space to store the disc image (%s "
+"MiB needed)."
+msgstr ""
+"Valitussa kohteessa ei ole tarpeeksi tilaa levyvedoksen tallentamiseen "
+"(tarvitaan %s MiB)"
+
+#: ../src/make-iso.c:1012 ../src/make-iso.c:1402
+#, c-format
+msgid "Could not run sub process: %s."
+msgstr "Aliprosessin suorittaminen ei onnistunut: %s."
+
+#: ../src/make-iso.c:1039
+#, c-format
+msgid "The operation was cancelled by the user."
+msgstr "Käyttäjä perui toiminnon."
+
+#: ../src/make-iso.c:1140
+#, c-format
+msgid ""
+"Some files have invalid filenames: \n"
+"%s"
+msgstr ""
+"Joillain tiedostoilla on virheellisiä tiedostonimiä: \n"
+"%s"
+
+#: ../src/make-iso.c:1153
+msgid "Unknown character encoding."
+msgstr "Tuntematon merkistön koodaus."
+
+#: ../src/make-iso.c:1157
+msgid "There is no space left on the device."
+msgstr "Laitteella ei ole tarpeeksi vapaata tilaa."
+
+#. TODO: get filename from error message
+#: ../src/make-iso.c:1162
+msgid "File too large for filesystem."
+msgstr "Tiedosto on liian suuri tiedostojärjestelmää varten."
+
+#: ../src/make-iso.c:1215
+#, c-format
+msgid "The label for the image is too long."
+msgstr "Levyvedoksen nimi on liian pitkä."
+
+#: ../src/make-iso.c:1323
+#, c-format
+msgid "There are no files to write to disc."
+msgstr "Ei tiedostoja CD:lle kirjoitettavaksi."
+
+#: ../src/make-iso.c:1674
+msgid "Not a valid disc image."
+msgstr "Ei ole kelvollinen levyvedos."
+
+#: ../src/nautilus-burn-bar.c:137
+msgid "CD/DVD Creator Folder"
+msgstr "CD/DVD-luontityökalun kansio"
+
+#: ../src/nautilus-burn-bar.c:141 ../src/ncb-selection-dialog.c:175
+msgid "Write to Disc"
+msgstr "Kirjoita levylle"
+
+#: ../src/nautilus-burn-drive.c:1252
+msgid "Could not determine media type because CD drive is busy"
+msgstr "Levyn tyyppiä ei voitu tunnistaa koska CD-asema on varattu"
+
+#: ../src/nautilus-burn-drive.c:1254
+msgid "Couldn't open media"
+msgstr "Mediaa ei voitu avata"
+
+#: ../src/nautilus-burn-drive.c:1256
+msgid "Unknown Media"
+msgstr "Tuntematon media"
+
+#: ../src/nautilus-burn-drive.c:1258
+msgid "Commercial CD or Audio CD"
+msgstr "Kaupallinen CD tai äänilevy"
+
+#: ../src/nautilus-burn-drive.c:1260
+msgid "CD-R"
+msgstr "CD-R"
+
+#: ../src/nautilus-burn-drive.c:1262
+msgid "CD-RW"
+msgstr "CD-RW"
+
+#: ../src/nautilus-burn-drive.c:1264
+msgid "DVD"
+msgstr "DVD"
+
+#: ../src/nautilus-burn-drive.c:1266
+msgid "DVD-R, or DVD-RAM"
+msgstr "DVD-R tai DVD-RAM"
+
+#: ../src/nautilus-burn-drive.c:1268
+msgid "DVD-RW"
+msgstr "DVD-RW"
+
+#: ../src/nautilus-burn-drive.c:1270
+msgid "DVD-RAM"
+msgstr "DVD-RAM"
+
+#: ../src/nautilus-burn-drive.c:1272
+msgid "DVD+R"
+msgstr "DVD+R"
+
+#: ../src/nautilus-burn-drive.c:1274
+msgid "DVD+RW"
+msgstr "DVD+RW"
+
+#: ../src/nautilus-burn-drive.c:1276
+msgid "DVD+R DL"
+msgstr "DVD+R DL"
+
+#: ../src/nautilus-burn-drive.c:1281
+msgid "Broken media type"
+msgstr "Viallinen mediatyyppi"
+
+#: ../src/nautilus-burn-drive-monitor.c:452
+msgid "File image"
+msgstr "Vedostiedosto"
+
+#: ../src/nautilus-burn-drive-selection.c:107 ../src/ncb-selection.c:1022
+msgid "Drive"
+msgstr "Asema"
+
+#: ../src/nautilus-burn-drive-selection.c:237
+msgid "Unnamed CD/DVD Drive"
+msgstr "Nimeämätön CD- tai DVD-asema"
+
+#: ../src/nautilus-burn-recorder.c:602
+msgid "The recorder could not be accessed."
+msgstr "Kirjoitinta ei voitu käyttää."
+
+#: ../src/nautilus-burn-recorder.c:606
+msgid "Not enough space available on the disc."
+msgstr "Levyllä ei ole tarpeeksi vapaata tilaa."
+
+#: ../src/nautilus-burn-recorder.c:610 ../src/nautilus-burn-recorder.c:614
+msgid "The files selected did not fit on the DVD."
+msgstr "Valitut tiedostot eivät mahtuneet DVD-levylle."
+
+#: ../src/nautilus-burn-recorder.c:626
+msgid "The target DVD drive is still in use."
+msgstr "Valittu DVD-asema on vielä käytössä."
+
+#: ../src/nautilus-burn-recorder.c:632
+msgid "Unhandled error, aborting"
+msgstr "Käsittelemätön virhe, keskeytyy"
+
+#: ../src/nautilus-burn-recorder.c:697
+msgid "The CD has already been recorded."
+msgstr "CD on jo kirjoitettu."
+
+#: ../src/nautilus-burn-recorder.c:717
+msgid "The files selected did not fit on the CD."
+msgstr "Valitut tiedostot eivät mahtuneet CD-levylle."
+
+#: ../src/nautilus-burn-recorder.c:721
+msgid ""
+"All audio files must be stereo, 16-bit digital audio with 44100Hz samples."
+msgstr ""
+"Kaikkien äänitiedostojen täytyy olla stereona, 16-bittisenä digitaaliäänenä "
+"näytteistystaajuudellä 44100 Hz."
+
+#: ../src/nautilus-burn-recorder.c:745
+msgid "Error while writing to disc.  Try a lower speed."
+msgstr "Virhe kirjoitettaessa levyä. Kokeile pienempää kirjoitusnopeutta."
+
+#: ../src/nautilus-burn-recorder.c:750
+msgid ""
+"The system is too slow to write the CD at this speed. Try a lower speed."
+msgstr ""
+"Järjestelmä on liian hidas, ja ei pysty kirjoittamaan CD:itä tällä "
+"nopeudella. Kokeile hitaampaa nopeutta."
+
+#: ../src/nautilus-burn-recorder.c:884
+#, c-format
+msgid "You can only burn 99 tracks on one disc"
+msgstr "Yhdelle levylle mahtuu vain 99 raitaa"
+
+#: ../src/nautilus-burn-recorder.c:891
+#, c-format
+msgid "No tracks given to write"
+msgstr "Ei kirjoitettavia raitoja määritelty"
+
+#: ../src/nautilus-burn-recorder.c:896
+msgid "Burning CD/DVD"
+msgstr "Kirjoitetaan CD- tai DVD-levyä"
+
+#: ../src/nautilus-burn-recorder.c:1101
+#, c-format
+msgid "Can only use growisofs on a single track"
+msgstr "Komentoa growisofs voi käyttää vain yhdellä raidalla"
+
+#: ../src/nautilus-burn-recorder.c:1112
+#, c-format
+msgid "Can only use growisofs on a data or graft list track"
+msgstr ""
+"Komentoa growisofs voi käyttää vain datalevyn tai graft-listaraidan kanssa"
+
+#: ../src/nautilus-burn-recorder.c:1480
+msgid "Blanking CD"
+msgstr "Tyhjennetään CD:tä"
+
+#: ../src/nautilus-burn-recorder.c:1550
+msgid "Blanking DVD"
+msgstr "Tyhjennetään DVD:tä"
+
+#: ../src/nautilus-burn-process.c:497
+#, c-format
+msgid "Could not run the necessary command: %s"
+msgstr "Tarvittavaa käskyä ei voitu suorittaa: %s."
+
+#: ../src/nautilus-cd-burner.c:157
+#, c-format
+msgid "There was a problem displaying the help contents: %s."
+msgstr "Ohjeiden sisällön näyttämisessä oli ongelma: %s."
+
+#: ../src/nautilus-cd-burner.c:158
+msgid "Cannot display help"
+msgstr "Ohjetta ei voi näyttää"
+
+#: ../src/nautilus-cd-burner.c:293
+msgid "Use CD/DVD device as source instead of burn:///"
+msgstr "Käytä CD/DVD-laitetta lähteenä lähteen burn:/// sijasta"
+
+#: ../src/nautilus-cd-burner.c:293
+msgid "DEVICE"
+msgstr "LAITE"
+
+#: ../src/nautilus-cd-burner.c:295
+msgid "Use ISO image as source instead of burn:///"
+msgstr "Käytä ISO-levyvedosta lähteenä lähteen burn:/// sijasta"
+
+#: ../src/nautilus-cd-burner.c:295 ../src/nautilus-cd-burner.c:297
+msgid "FILENAME"
+msgstr "TIEDOSTONIMI"
+
+#: ../src/nautilus-cd-burner.c:297
+msgid "Use CUE/TOC file as source instead of burn:///"
+msgstr "Käytä CUE/TOC-tiedostoja lähteenä lähteen burn:/// sijasta"
+
+#: ../src/ncb-selection.c:442
+msgid ""
+"It appears that the disc, when created, will contain a single disc image "
+"file.  Do you want to create a disc from the contents of the image or with "
+"the image file inside?"
+msgstr ""
+"Näyttää siltä, että kirjoitettu levy tulee sisältämään ainoastaan yhden "
+"levyvedostiedoston. Haluatko kirjoittaa levyn, joka sisältää valitun "
+"levyvedoksen sisällön vai levyn, joka sisältää levyvedoksen tiedostona?"
+
+#: ../src/ncb-selection.c:445
+msgid "Create disc containing a single disc image file?"
+msgstr "Luodaanko levy, joka sisältää yhden levyvedostiedoston?"
+
+#: ../src/ncb-selection.c:448
+msgid "Create From Image"
+msgstr "Luo levyvedoksesta"
+
+#: ../src/ncb-selection.c:450
+msgid "Create With File"
+msgstr "Luo tiedostona"
+
+#: ../src/ncb-selection.c:453
+msgid ""
+"It appears that the disc, when created, will contain only disc image files.  "
+"Do you want to continue and write them to the disc as files?"
+msgstr ""
+"Vaikuttaa, että levy sisältäisi tallentamisen pelkkiä vain "
+"levyvedostiedostoja. Haluatko tallentaa ne levylle tiedostoina?"
+
+#: ../src/ncb-selection.c:456
+msgid "Create disc containing only disc image files?"
+msgstr "Luodaanko levy, joka sisältää vain levyvedoksia?"
+
+#: ../src/ncb-selection.c:460
+msgid "Create With Files"
+msgstr "Luo tiedostoina"
+
+#: ../src/ncb-selection.c:491
+#, c-format
+msgid ""
+"The file '%s' is unreadable.  Do you wish to skip this file and continue?"
+msgstr ""
+"Tiedostoa \"%s\" ei voi lukea. Haluatko sivuuttaa tämän tiedoston ja jatkaa?"
+
+#: ../src/ncb-selection.c:494
+msgid "Skip unreadable file?"
+msgstr "Sivuutetaanko lukukelvoton tiedosto?"
+
+#: ../src/ncb-selection.c:499
+msgid "Skip"
+msgstr "Ohita"
+
+#: ../src/ncb-selection.c:499
+msgid "Skip All"
+msgstr "Ohita kaikki"
+
+#: ../src/ncb-selection.c:522
+#, c-format
+msgid "No files were selected."
+msgstr "Et valinnut tiedostoja."
+
+#: ../src/ncb-selection.c:553
+#, c-format
+msgid "The file '%s' is not a valid disc image."
+msgstr "Tiedosto \"%s\" ei ole kelvollinen levyvedos."
+
+#: ../src/ncb-selection.c:628
+#, c-format
+msgid "The specified device '%s' is not a valid CD/DVD drive."
+msgstr "Määritelty laite \"%s\" ei ole kelvollinen CD- tai DVD-asema."
+
+#: ../src/ncb-selection.c:652
+#, c-format
+msgid "There doesn't seem to be any media in the selected drive."
+msgstr "Valitussa asemassa ei näytä olevan mitään mediaa."
+
+#: ../src/ncb-selection.c:659
+#, c-format
+msgid "The media is blank."
+msgstr "Levy on tyhjä."
+
+#: ../src/ncb-selection.c:692
+#, c-format
+msgid "File not found: %s"
+msgstr "Tiedostoa ei löydy: %s"
+
+#: ../src/ncb-selection.c:701
+#, c-format
+msgid "File does not appear to be a valid CUE sheet: %s"
+msgstr "Tiedosto ei näytä olevan kelvollinen CUE-tiedosto: %s"
+
+#.
+#. translators: see strftime man page for meaning of %b, %d and %Y
+#. the maximum length for this field is 32 bytes
+#.
+#: ../src/ncb-selection.c:745
+msgid "Personal Data, %b %d, %Y"
+msgstr "Omia tietoja, %e. %Bta %Y"
+
+#: ../src/ncb-selection.c:817
+msgid "Unable to create CD/DVD"
+msgstr "CD- tai DVD-levyä ei voi luoda"
+
+#: ../src/ncb-selection.c:981
+msgid "Source name"
+msgstr "Lähteen nimi"
+
+#: ../src/ncb-selection.c:988
+msgid "Source type"
+msgstr "Lähteen tyyppi"
+
+#: ../src/ncb-selection.c:996
+msgid "Source size"
+msgstr "Lähteen koko"
+
+#: ../src/ncb-selection.c:1005
+msgid "Disc label"
+msgstr "Levyn nimi"
+
+#: ../src/ncb-selection.c:1012
+msgid "Write speed"
+msgstr "Kirjoitusnopeus"
+
+#: ../src/ncb-selection-dialog.c:171
+msgid "Copy Disc"
+msgstr "Kopioi levy"
+
+#: ../src/ncb-selection-dialog.c:173
+msgid "Copy disc _to:"
+msgstr "Kopioi levy _kohteeseen:"
+
+#: ../src/ncb-selection-dialog.c:345
+msgid "Maximum possible"
+msgstr "Suurin mahdollinen"
+
+#: ../src/ncb-selection-dialog.c:558
+msgid "Calculating..."
+msgstr "Lasketaan..."
+
+#: ../src/ncb-selection-dialog.c:637
+msgid "_Write"
+msgstr "_Kirjoita"
+
+#: ../src/ncb-operation.c:253
+msgid "Preparing to write CD"
+msgstr "Valmistellaan CD:lle kirjoittamista"
+
+#: ../src/ncb-operation.c:255
+msgid "Preparing to write DVD"
+msgstr "Valmistellaan DVD:lle kirjoittamista"
+
+#: ../src/ncb-operation.c:260
+msgid "Writing CD"
+msgstr "Kirjoitetaan CD:tä"
+
+#: ../src/ncb-operation.c:262
+msgid "Writing DVD"
+msgstr "Kirjoitetaan DVD:tä"
+
+#: ../src/ncb-operation.c:267 ../src/ncb-operation.c:269
+msgid "Finishing write"
+msgstr "Viimeistellään kirjoitusta"
+
+#: ../src/ncb-operation.c:274
+msgid "Erasing CD"
+msgstr "Tyhjennetään CD:tä"
+
+#: ../src/ncb-operation.c:276
+msgid "Erasing DVD"
+msgstr "Tyhjennetään DVD:tä"
+
+#: ../src/ncb-operation.c:360
+msgid "None"
+msgstr "Ei mitään"
+
+#: ../src/ncb-operation.c:367
+msgid "Please make sure another application is not using the drive."
+msgstr "Varmista ettei mikään muu sovellus käytä levyä."
+
+#: ../src/ncb-operation.c:368
+msgid "Drive is busy"
+msgstr "Asema on käytössä"
+
+#: ../src/ncb-operation.c:370 ../src/ncb-operation.c:375
+#, c-format
+msgid ""
+"Please put a disc, with at least %s free, into the drive.  The following "
+"disc types are supported:\n"
+"%s"
+msgstr ""
+"Laita asemaan tyhjä levy, jolla on vähintään %s tilaa. Seuraavat levytyypit "
+"on tuettu:\n"
+"%s"
+
+#: ../src/ncb-operation.c:373
+msgid "Insert a rewritable or blank disc"
+msgstr "Laita tyhjä tai uudelleenkirjoitettava levy asemaan"
+
+#: ../src/ncb-operation.c:378
+msgid "Insert a blank disc"
+msgstr "Laita tyhjä levy asemaan"
+
+#: ../src/ncb-operation.c:381 ../src/ncb-operation.c:387
+#, c-format
+msgid ""
+"Please replace the disc in the drive with a supported disc with at least %s "
+"free.  The following disc types are supported:\n"
+"%s"
+msgstr ""
+"Vaihda asemassa oleva levy levyyn, jolla on vähintään %s vapaata tilaa. "
+"Seuraavat levytyypit on tuettu:\n"
+"%s"
+
+#: ../src/ncb-operation.c:384
+msgid "Reload a rewritable or blank disc"
+msgstr "Laita uudelleenkirjoitettava tai tyhjä levy uudelleen asemaan"
+
+#: ../src/ncb-operation.c:390
+msgid "Reload a blank disc"
+msgstr "Laita tyhjä levy uudelleen asemaan"
+
+#: ../src/ncb-operation.c:401
+msgid "_Eject"
+msgstr "_Avaa asema"
+
+#: ../src/ncb-operation.c:468
+#, c-format
+msgid "This %s appears to have information already recorded on it."
+msgstr "Levylle %s on jo tallennettu tietoa."
+
+#: ../src/ncb-operation.c:472
+msgid "Erase information on this disc?"
+msgstr "Tyhjennetäänkö tämä levy?"
+
+#: ../src/ncb-operation.c:480
+msgid "_Try Another"
+msgstr "_Yritä toista"
+
+#: ../src/ncb-operation.c:491
+msgid "_Erase Disc"
+msgstr "_Tyhjennä levy"
+
+#: ../src/ncb-operation.c:523
+#, c-format
+msgid ""
+"There was an error writing to the disc:\n"
+"%s"
+msgstr ""
+"Virhe kirjoitettaessa levyä:\n"
+"%s"
+
+#: ../src/ncb-operation.c:526
+msgid "There was an error writing to the disc"
+msgstr "Levyä kirjoitettaessa tapahtui virhe"
+
+#: ../src/ncb-operation.c:529
+msgid "Error writing to disc"
+msgstr "Virhe kirjoitettaessa levyä"
+
+#: ../src/ncb-operation.c:584
+#, c-format
+msgid "A file named \"%s\" already exists.  Do you want to overwrite it?"
+msgstr "Tiedosto nimeltään \"%s\" on jo olemassa. Haluatko korvata sen?"
+
+#: ../src/ncb-operation.c:586
+msgid "Overwrite existing file?"
+msgstr "Korvataanko olemassa oleva tiedosto?"
+
+#: ../src/ncb-operation.c:595
+msgid "_Overwrite"
+msgstr "_Korvaa"
+
+#: ../src/ncb-operation.c:614
+msgid "Choose a filename for the disc image"
+msgstr "Valitse levyn vedostiedoston nimi"
+
+#. Translators: this is the filename of the image
+#: ../src/ncb-operation.c:750
+msgid "image.iso"
+msgstr "levyvedos.iso"
+
+#: ../src/ncb-operation.c:771
+#, c-format
+msgid "You do not have permissions to overwrite that file (%s)."
+msgstr "Tiedoston korvaamiseen ei ole oikeuksia (%s)."
+
+#: ../src/ncb-operation.c:772 ../src/ncb-operation.c:787
+#: ../src/ncb-operation.c:1593
+msgid "File image creation failed"
+msgstr "Tiedostovedoksen luonti epäonnistui"
+
+#: ../src/ncb-operation.c:786
+#, c-format
+msgid "You do not have permissions to create that file (%s)."
+msgstr "Tiedoston luomiseen ei ole oikeuksia (%s)."
+
+#: ../src/ncb-operation.c:851
+msgid "Complete"
+msgstr "Valmis"
+
+#: ../src/ncb-operation.c:854
+msgid "An error occurred while writing"
+msgstr "Virhe kirjoitettaessa"
+
+#: ../src/ncb-operation.c:914
+msgid "Writing Files to a Disc Image"
+msgstr "Tiedostoja kirjoitetaan levyvedostiedostoon"
+
+#: ../src/ncb-operation.c:915
+msgid "Writing Files to CD"
+msgstr "Tiedostoja kirjoitetaan CD-levylle"
+
+#: ../src/ncb-operation.c:916
+msgid "Writing Files to DVD"
+msgstr "Tiedostoja kirjoitetaan DVD-levylle"
+
+#: ../src/ncb-operation.c:919
+msgid "Writing Image to Disc"
+msgstr "Tiedostoja kirjoitetaan levylle"
+
+#: ../src/ncb-operation.c:920
+msgid "Copying Disc Image"
+msgstr "Kopioidaan levyvedosta"
+
+#: ../src/ncb-operation.c:921
+msgid "Writing Image to CD"
+msgstr "Levyvedosta kirjoitetaan CD-levylle"
+
+#: ../src/ncb-operation.c:922
+msgid "Writing Image to DVD"
+msgstr "Levyvedosta kirjoitetaan DVD-levylle"
+
+#: ../src/ncb-operation.c:925
+msgid "Copying Disc"
+msgstr "Kopioidaan levyä"
+
+#: ../src/ncb-operation.c:926
+msgid "Copying Disc to a Disc Image"
+msgstr "Kopioidaan levyä levyvedostiedostoon"
+
+#: ../src/ncb-operation.c:927
+msgid "Copying Disc to CD"
+msgstr "Kopioidaan levyä CD-levylle"
+
+#: ../src/ncb-operation.c:928
+msgid "Copying Disc to DVD"
+msgstr "Kopioidaan levyä DVD-levylle"
+
+#: ../src/ncb-operation.c:932
+msgid "Writing files to disc"
+msgstr "Kirjoitetaan tiedostoja levylle"
+
+#: ../src/ncb-operation.c:933
+msgid "Writing files to a disc image"
+msgstr "Kirjoitetaan tiedostoja levyvedostiedostoon"
+
+#: ../src/ncb-operation.c:934
+msgid "Writing files to CD"
+msgstr "Kirjoitetaan tiedostoja CD-levylle"
+
+#: ../src/ncb-operation.c:935
+msgid "Writing files to DVD"
+msgstr "Kirjoitetaan tiedostoja DVD-levylle"
+
+#: ../src/ncb-operation.c:938
+msgid "Writing image to disc"
+msgstr "Kirjoitetaan levyvedosta levylle"
+
+#: ../src/ncb-operation.c:939
+msgid "Copying disc image"
+msgstr "Kopioidaan levyvedosta"
+
+#: ../src/ncb-operation.c:940
+msgid "Writing image to CD"
+msgstr "Kirjoitetaan levyvedosta CD-levylle"
+
+#: ../src/ncb-operation.c:941
+msgid "Writing image to DVD"
+msgstr "Kirjoitetaan levyvedosta DVD-levylle"
+
+#: ../src/ncb-operation.c:944
+msgid "Copying disc"
+msgstr "Kopioidaan levyä"
+
+#: ../src/ncb-operation.c:945
+msgid "Copying disc to a disc image"
+msgstr "Kopioidaan levyä levyvedostiedostoksi"
+
+#: ../src/ncb-operation.c:946
+msgid "Copying disc to CD"
+msgstr "Kopioidaan levyä CD-levylle"
+
+#: ../src/ncb-operation.c:947
+msgid "Copying disc to DVD"
+msgstr "Kopioidaan levyä DVD-levylle"
+
+#: ../src/ncb-operation.c:951
+msgid ""
+"The selected files are being written to a CD or DVD.  This operation may "
+"take a long time, depending on data size and write speed."
+msgstr ""
+"Valitut tiedostot kirjoitetaan CD- tai DVD-levylle. Tämä voi kestää "
+"kauankin, tietojen määrästä ja kirjoitusnopeudesta riippuen."
+
+#: ../src/ncb-operation.c:952
+msgid "The selected files are being written to a disc image file."
+msgstr "Valitut tiedostot kirjoitetaan levyvedostiedostoon."
+
+#: ../src/ncb-operation.c:953
+msgid ""
+"The selected files are being written to a CD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr ""
+"Valitut tiedostot kirjoitetaan CD-levylle. Tämä voi kestää kauankin, "
+"tietojen määrästä ja kirjoitusnopeudesta riippuen."
+
+#: ../src/ncb-operation.c:954
+msgid ""
+"The selected files are being written to a DVD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr ""
+"Valitut tiedostot kirjoitetaan DVD-levylle. Tämä voi kestää kauankin, "
+"tietojen määrästä ja kirjoitusnopeudesta riippuen."
+
+#: ../src/ncb-operation.c:957
+msgid ""
+"The selected disc image is being written to a CD or DVD.  This operation may "
+"take a long time, depending on data size and write speed."
+msgstr ""
+"Valitut tiedostot kirjoitetaan CD- tai DVD-levylle. Tämä voi kestää "
+"kauankin, tietojen määrästä ja kirjoitusnopeudesta riippuen."
+
+#: ../src/ncb-operation.c:958
+msgid "The selected disc image is being copied to a disc image file."
+msgstr "Valittu levyvedos kopioidaan levyvedostiedostoon."
+
+#: ../src/ncb-operation.c:959
+msgid ""
+"The selected disc image is being written to a CD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr ""
+"Valittu levyvedostiedosto kirjoitetaan CD-levylle. Tämä voi kestää kauankin, "
+"tiedoston koosta ja kirjoitusnopeudesta riippuen."
+
+#: ../src/ncb-operation.c:960
+msgid ""
+"The selected disc image is being written to a DVD.  This operation may take "
+"a long time, depending on data size and write speed."
+msgstr ""
+"Valittu levyvedostiedosto kirjoitetaan DVD-levylle. Tämä voi kestää "
+"kauankin, tiedoston koosta ja kirjoitusnopeudesta riippuen."
+
+#: ../src/ncb-operation.c:963
+msgid ""
+"The selected disc is being copied to a CD or DVD.  This operation may take a "
+"long time, depending on data size and drive speed."
+msgstr ""
+"Valittu levy kopioidaan CD- tai DVD-levylle. Tämä voi kestää kauankin, levyn "
+"koosta ja kirjoitusnopeudesta riippuen."
+
+#: ../src/ncb-operation.c:964
+msgid ""
+"The selected disc is being copied to a disc image file.  This operation may "
+"take a long time, depending on data size and drive speed."
+msgstr ""
+"Valittu levy kopioidaan levyvedostiedostoon. Tämä voi kestää kauankin, levyn "
+"koosta ja kirjoitusnopeudesta riippuen."
+
+#: ../src/ncb-operation.c:965
+msgid ""
+"The selected disc is being copied to a CD.  This operation may take a long "
+"time, depending on data size and drive speed."
+msgstr ""
+"Valittu levy kopioidaan Cd-levylle. Tämä voi kestää kauankin, levyn koosta "
+"ja kirjoitusnopeudesta riippuen."
+
+#: ../src/ncb-operation.c:966
+msgid ""
+"The selected disc is being copied to a DVD.  This operation may take a long "
+"time, depending on data size and drive speed."
+msgstr ""
+"Valittu levy kopioidaan DVD-levylle. Tämä voi kestää kauankin, levyn koosta "
+"ja kirjoitusnopeudesta riippuen."
+
+#: ../src/ncb-operation.c:1023
+msgid "Burning CD"
+msgstr "Tallennetaan CD:lle"
+
+#: ../src/ncb-operation.c:1190 ../src/ncb-operation.c:1414
+msgid "Creating disc image"
+msgstr "Luodaan CD-levyvedoksia"
+
+#: ../src/ncb-operation.c:1808
+#, c-format
+msgid "Writing CD/DVD-Image '%s'."
+msgstr "Kirjoitetaan CD/DVD-levykuvaa \"%s\"."
+
+#: ../src/ncb-operation.c:1813
+#, c-format
+msgid "Writing disc '%s'."
+msgstr "Kirjoitetaan levyä \"%s\"."
+
+#: ../src/ncb-operation.c:1815
+#, c-format
+msgid "Writing %s '%s'."
+msgstr "Kirjoitetaan %s \"%s\"."
+
+#: ../src/ncb-operation.c:1862
+#, c-format
+msgid "Completed writing %s"
+msgstr "Kirjoitus valmis: %s"
+
+#: ../src/ncb-operation.c:1967
+msgid "Interrupt writing files to disc?"
+msgstr "Keskeytä tiedostojen kirjoitus levylle?"
+
+#: ../src/ncb-operation.c:1968
+msgid ""
+"Are you sure you want to interrupt the disc write operation? Some drives may "
+"require that you restart the computer to get them working again."
+msgstr ""
+"Haluatko varmasti keskeyttää levyn kirjoittamisen? Eräät optiset levyasemat "
+"saattavat toimia tämän jälkeen vasta, kun tietokone on käynnistetty "
+"uudelleen."
+
+#: ../src/ncb-operation.c:1974
+msgid "Interrupt"
+msgstr "Keskeytä"
+
+#: ../src/ncb-operation.c:1976
+msgid "Continue"
+msgstr "Jatka"
+
+#: ../src/ncb-progress-dialog.c:146
+#, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d tunti"
+msgstr[1] "%d tuntia"
+
+#: ../src/ncb-progress-dialog.c:148
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d minuutti"
+msgstr[1] "%d minuuttia"
+
+#: ../src/ncb-progress-dialog.c:151
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d sekunti"
+msgstr[1] "%d sekuntia"
+
+#. hour:minutes:seconds
+#: ../src/ncb-progress-dialog.c:156
+#, c-format
+msgid "%s %s %s"
+msgstr "%s %s %s"
+
+#. minutes:seconds
+#: ../src/ncb-progress-dialog.c:159
+#, c-format
+msgid "%s %s"
+msgstr "%s %s"
+
+#. seconds
+#: ../src/ncb-progress-dialog.c:162
+#, c-format
+msgid "%s"
+msgstr "%s"
+
+#. 0 seconds
+#: ../src/ncb-progress-dialog.c:165
+msgid "0 seconds"
+msgstr "0 sekuntia"
+
+#: ../src/ncb-progress-dialog.c:189
+#, c-format
+msgid "About %s left"
+msgstr "Noin %s jäljellä"
+
+#: ../src/ncb-progress-dialog.c:439
+msgid "_Make Another Copy"
+msgstr "Tee _toinen kopio"
+
+#: ../src/ncb-rename-dialog.c:479
+msgid "C_ontinue"
+msgstr "J_atka"
+
+#: ../src/ncb-rename-dialog.c:507
+msgid "Filename"
+msgstr "Tiedostonimi"
+
+#: ../src/ncb-rename-dialog.c:523
+msgid "Rename file"
+msgstr "Nimeä tiedosto uudestaan"
+
+#~ msgid "Unnamed CDROM"
+#~ msgstr "Nimetön CD-ROM"
+
+#~ msgid "Select the speed to use for the write"
+#~ msgstr "Valitse kirjoitusnopeus"
+
+#~ msgid "Unable to create temporary directory: %s."
+#~ msgstr "Väliaikaisen hakemiston luominen epäonnistui: %s."
+
+#~ msgid "Unable to create temporary file: %s."
+#~ msgstr "Väliaikaisen tiedoston luominen epäonnistui: %s."
+
+#~ msgid "Command failed: %s"
+#~ msgstr "Komento epäonnistui: %s"
+
+#~ msgid "Unknown error"
+#~ msgstr "Tuntematon virhe"
+
+#~ msgid "%d MiB"
+#~ msgstr "%d MiB"
+
+#~ msgid ""
+#~ "You need to copy the files you want to write to disc to the CD/DVD "
+#~ "Creator window."
+#~ msgstr ""
+#~ "Levylle kirjoitettavat tiedostot tulee kopioida CD/DVD-luontityökalun "
+#~ "ikkunaan."
+
+#~ msgid "Open CD/DVD Creator"
+#~ msgstr "Avaa CD/DVD-luontityökalu"
+
+#~ msgid "Unable to read specified location"
+#~ msgstr "Annetusta sijainnista ei voida lukea"
+
+#~ msgid "No media available"
+#~ msgstr "Ei mediaa käytettävissä"
+
+#~ msgid "Too many parameters"
+#~ msgstr "Liian monta parametria"
+
+#~ msgid "Too many parameters were passed to the application."
+#~ msgstr "Sovellukselle annettiin liian monta parametria"
+
+#~ msgid "Can't launch cd burner"
+#~ msgstr "CD-kirjoittimen käynnistys ei onnistu"
+
+#~ msgid "<b>After Writing</b>"
+#~ msgstr "<b>Kirjoittamisen jälkeen</b>"
+
+#~ msgid "E_ject disc"
+#~ msgstr "_Poista levy asemasta"
+
+#~ msgid "CD or DVD"
+#~ msgstr "CD tai DVD"
+
+#~ msgid ""
+#~ "Please put a rewritable or blank %s, with at least %d MiB free, into the "
+#~ "drive."
+#~ msgstr ""
+#~ "Laita asemaan tyhjä tai uudelleenkirjoitettava %s-levy, jolla on "
+#~ "vähintään %d MiB tilaa."
+
+#~ msgid ""
+#~ "Please replace the disc in the drive with a rewritable or blank %s, with "
+#~ "at least %d MiB free."
+#~ msgstr ""
+#~ "Vaihda asemassa oleva levy tyhjään tai uudelleenkirjoitettavaan %s-"
+#~ "levyyn, jolla on vähintään %d MiB tilaa."
+
+#~ msgid "Incorrectly encoded string."
+#~ msgstr "Merkkijonossa on virheellinen merkistö."
+
+#~ msgid "Complete, insert another disc..."
+#~ msgstr "Valmis, laita toinen levy asemaan..."

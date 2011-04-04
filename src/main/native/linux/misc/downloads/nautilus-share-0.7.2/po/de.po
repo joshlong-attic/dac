@@ -1,0 +1,64 @@
+# German translations for nautilus-share package.
+# Copyright (C) 2005 THE nautilus-share'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the nautilus-share package.
+# sebastien estienne <sebastien.estienne@gmail.com>, 2005.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: nautilus-share 0.6.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-05-28 13:49+0200\n"
+"PO-Revision-Date: 2005-06-05 14:10+0100\n"
+"Last-Translator: Michael Kanis <mkanis@gmx.de>\n"
+"Language-Team: German <traduc@traduc.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../src/nautilus-share.c:105
+msgid "Sharename too long, may not appear on all Os"
+msgstr "Freigabename zu lang, könnte auf einigen Systemen nicht angezeigt werden."
+
+#: ../src/nautilus-share.c:116
+msgid "Sharename already in use or forbidden!"
+msgstr "Freigabename bereits in Benutzung oder nicht erlaubt!"
+
+#: ../src/nautilus-share.c:467
+msgid "shared (read only)"
+msgstr "freigegeben (nur lesen)"
+
+#: ../src/nautilus-share.c:472
+msgid "shared (read and write)"
+msgstr "freigegeben (lesen und schreiben)"
+
+#: ../src/nautilus-share.c:476
+msgid "not shared"
+msgstr "nicht freigegeben"
+
+#: ../src/nautilus-share.c:647
+msgid "Share"
+msgstr "Ordner freigeben"
+
+#: ../src/nautilus-share.c:648
+#: ../interfaces/share-dialog.glade.h:5
+msgid "Share this Folder"
+msgstr "Diesen Ordner freigeben"
+
+#: ../interfaces/share-dialog.glade.h:1
+msgid "<big><b>Folder Sharing</b></big>"
+msgstr "<big><b>Ordner freigeben</b></big>"
+
+#: ../interfaces/share-dialog.glade.h:2
+msgid "Allow other people to write in this folder"
+msgstr "Anderen erlauben, in diesen Ordner zu schreiben"
+
+#: ../interfaces/share-dialog.glade.h:3
+msgid "Comment :"
+msgstr "Kommentar:"
+
+#: ../interfaces/share-dialog.glade.h:4
+msgid "Share Name :"
+msgstr "Freigabename:"
+
+

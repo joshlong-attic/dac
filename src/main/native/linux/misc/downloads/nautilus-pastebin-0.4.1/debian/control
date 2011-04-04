@@ -1,0 +1,43 @@
+Source: nautilus-pastebin
+Section: gnome
+Priority: optional
+Maintainer: Alessio Treglia <quadrispro@ubuntu.com>
+DM-Upload-Allowed: yes
+Uploaders: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 7.0.50~), quilt (>= 0.46-7~)
+Build-Depends-Indep: python-support (>= 0.5.3), python-distutils-extra
+Standards-Version: 3.8.4
+Homepage: https://launchpad.net/nautilus-pastebin
+Vcs-Svn: svn://svn.debian.org/python-modules/packages/nautilus-pastebin/trunk
+Vcs-Browser: http://svn.debian.org/viewsvn/python-modules/packages/nautilus-pastebin/trunk/
+XS-Python-Version: >= 2.5
+
+Package: nautilus-pastebin
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends},
+ nautilus,
+ python-nautilus,
+ python-gtk2,
+ python-gconf,
+ python-notify,
+ python-pastebin
+Description: Nautilus extension to send files to a pastebin
+ nautilus-pastebin is a Nautilus extension written in Python, which
+ allows users to upload text-only files to a pastebin service just
+ by right-clicking on them.
+ .
+ After sending the files, a notification will be shown and the paste
+ URL copied into the clipboard.
+ .
+ Users can also customize the extension's behaviour just by using
+ nautilus-pastebin-configurator, an easy-to-use configuration tool.
+
+Package: python-pastebin
+Section: python
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Description: Python module to send text files to pastebin web applications
+ A pastebin is a web application which allows users to upload text files for
+ public viewing. This module provides a quick and easy way to submit textual
+ contents to a wide variety of the pastebins available on the Internet; users
+ also can extend support to other services by simply writing new validators.

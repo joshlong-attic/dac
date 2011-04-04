@@ -1,0 +1,984 @@
+# translation of nautilus-cd-burner.HEAD.po to marathi
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Sandeep Shedmake <sandeep.shedmake@gmail.com>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: nautilus-cd-burner.HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-02-29 03:17+0000\n"
+"PO-Revision-Date: 2008-02-29 16:51+0530\n"
+"Last-Translator: Sandeep Shedmake <sandeep.shedmake@gmail.com>\n"
+"Language-Team: marathi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: ../data/nautilus-cd-burner.desktop.in.h:1
+#: ../data/nautilus-cd-burner-open-iso.desktop.in.h:1
+#: ../src/ncb-operation.c:1635
+msgid "CD/DVD Creator"
+msgstr "CD/DVD निर्माता"
+
+#: ../data/nautilus-cd-burner.desktop.in.h:2
+msgid "Open a folder into which you can drag files to burn to a CD or DVD"
+msgstr "संचयीका उघडा ज्यात तुम्ही CD किंवा DVD बनविण्याकरीता फाइल संचयीत करू शकाल"
+
+#: ../data/nautilus-cd-burner-open-iso.desktop.in.h:2
+msgid "Open the CD/DVD Creator"
+msgstr "CD/DVD निर्माता उघडा"
+
+#: ../data/nautilus-cd-burner.glade.h:1
+msgid "    "
+msgstr "    "
+
+#: ../data/nautilus-cd-burner.glade.h:2
+msgid "<b>Information</b>"
+msgstr "<b>माहिती</b>"
+
+#: ../data/nautilus-cd-burner.glade.h:3
+msgid "<b>Write Options</b>"
+msgstr "<b>लेखन पर्याय</b>"
+
+#: ../data/nautilus-cd-burner.glade.h:4
+msgid "<big><b>Some files have invalid filenames</b></big>"
+msgstr "<big><b>काहीक फाइलींना अवैध फाइलनाव आहे</b></big>"
+
+#: ../data/nautilus-cd-burner.glade.h:5
+msgid "<big><b>Writing files to disc</b></big>"
+msgstr "<big><b>डीस्कवर फाइल लिहीत आहे</b></big>"
+
+#: ../data/nautilus-cd-burner.glade.h:6
+msgid "<i>Initializing...</i>"
+msgstr "<i>प्रारंभ करीत आहे...</i>"
+
+#: ../data/nautilus-cd-burner.glade.h:7
+msgid "Data size:"
+msgstr "माहिती आकार:"
+
+#: ../data/nautilus-cd-burner.glade.h:8
+msgid "Disc _name:"
+msgstr "डीस्क नाव (_n):"
+
+#: ../data/nautilus-cd-burner.glade.h:9
+msgid "Label to identify disc"
+msgstr "डीस्क ओळखण्यासाठी नाव द्या"
+
+#: ../data/nautilus-cd-burner.glade.h:10
+msgid ""
+"The following filenames are not valid.  Please provide new names for each of "
+"them."
+msgstr "खालील फाइलनाव वैध नाही.  कृपया प्रत्येक फाइलनावकरीता नविन नाव पुरवा."
+
+#: ../data/nautilus-cd-burner.glade.h:11
+msgid "Write _speed:"
+msgstr "लेखनाचा _वेग:"
+
+#: ../data/nautilus-cd-burner.glade.h:12
+msgid "Write disc _to:"
+msgstr "डीस्क ह्यावर लिहा (_t):"
+
+#: ../data/nautilus-cd-burner.glade.h:13 ../src/ncb-operation.c:902
+msgid "Writing Files to Disc"
+msgstr "डीस्कवर फाइल लिहील्या जात आहेत"
+
+#: ../data/nautilus-cd-burner.glade.h:14
+msgid "_Dummy write"
+msgstr "नक्कल लेखन (_D)"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:1
+msgid "Default burn speed"
+msgstr "सर्वसाधरण प्रतिकृत वेग"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:2
+msgid "Default speed at which the media will be written."
+msgstr "माध्यम लिहीण्याकरीता मुलभूत गती."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:3
+msgid "Directory for the temporary ISO images"
+msgstr "तात्पुरत्या ISO प्रतिमांकरीता संचयीका"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:4
+msgid ""
+"Directory used for the temporary ISO images, leave blank to use the default "
+"system temporary directory."
+msgstr "तात्पूरते ISO प्रतिमा करीता वापरले जाणारी संचयीका, मुलभूत प्रणालीवरील तात्पूरती संचयीका वापरण्याकरीता रिक्त सोडा."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:5
+msgid "Enable Burnproof option"
+msgstr "Burnproof पर्याय कार्यान्वीत करा"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:6
+msgid "Enable debug"
+msgstr "त्रुटी निर्धारण सुरू करा"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:7
+msgid "Enable overburn"
+msgstr "overburn कार्यान्वीत करा"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:8
+msgid "Whether to allow the data to exceed the size of the physical medium."
+msgstr "वास्तवीक माध्यमाच्या आकार क्षमता पलीकडे माहितीस सहमती द्यावी."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:9
+msgid "Whether to enable the debugging for CD Recording."
+msgstr "CD रेकॉर्डींगकरीता त्रुटी निर्धारण कार्यान्वीत करायची का."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:10
+msgid "Whether to use the Burnproof option available on some recorders."
+msgstr "काहीक रेकॉर्ड यंत्रावरील उपलब्ध Burnproof पर्याय वापरायचे का."
+
+#: ../src/burn-extension.c:141 ../src/burn-extension.c:145
+msgid "Unable to launch the cd burner application"
+msgstr "सीडी बर्नर अनुप्रयोग प्रक्षेपीत करता आले नाही"
+
+#: ../src/burn-extension.c:453 ../src/burn-extension.c:463
+#: ../src/burn-extension.c:551
+msgid "_Write to Disc..."
+msgstr "डीस्कवर लिहा (_W)..."
+
+#: ../src/burn-extension.c:454
+msgid "Write disc image to a CD or DVD disc"
+msgstr "डीस्क प्रतिमा CD किंवा DVD वर लिहा"
+
+#: ../src/burn-extension.c:464
+msgid "Write disc image cuesheet to a CD or DVD disc"
+msgstr "डीस्क प्रतिमा क्युशीट CD किंवा DVD वर लिहा"
+
+#: ../src/burn-extension.c:510
+msgid "_Copy Disc..."
+msgstr "डीस्क प्रतिकृत करा (_C)..."
+
+#: ../src/burn-extension.c:511
+msgid "Create a copy of this CD or DVD disc"
+msgstr "ह्या CD किंवा DVD डीस्कची प्रतिकृती तयार करा"
+
+#: ../src/burn-extension.c:552 ../src/nautilus-burn-bar.c:151
+msgid "Write contents to a CD or DVD disc"
+msgstr "CD किंवा DVD डीस्कवर विषयसूची लिहा"
+
+#: ../src/make-iso.c:306
+msgid "Disable Microsoft Windows compatibility?"
+msgstr "Microsoft Windows सहत्व असमर्थित करायचे?"
+
+#: ../src/make-iso.c:309
+msgid ""
+"Some files don't have a suitable name for a Windows-compatible CD.\n"
+"Do you want to continue with Windows compatibility disabled?"
+msgstr ""
+"काहीक फाइल यांना Windows-सहत्व CD करीता योग्य नाव उपलब्ध नाही.\n"
+"Windows सहत्व अकार्यान्वीत करुन तुम्हाला पुढे जायचे?"
+
+#: ../src/make-iso.c:310
+msgid "Windows compatibility"
+msgstr "Windows समर्थन"
+
+#: ../src/make-iso.c:707
+msgid " (invalid Unicode)"
+msgstr " (अवैध युनिकोड)"
+
+#: ../src/make-iso.c:868
+#, c-format
+msgid ""
+"The selected location does not have enough space to store the disc image (%s "
+"MiB needed)."
+msgstr "निवडलेले स्थानाकडे डीस्क प्रतिमा संचयीत करायला अतिरीक्त जागा नाही (%s MiB आवश्यक)."
+
+#: ../src/make-iso.c:1012 ../src/make-iso.c:1402
+#, c-format
+msgid "Could not run sub process: %s."
+msgstr "उपक्रिया चालू करू शकत नाही: %s."
+
+#: ../src/make-iso.c:1039
+#, c-format
+msgid "The operation was cancelled by the user."
+msgstr "क्रिया वापरकर्त्याद्वारे रद्द करण्यात आली."
+
+#: ../src/make-iso.c:1140
+#, c-format
+msgid ""
+"Some files have invalid filenames: \n"
+"%s"
+msgstr ""
+"काहीक फाइल यांचे फाइलनाव अवैध आहेत: \n"
+"%s"
+
+#: ../src/make-iso.c:1153
+msgid "Unknown character encoding."
+msgstr "अज्ञात अक्षर ऐंनकोडींग."
+
+#: ../src/make-iso.c:1157
+msgid "There is no space left on the device."
+msgstr "साधनावर जागा शिल्लक नाही."
+
+#. TODO: get filename from error message
+#: ../src/make-iso.c:1162
+msgid "File too large for filesystem."
+msgstr "फाइलप्रणालीसाठी फाइल खूप मोठी आहे."
+
+#: ../src/make-iso.c:1215
+#, c-format
+msgid "The label for the image is too long."
+msgstr "चित्राचा लेबल खूपच लांब आहे."
+
+#: ../src/make-iso.c:1323
+#, c-format
+msgid "There are no files to write to disc."
+msgstr "या डीस्कवर लिहिण्यासाठी कोणतीही फाइल उपलब्ध नाही."
+
+#: ../src/make-iso.c:1674
+msgid "Not a valid disc image."
+msgstr "वैध डीस्क प्रतिमा नाही."
+
+#: ../src/nautilus-burn-bar.c:137
+msgid "CD/DVD Creator Folder"
+msgstr "CD/DVD निरमाण संचयीका"
+
+#: ../src/nautilus-burn-bar.c:141 ../src/ncb-selection-dialog.c:175
+msgid "Write to Disc"
+msgstr "डीस्कवर लिहा"
+
+#: ../src/nautilus-burn-drive.c:1252
+msgid "Could not determine media type because CD drive is busy"
+msgstr "CD ड्राइव्ह व्यस्थ असल्यामुळे माध्यम प्रकार ठरवू शकला नाही"
+
+#: ../src/nautilus-burn-drive.c:1254
+msgid "Couldn't open media"
+msgstr "माध्यम उघडू शकत नाही"
+
+#: ../src/nautilus-burn-drive.c:1256
+msgid "Unknown Media"
+msgstr "अनोळखी माध्यम"
+
+#: ../src/nautilus-burn-drive.c:1258
+msgid "Commercial CD or Audio CD"
+msgstr "व्यापारी CD किंवा ऑडिओ CD"
+
+#: ../src/nautilus-burn-drive.c:1260
+msgid "CD-R"
+msgstr "CD-R"
+
+#: ../src/nautilus-burn-drive.c:1262
+msgid "CD-RW"
+msgstr "CD-RW"
+
+#: ../src/nautilus-burn-drive.c:1264
+msgid "DVD"
+msgstr "DVD"
+
+#: ../src/nautilus-burn-drive.c:1266
+msgid "DVD-R, or DVD-RAM"
+msgstr "DVD-R, किंवा DVD-RAM"
+
+#: ../src/nautilus-burn-drive.c:1268
+msgid "DVD-RW"
+msgstr "DVD-RW"
+
+#: ../src/nautilus-burn-drive.c:1270
+msgid "DVD-RAM"
+msgstr "DVD-RAM"
+
+#: ../src/nautilus-burn-drive.c:1272
+msgid "DVD+R"
+msgstr "DVD+R"
+
+#: ../src/nautilus-burn-drive.c:1274
+msgid "DVD+RW"
+msgstr "DVD+RW"
+
+#: ../src/nautilus-burn-drive.c:1276
+msgid "DVD+R DL"
+msgstr "DVD+R DL"
+
+#: ../src/nautilus-burn-drive.c:1281
+msgid "Broken media type"
+msgstr "तुटलेला माध्यम प्रकार"
+
+#: ../src/nautilus-burn-drive-monitor.c:452
+msgid "File image"
+msgstr "फाइल प्रतिमा"
+
+#: ../src/nautilus-burn-drive-selection.c:107 ../src/ncb-selection.c:1022
+msgid "Drive"
+msgstr "ड्राइव्ह"
+
+#: ../src/nautilus-burn-drive-selection.c:237
+msgid "Unnamed CD/DVD Drive"
+msgstr "अनामांकीत CD/DVD ड्राइव्ह"
+
+#: ../src/nautilus-burn-recorder.c:602
+msgid "The recorder could not be accessed."
+msgstr "रेकॉर्डर पर्यंत प्रवेश करू शकले नाही."
+
+#: ../src/nautilus-burn-recorder.c:606
+msgid "Not enough space available on the disc."
+msgstr "डीस्कवर अतिरीक्त जागा उपलब्ध नाही."
+
+#: ../src/nautilus-burn-recorder.c:610 ../src/nautilus-burn-recorder.c:614
+msgid "The files selected did not fit on the DVD."
+msgstr "DVD वर निवडलेल्या फाइली मावत नाही."
+
+#: ../src/nautilus-burn-recorder.c:626
+msgid "The target DVD drive is still in use."
+msgstr "लक्ष्य DVD ड्राइव्ह या क्षणी देखिल वापरणीत आहे."
+
+#: ../src/nautilus-burn-recorder.c:632
+msgid "Unhandled error, aborting"
+msgstr "न हाताळलेली त्रुटी, बाहेर पडत आहे"
+
+#: ../src/nautilus-burn-recorder.c:697
+msgid "The CD has already been recorded."
+msgstr "CD पहिलेपासूनच रेकॉर्ड केलेली आहे."
+
+#: ../src/nautilus-burn-recorder.c:717
+msgid "The files selected did not fit on the CD."
+msgstr "निवडलेल्या फाइली CD वर मावत नाही."
+
+#: ../src/nautilus-burn-recorder.c:721
+msgid "All audio files must be stereo, 16-bit digital audio with 44100Hz samples."
+msgstr "सर्व ऑडिओ फाइल स्टिरीयो, 44100Hz नमुन्यांसह 16-बीट डिजीटल ऑडिओ असायला हवे."
+
+#: ../src/nautilus-burn-recorder.c:745
+msgid "Error while writing to disc.  Try a lower speed."
+msgstr "डीस्कवर लिहीतेवेळी त्रुटी.  किमान वेग वापरून प्रयत्न करा."
+
+#: ../src/nautilus-burn-recorder.c:750
+msgid "The system is too slow to write the CD at this speed. Try a lower speed."
+msgstr "प्रणाली ज्या वेगाने CD वर लिहीण्याच्या दृष्टीने खूप हळू कार्यरत आहे. कमी वेग वापरून पहा."
+
+#: ../src/nautilus-burn-recorder.c:884
+#, c-format
+msgid "You can only burn 99 tracks on one disc"
+msgstr "प्रत्येक डीस्कवर तुम्हि फक्त 99 स्तर बनवू शकता"
+
+#: ../src/nautilus-burn-recorder.c:891
+#, c-format
+msgid "No tracks given to write"
+msgstr "लिहीण्याकरता कोणतेही स्तर दिले गेलेले नाही"
+
+#: ../src/nautilus-burn-recorder.c:896
+msgid "Burning CD/DVD"
+msgstr "CD/DVD बनवित आहे"
+
+#: ../src/nautilus-burn-recorder.c:1101
+#, c-format
+msgid "Can only use growisofs on a single track"
+msgstr "एका स्तरावर फक्त growisofs वापरू शकता."
+
+#: ../src/nautilus-burn-recorder.c:1112
+#, c-format
+msgid "Can only use growisofs on a data or graft list track"
+msgstr "फक्त माहिती किंवा ग्राफ्ट यादी स्तरावरच growisofs वापरू शकता."
+
+#: ../src/nautilus-burn-recorder.c:1480
+msgid "Blanking CD"
+msgstr "सीडी रिकामी करीत आहे"
+
+#: ../src/nautilus-burn-recorder.c:1550
+msgid "Blanking DVD"
+msgstr "DVD रिकामी करीत आहे"
+
+#: ../src/nautilus-burn-process.c:497
+#, c-format
+msgid "Could not run the necessary command: %s"
+msgstr "जरूरी अज्ञावाली वापरता आली नाही: %s"
+
+#: ../src/nautilus-cd-burner.c:157
+#, c-format
+msgid "There was a problem displaying the help contents: %s."
+msgstr "मदत विषयसूची दर्शवितेवेळी त्रुटी आढळली: %s."
+
+#: ../src/nautilus-cd-burner.c:158
+msgid "Cannot display help"
+msgstr "मदत दर्शवू शकले नाही"
+
+#: ../src/nautilus-cd-burner.c:293
+msgid "Use CD/DVD device as source instead of burn:///"
+msgstr "burn:/// ऐवजी CD/DVD साधन स्त्रोत म्हणून वापरा"
+
+#: ../src/nautilus-cd-burner.c:293
+msgid "DEVICE"
+msgstr "साधन"
+
+#: ../src/nautilus-cd-burner.c:295
+msgid "Use ISO image as source instead of burn:///"
+msgstr "burn:/// ऐवजी ISO प्रतिमा स्त्रोत म्हणून वापरा"
+
+#: ../src/nautilus-cd-burner.c:295 ../src/nautilus-cd-burner.c:297
+msgid "FILENAME"
+msgstr "फाइलनाव"
+
+#: ../src/nautilus-cd-burner.c:297
+msgid "Use CUE/TOC file as source instead of burn:///"
+msgstr "burn:/// ऐवजी CUE/TOC फाइल स्त्रोत म्हणून वापरा"
+
+#: ../src/ncb-selection.c:442
+msgid ""
+"It appears that the disc, when created, will contain a single disc image "
+"file.  Do you want to create a disc from the contents of the image or with "
+"the image file inside?"
+msgstr "असे दिसून येते की, जेंव्हा निर्मीत केले जाईल, तेंव्हा त्यात फक्त एक डीस्क प्रतिमा फाइल समाविष्टीत असेल.  तुम्हाला प्रतिमेच्या विषयसूचीपासून किंवा प्रतिमा फाइल अंतर्भूतीत डीस्क बनवायची आहे?"
+
+#: ../src/ncb-selection.c:445
+msgid "Create disc containing a single disc image file?"
+msgstr "एकच डीस्क प्रतिमेची फाइल असलेली डीस्क बनवायची?"
+
+#: ../src/ncb-selection.c:448
+msgid "Create From Image"
+msgstr "प्रतिमेपासून बनवा"
+
+#: ../src/ncb-selection.c:450
+msgid "Create With File"
+msgstr "फाइलबरोबर बनवा"
+
+#: ../src/ncb-selection.c:453
+msgid ""
+"It appears that the disc, when created, will contain only disc image files.  "
+"Do you want to continue and write them to the disc as files?"
+msgstr "असे दिसून येते की, जेंव्हा निर्मीत केले जाईल, तेंव्हा त्यात फक्त डीस्क प्रतिमा फाइल समाविष्टीत असेल.  तुम्हाला नक्की पुढे जायचे व डीस्कवर फाइल म्हणून लिहायचे?"
+
+#: ../src/ncb-selection.c:456
+msgid "Create disc containing only disc image files?"
+msgstr "केवळ डीस्क प्रतिमेची फाइल असलेली डीस्क बनवायची?"
+
+#: ../src/ncb-selection.c:460
+msgid "Create With Files"
+msgstr "फाइलींबरोबर बनवा"
+
+#: ../src/ncb-selection.c:491
+#, c-format
+msgid "The file '%s' is unreadable.  Do you wish to skip this file and continue?"
+msgstr "'%s' ही फाइल वाचताजोगी नाही.  ती फाइल वगळून तुम्हाला पुढे जायचे?"
+
+#: ../src/ncb-selection.c:494
+msgid "Skip unreadable file?"
+msgstr "वाचताजोगी नसलेली फाइल वगळा?"
+
+#: ../src/ncb-selection.c:499
+msgid "Skip"
+msgstr "वगळा"
+
+#: ../src/ncb-selection.c:499
+msgid "Skip All"
+msgstr "सर्व वगळा"
+
+#: ../src/ncb-selection.c:522
+#, c-format
+msgid "No files were selected."
+msgstr "फाइली निवडल्या नाही."
+
+#: ../src/ncb-selection.c:553
+#, c-format
+msgid "The file '%s' is not a valid disc image."
+msgstr "'%s' ही फाइल वैध डीस्क प्रतिमा नाही."
+
+#: ../src/ncb-selection.c:628
+#, c-format
+msgid "The specified device '%s' is not a valid CD/DVD drive."
+msgstr "ठरलेले साधन '%s' वैध CD/DVD ड्राइव्ह नाही."
+
+#: ../src/ncb-selection.c:652
+#, c-format
+msgid "There doesn't seem to be any media in the selected drive."
+msgstr "निवडलेल्या साधनात कोणतेही माध्यम आढळले नाही."
+
+#: ../src/ncb-selection.c:659
+#, c-format
+msgid "The media is blank."
+msgstr "माध्यम रिक्त आहे."
+
+#: ../src/ncb-selection.c:692
+#, c-format
+msgid "File not found: %s"
+msgstr "फाइल आढळले नाही: %s"
+
+#: ../src/ncb-selection.c:701
+#, c-format
+msgid "File does not appear to be a valid CUE sheet: %s"
+msgstr "फाइल वैध CUE शीट म्हणून दिसून पडत नाही: %s"
+
+#.
+#. translators: see strftime man page for meaning of %b, %d and %Y
+#. the maximum length for this field is 32 bytes
+#.
+#: ../src/ncb-selection.c:745
+msgid "Personal Data, %b %d, %Y"
+msgstr "वैयक्तित माहिती, %b %d, %Y"
+
+#: ../src/ncb-selection.c:817
+msgid "Unable to create CD/DVD"
+msgstr "CD/DVD बनविता आले नाही"
+
+#: ../src/ncb-selection.c:981
+msgid "Source name"
+msgstr "स्त्रोत नाव"
+
+#: ../src/ncb-selection.c:988
+msgid "Source type"
+msgstr "स्त्रोत प्रकार"
+
+#: ../src/ncb-selection.c:996
+msgid "Source size"
+msgstr "स्त्रोत आकार"
+
+#: ../src/ncb-selection.c:1005
+msgid "Disc label"
+msgstr "डीस्क लेबल"
+
+#: ../src/ncb-selection.c:1012
+msgid "Write speed"
+msgstr "लेखन वेग"
+
+#: ../src/ncb-selection-dialog.c:171
+msgid "Copy Disc"
+msgstr "डीस्क प्रतिकृत करा"
+
+#: ../src/ncb-selection-dialog.c:173
+msgid "Copy disc _to:"
+msgstr "डीस्क येथे प्रतिकृत करा (_t):"
+
+#: ../src/ncb-selection-dialog.c:345
+msgid "Maximum possible"
+msgstr "कमाल शक्यता"
+
+#: ../src/ncb-selection-dialog.c:558
+msgid "Calculating..."
+msgstr "मोजत आहे..."
+
+#: ../src/ncb-selection-dialog.c:637
+msgid "_Write"
+msgstr "लिहा (_W)"
+
+#: ../src/ncb-operation.c:242
+msgid "Preparing to write CD"
+msgstr "CD लिहीण्याकरता तयार करीत आहे"
+
+#: ../src/ncb-operation.c:244
+msgid "Preparing to write DVD"
+msgstr "DVD लिहीण्याकरता तयार करीत आहे"
+
+#: ../src/ncb-operation.c:249
+msgid "Writing CD"
+msgstr "सीडी लिहीत आहे"
+
+#: ../src/ncb-operation.c:251
+msgid "Writing DVD"
+msgstr "डिव्हीडी लिहीत आहे"
+
+#: ../src/ncb-operation.c:256 ../src/ncb-operation.c:258
+msgid "Finishing write"
+msgstr "लेखन संपले"
+
+#: ../src/ncb-operation.c:263
+msgid "Erasing CD"
+msgstr "CD पुसून टाकत आहे"
+
+#: ../src/ncb-operation.c:265
+msgid "Erasing DVD"
+msgstr "DVD पुसून टाकत आहे"
+
+#: ../src/ncb-operation.c:349
+msgid "None"
+msgstr "काहीच नाही"
+
+#: ../src/ncb-operation.c:356
+msgid "Please make sure another application is not using the drive."
+msgstr "कृपया अन्य कोणता अनुप्रयोग साधन वापरत नसल्याची खात्री करून घ्या."
+
+#: ../src/ncb-operation.c:357
+msgid "Drive is busy"
+msgstr "ड्राइव्ह व्यस्त आहे"
+
+#: ../src/ncb-operation.c:359 ../src/ncb-operation.c:364
+#, c-format
+msgid ""
+"Please put a disc, with at least %s free, into the drive.  The following "
+"disc types are supported:\n"
+"%s"
+msgstr ""
+"कृपया ड्राइव्ह मध्ये किमान %s रिक्त जागा असलेली डीस्क जोडा.  खालिल डीस्क प्रकार समर्थीत आहे:\n"
+"%s"
+
+#: ../src/ncb-operation.c:362
+msgid "Insert a rewritable or blank disc"
+msgstr "पुन्हा लिहीण्याजोगी किंवा रिकामी डीस्क प्रविष्ट करा"
+
+#: ../src/ncb-operation.c:367
+msgid "Insert a blank disc"
+msgstr "रिकामी डीस्क प्रविष्ट करा"
+
+#: ../src/ncb-operation.c:370 ../src/ncb-operation.c:376
+#, c-format
+msgid ""
+"Please replace the disc in the drive with a supported disc with at least %s "
+"free.  The following disc types are supported:\n"
+"%s"
+msgstr ""
+"कृपया ड्राइव्ह मधील डीस्क समर्थित डीस्कशी बदलवा ज्यात कमीत कमी %s रिक्त जागा असायला हवी.  खालिल डीस्क प्रकार समर्थीत आहे:\n"
+"%s"
+
+#: ../src/ncb-operation.c:373
+msgid "Reload a rewritable or blank disc"
+msgstr "पुन्हा लिहीण्याजोगी किंवा रिकामी डीस्क दाखल करा"
+
+#: ../src/ncb-operation.c:379
+msgid "Reload a blank disc"
+msgstr "रिकामी डीस्क पुनःदाखल करा"
+
+#: ../src/ncb-operation.c:390
+msgid "_Eject"
+msgstr "बाहेर काढा (_E)"
+
+#: ../src/ncb-operation.c:457
+#, c-format
+msgid "This %s appears to have information already recorded on it."
+msgstr "या %s करीता पहिलेपासूनच माहिती रेकॉर्ड केलेली आहे."
+
+#: ../src/ncb-operation.c:461
+msgid "Erase information on this disc?"
+msgstr "या डीस्कवरील माहिती काढून टाका?"
+
+#: ../src/ncb-operation.c:469
+msgid "_Try Another"
+msgstr "इतर प्रयत्न करा (_T)"
+
+#: ../src/ncb-operation.c:480
+msgid "_Erase Disc"
+msgstr "डीस्कवरील पुसून टाका (_E)"
+
+#: ../src/ncb-operation.c:512
+#, c-format
+msgid ""
+"There was an error writing to the disc:\n"
+"%s"
+msgstr ""
+"डीस्कवर लिहीतेवेळी त्रुटी आढळली:\n"
+"%s"
+
+#: ../src/ncb-operation.c:515
+msgid "There was an error writing to the disc"
+msgstr "डीस्कवर लिहीतेवेळी त्रुटी आढळली"
+
+#: ../src/ncb-operation.c:518
+msgid "Error writing to disc"
+msgstr "डीस्कवर लिहीतेवेळी त्रुटी"
+
+#: ../src/ncb-operation.c:573
+#, c-format
+msgid "A file named \"%s\" already exists.  Do you want to overwrite it?"
+msgstr "\"%s\" नामांकीत फाइल आधिपासूनच अस्तित्वात आहे.  तुम्हाला पुर्नलिखीत करायचे?"
+
+#: ../src/ncb-operation.c:575
+msgid "Overwrite existing file?"
+msgstr "सद्याच्या फाइलवर खोडून लिहा?"
+
+#: ../src/ncb-operation.c:584
+msgid "_Overwrite"
+msgstr "पुनर्लेखन (_O)"
+
+#: ../src/ncb-operation.c:603
+msgid "Choose a filename for the disc image"
+msgstr "डीस्क प्रतिमेकरीता फाइलनाव निवडा"
+
+#. Translators: this is the filename of the image
+#: ../src/ncb-operation.c:739
+msgid "image.iso"
+msgstr "image.iso"
+
+#: ../src/ncb-operation.c:760
+#, c-format
+msgid "You do not have permissions to overwrite that file (%s)."
+msgstr "तुम्हला फाइल (%s) वर पुनर्लेखन करण्याकरीता परवानगी नाही."
+
+#: ../src/ncb-operation.c:761 ../src/ncb-operation.c:776
+#: ../src/ncb-operation.c:1582
+msgid "File image creation failed"
+msgstr "फाइल प्रतिमा निर्माण अपयशी"
+
+#: ../src/ncb-operation.c:775
+#, c-format
+msgid "You do not have permissions to create that file (%s)."
+msgstr "ती फाइल (%s) बनवण्यास तुम्हाला अनुमती नाही."
+
+#: ../src/ncb-operation.c:840
+msgid "Complete"
+msgstr "पूर्ण"
+
+#: ../src/ncb-operation.c:843
+msgid "An error occurred while writing"
+msgstr "लिहीतेवेळी त्रुटी आढळली"
+
+#: ../src/ncb-operation.c:903
+msgid "Writing Files to a Disc Image"
+msgstr "डीस्क प्रतिमा फाइलवर लिहीत आहे"
+
+#: ../src/ncb-operation.c:904
+msgid "Writing Files to CD"
+msgstr "CD वर फाइल लिहीत आहे"
+
+#: ../src/ncb-operation.c:905
+msgid "Writing Files to DVD"
+msgstr "DVD वर फाइल लिहीत आहे"
+
+#: ../src/ncb-operation.c:908
+msgid "Writing Image to Disc"
+msgstr "डीस्कवर प्रतिमा लिहीत आहे"
+
+#: ../src/ncb-operation.c:909
+msgid "Copying Disc Image"
+msgstr "डीस्क प्रतिमा प्रतिकृत करीत आहे"
+
+#: ../src/ncb-operation.c:910
+msgid "Writing Image to CD"
+msgstr "प्रतिमा CD वर लिहीत आहे"
+
+#: ../src/ncb-operation.c:911
+msgid "Writing Image to DVD"
+msgstr "DVD वर प्रतिमा लिहीत आहे"
+
+#: ../src/ncb-operation.c:914
+msgid "Copying Disc"
+msgstr "डीस्क प्रतिकृत करीत आहे"
+
+#: ../src/ncb-operation.c:915
+msgid "Copying Disc to a Disc Image"
+msgstr "डीस्क प्रतिमा डीस्कवर प्रतिकृत करीत आहे"
+
+#: ../src/ncb-operation.c:916
+msgid "Copying Disc to CD"
+msgstr "CD वर डीस्क प्रतिकृत करीत आहे"
+
+#: ../src/ncb-operation.c:917
+msgid "Copying Disc to DVD"
+msgstr "DVD वर डीस्क प्रतिकृत करीत आहे"
+
+#: ../src/ncb-operation.c:921
+msgid "Writing files to disc"
+msgstr "डीस्कवर फाइल लिहीत आहे"
+
+#: ../src/ncb-operation.c:922
+msgid "Writing files to a disc image"
+msgstr "डीस्क प्रतिमेवेर फाइल लिहीत आहे"
+
+#: ../src/ncb-operation.c:923
+msgid "Writing files to CD"
+msgstr "CD वर फाइल लिहीत आहे"
+
+#: ../src/ncb-operation.c:924
+msgid "Writing files to DVD"
+msgstr "DVD वर फाइल लिहीत आहे"
+
+#: ../src/ncb-operation.c:927
+msgid "Writing image to disc"
+msgstr "डीस्कवर प्रतिमा लिहीत आहे"
+
+#: ../src/ncb-operation.c:928
+msgid "Copying disc image"
+msgstr "डीस्क प्रतिमा प्रतिकृत करीत आहे"
+
+#: ../src/ncb-operation.c:929
+msgid "Writing image to CD"
+msgstr "CD वर प्रतिमा लिहीत आहे"
+
+#: ../src/ncb-operation.c:930
+msgid "Writing image to DVD"
+msgstr "DVD वर प्रतिमा लिहीत आहे"
+
+#: ../src/ncb-operation.c:933
+msgid "Copying disc"
+msgstr "डीस्क प्रतिकृत करीत आहे"
+
+#: ../src/ncb-operation.c:934
+msgid "Copying disc to a disc image"
+msgstr "डीस्क प्रतिमेवर डीस्क प्रतिकृत करीत आहे"
+
+#: ../src/ncb-operation.c:935
+msgid "Copying disc to CD"
+msgstr "CD वर डीस्क प्रतिकृत करीत आहे"
+
+#: ../src/ncb-operation.c:936
+msgid "Copying disc to DVD"
+msgstr "DVD वर डीस्क प्रतिकृत करीत आहे"
+
+#: ../src/ncb-operation.c:940
+msgid ""
+"The selected files are being written to a CD or DVD.  This operation may "
+"take a long time, depending on data size and write speed."
+msgstr "निवडलेल्या फाइली CD किंवा DVD वर लिहील्या जात आहे.  माहिती आकार व लेखन गती अनुसारे, कार्यपध्दतीस जास्त वेळ लागू शकतो."
+
+#: ../src/ncb-operation.c:941
+msgid "The selected files are being written to a disc image file."
+msgstr "निवडलेल्या फाइली डीस्क प्रतिमा फाइलवर लिहील्या जात आहे."
+
+#: ../src/ncb-operation.c:942
+msgid ""
+"The selected files are being written to a CD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr "निवडलेल्या फाइली CD वर लिहील्या जात आहे.  माहिती आकार व लेखन गती अनुसारे, कार्यपध्दतीस जास्त वेळ लागू शकतो."
+
+#: ../src/ncb-operation.c:943
+msgid ""
+"The selected files are being written to a DVD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr "निवडलेल्या फाइली DVD वर लिहील्या जात आहे.  माहिती आकार व लेखन गती अनुसारे, कार्यपध्दतीस जास्त वेळ लागू शकतो."
+
+#: ../src/ncb-operation.c:946
+msgid ""
+"The selected disc image is being written to a CD or DVD.  This operation may "
+"take a long time, depending on data size and write speed."
+msgstr "निवडलेल्या फाइली CD किंवा DVD वर लिहील्या जात आहे.  माहिती आकार व लेखन गती अनुसारे, कार्यपध्दतीस जास्त वेळ लागू शकतो."
+
+#: ../src/ncb-operation.c:947
+msgid "The selected disc image is being copied to a disc image file."
+msgstr "निवडलेली डीस्क प्रतिमा डीस्क प्रतिमा फाइलवर प्रतिकृत केल्या जात आहे."
+
+#: ../src/ncb-operation.c:948
+msgid ""
+"The selected disc image is being written to a CD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr "निवडलेली डीस्क प्रतिमा CD वर लिहील्या जात आहे.  माहिती आकार व लेखन गती अनुसारे, कार्यपध्दतीस जास्त वेळ लागू शकतो."
+
+#: ../src/ncb-operation.c:949
+msgid ""
+"The selected disc image is being written to a DVD.  This operation may take "
+"a long time, depending on data size and write speed."
+msgstr "निवडलेली डीस्क प्रतिमा DVD वर लिहील्या जात आहे.  माहिती आकार व लेखन गती अनुसारे, कार्यपध्दतीस जास्त वेळ लागू शकतो."
+
+#: ../src/ncb-operation.c:952
+msgid ""
+"The selected disc is being copied to a CD or DVD.  This operation may take a "
+"long time, depending on data size and drive speed."
+msgstr "निवडलेली डीस्क प्रतिमा CD किंवा DVD वर लिहील्या जात आहे.  माहिती आकार व ड्राइव्ह गती अनुसारे, कार्यपध्दतीस जास्त वेळ लागू शकतो."
+
+#: ../src/ncb-operation.c:953
+msgid ""
+"The selected disc is being copied to a disc image file.  This operation may "
+"take a long time, depending on data size and drive speed."
+msgstr "निवडलेली डीस्क डीस्क प्रतिमा फाइलवर प्रतिकृत केले जात आहे.  माहिती आकार व ड्राइव्ह गती अनुसारे, कार्यपध्दतीस जास्त वेळ लागू शकतो."
+
+#: ../src/ncb-operation.c:954
+msgid ""
+"The selected disc is being copied to a CD.  This operation may take a long "
+"time, depending on data size and drive speed."
+msgstr "निवडलेली डीस्क CD वर लिहील्या जात आहे.  माहिती आकार व ड्राइव्ह गती अनुसारे, कार्यपध्दतीस जास्त वेळ लागू शकतो."
+
+#: ../src/ncb-operation.c:955
+msgid ""
+"The selected disc is being copied to a DVD.  This operation may take a long "
+"time, depending on data size and drive speed."
+msgstr "निवडलेली डीस्क DVD वर प्रतिकृत केल्या जात आहे.  माहिती आकार व ड्राइव्ह गती अनुसारे, कार्यपध्दतीस जास्त वेळ लागू शकतो."
+
+#: ../src/ncb-operation.c:1012
+msgid "Burning CD"
+msgstr "CD तयार होत आहे"
+
+#: ../src/ncb-operation.c:1179 ../src/ncb-operation.c:1403
+msgid "Creating disc image"
+msgstr "डीस्क प्रतीमा बनवित आहे"
+
+#: ../src/ncb-operation.c:1621
+#, c-format
+msgid "Writing CD/DVD-Image '%s'."
+msgstr "CD/DVD-प्रतिमा '%s' बनवीत आहे."
+
+#: ../src/ncb-operation.c:1626
+#, c-format
+msgid "Writing disc '%s'."
+msgstr "डीस्क '%s' लिहीत आहे."
+
+#: ../src/ncb-operation.c:1628
+#, c-format
+msgid "Writing %s '%s'."
+msgstr "%s '%s' लिहीत आहे."
+
+#: ../src/ncb-operation.c:1717
+#, c-format
+msgid "Completed writing %s"
+msgstr "लेखन पूर्ण झाले %s"
+
+#: ../src/ncb-operation.c:1822
+msgid "Interrupt writing files to disc?"
+msgstr "डीस्कवर फाइल लिहीतेवेळे अडथळा?"
+
+#: ../src/ncb-operation.c:1823
+msgid ""
+"Are you sure you want to interrupt the disc write operation? Some drives may "
+"require that you restart the computer to get them working again."
+msgstr "तुम्हाला नक्की डीस्क लेखन कार्यपध्दतीस अडथळा आणायचे? कार्यान्वीत करण्याकरीता काहीक ड्राइव्ह यांना संगणक पुन्हा सुरू करण्याची आवश्यकता भासते."
+
+#: ../src/ncb-operation.c:1829
+msgid "Interrupt"
+msgstr "अडथळा"
+
+#: ../src/ncb-operation.c:1831
+msgid "Continue"
+msgstr "पुढे चला"
+
+#: ../src/ncb-progress-dialog.c:146
+#, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d तास"
+msgstr[1] "%d तास"
+
+#: ../src/ncb-progress-dialog.c:148
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d मिनिट"
+msgstr[1] "%d मिनिट"
+
+#: ../src/ncb-progress-dialog.c:151
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d सेकंद"
+msgstr[1] "%d सेकंद"
+
+#. hour:minutes:seconds
+#: ../src/ncb-progress-dialog.c:156
+#, c-format
+msgid "%s %s %s"
+msgstr "%s %s %s"
+
+#. minutes:seconds
+#: ../src/ncb-progress-dialog.c:159
+#, c-format
+msgid "%s %s"
+msgstr "%s %s"
+
+#. seconds
+#: ../src/ncb-progress-dialog.c:162
+#, c-format
+msgid "%s"
+msgstr "%s"
+
+#. 0 seconds
+#: ../src/ncb-progress-dialog.c:165
+msgid "0 seconds"
+msgstr "0 सेकंद"
+
+#: ../src/ncb-progress-dialog.c:189
+#, c-format
+msgid "About %s left"
+msgstr "शिल्लक %s विषयी"
+
+#: ../src/ncb-progress-dialog.c:439
+msgid "_Make Another Copy"
+msgstr "दुसरी प्रकिकृती बनवा (_M)"
+
+#: ../src/ncb-rename-dialog.c:479
+msgid "C_ontinue"
+msgstr "पुढे चला (_o)"
+
+#: ../src/ncb-rename-dialog.c:507
+msgid "Filename"
+msgstr "फाइलनाव"
+
+#: ../src/ncb-rename-dialog.c:523
+msgid "Rename file"
+msgstr "फाइल पुनःनामांकीत करा"
+

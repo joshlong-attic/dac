@@ -1,0 +1,5 @@
+usr/share/nautilus-pastebin
+usr/share/locale/*
+usr/share/pixmaps/nautilus-pastebin.png
+usr/share/applications/nautilus-pastebin-configurator.desktop
+usr/share/gconf/schemas/nautilus-pastebin.schemas

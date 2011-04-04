@@ -1,0 +1,855 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<refentry id="nautilus-cd-burner-nautilus-burn-drive">
+<refmeta>
+<refentrytitle role="top_of_page" id="nautilus-cd-burner-nautilus-burn-drive.top_of_page">nautilus-burn-drive</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>NAUTILUS-CD-BURNER Library</refmiscinfo>
+</refmeta>
+
+<refnamediv>
+<refname>nautilus-burn-drive</refname>
+<refpurpose></refpurpose>
+<!--[<xref linkend="desc" endterm="desc.title"/>]-->
+</refnamediv>
+
+<refsynopsisdiv id="nautilus-cd-burner-nautilus-burn-drive.synopsis" role="synopsis">
+<title role="synopsis.title">Synopsis</title>
+<anchor id="NautilusBurnDrive"/>
+<synopsis>
+enum                <link linkend="NautilusBurnMediaType">NautilusBurnMediaType</link>;
+#define             <link linkend="NAUTILUS-BURN-MEDIA-SIZE-UNKNOWN:CAPS">NAUTILUS_BURN_MEDIA_SIZE_UNKNOWN</link>
+#define             <link linkend="NAUTILUS-BURN-MEDIA-SIZE-NA:CAPS">NAUTILUS_BURN_MEDIA_SIZE_NA</link>
+#define             <link linkend="NAUTILUS-BURN-MEDIA-SIZE-BUSY:CAPS">NAUTILUS_BURN_MEDIA_SIZE_BUSY</link>
+enum                <link linkend="NautilusBurnDriveType">NautilusBurnDriveType</link>;
+typedef             <link linkend="NautilusBurnDrive">NautilusBurnDrive</link>;
+typedef             <link linkend="NautilusBurnDriveClass">NautilusBurnDriveClass</link>;
+typedef             <link linkend="NautilusBurnDrivePrivate">NautilusBurnDrivePrivate</link>;
+<link linkend="void">void</link>                <link linkend="media-added">media_added</link>                         (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);
+<link linkend="void">void</link>                <link linkend="media-removed">media_removed</link>                       (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);
+<link linkend="void">void</link>                <link linkend="disconnected">disconnected</link>                        (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);
+#define             <link linkend="NAUTILUS-BURN-DRIVE-SIZE-TO-TIME:CAPS">NAUTILUS_BURN_DRIVE_SIZE_TO_TIME</link>    (size)
+#define             <link linkend="NAUTILUS-BURN-DRIVE-CD-SPEED:CAPS">NAUTILUS_BURN_DRIVE_CD_SPEED</link>        (speed)
+#define             <link linkend="NAUTILUS-BURN-DRIVE-DVD-SPEED:CAPS">NAUTILUS_BURN_DRIVE_DVD_SPEED</link>       (speed)
+#define             <link linkend="NAUTILUS-BURN-DRIVE-MEDIA-TYPE-IS-DVD:CAPS">NAUTILUS_BURN_DRIVE_MEDIA_TYPE_IS_DVD</link>(media_type)
+<link linkend="NautilusBurnDrive">NautilusBurnDrive</link>*  <link linkend="nautilus-burn-drive-ref">nautilus_burn_drive_ref</link>             (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);
+<link linkend="void">void</link>                <link linkend="nautilus-burn-drive-unref">nautilus_burn_drive_unref</link>           (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);
+<link linkend="gboolean">gboolean</link>            <link linkend="nautilus-burn-drive-equal">nautilus_burn_drive_equal</link>           (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *a,
+                                                         <link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *b);
+<link linkend="gboolean">gboolean</link>            <link linkend="nautilus-burn-drive-lock">nautilus_burn_drive_lock</link>            (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive,
+                                                         const <link linkend="char">char</link> *reason,
+                                                         <link linkend="char">char</link> **reason_for_failure);
+<link linkend="gboolean">gboolean</link>            <link linkend="nautilus-burn-drive-unlock">nautilus_burn_drive_unlock</link>          (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);
+<link linkend="gboolean">gboolean</link>            <link linkend="nautilus-burn-drive-unmount">nautilus_burn_drive_unmount</link>         (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);
+<link linkend="gboolean">gboolean</link>            <link linkend="nautilus-burn-drive-is-mounted">nautilus_burn_drive_is_mounted</link>      (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);
+<link linkend="gboolean">gboolean</link>            <link linkend="nautilus-burn-drive-eject">nautilus_burn_drive_eject</link>           (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);
+<link linkend="gboolean">gboolean</link>            <link linkend="nautilus-burn-drive-door-is-open">nautilus_burn_drive_door_is_open</link>    (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);
+<link linkend="int">int</link>                 <link linkend="nautilus-burn-drive-get-drive-type">nautilus_burn_drive_get_drive_type</link>  (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);
+<link linkend="char">char</link>*               <link linkend="nautilus-burn-drive-get-name-for-display">nautilus_burn_drive_get_name_for_display</link>
+                                                        (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);
+const <link linkend="char">char</link>*         <link linkend="nautilus-burn-drive-get-device">nautilus_burn_drive_get_device</link>      (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);
+<link linkend="gboolean">gboolean</link>            <link linkend="nautilus-burn-drive-can-write">nautilus_burn_drive_can_write</link>       (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);
+<link linkend="gboolean">gboolean</link>            <link linkend="nautilus-burn-drive-can-rewrite">nautilus_burn_drive_can_rewrite</link>     (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);
+<link linkend="int">int</link>                 <link linkend="nautilus-burn-drive-get-max-speed-write">nautilus_burn_drive_get_max_speed_write</link>
+                                                        (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);
+<link linkend="int">int</link>                 <link linkend="nautilus-burn-drive-get-max-speed-read">nautilus_burn_drive_get_max_speed_read</link>
+                                                        (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);
+const <link linkend="int">int</link>*          <link linkend="nautilus-burn-drive-get-write-speeds">nautilus_burn_drive_get_write_speeds</link>
+                                                        (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);
+<link linkend="gboolean">gboolean</link>            <link linkend="nautilus-burn-drive-can-eject">nautilus_burn_drive_can_eject</link>       (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);
+<link linkend="NautilusBurnMediaType">NautilusBurnMediaType</link> <link linkend="nautilus-burn-drive-get-media-type">nautilus_burn_drive_get_media_type</link>
+                                                        (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);
+<link linkend="NautilusBurnMediaType">NautilusBurnMediaType</link> <link linkend="nautilus-burn-drive-get-media-type-full">nautilus_burn_drive_get_media_type_full</link>
+                                                        (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive,
+                                                         <link linkend="gboolean">gboolean</link> *is_rewritable,
+                                                         <link linkend="gboolean">gboolean</link> *is_blank,
+                                                         <link linkend="gboolean">gboolean</link> *has_data,
+                                                         <link linkend="gboolean">gboolean</link> *has_audio);
+<link linkend="gint64">gint64</link>              <link linkend="nautilus-burn-drive-get-media-capacity">nautilus_burn_drive_get_media_capacity</link>
+                                                        (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);
+<link linkend="gint64">gint64</link>              <link linkend="nautilus-burn-drive-get-media-size">nautilus_burn_drive_get_media_size</link>  (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);
+<link linkend="char">char</link>*               <link linkend="nautilus-burn-drive-get-media-label">nautilus_burn_drive_get_media_label</link> (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);
+<link linkend="gboolean">gboolean</link>            <link linkend="nautilus-burn-drive-media-is-appendable">nautilus_burn_drive_media_is_appendable</link>
+                                                        (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);
+const <link linkend="char">char</link>*         <link linkend="nautilus-burn-drive-media-type-get-string">nautilus_burn_drive_media_type_get_string</link>
+                                                        (<link linkend="NautilusBurnMediaType">NautilusBurnMediaType</link> type);
+<link linkend="char">char</link>*               <link linkend="nautilus-burn-drive-get-supported-media-string">nautilus_burn_drive_get_supported_media_string</link>
+                                                        (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive,
+                                                         <link linkend="gboolean">gboolean</link> writable_only);
+<link linkend="char">char</link>*               <link linkend="nautilus-burn-drive-get-supported-media-string-for-size">nautilus_burn_drive_get_supported_media_string_for_size</link>
+                                                        (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive,
+                                                         <link linkend="guint64">guint64</link> size);
+<link linkend="gboolean">gboolean</link>            <link linkend="nautilus-burn-drive-media-type-is-writable">nautilus_burn_drive_media_type_is_writable</link>
+                                                        (<link linkend="NautilusBurnMediaType">NautilusBurnMediaType</link> type,
+                                                         <link linkend="gboolean">gboolean</link> is_blank);
+</synopsis>
+</refsynopsisdiv>
+
+<refsect1 id="nautilus-cd-burner-nautilus-burn-drive.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<synopsis>
+  <link linkend="GObject">GObject</link>
+   +----NautilusBurnDrive
+</synopsis>
+
+</refsect1>
+
+
+
+
+
+<refsect1 id="nautilus-cd-burner-nautilus-burn-drive.properties" role="properties">
+<title role="properties.title">Properties</title>
+<synopsis>
+  &quot;<link linkend="NautilusBurnDrive--enable-monitor">enable-monitor</link>&quot;           <link linkend="gboolean">gboolean</link>              : Read / Write
+</synopsis>
+</refsect1>
+
+<refsect1 id="nautilus-cd-burner-nautilus-burn-drive.signals" role="signal_proto">
+<title role="signal_proto.title">Signals</title>
+<synopsis>
+  &quot;<link linkend="NautilusBurnDrive-disconnected">disconnected</link>&quot;                                   : Run Last
+  &quot;<link linkend="NautilusBurnDrive-media-added">media-added</link>&quot;                                    : Run Last
+  &quot;<link linkend="NautilusBurnDrive-media-removed">media-removed</link>&quot;                                  : Run Last
+</synopsis>
+</refsect1>
+
+
+<refsect1 id="nautilus-cd-burner-nautilus-burn-drive.description" role="desc">
+<title role="desc.title">Description</title>
+<para>
+
+</para>
+</refsect1>
+
+<refsect1 id="nautilus-cd-burner-nautilus-burn-drive.details" role="details">
+<title role="details.title">Details</title>
+<refsect2 id="NautilusBurnMediaType" role="enum">
+<title>enum NautilusBurnMediaType</title>
+<indexterm zone="NautilusBurnMediaType"><primary>NautilusBurnMediaType</primary></indexterm><programlisting>typedef enum {
+        NAUTILUS_BURN_MEDIA_TYPE_BUSY,
+        NAUTILUS_BURN_MEDIA_TYPE_ERROR,
+        NAUTILUS_BURN_MEDIA_TYPE_UNKNOWN,
+        NAUTILUS_BURN_MEDIA_TYPE_CD,
+        NAUTILUS_BURN_MEDIA_TYPE_CDR,
+        NAUTILUS_BURN_MEDIA_TYPE_CDRW,
+        NAUTILUS_BURN_MEDIA_TYPE_DVD,
+        NAUTILUS_BURN_MEDIA_TYPE_DVDR,
+        NAUTILUS_BURN_MEDIA_TYPE_DVDRW,
+        NAUTILUS_BURN_MEDIA_TYPE_DVD_RAM,
+        NAUTILUS_BURN_MEDIA_TYPE_DVD_PLUS_R,
+        NAUTILUS_BURN_MEDIA_TYPE_DVD_PLUS_RW,
+        NAUTILUS_BURN_MEDIA_TYPE_DVD_PLUS_R_DL,
+} NautilusBurnMediaType;
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2 id="NAUTILUS-BURN-MEDIA-SIZE-UNKNOWN:CAPS" role="macro">
+<title>NAUTILUS_BURN_MEDIA_SIZE_UNKNOWN</title>
+<indexterm zone="NAUTILUS-BURN-MEDIA-SIZE-UNKNOWN:CAPS"><primary>NAUTILUS_BURN_MEDIA_SIZE_UNKNOWN</primary></indexterm><programlisting>#define NAUTILUS_BURN_MEDIA_SIZE_UNKNOWN -1
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2 id="NAUTILUS-BURN-MEDIA-SIZE-NA:CAPS" role="macro">
+<title>NAUTILUS_BURN_MEDIA_SIZE_NA</title>
+<indexterm zone="NAUTILUS-BURN-MEDIA-SIZE-NA:CAPS"><primary>NAUTILUS_BURN_MEDIA_SIZE_NA</primary></indexterm><programlisting>#define NAUTILUS_BURN_MEDIA_SIZE_NA      -2
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2 id="NAUTILUS-BURN-MEDIA-SIZE-BUSY:CAPS" role="macro">
+<title>NAUTILUS_BURN_MEDIA_SIZE_BUSY</title>
+<indexterm zone="NAUTILUS-BURN-MEDIA-SIZE-BUSY:CAPS"><primary>NAUTILUS_BURN_MEDIA_SIZE_BUSY</primary></indexterm><programlisting>#define NAUTILUS_BURN_MEDIA_SIZE_BUSY    -3
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2 id="NautilusBurnDriveType" role="enum">
+<title>enum NautilusBurnDriveType</title>
+<indexterm zone="NautilusBurnDriveType"><primary>NautilusBurnDriveType</primary></indexterm><programlisting>typedef enum {
+        NAUTILUS_BURN_DRIVE_TYPE_FILE                   = 1 &lt;&lt; 0,
+        NAUTILUS_BURN_DRIVE_TYPE_CD_RECORDER            = 1 &lt;&lt; 1,
+        NAUTILUS_BURN_DRIVE_TYPE_CDRW_RECORDER          = 1 &lt;&lt; 2,
+        NAUTILUS_BURN_DRIVE_TYPE_DVD_RAM_RECORDER       = 1 &lt;&lt; 3,
+        /* Drives are usually DVD-R and DVD-RW */
+        NAUTILUS_BURN_DRIVE_TYPE_DVD_RW_RECORDER        = 1 &lt;&lt; 4,
+        NAUTILUS_BURN_DRIVE_TYPE_DVD_PLUS_R_RECORDER    = 1 &lt;&lt; 5,
+        NAUTILUS_BURN_DRIVE_TYPE_DVD_PLUS_RW_RECORDER   = 1 &lt;&lt; 6,
+        NAUTILUS_BURN_DRIVE_TYPE_CD_DRIVE               = 1 &lt;&lt; 7,
+        NAUTILUS_BURN_DRIVE_TYPE_DVD_DRIVE              = 1 &lt;&lt; 8,
+        NAUTILUS_BURN_DRIVE_TYPE_DVD_PLUS_R_DL_RECORDER = 1 &lt;&lt; 9,
+} NautilusBurnDriveType;
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2 id="NautilusBurnDrive" role="typedef">
+<title>NautilusBurnDrive</title>
+<indexterm zone="NautilusBurnDrive"><primary>NautilusBurnDrive</primary></indexterm><programlisting>typedef struct NautilusBurnDrive                   NautilusBurnDrive;
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2 id="NautilusBurnDriveClass" role="typedef">
+<title>NautilusBurnDriveClass</title>
+<indexterm zone="NautilusBurnDriveClass"><primary>NautilusBurnDriveClass</primary></indexterm><programlisting>typedef struct NautilusBurnDriveClass              NautilusBurnDriveClass;
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2 id="NautilusBurnDrivePrivate" role="typedef">
+<title>NautilusBurnDrivePrivate</title>
+<indexterm zone="NautilusBurnDrivePrivate"><primary>NautilusBurnDrivePrivate</primary></indexterm><programlisting>typedef struct NautilusBurnDrivePrivate            NautilusBurnDrivePrivate;
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2 id="media-added" role="function">
+<title>media_added ()</title>
+<indexterm zone="media-added"><primary>media_added</primary></indexterm><programlisting><link linkend="void">void</link>                media_added                         (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);</programlisting>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara>
+
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="media-removed" role="function">
+<title>media_removed ()</title>
+<indexterm zone="media-removed"><primary>media_removed</primary></indexterm><programlisting><link linkend="void">void</link>                media_removed                       (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);</programlisting>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara>
+
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="disconnected" role="function">
+<title>disconnected ()</title>
+<indexterm zone="disconnected"><primary>disconnected</primary></indexterm><programlisting><link linkend="void">void</link>                disconnected                        (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);</programlisting>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara>
+
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="NAUTILUS-BURN-DRIVE-SIZE-TO-TIME:CAPS" role="macro">
+<title>NAUTILUS_BURN_DRIVE_SIZE_TO_TIME()</title>
+<indexterm zone="NAUTILUS-BURN-DRIVE-SIZE-TO-TIME:CAPS"><primary>NAUTILUS_BURN_DRIVE_SIZE_TO_TIME</primary></indexterm><programlisting>#define NAUTILUS_BURN_DRIVE_SIZE_TO_TIME(size) (size &gt; 1024 * 1024 ? (int) (((size / 1024 / 1024) - 1) * 48 / 7): 0)
+</programlisting>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>size</parameter>&nbsp;:</term>
+<listitem><simpara>
+
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="NAUTILUS-BURN-DRIVE-CD-SPEED:CAPS" role="macro">
+<title>NAUTILUS_BURN_DRIVE_CD_SPEED()</title>
+<indexterm zone="NAUTILUS-BURN-DRIVE-CD-SPEED:CAPS"><primary>NAUTILUS_BURN_DRIVE_CD_SPEED</primary></indexterm><programlisting>#define NAUTILUS_BURN_DRIVE_CD_SPEED(speed) (floorf (((speed) * 1024 / 153600.0) * 10) / 10.0)
+</programlisting>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>speed</parameter>&nbsp;:</term>
+<listitem><simpara>
+
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="NAUTILUS-BURN-DRIVE-DVD-SPEED:CAPS" role="macro">
+<title>NAUTILUS_BURN_DRIVE_DVD_SPEED()</title>
+<indexterm zone="NAUTILUS-BURN-DRIVE-DVD-SPEED:CAPS"><primary>NAUTILUS_BURN_DRIVE_DVD_SPEED</primary></indexterm><programlisting>#define NAUTILUS_BURN_DRIVE_DVD_SPEED(speed) (floorf (((speed)  * 1024 / 1385000.0) * 10) / 10.0)
+</programlisting>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>speed</parameter>&nbsp;:</term>
+<listitem><simpara>
+
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="NAUTILUS-BURN-DRIVE-MEDIA-TYPE-IS-DVD:CAPS" role="macro">
+<title>NAUTILUS_BURN_DRIVE_MEDIA_TYPE_IS_DVD()</title>
+<indexterm zone="NAUTILUS-BURN-DRIVE-MEDIA-TYPE-IS-DVD:CAPS"><primary>NAUTILUS_BURN_DRIVE_MEDIA_TYPE_IS_DVD</primary></indexterm><programlisting>#define             NAUTILUS_BURN_DRIVE_MEDIA_TYPE_IS_DVD(media_type)</programlisting>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>media_type</parameter>&nbsp;:</term>
+<listitem><simpara>
+
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="nautilus-burn-drive-ref" role="function" condition="since:2.14">
+<title>nautilus_burn_drive_ref ()</title>
+<indexterm zone="nautilus-burn-drive-ref" role="2.14"><primary>nautilus_burn_drive_ref</primary></indexterm><programlisting><link linkend="NautilusBurnDrive">NautilusBurnDrive</link>*  nautilus_burn_drive_ref             (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);</programlisting>
+<para>
+Increment the refcount of <parameter>drive</parameter>.</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link>
+
+</simpara></listitem></varlistentry>
+</variablelist><para role="since">Since  2.14
+</para></refsect2>
+<refsect2 id="nautilus-burn-drive-unref" role="function" condition="since:2.14">
+<title>nautilus_burn_drive_unref ()</title>
+<indexterm zone="nautilus-burn-drive-unref" role="2.14"><primary>nautilus_burn_drive_unref</primary></indexterm><programlisting><link linkend="void">void</link>                nautilus_burn_drive_unref           (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);</programlisting>
+<para>
+Decrement the refcount of <parameter>drive</parameter>.</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link>
+</simpara></listitem></varlistentry>
+</variablelist><para role="since">Since  2.14
+</para></refsect2>
+<refsect2 id="nautilus-burn-drive-equal" role="function" condition="since:2.8">
+<title>nautilus_burn_drive_equal ()</title>
+<indexterm zone="nautilus-burn-drive-equal" role="2.8"><primary>nautilus_burn_drive_equal</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>            nautilus_burn_drive_equal           (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *a,
+                                                         <link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *b);</programlisting>
+<para>
+Compare the two cd drives, return <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if they match exactly
+the same drive.</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>a</parameter>&nbsp;:</term>
+<listitem><simpara> First <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link> struct to compare
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>b</parameter>&nbsp;:</term>
+<listitem><simpara> Second <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link> struct to compare
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the two <link linkend="NautilusBurnDrives"><type>NautilusBurnDrives</type></link> are equal, otherwise return <link linkend="FALSE:CAPS"><literal>FALSE</literal></link>.
+
+</simpara></listitem></varlistentry>
+</variablelist><para role="since">Since  2.8
+</para></refsect2>
+<refsect2 id="nautilus-burn-drive-lock" role="function" condition="since:2.8">
+<title>nautilus_burn_drive_lock ()</title>
+<indexterm zone="nautilus-burn-drive-lock" role="2.8"><primary>nautilus_burn_drive_lock</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>            nautilus_burn_drive_lock            (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive,
+                                                         const <link linkend="char">char</link> *reason,
+                                                         <link linkend="char">char</link> **reason_for_failure);</programlisting>
+<para>
+Lock a <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link></para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara> Pointer to a <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>reason</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>reason_for_failure</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the drive was sucessfully locked, <link linkend="FALSE:CAPS"><literal>FALSE</literal></link> otherwise.
+
+</simpara></listitem></varlistentry>
+</variablelist><para role="since">Since  2.8
+</para></refsect2>
+<refsect2 id="nautilus-burn-drive-unlock" role="function" condition="since:2.8">
+<title>nautilus_burn_drive_unlock ()</title>
+<indexterm zone="nautilus-burn-drive-unlock" role="2.8"><primary>nautilus_burn_drive_unlock</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>            nautilus_burn_drive_unlock          (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);</programlisting>
+<para>
+Unlock a <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link></para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara> Pointer to a <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the drive was sucessfully unlocked, <link linkend="FALSE:CAPS"><literal>FALSE</literal></link> otherwise.
+
+</simpara></listitem></varlistentry>
+</variablelist><para role="since">Since  2.8
+</para></refsect2>
+<refsect2 id="nautilus-burn-drive-unmount" role="function" condition="since:2.10">
+<title>nautilus_burn_drive_unmount ()</title>
+<indexterm zone="nautilus-burn-drive-unmount" role="2.10"><primary>nautilus_burn_drive_unmount</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>            nautilus_burn_drive_unmount         (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);</programlisting>
+<para>
+Unmount the media in a <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link>.</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the media was sucessfully unmounted, <link linkend="FALSE:CAPS"><literal>FALSE</literal></link> otherwise.
+
+</simpara></listitem></varlistentry>
+</variablelist><para role="since">Since  2.10
+</para></refsect2>
+<refsect2 id="nautilus-burn-drive-is-mounted" role="function" condition="since:2.14">
+<title>nautilus_burn_drive_is_mounted ()</title>
+<indexterm zone="nautilus-burn-drive-is-mounted" role="2.14"><primary>nautilus_burn_drive_is_mounted</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>            nautilus_burn_drive_is_mounted      (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);</programlisting>
+<para>
+Determine if media in the specified drive is mounted.</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the media is mounted, <link linkend="FALSE:CAPS"><literal>FALSE</literal></link> otherwise.
+
+</simpara></listitem></varlistentry>
+</variablelist><para role="since">Since  2.14
+</para></refsect2>
+<refsect2 id="nautilus-burn-drive-eject" role="function" condition="since:2.12">
+<title>nautilus_burn_drive_eject ()</title>
+<indexterm zone="nautilus-burn-drive-eject" role="2.12"><primary>nautilus_burn_drive_eject</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>            nautilus_burn_drive_eject           (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);</programlisting>
+<para>
+Eject media from a <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link>.</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the media was sucessfully ejected, <link linkend="FALSE:CAPS"><literal>FALSE</literal></link> otherwise.
+
+</simpara></listitem></varlistentry>
+</variablelist><para role="since">Since  2.12
+</para></refsect2>
+<refsect2 id="nautilus-burn-drive-door-is-open" role="function" condition="since:2.12">
+<title>nautilus_burn_drive_door_is_open ()</title>
+<indexterm zone="nautilus-burn-drive-door-is-open" role="2.12"><primary>nautilus_burn_drive_door_is_open</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>            nautilus_burn_drive_door_is_open    (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);</programlisting>
+<para>
+Report the whether the drive door or tray is open.</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the drive door is open, otherwise return <link linkend="FALSE:CAPS"><literal>FALSE</literal></link>.
+
+</simpara></listitem></varlistentry>
+</variablelist><para role="since">Since  2.12
+</para></refsect2>
+<refsect2 id="nautilus-burn-drive-get-drive-type" role="function" condition="since:2.16">
+<title>nautilus_burn_drive_get_drive_type ()</title>
+<indexterm zone="nautilus-burn-drive-get-drive-type" role="2.16"><primary>nautilus_burn_drive_get_drive_type</primary></indexterm><programlisting><link linkend="int">int</link>                 nautilus_burn_drive_get_drive_type  (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);</programlisting>
+<para>
+Get the type of the drive.</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> type of drive
+
+</simpara></listitem></varlistentry>
+</variablelist><para role="since">Since  2.16
+</para></refsect2>
+<refsect2 id="nautilus-burn-drive-get-name-for-display" role="function" condition="since:2.14">
+<title>nautilus_burn_drive_get_name_for_display ()</title>
+<indexterm zone="nautilus-burn-drive-get-name-for-display" role="2.14"><primary>nautilus_burn_drive_get_name_for_display</primary></indexterm><programlisting><link linkend="char">char</link>*               nautilus_burn_drive_get_name_for_display
+                                                        (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);</programlisting>
+<para>
+Get the name of the drive for use in a user interface</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> name of the drive.  Must be freed with <link linkend="g-free"><function>g_free()</function></link>.
+
+</simpara></listitem></varlistentry>
+</variablelist><para role="since">Since  2.14
+</para></refsect2>
+<refsect2 id="nautilus-burn-drive-get-device" role="function" condition="since:2.16">
+<title>nautilus_burn_drive_get_device ()</title>
+<indexterm zone="nautilus-burn-drive-get-device" role="2.16"><primary>nautilus_burn_drive_get_device</primary></indexterm><programlisting>const <link linkend="char">char</link>*         nautilus_burn_drive_get_device      (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);</programlisting>
+<para>
+Get the name of the device associated with the drive.</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> device name.  Must be not be freed.
+
+</simpara></listitem></varlistentry>
+</variablelist><para role="since">Since  2.16
+</para></refsect2>
+<refsect2 id="nautilus-burn-drive-can-write" role="function" condition="since:2.14">
+<title>nautilus_burn_drive_can_write ()</title>
+<indexterm zone="nautilus-burn-drive-can-write" role="2.14"><primary>nautilus_burn_drive_can_write</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>            nautilus_burn_drive_can_write       (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);</programlisting>
+<para>
+Report the whether the drive is capable of recording</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the drive is a recorder, otherwise return <link linkend="FALSE:CAPS"><literal>FALSE</literal></link>.
+
+</simpara></listitem></varlistentry>
+</variablelist><para role="since">Since  2.14
+</para></refsect2>
+<refsect2 id="nautilus-burn-drive-can-rewrite" role="function" condition="since:2.14">
+<title>nautilus_burn_drive_can_rewrite ()</title>
+<indexterm zone="nautilus-burn-drive-can-rewrite" role="2.14"><primary>nautilus_burn_drive_can_rewrite</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>            nautilus_burn_drive_can_rewrite     (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);</programlisting>
+<para>
+Report the whether the drive is capable of re-recording</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the drive can rewrite, otherwise return <link linkend="FALSE:CAPS"><literal>FALSE</literal></link>.
+
+</simpara></listitem></varlistentry>
+</variablelist><para role="since">Since  2.14
+</para></refsect2>
+<refsect2 id="nautilus-burn-drive-get-max-speed-write" role="function" condition="since:2.14">
+<title>nautilus_burn_drive_get_max_speed_write ()</title>
+<indexterm zone="nautilus-burn-drive-get-max-speed-write" role="2.14"><primary>nautilus_burn_drive_get_max_speed_write</primary></indexterm><programlisting><link linkend="int">int</link>                 nautilus_burn_drive_get_max_speed_write
+                                                        (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);</programlisting>
+<para>
+Get the maximum write speed that the drive is capable of</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> The speed of the drive, in device units.
+
+</simpara></listitem></varlistentry>
+</variablelist><para role="since">Since  2.14
+</para></refsect2>
+<refsect2 id="nautilus-burn-drive-get-max-speed-read" role="function" condition="since:2.14">
+<title>nautilus_burn_drive_get_max_speed_read ()</title>
+<indexterm zone="nautilus-burn-drive-get-max-speed-read" role="2.14"><primary>nautilus_burn_drive_get_max_speed_read</primary></indexterm><programlisting><link linkend="int">int</link>                 nautilus_burn_drive_get_max_speed_read
+                                                        (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);</programlisting>
+<para>
+Get the maximum read speed that the drive is capable of</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> The speed of the drive, in device units.
+
+</simpara></listitem></varlistentry>
+</variablelist><para role="since">Since  2.14
+</para></refsect2>
+<refsect2 id="nautilus-burn-drive-get-write-speeds" role="function">
+<title>nautilus_burn_drive_get_write_speeds ()</title>
+<indexterm zone="nautilus-burn-drive-get-write-speeds"><primary>nautilus_burn_drive_get_write_speeds</primary></indexterm><programlisting>const <link linkend="int">int</link>*          nautilus_burn_drive_get_write_speeds
+                                                        (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);</programlisting>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara>
+
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="nautilus-burn-drive-can-eject" role="function">
+<title>nautilus_burn_drive_can_eject ()</title>
+<indexterm zone="nautilus-burn-drive-can-eject"><primary>nautilus_burn_drive_can_eject</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>            nautilus_burn_drive_can_eject       (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);</programlisting>
+<para>
+Report the whether the drive support ejections or not.</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the drive support ejections, otherwise return <link linkend="FALSE:CAPS"><literal>FALSE</literal></link>.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="nautilus-burn-drive-get-media-type" role="function">
+<title>nautilus_burn_drive_get_media_type ()</title>
+<indexterm zone="nautilus-burn-drive-get-media-type"><primary>nautilus_burn_drive_get_media_type</primary></indexterm><programlisting><link linkend="NautilusBurnMediaType">NautilusBurnMediaType</link> nautilus_burn_drive_get_media_type
+                                                        (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);</programlisting>
+<para>
+Determine the type of the media in the drive <parameter>drive</parameter>.</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> The <link linkend="NautilusBurnMediaType"><type>NautilusBurnMediaType</type></link> of the media in the drive or the
+following special values:
+
+   <link linkend="NAUTILUS-BURN-MEDIA-TYPE-ERROR:CAPS"><literal>NAUTILUS_BURN_MEDIA_TYPE_ERROR</literal></link>   if the type can not be determined
+   <link linkend="NAUTILUS-BURN-MEDIA-TYPE-UNKNOWN:CAPS"><literal>NAUTILUS_BURN_MEDIA_TYPE_UNKNOWN</literal></link> if the type can not be determined
+   <link linkend="NAUTILUS-BURN-MEDIA-TYPE-BUSY:CAPS"><literal>NAUTILUS_BURN_MEDIA_TYPE_BUSY</literal></link>    if the device is busy
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="nautilus-burn-drive-get-media-type-full" role="function">
+<title>nautilus_burn_drive_get_media_type_full ()</title>
+<indexterm zone="nautilus-burn-drive-get-media-type-full"><primary>nautilus_burn_drive_get_media_type_full</primary></indexterm><programlisting><link linkend="NautilusBurnMediaType">NautilusBurnMediaType</link> nautilus_burn_drive_get_media_type_full
+                                                        (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive,
+                                                         <link linkend="gboolean">gboolean</link> *is_rewritable,
+                                                         <link linkend="gboolean">gboolean</link> *is_blank,
+                                                         <link linkend="gboolean">gboolean</link> *has_data,
+                                                         <link linkend="gboolean">gboolean</link> *has_audio);</programlisting>
+<para>
+Determine the type of the media in the drive <parameter>drive</parameter></para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>is_rewritable</parameter>&nbsp;:</term>
+<listitem><simpara> set to TRUE if media is rewritable
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>is_blank</parameter>&nbsp;:</term>
+<listitem><simpara> set to TRUE if media is blank
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>has_data</parameter>&nbsp;:</term>
+<listitem><simpara> set to TRUE if media has data
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>has_audio</parameter>&nbsp;:</term>
+<listitem><simpara> set to TRUE if media has audio
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> See <link linkend="nautilus-burn-drive-get-media-type"><function>nautilus_burn_drive_get_media_type()</function></link> for details.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="nautilus-burn-drive-get-media-capacity" role="function">
+<title>nautilus_burn_drive_get_media_capacity ()</title>
+<indexterm zone="nautilus-burn-drive-get-media-capacity"><primary>nautilus_burn_drive_get_media_capacity</primary></indexterm><programlisting><link linkend="gint64">gint64</link>              nautilus_burn_drive_get_media_capacity
+                                                        (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);</programlisting>
+<para>
+Determine the capacity of the media (i.e. amount of data that the disc
+can hold) in the specified drive.</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> The capacity of the media in bytes or the
+following special values:
+
+   <link linkend="NAUTILUS-BURN-MEDIA-SIZE-UNKNOWN:CAPS"><literal>NAUTILUS_BURN_MEDIA_SIZE_UNKNOWN</literal></link> if the type can not be determined
+   <link linkend="NAUTILUS-BURN-MEDIA-SIZE-NA:CAPS"><literal>NAUTILUS_BURN_MEDIA_SIZE_NA</literal></link>      if the device type is not recognized
+   <link linkend="NAUTILUS-BURN-MEDIA-SIZE-BUSY:CAPS"><literal>NAUTILUS_BURN_MEDIA_SIZE_BUSY</literal></link>    if the device is busy
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="nautilus-burn-drive-get-media-size" role="function">
+<title>nautilus_burn_drive_get_media_size ()</title>
+<indexterm zone="nautilus-burn-drive-get-media-size"><primary>nautilus_burn_drive_get_media_size</primary></indexterm><programlisting><link linkend="gint64">gint64</link>              nautilus_burn_drive_get_media_size  (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);</programlisting>
+<para>
+Determine the size of the media (i.e. amount of data that the disc
+contains) in the specified drive.</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> The size of the media in bytes or the
+following special values:
+
+   <link linkend="NAUTILUS-BURN-MEDIA-SIZE-UNKNOWN:CAPS"><literal>NAUTILUS_BURN_MEDIA_SIZE_UNKNOWN</literal></link> if the type can not be determined
+   <link linkend="0:CAPS"><literal>0</literal></link>                                if the disc is blank
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="nautilus-burn-drive-get-media-label" role="function" condition="since:2.14">
+<title>nautilus_burn_drive_get_media_label ()</title>
+<indexterm zone="nautilus-burn-drive-get-media-label" role="2.14"><primary>nautilus_burn_drive_get_media_label</primary></indexterm><programlisting><link linkend="char">char</link>*               nautilus_burn_drive_get_media_label (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);</programlisting>
+<para>
+Determine the label of the media in the specified drive.</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> The label of the media.
+
+</simpara></listitem></varlistentry>
+</variablelist><para role="since">Since  2.14
+</para></refsect2>
+<refsect2 id="nautilus-burn-drive-media-is-appendable" role="function" condition="since:2.16">
+<title>nautilus_burn_drive_media_is_appendable ()</title>
+<indexterm zone="nautilus-burn-drive-media-is-appendable" role="2.16"><primary>nautilus_burn_drive_media_is_appendable</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>            nautilus_burn_drive_media_is_appendable
+                                                        (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);</programlisting>
+<para>
+Determine if the media in the specified drive is appendable</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if there is a media and it can be appended, otherwise returns <link linkend="FALSE:CAPS"><literal>FALSE</literal></link>.
+
+</simpara></listitem></varlistentry>
+</variablelist><para role="since">Since  2.16
+</para></refsect2>
+<refsect2 id="nautilus-burn-drive-media-type-get-string" role="function" condition="since:2.12">
+<title>nautilus_burn_drive_media_type_get_string ()</title>
+<indexterm zone="nautilus-burn-drive-media-type-get-string" role="2.12"><primary>nautilus_burn_drive_media_type_get_string</primary></indexterm><programlisting>const <link linkend="char">char</link>*         nautilus_burn_drive_media_type_get_string
+                                                        (<link linkend="NautilusBurnMediaType">NautilusBurnMediaType</link> type);</programlisting>
+<para>
+Get a string description of the specified media type.</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>type</parameter>&nbsp;:</term>
+<listitem><simpara> A <link linkend="NautilusBurnMediaType"><type>NautilusBurnMediaType</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> a string description for the media type.
+
+</simpara></listitem></varlistentry>
+</variablelist><para role="since">Since  2.12
+</para></refsect2>
+<refsect2 id="nautilus-burn-drive-get-supported-media-string" role="function" condition="since:2.14">
+<title>nautilus_burn_drive_get_supported_media_string ()</title>
+<indexterm zone="nautilus-burn-drive-get-supported-media-string" role="2.14"><primary>nautilus_burn_drive_get_supported_media_string</primary></indexterm><programlisting><link linkend="char">char</link>*               nautilus_burn_drive_get_supported_media_string
+                                                        (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive,
+                                                         <link linkend="gboolean">gboolean</link> writable_only);</programlisting>
+<para>
+Get a string description of the supported media types.  The
+returned string should be freed when no longer needed.</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara> A <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>writable_only</parameter>&nbsp;:</term>
+<listitem><simpara> Set to <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if only writable media should be displayed
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> a string description of the supported media types
+
+</simpara></listitem></varlistentry>
+</variablelist><para role="since">Since  2.14
+</para></refsect2>
+<refsect2 id="nautilus-burn-drive-get-supported-media-string-for-size" role="function" condition="since:2.16">
+<title>nautilus_burn_drive_get_supported_media_string_for_size ()</title>
+<indexterm zone="nautilus-burn-drive-get-supported-media-string-for-size" role="2.16"><primary>nautilus_burn_drive_get_supported_media_string_for_size</primary></indexterm><programlisting><link linkend="char">char</link>*               nautilus_burn_drive_get_supported_media_string_for_size
+                                                        (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive,
+                                                         <link linkend="guint64">guint64</link> size);</programlisting>
+<para>
+Get a string description of the suiting media types for the given
+data size. The returned string should be freed when no longer needed.</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara> A <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>size</parameter>&nbsp;:</term>
+<listitem><simpara> Data size
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> a string description of the supported media types
+
+</simpara></listitem></varlistentry>
+</variablelist><para role="since">Since  2.16
+</para></refsect2>
+<refsect2 id="nautilus-burn-drive-media-type-is-writable" role="function" condition="since:2.14">
+<title>nautilus_burn_drive_media_type_is_writable ()</title>
+<indexterm zone="nautilus-burn-drive-media-type-is-writable" role="2.14"><primary>nautilus_burn_drive_media_type_is_writable</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>            nautilus_burn_drive_media_type_is_writable
+                                                        (<link linkend="NautilusBurnMediaType">NautilusBurnMediaType</link> type,
+                                                         <link linkend="gboolean">gboolean</link> is_blank);</programlisting>
+<para>
+Determine if a media type is writable</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>type</parameter>&nbsp;:</term>
+<listitem><simpara> A <link linkend="NautilusBurnMediaType"><type>NautilusBurnMediaType</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>is_blank</parameter>&nbsp;:</term>
+<listitem><simpara> if the media type is blank or not
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if the media type can be written to, otherwise return <link linkend="FALSE:CAPS"><literal>FALSE</literal></link>.
+
+</simpara></listitem></varlistentry>
+</variablelist><para role="since">Since  2.14
+</para></refsect2>
+
+</refsect1>
+<refsect1 id="nautilus-cd-burner-nautilus-burn-drive.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="NautilusBurnDrive--enable-monitor"><title>The <literal>&quot;enable-monitor&quot;</literal> property</title>
+<indexterm zone="NautilusBurnDrive--enable-monitor"><primary>NautilusBurnDrive:enable-monitor</primary></indexterm><programlisting>  &quot;enable-monitor&quot;           <link linkend="gboolean">gboolean</link>              : Read / Write</programlisting>
+<para></para><para>Default value: FALSE</para>
+</refsect2>
+
+</refsect1>
+
+<refsect1 id="nautilus-cd-burner-nautilus-burn-drive.signal-details" role="signals">
+<title role="signals.title">Signal Details</title>
+<refsect2 id="NautilusBurnDrive-disconnected"><title>The <literal>&quot;disconnected&quot;</literal> signal</title>
+<indexterm zone="NautilusBurnDrive-disconnected"><primary>NautilusBurnDrive::disconnected</primary></indexterm><programlisting><link linkend="void">void</link>                user_function                      (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *nautilusburndrive,
+                                                        <link linkend="gpointer">gpointer</link>           user_data)              : Run Last</programlisting>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>nautilusburndrive</parameter>&nbsp;:</term>
+<listitem><simpara>the object which received the signal.
+
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>user_data</parameter>&nbsp;:</term>
+<listitem><simpara>user data set when the signal handler was connected.</simpara></listitem></varlistentry>
+</variablelist></refsect2><refsect2 id="NautilusBurnDrive-media-added"><title>The <literal>&quot;media-added&quot;</literal> signal</title>
+<indexterm zone="NautilusBurnDrive-media-added"><primary>NautilusBurnDrive::media-added</primary></indexterm><programlisting><link linkend="void">void</link>                user_function                      (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *nautilusburndrive,
+                                                        <link linkend="gpointer">gpointer</link>           user_data)              : Run Last</programlisting>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>nautilusburndrive</parameter>&nbsp;:</term>
+<listitem><simpara>the object which received the signal.
+
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>user_data</parameter>&nbsp;:</term>
+<listitem><simpara>user data set when the signal handler was connected.</simpara></listitem></varlistentry>
+</variablelist></refsect2><refsect2 id="NautilusBurnDrive-media-removed"><title>The <literal>&quot;media-removed&quot;</literal> signal</title>
+<indexterm zone="NautilusBurnDrive-media-removed"><primary>NautilusBurnDrive::media-removed</primary></indexterm><programlisting><link linkend="void">void</link>                user_function                      (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *nautilusburndrive,
+                                                        <link linkend="gpointer">gpointer</link>           user_data)              : Run Last</programlisting>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>nautilusburndrive</parameter>&nbsp;:</term>
+<listitem><simpara>the object which received the signal.
+
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>user_data</parameter>&nbsp;:</term>
+<listitem><simpara>user data set when the signal handler was connected.</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+</refsect1>
+
+
+
+</refentry>

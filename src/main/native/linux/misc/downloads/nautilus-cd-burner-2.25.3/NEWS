@@ -1,0 +1,1412 @@
+===============
+Version 2.25.3
+===============
+
+- Use GIO to detect whether burn:// contains a Video-DVD
+- Remove tenious eel dependency
+- Remove unnecessary headings and blank labels in the UI
+- Add API documentation
+- Remove "CD/DVD creator" from the Places menu, and add it to the
+  System Tools
+- Show the same drives as nautilus in the file chooser, as expected
+- Add a hint and icon to the nautilus "clue" bar
+- Detect some errors from wodim
+- When copying a disc, make the button say "Copy", not "Write"
+- Avoid crashes when HAL isn't running
+- Make "Enter" trigger the default action
+- Fix build with the single GTK+ include
+
+===============
+Version 2.24
+===============
+
+===============
+Version 2.23.90
+===============
+
+- Add ability to inhibit the SessionManager
+
+===============
+Version 2.22.1
+==============
+
+- Fixed #524467, Right-click menu of DVD writer does not have "Copy Disk" option (William Jon McCann)
+
+Translations:
+- Updated be: Alexander Nyakhaychyk
+- Updated nn: Eskild Hustvedt
+- Updated el: Nikos Charonitakis
+- Updated ml: Ani Peter
+- Updated da: Kenneth Nielsen
+- Updated sk: Marcel Telka
+
+Help Manual Translations:
+None
+
+===============
+Version 2.22.0
+===============
+
+  Translators
+
+        - Updated it: Luca Ferretti
+        - Updated as: Amitakhya Phukan
+        - Updated ar: Djihed Afifi <djihed@gmail.com>
+        - Updated cs: Petr Kovar
+        - Updated gl: Ignacio Casal Quinteiro
+        - Updated es: Jorge Gonzalez  <jorgegonz@svn.gnome.org>
+        - Updated bn_IN: Runa Bhattacharjee
+        - Updated ru: Vasiliy Faronov
+        - Updated nl: Wouter Bolsterlee
+        - Updated pt: Duarte Loreto
+        - Updated tr: Baris Cicek
+        - Updated ne: Pawan Chitrakar
+        - Updated lv: Djihed Afifi <djihed@gmail.com>
+        - Updated lt: Gintautas Miliauskas
+        - Updated th: Theppitak Karoonboonyanan
+        - Updated en_GB: Philip Withnall
+        - Updated ta: I. Felix
+        - Updated fr: Claude Paroz
+        - Updated zh_HK: Hong Kong
+        - Updated pt_BR: Jonh Wendell
+        - Updated hr: Djihed Afifi <djihed@gmail.com>
+        - Updated zh_TW: Taiwan
+        - Updated hu: Gabor Kelemen
+        - Updated fi: Ilkka Tuohela
+        - Updated da: Kenneth Nielsen
+        - Updated ja: Takeshi AIHANA
+        - Updated ka: Djihed Afifi <djihed@gmail.com>
+        - Updated be@latin: Ihar Hrachyshka
+        - Updated ko: Changwoo Ryu
+        - Updated kn: Runa Bhattacharjee, kn
+        - Updated mk: Arangel Angov, Djihed Afifi <djihed@gmail.com>
+        - Updated de: Hendrik Brandt
+        - Updated pl: Artur Flinta
+        - Updated uk: Maxim Dziumanenko
+        - Updated mr: Rahul Bhalerao
+
+===============
+Version 2.21.6
+===============
+
+        * Get HAL udi from GIO for disc copy function.
+        * Remove some straggling gnome-vfs references.
+
+===============
+Version 2.21.5
+===============
+
+        * Inihibit power management while burning (Martin Schoen)
+        * Add support for creating DVD Video (Fabio Bonelli)
+        * Updated CD spin icons (Denis Washington)
+        * Add nautilus_burn_drive_can_eject
+        * Add x-content support (Matthias Clasen)
+        * Initial port to GIO
+        * Use pkg-config to determine nautilus extension dir
+
+===============
+Version 2.20.0
+===============
+
+  Translators
+        * Updated el: Simos Xenitellis
+        * Updated bg: Alexander Shopov
+        * Updated tr: Baris Cicek
+        * Updated sk: Andre Klapper
+        * Updated ar: Djihed Afifi <djihed@gmail.com>
+        * Updated lv: Subhransu Behera
+        * Updated cs: Jakub Friedl
+        * Updated ro: Mugurel Tudor
+        * Updated or: Subhransu Behera
+
+===============
+Version 2.19.6
+===============
+
+  nautilus-cd-burner
+
+        * Fixed #433730, [Patch] Run gtk-update-icon-cache in install-hook and uninstall-hook (William Jon McCann)
+        * Fixed #435025, Direct copy of audio CD results in white noise CD (William Jon McCann)
+
+  Translators
+
+        * Updated fi: Ilkka Tuohela
+        * Updated ta: I. Felix
+
+
+===============
+Version 2.19.1
+===============
+
+  libnautilus-burn
+
+        * Pass environment to gnome-eject so it works with ConsoleKit
+
+===============
+Version 2.18.1
+===============
+
+  Translators
+
+        * Updated lv: Raivis Dejus
+        * Updated dz: Pema Geyleg
+        * Updated sl: Matic Zgur
+        * Updated eu: Inaki Larranaga Murgoitio
+        * Updated gl: Ignacio Casal Quinteiro
+        * Updated es: Claudio Saavedra
+
+===============
+Version 2.18.0
+===============
+
+  Translators
+
+        * Updated ru: Nickolay V. Shmyrev
+        * Updated gu: Ankit Patel
+        * Updated zh_HK: Hong Kong
+        * Updated sr.po, sr@Latn: Goran Raki%Gć%@
+        * Updated ca: Josep Puigdemont i Casamaj?
+        * Updated zh_TW: Taiwan
+        * Updated mk: Jovan Naumovski  <jovan@lugola.net>
+        * Updated lt: Gintautas Miliauskas
+        * Updated dz: Pema Geyleg
+        * Updated uk: Maxim Dziumanenko
+        * Updated ja: Takeshi AIHANA
+
+===============
+Version 2.17.8
+===============
+
+  Translators
+
+        * Updated pt: Duarte Loreto
+        * Updated pt_BR: Raphael Higino
+        * Updated zh_CN: Abel Cheung
+        * Updated vi: Nguy%Gễ%@n Th?i Ng%Gọ%@c Duy
+        * Updated it: Luca Ferretti
+        * Updated da: Peter Bach
+        * Updated hu: Gabor Kelemen
+        * Updated he: Yair Hershkovitz
+
+===============
+Version 2.17.7
+===============
+
+  nautilus-cd-burner
+
+        * Fixed #406333, crash in Computer: attempting to eject CD (William Jon McCann)
+
+  Translators
+
+        * Updated be: Ihar Hrachyshka
+        * Updated fr: Stéphane Raimbault
+        * Updated bg: Alexander Shopov
+        * Updated nl: Wouter Bolsterlee
+        * Updated nb: Kjartan Maraas
+        * Updated de: Hendrik Richter
+        * Updated ko: Changwoo Ryu
+        * Updated sv: Daniel Nylander
+        * Updated ar: Changwoo Ryu
+        * Updated en_GB: British
+        * Updated th: Theppitak Karoonboonyanan
+        * Updated et: Priit Laes
+        * Updated fi: Ilkka Tuohela
+        * Updated pl: Artur Flinta
+
+
+
+===============
+Version 2.17.6
+===============
+
+  nautilus-cd-burner
+
+        * Fixed #332615, Nautilus cdburner gives wrong error on missing discspace (William Jon McCann)
+        * Fixed #385382, Update description and label for menu entry in Places menu (Luca Ferretti)
+        * Fixed #395079, ejects the CD after copying to image (William Jon McCann)
+
+  Translators
+
+        * Updated ca: Josep Puigdemont i Casamajó
+        * Updated de: Hendrik Richter
+
+
+===============
+Version 2.17.5
+===============
+
+  nautilus-cd-burner
+
+        * Fixed #355979, No copy disc option
+
+  Translators
+
+        * Updated ca: Josep Puigdemont i Casamajó
+        * Updated lv: Raivis Dejus
+        * Updated ar: Yair Hershkovitz, Djihed Afifi <djihed@gmail.com>
+        * Updated ku: Erdal Ronahi
+        * Updated fi: Ilkka Tuohela
+        * Updated et: Priit Laes
+        * Updated en_GB: British
+        * Updated he: Yair Hershkovitz
+
+
+==============
+Version 2.17.4
+==============
+
+  nautilus-cd-burner
+
+        * Fix a possible double free
+
+  Translators
+
+        * Djihed Afifi (ar)
+        * Ihar Hrachyshka (be)
+        * Francisco Javier F. Serrador (es)
+        * Kjartan Maraas (nb)
+        * Daniel Nylander (sv)
+        * Theppitak Karoonboonyanan (th)
+
+==============
+Version 2.17.3
+==============
+
+  nautilus-cd-burner
+
+        * Rename invalid filenames (Fabio Bonelli)
+        * Support x-cdrdao-toc mime types (Sven Arvidsson)
+        * Fix cancellation warning when erasing DVD
+        * Fix create from ISO in burn://
+
+  Translators
+
+        * Yuval Tanny (he)
+        * Luca Ferretti (it)
+        * Taya (ka)
+
+==============
+Version 2.17.2
+==============
+
+  nautilus-cd-burner
+
+        * Eject discs by default
+        * Fix test for joliet on DVD writes
+        * Don't use g_date_set_time
+
+  Translators
+
+        * Ivar Smolin (et)
+        * Kjartan Maraas (nb)
+
+==============
+Version 2.17.1
+==============
+
+  Translators
+
+        * Ivar Smolin (et)
+        * Ignacio Casal Quinteiro (gl)
+
+
+==============
+Version 2.16.1
+==============
+
+  libnautilus-burn
+
+        * Don't show every kbps speed available
+        * Drop locks when re-entering main loop
+        * Fixes for Solaris (Brian Cameron)
+
+  nautilus extension
+
+        * Remove read_watch before dispatching request
+        * Don't loop under Solaris
+
+  Translators
+
+        * Abdulaziz Al-Arfaj (ar)
+        * M%Gə%@tin %GƏ%@mirov (az)
+        * Rostislav \"zbrox\" Raykov (bg)
+        * Runa Bhattacharjee (bn_IN)
+        * Senad Uka (bs)
+        * "Last-Translator: Mindu Dorji\n" (dz)
+        * Kostas Papadimas (el)
+        * David Lodge (en_GB)
+        * Francisco Javier F. Serrador (es)
+        * Robert-Andr? Mauchin (fr)
+        * Paul Duffy (ga)
+        * Ankit Patel (gu)
+        * Rajesh Ranjan (hi)
+        * "Last-Translator: auto\n" (hr)
+        * Imam Musthaqim (id)
+        * Luca Ferretti (it)
+        * Satoru SATOH (ja)
+        * Taya (ka)
+        * Raivis Dejus (lv)
+        * Badral (mn)
+        * Hasbullah Bin Pit (ms)
+        * Wouter Bolsterlee (nl)
+        * A S Alam (pa)
+        * Evandro Fernandes Giovanini (pt_BR)
+        * Duarte Loreto (pt)
+        * Leonid Kanter (ru)
+        * Steve Murphy (rw)
+        * Daniel Nylander (sv)
+        * Theppitak Karoonboonyanan (th)
+        * Clytie Siddall (vi)
+
+==============
+Version 2.16.0
+==============
+
+  Translators
+
+        * Runa Bhattacharjee (bn_IN)
+        * Jordi Mallach (ca)
+        * Meelad Zakaria (fa)
+        * Robert-Andr? Mauchin (fr)
+        * Gabor Kelemen (hu)
+        * %GŽ%@ygimantas Beru%Gč%@ka (lt)
+        * Ani Peter (ml)
+        * Wouter Bolsterlee (nl)
+        * Subhransu Behera (or)
+        * Duarte Loreto (pt)
+        * Felix (ta)
+        * Theppitak Karoonboonyanan (th)
+        * Emrah ?nal (tr)
+        * Maxim Dziumanenko (uk)
+        * Liu Songhe (zh_CN)
+        * Woodman Tuen (zh_HK)
+        * Woodman Tuen (zh_TW)
+
+==============
+Version 2.15.7
+==============
+
+  nautilus extension
+
+        * Improve the communication protocol
+
+  libnautilus-burn
+
+        * Do ref counting of init/shutdown
+
+  Translators
+
+        * Mate ORY (hu)
+        * Satoru SATOH (ja)
+        * Badral (mn)
+        & Leonid Kanter (ru)
+        * Matic %GŽ%@gur (sl)
+        * Clytie Siddall (vi)
+        * Liu Songhe (zh_CN)
+
+==============
+Version 2.15.6
+==============
+
+  nautilus extension
+
+        * Don't show copy disc option when drive is empty
+
+  Translators
+
+        * Runa Bhattacharjee (bn_IN)
+        * Priit Laes (et)
+        * I?aki Larra?aga Murgoitio (eu)
+        * Imam Musthaqim (id)
+        * Kjartan Maraas (nb)
+        * Tino Meinen (nl)
+
+==============
+Version 2.15.5
+==============
+
+  nautilus-cd-burner
+
+        * Display drive speeds as floating point (Fabio Bonelli)
+        * Install a desktop file to handle iso files (Fabio Bonelli)
+
+  Translators
+
+        * Hendrik Richter (de)
+        * Francisco Javier F. Serrador (es)
+        * Jovan Naumovski (mk)
+        * Daniel Nylander (sv)
+
+==============
+Version 2.15.4
+==============
+
+  nautilus extension
+
+        * Set sensitivity of Write to disc menu item.
+
+  nautilus-cd-burner
+
+        * New icons
+
+  libnautilus-burn
+
+        * Populate drive selection list correctly
+
+  Translators
+
+        * Rostislav \"zbrox\" Raykov (bg)
+        * Mahay Alam Khan (bn_IN)
+        * Hendrik Richter (de)
+        * Kostas Papadimas (el)
+        * Francisco Javier F. Serrador (es)
+        * Priit Laes (et)
+        * I?aki Larra?aga Murgoitio (eu)
+        * Ilkka Tuohela (fi)
+        * Christophe Bliard (fr)
+        * Ankit Patel (gu)
+        * Rajesh Ranjan (hi)
+        * Changwoo Ryu (ko)
+        * Raivis Dejus (lv)
+        * Thierry Randrianiriana (mg)
+        * A S Alam (pa)
+        * Leonid Kanter (ru)
+        * Felix (ta)
+        * Theppitak Karoonboonyanan (th)
+        * Woodman Tuen (zh_HK)
+        * Woodman Tuen (zh_TW)
+
+==============
+Version 2.15.3
+==============
+
+  nautilus-cd-burner
+
+        * Fix some temp file leaks
+        * Only allow editing label when burning from burn:// (Fabio Bonelli)
+        * Only ask for the types of media on which data will fit (Fabio)
+
+  libnautilus-burn
+
+        * Require HAL > 0.5.7
+        * Catch more growisofs errors
+        * Add a NautilusBurnDriveMonitor singleton to manage drives
+        * Rename drive_get_media_size to get_media_capacity (Fabio)
+        * Fix NAUTILUS_BURN_DRIVE_SIZE_TO_TIME (Fabio)
+        * Support adding and removing drives from selection automatically
+        * Add nautilus_burn_drive_media_is_appendable to API (Philippe Rouquier)
+
+  Translators
+
+        * Francisco Javier F. Serrador (es)
+        * Priit Laes (et)
+        * I?aki Larra?aga Murgoitio (eu)
+        * Ignacio Casal Quinteiro (gl)
+        * Ankit Patel (gu)
+        * Kjartan Maraas (nb)
+        * Leonid Kanter (ru)
+        * Daniel Nylander (sv)
+        * Theppitak Karoonboonyanan (th)
+        * Clytie Siddall (vi)
+        * Liu Songhe (zh_CN)
+
+==============
+Version 2.15.2
+==============
+
+  nautilus-cd-burner
+
+        * Refactor code
+        * Save writing device
+        * Prompt for disc before creating ISO
+        * Add some error checking for CUE files
+        * Support writing DVDs on the fly (without ISO)
+        * Display sizes using most appropriate units
+
+  libnautilus-burn
+
+        * Catch more cdrecord errors
+        * Consolidate sub-proc handling in new class
+        * Add new GRAFT_LIST recorder track type
+
+  Translators
+
+        * Francisco Javier F. Serrador (es)
+        * Priit Laes (et)
+        * Ankit Patel (gu)
+        * Yuval Tanny (he)
+        * Kjartan Maraas (nb)
+
+==============
+Version 2.15.1
+==============
+
+  nautilus-cd-burner
+
+        * Support relative paths from command line
+        * Report incorrectly encoded filenames (Mads Chr. Olesen)
+        * Use window icon to report progress (Fabio Bonelli)
+
+  libnautilus-burn
+
+        * Show DVD speeds in speed selection when appropriate (Fabio Bonelli)
+
+  Translators
+
+        * Priit Laes (et)
+        * Ilkka Tuohela (fi)
+        * Ignacio Casal Quinteiro (gl)
+        * Ankit Patel (gu)
+        * Clytie Siddall (vi)
+
+==============
+Version 2.14.1
+==============
+
+  nautilus-cd-burner
+
+        * Strip unsafe characters from filenames (Fabio Bonelli)
+
+  libnautilus-burn
+
+        * Make the estimated time to finish less erratic
+        * More accurately estimate the total size of disc to write
+        * Unref drive instead of freeing
+
+  Translators
+
+        * Vital Khilko (be)
+        * Luca Ferretti (it)
+
+================
+Version 2.14.0.2
+================
+
+  libnautilus-burn
+
+        * Fix the operation of the NAUTILUS_BURN_CHECK_VERSION macro.
+
+================
+Version 2.14.0.1
+================
+
+  libnautilus-burn
+
+        * Fix crash in drive selection widget
+
+===============
+Version 2.14.0
+===============
+
+  nautilus-cd-burner
+
+        * Fix crash of test program (Fabio Bonelli)
+
+  libnautilus-burn
+
+        * Emit the notify signal when changing the drive property (Ross)
+
+  Translators
+
+        * Petr Tomeš (cs)
+        * Kostas Papadimas (el)
+        * Rajesh Ranjan (hi)
+        * Kjartan Maraas (nb)
+        * Kjartan Maraas (no)
+        * Duarte Loreto (pt)
+        * Mugurel Tudor (ro)
+        * Daniel Nylander (sv)
+        * Maxim Dziumanenko (uk)
+
+===============
+Version 2.13.91
+===============
+
+  nautilus-cd-burner
+
+        * Try harder to unmount volumes before use
+
+  libnautilus-burn
+
+        * Add mount detection
+
+  Translators
+
+        * Rostislav \"zbrox\" Raykov (bg)
+        * Miloslav Trmac (cs)
+        * Francisco Javier F. Serrador (es)
+        * Ivar Smolin (et)
+        * Ilkka Tuohela (fi)
+        * Ignacio Casal Quinteiro (gl)
+        * Luca Ferretti (it)
+        * Kjartan Maraas (nb)
+        * Reinout van Schouwen (nl)
+        * Kjartan Maraas (no)
+        * Laurent Dhima (sq)
+        * Liu Songhe (zh_CN)
+
+===============
+Version 2.13.90
+===============
+
+  nautilus-cd-burner
+
+        * Display only the supported write speeds (Ryan Lortie)
+        * Use gnome-vfs to glob and tilde expand the source iso and cue files
+        * Add eject button to write finished dialog
+        * Add eject button to media request dialog
+        * Use disc label as default label for writing ISO (Fabio Bonelli)
+
+  libnautilus-burn
+
+        * New API nautilus_burn_drive_get_write_speeds (Ryan Lortie)
+        * New HAL only API nautilus_burn_drive_get_media_label
+        * Use HAL volume.disc.capacity if available
+        * Use gnome-mount if available
+        * Get media type information even if the volume is mounted
+
+  Translators
+
+        * Jordi Mallach (ca)
+        * Adam Weinberger (en_CA)
+        * Ivar Smolin (et)
+        * Ignacio Casal Quinteiro (gl)
+        * Ankit Patel (gu)
+        * Kjartan Maraas (nb)
+        * Kjartan Maraas (no)
+        * Evandro Fernandes Giovanini (pt_BR)
+        * Maxim Popov (ru)
+        * Theppitak Karoonboonyanan (th)
+        * Clytie Siddall (vi)
+        * Liu Songhe (zh_CN)
+        * Woodman Tuen (zh_HK)
+        * Woodman Tuen (zh_TW)
+
+==============
+Version 2.13.5
+==============
+
+  libnautilus-burn
+
+        * Use gnome-mount if available
+        * Add library version checking capability
+
+  Translators
+
+        * Rostislav \"zbrox\" Raykov (bg)
+        * Nikos Charonitakis (el)
+        * Adam Weinberger (en_CA)
+        * Ivar Smolin (et)
+        * Ilkka Tuohela (fi)
+        * Ignacio Casal Quinteiro (gl)
+        * Ankit Patel (gu)
+        * Prudhvi Krishna S (te)
+        * Theppitak Karoonboonyanan (th)
+        * Clytie Siddall (vi)
+        * Woodman Tuen (zh_HK)
+        * Woodman Tuen (zh_TW)
+
+==============
+Version 2.13.4
+==============
+
+  nautilus extension
+
+        * Add location specific widget to nautilus window
+        * Remove toolbar button now in favor of location widget
+
+  libnautilus-burn
+
+        * Try non-HAL lookup when HAL lookup fails (Jason D. Hildebrand)
+        * Try to detect media type from capabilities (Jason D. Hildebrand)
+
+  mapping-daemon
+
+        * Make buffered protocol not lose events
+        * Fix removing wrong file monitor
+        * Remove file monitor directly when connection drops
+
+  Translators
+
+        * Rostislav \"zbrox\" Raykov (bg)
+        * Adam Weinberger (en_CA)
+        * Ilkka Tuohela (fi)
+        * Christophe Merlet (RedFox) (fr)
+        * Ignacio Casal Quinteiro (gl)
+        * Ankit Patel (gu)
+        * Gabor Kelemen (hu)
+        * Takeshi AIHANA (ja)
+        * Evandro Fernandes Giovanini (pt_BR)
+        * Marcel Telka (sk)
+        * Theppitak Karoonboonyanan (th)
+        * Clytie Siddall (vi)
+
+==============
+Version 2.13.3
+==============
+
+  nautilus-cd-burner
+
+        * Use appropriate text in dialog when copying discs
+        * Remove eject after write option from interface
+
+  libnautilus-burn
+
+        * Fix size reporting for DVD-R (Fabio Bonelli)
+        * Fix size reporting for commercial DVD
+        * Allow disc type check on non-MMC compliant drives (Frederic Crozat)
+
+  Translators
+
+        * Vital Khilko (be)
+        * Rostislav \"zbrox\" Raykov (bg)
+        * Adam Weinberger (en_CA)
+        * Priit Laes (et)
+        * Roozbeh Pournader (fa)
+        * Ignacio Casal Quinteiro (gl)
+        * Ankit Patel (gu)
+        * Žygimantas Beru?ka (lt)
+        * Kjartan Maraas (nb)
+        * Reinout van Schouwen (nl)
+        * Kjartan Maraas (no)
+        * Marcel Telka (sk)
+        * Theppitak Karoonboonyanan (th)
+
+==============
+Version 2.13.2
+==============
+
+  libnautilus-burn
+
+        * Add new methods to API
+
+  mapping-daemon
+
+        * Use buffered IO (Crispin Flowerday)
+        * Fix Intel compiler warnings (Kjartan Maraas)
+
+  Translators
+
+        * Ales Nyakhaychyk (be)
+        * Ignacio Casal Quinteiro (gl)
+        * Takeshi AIHANA (ja)
+        * ?ygimantas Beruka (lt)
+        * Reinout van Schouwen (nl)
+        * Theppitak Karoonboonyanan (th)
+
+==============
+Version 2.13.1
+==============
+
+  nautilus-cd-burner
+
+        * Use DAO/SAO for all discs created from the GUI
+        * Change the progress dialog wording to match disc type
+        * Fix writing more than two discs
+        * Fix spinning disc images when writing another disc
+
+  libnautilus-burn
+
+        * Turn NautilusBurnDrive into a class
+        * Add media-added/media-removed events for Drives
+        * Only do one dbus IPC call to get device properties
+        * Add complete DVD+R DL support
+
+  nautilus extension
+
+        * Use new nautilus info API to get drive (Christian Neumair)
+
+
+==============
+Version 2.12.1
+==============
+
+  nautilus-cd-burner
+
+        * Fix compilation on Solaris systems
+        * Mark a string for translation that wasn't
+        * Do a better job with button focus
+        * Check return values of all g_mkstemp calls
+
+  libnautilus-burn
+
+        * Fix compiler warnings
+        * add API documentation for door_is_open
+        * Fix function pointers in recorder structure.
+
+  Translators
+
+        * Rostislav \"zbrox\" Raykov (bg)
+        * Mahay Alam Khan (bn)
+        * Hendrik Richter (de)
+        * Adam Weinberger (en_CA)
+        * Francisco Javier F. Serrador (es)
+        * Ivar Smolin (et)
+        * Iñaki Larrañaga Murgoitio (eu)
+        * Ignacio Casal Quinteiro (gl)
+        * Ankit Patel (gu)
+        * Gabor Kelemen (hu)
+        * Luca Ferretti (it)
+        * Kjartan Maraas (nb)
+        * Reinout van Schouwen (nl)
+        * Kjartan Maraas (no)
+        * Marcel Telka (sk)
+        * Theppitak Karoonboonyanan (th)
+        * Clytie Siddall (vi)
+        * Liu Songhe (zh_CN)
+
+==============
+Version 2.12.0
+==============
+
+  libnautilus-burn
+
+        * Fix disc type detection for non-Linux systems
+
+  Translators
+
+        * Jordi Mallach (ca)
+        * Jean-Michel Ardantz (fr)
+        * Gabor Kelemen (hu)
+        * Luca Ferretti (it)
+        * Young-Ho Cha (ko)
+        * Evandro Fernandes Giovanini (pt_BR)
+        * Clytie Siddall (vi)
+
+==============
+Version 2.11.7
+==============
+
+  libnautilus-burn
+
+        * Fix FD leaks (Joe Marcus Clarke, Ross Burton)
+        * Fix build for non-Linux systems
+
+  Translators
+
+        * Rostislav \"zbrox\" Raykov (bg)
+        * Rhys Jones (cy)
+        * Meelad Zakaria (fa)
+        * Žygimantas Beru?ka (lt)
+        * Reinout van Schouwen (nl)
+        * Duarte Loreto (pt)
+        * Mugurel Tudor (ro)
+        * Laurent Dhima (sq)
+        * Emrah ?nal (tr)
+        * Maxim Dziumanenko (uk)
+        * Woodman Tuen (zh_TW)
+
+==============
+Version 2.11.6
+==============
+
+  nautilus-cd-burner
+
+        * Show cancel confirmation at the right time
+
+  libnautilus-burn
+
+        * Explicitly blank disc when using cdrecord
+        * Try harder to get the media size for broken drives
+
+  Translators
+
+        * Hendrik Brandt (de)
+        * Ilkka Tuohela (fi)
+        * Ankit Patel (gu)
+        * Yuval Tanny (he)
+        * Imam Musthaqim (id)
+        * Takeshi AIHANA (ja)
+        * Jyotsna Shrestha (ne)
+        * Gnome PL Team (pl)
+        * Leonid Kanter (ru)
+        * Laurent Dhima (sq)
+        * Abduxukur Abdurixit (ug)
+
+==============
+Version 2.11.5
+==============
+
+  nautilus-cd-burner
+
+        * Fix leaks
+
+  libnautilus-burn
+
+        * Fix leaks
+
+  Translators
+
+        * Rostislav \"zbrox\" Raykov (bg)
+        * Miloslav Trmac (cs)
+        * Hendrik Brandt (de)
+        * Nikos Charonitakis (el)
+        * Adam Weinberger (en_CA)
+        * Francisco Javier F. Serrador (es)
+        * Priit Laes (et)
+        * Ilkka Tuohela (fi)
+        * Gabor Kelemen (hu)
+        * Takeshi AIHANA (ja)
+        * Terance Edward Sola (nb)
+        * Jyotsna Shrestha (ne)
+        * Terance Edward Sola (no)
+        * Raphael Higino (pt_BR)
+        * Marcel Telka (sk)
+        * Theppitak Karoonboonyanan (th)
+        * Clytie Siddall (vi)
+        * Liu Songhe (zh_CN)
+
+==============
+Version 2.11.4
+==============
+
+  nautilus-cd-burner
+
+        * Use burnproof by default when recording data
+        * Ask to create another copy after each copy is made
+        * Remove the temporary disc image on error
+        * Use a better error message for filename encoding errors
+
+  libnautilus-burn
+
+        * Require HAL 0.5
+        * Add DVD+R DL support.
+
+  Translators
+        * Rostislav \"zbrox\" Raykov (bg)
+        * Miloslav Trmac (cs)
+        * Martin Willemoes Hansen (da)
+        * Hendrik Brandt (de)
+        * Adam Weinberger (en_CA)
+        * Priit Laes (et)
+        * Ilkka Tuohela (fi)
+        * Takeshi AIHANA (ja)
+        * Terance Edward Sola (nb)
+        * Reinout van Schouwen (nl)
+        * Terance Edward Sola (no)
+        * Marcel Telka (sk)
+        * Woodman Tuen (zh_TW)
+
+==============
+Version 2.11.3
+==============
+
+  nautilus-cd-burner
+
+        * Present the dialog before calculating data size
+
+  libnautilus-burn
+
+        * Add nautilus_burn_drive_door_is_open to public API
+        * Correctly detect if a disc has audio/data in the no-HAL case
+
+  Translators
+
+        * Rhys Jones (cy)
+        * Adam Weinberger (en_CA)
+        * Priit Laes (et)
+        * Takeshi AIHANA (ja)
+        * Terance Edward Sola (nb)
+        * Terance Edward Sola (no)
+        * Liu Songhe (zh_CN)
+
+==============
+Version 2.11.1
+==============
+
+  nautilus-cd-burner
+
+        * use nicer images in dialog
+        * add ability to copy audio CDs
+        * add option to create multiple copies
+        * remove option of deleting files from burn://
+        * improve handling of media insertion requests
+        * don't try to read from FIFOs
+        * use GtkComboBox for speed selection
+
+  libnautilus-burn
+
+        * report time remaining in progress-changed signals
+        * implement DVD blanking
+        * report correct sizes for commercial CDs
+        * use GError for error reporting
+        * add support for DVD+R DL media
+
+  mapping-daemon
+
+        * gnome-vfs monitoring support
+        * fix problem with symbolic link loops
+
+  Translators
+
+        * Rostislav \"zbrox\" Raykov (bg)
+        * Jordi Mallach (ca)
+        * Miloslav Trmac (cs)
+        * Hendrik Brandt (de)
+        * Adam Weinberger (en_CA)
+        * James Ogley (en_GB)
+        * Ivar Smolin (et)
+        * Reza Mohammadi (fa)
+        * Ahmad Riza H Nst (id)
+        * Kjartan Maraas (nb)
+        * Jyotsna Shrestha (ne)
+        * Reinout van Schouwen (nl)
+        * Kjartan Maraas (no)
+        * Steve Murphy (rw)
+        * Canonical Ltd (xh)
+
+==============
+Version 2.10.0
+==============
+
+This is a stable release to coincide with the release of Gnome 2.10.0.
+The only differences between this version and 2.9.8 are some
+translation updates and a new README.
+
+  Translators
+
+	* Vladimir Petkov (bg)
+	* Jordi Mallach (ca)
+	* Miloslav Trmac (cs)
+	* Martin Willemoes Hansen (da)
+	* Hendrik Brandt (de)
+	* Nikos Charonitakis (el)
+	* Adam Weinberger (en_CA)
+	* David Lodge (en_GB)
+	* Francisco Javier F. Serrador (es)
+	* Priit Laes (et)
+	* Ilkka Tuohela (fi)
+	* Baptiste Mille-Mathias (fr)
+	* Ankit Patel (gu)
+	* Gabor Kelemen (hu)
+	* Luca Ferretti (it)
+	* Takeshi AIHANA (ja)
+	* Changwoo Ryu (ko)
+	* Žygimantas Beručka (lt)
+	* Kjartan Maraas (nb)
+	* Reinout van Schouwen (nl)
+	* Kjartan Maraas (no)
+	* Gnome PL Team (pl)
+	* Raphael Higino (pt_BR)
+	* Duarte Loreto (pt)
+	* Mugurel Tudor (ro)
+	* Leonid Kanter (ru)
+	* Marcel Telka (sk)
+	* Laurent Dhima (sq)
+	* Данило Шеган (sr)
+	* Christian Rose (sv)
+	* Emrah Ünal (tr)
+	* Maxim Dziumanenko (uk)
+	* Liu Songhe (zh_CN)
+	* Woodman Tuen (zh_TW)
+
+=============
+Version 2.9.8
+=============
+
+Don't hang on pipe EOF on BSD
+Identify blank non-DVD discs in the no-HAL case
+
+=============
+Version 2.9.7
+=============
+
+Report the correct capacity for sequential DVD-RW discs
+Fix missing warning about overwriting data on disc
+Get blank status correctly for systems without HAL
+Only use UTF8 with mkisofs if it is patched to support it
+Don't hang on unknown errors from mkisofs
+Make wording in interrupt confirmation dialog less ambiguious
+Fallback to opening devices read-only on Linux 2.4 systems
+
+=============
+Version 2.9.6
+=============
+
+Improve error reporting from make_iso process
+Try to unmount busy volumes before asking for media
+
+=============
+Version 2.9.5
+=============
+
+Clarify language in message dialogs
+Use consistent size units in user visible strings
+
+=============
+Version 2.9.4
+=============
+
+Give a better error message when an ISO image isn't readable
+Use gnome-vfs to check the space left on a partition
+Add blanking support to libnautilus-burn
+Ask the user if he wants to erase an already used disc
+Correctly namespace all the libnautilus-burn functions
+Tell the user that the data possibly won't fit on the disc
+Warn the user if he's trying to write a CD with an ISO image inside
+
+=============
+Version 2.8.5
+=============
+
+Fixes for bindings, and C++ usage
+Fix in the CD selection widget when the first drive isn't a recorder
+
+=============
+Version 2.8.4
+=============
+
+Fix problem where users wouldn't be able to remove files from burn:///
+Force input character set to UTF-8 when creating ISO images
+Try to umount the CD in the drive if it's busy
+Show error logs in the same order as in a terminal
+Fix some menu items not being translated
+Open devices read-write instead of read (fixes potential problems with Linux
+2.6.8 and later)
+Fix compilation on Solaris
+
+=============
+Version 2.8.3
+=============
+
+Lock drive while burning when using HAL
+Fix potential crasher when getting the Read/Write speed of a drive
+Don't crash when no real drives are available
+
+=============
+Version 2.8.2
+=============
+
+Fix problems with some messages not being translated
+Fix wrong messages in dialogs when asking for a CD to be inserted
+Fix problems with CD drives that can't tell which medium is in the drive
+Use HAL to get the medium type if it's available
+
+=============
+Version 2.8.1
+=============
+
+Only show CD recorders in the UI
+Fix crash when no medium was present in the drive and we started burning
+Fix two potential crash bugs
+
+=============
+Version 2.8.0
+=============
+
+Fix a small HIG mistake
+
+=============
+Version 2.7.6
+=============
+
+Fix getting size of DVD-R and DVD-RW
+
+=============
+Version 2.7.5
+=============
+
+Add API to get the media size (and minutes/seconds equivalent) to our library
+Respect the HIG for all the error dialogs
+Implement burning with "Burnproof" mode, for newer cdrecord versions
+Fix translations of the "Write to Disc" menu in nautilus
+
+=============
+Version 2.7.4
+=============
+
+Overburn support in GConf
+Easier to use user interface, including removal of the "Erase CD" checkbox
+Simplify the HAL specific code
+Remove the eel dependency in nautilus-cd-burner itself
+Fix a crash when selecting the File Image target
+Fix the "dummy" option appearing when not in debug mode
+Some memory leak fixes
+
+=============
+Version 2.7.3
+=============
+
+Remove the libstdc++ dependency on FreeBSD 5.x
+Fix the HAL requirements
+Fix possible crashes in BaconCdSelection
+
+=============
+Version 2.7.2
+=============
+
+Make translations work again
+
+=============
+Version 2.7.1
+=============
+
+Basic discovery, via cdrecord, on unsupported platforms
+Add mnemonics to the main window
+Make debug run-time configurable
+Integration of the BaconCdSelection widget, and the cd_drive_scan utility
+Fix a possible conflict with udev on Linux 2.6 kernels
+
+=============
+Version 2.6.0
+=============
+
+Translation updates
+
+=============
+Version 0.6.7
+=============
+
+Translations
+
+=============
+Version 0.6.6
+=============
+
+Limit label entry to 32 bytes, not 32 chars
+Clean up fileselector usage
+Portability fixes
+Use the new mime types in shared-mime-info
+
+=============
+Version 0.6.5
+=============
+
+Remove music support
+Better media detection
+Make eject work on DVD writes
+Fix user guide references
+
+=============
+Version 0.6.4
+=============
+
+Use new nautilus extension interface
+
+=============
+Version 0.6.3
+=============
+
+Fix build on gcc 2.95 platforms
+FreeBSD fixes
+Fix file chooser segfault
+
+=============
+Version 0.6.2
+=============
+
+Support disc-at-once for audio cds
+Enable joliet disabling
+Make it possible to burn "zero size" files
+Use UTF8 dates
+Use GtkFileChooser
+Various bugfixes
+
+=============
+Version 0.6.1
+=============
+
+Better handling of iso file selection errors
+Update cd-drive from libbacon (devfs fix)
+Make cd-recorder API more usable for audio cds
+
+=============
+Version 0.6.0
+=============
+
+Remember the speed used to burn CDs
+Differentiate an error guessing the media type from an unknown media type
+Removed unneeded filename argument
+Removed a string marked as translatable in the interface
+Really set the standard error output to be non-blocking while burning
+Add an icon in the ISO image contextual menu and the dialog window
+Add a whitelist for misbehaving CD burners
+Try different locations to put the temporary ISO image, in order, the path
+specified in /apps/nautilus-cd-burner/temp_iso_dir, the system temp directory,
+and the user's home directory
+Remove items that have been moved from burn:/// automatically
+Burning speed detection fixes for newer cdrecord
+
+=============
+Version 0.5.1
+=============
+
+Burning support on all growisofs supported drives
+Burning speed detection fixes
+
+=============
+Version 0.5.0
+=============
+
+FreeBSD fixes
+Remove hardcoded /tmp references
+Inital work on DVD support
+Disable blanking for non-CDRWs
+Fix for linux 2.6 ide
+Buildfixes for solaris
+Enforce iso name max length
+
+=============
+Version 0.4.3
+=============
+
+Initial work to support music cds
+FreeBSD support
+Bugfixes
+
+=============
+Version 0.4.2
+=============
+
+Ability to blank cds
+devfs support
+
+=============
+Version 0.4.1
+=============
+
+Correctly label cds.
+
+=============
+Version 0.4.0
+=============
+
+Make cd recorder code a GObject
+Allow you to burn isos from the command line
+Add context menu entry to burn isos
+
+=============
+Version 0.3.2
+=============
+
+Respect TMPDIR.
+More translations.
+
+=============
+Version 0.3.1
+=============
+
+Make translations work.
+
+=============
+Version 0.3
+=============
+
+some UI changes
+Fixed a crash in the error details dialog
+Handle closing the window
+More translations.
+	
+=============
+Version 0.2
+=============
+
+Added spinning CD.
+Some code rearranging.
+
+=============
+Version 0.1
+=============
+
+Initial release.
+

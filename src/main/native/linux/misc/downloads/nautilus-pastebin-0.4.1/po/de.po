@@ -1,0 +1,72 @@
+# German translation for nautilus-pastebin
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the nautilus-pastebin package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: nautilus-pastebin\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-12-01 22:02+0100\n"
+"PO-Revision-Date: 2010-01-23 16:55+0000\n"
+"Last-Translator: Alessio Treglia <quadrispro@ubuntu.com>\n"
+"Language-Team: German <de@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-01-24 04:54+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: ../scripts/nautilus-pastebin.py:156
+msgid ""
+"The file will be sent to the selected pastebin: are you sure to continue?"
+msgstr ""
+
+#: ../scripts/nautilus-pastebin.py:174
+msgid "Unable to read or parse the result page."
+msgstr ""
+
+#: ../scripts/nautilus-pastebin.py:175
+msgid "It could be a server timeout or a change server side. Try later."
+msgstr ""
+
+#: ../scripts/nautilus-pastebin.py:212
+msgid "Pastebin"
+msgstr "Pastebin"
+
+#: ../scripts/nautilus-pastebin.py:213
+msgid "Send this file to a pastebin"
+msgstr "Sende diese Datei zu einem Pastebin"
+
+#: ../scripts/nautilus-pastebin.py:229
+msgid "Unable to send the file"
+msgstr "Die Datei konnte nicht übertragen werden"
+
+#: ../scripts/nautilus-pastebin.py:229
+msgid "The selected file cannot be pasted."
+msgstr ""
+
+#: ../scripts/nautilus-pastebin-configurator.py:86
+#, python-format
+msgid "Can't find %s in any known prefix!"
+msgstr ""
+
+#: ../data/nautilus-pastebin-configurator.glade.h:1
+msgid "<b>Ask to confirm</b>:"
+msgstr "<b>Um Bestätigung bitten</b>:"
+
+#: ../data/nautilus-pastebin-configurator.glade.h:2
+msgid "<b>Open browser</b>:"
+msgstr "<b>Öffne Browser</b>:"
+
+#: ../data/nautilus-pastebin-configurator.glade.h:3
+msgid "<b>Pastebin</b>:"
+msgstr "<b>Pastebin</b>:"
+
+#: ../data/nautilus-pastebin-configurator.glade.h:4
+msgid "<b>Show a notification</b>:"
+msgstr "<b>Eine Benachrichtigung anzeigen</b>:"
+
+#: ../data/nautilus-pastebin-configurator.glade.h:5
+msgid "Nautilus Pastebin configuration panel"
+msgstr "Nautilus Pastebin Konfigurationsfeld"

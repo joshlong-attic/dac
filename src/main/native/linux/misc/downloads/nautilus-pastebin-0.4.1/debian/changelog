@@ -1,0 +1,77 @@
+nautilus-pastebin (0.4.1-2ubuntu1) lucid; urgency=low
+
+  * Merge from debian, Ubuntu-specific changes:
+    - Set paste.ubuntu.com as default pastebin.
+
+ -- Alessio Treglia <quadrispro@ubuntu.com>  Mon, 22 Feb 2010 12:35:02 +0100
+
+nautilus-pastebin (0.4.1-2) unstable; urgency=low
+
+  * Add Exec entry to the desktop file (CLoses: #570131).
+  * Bump Standards.
+
+ -- Alessio Treglia <quadrispro@ubuntu.com>  Tue, 16 Feb 2010 22:52:33 +0100
+
+nautilus-pastebin (0.4.1-1ubuntu1) lucid; urgency=low
+
+  * Merge from debian, Ubuntu remaining changes:
+    - Set paste.ubuntu.com as default pastebin.
+
+ -- Alessio Treglia <quadrispro@ubuntu.com>  Wed, 03 Feb 2010 12:54:04 +0100
+
+nautilus-pastebin (0.4.1-1) unstable; urgency=low
+
+  * New upstream release:
+    - Add missing translations.
+
+ -- Alessio Treglia <quadrispro@ubuntu.com>  Wed, 27 Jan 2010 00:27:08 +0100
+
+nautilus-pastebin (0.4.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Now co-maintaining with Debian Python Modules Team.
+  * Add Vcs-* tags.
+  * Adjust debhelper,quilt versioned build-dependencies.
+  * Update debian/copyright.
+
+ -- Alessio Treglia <quadrispro@ubuntu.com>  Fri, 22 Jan 2010 18:11:57 +0100
+
+nautilus-pastebin (0.3.0-1ubuntu1) lucid; urgency=low
+
+  * debian/patches/01-default_pastebin.diff:
+    - Set paste.ubuntu.com as default pastebin.
+
+ -- Alessio Treglia <quadrispro@ubuntu.com>  Wed, 25 Nov 2009 15:37:09 +0100
+
+nautilus-pastebin (0.3.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control:
+    - Depend on python-gconf.
+    - Update packages' description.
+  * debian/nautilus-pastebin.install:
+    - Drop etc/nautilus-pastebin.conf.
+    - Install usr/share/gconf/schemas/nautilus-pastebin.schemas.
+  * debian/patches/01-default_pastebin.diff:
+    - Adjust to the new configuration.
+
+ -- Alessio Treglia <quadrispro@ubuntu.com>  Wed, 11 Nov 2009 14:22:16 +0100
+
+nautilus-pastebin (0.2.1-2) unstable; urgency=low
+
+  * debian/patches/01-default_pastebin.diff:
+    - Set paste.debian.net as default pastebin.
+
+ -- Alessio Treglia <quadrispro@ubuntu.com>  Sat, 17 Oct 2009 11:18:54 +0200
+
+nautilus-pastebin (0.2.1-1) unstable; urgency=low
+
+  [ Alessio Treglia ]
+  * Initial release (Closes: #547162).
+
+  [ Andrea Veri ]
+  * debian/README.Debian:
+    - added with some handy informations about
+      post-installation details.
+
+ -- Alessio Treglia <quadrispro@ubuntu.com>  Fri, 02 Oct 2009 14:46:39 +0200

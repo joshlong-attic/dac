@@ -1,0 +1,19 @@
+Nautilus CD Burner
+
+To create a new CD, insert a blank CD and if you have magicdev or
+gnome-volume-manager installed, the CD Creator window will appear.  Otherwise,
+select Places->CD Creator or go to burn:///. Drag and drop the files you want to
+burn into that location and when you have finished, select File -> Write to CD.
+
+To burn an existing ISO image, right-clicking on it will produce a
+"Write to CD..." entry.
+
+This code detects available CD writers by examining files in /proc.  It will try
+/proc/sys/dev/cdrom/info which is created by the 'cdrom' module, and
+/proc/scsi/sg/devices which is created by the 'sg' module.  One of these modules
+must be loaded for nautilus-cd-burner to work.
+
+Please don't say "n-c-b should use cdrecord -scanbus", as that operation takes
+far too long and the files in /proc contain all of the information required.
+
+ -- Ross Burton <ross@debian.org>, Tue Dec 21 10:48:20 2004

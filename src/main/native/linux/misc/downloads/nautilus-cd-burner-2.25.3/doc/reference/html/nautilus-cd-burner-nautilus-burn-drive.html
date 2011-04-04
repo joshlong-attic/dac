@@ -1,0 +1,1404 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>nautilus-burn-drive</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.74.0">
+<link rel="home" href="index.html" title="libnautilus-burn Reference Manual">
+<link rel="up" href="ch01.html" title="libnautilus-burn Reference Manual">
+<link rel="prev" href="nautilus-cd-burner-nautilus-burn-features.html" title="nautilus-burn-features">
+<link rel="next" href="NautilusBurnDriveSelection.html" title="NautilusBurnDriveSelection">
+<meta name="generator" content="GTK-Doc V1.10 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="chapter" href="ch01.html" title="libnautilus-burn Reference Manual">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="nautilus-cd-burner-nautilus-burn-features.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">libnautilus-burn Reference Manual</th>
+<td><a accesskey="n" href="NautilusBurnDriveSelection.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts"><nobr><a href="#nautilus-cd-burner-nautilus-burn-drive.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#nautilus-cd-burner-nautilus-burn-drive.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#nautilus-cd-burner-nautilus-burn-drive.object-hierarchy" class="shortcut">Object Hierarchy</a>
+                   | 
+                  <a href="#nautilus-cd-burner-nautilus-burn-drive.properties" class="shortcut">Properties</a>
+                   | 
+                  <a href="#nautilus-cd-burner-nautilus-burn-drive.signals" class="shortcut">Signals</a></nobr></td></tr>
+</table>
+<div class="refentry" lang="en">
+<a name="nautilus-cd-burner-nautilus-burn-drive"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="nautilus-cd-burner-nautilus-burn-drive.top_of_page"></a>nautilus-burn-drive</span></h2>
+<p>nautilus-burn-drive</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="nautilus-cd-burner-nautilus-burn-drive.synopsis"></a><h2>Synopsis</h2>
+<a name="NautilusBurnDrive"></a><pre class="synopsis">
+enum                <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnMediaType" title="enum NautilusBurnMediaType">NautilusBurnMediaType</a>;
+#define             <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NAUTILUS-BURN-MEDIA-SIZE-UNKNOWN:CAPS" title="NAUTILUS_BURN_MEDIA_SIZE_UNKNOWN">NAUTILUS_BURN_MEDIA_SIZE_UNKNOWN</a>
+#define             <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NAUTILUS-BURN-MEDIA-SIZE-NA:CAPS" title="NAUTILUS_BURN_MEDIA_SIZE_NA">NAUTILUS_BURN_MEDIA_SIZE_NA</a>
+#define             <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NAUTILUS-BURN-MEDIA-SIZE-BUSY:CAPS" title="NAUTILUS_BURN_MEDIA_SIZE_BUSY">NAUTILUS_BURN_MEDIA_SIZE_BUSY</a>
+enum                <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDriveType" title="enum NautilusBurnDriveType">NautilusBurnDriveType</a>;
+typedef             <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a>;
+typedef             <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDriveClass" title="NautilusBurnDriveClass">NautilusBurnDriveClass</a>;
+typedef             <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrivePrivate" title="NautilusBurnDrivePrivate">NautilusBurnDrivePrivate</a>;
+void                <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#media-added" title="media_added ()">media_added</a>                         (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);
+void                <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#media-removed" title="media_removed ()">media_removed</a>                       (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);
+void                <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#disconnected" title="disconnected ()">disconnected</a>                        (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);
+#define             <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NAUTILUS-BURN-DRIVE-SIZE-TO-TIME:CAPS" title="NAUTILUS_BURN_DRIVE_SIZE_TO_TIME()">NAUTILUS_BURN_DRIVE_SIZE_TO_TIME</a>    (size)
+#define             <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NAUTILUS-BURN-DRIVE-CD-SPEED:CAPS" title="NAUTILUS_BURN_DRIVE_CD_SPEED()">NAUTILUS_BURN_DRIVE_CD_SPEED</a>        (speed)
+#define             <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NAUTILUS-BURN-DRIVE-DVD-SPEED:CAPS" title="NAUTILUS_BURN_DRIVE_DVD_SPEED()">NAUTILUS_BURN_DRIVE_DVD_SPEED</a>       (speed)
+#define             <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NAUTILUS-BURN-DRIVE-MEDIA-TYPE-IS-DVD:CAPS" title="NAUTILUS_BURN_DRIVE_MEDIA_TYPE_IS_DVD()">NAUTILUS_BURN_DRIVE_MEDIA_TYPE_IS_DVD</a>(media_type)
+<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a>*  <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-ref" title="nautilus_burn_drive_ref ()">nautilus_burn_drive_ref</a>             (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);
+void                <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-unref" title="nautilus_burn_drive_unref ()">nautilus_burn_drive_unref</a>           (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);
+<a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-equal" title="nautilus_burn_drive_equal ()">nautilus_burn_drive_equal</a>           (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *a,
+                                                         <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *b);
+<a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-lock" title="nautilus_burn_drive_lock ()">nautilus_burn_drive_lock</a>            (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive,
+                                                         const char *reason,
+                                                         char **reason_for_failure);
+<a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-unlock" title="nautilus_burn_drive_unlock ()">nautilus_burn_drive_unlock</a>          (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);
+<a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-unmount" title="nautilus_burn_drive_unmount ()">nautilus_burn_drive_unmount</a>         (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);
+<a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-is-mounted" title="nautilus_burn_drive_is_mounted ()">nautilus_burn_drive_is_mounted</a>      (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);
+<a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-eject" title="nautilus_burn_drive_eject ()">nautilus_burn_drive_eject</a>           (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);
+<a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-door-is-open" title="nautilus_burn_drive_door_is_open ()">nautilus_burn_drive_door_is_open</a>    (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);
+int                 <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-get-drive-type" title="nautilus_burn_drive_get_drive_type ()">nautilus_burn_drive_get_drive_type</a>  (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);
+char*               <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-get-name-for-display" title="nautilus_burn_drive_get_name_for_display ()">nautilus_burn_drive_get_name_for_display</a>
+                                                        (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);
+const char*         <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-get-device" title="nautilus_burn_drive_get_device ()">nautilus_burn_drive_get_device</a>      (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);
+<a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-can-write" title="nautilus_burn_drive_can_write ()">nautilus_burn_drive_can_write</a>       (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);
+<a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-can-rewrite" title="nautilus_burn_drive_can_rewrite ()">nautilus_burn_drive_can_rewrite</a>     (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);
+int                 <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-get-max-speed-write" title="nautilus_burn_drive_get_max_speed_write ()">nautilus_burn_drive_get_max_speed_write</a>
+                                                        (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);
+int                 <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-get-max-speed-read" title="nautilus_burn_drive_get_max_speed_read ()">nautilus_burn_drive_get_max_speed_read</a>
+                                                        (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);
+const int*          <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-get-write-speeds" title="nautilus_burn_drive_get_write_speeds ()">nautilus_burn_drive_get_write_speeds</a>
+                                                        (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);
+<a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-can-eject" title="nautilus_burn_drive_can_eject ()">nautilus_burn_drive_can_eject</a>       (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);
+<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnMediaType" title="enum NautilusBurnMediaType">NautilusBurnMediaType</a> <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-get-media-type" title="nautilus_burn_drive_get_media_type ()">nautilus_burn_drive_get_media_type</a>
+                                                        (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);
+<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnMediaType" title="enum NautilusBurnMediaType">NautilusBurnMediaType</a> <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-get-media-type-full" title="nautilus_burn_drive_get_media_type_full ()">nautilus_burn_drive_get_media_type_full</a>
+                                                        (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> *is_rewritable,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> *is_blank,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> *has_data,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> *has_audio);
+<a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint64"
+>gint64</a>              <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-get-media-capacity" title="nautilus_burn_drive_get_media_capacity ()">nautilus_burn_drive_get_media_capacity</a>
+                                                        (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);
+<a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint64"
+>gint64</a>              <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-get-media-size" title="nautilus_burn_drive_get_media_size ()">nautilus_burn_drive_get_media_size</a>  (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);
+char*               <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-get-media-label" title="nautilus_burn_drive_get_media_label ()">nautilus_burn_drive_get_media_label</a> (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);
+<a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-media-is-appendable" title="nautilus_burn_drive_media_is_appendable ()">nautilus_burn_drive_media_is_appendable</a>
+                                                        (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);
+const char*         <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-media-type-get-string" title="nautilus_burn_drive_media_type_get_string ()">nautilus_burn_drive_media_type_get_string</a>
+                                                        (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnMediaType" title="enum NautilusBurnMediaType">NautilusBurnMediaType</a> type);
+char*               <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-get-supported-media-string" title="nautilus_burn_drive_get_supported_media_string ()">nautilus_burn_drive_get_supported_media_string</a>
+                                                        (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> writable_only);
+char*               <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-get-supported-media-string-for-size" title="nautilus_burn_drive_get_supported_media_string_for_size ()">nautilus_burn_drive_get_supported_media_string_for_size</a>
+                                                        (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint64"
+>guint64</a> size);
+<a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-media-type-is-writable" title="nautilus_burn_drive_media_type_is_writable ()">nautilus_burn_drive_media_type_is_writable</a>
+                                                        (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnMediaType" title="enum NautilusBurnMediaType">NautilusBurnMediaType</a> type,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> is_blank);
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="nautilus-cd-burner-nautilus-burn-drive.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  <a
+href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject"
+>GObject</a>
+   +----NautilusBurnDrive
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="nautilus-cd-burner-nautilus-burn-drive.properties"></a><h2>Properties</h2>
+<pre class="synopsis">
+  "<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive--enable-monitor" title='The "enable-monitor" property'>enable-monitor</a>"           <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>              : Read / Write
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="nautilus-cd-burner-nautilus-burn-drive.signals"></a><h2>Signals</h2>
+<pre class="synopsis">
+  "<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive-disconnected" title='The "disconnected" signal'>disconnected</a>"                                   : Run Last
+  "<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive-media-added" title='The "media-added" signal'>media-added</a>"                                    : Run Last
+  "<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive-media-removed" title='The "media-removed" signal'>media-removed</a>"                                  : Run Last
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="nautilus-cd-burner-nautilus-burn-drive.description"></a><h2>Description</h2>
+<p>
+
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="nautilus-cd-burner-nautilus-burn-drive.details"></a><h2>Details</h2>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnMediaType"></a><h3>enum NautilusBurnMediaType</h3>
+<pre class="programlisting">typedef enum {
+        NAUTILUS_BURN_MEDIA_TYPE_BUSY,
+        NAUTILUS_BURN_MEDIA_TYPE_ERROR,
+        NAUTILUS_BURN_MEDIA_TYPE_UNKNOWN,
+        NAUTILUS_BURN_MEDIA_TYPE_CD,
+        NAUTILUS_BURN_MEDIA_TYPE_CDR,
+        NAUTILUS_BURN_MEDIA_TYPE_CDRW,
+        NAUTILUS_BURN_MEDIA_TYPE_DVD,
+        NAUTILUS_BURN_MEDIA_TYPE_DVDR,
+        NAUTILUS_BURN_MEDIA_TYPE_DVDRW,
+        NAUTILUS_BURN_MEDIA_TYPE_DVD_RAM,
+        NAUTILUS_BURN_MEDIA_TYPE_DVD_PLUS_R,
+        NAUTILUS_BURN_MEDIA_TYPE_DVD_PLUS_RW,
+        NAUTILUS_BURN_MEDIA_TYPE_DVD_PLUS_R_DL,
+} NautilusBurnMediaType;
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NAUTILUS-BURN-MEDIA-SIZE-UNKNOWN:CAPS"></a><h3>NAUTILUS_BURN_MEDIA_SIZE_UNKNOWN</h3>
+<pre class="programlisting">#define NAUTILUS_BURN_MEDIA_SIZE_UNKNOWN -1
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NAUTILUS-BURN-MEDIA-SIZE-NA:CAPS"></a><h3>NAUTILUS_BURN_MEDIA_SIZE_NA</h3>
+<pre class="programlisting">#define NAUTILUS_BURN_MEDIA_SIZE_NA      -2
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NAUTILUS-BURN-MEDIA-SIZE-BUSY:CAPS"></a><h3>NAUTILUS_BURN_MEDIA_SIZE_BUSY</h3>
+<pre class="programlisting">#define NAUTILUS_BURN_MEDIA_SIZE_BUSY    -3
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnDriveType"></a><h3>enum NautilusBurnDriveType</h3>
+<pre class="programlisting">typedef enum {
+        NAUTILUS_BURN_DRIVE_TYPE_FILE                   = 1 &lt;&lt; 0,
+        NAUTILUS_BURN_DRIVE_TYPE_CD_RECORDER            = 1 &lt;&lt; 1,
+        NAUTILUS_BURN_DRIVE_TYPE_CDRW_RECORDER          = 1 &lt;&lt; 2,
+        NAUTILUS_BURN_DRIVE_TYPE_DVD_RAM_RECORDER       = 1 &lt;&lt; 3,
+        /* Drives are usually DVD-R and DVD-RW */
+        NAUTILUS_BURN_DRIVE_TYPE_DVD_RW_RECORDER        = 1 &lt;&lt; 4,
+        NAUTILUS_BURN_DRIVE_TYPE_DVD_PLUS_R_RECORDER    = 1 &lt;&lt; 5,
+        NAUTILUS_BURN_DRIVE_TYPE_DVD_PLUS_RW_RECORDER   = 1 &lt;&lt; 6,
+        NAUTILUS_BURN_DRIVE_TYPE_CD_DRIVE               = 1 &lt;&lt; 7,
+        NAUTILUS_BURN_DRIVE_TYPE_DVD_DRIVE              = 1 &lt;&lt; 8,
+        NAUTILUS_BURN_DRIVE_TYPE_DVD_PLUS_R_DL_RECORDER = 1 &lt;&lt; 9,
+} NautilusBurnDriveType;
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnDrive"></a><h3>NautilusBurnDrive</h3>
+<pre class="programlisting">typedef struct NautilusBurnDrive                   NautilusBurnDrive;
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnDriveClass"></a><h3>NautilusBurnDriveClass</h3>
+<pre class="programlisting">typedef struct NautilusBurnDriveClass              NautilusBurnDriveClass;
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnDrivePrivate"></a><h3>NautilusBurnDrivePrivate</h3>
+<pre class="programlisting">typedef struct NautilusBurnDrivePrivate            NautilusBurnDrivePrivate;
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="media-added"></a><h3>media_added ()</h3>
+<pre class="programlisting">void                media_added                         (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td>
+
+
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="media-removed"></a><h3>media_removed ()</h3>
+<pre class="programlisting">void                media_removed                       (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td>
+
+
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="disconnected"></a><h3>disconnected ()</h3>
+<pre class="programlisting">void                disconnected                        (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td>
+
+
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NAUTILUS-BURN-DRIVE-SIZE-TO-TIME:CAPS"></a><h3>NAUTILUS_BURN_DRIVE_SIZE_TO_TIME()</h3>
+<pre class="programlisting">#define NAUTILUS_BURN_DRIVE_SIZE_TO_TIME(size) (size &gt; 1024 * 1024 ? (int) (((size / 1024 / 1024) - 1) * 48 / 7): 0)
+</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>size</code></em> :</span></p></td>
+<td>
+
+
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NAUTILUS-BURN-DRIVE-CD-SPEED:CAPS"></a><h3>NAUTILUS_BURN_DRIVE_CD_SPEED()</h3>
+<pre class="programlisting">#define NAUTILUS_BURN_DRIVE_CD_SPEED(speed) (floorf (((speed) * 1024 / 153600.0) * 10) / 10.0)
+</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>speed</code></em> :</span></p></td>
+<td>
+
+
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NAUTILUS-BURN-DRIVE-DVD-SPEED:CAPS"></a><h3>NAUTILUS_BURN_DRIVE_DVD_SPEED()</h3>
+<pre class="programlisting">#define NAUTILUS_BURN_DRIVE_DVD_SPEED(speed) (floorf (((speed)  * 1024 / 1385000.0) * 10) / 10.0)
+</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>speed</code></em> :</span></p></td>
+<td>
+
+
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NAUTILUS-BURN-DRIVE-MEDIA-TYPE-IS-DVD:CAPS"></a><h3>NAUTILUS_BURN_DRIVE_MEDIA_TYPE_IS_DVD()</h3>
+<pre class="programlisting">#define             NAUTILUS_BURN_DRIVE_MEDIA_TYPE_IS_DVD(media_type)</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>media_type</code></em> :</span></p></td>
+<td>
+
+
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-ref"></a><h3>nautilus_burn_drive_ref ()</h3>
+<pre class="programlisting"><a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a>*  nautilus_burn_drive_ref             (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);</pre>
+<p>
+Increment the refcount of <em class="parameter"><code>drive</code></em>.</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td> <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a>
+
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since  2.14
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-unref"></a><h3>nautilus_burn_drive_unref ()</h3>
+<pre class="programlisting">void                nautilus_burn_drive_unref           (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);</pre>
+<p>
+Decrement the refcount of <em class="parameter"><code>drive</code></em>.</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td> <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a>
+</td>
+</tr></tbody>
+</table></div>
+<p class="since">Since  2.14
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-equal"></a><h3>nautilus_burn_drive_equal ()</h3>
+<pre class="programlisting"><a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            nautilus_burn_drive_equal           (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *a,
+                                                         <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *b);</pre>
+<p>
+Compare the two cd drives, return <code class="literal">TRUE</code> if they match exactly
+the same drive.</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>a</code></em> :</span></p></td>
+<td> First <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a> struct to compare
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>b</code></em> :</span></p></td>
+<td> Second <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a> struct to compare
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> <code class="literal">TRUE</code> if the two <span class="type">NautilusBurnDrives</span> are equal, otherwise return <code class="literal">FALSE</code>.
+
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since  2.8
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-lock"></a><h3>nautilus_burn_drive_lock ()</h3>
+<pre class="programlisting"><a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            nautilus_burn_drive_lock            (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive,
+                                                         const char *reason,
+                                                         char **reason_for_failure);</pre>
+<p>
+Lock a <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a></p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td> Pointer to a <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>reason</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>reason_for_failure</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> <code class="literal">TRUE</code> if the drive was sucessfully locked, <code class="literal">FALSE</code> otherwise.
+
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since  2.8
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-unlock"></a><h3>nautilus_burn_drive_unlock ()</h3>
+<pre class="programlisting"><a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            nautilus_burn_drive_unlock          (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);</pre>
+<p>
+Unlock a <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a></p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td> Pointer to a <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> <code class="literal">TRUE</code> if the drive was sucessfully unlocked, <code class="literal">FALSE</code> otherwise.
+
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since  2.8
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-unmount"></a><h3>nautilus_burn_drive_unmount ()</h3>
+<pre class="programlisting"><a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            nautilus_burn_drive_unmount         (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);</pre>
+<p>
+Unmount the media in a <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a>.</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td> <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> <code class="literal">TRUE</code> if the media was sucessfully unmounted, <code class="literal">FALSE</code> otherwise.
+
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since  2.10
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-is-mounted"></a><h3>nautilus_burn_drive_is_mounted ()</h3>
+<pre class="programlisting"><a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            nautilus_burn_drive_is_mounted      (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);</pre>
+<p>
+Determine if media in the specified drive is mounted.</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td> <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> <code class="literal">TRUE</code> if the media is mounted, <code class="literal">FALSE</code> otherwise.
+
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since  2.14
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-eject"></a><h3>nautilus_burn_drive_eject ()</h3>
+<pre class="programlisting"><a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            nautilus_burn_drive_eject           (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);</pre>
+<p>
+Eject media from a <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a>.</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td> <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> <code class="literal">TRUE</code> if the media was sucessfully ejected, <code class="literal">FALSE</code> otherwise.
+
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since  2.12
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-door-is-open"></a><h3>nautilus_burn_drive_door_is_open ()</h3>
+<pre class="programlisting"><a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            nautilus_burn_drive_door_is_open    (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);</pre>
+<p>
+Report the whether the drive door or tray is open.</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td> <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> <code class="literal">TRUE</code> if the drive door is open, otherwise return <code class="literal">FALSE</code>.
+
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since  2.12
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-get-drive-type"></a><h3>nautilus_burn_drive_get_drive_type ()</h3>
+<pre class="programlisting">int                 nautilus_burn_drive_get_drive_type  (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);</pre>
+<p>
+Get the type of the drive.</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td> <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> type of drive
+
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since  2.16
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-get-name-for-display"></a><h3>nautilus_burn_drive_get_name_for_display ()</h3>
+<pre class="programlisting">char*               nautilus_burn_drive_get_name_for_display
+                                                        (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);</pre>
+<p>
+Get the name of the drive for use in a user interface</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td> <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> name of the drive.  Must be freed with <a
+href="/usr/share/gtk-doc/html/glib/glib-Memory-Allocation.html#g-free"
+><code class="function">g_free()</code></a>.
+
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since  2.14
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-get-device"></a><h3>nautilus_burn_drive_get_device ()</h3>
+<pre class="programlisting">const char*         nautilus_burn_drive_get_device      (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);</pre>
+<p>
+Get the name of the device associated with the drive.</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td> <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> device name.  Must be not be freed.
+
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since  2.16
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-can-write"></a><h3>nautilus_burn_drive_can_write ()</h3>
+<pre class="programlisting"><a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            nautilus_burn_drive_can_write       (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);</pre>
+<p>
+Report the whether the drive is capable of recording</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td> <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> <code class="literal">TRUE</code> if the drive is a recorder, otherwise return <code class="literal">FALSE</code>.
+
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since  2.14
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-can-rewrite"></a><h3>nautilus_burn_drive_can_rewrite ()</h3>
+<pre class="programlisting"><a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            nautilus_burn_drive_can_rewrite     (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);</pre>
+<p>
+Report the whether the drive is capable of re-recording</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td> <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> <code class="literal">TRUE</code> if the drive can rewrite, otherwise return <code class="literal">FALSE</code>.
+
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since  2.14
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-get-max-speed-write"></a><h3>nautilus_burn_drive_get_max_speed_write ()</h3>
+<pre class="programlisting">int                 nautilus_burn_drive_get_max_speed_write
+                                                        (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);</pre>
+<p>
+Get the maximum write speed that the drive is capable of</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td> <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> The speed of the drive, in device units.
+
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since  2.14
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-get-max-speed-read"></a><h3>nautilus_burn_drive_get_max_speed_read ()</h3>
+<pre class="programlisting">int                 nautilus_burn_drive_get_max_speed_read
+                                                        (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);</pre>
+<p>
+Get the maximum read speed that the drive is capable of</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td> <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> The speed of the drive, in device units.
+
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since  2.14
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-get-write-speeds"></a><h3>nautilus_burn_drive_get_write_speeds ()</h3>
+<pre class="programlisting">const int*          nautilus_burn_drive_get_write_speeds
+                                                        (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-can-eject"></a><h3>nautilus_burn_drive_can_eject ()</h3>
+<pre class="programlisting"><a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            nautilus_burn_drive_can_eject       (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);</pre>
+<p>
+Report the whether the drive support ejections or not.</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td> <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> <code class="literal">TRUE</code> if the drive support ejections, otherwise return <code class="literal">FALSE</code>.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-get-media-type"></a><h3>nautilus_burn_drive_get_media_type ()</h3>
+<pre class="programlisting"><a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnMediaType" title="enum NautilusBurnMediaType">NautilusBurnMediaType</a> nautilus_burn_drive_get_media_type
+                                                        (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);</pre>
+<p>
+Determine the type of the media in the drive <em class="parameter"><code>drive</code></em>.</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td> <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> The <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnMediaType" title="enum NautilusBurnMediaType"><span class="type">NautilusBurnMediaType</span></a> of the media in the drive or the
+following special values:
+
+   <code class="literal">NAUTILUS_BURN_MEDIA_TYPE_ERROR</code>   if the type can not be determined
+   <code class="literal">NAUTILUS_BURN_MEDIA_TYPE_UNKNOWN</code> if the type can not be determined
+   <code class="literal">NAUTILUS_BURN_MEDIA_TYPE_BUSY</code>    if the device is busy
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-get-media-type-full"></a><h3>nautilus_burn_drive_get_media_type_full ()</h3>
+<pre class="programlisting"><a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnMediaType" title="enum NautilusBurnMediaType">NautilusBurnMediaType</a> nautilus_burn_drive_get_media_type_full
+                                                        (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> *is_rewritable,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> *is_blank,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> *has_data,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> *has_audio);</pre>
+<p>
+Determine the type of the media in the drive <em class="parameter"><code>drive</code></em></p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td> <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>is_rewritable</code></em> :</span></p></td>
+<td> set to TRUE if media is rewritable
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>is_blank</code></em> :</span></p></td>
+<td> set to TRUE if media is blank
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>has_data</code></em> :</span></p></td>
+<td> set to TRUE if media has data
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>has_audio</code></em> :</span></p></td>
+<td> set to TRUE if media has audio
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> See <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#nautilus-burn-drive-get-media-type" title="nautilus_burn_drive_get_media_type ()"><code class="function">nautilus_burn_drive_get_media_type()</code></a> for details.
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-get-media-capacity"></a><h3>nautilus_burn_drive_get_media_capacity ()</h3>
+<pre class="programlisting"><a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint64"
+>gint64</a>              nautilus_burn_drive_get_media_capacity
+                                                        (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);</pre>
+<p>
+Determine the capacity of the media (i.e. amount of data that the disc
+can hold) in the specified drive.</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td> <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> The capacity of the media in bytes or the
+following special values:
+
+   <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NAUTILUS-BURN-MEDIA-SIZE-UNKNOWN:CAPS" title="NAUTILUS_BURN_MEDIA_SIZE_UNKNOWN"><code class="literal">NAUTILUS_BURN_MEDIA_SIZE_UNKNOWN</code></a> if the type can not be determined
+   <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NAUTILUS-BURN-MEDIA-SIZE-NA:CAPS" title="NAUTILUS_BURN_MEDIA_SIZE_NA"><code class="literal">NAUTILUS_BURN_MEDIA_SIZE_NA</code></a>      if the device type is not recognized
+   <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NAUTILUS-BURN-MEDIA-SIZE-BUSY:CAPS" title="NAUTILUS_BURN_MEDIA_SIZE_BUSY"><code class="literal">NAUTILUS_BURN_MEDIA_SIZE_BUSY</code></a>    if the device is busy
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-get-media-size"></a><h3>nautilus_burn_drive_get_media_size ()</h3>
+<pre class="programlisting"><a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint64"
+>gint64</a>              nautilus_burn_drive_get_media_size  (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);</pre>
+<p>
+Determine the size of the media (i.e. amount of data that the disc
+contains) in the specified drive.</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td> <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> The size of the media in bytes or the
+following special values:
+
+   <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NAUTILUS-BURN-MEDIA-SIZE-UNKNOWN:CAPS" title="NAUTILUS_BURN_MEDIA_SIZE_UNKNOWN"><code class="literal">NAUTILUS_BURN_MEDIA_SIZE_UNKNOWN</code></a> if the type can not be determined
+   <code class="literal">0</code>                                if the disc is blank
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-get-media-label"></a><h3>nautilus_burn_drive_get_media_label ()</h3>
+<pre class="programlisting">char*               nautilus_burn_drive_get_media_label (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);</pre>
+<p>
+Determine the label of the media in the specified drive.</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td> <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> The label of the media.
+
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since  2.14
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-media-is-appendable"></a><h3>nautilus_burn_drive_media_is_appendable ()</h3>
+<pre class="programlisting"><a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            nautilus_burn_drive_media_is_appendable
+                                                        (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);</pre>
+<p>
+Determine if the media in the specified drive is appendable</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td> <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> <code class="literal">TRUE</code> if there is a media and it can be appended, otherwise returns <code class="literal">FALSE</code>.
+
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since  2.16
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-media-type-get-string"></a><h3>nautilus_burn_drive_media_type_get_string ()</h3>
+<pre class="programlisting">const char*         nautilus_burn_drive_media_type_get_string
+                                                        (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnMediaType" title="enum NautilusBurnMediaType">NautilusBurnMediaType</a> type);</pre>
+<p>
+Get a string description of the specified media type.</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>type</code></em> :</span></p></td>
+<td> A <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnMediaType" title="enum NautilusBurnMediaType"><span class="type">NautilusBurnMediaType</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> a string description for the media type.
+
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since  2.12
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-get-supported-media-string"></a><h3>nautilus_burn_drive_get_supported_media_string ()</h3>
+<pre class="programlisting">char*               nautilus_burn_drive_get_supported_media_string
+                                                        (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> writable_only);</pre>
+<p>
+Get a string description of the supported media types.  The
+returned string should be freed when no longer needed.</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td> A <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>writable_only</code></em> :</span></p></td>
+<td> Set to <code class="literal">TRUE</code> if only writable media should be displayed
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> a string description of the supported media types
+
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since  2.14
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-get-supported-media-string-for-size"></a><h3>nautilus_burn_drive_get_supported_media_string_for_size ()</h3>
+<pre class="programlisting">char*               nautilus_burn_drive_get_supported_media_string_for_size
+                                                        (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint64"
+>guint64</a> size);</pre>
+<p>
+Get a string description of the suiting media types for the given
+data size. The returned string should be freed when no longer needed.</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td> A <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>size</code></em> :</span></p></td>
+<td> Data size
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> a string description of the supported media types
+
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since  2.16
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-media-type-is-writable"></a><h3>nautilus_burn_drive_media_type_is_writable ()</h3>
+<pre class="programlisting"><a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            nautilus_burn_drive_media_type_is_writable
+                                                        (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnMediaType" title="enum NautilusBurnMediaType">NautilusBurnMediaType</a> type,
+                                                         <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a> is_blank);</pre>
+<p>
+Determine if a media type is writable</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>type</code></em> :</span></p></td>
+<td> A <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnMediaType" title="enum NautilusBurnMediaType"><span class="type">NautilusBurnMediaType</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>is_blank</code></em> :</span></p></td>
+<td> if the media type is blank or not
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> <code class="literal">TRUE</code> if the media type can be written to, otherwise return <code class="literal">FALSE</code>.
+
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since  2.14
+</p>
+</div>
+</div>
+<div class="refsect1" lang="en">
+<a name="nautilus-cd-burner-nautilus-burn-drive.property-details"></a><h2>Property Details</h2>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnDrive--enable-monitor"></a><h3>The <code class="literal">"enable-monitor"</code> property</h3>
+<pre class="programlisting">  "enable-monitor"           <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>              : Read / Write</pre>
+<p></p>
+<p>Default value: FALSE</p>
+</div>
+</div>
+<div class="refsect1" lang="en">
+<a name="nautilus-cd-burner-nautilus-burn-drive.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnDrive-disconnected"></a><h3>The <code class="literal">"disconnected"</code> signal</h3>
+<pre class="programlisting">void                user_function                      (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *nautilusburndrive,
+                                                        <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"
+>gpointer</a>           user_data)              : Run Last</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>nautilusburndrive</code></em> :</span></p></td>
+<td>the object which received the signal.
+
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnDrive-media-added"></a><h3>The <code class="literal">"media-added"</code> signal</h3>
+<pre class="programlisting">void                user_function                      (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *nautilusburndrive,
+                                                        <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"
+>gpointer</a>           user_data)              : Run Last</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>nautilusburndrive</code></em> :</span></p></td>
+<td>the object which received the signal.
+
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnDrive-media-removed"></a><h3>The <code class="literal">"media-removed"</code> signal</h3>
+<pre class="programlisting">void                user_function                      (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *nautilusburndrive,
+                                                        <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"
+>gpointer</a>           user_data)              : Run Last</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>nautilusburndrive</code></em> :</span></p></td>
+<td>the object which received the signal.
+
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.10</div>
+</body>
+</html>

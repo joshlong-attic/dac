@@ -1,0 +1,1021 @@
+# translation of nautilus-cd-burner.HEAD.po to Arabic
+# translation of nautilus-cd-burner.HEAD.ar.po to
+# Arabic translation of PACKAGE.
+# Copyright (C) 2003 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Arafat Medini <lumina@silverpen.de>, 2003.
+# Abdulaziz Al-Arfaj <alarfaj0@yahoo.com>, 2004.
+# Djihed Afifi <djihed@gmail.com>, 2006.
+# Khaled Hosny <khaledhosny@eglug.org>, 2006, 2007, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: nautilus-cd-burner.HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-02-17 12:03+0000\n"
+"PO-Revision-Date: 2008-07-18 15:45+0300\n"
+"Last-Translator: Khaled Hosny <khaledhosny@eglug.org>\n"
+"Language-Team: Arabic <doc@arabeyes.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: ../data/nautilus-cd-burner.desktop.in.h:1
+#: ../data/nautilus-cd-burner-open-iso.desktop.in.h:1
+#: ../src/ncb-operation.c:1635
+msgid "CD/DVD Creator"
+msgstr "منشئ اسطوانات/ديڤيدي"
+
+#: ../data/nautilus-cd-burner.desktop.in.h:2
+msgid "Open a folder into which you can drag files to burn to a CD or DVD"
+msgstr "افتح مجلّدا يمكنك سحب الملفات إليه لنسخها على اسطوانة أو ديڤيدي"
+
+#: ../data/nautilus-cd-burner-open-iso.desktop.in.h:2
+msgid "Open the CD/DVD Creator"
+msgstr "افتح منشئ الاسطوانات/ديڤيدي"
+
+#: ../data/nautilus-cd-burner.glade.h:1
+msgid "    "
+msgstr "    "
+
+#: ../data/nautilus-cd-burner.glade.h:2
+msgid "<b>Information</b>"
+msgstr "<b>معلومات</b>"
+
+#: ../data/nautilus-cd-burner.glade.h:3
+msgid "<b>Write Options</b>"
+msgstr "<b>خيارات الكتابة</b>"
+
+#: ../data/nautilus-cd-burner.glade.h:4
+msgid "<big><b>Some files have invalid filenames</b></big>"
+msgstr "<big><b>بعض الملفات لها أسماء غير سليمة</b></big>"
+
+#: ../data/nautilus-cd-burner.glade.h:5
+msgid "<big><b>Writing files to disc</b></big>"
+msgstr "<big><b>يجري كتابة الملفّات على القرص</b></big>"
+
+#: ../data/nautilus-cd-burner.glade.h:6
+msgid "<i>Initializing...</i>"
+msgstr "<i>يجري البدء...</i>"
+
+#: ../data/nautilus-cd-burner.glade.h:7
+msgid "Data size:"
+msgstr "حجم البيانات:"
+
+#: ../data/nautilus-cd-burner.glade.h:8
+msgid "Disc _name:"
+msgstr "ا_سم القرص:"
+
+#: ../data/nautilus-cd-burner.glade.h:9
+msgid "Label to identify disc"
+msgstr "اسم للتّعرّف على القرص"
+
+#: ../data/nautilus-cd-burner.glade.h:10
+msgid ""
+"The following filenames are not valid.  Please provide new names for each of "
+"them."
+msgstr "أسماء الملفات التالية غير سليمة، من فضلك حدد أسماء جديدة لكل منهم."
+
+#: ../data/nautilus-cd-burner.glade.h:11
+msgid "Write _speed:"
+msgstr "سرعة ال_كتابة:"
+
+#: ../data/nautilus-cd-burner.glade.h:12
+msgid "Write disc _to:"
+msgstr "ا_كتب القرص إلى:"
+
+#: ../data/nautilus-cd-burner.glade.h:13 ../src/ncb-operation.c:902
+msgid "Writing Files to Disc"
+msgstr "يجري كتابة الملفات على القرص"
+
+#: ../data/nautilus-cd-burner.glade.h:14
+msgid "_Dummy write"
+msgstr "كتابة _زائفة"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:1
+msgid "Default burn speed"
+msgstr "سرعة الكتابة المبدئية"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:2
+msgid "Default speed at which the media will be written."
+msgstr "السرعة المبدئية التي سيكتب بها الوسيط."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:3
+msgid "Directory for the temporary ISO images"
+msgstr "دليل صور ISO المؤقتة"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:4
+msgid ""
+"Directory used for the temporary ISO images, leave blank to use the default "
+"system temporary directory."
+msgstr ""
+"الدليل المستخدم لصور ISO المؤقتة، اتركه فارغا لاستخدام الدليل المؤقت "
+"الافتراضي للنظام."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:5
+msgid "Enable Burnproof option"
+msgstr "فعّل خيار مضاد الاحتراق"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:6
+msgid "Enable debug"
+msgstr "فعّل التّنقيح"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:7
+msgid "Enable overburn"
+msgstr "فعّل النسخ الزّائد"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:8
+msgid "Whether to allow the data to exceed the size of the physical medium."
+msgstr "فيما إذا سيسمح للبيانات أن تتجاوز حجم الوسيط المادّي."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:9
+msgid "Whether to enable the debugging for CD Recording."
+msgstr "فيما إذا سيفعّل تنقيح لتسجيل الاسطوانات."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:10
+msgid "Whether to use the Burnproof option available on some recorders."
+msgstr "فيما إذا سيستعمل خيار مضاد الاحتراق المتوفّر على بعض المسجّلات."
+
+#: ../src/burn-extension.c:141 ../src/burn-extension.c:145
+msgid "Unable to launch the cd burner application"
+msgstr "تعذّر تشغيل تطبيق كتابة الاسطوانات"
+
+#: ../src/burn-extension.c:453 ../src/burn-extension.c:463
+#: ../src/burn-extension.c:551
+msgid "_Write to Disc..."
+msgstr "ا_كتب على القرص..."
+
+#: ../src/burn-extension.c:454
+msgid "Write disc image to a CD or DVD disc"
+msgstr "اكتب صورة القرص على اسطوانة أو ديڤيدي"
+
+#: ../src/burn-extension.c:464
+msgid "Write disc image cuesheet to a CD or DVD disc"
+msgstr "اكتب وصف تخطيط صورة القرص على اسطوانة أو ديڤيدي"
+
+#: ../src/burn-extension.c:510
+msgid "_Copy Disc..."
+msgstr "ا_نسخ القرص..."
+
+#: ../src/burn-extension.c:511
+msgid "Create a copy of this CD or DVD disc"
+msgstr "اصنع نسخة من هذه الاسطوانة أو الديڤيدي"
+
+#: ../src/burn-extension.c:552 ../src/nautilus-burn-bar.c:151
+msgid "Write contents to a CD or DVD disc"
+msgstr "اكتب المحتويات على اسطوانة أو قرص ديڤيدي"
+
+#: ../src/make-iso.c:306
+msgid "Disable Microsoft Windows compatibility?"
+msgstr "أأعطّل التوافقية مع ميكروسوفت ويندوز؟"
+
+#: ../src/make-iso.c:309
+msgid ""
+"Some files don't have a suitable name for a Windows-compatible CD.\n"
+"Do you want to continue with Windows compatibility disabled?"
+msgstr ""
+"بعض الملفات ليس لها أسماء مناسبة للاسطوانات المتوافقة مع ويندوز.\n"
+"هل تريد المواصلة بإلغاء التوافقية مع ويندوز؟"
+
+#: ../src/make-iso.c:310
+msgid "Windows compatibility"
+msgstr "التوافقية مع ويندوز"
+
+#: ../src/make-iso.c:707
+msgid " (invalid Unicode)"
+msgstr " (يونيكود غير صحيح)"
+
+#: ../src/make-iso.c:868
+#, c-format
+msgid ""
+"The selected location does not have enough space to store the disc image (%s "
+"MiB needed)."
+msgstr "المكان المختار لا يحوي مساحة كافية لتخزين صورة القرص (مطلوب %s م.بايت)"
+
+#: ../src/make-iso.c:1012 ../src/make-iso.c:1402
+#, c-format
+msgid "Could not run sub process: %s."
+msgstr "تعذّر تشغيل العملية الفرعية: %s. "
+
+#: ../src/make-iso.c:1039
+msgid "The operation was cancelled by the user."
+msgstr "ألغى المستخدم العملية."
+
+#: ../src/make-iso.c:1140
+#, c-format
+msgid ""
+"Some files have invalid filenames: \n"
+"%s"
+msgstr ""
+"بعض الملفات لها أسماء غير سليمة: \n"
+"%s"
+
+#: ../src/make-iso.c:1153
+msgid "Unknown character encoding."
+msgstr "ترميز محارف غير معروف."
+
+#: ../src/make-iso.c:1157
+msgid "There is no space left on the device."
+msgstr "لا يوجد مساحة على القرص."
+
+#. TODO: get filename from error message
+#: ../src/make-iso.c:1162
+msgid "File too large for filesystem."
+msgstr "الملف كبير جدا على نظام الملفات."
+
+#: ../src/make-iso.c:1215
+msgid "The label for the image is too long."
+msgstr "اسم الصورة طويل جدا."
+
+#: ../src/make-iso.c:1323
+msgid "There are no files to write to disc."
+msgstr "لا ملفات لكتابتها على القرص."
+
+#: ../src/make-iso.c:1674
+msgid "Not a valid disc image."
+msgstr "الملف ليس صورة قرص صحيحة."
+
+#: ../src/nautilus-burn-bar.c:137
+msgid "CD/DVD Creator Folder"
+msgstr "مجلد منشئ الاسطوانات/ديڤيدي"
+
+#: ../src/nautilus-burn-bar.c:141 ../src/ncb-selection-dialog.c:175
+msgid "Write to Disc"
+msgstr "اكتب على القرص"
+
+#: ../src/nautilus-burn-drive.c:1252
+msgid "Could not determine media type because CD drive is busy"
+msgstr "لا يمكن تحديد نوع الوسيط لأن القرص مشغول"
+
+#: ../src/nautilus-burn-drive.c:1254
+msgid "Couldn't open media"
+msgstr "لا يمكن فتح الوسيط"
+
+#: ../src/nautilus-burn-drive.c:1256
+msgid "Unknown Media"
+msgstr "وسيط غير معروف"
+
+#: ../src/nautilus-burn-drive.c:1258
+msgid "Commercial CD or Audio CD"
+msgstr "اسطوانة تجارية أو صوتية"
+
+#: ../src/nautilus-burn-drive.c:1260
+msgid "CD-R"
+msgstr "CD-R"
+
+#: ../src/nautilus-burn-drive.c:1262
+msgid "CD-RW"
+msgstr "CD-RW"
+
+#: ../src/nautilus-burn-drive.c:1264
+msgid "DVD"
+msgstr "DVD"
+
+#: ../src/nautilus-burn-drive.c:1266
+msgid "DVD-R, or DVD-RAM"
+msgstr "DVD-R، أو DVD-RAM"
+
+#: ../src/nautilus-burn-drive.c:1268
+msgid "DVD-RW"
+msgstr "DVD-RW"
+
+#: ../src/nautilus-burn-drive.c:1270
+msgid "DVD-RAM"
+msgstr "DVD-RAM"
+
+#: ../src/nautilus-burn-drive.c:1272
+msgid "DVD+R"
+msgstr "DVD+R"
+
+#: ../src/nautilus-burn-drive.c:1274
+msgid "DVD+RW"
+msgstr "DVD+RW"
+
+#: ../src/nautilus-burn-drive.c:1276
+msgid "DVD+R DL"
+msgstr "DVD+R DL"
+
+#: ../src/nautilus-burn-drive.c:1281
+msgid "Broken media type"
+msgstr "نوع الوسيط غير صحيح"
+
+#: ../src/nautilus-burn-drive-monitor.c:452
+msgid "File image"
+msgstr "ملف صورة"
+
+#: ../src/nautilus-burn-drive-selection.c:107 ../src/ncb-selection.c:1022
+msgid "Drive"
+msgstr "المشغّل"
+
+#: ../src/nautilus-burn-drive-selection.c:237
+msgid "Unnamed CD/DVD Drive"
+msgstr "مشغل بلا اسم"
+
+#: ../src/nautilus-burn-recorder.c:602
+msgid "The recorder could not be accessed."
+msgstr "تعذر الوصول إلى المسجل."
+
+#: ../src/nautilus-burn-recorder.c:606
+msgid "Not enough space available on the disc."
+msgstr "لا مساحة كافية على القرص."
+
+#: ../src/nautilus-burn-recorder.c:610 ../src/nautilus-burn-recorder.c:614
+msgid "The files selected did not fit on the DVD."
+msgstr "الملفات المختارة لا تناسب مساحة القرص DVD."
+
+#: ../src/nautilus-burn-recorder.c:626
+msgid "The target DVD drive is still in use."
+msgstr "لا يزال قارئ DVD مستعملا."
+
+#: ../src/nautilus-burn-recorder.c:632
+msgid "Unhandled error, aborting"
+msgstr "خطأ لا يمكن معالجته، إلغاء"
+
+#: ../src/nautilus-burn-recorder.c:697
+msgid "The CD has already been recorded."
+msgstr "سبق كتابة القرص."
+
+#: ../src/nautilus-burn-recorder.c:717
+msgid "The files selected did not fit on the CD."
+msgstr "الملفات المختارة لا تناسب مساحة الاسطوانة."
+
+#: ../src/nautilus-burn-recorder.c:721
+msgid "All audio files must be stereo, 16-bit digital audio with 44100Hz samples."
+msgstr ""
+"يجب أن تكون جميع ملفات المقطوعات الصوتية ستيريو و 16-بت صوت رقمي بتردد قيمته "
+"44100 هرتز"
+
+#: ../src/nautilus-burn-recorder.c:745
+msgid "Error while writing to disc.  Try a lower speed."
+msgstr "خطأ عند كتابة القرص. جرب سرعة أقل."
+
+#: ../src/nautilus-burn-recorder.c:750
+msgid "The system is too slow to write the CD at this speed. Try a lower speed."
+msgstr "النّظام أبطأ من أن يكتب القرص المدمج بهذه السّرعة. جرّب سرعةً أقل."
+
+#: ../src/nautilus-burn-recorder.c:884
+msgid "You can only burn 99 tracks on one disc"
+msgstr "لا يمكنك كتابة سوى 99 مسار على قرصٍ واحد"
+
+#: ../src/nautilus-burn-recorder.c:891
+msgid "No tracks given to write"
+msgstr "لا مسارات للكتابة"
+
+#: ../src/nautilus-burn-recorder.c:896
+msgid "Burning CD/DVD"
+msgstr "يجري كتابة الاسطوانة/ديڤيدي"
+
+#: ../src/nautilus-burn-recorder.c:1101
+msgid "Can only use growisofs on a single track"
+msgstr "لا يمكن استعمال growisofs إلا على مسار واحد"
+
+#: ../src/nautilus-burn-recorder.c:1112
+msgid "Can only use growisofs on a data or graft list track"
+msgstr "لا يمكن استعمال growisofs إلا على مسار قائمة بيانات"
+
+#: ../src/nautilus-burn-recorder.c:1480
+msgid "Blanking CD"
+msgstr "يجري مسح الاسطوانة"
+
+#: ../src/nautilus-burn-recorder.c:1550
+msgid "Blanking DVD"
+msgstr "يجري مسح ديڤيدي"
+
+#: ../src/nautilus-burn-process.c:497
+#, c-format
+msgid "Could not run the necessary command: %s"
+msgstr "تعذّر القيام بالأمر: %s"
+
+#: ../src/nautilus-cd-burner.c:157
+#, c-format
+msgid "There was a problem displaying the help contents: %s."
+msgstr "حدث خطأ عند عرض محتويات المساعدة: %s."
+
+#: ../src/nautilus-cd-burner.c:158
+msgid "Cannot display help"
+msgstr "لا يمكن عرض المساعدة"
+
+#: ../src/nautilus-cd-burner.c:293
+msgid "Use CD/DVD device as source instead of burn:///"
+msgstr "استعمل جهاز اسطوانة/ديڤيدي كمصدر عوضا عن ‪burn:///‬"
+
+#: ../src/nautilus-cd-burner.c:293
+msgid "DEVICE"
+msgstr "الجهاز"
+
+#: ../src/nautilus-cd-burner.c:295
+msgid "Use ISO image as source instead of burn:///"
+msgstr "استعمل صورة ISO كمصدر عوضا عن ‪burn:///‬"
+
+#: ../src/nautilus-cd-burner.c:295 ../src/nautilus-cd-burner.c:297
+msgid "FILENAME"
+msgstr "اسم الملف"
+
+#: ../src/nautilus-cd-burner.c:297
+msgid "Use CUE/TOC file as source instead of burn:///"
+msgstr "استعمل ملف CUE/TOC كمصدر عوضا عن ‪burn:///‬"
+
+#: ../src/ncb-selection.c:442
+msgid ""
+"It appears that the disc, when created, will contain a single disc image "
+"file.  Do you want to create a disc from the contents of the image or with "
+"the image file inside?"
+msgstr ""
+"يبدو أن القرص، عند إنشاءه، سيحتوي على ملف صورة قرص واحد. هل تريد كتابة قرص "
+"بمحتويات الصورة أو بملف الصورة نفسه كمحتوى؟"
+
+#: ../src/ncb-selection.c:445
+msgid "Create disc containing a single disc image file?"
+msgstr "أأنشئ قرص يحتوي على صورة قرص واحدة فقط؟"
+
+#: ../src/ncb-selection.c:448
+msgid "Create From Image"
+msgstr "أنشئ من الصورة"
+
+#: ../src/ncb-selection.c:450
+msgid "Create With File"
+msgstr "أنشئ بالملف"
+
+#: ../src/ncb-selection.c:453
+msgid ""
+"It appears that the disc, when created, will contain only disc image files.  "
+"Do you want to continue and write them to the disc as files?"
+msgstr ""
+"يبدو أن القرص، عند إنشاءه، سيحتوي على صور قرص فقط. هل تريد المواصلة و "
+"كتابتها على القرص كملفات؟"
+
+#: ../src/ncb-selection.c:456
+msgid "Create disc containing only disc image files?"
+msgstr "أأنشئ قرص يحتوي على صور قرص فقط؟"
+
+#: ../src/ncb-selection.c:460
+msgid "Create With Files"
+msgstr "أنشئ بالملفات"
+
+#: ../src/ncb-selection.c:491
+#, c-format
+msgid "The file '%s' is unreadable.  Do you wish to skip this file and continue?"
+msgstr "لا يمكن قراءة الملف '%s'. هل تريد تخطي الملف و المواصلة؟"
+
+#: ../src/ncb-selection.c:494
+msgid "Skip unreadable file?"
+msgstr "أأتخطّي الملف غير القابل للقراءة؟"
+
+#: ../src/ncb-selection.c:499
+msgid "Skip"
+msgstr "تخطّي"
+
+#: ../src/ncb-selection.c:499
+msgid "Skip All"
+msgstr "تخطّي الكل"
+
+#: ../src/ncb-selection.c:522
+msgid "No files were selected."
+msgstr "لم تختر أيّة ملفات."
+
+#: ../src/ncb-selection.c:553
+#, c-format
+msgid "The file '%s' is not a valid disc image."
+msgstr "الملف '%s' ليس صورة قرص سليمة."
+
+#: ../src/ncb-selection.c:628
+#, c-format
+msgid "The specified device '%s' is not a valid CD/DVD drive."
+msgstr "الملف '%s' ليس صورة قرص مدمج سليمة."
+
+#: ../src/ncb-selection.c:652
+msgid "There doesn't seem to be any media in the selected drive."
+msgstr "لا وسائط في المشغل المختار."
+
+#: ../src/ncb-selection.c:659
+msgid "The media is blank."
+msgstr "الوسيط فارغ."
+
+#: ../src/ncb-selection.c:692
+#, c-format
+msgid "File not found: %s"
+msgstr "لم يعثر على الملف: %s"
+
+#: ../src/ncb-selection.c:701
+#, c-format
+msgid "File does not appear to be a valid CUE sheet: %s"
+msgstr "يبدو أن الملف ليس صورة CUE سليمة: %s"
+
+#.
+#. translators: see strftime man page for meaning of %b, %d and %Y
+#. the maximum length for this field is 32 bytes
+#.
+#: ../src/ncb-selection.c:745
+msgid "Personal Data, %b %d, %Y"
+msgstr "بيانات شخصية، %b %Od، %Y"
+
+#: ../src/ncb-selection.c:817
+msgid "Unable to create CD/DVD"
+msgstr "تعذّر إنشاء الاسطوانة/ديڤيدي"
+
+#: ../src/ncb-selection.c:981
+msgid "Source name"
+msgstr "اسم المصدر"
+
+#: ../src/ncb-selection.c:988
+msgid "Source type"
+msgstr "نوع المصدر"
+
+#: ../src/ncb-selection.c:996
+msgid "Source size"
+msgstr "حجم المصدر"
+
+#: ../src/ncb-selection.c:1005
+msgid "Disc label"
+msgstr "عنوان القرص"
+
+#: ../src/ncb-selection.c:1012
+msgid "Write speed"
+msgstr "سرعة الكتابة"
+
+#: ../src/ncb-selection-dialog.c:171
+msgid "Copy Disc"
+msgstr "انسخ القرص"
+
+#: ../src/ncb-selection-dialog.c:173
+msgid "Copy disc _to:"
+msgstr "ا_نسخ القرص إلى:"
+
+#: ../src/ncb-selection-dialog.c:345
+msgid "Maximum possible"
+msgstr "الحد الأقصى"
+
+#: ../src/ncb-selection-dialog.c:558
+msgid "Calculating..."
+msgstr "يحسب..."
+
+#: ../src/ncb-selection-dialog.c:637
+msgid "_Write"
+msgstr "ا_كتب"
+
+#: ../src/ncb-operation.c:242
+msgid "Preparing to write CD"
+msgstr "يحضر لكتابة الاسطوانة"
+
+#: ../src/ncb-operation.c:244
+msgid "Preparing to write DVD"
+msgstr "يحضر لكتابة قرص ديڤيدي"
+
+#: ../src/ncb-operation.c:249
+msgid "Writing CD"
+msgstr "يكتب الاسطوانة"
+
+#: ../src/ncb-operation.c:251
+msgid "Writing DVD"
+msgstr "يكتب ديڤيدي"
+
+#: ../src/ncb-operation.c:256 ../src/ncb-operation.c:258
+msgid "Finishing write"
+msgstr "ينهي الكتابة"
+
+#: ../src/ncb-operation.c:263
+msgid "Erasing CD"
+msgstr "يمسح الاسطوانة"
+
+#: ../src/ncb-operation.c:265
+msgid "Erasing DVD"
+msgstr "يمسح الديڤيدي"
+
+#: ../src/ncb-operation.c:349
+msgid "None"
+msgstr "لا شيء"
+
+#: ../src/ncb-operation.c:356
+msgid "Please make sure another application is not using the drive."
+msgstr "رجاءً تأكّد من عدم وجود تطبيقٍ آخر يستخدم القرص."
+
+#: ../src/ncb-operation.c:357
+msgid "Drive is busy"
+msgstr "المشغل مشغول"
+
+#: ../src/ncb-operation.c:359 ../src/ncb-operation.c:364
+#, c-format
+msgid ""
+"Please put a disc, with at least %s free, into the drive.  The following "
+"disc types are supported:\n"
+"%s"
+msgstr ""
+"الرجاء ضع قرصا به مساحة %s على الأقل في القرص. الأنواع الآتية مدعومة:\n"
+"%s"
+
+#: ../src/ncb-operation.c:362
+msgid "Insert a rewritable or blank disc"
+msgstr "أدرج وسيط فارغ أو قابل لإعادة الكتابة"
+
+#: ../src/ncb-operation.c:367
+msgid "Insert a blank disc"
+msgstr "أدرج قرص فارغ"
+
+#: ../src/ncb-operation.c:370 ../src/ncb-operation.c:376
+#, c-format
+msgid ""
+"Please replace the disc in the drive with a supported disc with at least %s "
+"free.  The following disc types are supported:\n"
+"%s"
+msgstr ""
+"رجاء بدّل القرص في المشغل بقرص بقرص مدعوم به على الأقل %s خالية. الأنواع الآتية مدعومة:\n"
+"%s"
+
+#: ../src/ncb-operation.c:373
+msgid "Reload a rewritable or blank disc"
+msgstr "أعد تحميل وسيط فارغ أو قابل لإعادة الكتابة"
+
+#: ../src/ncb-operation.c:379
+msgid "Reload a blank disc"
+msgstr "أعد تحميل قرص فارغ"
+
+#: ../src/ncb-operation.c:390
+msgid "_Eject"
+msgstr "أ_خرج"
+
+#: ../src/ncb-operation.c:457
+#, c-format
+msgid "This %s appears to have information already recorded on it."
+msgstr "يبدو أن هذا %s به معلومات مسجّلة فعلا."
+
+#: ../src/ncb-operation.c:461
+msgid "Erase information on this disc?"
+msgstr "أأمسح المعلومات من هذا القرص؟"
+
+#: ../src/ncb-operation.c:469
+msgid "_Try Another"
+msgstr "_جرب آخر"
+
+#: ../src/ncb-operation.c:480
+msgid "_Erase Disc"
+msgstr "ا_مسح القرص"
+
+#: ../src/ncb-operation.c:512
+#, c-format
+msgid ""
+"There was an error writing to the disc:\n"
+"%s"
+msgstr ""
+"حدث خطأ أثناء الكتابة على القرص:\n"
+"%s"
+
+#: ../src/ncb-operation.c:515
+msgid "There was an error writing to the disc"
+msgstr "حدث خطأ أثناء الكتابة على القرص"
+
+#: ../src/ncb-operation.c:518
+msgid "Error writing to disc"
+msgstr "خطأ أثناء الكتابة على لقرص"
+
+#: ../src/ncb-operation.c:573
+#, c-format
+msgid "A file named \"%s\" already exists.  Do you want to overwrite it?"
+msgstr "هناك ملف باسم '%s' موجود حاليا. هل تريد الكتابة فوقه؟"
+
+#: ../src/ncb-operation.c:575
+msgid "Overwrite existing file?"
+msgstr "أأكتب فوق الملف؟"
+
+#: ../src/ncb-operation.c:584
+msgid "_Overwrite"
+msgstr "ا_كتب فوقه"
+
+#: ../src/ncb-operation.c:603
+msgid "Choose a filename for the disc image"
+msgstr "اختر اسم ملف لصورة القرص"
+
+#. Translators: this is the filename of the image
+#: ../src/ncb-operation.c:739
+msgid "image.iso"
+msgstr "image.iso"
+
+#: ../src/ncb-operation.c:760
+#, c-format
+msgid "You do not have permissions to overwrite that file (%s)."
+msgstr "لا تملك التّصاريح للكتابة فوق ذلك الملف (%s)."
+
+#: ../src/ncb-operation.c:761 ../src/ncb-operation.c:776
+#: ../src/ncb-operation.c:1582
+msgid "File image creation failed"
+msgstr "فشل إنشاء صورة الملف"
+
+#: ../src/ncb-operation.c:775
+#, c-format
+msgid "You do not have permissions to create that file (%s)."
+msgstr "لا تملك التّصاريح لإنشاء ذلك الملف (%s)."
+
+#: ../src/ncb-operation.c:840
+msgid "Complete"
+msgstr "تم"
+
+#: ../src/ncb-operation.c:843
+msgid "An error occurred while writing"
+msgstr "حدث خطأ أثناء الكتابة"
+
+#: ../src/ncb-operation.c:903
+msgid "Writing Files to a Disc Image"
+msgstr "يكتب الملفات في صورة قرص"
+
+#: ../src/ncb-operation.c:904
+msgid "Writing Files to CD"
+msgstr "يكتب الملفات على اسطوانة"
+
+#: ../src/ncb-operation.c:905
+msgid "Writing Files to DVD"
+msgstr "يكتب الملفات على ديڤيدي"
+
+#: ../src/ncb-operation.c:908
+msgid "Writing Image to Disc"
+msgstr "يكتب الصورة على اسطوانة"
+
+#: ../src/ncb-operation.c:909
+msgid "Copying Disc Image"
+msgstr "ينسخ صورة القرص"
+
+#: ../src/ncb-operation.c:910
+msgid "Writing Image to CD"
+msgstr "يكتب الصورة على اسطوانة"
+
+#: ../src/ncb-operation.c:911
+msgid "Writing Image to DVD"
+msgstr "يكتب الصورة على ديڤيدي"
+
+#: ../src/ncb-operation.c:914
+msgid "Copying Disc"
+msgstr "ينسخ القرص"
+
+#: ../src/ncb-operation.c:915
+msgid "Copying Disc to a Disc Image"
+msgstr "ينسخ القرص إلى صورة قرص"
+
+#: ../src/ncb-operation.c:916
+msgid "Copying Disc to CD"
+msgstr "ينسخ القرص إلى اسطوانة"
+
+#: ../src/ncb-operation.c:917
+msgid "Copying Disc to DVD"
+msgstr "ينسخ القرص إلى ديڤيدي"
+
+#: ../src/ncb-operation.c:921
+msgid "Writing files to disc"
+msgstr "يكتب الملفات على القرص"
+
+#: ../src/ncb-operation.c:922
+msgid "Writing files to a disc image"
+msgstr "يكتب الملفات إلى صورة قرص"
+
+#: ../src/ncb-operation.c:923
+msgid "Writing files to CD"
+msgstr "يكتب الملفات على اسطوانة"
+
+#: ../src/ncb-operation.c:924
+msgid "Writing files to DVD"
+msgstr "يكتب الملفات على ديڤيدي"
+
+#: ../src/ncb-operation.c:927
+msgid "Writing image to disc"
+msgstr "يكتب الصورة على القرص"
+
+#: ../src/ncb-operation.c:928
+msgid "Copying disc image"
+msgstr "ينسخ صورة القرص"
+
+#: ../src/ncb-operation.c:929
+msgid "Writing image to CD"
+msgstr "يكتب الصورة على اسطوانة"
+
+#: ../src/ncb-operation.c:930
+msgid "Writing image to DVD"
+msgstr "يكتب الصورة على ديڤيدي"
+
+#: ../src/ncb-operation.c:933
+msgid "Copying disc"
+msgstr "ينسخ القرص"
+
+#: ../src/ncb-operation.c:934
+msgid "Copying disc to a disc image"
+msgstr "ينسخ القرص إلى صورة قرص"
+
+#: ../src/ncb-operation.c:935
+msgid "Copying disc to CD"
+msgstr "ينسخ القرص إلى اسطوانة"
+
+#: ../src/ncb-operation.c:936
+msgid "Copying disc to DVD"
+msgstr "ينسخ القرص إلى ديڤيدي"
+
+#: ../src/ncb-operation.c:940
+msgid ""
+"The selected files are being written to a CD or DVD.  This operation may "
+"take a long time, depending on data size and write speed."
+msgstr ""
+"ستتم كتابة الملفّات المختارة إلى اسطوانة أو ديڤيدي. قد تستغرق هذه العمليّة "
+"وقتًا طويلًا، حسب حجم البيانات و سرعة الكتابة."
+
+#: ../src/ncb-operation.c:941
+msgid "The selected files are being written to a disc image file."
+msgstr "يجري نسخ الملفات المختارة إلى ملف صورة قرص."
+
+#: ../src/ncb-operation.c:942
+msgid ""
+"The selected files are being written to a CD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr ""
+"ستتم كتابة الملفّات المختارة إلىاسطزانة.  قد تستغرق هذه العمليّة وقتًا طويلًا، "
+"حسب حجم البيانات و سرعة الكتابة."
+
+#: ../src/ncb-operation.c:943
+msgid ""
+"The selected files are being written to a DVD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr ""
+"ستتم كتابة الملفّات المختارة إلى ديڤيدي. قد تستغرق هذه العمليّة وقتًا "
+"طويلًا، حسب حجم البيانات و سرعة الكتابة."
+
+#: ../src/ncb-operation.c:946
+msgid ""
+"The selected disc image is being written to a CD or DVD.  This operation may "
+"take a long time, depending on data size and write speed."
+msgstr ""
+"ستتم كتابة صورة القرص المختارة إلى اسطوانة أو ديڤيدي. قد تستغرق هذه "
+"العمليّة وقتًا طويلًا، حسب حجم البيانات و سرعة الكتابة."
+
+#: ../src/ncb-operation.c:947
+msgid "The selected disc image is being copied to a disc image file."
+msgstr "يجري نسخ صورة القرص المختارة إلى ملف صورة قرص."
+
+#: ../src/ncb-operation.c:948
+msgid ""
+"The selected disc image is being written to a CD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr ""
+"يتم كتابة صورة القرص المختارة إلى اسطوانة. قد تستغرق هذه العمليّة وقتًا "
+"طويلًا، حسب حجم البيانات و سرعة الكتابة."
+
+#: ../src/ncb-operation.c:949
+msgid ""
+"The selected disc image is being written to a DVD.  This operation may take "
+"a long time, depending on data size and write speed."
+msgstr ""
+"يتم كتابة صورة القرص المختارة إلى ديڤيدي. قد تستغرق هذه العمليّة وقتًا "
+"طويلًا، حسب حجم البيانات و سرعة الكتابة."
+
+#: ../src/ncb-operation.c:952
+msgid ""
+"The selected disc is being copied to a CD or DVD.  This operation may take a "
+"long time, depending on data size and drive speed."
+msgstr ""
+"يجري نسخ صورة القرص المختارة إلى اسطوانة أو ديڤيدي. قد تستغرق هذه العمليّة وقتًا "
+"طويلًا، حسب حجم البيانات و سرعة الكتابة."
+
+#: ../src/ncb-operation.c:953
+msgid ""
+"The selected disc is being copied to a disc image file.  This operation may "
+"take a long time, depending on data size and drive speed."
+msgstr ""
+"يجري نسخ صورة القرص المختارة إلى ملف صورة قرص. قد تستغرق هذه العمليّة وقتًا "
+"طويلًا، حسب حجم البيانات و سرعة الكتابة."
+
+#: ../src/ncb-operation.c:954
+msgid ""
+"The selected disc is being copied to a CD.  This operation may take a long "
+"time, depending on data size and drive speed."
+msgstr ""
+"يجري نسخ القرص المختار إلى اسطوانة. قد تستغرق هذه العمليّة وقتًا طويلًا، حسب "
+"حجم البيانات و سرعة الكتابة."
+
+#: ../src/ncb-operation.c:955
+msgid ""
+"The selected disc is being copied to a DVD.  This operation may take a long "
+"time, depending on data size and drive speed."
+msgstr ""
+"يجري نسخ القرص المختار إلى ديڤيدي. قد تستغرق هذه العمليّة وقتًا طويلًا، "
+"حسب حجم البيانات و سرعة الكتابة."
+
+#: ../src/ncb-operation.c:1012
+msgid "Burning CD"
+msgstr "يكتب الاسطوانة"
+
+#: ../src/ncb-operation.c:1179 ../src/ncb-operation.c:1403
+msgid "Creating disc image"
+msgstr "ينشئ صورة القرص"
+
+#: ../src/ncb-operation.c:1621
+#, c-format
+msgid "Writing CD/DVD-Image '%s'."
+msgstr "يكتب صورة القرص '%s'."
+
+#: ../src/ncb-operation.c:1626
+#, c-format
+msgid "Writing disc '%s'."
+msgstr "يكتب القرص '%s'."
+
+#: ../src/ncb-operation.c:1628
+#, c-format
+msgid "Writing %s '%s'."
+msgstr "يكتب %s ‏'%s'."
+
+#: ../src/ncb-operation.c:1717
+#, c-format
+msgid "Completed writing %s"
+msgstr "تمت كتابة %s"
+
+#: ../src/ncb-operation.c:1822
+msgid "Interrupt writing files to disc?"
+msgstr "أأقاطع كتابة الملفات على القرص؟"
+
+#: ../src/ncb-operation.c:1823
+msgid ""
+"Are you sure you want to interrupt the disc write operation? Some drives may "
+"require that you restart the computer to get them working again."
+msgstr ""
+"أمتأكّد من أنّك تريد مقاطعة هذه العملية؟ بعض المشغلات قد تتطلّب إعادة "
+"تشغيل الحاسوب لتعمل مجدّدًا."
+
+#: ../src/ncb-operation.c:1829
+msgid "Interrupt"
+msgstr "قاطِع"
+
+#: ../src/ncb-operation.c:1831
+msgid "Continue"
+msgstr "تابِع"
+
+#: ../src/ncb-progress-dialog.c:146
+#, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%Id ساعة"
+msgstr[1] "ساعة واحدة"
+msgstr[2] "ساعتين"
+msgstr[3] "%Id ساعات"
+msgstr[4] "%Id ساعة"
+msgstr[5] "%Id ساعة"
+
+#: ../src/ncb-progress-dialog.c:148
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%Id دقيقة"
+msgstr[1] "دقيقة"
+msgstr[2] "دقيقتين"
+msgstr[3] "%Id دقائق"
+msgstr[4] "%Id دقيقة"
+msgstr[5] "%Id دقيقة"
+
+#: ../src/ncb-progress-dialog.c:151
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%Id ثانية"
+msgstr[1] "ثانية واحدة"
+msgstr[2] "ثانيتين "
+msgstr[3] "%Id ثوان"
+msgstr[4] "%Id ثانية"
+msgstr[5] "%Id ثوان"
+
+#. hour:minutes:seconds
+#: ../src/ncb-progress-dialog.c:156
+#, c-format
+msgid "%s %s %s"
+msgstr "%s و %s و %s"
+
+#. minutes:seconds
+#: ../src/ncb-progress-dialog.c:159
+#, c-format
+msgid "%s %s"
+msgstr "%s و %s"
+
+#. seconds
+#: ../src/ncb-progress-dialog.c:162
+#, c-format
+msgid "%s"
+msgstr "%s"
+
+#. 0 seconds
+#: ../src/ncb-progress-dialog.c:165
+msgid "0 seconds"
+msgstr "0 ثوان"
+
+#: ../src/ncb-progress-dialog.c:189
+#, c-format
+msgid "About %s left"
+msgstr "باق %s تقريبا"
+
+#: ../src/ncb-progress-dialog.c:439
+msgid "_Make Another Copy"
+msgstr "ا_صنع نسخة أخرى"
+
+#: ../src/ncb-rename-dialog.c:479
+msgid "C_ontinue"
+msgstr "ا_ستمر"
+
+#: ../src/ncb-rename-dialog.c:507
+msgid "Filename"
+msgstr "اسم الملف"
+
+#: ../src/ncb-rename-dialog.c:523
+msgid "Rename file"
+msgstr "_غيّر اسم الملف"
+

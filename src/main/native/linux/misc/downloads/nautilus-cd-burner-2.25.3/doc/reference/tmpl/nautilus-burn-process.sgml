@@ -1,0 +1,147 @@
+<!-- ##### SECTION Title ##### -->
+nautilus-burn-process
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### STRUCT NautilusBurnProcess ##### -->
+<para>
+
+</para>
+
+@loop: 
+@pid: 
+@result: 
+@last_error: 
+@line: 
+@line_stderr: 
+@funcs: 
+@pipe_stdin: 
+@start_time: 
+@start_num: 
+@rates: 
+@changed_text: 
+@expect_process_to_die: 
+@dangerous: 
+@debug: 
+@hup_refcount: 
+
+<!-- ##### STRUCT NautilusBurnProcessFuncs ##### -->
+<para>
+
+</para>
+
+@out_line: 
+@err_line: 
+
+<!-- ##### USER_FUNCTION NautilusBurnProcessLineFunc ##### -->
+<para>
+
+</para>
+
+@process: 
+@line: 
+@data: 
+@Returns: 
+
+
+<!-- ##### MACRO NAUTILUS_BURN_PROCESS_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION nautilus_burn_process_error_quark ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### ENUM NautilusBurnProcessError ##### -->
+<para>
+
+</para>
+
+@NAUTILUS_BURN_PROCESS_ERROR_INTERNAL: 
+@NAUTILUS_BURN_PROCESS_ERROR_GENERAL: 
+
+<!-- ##### FUNCTION nautilus_burn_process_new ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_process_free ##### -->
+<para>
+
+</para>
+
+@process: 
+
+
+<!-- ##### FUNCTION nautilus_burn_process_cancel ##### -->
+<para>
+
+</para>
+
+@process: 
+@skip_if_dangerous: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_process_run ##### -->
+<para>
+
+</para>
+
+@process: 
+@argv: 
+@out_line_func: 
+@err_line_func: 
+@data: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_process_set_error ##### -->
+<para>
+
+</para>
+
+@process: 
+@message: 
+@code: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_process_get_error ##### -->
+<para>
+
+</para>
+
+@process: 
+@message: 
+@code: 
+@Returns: 
+
+

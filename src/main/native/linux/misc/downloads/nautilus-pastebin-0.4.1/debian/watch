@@ -1,0 +1,3 @@
+version=3
+https://launchpad.net/nautilus-pastebin/+download \
+http://launchpad.net/nautilus-pastebin/.*/nautilus-pastebin-([0-9\.]*)\.tar\.gz

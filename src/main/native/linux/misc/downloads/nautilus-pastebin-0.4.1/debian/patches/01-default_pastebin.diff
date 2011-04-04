@@ -1,0 +1,17 @@
+Author: Alessio Treglia <quadrispro@ubuntu.com>
+Description: Set paste.debian.net as default pastebin URL.
+---
+ data/nautilus-pastebin.schemas |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+--- nautilus-pastebin-0.3.0.orig/data/nautilus-pastebin.schemas
++++ nautilus-pastebin-0.3.0/data/nautilus-pastebin.schemas
+@@ -46,7 +46,7 @@
+         <applyto>/apps/nautilus-pastebin/preset</applyto>
+         <owner>nautilus-pastebin</owner>
+         <type>string</type>
+-        <default>pastebin.com</default>
++        <default>paste.ubuntu.com</default>
+         <gettext_domain>nautilus-pastebin</gettext_domain>
+         <locale name="C">
+           <short>Selected preset</short>

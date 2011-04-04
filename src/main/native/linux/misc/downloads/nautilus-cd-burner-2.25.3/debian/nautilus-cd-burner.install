@@ -1,0 +1,5 @@
+debian/tmp/etc
+debian/tmp/usr/bin
+debian/tmp/usr/share
+debian/tmp/usr/lib/nautilus/extensions-2.0
+src/.libs/list_cddrives usr/lib/nautilus-cd-burner

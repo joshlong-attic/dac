@@ -1,0 +1,329 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>nautilus-burn-drive-monitor</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.74.0">
+<link rel="home" href="index.html" title="libnautilus-burn Reference Manual">
+<link rel="up" href="ch01.html" title="libnautilus-burn Reference Manual">
+<link rel="prev" href="NautilusBurnDriveSelection.html" title="NautilusBurnDriveSelection">
+<link rel="next" href="nautilus-cd-burner-nautilus-burn-recorder.html" title="nautilus-burn-recorder">
+<meta name="generator" content="GTK-Doc V1.10 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="chapter" href="ch01.html" title="libnautilus-burn Reference Manual">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="NautilusBurnDriveSelection.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">libnautilus-burn Reference Manual</th>
+<td><a accesskey="n" href="nautilus-cd-burner-nautilus-burn-recorder.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts"><nobr><a href="#nautilus-cd-burner-nautilus-burn-drive-monitor.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#nautilus-cd-burner-nautilus-burn-drive-monitor.description" class="shortcut">Description</a></nobr></td></tr>
+</table>
+<div class="refentry" lang="en">
+<a name="nautilus-cd-burner-nautilus-burn-drive-monitor"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="nautilus-cd-burner-nautilus-burn-drive-monitor.top_of_page"></a>nautilus-burn-drive-monitor</span></h2>
+<p>nautilus-burn-drive-monitor</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="nautilus-cd-burner-nautilus-burn-drive-monitor.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">
+typedef             <a class="link" href="nautilus-cd-burner-nautilus-burn-drive-monitor.html#NautilusBurnDriveMonitorPrivate" title="NautilusBurnDriveMonitorPrivate">NautilusBurnDriveMonitorPrivate</a>;
+void                <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#media-added" title="media_added ()">media_added</a>                         (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);
+void                <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#media-removed" title="media_removed ()">media_removed</a>                       (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);
+void                <a class="link" href="nautilus-cd-burner-nautilus-burn-drive-monitor.html#drive-connected" title="drive_connected ()">drive_connected</a>                     (NautilusBurnDriveMonitor *monitor,
+                                                         <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);
+void                <a class="link" href="nautilus-cd-burner-nautilus-burn-drive-monitor.html#drive-disconnected" title="drive_disconnected ()">drive_disconnected</a>                  (NautilusBurnDriveMonitor *monitor,
+                                                         <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);
+NautilusBurnDriveMonitor* <a class="link" href="nautilus-cd-burner-nautilus-burn-drive-monitor.html#nautilus-burn-get-drive-monitor" title="nautilus_burn_get_drive_monitor ()">nautilus_burn_get_drive_monitor</a>
+                                                        (void);
+<a
+href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"
+>GList</a>*              <a class="link" href="nautilus-cd-burner-nautilus-burn-drive-monitor.html#nautilus-burn-drive-monitor-get-drives" title="nautilus_burn_drive_monitor_get_drives ()">nautilus_burn_drive_monitor_get_drives</a>
+                                                        (NautilusBurnDriveMonitor *monitor);
+<a
+href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"
+>GList</a>*              <a class="link" href="nautilus-cd-burner-nautilus-burn-drive-monitor.html#nautilus-burn-drive-monitor-get-recorder-drives" title="nautilus_burn_drive_monitor_get_recorder_drives ()">nautilus_burn_drive_monitor_get_recorder_drives</a>
+                                                        (NautilusBurnDriveMonitor *monitor);
+<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a>*  <a class="link" href="nautilus-cd-burner-nautilus-burn-drive-monitor.html#nautilus-burn-drive-monitor-get-drive-for-device" title="nautilus_burn_drive_monitor_get_drive_for_device ()">nautilus_burn_drive_monitor_get_drive_for_device</a>
+                                                        (NautilusBurnDriveMonitor *monitor,
+                                                         const char *path);
+<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a>*  <a class="link" href="nautilus-cd-burner-nautilus-burn-drive-monitor.html#nautilus-burn-drive-monitor-get-drive-for-image" title="nautilus_burn_drive_monitor_get_drive_for_image ()">nautilus_burn_drive_monitor_get_drive_for_image</a>
+                                                        (NautilusBurnDriveMonitor *monitor);
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="nautilus-cd-burner-nautilus-burn-drive-monitor.description"></a><h2>Description</h2>
+<p>
+
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="nautilus-cd-burner-nautilus-burn-drive-monitor.details"></a><h2>Details</h2>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnDriveMonitorPrivate"></a><h3>NautilusBurnDriveMonitorPrivate</h3>
+<pre class="programlisting">typedef struct NautilusBurnDriveMonitorPrivate NautilusBurnDriveMonitorPrivate;
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="media-added"></a><h3>media_added ()</h3>
+<pre class="programlisting">void                media_added                         (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td>
+
+
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="media-removed"></a><h3>media_removed ()</h3>
+<pre class="programlisting">void                media_removed                       (<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td>
+
+
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="drive-connected"></a><h3>drive_connected ()</h3>
+<pre class="programlisting">void                drive_connected                     (NautilusBurnDriveMonitor *monitor,
+                                                         <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>monitor</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td>
+
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="drive-disconnected"></a><h3>drive_disconnected ()</h3>
+<pre class="programlisting">void                drive_disconnected                  (NautilusBurnDriveMonitor *monitor,
+                                                         <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>monitor</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td>
+
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-get-drive-monitor"></a><h3>nautilus_burn_get_drive_monitor ()</h3>
+<pre class="programlisting">NautilusBurnDriveMonitor* nautilus_burn_get_drive_monitor
+                                                        (void);</pre>
+<p>
+Get a reference to the drive monitor
+</p>
+<p>
+Returns a pointer to the <span class="type">NautilusBurnDriveMonitor</span> singleton.
+<span class="type">NautilusBurnDriveMonitor</span> is a singleton, this means it is guaranteed to
+exist and be valid until <a class="link" href="nautilus-cd-burner-nautilus-burn-init.html#nautilus-burn-shutdown" title="nautilus_burn_shutdown ()"><code class="function">nautilus_burn_shutdown()</code></a> is called. Consequently,
+it doesn't need to be refcounted since nautilus-burn will hold a reference to
+it until it is shut down.  It is created by <a class="link" href="nautilus-cd-burner-nautilus-burn-init.html#nautilus-burn-init" title="nautilus_burn_init ()"><code class="function">nautilus_burn_init()</code></a>.</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> <span class="type">NautilusBurnDriveMonitor</span>
+
+</td>
+</tr></tbody>
+</table></div>
+<p class="since">Since  2.16
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-monitor-get-drives"></a><h3>nautilus_burn_drive_monitor_get_drives ()</h3>
+<pre class="programlisting"><a
+href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"
+>GList</a>*              nautilus_burn_drive_monitor_get_drives
+                                                        (NautilusBurnDriveMonitor *monitor);</pre>
+<p>
+Get the list of available <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a></p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>monitor</code></em> :</span></p></td>
+<td> <span class="type">NautilusBurnDriveMonitor</span>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> list of drives
+
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since  2.16
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-monitor-get-recorder-drives"></a><h3>nautilus_burn_drive_monitor_get_recorder_drives ()</h3>
+<pre class="programlisting"><a
+href="/usr/share/gtk-doc/html/glib/glib-Doubly-Linked-Lists.html#GList"
+>GList</a>*              nautilus_burn_drive_monitor_get_recorder_drives
+                                                        (NautilusBurnDriveMonitor *monitor);</pre>
+<p>
+Get the list of available <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a> that are capable of recording</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>monitor</code></em> :</span></p></td>
+<td> <span class="type">NautilusBurnDriveMonitor</span>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> list of drives that can record
+
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since  2.16
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-monitor-get-drive-for-device"></a><h3>nautilus_burn_drive_monitor_get_drive_for_device ()</h3>
+<pre class="programlisting"><a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a>*  nautilus_burn_drive_monitor_get_drive_for_device
+                                                        (NautilusBurnDriveMonitor *monitor,
+                                                         const char *path);</pre>
+<p>
+Retrieve the <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a> that corresponds to device.</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>monitor</code></em> :</span></p></td>
+<td> <span class="type">NautilusBurnDriveMonitor</span>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>path</code></em> :</span></p></td>
+<td>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> A new drive.
+
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since  2.16
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-monitor-get-drive-for-image"></a><h3>nautilus_burn_drive_monitor_get_drive_for_image ()</h3>
+<pre class="programlisting"><a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a>*  nautilus_burn_drive_monitor_get_drive_for_image
+                                                        (NautilusBurnDriveMonitor *monitor);</pre>
+<p>
+Create a new <code class="literal">NAUTILUS_BURN_DRIVE_TYPE_FILE</code> <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a>.</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>monitor</code></em> :</span></p></td>
+<td> <span class="type">NautilusBurnDriveMonitor</span>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> A new drive.
+
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since  2.16
+</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.10</div>
+</body>
+</html>

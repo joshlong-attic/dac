@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<refentry id="nautilus-cd-burner-nautilus-burn-init">
+<refmeta>
+<refentrytitle role="top_of_page" id="nautilus-cd-burner-nautilus-burn-init.top_of_page">nautilus-burn-init</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>NAUTILUS-CD-BURNER Library</refmiscinfo>
+</refmeta>
+
+<refnamediv>
+<refname>nautilus-burn-init</refname>
+<refpurpose></refpurpose>
+<!--[<xref linkend="desc" endterm="desc.title"/>]-->
+</refnamediv>
+
+<refsynopsisdiv id="nautilus-cd-burner-nautilus-burn-init.synopsis" role="synopsis">
+<title role="synopsis.title">Synopsis</title>
+
+<synopsis>
+<link linkend="gboolean">gboolean</link>            <link linkend="nautilus-burn-init">nautilus_burn_init</link>                  (void);
+<link linkend="gboolean">gboolean</link>            <link linkend="nautilus-burn-initialized">nautilus_burn_initialized</link>           (void);
+<link linkend="void">void</link>                <link linkend="nautilus-burn-shutdown">nautilus_burn_shutdown</link>              (void);
+</synopsis>
+</refsynopsisdiv>
+
+
+
+
+
+
+
+
+
+<refsect1 id="nautilus-cd-burner-nautilus-burn-init.description" role="desc">
+<title role="desc.title">Description</title>
+<para>
+
+</para>
+</refsect1>
+
+<refsect1 id="nautilus-cd-burner-nautilus-burn-init.details" role="details">
+<title role="details.title">Details</title>
+<refsect2 id="nautilus-burn-init" role="function">
+<title>nautilus_burn_init ()</title>
+<indexterm zone="nautilus-burn-init"><primary>nautilus_burn_init</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>            nautilus_burn_init                  (void);</programlisting>
+<para>
+If nautilus-burn is not already initialized, initialize it. This must be
+called prior to performing any other nautilus-burn operations, and may
+be called multiple times without error.</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if nautilus-burn is successfully initialized (or was
+already initialized).
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="nautilus-burn-initialized" role="function">
+<title>nautilus_burn_initialized ()</title>
+<indexterm zone="nautilus-burn-initialized"><primary>nautilus_burn_initialized</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>            nautilus_burn_initialized           (void);</programlisting>
+<para>
+Detects if nautilus-burn has already been initialized (nautilus-burn must be
+initialized prior to using any methods or operations).</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if nautilus-burn has already been initialized.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="nautilus-burn-shutdown" role="function">
+<title>nautilus_burn_shutdown ()</title>
+<indexterm zone="nautilus-burn-shutdown"><primary>nautilus_burn_shutdown</primary></indexterm><programlisting><link linkend="void">void</link>                nautilus_burn_shutdown              (void);</programlisting>
+<para>
+Cease all active nautilus-burn operations.</para>
+<para>
+
+</para></refsect2>
+
+</refsect1>
+
+
+
+
+</refentry>

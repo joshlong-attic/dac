@@ -1,0 +1,180 @@
+# Traducció del nautilus-share de l'equip de Softcatalà.
+# This file is distributed under the same license as the nautilus-share package.
+# Joan Duran <jodufi@gmail.com>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: nautilus-share\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-05-04 04:34+0100\n"
+"PO-Revision-Date: 2007-05-05 13:24+0100\n"
+"Last-Translator: Joan Duran <jodufi@gmail.com>\n"
+"Language-Team: Catalan <tradgnome@softcatala.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: ../src/nautilus-share.c:128
+#, c-format
+msgid ""
+"Nautilus needs to add some permissions to your folder \"%s\" in order to "
+"share it"
+msgstr ""
+"El Nautilus ha d'afegir alguns permisos a la carpeta «%s» per a poder "
+"compartir-la"
+
+#: ../src/nautilus-share.c:136
+#, c-format
+msgid ""
+"The folder \"%s\" needs the following extra permissions for sharing to "
+"work:\n"
+"%s%s%sDo you want Nautilus to add these permissions to the folder "
+"automatically?"
+msgstr ""
+"La carpeta «%s» necessita els següents permisos extra perquè la compartició "
+"funcioni:\n"
+"%s%s%sVoleu que el Nautilus afegeixi aquests permisos a la carpeta "
+"automàticament?"
+
+#: ../src/nautilus-share.c:140
+msgid "  - read permission by others\n"
+msgstr "  - permís de lectura per a altres\n"
+
+#: ../src/nautilus-share.c:141
+msgid "  - write permission by others\n"
+msgstr "  - permís d'escriptura per a altres\n"
+
+#: ../src/nautilus-share.c:142
+msgid "  - execute permission by others\n"
+msgstr "  - permís d'execució per a altres\n"
+
+#: ../src/nautilus-share.c:146
+msgid "Add the permissions automatically"
+msgstr "Afegeix els permisos automàticament"
+
+#: ../src/nautilus-share.c:172
+#, c-format
+msgid "Could not change the permissions of folder \"%s\""
+msgstr "No s'ha pogut canviar els permisos de la carpeta «%s»"
+
+#: ../src/nautilus-share.c:442
+msgid "Share name is too long"
+msgstr "El nom de compartició és massa llarg"
+
+#: ../src/nautilus-share.c:476
+msgid "The share name cannot be empty"
+msgstr "El nom de compartició no pot estar buit"
+
+#: ../src/nautilus-share.c:489
+#, c-format
+msgid "Error while getting share information: %s"
+msgstr "S'ha produït un error en obtenir la informació de compartició: %s"
+
+#: ../src/nautilus-share.c:499
+msgid "Another share has the same name"
+msgstr "Una altra compartició té el mateix nom"
+
+#: ../src/nautilus-share.c:645
+msgid "There was an error while getting the sharing information"
+msgstr "S'ha produït un error en obtenir la informació de compartició"
+
+#: ../src/nautilus-share.c:737
+msgid "Modify _Share"
+msgstr "Modifica la _compartició"
+
+#: ../src/nautilus-share.c:739
+msgid "Create _Share"
+msgstr "Crea una _compartició"
+
+#: ../src/nautilus-share.c:993
+msgid "Share"
+msgstr "Comparteix"
+
+#: ../src/nautilus-share.c:1093
+msgid "Sharing Options"
+msgstr "Opcions de compartició"
+
+#: ../src/nautilus-share.c:1094
+msgid "Share this Folder"
+msgstr "Comparteix aquesta carpeta"
+
+#: ../src/shares.c:122
+#, c-format
+msgid "%s %s %s returned with signal %d"
+msgstr "%s %s %s ha retornat amb el senyal %d"
+
+#: ../src/shares.c:131
+#, c-format
+msgid "%s %s %s failed for an unknown reason"
+msgstr "%s %s %s ha fallat per una raó desconeguda"
+
+#: ../src/shares.c:151
+#, c-format
+msgid "'net usershare' returned error %d: %s"
+msgstr "'net usershare' ha retornat l'error %d: %s"
+
+#: ../src/shares.c:153
+#, c-format
+msgid "'net usershare' returned error %d"
+msgstr "'net usershare' ha retornat l'error %d"
+
+#: ../src/shares.c:184
+msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
+msgstr "la sortida del 'net usershare' no té una codificació UTF-8 vàlida"
+
+#: ../src/shares.c:418 ../src/shares.c:577
+msgid "Failed"
+msgstr "Ha fallat"
+
+#: ../src/shares.c:512
+#, c-format
+msgid "Samba's testparm returned with signal %d"
+msgstr "El testparm del Samba ha retornat amb el senyal %d"
+
+#: ../src/shares.c:518
+msgid "Samba's testparm failed for an unknown reason"
+msgstr "El testparm del Samba ha fallat per una raó desconeguda"
+
+#: ../src/shares.c:533
+#, c-format
+msgid "Samba's testparm returned error %d: %s"
+msgstr "El testparm del Samba ha retornat l'error %d: %s"
+
+#: ../src/shares.c:535
+#, c-format
+msgid "Samba's testparm returned error %d"
+msgstr "El testparm del Samba ha retornat l'error %d"
+
+#: ../src/shares.c:642
+#, c-format
+msgid "Cannot remove the share for path %s: that path is not shared"
+msgstr "No es pot suprimir el camí compartit %s: el camí no està compartit"
+
+#: ../src/shares.c:688
+msgid ""
+"Cannot change the path of an existing share; please remove the old share "
+"first and add a new one"
+msgstr ""
+"No es pot canviar el camí d'una compartició existent. Primer heu de suprimir "
+"la compartició antiga i després afegir la nova"
+
+#: ../interfaces/share-dialog.glade.in.h:1
+msgid "<big><b>Folder Sharing</b></big>"
+msgstr "<big><b>Carpeta compartida</b></big>"
+
+#: ../interfaces/share-dialog.glade.in.h:2
+msgid "Co_mment:"
+msgstr "Co_mentari:"
+
+#: ../interfaces/share-dialog.glade.in.h:3
+msgid "Share _name:"
+msgstr "_Nom de compartició:"
+
+#: ../interfaces/share-dialog.glade.in.h:4
+msgid "Share this _folder"
+msgstr "Comparteix aquesta _carpeta"
+
+#: ../interfaces/share-dialog.glade.in.h:5
+msgid "_Allow other people to write in this folder"
+msgstr "_Permet que altres persones puguin escriure en aquesta carpeta"

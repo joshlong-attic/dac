@@ -1,0 +1,68 @@
+<gconfschemafile>
+    <schemalist>    
+
+      <schema>
+        <key>/schemas/apps/nautilus-cd-burner/temp_iso_dir</key>
+	<applyto>/apps/nautilus-cd-burner/temp_iso_dir</applyto>
+	<owner>nautilus-cd-burner</owner>
+	<type>string</type>
+	<default></default>
+	<locale name="C">
+	  <short>Directory for the temporary ISO images</short>
+	  <long>
+	    Directory used for the temporary ISO images, leave blank
+	    to use the default system temporary directory.
+	  </long>
+	</locale>
+      </schema>
+
+      <schema>
+        <key>/schemas/apps/nautilus-cd-burner/default_speed</key>
+	<applyto>/apps/nautilus-cd-burner/default_speed</applyto>
+	<owner>nautilus-cd-burner</owner>
+	<type>int</type>
+	<default>0</default>
+	<locale name="C">
+	  <short>Default burn speed</short>
+	  <long>Default speed at which the media will be written.</long>
+	</locale>
+      </schema>
+
+      <schema>
+        <key>/schemas/apps/nautilus-cd-burner/debug</key>
+	<applyto>/apps/nautilus-cd-burner/debug</applyto>
+	<owner>nautilus-cd-burner</owner>
+	<type>bool</type>
+	<default>false</default>
+	<locale name="C">
+	  <short>Enable debug</short>
+	  <long>Whether to enable the debugging for CD Recording.</long>
+	</locale>
+       </schema>
+
+      <schema>
+        <key>/schemas/apps/nautilus-cd-burner/overburn</key>
+	<applyto>/apps/nautilus-cd-burner/overburn</applyto>
+	<owner>nautilus-cd-burner</owner>
+	<type>bool</type>
+	<default>false</default>
+	<locale name="C">
+	  <short>Enable overburn</short>
+	  <long>Whether to allow the data to exceed the size of the physical medium.</long>
+	</locale>
+       </schema>
+
+      <schema>
+        <key>/schemas/apps/nautilus-cd-burner/burnproof</key>
+	<applyto>/apps/nautilus-cd-burner/burnproof</applyto>
+	<owner>nautilus-cd-burner</owner>
+	<type>bool</type>
+	<default>false</default>
+	<locale name="C">
+	  <short>Enable Burnproof option</short>
+	  <long>Whether to use the Burnproof option available on some recorders.</long>
+	</locale>
+       </schema>
+
+  </schemalist>
+</gconfschemafile>

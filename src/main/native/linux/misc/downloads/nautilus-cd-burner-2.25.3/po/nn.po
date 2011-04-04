@@ -1,0 +1,1224 @@
+# translation of nautilus-cd-burner to Norwegian Nynorsk
+# This file is distributed under the same license as the nautilus-cd-burner package.
+# Copyright (C) 2003, 2004, 2008, The Free Software Foundation
+#
+# Åsmund Skjæveland <aasmunds@fys.uio.no>, 2003, 2004.
+# Eskild Hustvedt <eskildh@gnome.org>, 2008
+msgid ""
+msgstr ""
+"Project-Id-Version: nn\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-03-31 11:34+0200\n"
+"PO-Revision-Date: 2008-03-31 11:33+0200\n"
+"Last-Translator: Eskild Hustvedt <eskildh@gnome.org>\n"
+"Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: MagicPO 0.3\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#
+#: ../data/nautilus-cd-burner.desktop.in.h:1
+#: ../data/nautilus-cd-burner-open-iso.desktop.in.h:1
+#: ../src/ncb-operation.c:1635
+msgid "CD/DVD Creator"
+msgstr "CD/DVD brennar"
+
+#
+#: ../data/nautilus-cd-burner.desktop.in.h:2
+msgid "Open a folder into which you can drag files to burn to a CD or DVD"
+msgstr "Opna ei mappe kor du kan dra filer for å brenne ein CD eller DVD"
+
+#
+#: ../data/nautilus-cd-burner-open-iso.desktop.in.h:2
+msgid "Open the CD/DVD Creator"
+msgstr "Opna CD/DVD-brennner"
+
+#
+#: ../data/nautilus-cd-burner.glade.h:1
+msgid "    "
+msgstr "    "
+
+#: ../data/nautilus-cd-burner.glade.h:2
+msgid "<b>Information</b>"
+msgstr "<b>Informasjon</b>"
+
+#: ../data/nautilus-cd-burner.glade.h:3
+msgid "<b>Write Options</b>"
+msgstr "<b>Brennarval</b>"
+
+#
+#: ../data/nautilus-cd-burner.glade.h:4
+msgid "<big><b>Some files have invalid filenames</b></big>"
+msgstr "<big><b>Nokre filer har ugyldige filnamn</b></big>"
+
+# disk
+#
+#: ../data/nautilus-cd-burner.glade.h:5
+msgid "<big><b>Writing files to disc</b></big>"
+msgstr "<big><b>Skriver filer til plata</b></big>"
+
+#: ../data/nautilus-cd-burner.glade.h:6
+msgid "<i>Initializing...</i>"
+msgstr "<i>Startar opp ...</i>"
+
+#: ../data/nautilus-cd-burner.glade.h:7
+msgid "Data size:"
+msgstr "Datastorleik:"
+
+#: ../data/nautilus-cd-burner.glade.h:8
+msgid "Disc _name:"
+msgstr "_Namn på plata:"
+
+#: ../data/nautilus-cd-burner.glade.h:9
+msgid "Label to identify disc"
+msgstr "Etikett som identifiserer plata"
+
+#
+#: ../data/nautilus-cd-burner.glade.h:10
+msgid ""
+"The following filenames are not valid.  Please provide new names for each of "
+"them."
+msgstr "Følgjande filnamn er ugyldige. Vennligst gi nytt namn til kvar av dei."
+
+#: ../data/nautilus-cd-burner.glade.h:11
+msgid "Write _speed:"
+msgstr "_Brennarsnøggleik:"
+
+#
+#: ../data/nautilus-cd-burner.glade.h:12
+msgid "Write disc _to:"
+msgstr "Skriv plate _til:"
+
+#
+#: ../data/nautilus-cd-burner.glade.h:13 ../src/ncb-operation.c:902
+msgid "Writing Files to Disc"
+msgstr "Skriver filer til plate"
+
+#: ../data/nautilus-cd-burner.glade.h:14
+msgid "_Dummy write"
+msgstr "_Testbrenning"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:1
+msgid "Default burn speed"
+msgstr "Standard brennefart"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:2
+msgid "Default speed at which the media will be written."
+msgstr "Farten som plata vil bli brent med."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:3
+msgid "Directory for the temporary ISO images"
+msgstr "Katalog som mellombels ISO-bilete skal leggjast i"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:4
+msgid ""
+"Directory used for the temporary ISO images, leave blank to use the default "
+"system temporary directory."
+msgstr ""
+"Katalog der mellombels ISO-bilete vert lagra. Dersom dette feltet er tomt, "
+"vert systemkatalogen for mellombels filer brukt."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:5
+msgid "Enable Burnproof option"
+msgstr "Bruk Burnproof"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:6
+msgid "Enable debug"
+msgstr "Bruk feilsøking"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:7
+msgid "Enable overburn"
+msgstr "Bruk overbrenning"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:8
+msgid "Whether to allow the data to exceed the size of the physical medium."
+msgstr "Om du vil brenna meir data enn plata nominelt har plass til."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:9
+msgid "Whether to enable the debugging for CD Recording."
+msgstr "Om du vil bruka feilsøking under CD-brenninga."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:10
+msgid "Whether to use the Burnproof option available on some recorders."
+msgstr "Om Burnproof-funksjonen skal brukast, dersom brennaren støttar det."
+
+#: ../src/burn-extension.c:141 ../src/burn-extension.c:145
+msgid "Unable to launch the cd burner application"
+msgstr "Kan ikkje starta CD-brenneprogrammet"
+
+#: ../src/burn-extension.c:440 ../src/burn-extension.c:450
+#: ../src/burn-extension.c:538
+msgid "_Write to Disc..."
+msgstr "_Brenn plate ..."
+
+#: ../src/burn-extension.c:441
+msgid "Write disc image to a CD or DVD disc"
+msgstr "Brenn biletet på ein CD eller DVD"
+
+#
+#: ../src/burn-extension.c:451
+msgid "Write disc image cuesheet to a CD or DVD disc"
+msgstr "Skriv «cuesheet» for avtrykk av plate til ein CD eller DVD-plate"
+
+#
+#: ../src/burn-extension.c:497
+msgid "_Copy Disc..."
+msgstr "_Kopier plate..."
+
+#
+#: ../src/burn-extension.c:498
+msgid "Create a copy of this CD or DVD disc"
+msgstr "Lag ein kopi av denne CD eller DVD-plata"
+
+#: ../src/burn-extension.c:539 ../src/nautilus-burn-bar.c:151
+msgid "Write contents to a CD or DVD disc"
+msgstr "Brenn innhaldet på ein CD eller DVD"
+
+#
+#: ../src/make-iso.c:306
+msgid "Disable Microsoft Windows compatibility?"
+msgstr "Slå av samspel med Microsoft Windows?"
+
+#: ../src/make-iso.c:309
+msgid ""
+"Some files don't have a suitable name for a Windows-compatible CD.\n"
+"Do you want to continue with Windows compatibility disabled?"
+msgstr ""
+"Somme filer har ikkje namn som er høvelege for CD-plater som kan brukast på "
+"Windows.\n"
+"Vil du halda fram utan Windows-kompatibilitet?"
+
+#: ../src/make-iso.c:310
+msgid "Windows compatibility"
+msgstr "Windows-kompatibilitet"
+
+#: ../src/make-iso.c:707
+msgid " (invalid Unicode)"
+msgstr " (ugyldig Unicode)"
+
+#: ../src/make-iso.c:868
+#, c-format
+msgid ""
+"The selected location does not have enough space to store the disc image (%s "
+"MiB needed)."
+msgstr ""
+"Vald stad har ikkje nok plass til å lagra CD-avtrykket (%s MiB kreves)."
+
+#: ../src/make-iso.c:1012 ../src/make-iso.c:1402
+#, c-format
+msgid "Could not run sub process: %s."
+msgstr "Kunne ikkje køyra ein underprosess: %s."
+
+#: ../src/make-iso.c:1039
+#, c-format
+msgid "The operation was cancelled by the user."
+msgstr "Operasjonen vart avbrota av brukaren."
+
+#: ../src/make-iso.c:1140
+#, c-format
+msgid ""
+"Some files have invalid filenames: \n"
+"%s"
+msgstr ""
+"Nokre filer har ugyldige filnamn: \n"
+"%s"
+
+#
+#: ../src/make-iso.c:1153
+msgid "Unknown character encoding."
+msgstr "Ukjend teiknkoding"
+
+#
+#: ../src/make-iso.c:1157
+msgid "There is no space left on the device."
+msgstr "Ikkje nok plass tilgjengeleg på eininga."
+
+#
+#. TODO: get filename from error message
+#: ../src/make-iso.c:1162
+msgid "File too large for filesystem."
+msgstr "Fila er for stor for filsystemet."
+
+#: ../src/make-iso.c:1215
+#, c-format
+msgid "The label for the image is too long."
+msgstr "Etiketten for avtrykket er for lang."
+
+#: ../src/make-iso.c:1323
+#, c-format
+msgid "There are no files to write to disc."
+msgstr "Inga filer å skriva til plata."
+
+#
+#: ../src/make-iso.c:1674
+msgid "Not a valid disc image."
+msgstr "Ikkje eit gyldig avtrykk."
+
+#
+#: ../src/nautilus-burn-bar.c:137
+msgid "CD/DVD Creator Folder"
+msgstr "Mappe for skriveprogram for CD/DVD"
+
+#: ../src/nautilus-burn-bar.c:141 ../src/ncb-selection-dialog.c:175
+msgid "Write to Disc"
+msgstr "Brenn plate"
+
+#
+#: ../src/nautilus-burn-drive.c:1252
+msgid "Could not determine media type because CD drive is busy"
+msgstr "Kunne ikkje bestemme medietype fordi CD-stasjonen er opptatt"
+
+#
+#: ../src/nautilus-burn-drive.c:1254
+msgid "Couldn't open media"
+msgstr "Kunne ikkje opna medie"
+
+#
+#: ../src/nautilus-burn-drive.c:1256
+msgid "Unknown Media"
+msgstr "Ukjend medie"
+
+#
+#: ../src/nautilus-burn-drive.c:1258
+msgid "Commercial CD or Audio CD"
+msgstr "Kommersiell CD eller lyd-CD"
+
+#
+#: ../src/nautilus-burn-drive.c:1260
+msgid "CD-R"
+msgstr "CD-R"
+
+#
+#: ../src/nautilus-burn-drive.c:1262
+msgid "CD-RW"
+msgstr "CD-RW"
+
+#
+#: ../src/nautilus-burn-drive.c:1264
+msgid "DVD"
+msgstr "DVD"
+
+#
+#: ../src/nautilus-burn-drive.c:1266
+msgid "DVD-R, or DVD-RAM"
+msgstr "DVD-R eller DVD-RAM"
+
+#
+#: ../src/nautilus-burn-drive.c:1268
+msgid "DVD-RW"
+msgstr "DVD-RW"
+
+#
+#: ../src/nautilus-burn-drive.c:1270
+msgid "DVD-RAM"
+msgstr "DVD-RAM"
+
+#
+#: ../src/nautilus-burn-drive.c:1272
+msgid "DVD+R"
+msgstr "DVD+R"
+
+#
+#: ../src/nautilus-burn-drive.c:1274
+msgid "DVD+RW"
+msgstr "DVD+RW"
+
+#
+#: ../src/nautilus-burn-drive.c:1276
+msgid "DVD+R DL"
+msgstr "DVD+R DL"
+
+#
+#: ../src/nautilus-burn-drive.c:1281
+msgid "Broken media type"
+msgstr "Øydelagd medietype"
+
+#: ../src/nautilus-burn-drive-monitor.c:452
+msgid "File image"
+msgstr "Filbilete"
+
+#
+#: ../src/nautilus-burn-drive-selection.c:107 ../src/ncb-selection.c:1022
+msgid "Drive"
+msgstr "Eining"
+
+#
+#: ../src/nautilus-burn-drive-selection.c:237
+msgid "Unnamed CD/DVD Drive"
+msgstr "CD/DVD-stasjon utan namn"
+
+#
+#: ../src/nautilus-burn-recorder.c:602
+msgid "The recorder could not be accessed."
+msgstr "Kunne ikkje få tilgang til brennaren."
+
+#
+#: ../src/nautilus-burn-recorder.c:606
+msgid "Not enough space available on the disc."
+msgstr "Ikkje nok plass tilgjengeleg på plata."
+
+#
+#: ../src/nautilus-burn-recorder.c:610 ../src/nautilus-burn-recorder.c:614
+msgid "The files selected did not fit on the DVD."
+msgstr "Det er ikkje nok plass til filene du har vald på DVDen."
+
+#
+#: ../src/nautilus-burn-recorder.c:626
+msgid "The target DVD drive is still in use."
+msgstr "DVD-eininga er fremdeles i bruk."
+
+#: ../src/nautilus-burn-recorder.c:632
+msgid "Unhandled error, aborting"
+msgstr "Feil som ikkje kan handsamast. Avbryt"
+
+#
+#: ../src/nautilus-burn-recorder.c:697
+msgid "The CD has already been recorded."
+msgstr "CDen er allereie skrivne."
+
+#
+#: ../src/nautilus-burn-recorder.c:717
+msgid "The files selected did not fit on the CD."
+msgstr "Det er ikkje nok plass til filene du har vald på CDen."
+
+#
+#: ../src/nautilus-burn-recorder.c:721
+msgid ""
+"All audio files must be stereo, 16-bit digital audio with 44100Hz samples."
+msgstr ""
+"Alle lydfiler må vera i stereo, 16-bit digital lyd med 44100Hz samplingrate."
+
+#
+#: ../src/nautilus-burn-recorder.c:745
+msgid "Error while writing to disc.  Try a lower speed."
+msgstr "Feil under skriving til plate. Prøv ein lågare hastighet."
+
+#: ../src/nautilus-burn-recorder.c:750
+msgid ""
+"The system is too slow to write the CD at this speed. Try a lower speed."
+msgstr ""
+"Systemet er for tregt til å brenna med den farten. Prøv med lågare fart."
+
+#: ../src/nautilus-burn-recorder.c:884
+#, c-format
+msgid "You can only burn 99 tracks on one disc"
+msgstr "Du kan berre brenna 99 spor på ei plate"
+
+#: ../src/nautilus-burn-recorder.c:891
+#, c-format
+msgid "No tracks given to write"
+msgstr "Inga spor vald for skriving"
+
+#
+#: ../src/nautilus-burn-recorder.c:896
+msgid "Burning CD/DVD"
+msgstr "Skriver CD/DVD"
+
+#: ../src/nautilus-burn-recorder.c:1101
+#, c-format
+msgid "Can only use growisofs on a single track"
+msgstr "Kan berre bruka growisofs på eitt enkelt spor"
+
+#: ../src/nautilus-burn-recorder.c:1112
+#, c-format
+msgid "Can only use growisofs on a data or graft list track"
+msgstr "Kan berre bruka growisofs på eit spor med data eller ein spleiseliste"
+
+#
+#: ../src/nautilus-burn-recorder.c:1480
+msgid "Blanking CD"
+msgstr "Sletter CD"
+
+#
+#: ../src/nautilus-burn-recorder.c:1550
+msgid "Blanking DVD"
+msgstr "Sletter CD"
+
+#: ../src/nautilus-burn-process.c:497
+#, c-format
+msgid "Could not run the necessary command: %s"
+msgstr "Kunne ikkje køyra nødvendig kommando: %s."
+
+#: ../src/nautilus-cd-burner.c:157
+#, c-format
+msgid "There was a problem displaying the help contents: %s."
+msgstr "Eit problem oppstod under framsyning av hjelpinnhaldet: %s"
+
+#: ../src/nautilus-cd-burner.c:158
+msgid "Cannot display help"
+msgstr "Kan ikkje visa hjelp"
+
+#
+#: ../src/nautilus-cd-burner.c:293
+msgid "Use CD/DVD device as source instead of burn:///"
+msgstr "Bruk CD/DVD eining som kjelde i stede for burn:///"
+
+#
+#: ../src/nautilus-cd-burner.c:293
+msgid "DEVICE"
+msgstr "EINING"
+
+#
+#: ../src/nautilus-cd-burner.c:295
+msgid "Use ISO image as source instead of burn:///"
+msgstr "Bruk ISO-avtrykk som kjelde i staden for burn:///"
+
+#
+#: ../src/nautilus-cd-burner.c:295 ../src/nautilus-cd-burner.c:297
+msgid "FILENAME"
+msgstr "FILNAMN"
+
+#
+#: ../src/nautilus-cd-burner.c:297
+msgid "Use CUE/TOC file as source instead of burn:///"
+msgstr "Bruk CUE/TOC-fil som kjelde i stede for burn:///"
+
+#
+#: ../src/ncb-selection.c:442
+msgid ""
+"It appears that the disc, when created, will contain a single disc image "
+"file.  Do you want to create a disc from the contents of the image or with "
+"the image file inside?"
+msgstr ""
+"Det ser ut som at plata berre vil innehalda ein enkelt plateavtrykksfil. Vil "
+"du oppretta ein plate frå innhaldet i avtrykket eller ein plate med "
+"avtrykksfila som ein fil?"
+
+#
+#: ../src/ncb-selection.c:445
+msgid "Create disc containing a single disc image file?"
+msgstr "Vil du laga ein plate som berre inneheld ein plateavtrykksfil?"
+
+#
+#: ../src/ncb-selection.c:448
+msgid "Create From Image"
+msgstr "Lag frå avtrykk"
+
+#
+#: ../src/ncb-selection.c:450
+msgid "Create With File"
+msgstr "Lag med fil"
+
+#
+#: ../src/ncb-selection.c:453
+msgid ""
+"It appears that the disc, when created, will contain only disc image files.  "
+"Do you want to continue and write them to the disc as files?"
+msgstr ""
+"Det ser ut som om plata berre vil inneheld avtrykk av plater. Vil du "
+"forsette å skriva desse til plata som filer?"
+
+#
+#: ../src/ncb-selection.c:456
+msgid "Create disc containing only disc image files?"
+msgstr "Vil du laga ein plate som berre inneheld avtrykk av plater?"
+
+#
+#: ../src/ncb-selection.c:460
+msgid "Create With Files"
+msgstr "Lag med filer"
+
+#: ../src/ncb-selection.c:491
+#, c-format
+msgid ""
+"The file '%s' is unreadable.  Do you wish to skip this file and continue?"
+msgstr "Fila «%s» er ikkje lesbar. Vil du hoppa over denne fila og halda fram?"
+
+#
+#: ../src/ncb-selection.c:494
+msgid "Skip unreadable file?"
+msgstr "Hopp over uleseleg fil?"
+
+#
+#: ../src/ncb-selection.c:499
+msgid "Skip"
+msgstr "Hopp over"
+
+#
+#: ../src/ncb-selection.c:499
+msgid "Skip All"
+msgstr "Hopp over alle"
+
+#: ../src/ncb-selection.c:522
+#, c-format
+msgid "No files were selected."
+msgstr "Inga filer er vald."
+
+#: ../src/ncb-selection.c:553
+#, c-format
+msgid "The file '%s' is not a valid disc image."
+msgstr "Fila «%s» er ikkje eit gyldig avtrykk av ein plate."
+
+#: ../src/ncb-selection.c:628
+#, c-format
+msgid "The specified device '%s' is not a valid CD/DVD drive."
+msgstr "Oppgjeven eining «%s» er ikkje ein gyldig CD/DVD-stasjon."
+
+#: ../src/ncb-selection.c:652
+#, c-format
+msgid "There doesn't seem to be any media in the selected drive."
+msgstr ""
+"Det ser ikkje ut til at det er noko medium i den valde lagringseininga."
+
+#: ../src/ncb-selection.c:659
+#, c-format
+msgid "The media is blank."
+msgstr "Mediet er tomt."
+
+#: ../src/ncb-selection.c:692
+#, c-format
+msgid "File not found: %s"
+msgstr "Fil ikkje funne: %s"
+
+#: ../src/ncb-selection.c:701
+#, c-format
+msgid "File does not appear to be a valid CUE sheet: %s"
+msgstr "Fila ser ikkje ut til å vera eit gyldig CUE-ark: %s"
+
+#.
+#. translators: see strftime man page for meaning of %b, %d and %Y
+#. the maximum length for this field is 32 bytes
+#.
+#: ../src/ncb-selection.c:745
+msgid "Personal Data, %b %d, %Y"
+msgstr "Personlege data, %d. %b %Y"
+
+#
+#: ../src/ncb-selection.c:817
+msgid "Unable to create CD/DVD"
+msgstr "Kan ikkje oppretta CD/DVD"
+
+#
+#: ../src/ncb-selection.c:981
+msgid "Source name"
+msgstr "Kjeldenamn"
+
+#
+#: ../src/ncb-selection.c:988
+msgid "Source type"
+msgstr "Kjeldetype"
+
+#
+#: ../src/ncb-selection.c:996
+msgid "Source size"
+msgstr "Kjeldestørrelse"
+
+#
+#: ../src/ncb-selection.c:1005
+msgid "Disc label"
+msgstr "Etikett for plate"
+
+#
+#: ../src/ncb-selection.c:1012
+msgid "Write speed"
+msgstr "Skrivehastighet"
+
+#
+#: ../src/ncb-selection-dialog.c:171
+msgid "Copy Disc"
+msgstr "Kopier plate"
+
+#
+#: ../src/ncb-selection-dialog.c:173
+msgid "Copy disc _to:"
+msgstr "Kopierer plate _til:"
+
+#
+#: ../src/ncb-selection-dialog.c:345
+msgid "Maximum possible"
+msgstr "Største moglege"
+
+#
+#: ../src/ncb-selection-dialog.c:558
+msgid "Calculating..."
+msgstr "Utrekner..."
+
+#: ../src/ncb-selection-dialog.c:637
+msgid "_Write"
+msgstr "_Brenn"
+
+#: ../src/ncb-operation.c:242
+msgid "Preparing to write CD"
+msgstr "Gjer klar til å brenna CD"
+
+#: ../src/ncb-operation.c:244
+msgid "Preparing to write DVD"
+msgstr "Gjer klar til å brenna DVD"
+
+#: ../src/ncb-operation.c:249
+msgid "Writing CD"
+msgstr "Brenn CD"
+
+#: ../src/ncb-operation.c:251
+msgid "Writing DVD"
+msgstr "Brenn DVD"
+
+#
+#: ../src/ncb-operation.c:256 ../src/ncb-operation.c:258
+msgid "Finishing write"
+msgstr "Fullfører skriving"
+
+#: ../src/ncb-operation.c:263
+msgid "Erasing CD"
+msgstr "Slettar CD"
+
+#: ../src/ncb-operation.c:265
+msgid "Erasing DVD"
+msgstr "Slettar DVD"
+
+#
+#: ../src/ncb-operation.c:349
+msgid "None"
+msgstr "Inga"
+
+#
+#: ../src/ncb-operation.c:356
+msgid "Please make sure another application is not using the drive."
+msgstr "Vennligst sjekk at inga andre program brukar stasjonen."
+
+#
+#: ../src/ncb-operation.c:357
+msgid "Drive is busy"
+msgstr "Stasjonen er opptatt"
+
+#: ../src/ncb-operation.c:359 ../src/ncb-operation.c:364
+#, c-format
+msgid ""
+"Please put a disc, with at least %s free, into the drive.  The following "
+"disc types are supported:\n"
+"%s"
+msgstr ""
+"Vennligst set inn ein plate med minst %s ledig i stasjonen. Følgjande typar "
+"plater er støtta:\n"
+"%s"
+
+#
+#: ../src/ncb-operation.c:362
+msgid "Insert a rewritable or blank disc"
+msgstr "Set inn omskrivbar eller tom plate"
+
+#
+#: ../src/ncb-operation.c:367
+msgid "Insert a blank disc"
+msgstr "Set inn ein tom plate"
+
+#: ../src/ncb-operation.c:370 ../src/ncb-operation.c:376
+#, c-format
+msgid ""
+"Please replace the disc in the drive with a supported disc with at least %s "
+"free.  The following disc types are supported:\n"
+"%s"
+msgstr ""
+"Vennligst byt ut plata i stasjonen med ein støtta plate som har minst %s "
+"ledig. Følgjande typar plater er støtta:\n"
+"%s"
+
+#
+#: ../src/ncb-operation.c:373
+msgid "Reload a rewritable or blank disc"
+msgstr "Last omskrivbar eller tom plate på nytt"
+
+#
+#: ../src/ncb-operation.c:379
+msgid "Reload a blank disc"
+msgstr "Last tom plate på nytt"
+
+#
+#: ../src/ncb-operation.c:390
+msgid "_Eject"
+msgstr "_Laus ut"
+
+#: ../src/ncb-operation.c:457
+#, c-format
+msgid "This %s appears to have information already recorded on it."
+msgstr "Denne %s ser ut til å innehalda informasjon allereie."
+
+#
+#: ../src/ncb-operation.c:461
+msgid "Erase information on this disc?"
+msgstr "Vil du slette informasjonen på denne plata?"
+
+#
+#: ../src/ncb-operation.c:469
+msgid "_Try Another"
+msgstr "_Prøv ein annan"
+
+#
+#: ../src/ncb-operation.c:480
+msgid "_Erase Disc"
+msgstr "Sl_ett plate"
+
+#: ../src/ncb-operation.c:512
+#, c-format
+msgid ""
+"There was an error writing to the disc:\n"
+"%s"
+msgstr ""
+"Det oppsto ein feil under skriving til plata:\n"
+"%s"
+
+#
+#: ../src/ncb-operation.c:515
+msgid "There was an error writing to the disc"
+msgstr "Det oppsto ein feil under skriving til plata"
+
+#
+#: ../src/ncb-operation.c:518
+msgid "Error writing to disc"
+msgstr "Feil under skriving til plate"
+
+#: ../src/ncb-operation.c:573
+#, c-format
+msgid "A file named \"%s\" already exists.  Do you want to overwrite it?"
+msgstr "Ein fil med namn «%s» eksisterer allereie. Vil du overskrive den?"
+
+#
+#: ../src/ncb-operation.c:575
+msgid "Overwrite existing file?"
+msgstr "Overskriv eksisterande fil?"
+
+#: ../src/ncb-operation.c:584
+msgid "_Overwrite"
+msgstr "Skriv _over"
+
+#
+#: ../src/ncb-operation.c:603
+msgid "Choose a filename for the disc image"
+msgstr "Vel eit filnamn for avtrykket"
+
+#
+#. Translators: this is the filename of the image
+#: ../src/ncb-operation.c:739
+msgid "image.iso"
+msgstr "avtrykk.iso"
+
+#: ../src/ncb-operation.c:760
+#, c-format
+msgid "You do not have permissions to overwrite that file (%s)."
+msgstr "Du har ikkje dei naudsynte løyva til å skriva over denne fila (%s)."
+
+#: ../src/ncb-operation.c:761 ../src/ncb-operation.c:776
+#: ../src/ncb-operation.c:1582
+msgid "File image creation failed"
+msgstr "Klarte ikkje laga biletefil"
+
+#: ../src/ncb-operation.c:775
+#, c-format
+msgid "You do not have permissions to create that file (%s)."
+msgstr "Du har ikkje dei naudsynte løyva til å laga den fila (%s)."
+
+#: ../src/ncb-operation.c:840
+msgid "Complete"
+msgstr "Fullført"
+
+#
+#: ../src/ncb-operation.c:843
+msgid "An error occurred while writing"
+msgstr "Ein feil oppsto under skriving"
+
+#
+#: ../src/ncb-operation.c:903
+msgid "Writing Files to a Disc Image"
+msgstr "Skriver filer til eit avtrykk"
+
+#
+#: ../src/ncb-operation.c:904
+msgid "Writing Files to CD"
+msgstr "Skriver filer til CD"
+
+#
+#: ../src/ncb-operation.c:905
+msgid "Writing Files to DVD"
+msgstr "Skriver filer til DVD"
+
+#
+#: ../src/ncb-operation.c:908
+msgid "Writing Image to Disc"
+msgstr "Skriver avtrykk til plate"
+
+#
+#: ../src/ncb-operation.c:909
+msgid "Copying Disc Image"
+msgstr "Kopierer avtrykk"
+
+#
+#: ../src/ncb-operation.c:910
+msgid "Writing Image to CD"
+msgstr "Skriver avtrykk til CD"
+
+#
+#: ../src/ncb-operation.c:911
+msgid "Writing Image to DVD"
+msgstr "Skriver avtrykk til DVD"
+
+#
+#: ../src/ncb-operation.c:914
+msgid "Copying Disc"
+msgstr "Kopierer plate"
+
+#
+#: ../src/ncb-operation.c:915
+msgid "Copying Disc to a Disc Image"
+msgstr "Kopierer plata til eit avtrykk"
+
+#
+#: ../src/ncb-operation.c:916
+msgid "Copying Disc to CD"
+msgstr "Kopierer plata til CD"
+
+#
+#: ../src/ncb-operation.c:917
+msgid "Copying Disc to DVD"
+msgstr "Kopierer plata til DVD"
+
+#
+#: ../src/ncb-operation.c:921
+msgid "Writing files to disc"
+msgstr "Skriver filer til plate"
+
+#
+#: ../src/ncb-operation.c:922
+msgid "Writing files to a disc image"
+msgstr "Skriver filer til eit avtrykk"
+
+#
+#: ../src/ncb-operation.c:923
+msgid "Writing files to CD"
+msgstr "Skriver filer til CD"
+
+#
+#: ../src/ncb-operation.c:924
+msgid "Writing files to DVD"
+msgstr "Skriver filer til DVD"
+
+#
+#: ../src/ncb-operation.c:927
+msgid "Writing image to disc"
+msgstr "Skriver avtrykk til plate"
+
+#
+#: ../src/ncb-operation.c:928
+msgid "Copying disc image"
+msgstr "Kopierer avtrykk"
+
+#
+#: ../src/ncb-operation.c:929
+msgid "Writing image to CD"
+msgstr "Skriver avtrykk til CD"
+
+#
+#: ../src/ncb-operation.c:930
+msgid "Writing image to DVD"
+msgstr "Skriver avtrykk til DVD"
+
+#
+#: ../src/ncb-operation.c:933
+msgid "Copying disc"
+msgstr "Kopierer plate"
+
+#
+#: ../src/ncb-operation.c:934
+msgid "Copying disc to a disc image"
+msgstr "Kopierer plata til eit avtrykk"
+
+#
+#: ../src/ncb-operation.c:935
+msgid "Copying disc to CD"
+msgstr "Kopierer plate til CD"
+
+#
+#: ../src/ncb-operation.c:936
+msgid "Copying disc to DVD"
+msgstr "Kopierer plate til DVD"
+
+#
+#: ../src/ncb-operation.c:940
+msgid ""
+"The selected files are being written to a CD or DVD.  This operation may "
+"take a long time, depending on data size and write speed."
+msgstr ""
+"Valde filer skal skrivast til ein CD eller ein DVD. Denne operasjonen kan ta "
+"lang tid, avhengig av storleik på data og skrivehastighet."
+
+#
+#: ../src/ncb-operation.c:941
+msgid "The selected files are being written to a disc image file."
+msgstr "Valde filer skrivast til ein avtrykksfil."
+
+#
+#: ../src/ncb-operation.c:942
+msgid ""
+"The selected files are being written to a CD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr ""
+"Valde filer skal skrivast til ein CD. Denne operasjonen kan ta lang tid, "
+"avhengig av storleik på data og skrivehastighet."
+
+#
+#: ../src/ncb-operation.c:943
+msgid ""
+"The selected files are being written to a DVD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr ""
+"Valde filer skal skrivast til ein DVD. Denne operasjonen kan ta lang tid, "
+"avhengig av storleik på data og skrivehastighet."
+
+#
+#: ../src/ncb-operation.c:946
+msgid ""
+"The selected disc image is being written to a CD or DVD.  This operation may "
+"take a long time, depending on data size and write speed."
+msgstr ""
+"Vald plateavtrykk skrivast til ein CD eller ein DVD. Denne operasjonen kan "
+"ta lang tid, avhengig av storleik på data og skrivehastighet."
+
+#
+#: ../src/ncb-operation.c:947
+msgid "The selected disc image is being copied to a disc image file."
+msgstr "Vald plateavtrykk kopierast til ein avtrykksfil."
+
+#
+#: ../src/ncb-operation.c:948
+msgid ""
+"The selected disc image is being written to a CD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr ""
+"Vald plateavtrykk skrivast til ein CD. Denne operasjonen kan ta lang tid, "
+"avhengig av storleik på data og skrivehastighet."
+
+#
+#: ../src/ncb-operation.c:949
+msgid ""
+"The selected disc image is being written to a DVD.  This operation may take "
+"a long time, depending on data size and write speed."
+msgstr ""
+"Vald plateavtrykk skal skrivast til ein DVD. Denne operasjonen kan ta lang "
+"tid, avhengig av storleik på data og skrivehastighet."
+
+#
+#: ../src/ncb-operation.c:952
+msgid ""
+"The selected disc is being copied to a CD or DVD.  This operation may take a "
+"long time, depending on data size and drive speed."
+msgstr ""
+"Vald plate kopierast til ein CD eller ein DVD. Denne operasjonen kan ta lang "
+"tid, avhengig av storleik på data og skrivehastighet."
+
+#
+#: ../src/ncb-operation.c:953
+msgid ""
+"The selected disc is being copied to a disc image file.  This operation may "
+"take a long time, depending on data size and drive speed."
+msgstr ""
+"Vald plate kopierast til eit plateavtrykk. Denne operasjonen kan ta lang "
+"tid, avhengig av storleik på data og skrivehastighet."
+
+#
+#: ../src/ncb-operation.c:954
+msgid ""
+"The selected disc is being copied to a CD.  This operation may take a long "
+"time, depending on data size and drive speed."
+msgstr ""
+"Vald plate skal skrivast til ein CD. Denne operasjonen kan ta lang tid, "
+"avhengig av storleik på data og skrivehastighet."
+
+#
+#: ../src/ncb-operation.c:955
+msgid ""
+"The selected disc is being copied to a DVD.  This operation may take a long "
+"time, depending on data size and drive speed."
+msgstr ""
+"Vald plate skal skrivast til ein DVD. Denne operasjonen kan ta lang tid, "
+"avhengig av storleik på data og skrivehastighet."
+
+#
+#: ../src/ncb-operation.c:1012
+msgid "Burning CD"
+msgstr "Skriver CD"
+
+#
+#: ../src/ncb-operation.c:1179 ../src/ncb-operation.c:1403
+msgid "Creating disc image"
+msgstr "Lagar avtrykk"
+
+#: ../src/ncb-operation.c:1621
+#, c-format
+msgid "Writing CD/DVD-Image '%s'."
+msgstr "Skriver CD-DVD-avtrykk «%s»."
+
+#: ../src/ncb-operation.c:1626
+#, c-format
+msgid "Writing disc '%s'."
+msgstr "Skriver plate «%s»."
+
+#: ../src/ncb-operation.c:1628
+#, c-format
+msgid "Writing %s '%s'."
+msgstr "Skriver %s «%s»."
+
+#: ../src/ncb-operation.c:1717
+#, c-format
+msgid "Completed writing %s"
+msgstr "%s skrive"
+
+#
+#: ../src/ncb-operation.c:1822
+msgid "Interrupt writing files to disc?"
+msgstr "Avbryt skriving av filer til plata?"
+
+#
+#: ../src/ncb-operation.c:1823
+msgid ""
+"Are you sure you want to interrupt the disc write operation? Some drives may "
+"require that you restart the computer to get them working again."
+msgstr ""
+"Er du sikker på at du vil avbryta skriveoperasjonen? Nokre stasjonar kan "
+"krevja at du startar maskinen på nytt for at dei skal fungere att."
+
+#
+#: ../src/ncb-operation.c:1829
+msgid "Interrupt"
+msgstr "Avbryt"
+
+#: ../src/ncb-operation.c:1831
+msgid "Continue"
+msgstr "Hald fram"
+
+#: ../src/ncb-progress-dialog.c:146
+#, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d time"
+msgstr[1] "%d timar"
+
+#: ../src/ncb-progress-dialog.c:148
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d minutt"
+msgstr[1] "%d minutt"
+
+#: ../src/ncb-progress-dialog.c:151
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d sekund"
+msgstr[1] "%d sekund"
+
+#. hour:minutes:seconds
+#: ../src/ncb-progress-dialog.c:156
+#, c-format
+msgid "%s %s %s"
+msgstr "%s %s %s"
+
+#. minutes:seconds
+#: ../src/ncb-progress-dialog.c:159
+#, c-format
+msgid "%s %s"
+msgstr "%s %s"
+
+#. seconds
+#: ../src/ncb-progress-dialog.c:162
+#, c-format
+msgid "%s"
+msgstr "%s"
+
+#
+#. 0 seconds
+#: ../src/ncb-progress-dialog.c:165
+msgid "0 seconds"
+msgstr "0 sekund"
+
+#: ../src/ncb-progress-dialog.c:189
+#, c-format
+msgid "About %s left"
+msgstr "Omtrent %s gjenstår"
+
+#
+#: ../src/ncb-progress-dialog.c:439
+msgid "_Make Another Copy"
+msgstr "_Lag ein ny kopi"
+
+#
+#: ../src/ncb-rename-dialog.c:479
+msgid "C_ontinue"
+msgstr "F_ortsett"
+
+#
+#: ../src/ncb-rename-dialog.c:507
+msgid "Filename"
+msgstr "Filnamn"
+
+#
+#: ../src/ncb-rename-dialog.c:523
+msgid "Rename file"
+msgstr "Endra namn på fil"
+
+#~ msgid "Unnamed CDROM"
+#~ msgstr "CD-ROM utan namn"
+
+#~ msgid "Can't launch cd burner"
+#~ msgstr "Kan ikkje starta CD-brennar"
+
+#~ msgid "*"
+#~ msgstr "*"
+
+#~ msgid "<b>After Writing</b>"
+#~ msgstr "<b>Etter brenning</b>"
+
+#~ msgid "E_ject disc"
+#~ msgstr "_Løys ut plata"
+
+#~ msgid "Select the speed to use for the write"
+#~ msgstr "Vel kor fort CD-en skal brennast"
+
+#~ msgid "_Reuse these files for another disc"
+#~ msgstr "B_ruk desse filene på nytt til ei ny plate"
+
+#~ msgid "Not enough space"
+#~ msgstr "Ikkje nok plass"
+
+#~ msgid "Fixating CD"
+#~ msgstr "Fikserer CD"
+
+#~ msgid "Fixating DVD"
+#~ msgstr "Fikserer DVD"
+
+#~ msgid "Please insert a rewritable or blank media in the drive tray."
+#~ msgstr "Legg ei overskrivbar eller tom plate i brennaren."
+
+#~ msgid "Please replace the in-drive media by a rewritable or blank media."
+#~ msgstr "Bytt ut plata i brennaren med ei tom eller overskrivbar plate."
+
+#~ msgid "Please replace the in-drive media by a blank media."
+#~ msgstr "Bytt ut plata i brennaren med ei tom plate"
+
+#~ msgid "Disc writing error details"
+#~ msgstr "Detaljar om brennefeil"
+
+#~ msgid "Detailed error output from cdrecord:"
+#~ msgstr "Detaljert feilmelding frå cdrecord:"
+
+#~ msgid "_Details"
+#~ msgstr "_Detaljar"
+
+#~ msgid "%d MB"
+#~ msgstr "%d MiB"
+
+#~ msgid "Cancel write"
+#~ msgstr "Avbryt brenning"
+
+#~ msgid "Too many parameters"
+#~ msgstr "For mange parameterar"
+
+#~ msgid "Too many parameters were passed to the application."
+#~ msgstr "For mange parameterar vart sendt til programmet."
+
+#~ msgid ""
+#~ "You need to copy the files you want to write to disc to the CD/DVD "
+#~ "Creator window. Would you like to open it now?"
+#~ msgstr ""
+#~ "Filene du vil brenna på plata må kopierast til CD/DVD-brennar-vindauget. "
+#~ "Vil du opna det vindauget no?"

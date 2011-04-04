@@ -1,0 +1,576 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<refentry id="nautilus-cd-burner-nautilus-burn-recorder">
+<refmeta>
+<refentrytitle role="top_of_page" id="nautilus-cd-burner-nautilus-burn-recorder.top_of_page">nautilus-burn-recorder</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>NAUTILUS-CD-BURNER Library</refmiscinfo>
+</refmeta>
+
+<refnamediv>
+<refname>nautilus-burn-recorder</refname>
+<refpurpose></refpurpose>
+<!--[<xref linkend="desc" endterm="desc.title"/>]-->
+</refnamediv>
+
+<refsynopsisdiv id="nautilus-cd-burner-nautilus-burn-recorder.synopsis" role="synopsis">
+<title role="synopsis.title">Synopsis</title>
+<anchor id="NautilusBurnRecorder"/>
+<synopsis>
+#define             <link linkend="NAUTILUS-BURN-RECORDER-ERROR:CAPS">NAUTILUS_BURN_RECORDER_ERROR</link>
+<link linkend="GQuark">GQuark</link>              <link linkend="nautilus-burn-recorder-error-quark">nautilus_burn_recorder_error_quark</link>  (void);
+enum                <link linkend="NautilusBurnRecorderError">NautilusBurnRecorderError</link>;
+<link linkend="void">void</link>                (<link linkend="CancelFunc">*CancelFunc</link>)                       (<link linkend="gpointer">gpointer</link> data);
+enum                <link linkend="NautilusBurnRecorderResult">NautilusBurnRecorderResult</link>;
+enum                <link linkend="NautilusBurnRecorderResponse">NautilusBurnRecorderResponse</link>;
+enum                <link linkend="NautilusBurnRecorderTrackType">NautilusBurnRecorderTrackType</link>;
+typedef             <link linkend="NautilusBurnRecorderTrack">NautilusBurnRecorderTrack</link>;
+enum                <link linkend="NautilusBurnRecorderWriteFlags">NautilusBurnRecorderWriteFlags</link>;
+enum                <link linkend="NautilusBurnRecorderBlankFlags">NautilusBurnRecorderBlankFlags</link>;
+enum                <link linkend="NautilusBurnRecorderBlankType">NautilusBurnRecorderBlankType</link>;
+typedef             <link linkend="NautilusBurnRecorder">NautilusBurnRecorder</link>;
+typedef             <link linkend="NautilusBurnRecorderClass">NautilusBurnRecorderClass</link>;
+typedef             <link linkend="NautilusBurnRecorderPrivate">NautilusBurnRecorderPrivate</link>;
+enum                <link linkend="NautilusBurnRecorderActions">NautilusBurnRecorderActions</link>;
+enum                <link linkend="NautilusBurnRecorderMedia">NautilusBurnRecorderMedia</link>;
+<link linkend="void">void</link>                <link linkend="progress-changed">progress_changed</link>                    (<link linkend="NautilusBurnRecorder">NautilusBurnRecorder</link> *recorder,
+                                                         <link linkend="gdouble">gdouble</link> fraction,
+                                                         long <link linkend="seconds">seconds</link> );
+<link linkend="void">void</link>                <link linkend="action-changed">action_changed</link>                      (<link linkend="NautilusBurnRecorder">NautilusBurnRecorder</link> *recorder,
+                                                         <link linkend="NautilusBurnRecorderActions">NautilusBurnRecorderActions</link> action,
+                                                         <link linkend="NautilusBurnRecorderMedia">NautilusBurnRecorderMedia</link> media);
+<link linkend="void">void</link>                <link linkend="animation-changed">animation_changed</link>                   (<link linkend="NautilusBurnRecorder">NautilusBurnRecorder</link> *recorder,
+                                                         <link linkend="gboolean">gboolean</link> spinning);
+<link linkend="gboolean">gboolean</link>            <link linkend="insert-cd-request">insert_cd_request</link>                   (<link linkend="NautilusBurnRecorder">NautilusBurnRecorder</link> *recorder,
+                                                         <link linkend="gboolean">gboolean</link> is_reload,
+                                                         <link linkend="gboolean">gboolean</link> can_rewrite,
+                                                         <link linkend="gboolean">gboolean</link> busy);
+<link linkend="int">int</link>                 <link linkend="warn-data-loss">warn_data_loss</link>                      (<link linkend="NautilusBurnRecorder">NautilusBurnRecorder</link> *recorder);
+<link linkend="NautilusBurnRecorder">NautilusBurnRecorder</link>* <link linkend="nautilus-burn-recorder-new">nautilus_burn_recorder_new</link>        (void);
+<link linkend="int">int</link>                 <link linkend="nautilus-burn-recorder-write-tracks">nautilus_burn_recorder_write_tracks</link> (<link linkend="NautilusBurnRecorder">NautilusBurnRecorder</link> *recorder,
+                                                         <link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive,
+                                                         <link linkend="GList">GList</link> *tracks,
+                                                         <link linkend="int">int</link> speed,
+                                                         <link linkend="NautilusBurnRecorderWriteFlags">NautilusBurnRecorderWriteFlags</link> flags,
+                                                         <link linkend="GError">GError</link> **error);
+<link linkend="int">int</link>                 <link linkend="nautilus-burn-recorder-blank-disc">nautilus_burn_recorder_blank_disc</link>   (<link linkend="NautilusBurnRecorder">NautilusBurnRecorder</link> *recorder,
+                                                         <link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive,
+                                                         <link linkend="NautilusBurnRecorderBlankType">NautilusBurnRecorderBlankType</link> type,
+                                                         <link linkend="NautilusBurnRecorderBlankFlags">NautilusBurnRecorderBlankFlags</link> flags,
+                                                         <link linkend="GError">GError</link> **error);
+<link linkend="gboolean">gboolean</link>            <link linkend="nautilus-burn-recorder-cancel">nautilus_burn_recorder_cancel</link>       (<link linkend="NautilusBurnRecorder">NautilusBurnRecorder</link> *recorder,
+                                                         <link linkend="gboolean">gboolean</link> skip_if_dangerous);
+<link linkend="void">void</link>                <link linkend="nautilus-burn-recorder-track-free">nautilus_burn_recorder_track_free</link>   (<link linkend="NautilusBurnRecorderTrack">NautilusBurnRecorderTrack</link> *track);
+</synopsis>
+</refsynopsisdiv>
+
+<refsect1 id="nautilus-cd-burner-nautilus-burn-recorder.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<synopsis>
+  <link linkend="GObject">GObject</link>
+   +----NautilusBurnRecorder
+</synopsis>
+
+</refsect1>
+
+
+
+
+
+
+<refsect1 id="nautilus-cd-burner-nautilus-burn-recorder.signals" role="signal_proto">
+<title role="signal_proto.title">Signals</title>
+<synopsis>
+  &quot;<link linkend="NautilusBurnRecorder-action-changed">action-changed</link>&quot;                                 : Run Last
+  &quot;<link linkend="NautilusBurnRecorder-animation-changed">animation-changed</link>&quot;                              : Run Last
+  &quot;<link linkend="NautilusBurnRecorder-insert-media-request">insert-media-request</link>&quot;                           : Run Last
+  &quot;<link linkend="NautilusBurnRecorder-progress-changed">progress-changed</link>&quot;                               : Run Last
+  &quot;<link linkend="NautilusBurnRecorder-warn-data-loss">warn-data-loss</link>&quot;                                 : Run Last
+</synopsis>
+</refsect1>
+
+
+<refsect1 id="nautilus-cd-burner-nautilus-burn-recorder.description" role="desc">
+<title role="desc.title">Description</title>
+<para>
+
+</para>
+</refsect1>
+
+<refsect1 id="nautilus-cd-burner-nautilus-burn-recorder.details" role="details">
+<title role="details.title">Details</title>
+<refsect2 id="NAUTILUS-BURN-RECORDER-ERROR:CAPS" role="macro">
+<title>NAUTILUS_BURN_RECORDER_ERROR</title>
+<indexterm zone="NAUTILUS-BURN-RECORDER-ERROR:CAPS"><primary>NAUTILUS_BURN_RECORDER_ERROR</primary></indexterm><programlisting>#define NAUTILUS_BURN_RECORDER_ERROR nautilus_burn_recorder_error_quark ()
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2 id="nautilus-burn-recorder-error-quark" role="function">
+<title>nautilus_burn_recorder_error_quark ()</title>
+<indexterm zone="nautilus-burn-recorder-error-quark"><primary>nautilus_burn_recorder_error_quark</primary></indexterm><programlisting><link linkend="GQuark">GQuark</link>              nautilus_burn_recorder_error_quark  (void);</programlisting>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara>
+
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="NautilusBurnRecorderError" role="enum">
+<title>enum NautilusBurnRecorderError</title>
+<indexterm zone="NautilusBurnRecorderError"><primary>NautilusBurnRecorderError</primary></indexterm><programlisting>typedef enum {
+        NAUTILUS_BURN_RECORDER_ERROR_INTERNAL,
+        NAUTILUS_BURN_RECORDER_ERROR_GENERAL
+} NautilusBurnRecorderError;
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2 id="CancelFunc" role="function">
+<title>CancelFunc ()</title>
+<indexterm zone="CancelFunc"><primary>CancelFunc</primary></indexterm><programlisting><link linkend="void">void</link>                (*CancelFunc)                       (<link linkend="gpointer">gpointer</link> data);</programlisting>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>data</parameter>&nbsp;:</term>
+<listitem><simpara>
+
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="NautilusBurnRecorderResult" role="enum">
+<title>enum NautilusBurnRecorderResult</title>
+<indexterm zone="NautilusBurnRecorderResult"><primary>NautilusBurnRecorderResult</primary></indexterm><programlisting>typedef enum {
+        NAUTILUS_BURN_RECORDER_RESULT_ERROR     = -1,
+        NAUTILUS_BURN_RECORDER_RESULT_CANCEL    = -2,
+        NAUTILUS_BURN_RECORDER_RESULT_FINISHED  = -3,
+        NAUTILUS_BURN_RECORDER_RESULT_RETRY     = -4
+} NautilusBurnRecorderResult;
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2 id="NautilusBurnRecorderResponse" role="enum">
+<title>enum NautilusBurnRecorderResponse</title>
+<indexterm zone="NautilusBurnRecorderResponse"><primary>NautilusBurnRecorderResponse</primary></indexterm><programlisting>typedef enum {
+        NAUTILUS_BURN_RECORDER_RESPONSE_NONE   =  0,
+        NAUTILUS_BURN_RECORDER_RESPONSE_CANCEL = -1,
+        NAUTILUS_BURN_RECORDER_RESPONSE_ERASE  = -2,
+        NAUTILUS_BURN_RECORDER_RESPONSE_RETRY  = -3
+} NautilusBurnRecorderResponse;
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2 id="NautilusBurnRecorderTrackType" role="enum">
+<title>enum NautilusBurnRecorderTrackType</title>
+<indexterm zone="NautilusBurnRecorderTrackType"><primary>NautilusBurnRecorderTrackType</primary></indexterm><programlisting>typedef enum {
+        NAUTILUS_BURN_RECORDER_TRACK_TYPE_UNKNOWN,
+        NAUTILUS_BURN_RECORDER_TRACK_TYPE_AUDIO,
+        NAUTILUS_BURN_RECORDER_TRACK_TYPE_DATA,
+        NAUTILUS_BURN_RECORDER_TRACK_TYPE_CUE,
+        NAUTILUS_BURN_RECORDER_TRACK_TYPE_GRAFT_LIST
+} NautilusBurnRecorderTrackType;
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2 id="NautilusBurnRecorderTrack" role="typedef">
+<title>NautilusBurnRecorderTrack</title>
+<indexterm zone="NautilusBurnRecorderTrack"><primary>NautilusBurnRecorderTrack</primary></indexterm><programlisting>typedef struct NautilusBurnRecorderTrack NautilusBurnRecorderTrack;
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2 id="NautilusBurnRecorderWriteFlags" role="enum">
+<title>enum NautilusBurnRecorderWriteFlags</title>
+<indexterm zone="NautilusBurnRecorderWriteFlags"><primary>NautilusBurnRecorderWriteFlags</primary></indexterm><programlisting>typedef enum {
+        NAUTILUS_BURN_RECORDER_WRITE_NONE               = 0,
+        NAUTILUS_BURN_RECORDER_WRITE_EJECT              = 1 &lt;&lt; 0,
+        NAUTILUS_BURN_RECORDER_WRITE_BLANK              = 1 &lt;&lt; 1,
+        NAUTILUS_BURN_RECORDER_WRITE_DUMMY_WRITE        = 1 &lt;&lt; 2,
+        NAUTILUS_BURN_RECORDER_WRITE_DISC_AT_ONCE       = 1 &lt;&lt; 3,
+        NAUTILUS_BURN_RECORDER_WRITE_DEBUG              = 1 &lt;&lt; 4,
+        NAUTILUS_BURN_RECORDER_WRITE_OVERBURN           = 1 &lt;&lt; 5,
+        NAUTILUS_BURN_RECORDER_WRITE_BURNPROOF          = 1 &lt;&lt; 6,
+        NAUTILUS_BURN_RECORDER_WRITE_JOLIET             = 1 &lt;&lt; 7,
+        NAUTILUS_BURN_RECORDER_WRITE_UDF                = 1 &lt;&lt; 8
+} NautilusBurnRecorderWriteFlags;
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2 id="NautilusBurnRecorderBlankFlags" role="enum">
+<title>enum NautilusBurnRecorderBlankFlags</title>
+<indexterm zone="NautilusBurnRecorderBlankFlags"><primary>NautilusBurnRecorderBlankFlags</primary></indexterm><programlisting>typedef enum {
+        NAUTILUS_BURN_RECORDER_BLANK_NONE               = 0,
+        NAUTILUS_BURN_RECORDER_BLANK_DUMMY_WRITE        = 1 &lt;&lt; 1,
+        NAUTILUS_BURN_RECORDER_BLANK_DEBUG              = 1 &lt;&lt; 2,
+} NautilusBurnRecorderBlankFlags;
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2 id="NautilusBurnRecorderBlankType" role="enum">
+<title>enum NautilusBurnRecorderBlankType</title>
+<indexterm zone="NautilusBurnRecorderBlankType"><primary>NautilusBurnRecorderBlankType</primary></indexterm><programlisting>typedef enum {
+        NAUTILUS_BURN_RECORDER_BLANK_FAST,
+        NAUTILUS_BURN_RECORDER_BLANK_FULL
+} NautilusBurnRecorderBlankType;
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2 id="NautilusBurnRecorder" role="typedef">
+<title>NautilusBurnRecorder</title>
+<indexterm zone="NautilusBurnRecorder"><primary>NautilusBurnRecorder</primary></indexterm><programlisting>typedef struct NautilusBurnRecorder                NautilusBurnRecorder;
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2 id="NautilusBurnRecorderClass" role="typedef">
+<title>NautilusBurnRecorderClass</title>
+<indexterm zone="NautilusBurnRecorderClass"><primary>NautilusBurnRecorderClass</primary></indexterm><programlisting>typedef struct NautilusBurnRecorderClass           NautilusBurnRecorderClass;
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2 id="NautilusBurnRecorderPrivate" role="typedef">
+<title>NautilusBurnRecorderPrivate</title>
+<indexterm zone="NautilusBurnRecorderPrivate"><primary>NautilusBurnRecorderPrivate</primary></indexterm><programlisting>typedef struct NautilusBurnRecorderPrivate         NautilusBurnRecorderPrivate;
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2 id="NautilusBurnRecorderActions" role="enum">
+<title>enum NautilusBurnRecorderActions</title>
+<indexterm zone="NautilusBurnRecorderActions"><primary>NautilusBurnRecorderActions</primary></indexterm><programlisting>typedef enum {
+        NAUTILUS_BURN_RECORDER_ACTION_PREPARING_WRITE,
+        NAUTILUS_BURN_RECORDER_ACTION_WRITING,
+        NAUTILUS_BURN_RECORDER_ACTION_FIXATING,
+        NAUTILUS_BURN_RECORDER_ACTION_BLANKING
+} NautilusBurnRecorderActions;
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2 id="NautilusBurnRecorderMedia" role="enum">
+<title>enum NautilusBurnRecorderMedia</title>
+<indexterm zone="NautilusBurnRecorderMedia"><primary>NautilusBurnRecorderMedia</primary></indexterm><programlisting>typedef enum {
+        NAUTILUS_BURN_RECORDER_MEDIA_CD,
+        NAUTILUS_BURN_RECORDER_MEDIA_DVD,
+} NautilusBurnRecorderMedia;
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2 id="progress-changed" role="function">
+<title>progress_changed ()</title>
+<indexterm zone="progress-changed"><primary>progress_changed</primary></indexterm><programlisting><link linkend="void">void</link>                progress_changed                    (<link linkend="NautilusBurnRecorder">NautilusBurnRecorder</link> *recorder,
+                                                         <link linkend="gdouble">gdouble</link> fraction,
+                                                         long <link linkend="seconds">seconds</link> );</programlisting>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>recorder</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>fraction</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>Param3</parameter>&nbsp;:</term>
+<listitem><simpara>
+
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="action-changed" role="function">
+<title>action_changed ()</title>
+<indexterm zone="action-changed"><primary>action_changed</primary></indexterm><programlisting><link linkend="void">void</link>                action_changed                      (<link linkend="NautilusBurnRecorder">NautilusBurnRecorder</link> *recorder,
+                                                         <link linkend="NautilusBurnRecorderActions">NautilusBurnRecorderActions</link> action,
+                                                         <link linkend="NautilusBurnRecorderMedia">NautilusBurnRecorderMedia</link> media);</programlisting>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>recorder</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>action</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>media</parameter>&nbsp;:</term>
+<listitem><simpara>
+
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="animation-changed" role="function">
+<title>animation_changed ()</title>
+<indexterm zone="animation-changed"><primary>animation_changed</primary></indexterm><programlisting><link linkend="void">void</link>                animation_changed                   (<link linkend="NautilusBurnRecorder">NautilusBurnRecorder</link> *recorder,
+                                                         <link linkend="gboolean">gboolean</link> spinning);</programlisting>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>recorder</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>spinning</parameter>&nbsp;:</term>
+<listitem><simpara>
+
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="insert-cd-request" role="function">
+<title>insert_cd_request ()</title>
+<indexterm zone="insert-cd-request"><primary>insert_cd_request</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>            insert_cd_request                   (<link linkend="NautilusBurnRecorder">NautilusBurnRecorder</link> *recorder,
+                                                         <link linkend="gboolean">gboolean</link> is_reload,
+                                                         <link linkend="gboolean">gboolean</link> can_rewrite,
+                                                         <link linkend="gboolean">gboolean</link> busy);</programlisting>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>recorder</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>is_reload</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>can_rewrite</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>busy</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara>
+
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="warn-data-loss" role="function">
+<title>warn_data_loss ()</title>
+<indexterm zone="warn-data-loss"><primary>warn_data_loss</primary></indexterm><programlisting><link linkend="int">int</link>                 warn_data_loss                      (<link linkend="NautilusBurnRecorder">NautilusBurnRecorder</link> *recorder);</programlisting>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>recorder</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara>
+
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="nautilus-burn-recorder-new" role="function">
+<title>nautilus_burn_recorder_new ()</title>
+<indexterm zone="nautilus-burn-recorder-new"><primary>nautilus_burn_recorder_new</primary></indexterm><programlisting><link linkend="NautilusBurnRecorder">NautilusBurnRecorder</link>* nautilus_burn_recorder_new        (void);</programlisting>
+<para>
+Create a new <link linkend="NautilusBurnRecorder"><type>NautilusBurnRecorder</type></link>.</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> The new recorder.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="nautilus-burn-recorder-write-tracks" role="function">
+<title>nautilus_burn_recorder_write_tracks ()</title>
+<indexterm zone="nautilus-burn-recorder-write-tracks"><primary>nautilus_burn_recorder_write_tracks</primary></indexterm><programlisting><link linkend="int">int</link>                 nautilus_burn_recorder_write_tracks (<link linkend="NautilusBurnRecorder">NautilusBurnRecorder</link> *recorder,
+                                                         <link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive,
+                                                         <link linkend="GList">GList</link> *tracks,
+                                                         <link linkend="int">int</link> speed,
+                                                         <link linkend="NautilusBurnRecorderWriteFlags">NautilusBurnRecorderWriteFlags</link> flags,
+                                                         <link linkend="GError">GError</link> **error);</programlisting>
+<para>
+Write tracks to the specified drive.</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>recorder</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnRecorder"><type>NautilusBurnRecorder</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link> to write to
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>tracks</parameter>&nbsp;:</term>
+<listitem><simpara> list of tracks to write
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>speed</parameter>&nbsp;:</term>
+<listitem><simpara> speed at which to write data
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>flags</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnRecorderWriteFlags"><type>NautilusBurnRecorderWriteFlags</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>error</parameter>&nbsp;:</term>
+<listitem><simpara> return location for errors
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> <link linkend="NautilusBurnRecorderResult"><type>NautilusBurnRecorderResult</type></link>
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="nautilus-burn-recorder-blank-disc" role="function">
+<title>nautilus_burn_recorder_blank_disc ()</title>
+<indexterm zone="nautilus-burn-recorder-blank-disc"><primary>nautilus_burn_recorder_blank_disc</primary></indexterm><programlisting><link linkend="int">int</link>                 nautilus_burn_recorder_blank_disc   (<link linkend="NautilusBurnRecorder">NautilusBurnRecorder</link> *recorder,
+                                                         <link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive,
+                                                         <link linkend="NautilusBurnRecorderBlankType">NautilusBurnRecorderBlankType</link> type,
+                                                         <link linkend="NautilusBurnRecorderBlankFlags">NautilusBurnRecorderBlankFlags</link> flags,
+                                                         <link linkend="GError">GError</link> **error);</programlisting>
+<para>
+Blank the media in the specified drive.</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>recorder</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnRecorder"><type>NautilusBurnRecorder</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link> to use
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>type</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnRecorderBlankType"><type>NautilusBurnRecorderBlankType</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>flags</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnRecorderBlankFlags"><type>NautilusBurnRecorderBlankFlags</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>error</parameter>&nbsp;:</term>
+<listitem><simpara> return location for errors
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> <link linkend="NautilusBurnRecorderResult"><type>NautilusBurnRecorderResult</type></link>
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="nautilus-burn-recorder-cancel" role="function">
+<title>nautilus_burn_recorder_cancel ()</title>
+<indexterm zone="nautilus-burn-recorder-cancel"><primary>nautilus_burn_recorder_cancel</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>            nautilus_burn_recorder_cancel       (<link linkend="NautilusBurnRecorder">NautilusBurnRecorder</link> *recorder,
+                                                         <link linkend="gboolean">gboolean</link> skip_if_dangerous);</programlisting>
+<para>
+Cancel active writing process.</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>recorder</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnRecorder"><type>NautilusBurnRecorder</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>skip_if_dangerous</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> <link linkend="TRUE:CAPS"><literal>TRUE</literal></link> if succesfully cancelled, <link linkend="FALSE:CAPS"><literal>FALSE</literal></link> otherwise
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="nautilus-burn-recorder-track-free" role="function">
+<title>nautilus_burn_recorder_track_free ()</title>
+<indexterm zone="nautilus-burn-recorder-track-free"><primary>nautilus_burn_recorder_track_free</primary></indexterm><programlisting><link linkend="void">void</link>                nautilus_burn_recorder_track_free   (<link linkend="NautilusBurnRecorderTrack">NautilusBurnRecorderTrack</link> *track);</programlisting>
+<para>
+Free track data.</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>track</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnRecorderTrack"><type>NautilusBurnRecorderTrack</type></link>
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+
+</refsect1>
+
+<refsect1 id="nautilus-cd-burner-nautilus-burn-recorder.signal-details" role="signals">
+<title role="signals.title">Signal Details</title>
+<refsect2 id="NautilusBurnRecorder-action-changed"><title>The <literal>&quot;action-changed&quot;</literal> signal</title>
+<indexterm zone="NautilusBurnRecorder-action-changed"><primary>NautilusBurnRecorder::action-changed</primary></indexterm><programlisting><link linkend="void">void</link>                user_function                      (<link linkend="NautilusBurnRecorder">NautilusBurnRecorder</link> *nautilusburnrecorder,
+                                                        <link linkend="gint">gint</link>                  arg1,
+                                                        <link linkend="gint">gint</link>                  arg2,
+                                                        <link linkend="gpointer">gpointer</link>              user_data)                 : Run Last</programlisting>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>nautilusburnrecorder</parameter>&nbsp;:</term>
+<listitem><simpara>the object which received the signal.
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>arg1</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>arg2</parameter>&nbsp;:</term>
+<listitem><simpara>
+
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>user_data</parameter>&nbsp;:</term>
+<listitem><simpara>user data set when the signal handler was connected.</simpara></listitem></varlistentry>
+</variablelist></refsect2><refsect2 id="NautilusBurnRecorder-animation-changed"><title>The <literal>&quot;animation-changed&quot;</literal> signal</title>
+<indexterm zone="NautilusBurnRecorder-animation-changed"><primary>NautilusBurnRecorder::animation-changed</primary></indexterm><programlisting><link linkend="void">void</link>                user_function                      (<link linkend="NautilusBurnRecorder">NautilusBurnRecorder</link> *nautilusburnrecorder,
+                                                        <link linkend="gboolean">gboolean</link>              arg1,
+                                                        <link linkend="gpointer">gpointer</link>              user_data)                 : Run Last</programlisting>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>nautilusburnrecorder</parameter>&nbsp;:</term>
+<listitem><simpara>the object which received the signal.
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>arg1</parameter>&nbsp;:</term>
+<listitem><simpara>
+
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>user_data</parameter>&nbsp;:</term>
+<listitem><simpara>user data set when the signal handler was connected.</simpara></listitem></varlistentry>
+</variablelist></refsect2><refsect2 id="NautilusBurnRecorder-insert-media-request"><title>The <literal>&quot;insert-media-request&quot;</literal> signal</title>
+<indexterm zone="NautilusBurnRecorder-insert-media-request"><primary>NautilusBurnRecorder::insert-media-request</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>            user_function                      (<link linkend="NautilusBurnRecorder">NautilusBurnRecorder</link> *nautilusburnrecorder,
+                                                        <link linkend="gboolean">gboolean</link>              arg1,
+                                                        <link linkend="gboolean">gboolean</link>              arg2,
+                                                        <link linkend="gboolean">gboolean</link>              arg3,
+                                                        <link linkend="gpointer">gpointer</link>              user_data)                 : Run Last</programlisting>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>nautilusburnrecorder</parameter>&nbsp;:</term>
+<listitem><simpara>the object which received the signal.
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>arg1</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>arg2</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>arg3</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>user_data</parameter>&nbsp;:</term>
+<listitem><simpara>user data set when the signal handler was connected.</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara>
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2><refsect2 id="NautilusBurnRecorder-progress-changed"><title>The <literal>&quot;progress-changed&quot;</literal> signal</title>
+<indexterm zone="NautilusBurnRecorder-progress-changed"><primary>NautilusBurnRecorder::progress-changed</primary></indexterm><programlisting><link linkend="void">void</link>                user_function                      (<link linkend="NautilusBurnRecorder">NautilusBurnRecorder</link> *nautilusburnrecorder,
+                                                        <link linkend="gdouble">gdouble</link>               arg1,
+                                                        <link linkend="glong">glong</link>                 arg2,
+                                                        <link linkend="gpointer">gpointer</link>              user_data)                 : Run Last</programlisting>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>nautilusburnrecorder</parameter>&nbsp;:</term>
+<listitem><simpara>the object which received the signal.
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>arg1</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>arg2</parameter>&nbsp;:</term>
+<listitem><simpara>
+
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>user_data</parameter>&nbsp;:</term>
+<listitem><simpara>user data set when the signal handler was connected.</simpara></listitem></varlistentry>
+</variablelist></refsect2><refsect2 id="NautilusBurnRecorder-warn-data-loss"><title>The <literal>&quot;warn-data-loss&quot;</literal> signal</title>
+<indexterm zone="NautilusBurnRecorder-warn-data-loss"><primary>NautilusBurnRecorder::warn-data-loss</primary></indexterm><programlisting><link linkend="gint">gint</link>                user_function                      (<link linkend="NautilusBurnRecorder">NautilusBurnRecorder</link> *nautilusburnrecorder,
+                                                        <link linkend="gpointer">gpointer</link>              user_data)                 : Run Last</programlisting>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>nautilusburnrecorder</parameter>&nbsp;:</term>
+<listitem><simpara>the object which received the signal.
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>user_data</parameter>&nbsp;:</term>
+<listitem><simpara>user data set when the signal handler was connected.</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara>
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+</refsect1>
+
+
+
+</refentry>

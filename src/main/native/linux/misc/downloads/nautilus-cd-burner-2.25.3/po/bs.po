@@ -1,0 +1,461 @@
+# translation of nautilus-cd-burner.HEAD.po to Bosnian
+# This file is distributed under the same license as the nautilus package.
+# Copyright (C) 2004 Free Software Foundation, Inc.
+# Senad Uka <uka@linux.org.ba>, 2004.
+# Kemal Šanjta <gomez@lugzdk.ba>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: nautilus-cd-burner.HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-08-21 04:12+0200\n"
+"PO-Revision-Date: 2004-08-25 03:10+0200\n"
+"Last-Translator: Senad Uka <uka@linux.org.ba>\n"
+"Language-Team: Bosnian <lokal@linux.org.ba>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: KBabel 1.3\n"
+
+#: bacon-cd-selection.c:187
+msgid "Unnamed CDROM"
+msgstr "Neimenovan CDROM"
+
+#: burn-extension.c:64
+msgid "Unable to launch the cd burner application"
+msgstr "Ne mogu pokrenuti aplikaciju za snimanje cdova"
+
+#: burn-extension.c:66
+msgid "Can't launch cd burner"
+msgstr "Ne mogu pokrenuti cd pisač"
+
+#: burn-extension.c:146 burn-extension.c:173
+msgid "_Write to Disc..."
+msgstr "_Snimi na disk..."
+
+#: burn-extension.c:147
+msgid "Write disc image to a CD or DVD disc"
+msgstr "Snimi imidž na CD ili DVD"
+
+#: burn-extension.c:174 burn-extension.c:203
+msgid "Write contents to a CD or DVD disc"
+msgstr "Snimi sadržaj na CD ili DVD disk"
+
+#: burn-extension.c:202 cdburn.glade.h:15
+msgid "Write to Disc"
+msgstr "Snimi na disk"
+
+#: cd-drive.c:744
+#, c-format
+msgid "Unnamed SCSI Drive (%s)"
+msgstr "Neimenovani SCSI uređaj (%s)"
+
+#: cd-drive.c:1304
+msgid "File image"
+msgstr "Imidž datoteke"
+
+#. This fits the "open64" and "open"-like messages
+#: cd-recorder.c:313
+msgid "The recorder could not be accessed"
+msgstr "Ne mogu pristupiti pisaču "
+
+#: cd-recorder.c:316
+msgid "Not enough space available on the disc"
+msgstr "Nema dovoljno pšrostora na disku"
+
+#: cd-recorder.c:319 cd-recorder.c:322 cd-recorder.c:373
+msgid "The files selected did not fit on the CD"
+msgstr "Izabrane datoteke ne mogu stati na cd"
+
+#: cd-recorder.c:330
+msgid "Unhandled error, aborting"
+msgstr "Nepoznata greška, prekidam"
+
+#: cd-recorder.c:367
+msgid "The CD has already been recorded"
+msgstr "CD je već snimljen"
+
+#: cd-recorder.c:377
+msgid "All audio files must be stereo, 16-bit digital audio with 44100Hz samples"
+msgstr "Sve audio datoteke moraju biti digitalne 16 bitne, stereo sa 44100Hz semplovima"
+
+#: cd-recorder.c:384
+msgid "The system is too slow to write the CD at this speed. Try a lower speed."
+msgstr "Sistem je prespor da piše na CD ovom brzinom. Pokušajte smanjiti brzinu. "
+
+#: cd-recorder.c:503
+msgid "You can only burn 99 tracks on one disc"
+msgstr "Moguće je snimiti samo 99 staza na jedan disk"
+
+#: cdburn.glade.h:1
+msgid "    "
+msgstr "...."
+
+#: cdburn.glade.h:2
+msgid "*"
+msgstr "*"
+
+#: cdburn.glade.h:3
+msgid "<b>After Writing</b>"
+msgstr "<b>Poslije pisanja</b>"
+
+#: cdburn.glade.h:4
+msgid "<b>Information</b>"
+msgstr "<b>Informacija</b>"
+
+#: cdburn.glade.h:5
+msgid "<b>Write Options</b>"
+msgstr "<b>Opcije pisanja</b>"
+
+#: cdburn.glade.h:6
+msgid "<big><b>Writing files to disc progress</b></big>"
+msgstr "<big><b>Progres pisanja datoteka na disk</b></big>"
+
+#: cdburn.glade.h:7
+msgid "<i>Initializing...</i>"
+msgstr "<i>Inicijaliziram...</i>"
+
+#: cdburn.glade.h:8
+msgid "Data size:"
+msgstr "Veličina podataka:"
+
+#: cdburn.glade.h:9
+msgid "Disc _name:"
+msgstr "Ime di_ska:"
+
+#: cdburn.glade.h:10
+msgid "E_ject disc"
+msgstr "Iz_baci disk"
+
+#: cdburn.glade.h:11
+msgid "Label to identify disc"
+msgstr "Natpis za identifikovanje diska"
+
+#: cdburn.glade.h:12
+msgid "Select the speed to use for the write"
+msgstr "Izaberi brzinu pisanja"
+
+#: cdburn.glade.h:13
+msgid ""
+"Selected files are to be written to a CD or DVD disc. This operation may "
+"take a long time, depending on data size and write speed."
+msgstr "Snimanje izabranih datoteka na CD ili DVD treba da počne. Ova operacija može dugo trajati, zavisno od veličine podataka i brzine pisanja"
+
+#: cdburn.glade.h:14
+msgid "Write _speed:"
+msgstr "Brzina pi_sanja:"
+
+#: cdburn.glade.h:16
+msgid "Writing Files to Disc Progress"
+msgstr "Napredak pisanja datoteka na disk"
+
+#: cdburn.glade.h:17
+msgid "_Dummy write"
+msgstr "_Lažno pisanje"
+
+#: cdburn.glade.h:18
+msgid "_Reuse these files for another disc"
+msgstr "Isko_risti ove datoteke za neki drugi disk "
+
+#: cdburn.glade.h:19
+msgid "_Write"
+msgstr "_Piši"
+
+#: cdburn.glade.h:20
+msgid "_Write disc to:"
+msgstr "_Piši disk na:"
+
+#: make-iso.c:251
+msgid ""
+"Some files don't have a suitable name for a Windows-compatible CD.\n"
+"Do you want to continue with Windows compatibility disabled?"
+msgstr ""
+"Neke datoteke nemaju ime koje je pogodno za Windows-kompatibilan CD.\n"
+"Da li želite nastaviti sa isključenom Windows kompatibilnošću?"
+
+#: make-iso.c:252
+msgid "Windows compatibility"
+msgstr "Windows kompatibilnost"
+
+#: make-iso.c:576
+msgid "No files selected to write to CD."
+msgstr "Ni jedna datoteka nije izabrana za pisanje na CD"
+
+#: make-iso.c:578 nautilus-cd-burner.c:1134
+msgid "No files selected"
+msgstr "Nema izabranih datoteka"
+
+#: make-iso.c:659
+#, c-format
+msgid "Not enough space to store CD image (%ld Megabyte needed)"
+msgid_plural "Not enough space to store CD image (%ld Megabytes needed)"
+msgstr[0] "Nema dovoljno prostora da se snimi CD imidž (potreban %ld megabajt)"
+msgstr[1] "Nema dovoljno prostora da se snimi CD imidž (potrebna %ld megabajta)"
+msgstr[2] "Nema dovoljno prostora da se snimi CD imidž (potrebno %ld megabajta)"
+
+#: make-iso.c:664
+msgid "Not enough space"
+msgstr "Nema dovoljno prostora"
+
+#: make-iso.c:700
+msgid "Creating CD image"
+msgstr "Kreiram CD imidž"
+
+#: nautilus-cd-burner.c:137
+msgid " (invalid Unicode)"
+msgstr " (pogrešan Unicode)"
+
+#: nautilus-cd-burner.c:283
+msgid "Preparing to write CD"
+msgstr "Pripremam se za snimanje CD-a "
+
+#: nautilus-cd-burner.c:285
+msgid "Preparing to write DVD"
+msgstr "Pripremam se za snimanje DVD-a "
+
+#: nautilus-cd-burner.c:290
+msgid "Writing CD"
+msgstr "Pišem CD"
+
+#: nautilus-cd-burner.c:292
+msgid "Writing DVD"
+msgstr "Pišem DVD"
+
+#: nautilus-cd-burner.c:297
+msgid "Fixating CD"
+msgstr "Fiksiram CD"
+
+#: nautilus-cd-burner.c:299
+msgid "Fixating DVD"
+msgstr "Fiksiram DVD"
+
+#: nautilus-cd-burner.c:304
+msgid "Erasing CD"
+msgstr "Brišem CD"
+
+#: nautilus-cd-burner.c:306
+msgid "Erasing DVD"
+msgstr "Brišem DVD"
+
+#: nautilus-cd-burner.c:332
+msgid "Please make sure another application is not using the disc."
+msgstr "Molim vas provjerite da ni jedna druga aplikacija ne koristi disk."
+
+#: nautilus-cd-burner.c:333
+msgid "Disc is busy"
+msgstr "Disk je zauzet"
+
+#: nautilus-cd-burner.c:335
+msgid "Please insert a rewritable or blank media in the drive tray."
+msgstr "Molim vas ubacite prebrisivi ili prazan mediju u pogon."
+
+#: nautilus-cd-burner.c:336
+msgid "Insert rewritable or blank media"
+msgstr "Ubacite prebrisiv ili prazan medij"
+
+#: nautilus-cd-burner.c:338
+msgid "Please insert a blank media in the drive tray."
+msgstr "Molim ubacite prazan medij u pogon."
+
+#: nautilus-cd-burner.c:339
+msgid "Insert blank media"
+msgstr "Ubacite prazan medij"
+
+#: nautilus-cd-burner.c:341
+msgid "Please replace the in-drive media by a rewritable or blank media."
+msgstr "Molim vas zamijenite medij koji je trenutno u pogonu sa prebrisivim ili praznim medijem. "
+
+#: nautilus-cd-burner.c:342
+msgid "Reload rewritable or blank media"
+msgstr "Ponovo učitaj prebrisivi ili prazan medij"
+
+#: nautilus-cd-burner.c:344
+msgid "Please replace the in-drive media by a blank media."
+msgstr "Molim vas zamijenite medij koji je u pogonu praznim medijem."
+
+#: nautilus-cd-burner.c:345
+msgid "Reload blank media"
+msgstr "Ponovo učitaj prazan medij"
+
+#: nautilus-cd-burner.c:373
+msgid "Disc writing error details"
+msgstr "Detalji o greškama pri pisanju"
+
+#: nautilus-cd-burner.c:379
+msgid "Detailed error output from cdrecord:"
+msgstr "Detaljna poruka o greški od programa \"cdrecord\":"
+
+#: nautilus-cd-burner.c:420
+#, c-format
+msgid ""
+"There was an error writing to the CD:\n"
+"%s"
+msgstr ""
+"Desila se greška prilikom pisanja na CD:\n"
+"%s"
+
+#: nautilus-cd-burner.c:421
+msgid "There was an error writing to the CD"
+msgstr "Desila se greška prilikom pisanja na CD"
+
+#: nautilus-cd-burner.c:422
+msgid "Error writing to CD"
+msgstr "Ne mogu pisati na CD"
+
+#: nautilus-cd-burner.c:428
+msgid "_Details"
+msgstr "_Detalji"
+
+#: nautilus-cd-burner.c:501
+#, c-format
+msgid ""
+"A file named \"%s\" already exists.\n"
+"Do you want to overwrite it?"
+msgstr ""
+"Datoteka pod imenom \"%s\" već postoji.\n"
+"Želite li prepisati ovu datoteku?"
+
+#: nautilus-cd-burner.c:503 nautilus-cd-burner.c:512
+msgid "_Overwrite"
+msgstr "_Prepiši"
+
+#: nautilus-cd-burner.c:530
+msgid "Choose a filename for the cdrom image"
+msgstr "Izaberite ime za imidž cdroma "
+
+#: nautilus-cd-burner.c:585
+#, c-format
+msgid "You do not have permissions to overwrite that file (%s)."
+msgstr "Nemate dozvolu da prepišete tu datoteku (%s)."
+
+#: nautilus-cd-burner.c:586 nautilus-cd-burner.c:599
+msgid "File image creation failed"
+msgstr "Kreiranje imidž datoteke nije uspjelo"
+
+#: nautilus-cd-burner.c:598
+#, c-format
+msgid "You do not have permissions to create that file (%s)."
+msgstr "Nemate dozvolu da kreirate tu datoteku (%s)."
+
+#: nautilus-cd-burner.c:661
+#, c-format
+msgid "Completed writing %s"
+msgstr "Završeno pisanje %s"
+
+#: nautilus-cd-burner.c:719
+msgid "Complete"
+msgstr "Završeno"
+
+#: nautilus-cd-burner.c:782
+msgid "Maximum Possible"
+msgstr "Maksimalno"
+
+#: nautilus-cd-burner.c:859
+#, c-format
+msgid "%d MB"
+msgstr "%d MB"
+
+#.
+#. translators: see strftime man page for meaning of %b, %d and %Y
+#. the maximum length for this field is 32 bytes
+#.
+#: nautilus-cd-burner.c:887
+msgid "Personal Data, %b %d, %Y"
+msgstr "Lični podaci, %d.%b.%Y"
+
+#: nautilus-cd-burner.c:920
+msgid "Cancel write"
+msgstr "Odgodi pisanje"
+
+#: nautilus-cd-burner.c:921
+msgid ""
+"Are you sure you want to cancel the disc write operation?\n"
+"Some optical media drives may require that you restart the machine to get it "
+"working again."
+msgstr ""
+"Da li ste sigurni da želite odgoditi operaciju pisanja diska? "
+"Nekei optički pogoni mogu zahtjevati da resetujete kompjuter da ponovo prorade. "
+
+#: nautilus-cd-burner.c:925
+msgid "Continue"
+msgstr "Nastavi"
+
+#: nautilus-cd-burner.c:977
+#, c-format
+msgid "There was a problem displaying the help contents: %s."
+msgstr "Problem pri prikazivanju sadržaja pomoći: %s."
+
+#: nautilus-cd-burner.c:978
+msgid "Cannot display help"
+msgstr "Ne mogu prikazati help"
+
+#: nautilus-cd-burner.c:1093
+msgid "Too many parameters"
+msgstr "Previše parametara"
+
+#: nautilus-cd-burner.c:1094
+msgid "Too many parameters were passed to the application."
+msgstr "Previše parametara je poslano aplikaciji."
+
+#: nautilus-cd-burner.c:1116
+#, c-format
+msgid "The file '%s' is not a valid CD image."
+msgstr "Datoteka  \"%s\" nije ispravan CD imidž"
+
+#: nautilus-cd-burner.c:1119
+msgid "Not a valid CD image"
+msgstr "Neispravan CD imidž"
+
+#: nautilus-cd-burner.c:1135
+msgid ""
+"You need to copy the files you want to write to disc to the CD/DVD Creator "
+"window. Would you like to open it now?"
+msgstr "Morate kopirati datoteke koje želite pisati na disk u CD/DVD Creator program. Da li želite da ga pokrenete sada ? "
+
+#: nautilus-cd-burner.c:1137
+msgid "Open CD/DVD Creator"
+msgstr "Otvori CD/DVD Creator program"
+
+#: ncb.schemas.in.h:1
+msgid "Default burn speed"
+msgstr "Podrazumjevana brzina pisanja"
+
+#: ncb.schemas.in.h:2
+msgid "Default speed at which the media will be written."
+msgstr "Podrazumjevana brzina pisanja medija"
+
+#: ncb.schemas.in.h:3
+msgid "Directory for the temporary ISO images"
+msgstr "Direktorij za privremene ISO imidže "
+
+#: ncb.schemas.in.h:4
+msgid ""
+"Directory used for the temporary ISO images, leave blank to use the default "
+"system temporary directory."
+msgstr "Direktorij koji se koristi za privremene ISO imidže, ostavite prazno da koristim podrazumijevani sistemski direktorij za privremene datoteke. "
+
+#: ncb.schemas.in.h:5
+msgid "Enable Burnproof option"
+msgstr "Uključi sigurno pisanje"
+
+#: ncb.schemas.in.h:6
+msgid "Enable debug"
+msgstr "Omogući ispravljanje grešaka"
+
+#: ncb.schemas.in.h:7
+msgid "Enable overburn"
+msgstr "Ukjluči pisanje preko preporučene granice na mediju (overburn)"
+
+#: ncb.schemas.in.h:8
+msgid "Whether to allow the data to exceed the size of the physical medium."
+msgstr "Da li da dozvolite podacima da pređu veličinu fizičkog medija. "
+
+#: ncb.schemas.in.h:9
+msgid "Whether to enable the debugging for CD Recording."
+msgstr "Da li da omogućite ispravljanje grešaka u programu (debug) za pisanje CDova"
+
+#: ncb.schemas.in.h:10
+msgid "Whether to use the Burnproof option available on some recorders."
+msgstr "Da li da koristite opciju sigurnog pisanja (burnproof) koju podržavaju neki pisači."
+

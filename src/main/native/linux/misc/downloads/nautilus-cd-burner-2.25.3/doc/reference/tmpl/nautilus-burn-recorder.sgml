@@ -1,0 +1,306 @@
+<!-- ##### SECTION Title ##### -->
+nautilus-burn-recorder
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### MACRO NAUTILUS_BURN_RECORDER_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION nautilus_burn_recorder_error_quark ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### ENUM NautilusBurnRecorderError ##### -->
+<para>
+
+</para>
+
+@NAUTILUS_BURN_RECORDER_ERROR_INTERNAL: 
+@NAUTILUS_BURN_RECORDER_ERROR_GENERAL: 
+
+<!-- ##### USER_FUNCTION CancelFunc ##### -->
+<para>
+
+</para>
+
+@data: 
+
+
+<!-- ##### ENUM NautilusBurnRecorderResult ##### -->
+<para>
+
+</para>
+
+@NAUTILUS_BURN_RECORDER_RESULT_ERROR: 
+@NAUTILUS_BURN_RECORDER_RESULT_CANCEL: 
+@NAUTILUS_BURN_RECORDER_RESULT_FINISHED: 
+@NAUTILUS_BURN_RECORDER_RESULT_RETRY: 
+
+<!-- ##### ENUM NautilusBurnRecorderResponse ##### -->
+<para>
+
+</para>
+
+@NAUTILUS_BURN_RECORDER_RESPONSE_NONE: 
+@NAUTILUS_BURN_RECORDER_RESPONSE_CANCEL: 
+@NAUTILUS_BURN_RECORDER_RESPONSE_ERASE: 
+@NAUTILUS_BURN_RECORDER_RESPONSE_RETRY: 
+
+<!-- ##### ENUM NautilusBurnRecorderTrackType ##### -->
+<para>
+
+</para>
+
+@NAUTILUS_BURN_RECORDER_TRACK_TYPE_UNKNOWN: 
+@NAUTILUS_BURN_RECORDER_TRACK_TYPE_AUDIO: 
+@NAUTILUS_BURN_RECORDER_TRACK_TYPE_DATA: 
+@NAUTILUS_BURN_RECORDER_TRACK_TYPE_CUE: 
+@NAUTILUS_BURN_RECORDER_TRACK_TYPE_GRAFT_LIST: 
+
+<!-- ##### TYPEDEF NautilusBurnRecorderTrack ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ENUM NautilusBurnRecorderWriteFlags ##### -->
+<para>
+
+</para>
+
+@NAUTILUS_BURN_RECORDER_WRITE_NONE: 
+@NAUTILUS_BURN_RECORDER_WRITE_EJECT: 
+@NAUTILUS_BURN_RECORDER_WRITE_BLANK: 
+@NAUTILUS_BURN_RECORDER_WRITE_DUMMY_WRITE: 
+@NAUTILUS_BURN_RECORDER_WRITE_DISC_AT_ONCE: 
+@NAUTILUS_BURN_RECORDER_WRITE_DEBUG: 
+@NAUTILUS_BURN_RECORDER_WRITE_OVERBURN: 
+@NAUTILUS_BURN_RECORDER_WRITE_BURNPROOF: 
+@NAUTILUS_BURN_RECORDER_WRITE_JOLIET: 
+@NAUTILUS_BURN_RECORDER_WRITE_UDF: 
+
+<!-- ##### ENUM NautilusBurnRecorderBlankFlags ##### -->
+<para>
+
+</para>
+
+@NAUTILUS_BURN_RECORDER_BLANK_NONE: 
+@NAUTILUS_BURN_RECORDER_BLANK_DUMMY_WRITE: 
+@NAUTILUS_BURN_RECORDER_BLANK_DEBUG: 
+
+<!-- ##### ENUM NautilusBurnRecorderBlankType ##### -->
+<para>
+
+</para>
+
+@NAUTILUS_BURN_RECORDER_BLANK_FAST: 
+@NAUTILUS_BURN_RECORDER_BLANK_FULL: 
+
+<!-- ##### TYPEDEF NautilusBurnRecorder ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL NautilusBurnRecorder::action-changed ##### -->
+<para>
+
+</para>
+
+@nautilusburnrecorder: the object which received the signal.
+@arg1: 
+@arg2: 
+
+<!-- ##### SIGNAL NautilusBurnRecorder::animation-changed ##### -->
+<para>
+
+</para>
+
+@nautilusburnrecorder: the object which received the signal.
+@arg1: 
+
+<!-- ##### SIGNAL NautilusBurnRecorder::insert-media-request ##### -->
+<para>
+
+</para>
+
+@nautilusburnrecorder: the object which received the signal.
+@arg1: 
+@arg2: 
+@arg3: 
+@Returns: 
+
+<!-- ##### SIGNAL NautilusBurnRecorder::progress-changed ##### -->
+<para>
+
+</para>
+
+@nautilusburnrecorder: the object which received the signal.
+@arg1: 
+@arg2: 
+
+<!-- ##### SIGNAL NautilusBurnRecorder::warn-data-loss ##### -->
+<para>
+
+</para>
+
+@nautilusburnrecorder: the object which received the signal.
+@Returns: 
+
+<!-- ##### TYPEDEF NautilusBurnRecorderClass ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### TYPEDEF NautilusBurnRecorderPrivate ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ENUM NautilusBurnRecorderActions ##### -->
+<para>
+
+</para>
+
+@NAUTILUS_BURN_RECORDER_ACTION_PREPARING_WRITE: 
+@NAUTILUS_BURN_RECORDER_ACTION_WRITING: 
+@NAUTILUS_BURN_RECORDER_ACTION_FIXATING: 
+@NAUTILUS_BURN_RECORDER_ACTION_BLANKING: 
+
+<!-- ##### ENUM NautilusBurnRecorderMedia ##### -->
+<para>
+
+</para>
+
+@NAUTILUS_BURN_RECORDER_MEDIA_CD: 
+@NAUTILUS_BURN_RECORDER_MEDIA_DVD: 
+
+<!-- ##### FUNCTION progress_changed ##### -->
+<para>
+
+</para>
+
+@recorder: 
+@fraction: 
+@Param3: 
+
+
+<!-- ##### FUNCTION action_changed ##### -->
+<para>
+
+</para>
+
+@recorder: 
+@action: 
+@media: 
+
+
+<!-- ##### FUNCTION animation_changed ##### -->
+<para>
+
+</para>
+
+@recorder: 
+@spinning: 
+
+
+<!-- ##### FUNCTION insert_cd_request ##### -->
+<para>
+
+</para>
+
+@recorder: 
+@is_reload: 
+@can_rewrite: 
+@busy: 
+@Returns: 
+
+
+<!-- ##### FUNCTION warn_data_loss ##### -->
+<para>
+
+</para>
+
+@recorder: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_recorder_new ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_recorder_write_tracks ##### -->
+<para>
+
+</para>
+
+@recorder: 
+@drive: 
+@tracks: 
+@speed: 
+@flags: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_recorder_blank_disc ##### -->
+<para>
+
+</para>
+
+@recorder: 
+@drive: 
+@type: 
+@flags: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_recorder_cancel ##### -->
+<para>
+
+</para>
+
+@recorder: 
+@skip_if_dangerous: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nautilus_burn_recorder_track_free ##### -->
+<para>
+
+</para>
+
+@track: 
+
+

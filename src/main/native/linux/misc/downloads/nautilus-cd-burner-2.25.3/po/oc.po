@@ -1,0 +1,978 @@
+# Translation of oc.po to Occitan
+# Occitan translation of nautilus-cd-burner.
+# Copyright (C) 2002-2006, 2007 Free Software Foundation, Inc.
+# This file is distributed under the same license as the nautilus-cd-burner package.
+#
+# Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>, 2006-2008
+msgid ""
+msgstr ""
+"Project-Id-Version: oc\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-06-09 15:21+0200\n"
+"PO-Revision-Date: 2008-01-29 19:20+0100\n"
+"Last-Translator: Yannig Marchegay (Kokoyaya) <yannig@marchegay.org>\n"
+"Language-Team: Occitan <ubuntu-l10n-oci@lists.ubuntu.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../data/nautilus-cd-burner.desktop.in.h:1
+#: ../data/nautilus-cd-burner-open-iso.desktop.in.h:1
+#: ../src/ncb-operation.c:1635
+msgid "CD/DVD Creator"
+msgstr "Creator de CD/DVD"
+
+#: ../data/nautilus-cd-burner.desktop.in.h:2
+msgid "Open a folder into which you can drag files to burn to a CD or DVD"
+msgstr ""
+
+#: ../data/nautilus-cd-burner-open-iso.desktop.in.h:2
+msgid "Open the CD/DVD Creator"
+msgstr "Dobrir lo creator de CD/DVD"
+
+#: ../data/nautilus-cd-burner.glade.h:1
+msgid "    "
+msgstr "    "
+
+#: ../data/nautilus-cd-burner.glade.h:2
+msgid "<b>Information</b>"
+msgstr "<b>Entresenhas</b>"
+
+#: ../data/nautilus-cd-burner.glade.h:3
+msgid "<b>Write Options</b>"
+msgstr "<b>Opcions d'escritura</b>"
+
+#: ../data/nautilus-cd-burner.glade.h:4
+msgid "<big><b>Some files have invalid filenames</b></big>"
+msgstr "<big><b>De fichièrs a de noms invalids</b></big>"
+
+#: ../data/nautilus-cd-burner.glade.h:5
+msgid "<big><b>Writing files to disc</b></big>"
+msgstr "<big><b>Escritura dels fichièrs sul disc</b></big>"
+
+#: ../data/nautilus-cd-burner.glade.h:6
+msgid "<i>Initializing...</i>"
+msgstr ""
+
+#: ../data/nautilus-cd-burner.glade.h:7
+msgid "Data size:"
+msgstr "Talha de las donadas :"
+
+#: ../data/nautilus-cd-burner.glade.h:8
+msgid "Disc _name:"
+msgstr "Nom del _disc :"
+
+#: ../data/nautilus-cd-burner.glade.h:9
+msgid "Label to identify disc"
+msgstr ""
+
+#: ../data/nautilus-cd-burner.glade.h:10
+msgid ""
+"The following filenames are not valid.  Please provide new names for each of "
+"them."
+msgstr ""
+
+#: ../data/nautilus-cd-burner.glade.h:11
+msgid "Write _speed:"
+msgstr "_Velocitat d'escritura :"
+
+#: ../data/nautilus-cd-burner.glade.h:12
+msgid "Write disc _to:"
+msgstr "Escriure lo disc _dins :"
+
+#: ../data/nautilus-cd-burner.glade.h:13 ../src/ncb-operation.c:902
+msgid "Writing Files to Disc"
+msgstr "Escritura de fichièrs sul disc"
+
+#: ../data/nautilus-cd-burner.glade.h:14
+msgid "_Dummy write"
+msgstr ""
+
+#: ../data/nautilus-cd-burner.schemas.in.h:1
+msgid "Default burn speed"
+msgstr ""
+
+#: ../data/nautilus-cd-burner.schemas.in.h:2
+msgid "Default speed at which the media will be written."
+msgstr ""
+
+#: ../data/nautilus-cd-burner.schemas.in.h:3
+msgid "Directory for the temporary ISO images"
+msgstr ""
+
+#: ../data/nautilus-cd-burner.schemas.in.h:4
+msgid ""
+"Directory used for the temporary ISO images, leave blank to use the default "
+"system temporary directory."
+msgstr ""
+
+#: ../data/nautilus-cd-burner.schemas.in.h:5
+msgid "Enable Burnproof option"
+msgstr ""
+
+#: ../data/nautilus-cd-burner.schemas.in.h:6
+msgid "Enable debug"
+msgstr ""
+
+#: ../data/nautilus-cd-burner.schemas.in.h:7
+msgid "Enable overburn"
+msgstr ""
+
+#: ../data/nautilus-cd-burner.schemas.in.h:8
+msgid "Whether to allow the data to exceed the size of the physical medium."
+msgstr ""
+
+#: ../data/nautilus-cd-burner.schemas.in.h:9
+msgid "Whether to enable the debugging for CD Recording."
+msgstr ""
+
+#: ../data/nautilus-cd-burner.schemas.in.h:10
+msgid "Whether to use the Burnproof option available on some recorders."
+msgstr ""
+
+#: ../src/burn-extension.c:141 ../src/burn-extension.c:145
+msgid "Unable to launch the cd burner application"
+msgstr ""
+
+#: ../src/burn-extension.c:452 ../src/burn-extension.c:462
+#: ../src/burn-extension.c:555
+msgid "_Write to Disc..."
+msgstr "_Escriure sul disc..."
+
+#: ../src/burn-extension.c:453
+msgid "Write disc image to a CD or DVD disc"
+msgstr ""
+
+#: ../src/burn-extension.c:463
+msgid "Write disc image cuesheet to a CD or DVD disc"
+msgstr ""
+
+#: ../src/burn-extension.c:514
+msgid "_Copy Disc..."
+msgstr "_Copiar lo disc..."
+
+#: ../src/burn-extension.c:515
+msgid "Create a copy of this CD or DVD disc"
+msgstr "Crear una còpia d'aqueste CD o DVD"
+
+#: ../src/burn-extension.c:556 ../src/nautilus-burn-bar.c:151
+msgid "Write contents to a CD or DVD disc"
+msgstr ""
+
+#: ../src/make-iso.c:306
+msgid "Disable Microsoft Windows compatibility?"
+msgstr ""
+
+#: ../src/make-iso.c:309
+msgid ""
+"Some files don't have a suitable name for a Windows-compatible CD.\n"
+"Do you want to continue with Windows compatibility disabled?"
+msgstr ""
+
+#: ../src/make-iso.c:310
+msgid "Windows compatibility"
+msgstr "Compatibilitat Windows"
+
+#: ../src/make-iso.c:707
+msgid " (invalid Unicode)"
+msgstr ""
+
+#: ../src/make-iso.c:868
+#, c-format
+msgid ""
+"The selected location does not have enough space to store the disc image (%s "
+"MiB needed)."
+msgstr ""
+
+#: ../src/make-iso.c:1012 ../src/make-iso.c:1402
+#, c-format
+msgid "Could not run sub process: %s."
+msgstr ""
+
+#: ../src/make-iso.c:1039
+#, c-format
+msgid "The operation was cancelled by the user."
+msgstr ""
+
+#: ../src/make-iso.c:1140
+#, c-format
+msgid ""
+"Some files have invalid filenames: \n"
+"%s"
+msgstr ""
+
+#: ../src/make-iso.c:1153
+msgid "Unknown character encoding."
+msgstr ""
+
+#: ../src/make-iso.c:1157
+msgid "There is no space left on the device."
+msgstr ""
+
+#. TODO: get filename from error message
+#: ../src/make-iso.c:1162
+msgid "File too large for filesystem."
+msgstr ""
+
+#: ../src/make-iso.c:1215
+#, c-format
+msgid "The label for the image is too long."
+msgstr ""
+
+#: ../src/make-iso.c:1323
+#, c-format
+msgid "There are no files to write to disc."
+msgstr "I a pas cap de fichièr d'escriure sul disc."
+
+#: ../src/make-iso.c:1674
+msgid "Not a valid disc image."
+msgstr ""
+
+#: ../src/nautilus-burn-bar.c:137
+msgid "CD/DVD Creator Folder"
+msgstr ""
+
+#: ../src/nautilus-burn-bar.c:141 ../src/ncb-selection-dialog.c:175
+msgid "Write to Disc"
+msgstr "Escriure sul disc"
+
+#: ../src/nautilus-burn-drive.c:1252
+msgid "Could not determine media type because CD drive is busy"
+msgstr ""
+
+#: ../src/nautilus-burn-drive.c:1254
+msgid "Couldn't open media"
+msgstr ""
+
+#: ../src/nautilus-burn-drive.c:1256
+msgid "Unknown Media"
+msgstr ""
+
+#: ../src/nautilus-burn-drive.c:1258
+msgid "Commercial CD or Audio CD"
+msgstr ""
+
+#: ../src/nautilus-burn-drive.c:1260
+msgid "CD-R"
+msgstr "CD-R"
+
+#: ../src/nautilus-burn-drive.c:1262
+msgid "CD-RW"
+msgstr "CD-RW"
+
+#: ../src/nautilus-burn-drive.c:1264
+msgid "DVD"
+msgstr "DVD"
+
+#: ../src/nautilus-burn-drive.c:1266
+msgid "DVD-R, or DVD-RAM"
+msgstr "DVD-R o DVD-RAM"
+
+#: ../src/nautilus-burn-drive.c:1268
+msgid "DVD-RW"
+msgstr "DVD-RW"
+
+#: ../src/nautilus-burn-drive.c:1270
+msgid "DVD-RAM"
+msgstr "DVD-RAM"
+
+#: ../src/nautilus-burn-drive.c:1272
+msgid "DVD+R"
+msgstr "DVD+R"
+
+#: ../src/nautilus-burn-drive.c:1274
+msgid "DVD+RW"
+msgstr "DVD+RW"
+
+#: ../src/nautilus-burn-drive.c:1276
+msgid "DVD+R DL"
+msgstr "DVD+R DL"
+
+#: ../src/nautilus-burn-drive.c:1281
+msgid "Broken media type"
+msgstr ""
+
+#: ../src/nautilus-burn-drive-monitor.c:452
+msgid "File image"
+msgstr "Fichièr imatge"
+
+#: ../src/nautilus-burn-drive-selection.c:107 ../src/ncb-selection.c:1022
+msgid "Drive"
+msgstr "Legidor"
+
+#: ../src/nautilus-burn-drive-selection.c:237
+msgid "Unnamed CD/DVD Drive"
+msgstr "Legidor de CD/DVD sens nom"
+
+#: ../src/nautilus-burn-recorder.c:602
+msgid "The recorder could not be accessed."
+msgstr ""
+
+#: ../src/nautilus-burn-recorder.c:606
+msgid "Not enough space available on the disc."
+msgstr ""
+
+#: ../src/nautilus-burn-recorder.c:610 ../src/nautilus-burn-recorder.c:614
+msgid "The files selected did not fit on the DVD."
+msgstr ""
+
+#: ../src/nautilus-burn-recorder.c:626
+msgid "The target DVD drive is still in use."
+msgstr ""
+
+#: ../src/nautilus-burn-recorder.c:632
+msgid "Unhandled error, aborting"
+msgstr ""
+
+#: ../src/nautilus-burn-recorder.c:697
+msgid "The CD has already been recorded."
+msgstr "Lo CD es ja estat gravat."
+
+#: ../src/nautilus-burn-recorder.c:717
+msgid "The files selected did not fit on the CD."
+msgstr ""
+
+#: ../src/nautilus-burn-recorder.c:721
+msgid ""
+"All audio files must be stereo, 16-bit digital audio with 44100Hz samples."
+msgstr ""
+
+#: ../src/nautilus-burn-recorder.c:745
+msgid "Error while writing to disc.  Try a lower speed."
+msgstr ""
+
+#: ../src/nautilus-burn-recorder.c:750
+msgid ""
+"The system is too slow to write the CD at this speed. Try a lower speed."
+msgstr ""
+
+#: ../src/nautilus-burn-recorder.c:884
+#, c-format
+msgid "You can only burn 99 tracks on one disc"
+msgstr ""
+
+#: ../src/nautilus-burn-recorder.c:891
+#, c-format
+msgid "No tracks given to write"
+msgstr ""
+
+#: ../src/nautilus-burn-recorder.c:896
+msgid "Burning CD/DVD"
+msgstr ""
+
+#: ../src/nautilus-burn-recorder.c:1101
+#, c-format
+msgid "Can only use growisofs on a single track"
+msgstr ""
+
+#: ../src/nautilus-burn-recorder.c:1112
+#, c-format
+msgid "Can only use growisofs on a data or graft list track"
+msgstr ""
+
+#: ../src/nautilus-burn-recorder.c:1480
+msgid "Blanking CD"
+msgstr ""
+
+#: ../src/nautilus-burn-recorder.c:1550
+msgid "Blanking DVD"
+msgstr ""
+
+#: ../src/nautilus-burn-process.c:497
+#, c-format
+msgid "Could not run the necessary command: %s"
+msgstr ""
+
+#: ../src/nautilus-cd-burner.c:157
+#, c-format
+msgid "There was a problem displaying the help contents: %s."
+msgstr ""
+
+#: ../src/nautilus-cd-burner.c:158
+msgid "Cannot display help"
+msgstr "Impossible de visualizar l'ajuda"
+
+#: ../src/nautilus-cd-burner.c:293
+msgid "Use CD/DVD device as source instead of burn:///"
+msgstr ""
+
+#: ../src/nautilus-cd-burner.c:293
+msgid "DEVICE"
+msgstr "PERIFERIC"
+
+#: ../src/nautilus-cd-burner.c:295
+msgid "Use ISO image as source instead of burn:///"
+msgstr ""
+
+#: ../src/nautilus-cd-burner.c:295 ../src/nautilus-cd-burner.c:297
+msgid "FILENAME"
+msgstr "NOM_DE_FICHIÈR"
+
+#: ../src/nautilus-cd-burner.c:297
+msgid "Use CUE/TOC file as source instead of burn:///"
+msgstr ""
+
+#: ../src/ncb-selection.c:442
+msgid ""
+"It appears that the disc, when created, will contain a single disc image "
+"file.  Do you want to create a disc from the contents of the image or with "
+"the image file inside?"
+msgstr ""
+
+#: ../src/ncb-selection.c:445
+msgid "Create disc containing a single disc image file?"
+msgstr ""
+
+#: ../src/ncb-selection.c:448
+msgid "Create From Image"
+msgstr "Crear a partir de l'imatge"
+
+#: ../src/ncb-selection.c:450
+msgid "Create With File"
+msgstr "Crear amb un fichièr"
+
+#: ../src/ncb-selection.c:453
+msgid ""
+"It appears that the disc, when created, will contain only disc image files.  "
+"Do you want to continue and write them to the disc as files?"
+msgstr ""
+
+#: ../src/ncb-selection.c:456
+msgid "Create disc containing only disc image files?"
+msgstr ""
+
+#: ../src/ncb-selection.c:460
+msgid "Create With Files"
+msgstr "Crear amb de fichièrs"
+
+#: ../src/ncb-selection.c:491
+#, c-format
+msgid ""
+"The file '%s' is unreadable.  Do you wish to skip this file and continue?"
+msgstr ""
+
+#: ../src/ncb-selection.c:494
+msgid "Skip unreadable file?"
+msgstr ""
+
+#: ../src/ncb-selection.c:499
+msgid "Skip"
+msgstr "Sautar"
+
+#: ../src/ncb-selection.c:499
+msgid "Skip All"
+msgstr "Tot ignorar"
+
+#: ../src/ncb-selection.c:522
+#, c-format
+msgid "No files were selected."
+msgstr "Pas cap de fichièr seleccionat."
+
+#: ../src/ncb-selection.c:553
+#, c-format
+msgid "The file '%s' is not a valid disc image."
+msgstr "Lo fichièr '%s' es pas un imatge disc valid."
+
+#: ../src/ncb-selection.c:628
+#, c-format
+msgid "The specified device '%s' is not a valid CD/DVD drive."
+msgstr ""
+
+#: ../src/ncb-selection.c:652
+#, c-format
+msgid "There doesn't seem to be any media in the selected drive."
+msgstr ""
+
+#: ../src/ncb-selection.c:659
+#, c-format
+msgid "The media is blank."
+msgstr ""
+
+#: ../src/ncb-selection.c:692
+#, c-format
+msgid "File not found: %s"
+msgstr "Impossible de trobar lo fichièr : %s"
+
+#: ../src/ncb-selection.c:701
+#, c-format
+msgid "File does not appear to be a valid CUE sheet: %s"
+msgstr ""
+
+#.
+#. translators: see strftime man page for meaning of %b, %d and %Y
+#. the maximum length for this field is 32 bytes
+#.
+#: ../src/ncb-selection.c:745
+msgid "Personal Data, %b %d, %Y"
+msgstr "Donadas personalas, %b %d, %Y"
+
+#: ../src/ncb-selection.c:817
+msgid "Unable to create CD/DVD"
+msgstr "Impossible de crear un CD/DVD"
+
+#: ../src/ncb-selection.c:981
+msgid "Source name"
+msgstr ""
+
+#: ../src/ncb-selection.c:988
+msgid "Source type"
+msgstr ""
+
+#: ../src/ncb-selection.c:996
+msgid "Source size"
+msgstr ""
+
+#: ../src/ncb-selection.c:1005
+msgid "Disc label"
+msgstr "Etiqueta del disc"
+
+#: ../src/ncb-selection.c:1012
+msgid "Write speed"
+msgstr "Velocitat d'escritura"
+
+#: ../src/ncb-selection-dialog.c:171
+msgid "Copy Disc"
+msgstr "Copiar lo disc"
+
+#: ../src/ncb-selection-dialog.c:173
+msgid "Copy disc _to:"
+msgstr "Copiar lo disc _dins :"
+
+#: ../src/ncb-selection-dialog.c:345
+msgid "Maximum possible"
+msgstr ""
+
+#: ../src/ncb-selection-dialog.c:558
+msgid "Calculating..."
+msgstr "A calcular..."
+
+#: ../src/ncb-selection-dialog.c:637
+msgid "_Write"
+msgstr "_Escritura"
+
+#: ../src/ncb-operation.c:242
+msgid "Preparing to write CD"
+msgstr "Preparacion de l'escritura del CD"
+
+#: ../src/ncb-operation.c:244
+msgid "Preparing to write DVD"
+msgstr "Preparacion de l'escritura del DVD"
+
+#: ../src/ncb-operation.c:249
+msgid "Writing CD"
+msgstr "Escritura del CD"
+
+#: ../src/ncb-operation.c:251
+msgid "Writing DVD"
+msgstr "Escritura sul DVD"
+
+#: ../src/ncb-operation.c:256 ../src/ncb-operation.c:258
+msgid "Finishing write"
+msgstr ""
+
+#: ../src/ncb-operation.c:263
+msgid "Erasing CD"
+msgstr "Supression del CD"
+
+#: ../src/ncb-operation.c:265
+msgid "Erasing DVD"
+msgstr "Supression del DVD"
+
+#: ../src/ncb-operation.c:349
+msgid "None"
+msgstr "Pas cap"
+
+#: ../src/ncb-operation.c:356
+msgid "Please make sure another application is not using the drive."
+msgstr ""
+
+#: ../src/ncb-operation.c:357
+msgid "Drive is busy"
+msgstr "Lo legidor es ocupat"
+
+#: ../src/ncb-operation.c:359 ../src/ncb-operation.c:364
+#, c-format
+msgid ""
+"Please put a disc, with at least %s free, into the drive.  The following "
+"disc types are supported:\n"
+"%s"
+msgstr ""
+
+#: ../src/ncb-operation.c:362
+msgid "Insert a rewritable or blank disc"
+msgstr ""
+
+#: ../src/ncb-operation.c:367
+msgid "Insert a blank disc"
+msgstr "Inserissètz un disc void"
+
+#: ../src/ncb-operation.c:370 ../src/ncb-operation.c:376
+#, c-format
+msgid ""
+"Please replace the disc in the drive with a supported disc with at least %s "
+"free.  The following disc types are supported:\n"
+"%s"
+msgstr ""
+
+#: ../src/ncb-operation.c:373
+msgid "Reload a rewritable or blank disc"
+msgstr ""
+
+#: ../src/ncb-operation.c:379
+msgid "Reload a blank disc"
+msgstr ""
+
+#: ../src/ncb-operation.c:390
+msgid "_Eject"
+msgstr "_Ejectar"
+
+#: ../src/ncb-operation.c:457
+#, c-format
+msgid "This %s appears to have information already recorded on it."
+msgstr ""
+
+#: ../src/ncb-operation.c:461
+msgid "Erase information on this disc?"
+msgstr "Suprimir las entresenhas a prepaus d'aqueste disc ?"
+
+#: ../src/ncb-operation.c:469
+msgid "_Try Another"
+msgstr ""
+
+#: ../src/ncb-operation.c:480
+msgid "_Erase Disc"
+msgstr "_Suprimir lo disc"
+
+#: ../src/ncb-operation.c:512
+#, c-format
+msgid ""
+"There was an error writing to the disc:\n"
+"%s"
+msgstr ""
+"I a aguda una error al moment d'escriure sul disc \n"
+"%s"
+
+#: ../src/ncb-operation.c:515
+msgid "There was an error writing to the disc"
+msgstr "I a aguda una error al moment d'escriure sul disc"
+
+#: ../src/ncb-operation.c:518
+msgid "Error writing to disc"
+msgstr "Error al moment d'escriure sul disc"
+
+#: ../src/ncb-operation.c:573
+#, c-format
+msgid "A file named \"%s\" already exists.  Do you want to overwrite it?"
+msgstr "Un fichièr que s'apèla \"%s\" existís ja. Lo volètz remplaçar ?"
+
+#: ../src/ncb-operation.c:575
+msgid "Overwrite existing file?"
+msgstr "Remplaçar lo fichièr existent ?"
+
+#: ../src/ncb-operation.c:584
+msgid "_Overwrite"
+msgstr "_Remplaçar"
+
+#: ../src/ncb-operation.c:603
+msgid "Choose a filename for the disc image"
+msgstr "Causissètz un nom de fichièr per l'imatge disc"
+
+#. Translators: this is the filename of the image
+#: ../src/ncb-operation.c:739
+msgid "image.iso"
+msgstr "imatge.iso"
+
+#: ../src/ncb-operation.c:760
+#, c-format
+msgid "You do not have permissions to overwrite that file (%s)."
+msgstr ""
+
+#: ../src/ncb-operation.c:761 ../src/ncb-operation.c:776
+#: ../src/ncb-operation.c:1582
+msgid "File image creation failed"
+msgstr "Impossible de crear lo fichièr imatge"
+
+#: ../src/ncb-operation.c:775
+#, c-format
+msgid "You do not have permissions to create that file (%s)."
+msgstr ""
+
+#: ../src/ncb-operation.c:840
+msgid "Complete"
+msgstr "Complet"
+
+#: ../src/ncb-operation.c:843
+msgid "An error occurred while writing"
+msgstr "I a aguda una error al moment de l'escritura"
+
+#: ../src/ncb-operation.c:903
+msgid "Writing Files to a Disc Image"
+msgstr "Escritura de fichièrs dins un imatge disc"
+
+#: ../src/ncb-operation.c:904
+msgid "Writing Files to CD"
+msgstr "Escritura de fichièrs sul CD"
+
+#: ../src/ncb-operation.c:905
+msgid "Writing Files to DVD"
+msgstr "Escritura de fichièrs sul DVD"
+
+#: ../src/ncb-operation.c:908
+msgid "Writing Image to Disc"
+msgstr "Escritura de l'imatge sul disc"
+
+#: ../src/ncb-operation.c:909
+msgid "Copying Disc Image"
+msgstr "Còpia de l'imatge disc"
+
+#: ../src/ncb-operation.c:910
+msgid "Writing Image to CD"
+msgstr "Escritura de l'imatge sul CD"
+
+#: ../src/ncb-operation.c:911
+msgid "Writing Image to DVD"
+msgstr "Escritura de l'imatge sul DVD"
+
+#: ../src/ncb-operation.c:914
+msgid "Copying Disc"
+msgstr "Còpia del disc"
+
+#: ../src/ncb-operation.c:915
+msgid "Copying Disc to a Disc Image"
+msgstr "Còpia del disc dins un imatge disc"
+
+#: ../src/ncb-operation.c:916
+msgid "Copying Disc to CD"
+msgstr "Copiar lo disc sul CD"
+
+#: ../src/ncb-operation.c:917
+msgid "Copying Disc to DVD"
+msgstr "Copiar lo disc sul DVD"
+
+#: ../src/ncb-operation.c:921
+msgid "Writing files to disc"
+msgstr "Escritura de fichièrs sul disc"
+
+#: ../src/ncb-operation.c:922
+msgid "Writing files to a disc image"
+msgstr "Escritura de fichièrs dins un imatge disc"
+
+#: ../src/ncb-operation.c:923
+msgid "Writing files to CD"
+msgstr "Escritura de fichièrs sul CD"
+
+#: ../src/ncb-operation.c:924
+msgid "Writing files to DVD"
+msgstr "Escritura de fichièrs sul DVD"
+
+#: ../src/ncb-operation.c:927
+msgid "Writing image to disc"
+msgstr "Escritura de l'imatge sul disc"
+
+#: ../src/ncb-operation.c:928
+msgid "Copying disc image"
+msgstr "Còpia de l'imatge disc"
+
+#: ../src/ncb-operation.c:929
+msgid "Writing image to CD"
+msgstr "Escritura de l'imatge sul CD"
+
+#: ../src/ncb-operation.c:930
+msgid "Writing image to DVD"
+msgstr "Escritura de l'imatge sul DVD"
+
+#: ../src/ncb-operation.c:933
+msgid "Copying disc"
+msgstr "Còpia del disc"
+
+#: ../src/ncb-operation.c:934
+msgid "Copying disc to a disc image"
+msgstr "Còpia del disc dins un imatge disc"
+
+#: ../src/ncb-operation.c:935
+msgid "Copying disc to CD"
+msgstr "Copiar lo disc sul CD"
+
+#: ../src/ncb-operation.c:936
+msgid "Copying disc to DVD"
+msgstr "Copiar lo disc sul DVD"
+
+#: ../src/ncb-operation.c:940
+msgid ""
+"The selected files are being written to a CD or DVD.  This operation may "
+"take a long time, depending on data size and write speed."
+msgstr ""
+
+#: ../src/ncb-operation.c:941
+msgid "The selected files are being written to a disc image file."
+msgstr ""
+
+#: ../src/ncb-operation.c:942
+msgid ""
+"The selected files are being written to a CD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr ""
+
+#: ../src/ncb-operation.c:943
+msgid ""
+"The selected files are being written to a DVD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr ""
+
+#: ../src/ncb-operation.c:946
+msgid ""
+"The selected disc image is being written to a CD or DVD.  This operation may "
+"take a long time, depending on data size and write speed."
+msgstr ""
+
+#: ../src/ncb-operation.c:947
+msgid "The selected disc image is being copied to a disc image file."
+msgstr ""
+
+#: ../src/ncb-operation.c:948
+msgid ""
+"The selected disc image is being written to a CD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr ""
+
+#: ../src/ncb-operation.c:949
+msgid ""
+"The selected disc image is being written to a DVD.  This operation may take "
+"a long time, depending on data size and write speed."
+msgstr ""
+
+#: ../src/ncb-operation.c:952
+msgid ""
+"The selected disc is being copied to a CD or DVD.  This operation may take a "
+"long time, depending on data size and drive speed."
+msgstr ""
+
+#: ../src/ncb-operation.c:953
+msgid ""
+"The selected disc is being copied to a disc image file.  This operation may "
+"take a long time, depending on data size and drive speed."
+msgstr ""
+
+#: ../src/ncb-operation.c:954
+msgid ""
+"The selected disc is being copied to a CD.  This operation may take a long "
+"time, depending on data size and drive speed."
+msgstr ""
+
+#: ../src/ncb-operation.c:955
+msgid ""
+"The selected disc is being copied to a DVD.  This operation may take a long "
+"time, depending on data size and drive speed."
+msgstr ""
+
+#: ../src/ncb-operation.c:1012
+msgid "Burning CD"
+msgstr ""
+
+#: ../src/ncb-operation.c:1179 ../src/ncb-operation.c:1403
+msgid "Creating disc image"
+msgstr "Creacion de l'imatge del disc"
+
+#: ../src/ncb-operation.c:1621
+#, c-format
+msgid "Writing CD/DVD-Image '%s'."
+msgstr ""
+
+#: ../src/ncb-operation.c:1626
+#, c-format
+msgid "Writing disc '%s'."
+msgstr ""
+
+#: ../src/ncb-operation.c:1628
+#, c-format
+msgid "Writing %s '%s'."
+msgstr ""
+
+#: ../src/ncb-operation.c:1717
+#, c-format
+msgid "Completed writing %s"
+msgstr "Escritura de %s acabada"
+
+#: ../src/ncb-operation.c:1822
+msgid "Interrupt writing files to disc?"
+msgstr ""
+
+#: ../src/ncb-operation.c:1823
+msgid ""
+"Are you sure you want to interrupt the disc write operation? Some drives may "
+"require that you restart the computer to get them working again."
+msgstr ""
+
+#: ../src/ncb-operation.c:1829
+msgid "Interrupt"
+msgstr ""
+
+#: ../src/ncb-operation.c:1831
+msgid "Continue"
+msgstr "Contunhar"
+
+#: ../src/ncb-progress-dialog.c:146
+#, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d ora"
+msgstr[1] "%d oras"
+
+#: ../src/ncb-progress-dialog.c:148
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d minuta"
+msgstr[1] "%d minutas"
+
+#: ../src/ncb-progress-dialog.c:151
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d segonda"
+msgstr[1] "%d segondas"
+
+#. hour:minutes:seconds
+#: ../src/ncb-progress-dialog.c:156
+#, c-format
+msgid "%s %s %s"
+msgstr "%s %s %s"
+
+#. minutes:seconds
+#: ../src/ncb-progress-dialog.c:159
+#, c-format
+msgid "%s %s"
+msgstr "%s %s"
+
+#. seconds
+#: ../src/ncb-progress-dialog.c:162
+#, c-format
+msgid "%s"
+msgstr "%s"
+
+#. 0 seconds
+#: ../src/ncb-progress-dialog.c:165
+msgid "0 seconds"
+msgstr "0 segonda"
+
+#: ../src/ncb-progress-dialog.c:189
+#, c-format
+msgid "About %s left"
+msgstr "Demòra(n) a l'entorn de %s"
+
+#: ../src/ncb-progress-dialog.c:439
+msgid "_Make Another Copy"
+msgstr "_Far una autra còpia"
+
+#: ../src/ncb-rename-dialog.c:479
+msgid "C_ontinue"
+msgstr "C_ontunhar"
+
+#: ../src/ncb-rename-dialog.c:507
+msgid "Filename"
+msgstr "Nom de fichièr"
+
+#: ../src/ncb-rename-dialog.c:523
+msgid "Rename file"
+msgstr ""

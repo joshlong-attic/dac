@@ -1,0 +1,4 @@
+nautilus_burn_drive_get_type
+nautilus_burn_drive_monitor_get_type
+nautilus_burn_recorder_get_type
+nautilus_burn_drive_selection_get_type

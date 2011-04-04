@@ -1,0 +1,91 @@
+AC_PREREQ(2.57)
+AC_INIT([nautilus-share],[0.7.2])
+AC_CONFIG_SRCDIR([src/nautilus-share.c])
+AC_CONFIG_HEADERS([config.h])
+AM_INIT_AUTOMAKE([foreign 1.9 -Wall])
+
+
+AC_PROG_INTLTOOL([0.29])
+
+NAUTILUS_REQUIRED=2.10.0
+EEL_REQUIRED=2.10.0
+GLIB_REQUIRED=2.4.0
+LIBGLADE_REQUIRED=2.4.0
+
+DATADIRNAME=share
+
+AC_PROG_CC
+AC_PROG_LIBTOOL
+
+dnl ========================================================
+dnl PKG_CONFIG and required versions
+dnl ========================================================
+dnl Check for pkgconfig first
+AC_CHECK_PROG(HAVE_PKGCONFIG, pkg-config, yes, no)
+
+dnl Give error and exit if we don't have pkgconfig
+if test "x$HAVE_PKGCONFIG" = "xno"; then
+  AC_MSG_ERROR(you need to have pkgconfig installed !)
+fi
+
+PKG_CHECK_MODULES(NAUTILUS, libnautilus-extension >= $NAUTILUS_REQUIRED eel-2.0 >= $EEL_REQUIRED)
+PKG_CHECK_MODULES(GLIB, glib-2.0 >= $GLIB_REQUIRED)
+PKG_CHECK_MODULES(LIBGLADE, libglade-2.0 >= $LIBGLADE_REQUIRED)
+
+AC_SUBST(NAUTILUS_CFLAGS)
+AC_SUBST(NAUTILUS_LIBS)
+
+AC_SUBST(GLIB_CFLAGS)
+AC_SUBST(GLIB_LIBS)
+
+AC_SUBST(LIBGLADE_CFLAGS)
+AC_SUBST(LIBGLADE_LIBS)
+
+
+dnl ========================================================
+dnl Set PIXMAPS_DIR 
+dnl ========================================================
+
+if test "x${prefix}" = "xNONE"; then
+  AC_DEFINE_UNQUOTED(PIXMAPS_DIR, "${ac_default_prefix}/${DATADIRNAME}/${PACKAGE}/pixmaps", [pixmaps directory])
+  pixmapsdir="${ac_default_prefix}/${DATADIRNAME}/${PACKAGE}/pixmaps"
+  AC_DEFINE_UNQUOTED(INTERFACES_DIR, "${ac_default_prefix}/${DATADIRNAME}/${PACKAGE}/interfaces", [path where glade files will be installed])
+  interfacesdir="${ac_default_prefix}/${DATADIRNAME}/${PACKAGE}/interfaces"
+else
+  AC_DEFINE_UNQUOTED(PIXMAPS_DIR, "${prefix}/${DATADIRNAME}/${PACKAGE}/pixmaps", [pixmaps directory])
+  pixmapsdir="${prefix}/${DATADIRNAME}/${PACKAGE}/pixmaps"
+  AC_DEFINE_UNQUOTED(INTERFACES_DIR, "${prefix}/${DATADIRNAME}/${PACKAGE}/interfaces", [path where glade files will be installed])
+  interfacesdir="${prefix}/${DATADIRNAME}/${PACKAGE}/interfaces"
+fi
+
+AC_SUBST(pixmapsdir)
+AC_SUBST(interfacesdir)
+
+dnl ========================================================
+dnl Transtlations
+dnl ========================================================
+
+ALL_LINGUAS="ar ca en_GB es de dz eu fi fr hu it pl pt_BR"
+GETTEXT_PACKAGE=nautilus-share
+AC_SUBST(GETTEXT_PACKAGE)
+AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", [gettext package name])
+AM_GLIB_GNU_GETTEXT
+AM_GLIB_DEFINE_LOCALEDIR(NAUTILUS_SHARE_LOCALEDIR)
+
+# AM_GNOME_GETTEXT above substs $DATADIRNAME
+# this is the directory where the *.{mo,gmo} files are installed
+gnomelocaledir='${prefix}/${DATADIRNAME}/locale'
+AC_SUBST(gnomelocaledir)
+
+
+dnl ========================================================
+
+AC_CONFIG_FILES([
+  Makefile 
+  src/Makefile
+  pixmaps/Makefile
+  interfaces/Makefile
+  po/Makefile.in
+])
+AC_OUTPUT
+

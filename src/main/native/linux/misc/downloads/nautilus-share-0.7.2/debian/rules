@@ -1,0 +1,25 @@
+#!/usr/bin/make -f
+
+#export DH_VERBOSE=1
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/autotools.mk
+include /usr/share/cdbs/1/rules/patchsys-quilt.mk
+
+DEB_DH_INSTALLCHANGELOGS_ARGS = ChangeLog
+DEB_DH_MAKESHLIBS_ARGS = -n
+DEB_INSTALL_DOCS_ALL = AUTHORS
+LDFLAGS += -Wl,-z,defs -Wl,--as-needed
+
+install/nautilus-share::
+	find $(DEB_DESTDIR) -name '*.*a' -delete
+
+build/nautilus-share::
+	cd po; intltool-update -p --verbose
+
+clean::
+	rm -f intltool-merge intltool-update intltool-extract
+
+# hack to remove shlibs to fix lintian error
+binary-predeb/nautilus-share::
+	rm -f debian/nautilus-share/DEBIAN/shlibs

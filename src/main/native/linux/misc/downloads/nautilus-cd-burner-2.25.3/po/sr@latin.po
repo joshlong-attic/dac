@@ -1,0 +1,1033 @@
+# Serbian translation of nautilus-cd-burner
+# Courtesy of Prevod.org team (http://prevod.org/) -- 2003, 2004, 2005, 2006, 2007.
+#
+# This file is distributed under the same license as the nautilus-cd-burner package.
+#
+# Maintainer: Bojan Živanović <bojanz@panet.co.yu>
+# Reviewed on 2004-03-05 by Aleksandar Urošević <urke@users.sourceforge.net>
+# Reviewed on 2005-07-11 by Danilo Šegan <danilo@gnome.org>
+# Reviewed on 2005-09-03 by Andrija Zarić <andrija@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: nautilus cd burner\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-20 04:03+0200\n"
+"PO-Revision-Date: 2008-09-20 04:04+0100\n"
+"Last-Translator: Goran Rakić <grakic@devbase.net>\n"
+"Language-Team: Serbian (sr) <gnom@prevod.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3;    plural=n%10==1 && n%100!=11 ? 0 :    n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: ../data/nautilus-cd-burner.desktop.in.h:1
+#: ../data/nautilus-cd-burner-open-iso.desktop.in.h:1
+#: ../src/ncb-operation.c:1753
+msgid "CD/DVD Creator"
+msgstr "Mesto za izradu diskova"
+
+#: ../data/nautilus-cd-burner.desktop.in.h:2
+msgid "Open a folder into which you can drag files to burn to a CD or DVD"
+msgstr "Otvori fasciklu u koju možeš prevući datoteke za narezivanje na CD ili DVD"
+
+#: ../data/nautilus-cd-burner-open-iso.desktop.in.h:2
+msgid "Open the CD/DVD Creator"
+msgstr "Otvori mesto za izradu CD-a i DVD-a"
+
+#: ../data/nautilus-cd-burner.glade.h:1
+msgid "    "
+msgstr "    "
+
+#: ../data/nautilus-cd-burner.glade.h:2
+msgid "<b>Information</b>"
+msgstr "<b>Podaci</b>"
+
+#: ../data/nautilus-cd-burner.glade.h:3
+msgid "<b>Write Options</b>"
+msgstr "<b>Mogućnosti narezivanja</b>"
+
+#: ../data/nautilus-cd-burner.glade.h:4
+msgid "<big><b>Some files have invalid filenames</b></big>"
+msgstr "<big><b>Neke datoteke imaju neispravna imena.</b></big>"
+
+#: ../data/nautilus-cd-burner.glade.h:5
+msgid "<big><b>Writing files to disc</b></big>"
+msgstr "<big><b>Upisujem podatke na disk</b></big>"
+
+#: ../data/nautilus-cd-burner.glade.h:6
+msgid "<i>Initializing...</i>"
+msgstr "<i>Započinjem...</i>"
+
+#: ../data/nautilus-cd-burner.glade.h:7
+msgid "Data size:"
+msgstr "Veličina podataka:"
+
+#: ../data/nautilus-cd-burner.glade.h:8
+msgid "Disc _name:"
+msgstr "_Naziv diska:"
+
+#: ../data/nautilus-cd-burner.glade.h:9
+msgid "Label to identify disc"
+msgstr "Oznaka za prepoznavanje diska"
+
+#: ../data/nautilus-cd-burner.glade.h:10
+msgid "The following filenames are not valid.  Please provide new names for each of them."
+msgstr "Imena sledećih datoteka nisu ispravna. Molim da svakoj od njih zadaš neko novo ime."
+
+#: ../data/nautilus-cd-burner.glade.h:11
+msgid "Write _speed:"
+msgstr "_Brzina upisa:"
+
+#: ../data/nautilus-cd-burner.glade.h:12
+msgid "Write disc _to:"
+msgstr "Upiši d_isk na:"
+
+#: ../data/nautilus-cd-burner.glade.h:13
+#: ../src/ncb-operation.c:913
+msgid "Writing Files to Disc"
+msgstr "Upisujem datoteke na disk"
+
+#: ../data/nautilus-cd-burner.glade.h:14
+msgid "_Dummy write"
+msgstr "_Proba rezanja"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:1
+msgid "Default burn speed"
+msgstr "Podrazumevana brzina rezanja"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:2
+msgid "Default speed at which the media will be written."
+msgstr "Podrazumevana brzina kojom će se snimati diskovi."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:3
+msgid "Directory for the temporary ISO images"
+msgstr "Direktorijum za privremene ISO otiske"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:4
+msgid "Directory used for the temporary ISO images, leave blank to use the default system temporary directory."
+msgstr "Direktorijum za skladištenje privremenih ISO otiskaka; ostavite prazno za podrazumevani sistemski privremeni direktorijum."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:5
+msgid "Enable Burnproof option"
+msgstr "Uključi zaštitu upisa"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:6
+msgid "Enable debug"
+msgstr "Uključi praćenje grešaka"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:7
+msgid "Enable overburn"
+msgstr "Uključi prekoračenje"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:8
+msgid "Whether to allow the data to exceed the size of the physical medium."
+msgstr "Da li da dozvoli da podaci prekorače veličinu fizičkog diska"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:9
+msgid "Whether to enable the debugging for CD Recording."
+msgstr "Da li da uključi praćenje grešaka za upis CD-a."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:10
+msgid "Whether to use the Burnproof option available on some recorders."
+msgstr "Da li da koristi mogućnost zaštite rezanja dostupnu na nekim rezačima."
+
+# note(slobo): rezanje —> upis , to je glavna novost :) proba kako izgleda
+#: ../src/burn-extension.c:141
+#: ../src/burn-extension.c:145
+msgid "Unable to launch the cd burner application"
+msgstr "Ne mogu da pokrenem program za rezanje CD-a"
+
+#: ../src/burn-extension.c:452
+#: ../src/burn-extension.c:462
+#: ../src/burn-extension.c:555
+msgid "_Write to Disc..."
+msgstr "Upiš_i na disk..."
+
+#: ../src/burn-extension.c:453
+msgid "Write disc image to a CD or DVD disc"
+msgstr "Upiši otisak diska na CD ili DVD disk"
+
+#: ../src/burn-extension.c:463
+msgid "Write disc image cuesheet to a CD or DVD disc"
+msgstr "Upiši opis otiska diska na CD ili DVD disk"
+
+#: ../src/burn-extension.c:514
+msgid "_Copy Disc..."
+msgstr "U_množi disk..."
+
+#: ../src/burn-extension.c:515
+msgid "Create a copy of this CD or DVD disc"
+msgstr "Napravi novi primerak ovog CD ili DVD diska"
+
+#: ../src/burn-extension.c:556
+#: ../src/nautilus-burn-bar.c:151
+msgid "Write contents to a CD or DVD disc"
+msgstr "Upiši sadržaj na CD ili DVD disk"
+
+#: ../src/make-iso.c:306
+msgid "Disable Microsoft Windows compatibility?"
+msgstr "Isključi saglasnost sa Microsoft Windows-ima?"
+
+#: ../src/make-iso.c:309
+msgid ""
+"Some files don't have a suitable name for a Windows-compatible CD.\n"
+"Do you want to continue with Windows compatibility disabled?"
+msgstr ""
+"Neke datoteke nemaju odgovarajuća imena za CD saglasan sa Windows-om.\n"
+"Želite li da nastavite uz isključenu saglasnost sa Windows-om?"
+
+#: ../src/make-iso.c:310
+msgid "Windows compatibility"
+msgstr "Saglasnost sa Windows-om"
+
+#: ../src/make-iso.c:707
+msgid " (invalid Unicode)"
+msgstr " (neispravan Unikod)"
+
+# bug: plural-forms
+#: ../src/make-iso.c:868
+#, c-format
+msgid "The selected location does not have enough space to store the disc image (%s MiB needed)."
+msgstr "Izabrano mesto nema dovoljno prostora za čuvanje otiska diska (potrebno je %s megabajta)."
+
+#: ../src/make-iso.c:1012
+#: ../src/make-iso.c:1402
+#, c-format
+msgid "Could not run sub process: %s."
+msgstr "Ne mogu da pokrenem podproces: %s."
+
+#: ../src/make-iso.c:1039
+#, c-format
+msgid "The operation was cancelled by the user."
+msgstr "Radnju je otkazao korisnik."
+
+#: ../src/make-iso.c:1140
+#, c-format
+msgid ""
+"Some files have invalid filenames: \n"
+"%s"
+msgstr ""
+"Neke datoteke imaju neispravna imena: \n"
+"%s"
+
+#: ../src/make-iso.c:1153
+msgid "Unknown character encoding."
+msgstr "Nepoznato kodiranje znakova."
+
+#: ../src/make-iso.c:1157
+msgid "There is no space left on the device."
+msgstr "Nedovoljno slobodnog prostora na uređaju."
+
+#. TODO: get filename from error message
+#: ../src/make-iso.c:1162
+msgid "File too large for filesystem."
+msgstr "Datoteka je prevelika za sistem datoteka."
+
+#: ../src/make-iso.c:1215
+#, c-format
+msgid "The label for the image is too long."
+msgstr "Oznaka za otisak je predugačka."
+
+#: ../src/make-iso.c:1323
+#, c-format
+msgid "There are no files to write to disc."
+msgstr "Nema datoteka za upis na disk."
+
+#: ../src/make-iso.c:1674
+msgid "Not a valid disc image."
+msgstr "Neispravan otisak diska."
+
+#: ../src/nautilus-burn-bar.c:137
+msgid "CD/DVD Creator Folder"
+msgstr "Otvori mesto za izradu CD-a i DVD-a"
+
+#: ../src/nautilus-burn-bar.c:141
+#: ../src/ncb-selection-dialog.c:175
+msgid "Write to Disc"
+msgstr "Upiši na disk"
+
+#: ../src/nautilus-burn-drive.c:1252
+msgid "Could not determine media type because CD drive is busy"
+msgstr "Nije utvrđena vrsta diska jer je CD uređaj zauzet"
+
+#: ../src/nautilus-burn-drive.c:1254
+msgid "Couldn't open media"
+msgstr "Ne mogu da otvorim disk"
+
+#: ../src/nautilus-burn-drive.c:1256
+msgid "Unknown Media"
+msgstr "Nepoznati disk"
+
+#: ../src/nautilus-burn-drive.c:1258
+msgid "Commercial CD or Audio CD"
+msgstr "Komercijalni ili zvučni CD"
+
+#: ../src/nautilus-burn-drive.c:1260
+msgid "CD-R"
+msgstr "CD-R"
+
+#: ../src/nautilus-burn-drive.c:1262
+msgid "CD-RW"
+msgstr "CD-RW"
+
+#: ../src/nautilus-burn-drive.c:1264
+msgid "DVD"
+msgstr "DVD"
+
+#: ../src/nautilus-burn-drive.c:1266
+msgid "DVD-R, or DVD-RAM"
+msgstr "DVD-R ili DVD-RAM"
+
+#: ../src/nautilus-burn-drive.c:1268
+msgid "DVD-RW"
+msgstr "DVD-RW"
+
+#: ../src/nautilus-burn-drive.c:1270
+msgid "DVD-RAM"
+msgstr "DVD-RAM"
+
+#: ../src/nautilus-burn-drive.c:1272
+msgid "DVD+R"
+msgstr "DVD+R"
+
+#: ../src/nautilus-burn-drive.c:1274
+msgid "DVD+RW"
+msgstr "DVD+RW"
+
+# andrija: ciljna grupa (moj otac ;) ovakve oznake čita doslovce
+# andrija: i objašnjenje mu ne znači mnogo
+#: ../src/nautilus-burn-drive.c:1276
+msgid "DVD+R DL"
+msgstr "DVD+R DL(dvoslojni)"
+
+#: ../src/nautilus-burn-drive.c:1281
+msgid "Broken media type"
+msgstr "Neispravna vrsta diska"
+
+#: ../src/nautilus-burn-drive-monitor.c:452
+msgid "File image"
+msgstr "Datoteka otiska"
+
+#: ../src/nautilus-burn-drive-selection.c:107
+#: ../src/ncb-selection.c:1022
+msgid "Drive"
+msgstr "Uređaj"
+
+#: ../src/nautilus-burn-drive-selection.c:237
+msgid "Unnamed CD/DVD Drive"
+msgstr "Bezimeni CD/DVD uređaj"
+
+#: ../src/nautilus-burn-recorder.c:602
+msgid "The recorder could not be accessed."
+msgstr "Ne mogu da pristupim snimaču."
+
+#: ../src/nautilus-burn-recorder.c:606
+msgid "Not enough space available on the disc."
+msgstr "Nedovoljno slobodnog prostora na disku."
+
+#: ../src/nautilus-burn-recorder.c:610
+#: ../src/nautilus-burn-recorder.c:614
+msgid "The files selected did not fit on the DVD."
+msgstr "Izabrane datoteke nisu stale na DVD."
+
+#: ../src/nautilus-burn-recorder.c:626
+msgid "The target DVD drive is still in use."
+msgstr "Odabrani DVD uređaj je još uvek u upotrebi."
+
+#: ../src/nautilus-burn-recorder.c:632
+msgid "Unhandled error, aborting"
+msgstr "Neobrađena greška, odustajem"
+
+#: ../src/nautilus-burn-recorder.c:697
+msgid "The CD has already been recorded."
+msgstr "Na ovaj CD je već upisivano."
+
+#: ../src/nautilus-burn-recorder.c:717
+msgid "The files selected did not fit on the CD."
+msgstr "Izabrane datoteke nisu stale na CD."
+
+#: ../src/nautilus-burn-recorder.c:721
+msgid "All audio files must be stereo, 16-bit digital audio with 44100Hz samples."
+msgstr "Sve zvučne datoteke moraju biti stereo, 16-bitni digitalni zvuk sa uzorcima na 44100Hz."
+
+#: ../src/nautilus-burn-recorder.c:745
+msgid "Error while writing to disc.  Try a lower speed."
+msgstr "Greška prilikom upisa na disk. Pokušajte sa manjom brzinom upisa."
+
+#: ../src/nautilus-burn-recorder.c:750
+msgid "The system is too slow to write the CD at this speed. Try a lower speed."
+msgstr "Sistem je prespor za narezivanje CD-a ovom brzinom. Probajte manju brzinu."
+
+#: ../src/nautilus-burn-recorder.c:884
+#, c-format
+msgid "You can only burn 99 tracks on one disc"
+msgstr "Možete narezati najviše 99 staza na jedan disk"
+
+#: ../src/nautilus-burn-recorder.c:891
+#, c-format
+msgid "No tracks given to write"
+msgstr "Nisu zadate staze za narezivanje"
+
+#: ../src/nautilus-burn-recorder.c:896
+msgid "Burning CD/DVD"
+msgstr "Upisujem na CD/DVD"
+
+#: ../src/nautilus-burn-recorder.c:1101
+#, c-format
+msgid "Can only use growisofs on a single track"
+msgstr "growisofs se može koristiti jedino na jednoj stazi"
+
+#: ../src/nautilus-burn-recorder.c:1112
+#, c-format
+msgid "Can only use growisofs on a data or graft list track"
+msgstr "growisofs se može koristiti samo na stazi sa podacima ili graft listom"
+
+#: ../src/nautilus-burn-recorder.c:1480
+msgid "Blanking CD"
+msgstr "Brišem CD"
+
+#: ../src/nautilus-burn-recorder.c:1550
+msgid "Blanking DVD"
+msgstr "Brišem DVD"
+
+#: ../src/nautilus-burn-process.c:497
+#, c-format
+msgid "Could not run the necessary command: %s"
+msgstr "Ne mogu da pokrenem neophodnu naredbu: %s."
+
+#: ../src/nautilus-cd-burner.c:157
+#, c-format
+msgid "There was a problem displaying the help contents: %s."
+msgstr "Postoji problem u prikazu pomoćnog sadržaja: %s"
+
+#: ../src/nautilus-cd-burner.c:158
+msgid "Cannot display help"
+msgstr "Ne mogu da prikažem pomoć"
+
+#: ../src/nautilus-cd-burner.c:293
+msgid "Use CD/DVD device as source instead of burn:///"
+msgstr "Koristi CD/DVD uređaj kao izvor umesto burn:///"
+
+#: ../src/nautilus-cd-burner.c:293
+msgid "DEVICE"
+msgstr "UREĐAJ"
+
+#: ../src/nautilus-cd-burner.c:295
+msgid "Use ISO image as source instead of burn:///"
+msgstr "Koristi ISO otisak kao izvor umesto burn:///"
+
+#: ../src/nautilus-cd-burner.c:295
+#: ../src/nautilus-cd-burner.c:297
+msgid "FILENAME"
+msgstr "DATOTEKA"
+
+#: ../src/nautilus-cd-burner.c:297
+msgid "Use CUE/TOC file as source instead of burn:///"
+msgstr "Koristi CUE/TOC datoteku kao izvor umesto burn:///"
+
+#: ../src/ncb-selection.c:442
+msgid "It appears that the disc, when created, will contain a single disc image file.  Do you want to create a disc from the contents of the image or with the image file inside?"
+msgstr "Izgleda da će disk, kada se napravi, sadržati samo jednu datoteku otiska diska. Želite li da napravite disk iz sadržaja otiska ili sa datotekom otiska na disku?"
+
+#: ../src/ncb-selection.c:445
+msgid "Create disc containing a single disc image file?"
+msgstr "Napravi disk koji sadrži samo jednu datoteku otiska diska?"
+
+#: ../src/ncb-selection.c:448
+msgid "Create From Image"
+msgstr "Napravi iz otiska"
+
+#: ../src/ncb-selection.c:450
+msgid "Create With File"
+msgstr "Napravi sa datotekom"
+
+#: ../src/ncb-selection.c:453
+msgid "It appears that the disc, when created, will contain only disc image files.  Do you want to continue and write them to the disc as files?"
+msgstr "Čini se da će disk, kada se napravi, sadržati samo otiske diskova. Želite li da nastavite i upišete ih na disk kao datoteke?"
+
+#: ../src/ncb-selection.c:456
+msgid "Create disc containing only disc image files?"
+msgstr "Napravi disk koji sadrži samo datoteke otisaka diskova?"
+
+#: ../src/ncb-selection.c:460
+msgid "Create With Files"
+msgstr "Napravi sa datotekama"
+
+#: ../src/ncb-selection.c:491
+#, c-format
+msgid "The file '%s' is unreadable.  Do you wish to skip this file and continue?"
+msgstr "Datoteka „%s“ je nečitljiva.  Želite li da preskočite ovu datoteku i nastavite?"
+
+#: ../src/ncb-selection.c:494
+msgid "Skip unreadable file?"
+msgstr "Preskoči nečitljivu datoteku?"
+
+#: ../src/ncb-selection.c:499
+msgid "Skip"
+msgstr "Preskoči"
+
+#: ../src/ncb-selection.c:499
+msgid "Skip All"
+msgstr "Preskoči sve"
+
+#: ../src/ncb-selection.c:522
+#, c-format
+msgid "No files were selected."
+msgstr "Nijedna datoteka nije izabrana."
+
+#: ../src/ncb-selection.c:553
+#, c-format
+msgid "The file '%s' is not a valid disc image."
+msgstr "Datoteka „%s“ nije ispravan otisak diska."
+
+#: ../src/ncb-selection.c:628
+#, c-format
+msgid "The specified device '%s' is not a valid CD/DVD drive."
+msgstr "Navedeni uređaj „%s“ nije ispravan CD/DVD uređaj."
+
+#: ../src/ncb-selection.c:652
+#, c-format
+msgid "There doesn't seem to be any media in the selected drive."
+msgstr "Čini se da nema diska u izabranom uređaju."
+
+#: ../src/ncb-selection.c:659
+#, c-format
+msgid "The media is blank."
+msgstr "Disk je prazan."
+
+#: ../src/ncb-selection.c:692
+#, c-format
+msgid "File not found: %s"
+msgstr "Datoteka nije pronađena: %s"
+
+#: ../src/ncb-selection.c:701
+#, c-format
+msgid "File does not appear to be a valid CUE sheet: %s"
+msgstr "Ne izgleda mi da je datoteka ispravan CUE omot: %s"
+
+#.
+#. translators: see strftime man page for meaning of %b, %d and %Y
+#. the maximum length for this field is 32 bytes
+#.
+#: ../src/ncb-selection.c:745
+msgid "Personal Data, %b %d, %Y"
+msgstr "Lični podaci, %d. %b, %Y."
+
+#: ../src/ncb-selection.c:817
+msgid "Unable to create CD/DVD"
+msgstr "Ne mogu da napravim CD/DVD"
+
+#: ../src/ncb-selection.c:981
+msgid "Source name"
+msgstr "Ime izvora"
+
+#: ../src/ncb-selection.c:988
+msgid "Source type"
+msgstr "Tip izvora"
+
+#: ../src/ncb-selection.c:996
+msgid "Source size"
+msgstr "Veličina izvora"
+
+#: ../src/ncb-selection.c:1005
+msgid "Disc label"
+msgstr "Naziv diska"
+
+#: ../src/ncb-selection.c:1012
+msgid "Write speed"
+msgstr "Brzina upisa"
+
+#: ../src/ncb-selection-dialog.c:171
+msgid "Copy Disc"
+msgstr "Umnoži disk"
+
+#: ../src/ncb-selection-dialog.c:173
+msgid "Copy disc _to:"
+msgstr "Umnoži d_isk na:"
+
+#: ../src/ncb-selection-dialog.c:345
+msgid "Maximum possible"
+msgstr "Najviše moguće"
+
+#: ../src/ncb-selection-dialog.c:558
+msgid "Calculating..."
+msgstr "Računanje..."
+
+#: ../src/ncb-selection-dialog.c:637
+msgid "_Write"
+msgstr "_Upis"
+
+#: ../src/ncb-operation.c:253
+msgid "Preparing to write CD"
+msgstr "Spremam se da upišem CD"
+
+#: ../src/ncb-operation.c:255
+msgid "Preparing to write DVD"
+msgstr "Spremam se da upišem DVD"
+
+#: ../src/ncb-operation.c:260
+msgid "Writing CD"
+msgstr "Upisujem CD"
+
+#: ../src/ncb-operation.c:262
+msgid "Writing DVD"
+msgstr "Upisujem DVD"
+
+#: ../src/ncb-operation.c:267
+#: ../src/ncb-operation.c:269
+msgid "Finishing write"
+msgstr "Završne radnje upisa..."
+
+#: ../src/ncb-operation.c:274
+msgid "Erasing CD"
+msgstr "Brišem CD"
+
+#: ../src/ncb-operation.c:276
+msgid "Erasing DVD"
+msgstr "Brišem DVD"
+
+#: ../src/ncb-operation.c:360
+msgid "None"
+msgstr "Ništa"
+
+#: ../src/ncb-operation.c:367
+msgid "Please make sure another application is not using the drive."
+msgstr "Proverite da neki drugi program ne koristi uređaj."
+
+#: ../src/ncb-operation.c:368
+msgid "Drive is busy"
+msgstr "Uređaj je zauzet"
+
+#: ../src/ncb-operation.c:370
+#: ../src/ncb-operation.c:375
+#, c-format
+msgid ""
+"Please put a disc, with at least %s free, into the drive.  The following disc types are supported:\n"
+"%s"
+msgstr ""
+"Molim ubacite u uređaj prazan disk sa slobodnih bar %s. Sledeće vrste diskova su podržane:\n"
+"%s"
+
+#: ../src/ncb-operation.c:373
+msgid "Insert a rewritable or blank disc"
+msgstr "Ubacite presnimljivi ili prazan disk"
+
+#: ../src/ncb-operation.c:378
+msgid "Insert a blank disc"
+msgstr "Ubacite prazan disk"
+
+# bug: string composition
+#: ../src/ncb-operation.c:381
+#: ../src/ncb-operation.c:387
+#, c-format
+msgid ""
+"Please replace the disc in the drive with a supported disc with at least %s free.  The following disc types are supported:\n"
+"%s"
+msgstr ""
+"Molim zamenite disk u uređaju diskom koji je podržan sa barem slobodnih %s. Sledeće vrste diskova su podržane:\n"
+"%s"
+
+#: ../src/ncb-operation.c:384
+msgid "Reload a rewritable or blank disc"
+msgstr "Ponovo ubacite presnimljivi ili prazan disk"
+
+#: ../src/ncb-operation.c:390
+msgid "Reload a blank disc"
+msgstr "Ponovo ubacite prazan disk"
+
+#: ../src/ncb-operation.c:401
+msgid "_Eject"
+msgstr "_Izbaci"
+
+# bug: string-composition
+#: ../src/ncb-operation.c:468
+#, c-format
+msgid "This %s appears to have information already recorded on it."
+msgstr "Ovaj %s disk izgleda da već sadrži neke upisane podatke."
+
+#: ../src/ncb-operation.c:472
+msgid "Erase information on this disc?"
+msgstr "Obrisati podatke na ovom disku?"
+
+#: ../src/ncb-operation.c:480
+msgid "_Try Another"
+msgstr "_Koristi drugi disk"
+
+#: ../src/ncb-operation.c:491
+msgid "_Erase Disc"
+msgstr "_Obriši disk"
+
+#: ../src/ncb-operation.c:523
+#, c-format
+msgid ""
+"There was an error writing to the disc:\n"
+"%s"
+msgstr ""
+"Dogodila se greška prilikom rezanja na disk:\n"
+"%s"
+
+#: ../src/ncb-operation.c:526
+msgid "There was an error writing to the disc"
+msgstr "Dogodila se greška prilikom upisa na disk"
+
+#: ../src/ncb-operation.c:529
+msgid "Error writing to disc"
+msgstr "Greška prilikom upisa na disk"
+
+#: ../src/ncb-operation.c:584
+#, c-format
+msgid "A file named \"%s\" already exists.  Do you want to overwrite it?"
+msgstr "Datoteka „%s“ već postoji. Želite li da je presnimite?"
+
+#: ../src/ncb-operation.c:586
+msgid "Overwrite existing file?"
+msgstr "Presnimi postojeću datoteku?"
+
+#: ../src/ncb-operation.c:595
+msgid "_Overwrite"
+msgstr "Pre_snimi"
+
+#: ../src/ncb-operation.c:614
+msgid "Choose a filename for the disc image"
+msgstr "Izaberite naziv za datoteku otiska diska"
+
+#. Translators: this is the filename of the image
+#: ../src/ncb-operation.c:750
+msgid "image.iso"
+msgstr "otisak.iso"
+
+#: ../src/ncb-operation.c:771
+#, c-format
+msgid "You do not have permissions to overwrite that file (%s)."
+msgstr "Nemate ovlašćenja da presnimite tu datoteku (%s)."
+
+#: ../src/ncb-operation.c:772
+#: ../src/ncb-operation.c:787
+#: ../src/ncb-operation.c:1593
+msgid "File image creation failed"
+msgstr "Neuspešno pravljenje datoteke otiska"
+
+#: ../src/ncb-operation.c:786
+#, c-format
+msgid "You do not have permissions to create that file (%s)."
+msgstr "Nemate ovlašćenja da napravite tu datoteku (%s)."
+
+#: ../src/ncb-operation.c:851
+msgid "Complete"
+msgstr "Završeno"
+
+#: ../src/ncb-operation.c:854
+msgid "An error occurred while writing"
+msgstr "Dogodila se greška prilikom upisa"
+
+#: ../src/ncb-operation.c:914
+msgid "Writing Files to a Disc Image"
+msgstr "Upisujem datoteke na otisak diska"
+
+#: ../src/ncb-operation.c:915
+msgid "Writing Files to CD"
+msgstr "Upisujem datoteke na CD"
+
+#: ../src/ncb-operation.c:916
+msgid "Writing Files to DVD"
+msgstr "Upisujem datoteke na DVD"
+
+#: ../src/ncb-operation.c:919
+msgid "Writing Image to Disc"
+msgstr "Upisujem otisak na disk"
+
+#: ../src/ncb-operation.c:920
+msgid "Copying Disc Image"
+msgstr "Umnožavam otisak diska"
+
+#: ../src/ncb-operation.c:921
+msgid "Writing Image to CD"
+msgstr "Upisujem otisak na CD"
+
+#: ../src/ncb-operation.c:922
+msgid "Writing Image to DVD"
+msgstr "Upisujem otisak na DVD"
+
+#: ../src/ncb-operation.c:925
+msgid "Copying Disc"
+msgstr "Umnožavam disk"
+
+#: ../src/ncb-operation.c:926
+msgid "Copying Disc to a Disc Image"
+msgstr "Umnožavam disk na otisak diska"
+
+#: ../src/ncb-operation.c:927
+msgid "Copying Disc to CD"
+msgstr "Umnožam disk na CD"
+
+#: ../src/ncb-operation.c:928
+msgid "Copying Disc to DVD"
+msgstr "Umnožavam disk na DVD"
+
+#: ../src/ncb-operation.c:932
+msgid "Writing files to disc"
+msgstr "Upisujem datoteke na disk"
+
+#: ../src/ncb-operation.c:933
+msgid "Writing files to a disc image"
+msgstr "Upisujem datoteke na otisak diska"
+
+#: ../src/ncb-operation.c:934
+msgid "Writing files to CD"
+msgstr "Upisujem datoteke na CD"
+
+#: ../src/ncb-operation.c:935
+msgid "Writing files to DVD"
+msgstr "Upisujem datoteke na DVD"
+
+#: ../src/ncb-operation.c:938
+msgid "Writing image to disc"
+msgstr "Upisujem otisak na disk"
+
+#: ../src/ncb-operation.c:939
+msgid "Copying disc image"
+msgstr "Umnožavam otisak diska"
+
+#: ../src/ncb-operation.c:940
+msgid "Writing image to CD"
+msgstr "Upisujem otisak na CD"
+
+#: ../src/ncb-operation.c:941
+msgid "Writing image to DVD"
+msgstr "Upisujem otisak na DVD"
+
+#: ../src/ncb-operation.c:944
+msgid "Copying disc"
+msgstr "Umnožavam disk"
+
+#: ../src/ncb-operation.c:945
+msgid "Copying disc to a disc image"
+msgstr "Umnožavam disk na otisak diska"
+
+#: ../src/ncb-operation.c:946
+msgid "Copying disc to CD"
+msgstr "Umnožavam disk na CD"
+
+#: ../src/ncb-operation.c:947
+msgid "Copying disc to DVD"
+msgstr "Umnožavam disk na DVD"
+
+# bug: string composition always sucks, at least a translator comment should be here
+#: ../src/ncb-operation.c:951
+msgid "The selected files are being written to a CD or DVD.  This operation may take a long time, depending on data size and write speed."
+msgstr "Izabrane datoteke će biti upisane na CD ili DVD. Ovo može potrajati, u zavisnosti od veličine podataka i brzine upisa."
+
+#: ../src/ncb-operation.c:952
+msgid "The selected files are being written to a disc image file."
+msgstr "Izabrane datoteke se upisuju u datoteku otiska diska."
+
+# bug: string composition always sucks, at least a translator comment should be here
+#: ../src/ncb-operation.c:953
+msgid "The selected files are being written to a CD.  This operation may take a long time, depending on data size and write speed."
+msgstr "Izabrane datoteke se upisuju na CD. Ovo može potrajati, u zavisnosti od veličine podataka i brzine narezivanja."
+
+# bug: string composition always sucks, at least a translator comment should be here
+#: ../src/ncb-operation.c:954
+msgid "The selected files are being written to a DVD.  This operation may take a long time, depending on data size and write speed."
+msgstr "Izabrane datoteke se upisuju na DVD. Ovo može potrajati, u zavisnosti od veličine podataka i brzine narezivanja."
+
+# bug: string composition always sucks, at least a translator comment should be here
+#: ../src/ncb-operation.c:957
+msgid "The selected disc image is being written to a CD or DVD.  This operation may take a long time, depending on data size and write speed."
+msgstr "Izabrane datoteke se upisuju na CD ili DVD. Ovo može potrajati, u zavisnosti od veličine podataka i brzine narezivanja."
+
+#: ../src/ncb-operation.c:958
+msgid "The selected disc image is being copied to a disc image file."
+msgstr "Izabrani otisak diska se umnožava u datoteku otiska diska."
+
+# bug: string composition always sucks, at least a translator comment should be here
+#: ../src/ncb-operation.c:959
+msgid "The selected disc image is being written to a CD.  This operation may take a long time, depending on data size and write speed."
+msgstr "Izabrani otisak diska se upisuje na CD. Ovo može potrajati, u zavisnosti od veličine podataka i brzine narezivanja."
+
+# bug: string composition always sucks, at least a translator comment should be here
+#: ../src/ncb-operation.c:960
+msgid "The selected disc image is being written to a DVD.  This operation may take a long time, depending on data size and write speed."
+msgstr "Izabrani otisak diska se upisuje na DVD. Ovo može potrajati, u zavisnosti od veličine podataka i brzine narezivanja."
+
+# bug: string composition always sucks, at least a translator comment should be here
+#: ../src/ncb-operation.c:963
+msgid "The selected disc is being copied to a CD or DVD.  This operation may take a long time, depending on data size and drive speed."
+msgstr "Izabrani disk se upisuje na CD ili DVD. Ovo može potrajati, u zavisnosti od veličine podataka i brzine narezivanja."
+
+# bug: string composition always sucks, at least a translator comment should be here
+#: ../src/ncb-operation.c:964
+msgid "The selected disc is being copied to a disc image file.  This operation may take a long time, depending on data size and drive speed."
+msgstr "Izabrani disk se upisuje u datoteku otiska diska. Ovo može potrajati, u zavisnosti od veličine podataka i brzine narezivanja."
+
+# bug: string composition always sucks, at least a translator comment should be here
+#: ../src/ncb-operation.c:965
+msgid "The selected disc is being copied to a CD.  This operation may take a long time, depending on data size and drive speed."
+msgstr "Izabrani disk se umnoža na CD. Ovo može potrajati, u zavisnosti od veličine podataka i brzine narezivanja."
+
+# bug: string composition always sucks, at least a translator comment should be here
+#: ../src/ncb-operation.c:966
+msgid "The selected disc is being copied to a DVD.  This operation may take a long time, depending on data size and drive speed."
+msgstr "Izabrani disk se umnožava na DVD. Ovo može potrajati, u zavisnosti od veličine podataka i brzine narezivanja."
+
+#: ../src/ncb-operation.c:1023
+msgid "Burning CD"
+msgstr "Upisujem na CD"
+
+#: ../src/ncb-operation.c:1190
+#: ../src/ncb-operation.c:1414
+msgid "Creating disc image"
+msgstr "Stvaram otisak diska"
+
+#: ../src/ncb-operation.c:1808
+#, c-format
+msgid "Writing CD/DVD-Image '%s'."
+msgstr "Upisujem otisak „%s“."
+
+#: ../src/ncb-operation.c:1813
+#, c-format
+msgid "Writing disc '%s'."
+msgstr "Upisujem disk „%s“."
+
+#: ../src/ncb-operation.c:1815
+#, c-format
+msgid "Writing %s '%s'."
+msgstr "Upisujem %s „%s“."
+
+#: ../src/ncb-operation.c:1862
+#, c-format
+msgid "Completed writing %s"
+msgstr "Završen upis diska %s"
+
+#: ../src/ncb-operation.c:1967
+msgid "Interrupt writing files to disc?"
+msgstr "Prekini upis datoteka na disk?"
+
+#: ../src/ncb-operation.c:1968
+msgid "Are you sure you want to interrupt the disc write operation? Some drives may require that you restart the computer to get them working again."
+msgstr "Da li ste sigurni da želite da prekinete upis na disk? Neki snimači zahtevaju da ponovo pokrenete računar kako bi mogli ponovo da ih koristite."
+
+#: ../src/ncb-operation.c:1974
+msgid "Interrupt"
+msgstr "Prekini"
+
+#: ../src/ncb-operation.c:1976
+msgid "Continue"
+msgstr "Nastavi"
+
+#: ../src/ncb-progress-dialog.c:146
+#, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d čas"
+msgstr[1] "%d časa"
+msgstr[2] "%d časova"
+
+#: ../src/ncb-progress-dialog.c:148
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d minut"
+msgstr[1] "%d minuta"
+msgstr[2] "%d minuta"
+
+#: ../src/ncb-progress-dialog.c:151
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d sekunda"
+msgstr[1] "%d sekunde"
+msgstr[2] "%d sekundi"
+
+#. hour:minutes:seconds
+#: ../src/ncb-progress-dialog.c:156
+#, c-format
+msgid "%s %s %s"
+msgstr "%s %s %s"
+
+#. minutes:seconds
+#: ../src/ncb-progress-dialog.c:159
+#, c-format
+msgid "%s %s"
+msgstr "%s %s"
+
+#. seconds
+#: ../src/ncb-progress-dialog.c:162
+#, c-format
+msgid "%s"
+msgstr "%s"
+
+#. 0 seconds
+#: ../src/ncb-progress-dialog.c:165
+msgid "0 seconds"
+msgstr "0 sekundi"
+
+#: ../src/ncb-progress-dialog.c:189
+#, c-format
+msgid "About %s left"
+msgstr "Preostalo je oko %s"
+
+#: ../src/ncb-progress-dialog.c:439
+msgid "_Make Another Copy"
+msgstr "Napravi _još jedan primerak"
+
+#: ../src/ncb-rename-dialog.c:479
+msgid "C_ontinue"
+msgstr "_Nastavi"
+
+#: ../src/ncb-rename-dialog.c:507
+msgid "Filename"
+msgstr "Ime datoteke"
+
+#: ../src/ncb-rename-dialog.c:523
+msgid "Rename file"
+msgstr "Preimenuj datoteku"
+
+#~ msgid "Unnamed CDROM"
+#~ msgstr "Bezimeni CD čitač (%s)"
+#~ msgid "Select the speed to use for the write"
+#~ msgstr "Izaberi brzinu upisa"
+#~ msgid "Unable to create temporary directory: %s."
+#~ msgstr "Ne mogu da napravim privremeni direktorijum: %s"
+#~ msgid "Unable to create temporary file: %s."
+#~ msgstr "Ne mogu da napravim privremenu datoteku: %s"
+#~ msgid "Command failed: %s"
+#~ msgstr "Neuspešna naredba: %s"
+#~ msgid "Unknown error"
+#~ msgstr "Nepoznata greška"
+#~ msgid "%d MiB"
+#~ msgstr "%d MB"
+#~ msgid ""
+#~ "You need to copy the files you want to write to disc to the CD/DVD "
+#~ "Creator window."
+#~ msgstr ""
+#~ "Datoteke koje želite da narežete na disk prebacite/umnožite u prozor za "
+#~ "izradu diskova."
+#~ msgid "Open CD/DVD Creator"
+#~ msgstr "Otvori izradu CD-a i DVD-a"
+#~ msgid "Unable to read specified location"
+#~ msgstr "Ne mogu da pročitam navedeno mesto"
+#~ msgid "No media available"
+#~ msgstr "Nosač nije dostupan"
+#~ msgid "Too many parameters"
+#~ msgstr "Previše parametara"
+#~ msgid "Too many parameters were passed to the application."
+#~ msgstr "Prosleđeno je previše parametara programu."
+#~ msgid "Can't launch cd burner"
+#~ msgstr "Ne mogu da pokrenem rezač CD-a"
+#~ msgid "<b>After Writing</b>"
+#~ msgstr "<b>Nakon rezanja</b>"
+#~ msgid "E_ject disc"
+#~ msgstr "I_zbaci disk"
+#~ msgid "CD or DVD"
+#~ msgstr "CD ili DVD"
+#~ msgid "_Reuse these files for another disc"
+#~ msgstr "Ponovo is_koristi datoteke za još jedan disk"
+#~ msgid "Incorrectly encoded string."
+#~ msgstr "Neispravno zapisana niska."
+#~ msgid "Fixating CD"
+#~ msgstr "Završavam CD"
+#~ msgid "Fixating DVD"
+#~ msgstr "Završavam DVD"
+

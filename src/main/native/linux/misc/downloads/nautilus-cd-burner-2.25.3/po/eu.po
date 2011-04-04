@@ -1,0 +1,1025 @@
+# translation of nautilus-cd-burner.HEAD.po to Basque
+# Basque translation of nautilus-cd-burner.
+# Copyright (C) 2003 THE nautilus-cd-burner'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the nautilus-cd-burner package.
+#
+#
+# Alberto Silva Gago <alberto@nmp.es>, 2003.
+# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2003, 2004, 2006, 2007, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: nautilus-cd-burner.HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-01-25 17:49+0100\n"
+"PO-Revision-Date: 2008-01-22 20:07+0100\n"
+"Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
+"Language-Team: Basque <itzulpena@euskalgnu.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../data/nautilus-cd-burner.desktop.in.h:1
+#: ../data/nautilus-cd-burner-open-iso.desktop.in.h:1
+#: ../src/ncb-operation.c:1635
+msgid "CD/DVD Creator"
+msgstr "CD/DVD sortzailea"
+
+#: ../data/nautilus-cd-burner.desktop.in.h:2
+msgid "Open a folder into which you can drag files to burn to a CD or DVD"
+msgstr ""
+"Ireki karpeta bertara fitxategiak arrastatzeko eta CDa edo DVDa grabatzeko"
+
+#: ../data/nautilus-cd-burner-open-iso.desktop.in.h:2
+msgid "Open the CD/DVD Creator"
+msgstr "Ireki CD/DVD sortzailea"
+
+#: ../data/nautilus-cd-burner.glade.h:1
+msgid "    "
+msgstr "    "
+
+#: ../data/nautilus-cd-burner.glade.h:2
+msgid "<b>Information</b>"
+msgstr "<b>Informazioa</b>"
+
+#: ../data/nautilus-cd-burner.glade.h:3
+msgid "<b>Write Options</b>"
+msgstr "<b>Grabazioaren aukerak</b>"
+
+#: ../data/nautilus-cd-burner.glade.h:4
+msgid "<big><b>Some files have invalid filenames</b></big>"
+msgstr "<big><b>Zenbait fitxategik izen baliogabeak dituzte</b></big>"
+
+#: ../data/nautilus-cd-burner.glade.h:5
+msgid "<big><b>Writing files to disc</b></big>"
+msgstr "<big><b>Fitxategiak diskoan grabatzea</b></big>"
+
+#: ../data/nautilus-cd-burner.glade.h:6
+msgid "<i>Initializing...</i>"
+msgstr "<i>Hasieratzen...</i>"
+
+#: ../data/nautilus-cd-burner.glade.h:7
+msgid "Data size:"
+msgstr "Datuen tamaina:"
+
+#: ../data/nautilus-cd-burner.glade.h:8
+msgid "Disc _name:"
+msgstr "Diskoaren _izena:"
+
+#: ../data/nautilus-cd-burner.glade.h:9
+msgid "Label to identify disc"
+msgstr "CDa identifikatzeko etiketa"
+
+#: ../data/nautilus-cd-burner.glade.h:10
+msgid ""
+"The following filenames are not valid.  Please provide new names for each of "
+"them."
+msgstr ""
+"Honako fitxategi-izenak ez dira baliozkoak. Eman bakoitzari izen berria."
+
+#: ../data/nautilus-cd-burner.glade.h:11
+msgid "Write _speed:"
+msgstr "Grabazio-_abiadura:"
+
+#: ../data/nautilus-cd-burner.glade.h:12
+msgid "Write disc _to:"
+msgstr "_Grabatu diskoa hemen:"
+
+#: ../data/nautilus-cd-burner.glade.h:13 ../src/ncb-operation.c:902
+msgid "Writing Files to Disc"
+msgstr "Fitxategiak diskoan grabatzen"
+
+#: ../data/nautilus-cd-burner.glade.h:14
+msgid "_Dummy write"
+msgstr "_Probako grabazioa"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:1
+msgid "Default burn speed"
+msgstr "Grabatzeko abiadura lehenetsia"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:2
+msgid "Default speed at which the media will be written."
+msgstr "Euskarria grabatzeko erabiliko den abiadura lehenentsia."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:3
+msgid "Directory for the temporary ISO images"
+msgstr "Behin-behineko ISO irudientzako direktorioa"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:4
+msgid ""
+"Directory used for the temporary ISO images, leave blank to use the default "
+"system temporary directory."
+msgstr ""
+"Aldi bateko ISO irudientzako direktorioa, utzi hutsik sistemaren aldi "
+"baterako direktorio lehenentsia erabiltzeko."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:5
+msgid "Enable Burnproof option"
+msgstr "Gaitu BurnProof"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:6
+msgid "Enable debug"
+msgstr "Gaitu arazketa"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:7
+msgid "Enable overburn"
+msgstr "Gaitu mugatik gora grabatzea"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:8
+msgid "Whether to allow the data to exceed the size of the physical medium."
+msgstr "Datuek euskarri fisikoaren tamaina gainditu dezaketen ala ez."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:9
+msgid "Whether to enable the debugging for CD Recording."
+msgstr "CDaren grabazioaren arazketa gaitu ala ez."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:10
+msgid "Whether to use the Burnproof option available on some recorders."
+msgstr "Grabagailu batzuek eskaintzen duten BurnProof aukera gaitu ala ez."
+
+#: ../src/burn-extension.c:143 ../src/burn-extension.c:147
+msgid "Unable to launch the cd burner application"
+msgstr "Ezinezkoa da CD grabagailuaren aplikazioa abiarazi"
+
+#: ../src/burn-extension.c:430 ../src/burn-extension.c:440
+#: ../src/burn-extension.c:526
+msgid "_Write to Disc..."
+msgstr "_Grabatu diskoan..."
+
+#: ../src/burn-extension.c:431
+msgid "Write disc image to a CD or DVD disc"
+msgstr "Grabatu disko-irudia CDan edo DVDan"
+
+#: ../src/burn-extension.c:441
+msgid "Write disc image cuesheet to a CD or DVD disc"
+msgstr "Grabatu CUE disko-irudia CDan edo DVDan"
+
+#: ../src/burn-extension.c:487
+msgid "_Copy Disc..."
+msgstr "_Kopiatu diskoa..."
+
+#: ../src/burn-extension.c:488
+msgid "Create a copy of this CD or DVD disc"
+msgstr "CD edo DVD honen kopia sortzen du"
+
+#: ../src/burn-extension.c:527 ../src/nautilus-burn-bar.c:151
+msgid "Write contents to a CD or DVD disc"
+msgstr "Grabatu edukia CDan edo DVDan"
+
+#: ../src/make-iso.c:306
+msgid "Disable Microsoft Windows compatibility?"
+msgstr "Desgaitu Microsoft Windows-eko bateragarritasuna?"
+
+#: ../src/make-iso.c:309
+msgid ""
+"Some files don't have a suitable name for a Windows-compatible CD.\n"
+"Do you want to continue with Windows compatibility disabled?"
+msgstr ""
+"Fitxategi batzuk ez daukate izen egokia  CDa Windows-ekin bateragarria "
+"izateko.\n"
+"Windows-eko bateragarritasuna desgaituta edukitzea nahi duzu?"
+
+#: ../src/make-iso.c:310
+msgid "Windows compatibility"
+msgstr "Windows-eko bateragarritasuna"
+
+#: ../src/make-iso.c:707
+msgid " (invalid Unicode)"
+msgstr " (Unicode baliogabea)"
+
+#: ../src/make-iso.c:868
+#, c-format
+msgid ""
+"The selected location does not have enough space to store the disc image (%s "
+"MiB needed)."
+msgstr ""
+"Hautatutako kokalekuak ez du behar adina leku disko-irudia gordetzeko (%s "
+"MiB behar da)"
+
+#: ../src/make-iso.c:1012 ../src/make-iso.c:1402
+#, c-format
+msgid "Could not run sub process: %s."
+msgstr "Ezin izan da azpi-prozesua exekutatu: %s"
+
+#: ../src/make-iso.c:1039
+msgid "The operation was cancelled by the user."
+msgstr "Erabiltzaileak eragiketa bertan behera utzi du."
+
+#: ../src/make-iso.c:1140
+#, c-format
+msgid ""
+"Some files have invalid filenames: \n"
+"%s"
+msgstr ""
+"Zenbait fitxategik izen baliogabeak dituzte:\n"
+"%s"
+
+#: ../src/make-iso.c:1153
+msgid "Unknown character encoding."
+msgstr "Karaktere-kodeketa ezezaguna"
+
+#: ../src/make-iso.c:1157
+msgid "There is no space left on the device."
+msgstr "Gailuan ez dago behar adina leku."
+
+#. TODO: get filename from error message
+#: ../src/make-iso.c:1162
+msgid "File too large for filesystem."
+msgstr "Fitxategia handiegia da fitxategi-sistemarako."
+
+#: ../src/make-iso.c:1215
+msgid "The label for the image is too long."
+msgstr "Irudiaren etiketa luzeegia da."
+
+#: ../src/make-iso.c:1323
+msgid "There are no files to write to disc."
+msgstr "Ez dago fitxategirik diskoan grabatzeko."
+
+#: ../src/make-iso.c:1674
+msgid "Not a valid disc image."
+msgstr "Disko-irudia ez da baliagarria."
+
+#: ../src/nautilus-burn-bar.c:137
+msgid "CD/DVD Creator Folder"
+msgstr "CD/DVD sortzailearen karpeta"
+
+#: ../src/nautilus-burn-bar.c:141 ../src/ncb-selection-dialog.c:176
+msgid "Write to Disc"
+msgstr "Grabatu diskoan"
+
+#: ../src/nautilus-burn-drive.c:1252
+msgid "Could not determine media type because CD drive is busy"
+msgstr "Ezin izan da euskarri-mota zehaztu CD unitatea lanpetuta dagoelako"
+
+#: ../src/nautilus-burn-drive.c:1254
+msgid "Couldn't open media"
+msgstr "Ezin izan da euskarria ireki"
+
+#: ../src/nautilus-burn-drive.c:1256
+msgid "Unknown Media"
+msgstr "Euskarri ezezaguna"
+
+#: ../src/nautilus-burn-drive.c:1258
+msgid "Commercial CD or Audio CD"
+msgstr "CD komertziala edo audioko CDa"
+
+#: ../src/nautilus-burn-drive.c:1260
+msgid "CD-R"
+msgstr "CD-Ra"
+
+#: ../src/nautilus-burn-drive.c:1262
+msgid "CD-RW"
+msgstr "CD-RWa"
+
+#: ../src/nautilus-burn-drive.c:1264
+msgid "DVD"
+msgstr "DVDa"
+
+#: ../src/nautilus-burn-drive.c:1266
+msgid "DVD-R, or DVD-RAM"
+msgstr "DVD-Ra edo DVD-RAMa"
+
+#: ../src/nautilus-burn-drive.c:1268
+msgid "DVD-RW"
+msgstr "DVD-RWa"
+
+#: ../src/nautilus-burn-drive.c:1270
+msgid "DVD-RAM"
+msgstr "DVD-RAMa"
+
+#: ../src/nautilus-burn-drive.c:1272
+msgid "DVD+R"
+msgstr "DVD+Ra"
+
+#: ../src/nautilus-burn-drive.c:1274
+msgid "DVD+RW"
+msgstr "DVD+RWa"
+
+#: ../src/nautilus-burn-drive.c:1276
+msgid "DVD+R DL"
+msgstr "DVD+R DLa"
+
+#: ../src/nautilus-burn-drive.c:1281
+msgid "Broken media type"
+msgstr "Hondatutako euskarri-mota"
+
+#: ../src/nautilus-burn-drive-monitor.c:452
+msgid "File image"
+msgstr "Fitxategi-irudia"
+
+#: ../src/nautilus-burn-drive-selection.c:107 ../src/ncb-selection.c:1022
+msgid "Drive"
+msgstr "Unitatea"
+
+#: ../src/nautilus-burn-drive-selection.c:237
+msgid "Unnamed CD/DVD Drive"
+msgstr "Izenik gabeko CD/DVD euskarria"
+
+#: ../src/nautilus-burn-recorder.c:602
+msgid "The recorder could not be accessed."
+msgstr "Ezin izan da grabagailua atzitu."
+
+#: ../src/nautilus-burn-recorder.c:606
+msgid "Not enough space available on the disc."
+msgstr "Diskoan ez dago behar adina leku."
+
+#: ../src/nautilus-burn-recorder.c:610 ../src/nautilus-burn-recorder.c:614
+msgid "The files selected did not fit on the DVD."
+msgstr "Hautatutako fitxategiak ez dira DVDan sartzen."
+
+#: ../src/nautilus-burn-recorder.c:626
+msgid "The target DVD drive is still in use."
+msgstr "Helburuko DVD unitatea erabitzen ari da."
+
+#: ../src/nautilus-burn-recorder.c:632
+msgid "Unhandled error, aborting"
+msgstr "Errore ezezaguna, bertan behera utzen"
+
+#: ../src/nautilus-burn-recorder.c:697
+msgid "The CD has already been recorded."
+msgstr "CDa jadanik grabatua izan da."
+
+#: ../src/nautilus-burn-recorder.c:717
+msgid "The files selected did not fit on the CD."
+msgstr "Hautatutako fitxategiak ez dira CDan sartzen."
+
+#: ../src/nautilus-burn-recorder.c:721
+msgid ""
+"All audio files must be stereo, 16-bit digital audio with 44100Hz samples."
+msgstr ""
+"Soinu-fitxategi guztiak estereoak izan behar dute, 16-biteko soinu "
+"digitalekoak 44100Hz-ko laginarekin."
+
+#: ../src/nautilus-burn-recorder.c:745
+msgid "Error while writing to disc.  Try a lower speed."
+msgstr "Errorea diskoa grabatzean. Saiatu abiadura motelagorekin."
+
+#: ../src/nautilus-burn-recorder.c:750
+msgid ""
+"The system is too slow to write the CD at this speed. Try a lower speed."
+msgstr ""
+"Sistema motelegia da CDa abiadura hontean grabatzeko. Saia zaitez abiadura "
+"txikiago batekin."
+
+#: ../src/nautilus-burn-recorder.c:884
+msgid "You can only burn 99 tracks on one disc"
+msgstr "Disko batean gehienez 99 pista bakarrik graba ditzakezu."
+
+#: ../src/nautilus-burn-recorder.c:891
+msgid "No tracks given to write"
+msgstr "Ez da pistarik eman grabatzeko"
+
+#: ../src/nautilus-burn-recorder.c:896
+msgid "Burning CD/DVD"
+msgstr "DVDa/CDa grabatzea"
+
+#: ../src/nautilus-burn-recorder.c:1101
+msgid "Can only use growisofs on a single track"
+msgstr "growisofs pista bakunean soilik erabil daiteke"
+
+#: ../src/nautilus-burn-recorder.c:1112
+msgid "Can only use growisofs on a data or graft list track"
+msgstr "growisofs datuen pista batean soilik erabil daiteke"
+
+#: ../src/nautilus-burn-recorder.c:1480
+msgid "Blanking CD"
+msgstr "CDa garbitzea"
+
+#: ../src/nautilus-burn-recorder.c:1550
+msgid "Blanking DVD"
+msgstr "DVDa garbitzea"
+
+#: ../src/nautilus-burn-process.c:497
+#, c-format
+msgid "Could not run the necessary command: %s"
+msgstr "Ezin izan da beharrezko komandoa exekutatu: %s"
+
+#: ../src/nautilus-cd-burner.c:157
+#, c-format
+msgid "There was a problem displaying the help contents: %s."
+msgstr "Errore bat gertatu da laguntzako edukia bistaratzean:%s"
+
+#: ../src/nautilus-cd-burner.c:158
+msgid "Cannot display help"
+msgstr "Ezin izan da laguntza bistaratu"
+
+#: ../src/nautilus-cd-burner.c:293
+msgid "Use CD/DVD device as source instead of burn:///"
+msgstr "Erabili CD/DVD gailua iturburu gisa 'burn:///' ordez"
+
+#: ../src/nautilus-cd-burner.c:293
+msgid "DEVICE"
+msgstr "GAILUA"
+
+#: ../src/nautilus-cd-burner.c:295
+msgid "Use ISO image as source instead of burn:///"
+msgstr "Erabili ISO irudia iturburu gisa 'burn:///' ordez"
+
+#: ../src/nautilus-cd-burner.c:295 ../src/nautilus-cd-burner.c:297
+msgid "FILENAME"
+msgstr "FITXATEGI-IZENA"
+
+#: ../src/nautilus-cd-burner.c:297
+msgid "Use CUE/TOC file as source instead of burn:///"
+msgstr "Erabili CUE/TOC fitxategia iturburu gisa 'burn:///' ordez"
+
+#: ../src/ncb-selection.c:442
+msgid ""
+"It appears that the disc, when created, will contain a single disc image "
+"file.  Do you want to create a disc from the contents of the image or with "
+"the image file inside?"
+msgstr ""
+"Badirudi diskoak, sortutakoan, disko-irudiaren fitxategi bakarra edukiko "
+"duela. Irudiaren edukiarekin edo irudi-fitxategia barnean duela sortu nahi "
+"duzu diskoa?"
+
+#: ../src/ncb-selection.c:445
+msgid "Create disc containing a single disc image file?"
+msgstr "Sortu diskoa disko-irudiaren fitxategi bakarrarekin?"
+
+#: ../src/ncb-selection.c:448
+msgid "Create From Image"
+msgstr "Sortu iruditik"
+
+#: ../src/ncb-selection.c:450
+msgid "Create With File"
+msgstr "Sortu fitxategitik"
+
+#: ../src/ncb-selection.c:453
+msgid ""
+"It appears that the disc, when created, will contain only disc image files.  "
+"Do you want to continue and write them to the disc as files?"
+msgstr ""
+"Badirudi diskoa, sortutakoan, disko-irudien fitxategiak soilik edukiko "
+"dituela. Jarraitu nahi duzu eta fitxategi gisa grabatu diskoan?"
+
+#: ../src/ncb-selection.c:456
+msgid "Create disc containing only disc image files?"
+msgstr "Sortu diskoa disko-irudien fitxategiekin soilik?"
+
+#: ../src/ncb-selection.c:460
+msgid "Create With Files"
+msgstr "Sortu fitxategiekin"
+
+#: ../src/ncb-selection.c:491
+#, c-format
+msgid ""
+"The file '%s' is unreadable.  Do you wish to skip this file and continue?"
+msgstr "%s fitxategia ezin da irakurri. Saltatu fitxategia eta jarritu?"
+
+#: ../src/ncb-selection.c:494
+msgid "Skip unreadable file?"
+msgstr "Saltatu fitxategi irakurkaitza?"
+
+#: ../src/ncb-selection.c:499
+msgid "Skip"
+msgstr "Saltatu"
+
+#: ../src/ncb-selection.c:499
+msgid "Skip All"
+msgstr "Saltatu denak"
+
+#: ../src/ncb-selection.c:522
+msgid "No files were selected."
+msgstr "Ez da fitxategirik hautatu"
+
+#: ../src/ncb-selection.c:553
+#, c-format
+msgid "The file '%s' is not a valid disc image."
+msgstr "'%s' fitxategia ez da disko-irudi baliagarria."
+
+#: ../src/ncb-selection.c:628
+#, c-format
+msgid "The specified device '%s' is not a valid CD/DVD drive."
+msgstr "'%s' gailua ez da baliozko CD/DVD unitatea."
+
+#: ../src/ncb-selection.c:652
+msgid "There doesn't seem to be any media in the selected drive."
+msgstr "Badirudi ez dagola euskarririk hautatutako unitatean."
+
+#: ../src/ncb-selection.c:659
+msgid "The media is blank."
+msgstr "Euskarria hutsik dago."
+
+#: ../src/ncb-selection.c:692
+#, c-format
+msgid "File not found: %s"
+msgstr "Ez da fitxategia aurkitu: %s"
+
+#: ../src/ncb-selection.c:701
+#, c-format
+msgid "File does not appear to be a valid CUE sheet: %s"
+msgstr "Badirudi fitxategiak ez duela baliozko CUE orririk: %s"
+
+#.
+#. translators: see strftime man page for meaning of %b, %d and %Y
+#. the maximum length for this field is 32 bytes
+#.
+#: ../src/ncb-selection.c:745
+msgid "Personal Data, %b %d, %Y"
+msgstr "Informazio pertsonala, %Y %b %d"
+
+#: ../src/ncb-selection.c:817
+msgid "Unable to create CD/DVD"
+msgstr "Ezin da CDa/DVDa sortu"
+
+#: ../src/ncb-selection.c:981
+msgid "Source name"
+msgstr "Iturri-izena"
+
+#: ../src/ncb-selection.c:988
+msgid "Source type"
+msgstr "Iturri-mota"
+
+#: ../src/ncb-selection.c:996
+msgid "Source size"
+msgstr "Iturri-tamaina"
+
+#: ../src/ncb-selection.c:1005
+msgid "Disc label"
+msgstr "Diskoaren izena"
+
+#: ../src/ncb-selection.c:1012
+msgid "Write speed"
+msgstr "Grabazio-abiadura"
+
+#: ../src/ncb-selection-dialog.c:172
+msgid "Copy Disc"
+msgstr "Kopiatu diskoa"
+
+#: ../src/ncb-selection-dialog.c:174
+msgid "Copy disc _to:"
+msgstr "Kopiatu diskoa _hemen:"
+
+#: ../src/ncb-selection-dialog.c:346
+msgid "Maximum possible"
+msgstr "Ahal den gehiena"
+
+#: ../src/ncb-selection-dialog.c:559
+msgid "Calculating..."
+msgstr "Kalkulatzen..."
+
+#: ../src/ncb-selection-dialog.c:638
+msgid "_Write"
+msgstr "_Grabatu"
+
+#: ../src/ncb-operation.c:242
+msgid "Preparing to write CD"
+msgstr "Prestatu CDa idazteko"
+
+#: ../src/ncb-operation.c:244
+msgid "Preparing to write DVD"
+msgstr "DVDa grabatzeko prestatzen"
+
+#: ../src/ncb-operation.c:249
+msgid "Writing CD"
+msgstr "CDa grabatzen"
+
+#: ../src/ncb-operation.c:251
+msgid "Writing DVD"
+msgstr "DVDa grabatzen"
+
+#: ../src/ncb-operation.c:256 ../src/ncb-operation.c:258
+msgid "Finishing write"
+msgstr "Idazketa amaitzen"
+
+#: ../src/ncb-operation.c:263
+msgid "Erasing CD"
+msgstr "CDa ezabatzen"
+
+#: ../src/ncb-operation.c:265
+msgid "Erasing DVD"
+msgstr "DVDa ezabatzen"
+
+#: ../src/ncb-operation.c:349
+msgid "None"
+msgstr "Bat ere ez"
+
+#: ../src/ncb-operation.c:356
+msgid "Please make sure another application is not using the drive."
+msgstr "Ziurtatu zaitez beste aplikazio batek unitatea ez darabilela."
+
+#: ../src/ncb-operation.c:357
+msgid "Drive is busy"
+msgstr "Unitatea lanpetuta"
+
+#: ../src/ncb-operation.c:359 ../src/ncb-operation.c:364
+#, c-format
+msgid ""
+"Please put a disc, with at least %s free, into the drive.  The following "
+"disc types are supported:\n"
+"%s"
+msgstr ""
+"Jarri unitate bat, gutxienez %s libre, gailuan. Honako disko-motak onartzen "
+"dira:\n"
+"%s"
+
+#: ../src/ncb-operation.c:362
+msgid "Insert a rewritable or blank disc"
+msgstr "Sartu disko erabili-gabekoa edo berridazgarria"
+
+#: ../src/ncb-operation.c:367
+msgid "Insert a blank disc"
+msgstr "Sartu erabili-gabeko diskoa"
+
+#: ../src/ncb-operation.c:370 ../src/ncb-operation.c:376
+#, c-format
+msgid ""
+"Please replace the disc in the drive with a supported disc with at least %s "
+"free.  The following disc types are supported:\n"
+"%s"
+msgstr ""
+"Ordeztu unitateko diskoa %s libre duen onartutako disko batekin. Honako "
+"unitate-motak onartzen dira:\n"
+"%s"
+
+#: ../src/ncb-operation.c:373
+msgid "Reload a rewritable or blank disc"
+msgstr "Birkargatu disko erabili-gabekoa edo berridazgarria"
+
+#: ../src/ncb-operation.c:379
+msgid "Reload a blank disc"
+msgstr "Birkargatu erabili-gabeko diskoa"
+
+#: ../src/ncb-operation.c:390
+msgid "_Eject"
+msgstr "_Egotzi"
+
+#: ../src/ncb-operation.c:457
+#, c-format
+msgid "This %s appears to have information already recorded on it."
+msgstr "%s(e)k jadanik informazioa grabatua duela dirudi."
+
+#: ../src/ncb-operation.c:461
+msgid "Erase information on this disc?"
+msgstr "Diskoko informazioa ezabatu?"
+
+#: ../src/ncb-operation.c:469
+msgid "_Try Another"
+msgstr "_Saiatu beste batekin"
+
+#: ../src/ncb-operation.c:480
+msgid "_Erase Disc"
+msgstr "_Ezabatu diskoa"
+
+#: ../src/ncb-operation.c:512
+#, c-format
+msgid ""
+"There was an error writing to the disc:\n"
+"%s"
+msgstr ""
+"Errorea gertatu da diskoa grabatzean:\n"
+"%s"
+
+#: ../src/ncb-operation.c:515
+msgid "There was an error writing to the disc"
+msgstr "Errorea gertatu da diskoa grabatzean"
+
+#: ../src/ncb-operation.c:518
+msgid "Error writing to disc"
+msgstr "Errorea diskoa grabatzean"
+
+#: ../src/ncb-operation.c:573
+#, c-format
+msgid "A file named \"%s\" already exists.  Do you want to overwrite it?"
+msgstr ""
+"\"%s\" izeneko fitxategia badago lehendik ere.\n"
+"Gainidatzi nahi duzu?"
+
+#: ../src/ncb-operation.c:575
+msgid "Overwrite existing file?"
+msgstr "Gainidatzi dagoen fitxategia?"
+
+#: ../src/ncb-operation.c:584
+msgid "_Overwrite"
+msgstr "_Gainidatzi"
+
+#: ../src/ncb-operation.c:603
+msgid "Choose a filename for the disc image"
+msgstr "Aukeratu disko-irudiaren fitxategi-izena"
+
+#. Translators: this is the filename of the image
+#: ../src/ncb-operation.c:739
+msgid "image.iso"
+msgstr "irudia.iso"
+
+#: ../src/ncb-operation.c:760
+#, c-format
+msgid "You do not have permissions to overwrite that file (%s)."
+msgstr "Ez duzu baimenik fitxategia (%s) gainidazteko."
+
+#: ../src/ncb-operation.c:761 ../src/ncb-operation.c:776
+#: ../src/ncb-operation.c:1582
+msgid "File image creation failed"
+msgstr "Huts egin du fitxategi-irudia sortzean"
+
+#: ../src/ncb-operation.c:775
+#, c-format
+msgid "You do not have permissions to create that file (%s)."
+msgstr "Ez duzu baimenik fitxategia (%s) sortzeko."
+
+#: ../src/ncb-operation.c:840
+msgid "Complete"
+msgstr "Burututa"
+
+#: ../src/ncb-operation.c:843
+msgid "An error occurred while writing"
+msgstr "Errorea gertatu da grabatzean"
+
+#: ../src/ncb-operation.c:903
+msgid "Writing Files to a Disc Image"
+msgstr "Fitxategiak disko-irudian idazten"
+
+#: ../src/ncb-operation.c:904
+msgid "Writing Files to CD"
+msgstr "Fitxategiak CDan grabatzen"
+
+#: ../src/ncb-operation.c:905
+msgid "Writing Files to DVD"
+msgstr "Fitxategiak DVDan grabatzen"
+
+#: ../src/ncb-operation.c:908
+msgid "Writing Image to Disc"
+msgstr "Irudia diskoan grabatzen"
+
+#: ../src/ncb-operation.c:909
+msgid "Copying Disc Image"
+msgstr "Disko-irudia kopiatzen"
+
+#: ../src/ncb-operation.c:910
+msgid "Writing Image to CD"
+msgstr "Irudia CDan grabatzen"
+
+#: ../src/ncb-operation.c:911
+msgid "Writing Image to DVD"
+msgstr "Irudia DVDan grabatzen"
+
+#: ../src/ncb-operation.c:914
+msgid "Copying Disc"
+msgstr "Diskoa kopiatzen"
+
+#: ../src/ncb-operation.c:915
+msgid "Copying Disc to a Disc Image"
+msgstr "Diskoa disko-irudira kopiatzen"
+
+#: ../src/ncb-operation.c:916
+msgid "Copying Disc to CD"
+msgstr "Diskoa CDra kopiatzen"
+
+#: ../src/ncb-operation.c:917
+msgid "Copying Disc to DVD"
+msgstr "Diskoa DVDra kopiatzen"
+
+#: ../src/ncb-operation.c:921
+msgid "Writing files to disc"
+msgstr "Fitxategiak diskoan idazten"
+
+#: ../src/ncb-operation.c:922
+msgid "Writing files to a disc image"
+msgstr "Fitxategiak disko-irudian idazten"
+
+#: ../src/ncb-operation.c:923
+msgid "Writing files to CD"
+msgstr "Fitxategiak CDan grabatzen"
+
+#: ../src/ncb-operation.c:924
+msgid "Writing files to DVD"
+msgstr "Fitxategiak DVDan grabatzen"
+
+#: ../src/ncb-operation.c:927
+msgid "Writing image to disc"
+msgstr "Irudia diskoan grabatzen"
+
+#: ../src/ncb-operation.c:928
+msgid "Copying disc image"
+msgstr "Disko-irudia kopiatzen"
+
+#: ../src/ncb-operation.c:929
+msgid "Writing image to CD"
+msgstr "Irudia CDan grabatzen"
+
+#: ../src/ncb-operation.c:930
+msgid "Writing image to DVD"
+msgstr "Irudia DVDan grabatzen"
+
+#: ../src/ncb-operation.c:933
+msgid "Copying disc"
+msgstr "Diskoa kopiatzen"
+
+#: ../src/ncb-operation.c:934
+msgid "Copying disc to a disc image"
+msgstr "Diskoa disko-irudian kopiatzen"
+
+#: ../src/ncb-operation.c:935
+msgid "Copying disc to CD"
+msgstr "Diskoa CDan kopiatzen"
+
+#: ../src/ncb-operation.c:936
+msgid "Copying disc to DVD"
+msgstr "Diskoa DVDan kopiatzen"
+
+#: ../src/ncb-operation.c:940
+msgid ""
+"The selected files are being written to a CD or DVD.  This operation may "
+"take a long time, depending on data size and write speed."
+msgstr ""
+"Hautatutako fitxategiak CDan edo DVDan grabatzen ari dira. Eragiketa hau "
+"denbora luzean arituko da, datuen tamainaren eta grabazio-abiaduraren "
+"arabera."
+
+#: ../src/ncb-operation.c:941
+msgid "The selected files are being written to a disc image file."
+msgstr "Hautatutako fitxategiak disko-irudi fitxategian idazten ari dira."
+
+#: ../src/ncb-operation.c:942
+msgid ""
+"The selected files are being written to a CD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr ""
+"Hautatutako fitxategiak CDan grabatzen ari dira. Eragiketa hau denbora "
+"luzean arituko da, datuen tamainaren eta grabazio-abiaduraren arabera."
+
+#: ../src/ncb-operation.c:943
+msgid ""
+"The selected files are being written to a DVD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr ""
+"Hautatutako fitxategiak DVDan grabatzen ari dira. Eragiketa hau denbora "
+"luzean arituko da, datuen tamainaren eta grabazio-abiaduraren arabera."
+
+#: ../src/ncb-operation.c:946
+msgid ""
+"The selected disc image is being written to a CD or DVD.  This operation may "
+"take a long time, depending on data size and write speed."
+msgstr ""
+"Hautatutako fitxategiak CDan edo DVDan grabatzen ari dira. Eragiketa hau "
+"denbora luzean arituko da, datuen tamainaren eta grabazio-abiaduraren "
+"arabera."
+
+#: ../src/ncb-operation.c:947
+msgid "The selected disc image is being copied to a disc image file."
+msgstr "Hautatutako disko-irudia disko-irudiaren fitxategian kopiatzen ari da."
+
+#: ../src/ncb-operation.c:948
+msgid ""
+"The selected disc image is being written to a CD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr ""
+"Hautatutako disko-irudia CDan grabatzen ari da. Eragiketa hau denbora luzean "
+"arituko da, datuen tamainaren eta grabazio-abiaduraren arabera."
+
+#: ../src/ncb-operation.c:949
+msgid ""
+"The selected disc image is being written to a DVD.  This operation may take "
+"a long time, depending on data size and write speed."
+msgstr ""
+"Hautatutako disko-irudia DVDan grabatzen ari da. Eragiketa hau denbora "
+"luzean arituko da, datuen tamainaren eta grabazio-abiaduraren arabera."
+
+#: ../src/ncb-operation.c:952
+msgid ""
+"The selected disc is being copied to a CD or DVD.  This operation may take a "
+"long time, depending on data size and drive speed."
+msgstr ""
+"Hautatutako diskoa CDan edo DVDan grabatzen ari da. Eragiketa hau denbora "
+"luzean arituko da, datuen tamainaren eta gailuaren abiaduraren arabera."
+
+#: ../src/ncb-operation.c:953
+msgid ""
+"The selected disc is being copied to a disc image file.  This operation may "
+"take a long time, depending on data size and drive speed."
+msgstr ""
+"Hautatutako diskoa disko-irudiaren fitxategian kopiatzen ari da. Eragiketa "
+"hau denbora luzean arituko da, datuen tamainaren eta gailuaren abiaduraren "
+"arabera."
+
+#: ../src/ncb-operation.c:954
+msgid ""
+"The selected disc is being copied to a CD.  This operation may take a long "
+"time, depending on data size and drive speed."
+msgstr ""
+"Hautatutako diskoa CDan grabatzen ari da. Eragiketa hau denbora luzean "
+"arituko da, datuen tamainaren eta gailuaren abiaduraren arabera."
+
+#: ../src/ncb-operation.c:955
+msgid ""
+"The selected disc is being copied to a DVD.  This operation may take a long "
+"time, depending on data size and drive speed."
+msgstr ""
+"Hautatutako diskoa DVDan grabatzen ari da. Eragiketa hau denbora luzean "
+"arituko da, datuen tamainaren eta gailuaren abiaduraren arabera."
+
+#: ../src/ncb-operation.c:1012
+msgid "Burning CD"
+msgstr "CDa grabatzen"
+
+#: ../src/ncb-operation.c:1179 ../src/ncb-operation.c:1403
+msgid "Creating disc image"
+msgstr "Disko-irudia sortzen"
+
+#: ../src/ncb-operation.c:1621
+#, c-format
+msgid "Writing CD/DVD-Image '%s'."
+msgstr "'%s' CD/DVD irudia grabatzen."
+
+#: ../src/ncb-operation.c:1626
+#, c-format
+msgid "Writing disc '%s'."
+msgstr "'%s' diskoa grabatzen."
+
+#: ../src/ncb-operation.c:1628
+#, c-format
+msgid "Writing %s '%s'."
+msgstr "'%2$s' grabatzen (%1$s)."
+
+#: ../src/ncb-operation.c:1717
+#, c-format
+msgid "Completed writing %s"
+msgstr "%s grabazioa burutua"
+
+#: ../src/ncb-operation.c:1822
+msgid "Interrupt writing files to disc?"
+msgstr "Eten fitxategiak diskoan grabatzea?"
+
+#: ../src/ncb-operation.c:1823
+msgid ""
+"Are you sure you want to interrupt the disc write operation? Some drives may "
+"require that you restart the computer to get them working again."
+msgstr ""
+"Ziur zaude disko grabaketa bertan behera utzi nahi duzula? Zenbait "
+"grabagailuk, berriro funtzionatu ahal izateko, ordenagailua berpiztea "
+"eskatzen dute."
+
+#: ../src/ncb-operation.c:1829
+msgid "Interrupt"
+msgstr "Eten"
+
+#: ../src/ncb-operation.c:1831
+msgid "Continue"
+msgstr "Jarraitu"
+
+#: ../src/ncb-progress-dialog.c:146
+#, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "ordu %d"
+msgstr[1] "%d ordu"
+
+#: ../src/ncb-progress-dialog.c:148
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "minutu %d"
+msgstr[1] "%d minutu"
+
+#: ../src/ncb-progress-dialog.c:151
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "segundo %d"
+msgstr[1] "%d segundo"
+
+#. hour:minutes:seconds
+#: ../src/ncb-progress-dialog.c:156
+#, c-format
+msgid "%s %s %s"
+msgstr "%s:%s:%s"
+
+#. minutes:seconds
+#: ../src/ncb-progress-dialog.c:159
+#, c-format
+msgid "%s %s"
+msgstr "%s:%s"
+
+#. seconds
+#: ../src/ncb-progress-dialog.c:162
+#, c-format
+msgid "%s"
+msgstr "%s"
+
+#. 0 seconds
+#: ../src/ncb-progress-dialog.c:165
+msgid "0 seconds"
+msgstr "0 segundo"
+
+#: ../src/ncb-progress-dialog.c:189
+#, c-format
+msgid "About %s left"
+msgstr "%s falta da"
+
+#: ../src/ncb-progress-dialog.c:439
+msgid "_Make Another Copy"
+msgstr "_Egin beste kopia bat"
+
+#: ../src/ncb-rename-dialog.c:479
+msgid "C_ontinue"
+msgstr "_Jarraitu"
+
+#: ../src/ncb-rename-dialog.c:507
+msgid "Filename"
+msgstr "Fitxategi-izena"
+
+#: ../src/ncb-rename-dialog.c:523
+msgid "Rename file"
+msgstr "Aldatu fitxategiaren izena"

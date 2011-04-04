@@ -1,0 +1,968 @@
+# translation of nautilus-cd-burner.HEAD.po to armenian
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER, 2005.
+# Norayr Chilingaryan <norik@freenet.am>, 2005
+# Ruzanna Khachatryan <ruzannak@hotmail.com>, 2005
+msgid ""
+msgstr ""
+"Project-Id-Version: nautilus-cd-burner.HEAD\n"
+"Report-Msgid-Bugs-To: Norayr Chilingaryan <norik@freenet.am>\n"
+"POT-Creation-Date: 2005-10-28 19:23+0000\n"
+"PO-Revision-Date: 2005-09-06 16:33+0500\n"
+"Last-Translator: Norayr Chilingaryan <norik@freenet.am>\n"
+"Language-Team:  <norik@freenet.am>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 16bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: KBabel 1.9.1\n"
+
+#: ../burn-extension.c:66
+msgid "Unable to launch the cd burner application"
+msgstr "Չի հաջողվել գործարկել CD ձայնագրման կիրառական ծրագիրը"
+
+#: ../burn-extension.c:68
+msgid "Can't launch cd burner"
+msgstr " Չի հաջողվել գործարկել CD ձայնագրման կիրառական ծրագիրը"
+
+#: ../burn-extension.c:231 ../burn-extension.c:241 ../burn-extension.c:297
+msgid "_Write to Disc..."
+msgstr "_Սկավառակի ձայնագրում..."
+
+#: ../burn-extension.c:232
+msgid "Write disc image to a CD or DVD disc"
+msgstr " Ձայնագրել սկավառակի պատկերը CD կամ DVD սկավառակի վրա"
+
+#: ../burn-extension.c:242
+msgid "Write disc image cuesheet to a CD or DVD disc"
+msgstr "Սկավառակի պատկերը ձայնագրել CD կամ DVD սկավառակի վրա"
+
+#: ../burn-extension.c:265
+msgid "_Copy Disc..."
+msgstr "_Պատճենել սկավառակը..."
+
+#: ../burn-extension.c:266
+msgid "Create a copy of this CD or DVD disc"
+msgstr "Կերտել այս  CD կամ DVD սկավառակի պատճեն"
+
+#: ../burn-extension.c:298 ../burn-extension.c:327
+msgid "Write contents to a CD or DVD disc"
+msgstr "Բովանդակությունը ձայնագրել  CD կամ DVD սկավառակի վրա"
+
+#: ../burn-extension.c:326 ../cdburn.glade.h:14
+msgid "Write to Disc"
+msgstr "Ձայնագրել սկավառակի վրա"
+
+#: ../nautilus-burn-drive-selection.c:180
+msgid "Unnamed CDROM"
+msgstr "Անանուն CDROM"
+
+#: ../nautilus-burn-drive.c:1791
+#, c-format
+msgid "Unnamed SCSI Drive (%s)"
+msgstr "Անանուն SCSI շարժակ (%s)"
+
+#: ../nautilus-burn-drive.c:2360
+msgid "File image"
+msgstr "Ֆայլի պատկեր"
+
+#: ../nautilus-burn-drive.c:2780
+msgid "Could not determine media type because CD drive is busy"
+msgstr "Չի հաջողվել սահմանել մեդիա տեսակը, որովհետև CD շարժակը զբաղված է"
+
+#: ../nautilus-burn-drive.c:2782
+msgid "Couldn't open media"
+msgstr "Չի հաջողվել բացել մեդիան"
+
+#: ../nautilus-burn-drive.c:2784
+msgid "Unknown Media"
+msgstr "Անհայտ մեդիա"
+
+#: ../nautilus-burn-drive.c:2786
+msgid "Commercial CD or Audio CD"
+msgstr "Կոմերցիոն CD կամ աուդիո CD"
+
+#: ../nautilus-burn-drive.c:2788
+msgid "CD-R"
+msgstr "CD-R"
+
+#: ../nautilus-burn-drive.c:2790
+msgid "CD-RW"
+msgstr "CD-RW"
+
+#: ../nautilus-burn-drive.c:2792
+msgid "DVD"
+msgstr "DVD"
+
+#: ../nautilus-burn-drive.c:2794
+msgid "DVD-R, or DVD-RAM"
+msgstr "DVD-R, կամ DVD-RAM"
+
+#: ../nautilus-burn-drive.c:2796
+msgid "DVD-RW"
+msgstr "DVD-RW"
+
+#: ../nautilus-burn-drive.c:2798
+msgid "DVD-RAM"
+msgstr "DVD-RAM"
+
+#: ../nautilus-burn-drive.c:2800
+msgid "DVD+R"
+msgstr "DVD+R"
+
+#: ../nautilus-burn-drive.c:2802
+msgid "DVD+RW"
+msgstr "DVD+RW"
+
+#: ../nautilus-burn-drive.c:2804
+msgid "DVD+R DL"
+msgstr "DVD+R DL"
+
+#: ../nautilus-burn-drive.c:2809
+msgid "Broken media type"
+msgstr "Կոտրված մեդիա տեսակ"
+
+#. This fits the "open64" and "open"-like messages
+#: ../nautilus-burn-recorder.c:624
+msgid "The recorder could not be accessed"
+msgstr "Ձայնագրող սարքին միանալն անհնար է"
+
+#: ../nautilus-burn-recorder.c:627
+msgid "Not enough space available on the disc"
+msgstr "Սկավառակի վրա բավարար տարածք չկա"
+
+#: ../nautilus-burn-recorder.c:630 ../nautilus-burn-recorder.c:633
+#: ../nautilus-burn-recorder.c:694
+msgid "The files selected did not fit on the CD"
+msgstr "Ընտրված ֆայլերը չեն համապատասխանում CD–ին"
+
+#: ../nautilus-burn-recorder.c:642
+msgid "Unhandled error, aborting"
+msgstr "Չկառավարվող սխալ, դադարեցում"
+
+#: ../nautilus-burn-recorder.c:676
+msgid "The CD has already been recorded"
+msgstr "CD–ի ձայնագրումը արդեն կատարվել է"
+
+#: ../nautilus-burn-recorder.c:698
+msgid ""
+"All audio files must be stereo, 16-bit digital audio with 44100Hz samples"
+msgstr ""
+"Բոլոր աուդիո ֆայլերը պետք է լինեն ստերեո, 16 բիտ թվայլին աուդիո 44100հերց "
+
+#: ../nautilus-burn-recorder.c:716
+msgid ""
+"The system is too slow to write the CD at this speed. Try a lower speed."
+msgstr ""
+"Համակարգը շատ դանդաղ է այս արագությամբ CD ձայնագրելու համար Փորձել ավելի "
+"ցածր արագությունը"
+
+#: ../nautilus-burn-recorder.c:897
+msgid "You can only burn 99 tracks on one disc"
+msgstr "Դուք կարող եք ձանագրել միայն 99 ուղեշերտ մեկ սկավառակի վրա"
+
+#: ../nautilus-burn-recorder.c:904
+msgid "No tracks given to write"
+msgstr "Ձայնագրման համար ուղեշերտեր չկան"
+
+#: ../nautilus-burn-recorder.c:909 ../nautilus-cd-burner.c:1359
+msgid "Burning CD"
+msgstr "CD ձայնագրում"
+
+#: ../nautilus-burn-recorder.c:1269
+#, c-format
+msgid "Could not run the necessary command: %s"
+msgstr "Չի հաջողվել գործարկել անհրաժեշտ հրահանգը: %s"
+
+#: ../nautilus-burn-recorder.c:1628
+msgid "Blanking CD"
+msgstr "CD ջնջում"
+
+#: ../nautilus-burn-recorder.c:1699
+msgid "Blanking DVD"
+msgstr "DVD ջնջում"
+
+#: ../cdburn.glade.h:1
+msgid "    "
+msgstr "    "
+
+#: ../cdburn.glade.h:2
+msgid "<b>After Writing</b>"
+msgstr "<b>ձայնագրումից հետո</b>"
+
+#: ../cdburn.glade.h:3
+msgid "<b>Information</b>"
+msgstr "<b>Տեղեկատվություն</b>"
+
+#: ../cdburn.glade.h:4
+msgid "<b>Write Options</b>"
+msgstr "<b>Ձայնագրման տարբերակներ</b>"
+
+#: ../cdburn.glade.h:5
+msgid "<big><b>Writing files to disc</b></big>"
+msgstr "<big><b>Ֆայլերի ձայնագրում սկավառակի վրա</b></big>"
+
+#: ../cdburn.glade.h:6
+msgid "<i>Initializing...</i>"
+msgstr "<i>Սկիզբ...</i>"
+
+#: ../cdburn.glade.h:7
+msgid "Data size:"
+msgstr "Տվյալների չափսը"
+
+#: ../cdburn.glade.h:8
+msgid "Disc _name:"
+msgstr "Սկավառակի _անունը:"
+
+#: ../cdburn.glade.h:9
+msgid "E_ject disc"
+msgstr "Սկավառակի դ_ուրս բերում"
+
+#: ../cdburn.glade.h:10
+msgid "Label to identify disc"
+msgstr "Պիտակ՝ սկավառակը տարբերելու համար"
+
+#: ../cdburn.glade.h:11
+msgid "Select the speed to use for the write"
+msgstr "Ընտրել ձայնագրման համար օգտագործվող արագությունը"
+
+#: ../cdburn.glade.h:12
+msgid "Write _speed:"
+msgstr "Ձայնագրման _արագություն:"
+
+#: ../cdburn.glade.h:13
+msgid "Write disc _to:"
+msgstr "Սկավառակը ձայնագրել _վրա:"
+
+#: ../cdburn.glade.h:15 ../nautilus-cd-burner.c:1183
+msgid "Writing Files to Disc"
+msgstr "Ֆայլերի ձայնագրում սկավառակի վրա"
+
+#: ../cdburn.glade.h:16
+msgid "_Dummy write"
+msgstr "_Ձայնագրման էմուլյացիա"
+
+#: ../cdburn.glade.h:17
+#, fuzzy
+msgid "_Make Another Copy"
+msgstr "_Փորձել այլ"
+
+#: ../cdburn.glade.h:18
+msgid "_Write"
+msgstr "_Ձայնագրում"
+
+#: ../make-iso.c:302
+msgid "Disable Microsoft Windows compatibility?"
+msgstr "Անջատե՞լ Microsoft Windows–ի հետ համատեղելիությունը"
+
+#: ../make-iso.c:304
+msgid ""
+"Some files don't have a suitable name for a Windows-compatible CD.\n"
+"Do you want to continue with Windows compatibility disabled?"
+msgstr ""
+"Մի քանի ֆայլեր չունեն Windows-համատեղելի համապատասխան անուն CD.\n"
+"Դուք ցանկանու՞մ եք շարունակել, երբ Windows համատեղելիության ծրագիրն անջատված "
+"է"
+
+#: ../make-iso.c:305
+msgid "Windows compatibility"
+msgstr "Windows համատեղելիություն"
+
+#: ../make-iso.c:619
+msgid "Some files have invalid filenames."
+msgstr "ՄԻ քանի ֆայլեր ունեն անհամապատասխան ֆայլի անուններ"
+
+#: ../make-iso.c:623
+msgid "Unknown character encoding."
+msgstr "Անհայտ սիմվոլի կոդավորում"
+
+#: ../make-iso.c:627
+msgid "There is no space left on the device."
+msgstr "Սարքի վրա ազատ տարածք չի մնացել"
+
+#. TODO: get filename from error message
+#: ../make-iso.c:632
+msgid "File too large for filesystem."
+msgstr "Ֆայլերի համակարգի համար ֆայլը շատ մեծ է"
+
+#: ../make-iso.c:1016 ../make-iso.c:1290
+msgid "Creating disc image"
+msgstr "Կերտել սկավառակի պատկերը"
+
+#: ../make-iso.c:1116
+msgid "The label for the image is too long."
+msgstr "Պատկերի պիտակը շատ երկար է"
+
+#: ../make-iso.c:1133
+#, c-format
+msgid "Unable to create temporary directory: %s."
+msgstr "Չի հաջողվել կերտել ժամանակավոր թղթապանակ: %s."
+
+#: ../make-iso.c:1148
+#, c-format
+msgid "Unable to create temporary file: %s."
+msgstr "Չի հաջողվել կերտել ժամանակավոր ֆայլ: %s."
+
+#: ../make-iso.c:1164
+msgid "There are no files to write to disc."
+msgstr "Սկավառակը ձայնագրելու ֆայլեր չկան"
+
+#: ../make-iso.c:1210 ../make-iso.c:1462
+#, c-format
+msgid "Could not run sub process: %s."
+msgstr "Չի հաջողվել գործարկել ենթապրոցեսները: %s."
+
+#: ../make-iso.c:1228
+msgid "The operation was cancelled by the user."
+msgstr "Գործողությունը չեղյալ կատարվեց գործարկողի կողմից"
+
+#: ../make-iso.c:1247 ../make-iso.c:1499
+#, c-format
+msgid ""
+"The selected location does not have enough space to store the disc image (%"
+"ld MiB needed)."
+msgstr ""
+"Ընտրված տեղակայությունը բավարար տարածք չունի սկավառակի իմիջը պահելու համար (%ld "
+"MiB needed)."
+
+#: ../make-iso.c:1306
+#, c-format
+msgid "Command failed: %s"
+msgstr "Հրահանգի կատարման սխալ։  %s"
+
+#: ../make-iso.c:1357 ../make-iso.c:1553
+msgid "Unknown error"
+msgstr "Անհայտ սխալ"
+
+#: ../make-iso.c:1594
+msgid " (invalid Unicode)"
+msgstr " (անհամապատասխան Unicode)"
+
+#: ../make-iso.c:1682
+msgid "Not a valid disc image."
+msgstr "Սկավառակի անհամապատասխան պատկեր"
+
+#: ../nautilus-cd-burner.c:173
+#, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d ժամ"
+msgstr[1] "%d ժամեր"
+
+#: ../nautilus-cd-burner.c:175
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d րոպե"
+msgstr[1] "%d րոպեներ"
+
+#: ../nautilus-cd-burner.c:178
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d վայրկյան"
+msgstr[1] "%d վայրկյան"
+
+#. hour:minutes:seconds
+#: ../nautilus-cd-burner.c:183
+#, c-format
+msgid "%s %s %s"
+msgstr "%s %s %s"
+
+#. minutes:seconds
+#: ../nautilus-cd-burner.c:186
+#, c-format
+msgid "%s %s"
+msgstr "%s %s"
+
+#. seconds
+#: ../nautilus-cd-burner.c:189
+#, c-format
+msgid "%s"
+msgstr "%s"
+
+#. 0 seconds
+#: ../nautilus-cd-burner.c:192
+msgid "0 seconds"
+msgstr "0 վայրկյաններ"
+
+#: ../nautilus-cd-burner.c:213
+#, c-format
+msgid "About %s left"
+msgstr "Մոտավորապես %s մնացել է"
+
+#: ../nautilus-cd-burner.c:414
+msgid "Preparing to write CD"
+msgstr "Նախապատրաստվում է CD ձայնագրում "
+
+#: ../nautilus-cd-burner.c:416
+msgid "Preparing to write DVD"
+msgstr "Նախապատրաստվում է  DVD ձայնագրում"
+
+#: ../nautilus-cd-burner.c:421
+msgid "Writing CD"
+msgstr "CD Ձայնագրում"
+
+#: ../nautilus-cd-burner.c:423
+msgid "Writing DVD"
+msgstr "DVD ձայնագրում"
+
+#: ../nautilus-cd-burner.c:428 ../nautilus-cd-burner.c:430
+msgid "Finishing write"
+msgstr "Ձայնագրումն ավարտվում է"
+
+#: ../nautilus-cd-burner.c:435
+msgid "Erasing CD"
+msgstr "CD ջնջում"
+
+#: ../nautilus-cd-burner.c:437
+msgid "Erasing DVD"
+msgstr "DVD ջնջում"
+
+#: ../nautilus-cd-burner.c:493
+msgid "Please make sure another application is not using the drive."
+msgstr "Խնդրվում է ստուգել, որ մեկ այլ կիրառական ծրագիր չի օգտագործում շարժակը"
+
+#: ../nautilus-cd-burner.c:494
+msgid "Drive is busy"
+msgstr "Շարժակը զբաղված է"
+
+#: ../nautilus-cd-burner.c:496 ../nautilus-cd-burner.c:501
+#, fuzzy, c-format
+msgid ""
+"Please put a disc, with at least %d MiB free, into the drive.  The following "
+"disc types are supported:\n"
+"%s"
+msgstr "Խնդրվում է տեղադրել շարժակի մեջ %s առնվազն %d MiB ազատ տարածությամբ"
+
+#: ../nautilus-cd-burner.c:499
+msgid "Insert a rewritable or blank disc"
+msgstr "Տեղադրել վերաձայնագրվող կամ դատարկ սկավառակ"
+
+#: ../nautilus-cd-burner.c:504
+msgid "Insert a blank disc"
+msgstr "Տեղադրել դատարկ սկավառակ"
+
+#: ../nautilus-cd-burner.c:506 ../nautilus-cd-burner.c:511
+#, fuzzy, c-format
+msgid ""
+"Please replace the disc in the drive with a supported disc with at least %d "
+"MiB free.  The following disc types are supported:\n"
+"%s"
+msgstr ""
+"Խնդրվում է փոխարինել շարժակի սկավառակը %s–ով, որն ունի առնվազն %d MiB ազատ տարածք"
+
+#: ../nautilus-cd-burner.c:509
+msgid "Reload a rewritable or blank disc"
+msgstr "Վերաձայնագրվող կամ դատարկ սկավառակը վերաբեռնել "
+
+#: ../nautilus-cd-burner.c:514
+msgid "Reload a blank disc"
+msgstr "Վերաբեռնել դատարկ սկավառակը"
+
+#: ../nautilus-cd-burner.c:580
+#, c-format
+msgid "This %s appears to have information already recorded on it."
+msgstr "Այս %s–ը հավանաբար արդեն ձայնագրված տեղեկատվություն է պարունակում"
+
+#: ../nautilus-cd-burner.c:584
+msgid "Erase information on this disc?"
+msgstr "Ջնջե՞լ այս սկավառակի տեղեկատվությունը"
+
+#: ../nautilus-cd-burner.c:592
+msgid "_Try Another"
+msgstr "_Փորձել այլ"
+
+#: ../nautilus-cd-burner.c:603
+msgid "_Erase Disc"
+msgstr "_Ջնջել սկավառակը"
+
+#: ../nautilus-cd-burner.c:635
+#, c-format
+msgid ""
+"There was an error writing to the disc:\n"
+"%s"
+msgstr ""
+"Սկավառակի ձայնագրման սխալ է կատարվել:\n"
+"%s"
+
+#: ../nautilus-cd-burner.c:638
+msgid "There was an error writing to the disc"
+msgstr "Սկավառակի ձայնագրման սխալ է կատարվել"
+
+#: ../nautilus-cd-burner.c:641
+msgid "Error writing to disc"
+msgstr "Սկավառակի ձայնագրման սխալ"
+
+#: ../nautilus-cd-burner.c:859
+#, c-format
+msgid "A file named \"%s\" already exists.  Do you want to overwrite it?"
+msgstr ""
+"\"%s\" անունով ֆայլ արդեն գոյություն ունի։ Դուք ցանկանու՞մ եք վերաձայնագրել "
+"այն"
+
+#: ../nautilus-cd-burner.c:861
+msgid "Overwrite existing file?"
+msgstr "Վերաձայնագրե՞լ գոյություն ունեցող ֆայլը"
+
+#: ../nautilus-cd-burner.c:870
+msgid "_Overwrite"
+msgstr "_Վերաձայնագրել"
+
+#: ../nautilus-cd-burner.c:889
+#, fuzzy
+msgid "Choose a filename for the disc image"
+msgstr "Սկավառակի պատկերի համար ընտրել ֆայլի անուն"
+
+#: ../nautilus-cd-burner.c:1065
+#, c-format
+msgid "You do not have permissions to overwrite that file (%s)."
+msgstr "Դուք այդ ֆայլը վերաձայնագրելու թույլտվություններ չունեք (%s)."
+
+#: ../nautilus-cd-burner.c:1066 ../nautilus-cd-burner.c:1081
+#: ../nautilus-cd-burner.c:1467
+msgid "File image creation failed"
+msgstr "Ֆայլի իմիջի կերտումը տապալվեց"
+
+#: ../nautilus-cd-burner.c:1080
+#, c-format
+msgid "You do not have permissions to create that file (%s)."
+msgstr "Դուք այդ ֆայլը կերտելու թույլտվություններ չունեք (%s)."
+
+#: ../nautilus-cd-burner.c:1146
+msgid "Complete"
+msgstr "Ավարտվեց"
+
+#: ../nautilus-cd-burner.c:1151
+msgid "An error occurred while writing"
+msgstr "Ձայնագրման ժամանակ սխալ է կատարվել"
+
+#: ../nautilus-cd-burner.c:1184
+#, fuzzy
+msgid "Writing Files to a Disc Image"
+msgstr "Ֆայլերի ձայնագրում սկավառակի վրա"
+
+#: ../nautilus-cd-burner.c:1185
+#, fuzzy
+msgid "Writing Files to CD"
+msgstr "Ֆայլերի ձայնագրում սկավառակի վրա"
+
+#: ../nautilus-cd-burner.c:1186
+#, fuzzy
+msgid "Writing Files to DVD"
+msgstr "Ֆայլերի ձայնագրում սկավառակի վրա"
+
+#: ../nautilus-cd-burner.c:1189
+#, fuzzy
+msgid "Writing Image to Disc"
+msgstr "Ֆայլերի ձայնագրում սկավառակի վրա"
+
+#: ../nautilus-cd-burner.c:1190
+#, fuzzy
+msgid "Copying Disc Image"
+msgstr "Կերտել սկավառակի պատկերը"
+
+#: ../nautilus-cd-burner.c:1191
+#, fuzzy
+msgid "Writing Image to CD"
+msgstr "Ֆայլերի ձայնագրում սկավառակի վրա"
+
+#: ../nautilus-cd-burner.c:1192
+#, fuzzy
+msgid "Writing Image to DVD"
+msgstr "DVD ձայնագրում"
+
+#: ../nautilus-cd-burner.c:1195
+#, fuzzy
+msgid "Copying Disc"
+msgstr "_Պատճենել սկավառակը..."
+
+#: ../nautilus-cd-burner.c:1196
+msgid "Copying Disc to a Disc Image"
+msgstr ""
+
+#: ../nautilus-cd-burner.c:1197
+msgid "Copying Disc to CD"
+msgstr ""
+
+#: ../nautilus-cd-burner.c:1198
+msgid "Copying Disc to DVD"
+msgstr ""
+
+#: ../nautilus-cd-burner.c:1202
+#, fuzzy
+msgid "Writing files to disc"
+msgstr "Ֆայլերի ձայնագրում սկավառակի վրա"
+
+#: ../nautilus-cd-burner.c:1203
+#, fuzzy
+msgid "Writing files to a disc image"
+msgstr "Ֆայլերի ձայնագրում սկավառակի վրա"
+
+#: ../nautilus-cd-burner.c:1204
+#, fuzzy
+msgid "Writing files to CD"
+msgstr "Ֆայլերի ձայնագրում սկավառակի վրա"
+
+#: ../nautilus-cd-burner.c:1205
+#, fuzzy
+msgid "Writing files to DVD"
+msgstr "Ֆայլերի ձայնագրում սկավառակի վրա"
+
+#: ../nautilus-cd-burner.c:1208
+#, fuzzy
+msgid "Writing image to disc"
+msgstr "Ֆայլերի ձայնագրում սկավառակի վրա"
+
+#: ../nautilus-cd-burner.c:1209
+#, fuzzy
+msgid "Copying disc image"
+msgstr "Կերտել սկավառակի պատկերը"
+
+#: ../nautilus-cd-burner.c:1210
+#, fuzzy
+msgid "Writing image to CD"
+msgstr "Ֆայլերի ձայնագրում սկավառակի վրա"
+
+#: ../nautilus-cd-burner.c:1211
+#, fuzzy
+msgid "Writing image to DVD"
+msgstr "Ֆայլերի ձայնագրում սկավառակի վրա"
+
+#: ../nautilus-cd-burner.c:1214
+#, fuzzy
+msgid "Copying disc"
+msgstr "_Պատճենել սկավառակը..."
+
+#: ../nautilus-cd-burner.c:1215
+#, fuzzy
+msgid "Copying disc to a disc image"
+msgstr "Կերտել սկավառակի պատկերը"
+
+#: ../nautilus-cd-burner.c:1216
+msgid "Copying disc to CD"
+msgstr ""
+
+#: ../nautilus-cd-burner.c:1217
+msgid "Copying disc to DVD"
+msgstr ""
+
+#: ../nautilus-cd-burner.c:1221
+#, fuzzy
+msgid ""
+"The selected files are being written to a CD or DVD.  This operation may "
+"take a long time, depending on data size and write speed."
+msgstr ""
+"Ընտրված ֆայլերը ձայնագրվում են %s. –ի վրա։ Այս գործողությունը կարող է երկար "
+"ժամանակ խլել, կախված տվյալների չափսից և ձայնագրման արագությունից"
+
+#: ../nautilus-cd-burner.c:1222
+#, fuzzy
+msgid "The selected files are being written to a disc image file."
+msgstr ""
+"Ընտրված ֆայլերը ձայնագրվում են %s. –ի վրա։ Այս գործողությունը կարող է երկար "
+"ժամանակ խլել, կախված տվյալների չափսից և ձայնագրման արագությունից"
+
+#: ../nautilus-cd-burner.c:1223
+#, fuzzy
+msgid ""
+"The selected files are being written to a CD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr ""
+"Ընտրված ֆայլերը ձայնագրվում են %s. –ի վրա։ Այս գործողությունը կարող է երկար "
+"ժամանակ խլել, կախված տվյալների չափսից և ձայնագրման արագությունից"
+
+#: ../nautilus-cd-burner.c:1224
+#, fuzzy
+msgid ""
+"The selected files are being written to a DVD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr ""
+"Ընտրված ֆայլերը ձայնագրվում են %s. –ի վրա։ Այս գործողությունը կարող է երկար "
+"ժամանակ խլել, կախված տվյալների չափսից և ձայնագրման արագությունից"
+
+#: ../nautilus-cd-burner.c:1227
+#, fuzzy
+msgid ""
+"The selected disc image is being written to a CD or DVD.  This operation may "
+"take a long time, depending on data size and write speed."
+msgstr ""
+"Ընտրված ֆայլերը ձայնագրվում են %s. –ի վրա։ Այս գործողությունը կարող է երկար "
+"ժամանակ խլել, կախված տվյալների չափսից և ձայնագրման արագությունից"
+
+#: ../nautilus-cd-burner.c:1228
+#, fuzzy
+msgid "The selected disc image is being copied to a disc image file."
+msgstr "Կերտե՞լ սկավառակ, որը պարունակում է մեկ սկավառակի ֆայլի պատկեր"
+
+#: ../nautilus-cd-burner.c:1229
+#, fuzzy
+msgid ""
+"The selected disc image is being written to a CD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr ""
+"Ընտրված ֆայլերը ձայնագրվում են %s. –ի վրա։ Այս գործողությունը կարող է երկար "
+"ժամանակ խլել, կախված տվյալների չափսից և ձայնագրման արագությունից"
+
+#: ../nautilus-cd-burner.c:1230
+#, fuzzy
+msgid ""
+"The selected disc image is being written to a DVD.  This operation may take "
+"a long time, depending on data size and write speed."
+msgstr ""
+"Ընտրված ֆայլերը ձայնագրվում են %s. –ի վրա։ Այս գործողությունը կարող է երկար "
+"ժամանակ խլել, կախված տվյալների չափսից և ձայնագրման արագությունից"
+
+#: ../nautilus-cd-burner.c:1233
+#, fuzzy
+msgid ""
+"The selected disc is being copied to a CD or DVD.  This operation may take a "
+"long time, depending on data size and drive speed."
+msgstr ""
+"Ընտրված ֆայլերը ձայնագրվում են %s. –ի վրա։ Այս գործողությունը կարող է երկար "
+"ժամանակ խլել, կախված տվյալների չափսից և ձայնագրման արագությունից"
+
+#: ../nautilus-cd-burner.c:1234
+#, fuzzy
+msgid ""
+"The selected disc is being copied to a disc image file.  This operation may "
+"take a long time, depending on data size and drive speed."
+msgstr ""
+"Ընտրված ֆայլերը ձայնագրվում են %s. –ի վրա։ Այս գործողությունը կարող է երկար "
+"ժամանակ խլել, կախված տվյալների չափսից և ձայնագրման արագությունից"
+
+#: ../nautilus-cd-burner.c:1235
+#, fuzzy
+msgid ""
+"The selected disc is being copied to a CD.  This operation may take a long "
+"time, depending on data size and drive speed."
+msgstr ""
+"Ընտրված ֆայլերը ձայնագրվում են %s. –ի վրա։ Այս գործողությունը կարող է երկար "
+"ժամանակ խլել, կախված տվյալների չափսից և ձայնագրման արագությունից"
+
+#: ../nautilus-cd-burner.c:1236
+#, fuzzy
+msgid ""
+"The selected disc is being copied to a DVD.  This operation may take a long "
+"time, depending on data size and drive speed."
+msgstr ""
+"Ընտրված ֆայլերը ձայնագրվում են %s. –ի վրա։ Այս գործողությունը կարող է երկար "
+"ժամանակ խլել, կախված տվյալների չափսից և ձայնագրման արագությունից"
+
+#: ../nautilus-cd-burner.c:1483
+#, c-format
+msgid "Completed writing %s"
+msgstr "Ձայնագրումը ավարտվեց %s"
+
+#: ../nautilus-cd-burner.c:1620
+msgid "Maximum possible"
+msgstr "Առավելագույն հնարավորը"
+
+#: ../nautilus-cd-burner.c:1706
+#, c-format
+msgid "%d MiB"
+msgstr "%d MiB"
+
+#.
+#. translators: see strftime man page for meaning of %b, %d and %Y
+#. the maximum length for this field is 32 bytes
+#.
+#: ../nautilus-cd-burner.c:1741
+msgid "Personal Data, %b %d, %Y"
+msgstr "Անհատական տեղեկատվություն, %b %d, %Y"
+
+#: ../nautilus-cd-burner.c:1782
+msgid "Calculating..."
+msgstr "Հաշվարկում..."
+
+#: ../nautilus-cd-burner.c:1797
+msgid "Interrupt writing files to disc?"
+msgstr "Դադարեցնե՞լ ֆայլերի ձայնագրումը սկավառակի վրա"
+
+#: ../nautilus-cd-burner.c:1798
+msgid ""
+"Are you sure you want to interrupt the disc write operation? Some drives may "
+"require that you restart the computer to get them working again."
+msgstr ""
+"Դուք համոզվա՞ծ եք, որ ցանկանում եք դադարեցնել սկավառակի ձայնագրման օպերացիան։ "
+"Որոշ շարժակներ կարող են պահանջել, որ դուք վերագործարկեք համակարգիչը՝ դրանք "
+"վերսկսելու համար"
+
+#: ../nautilus-cd-burner.c:1804
+msgid "Continue"
+msgstr "Շարունակել"
+
+#: ../nautilus-cd-burner.c:1805
+msgid "Interrupt"
+msgstr "Դադարեցնել"
+
+#: ../nautilus-cd-burner.c:1862
+#, c-format
+msgid "There was a problem displaying the help contents: %s."
+msgstr "Ձեռնարկի բովանդակությունը պատկերելու դժվարություն է առաջացել՝ %s"
+
+#: ../nautilus-cd-burner.c:1863
+msgid "Cannot display help"
+msgstr "Չի հաջողվել ցույց տալ ձեռնարկ տեսակոճակի բովանդակությունը"
+
+#: ../nautilus-cd-burner.c:1891
+msgid ""
+"It appears that the disc, when created, will contain a single disc image "
+"file.  Do you want to continue and write it to the disc as a file?"
+msgstr ""
+"Հավանաբար սկավառակը, կերտման պահին կունենա մեկ սկավառակի ֆայլի պատկեր։ Դուք "
+"ցանկանու՞մ եք շարունակել և ձայնագրել այն սկավառակի վրա որպես ֆայլ"
+
+#: ../nautilus-cd-burner.c:1894
+msgid "Create disc containing a single disc image file?"
+msgstr "Կերտե՞լ սկավառակ, որը պարունակում է մեկ սկավառակի ֆայլի պատկեր"
+
+#: ../nautilus-cd-burner.c:1897
+msgid "Create From Image"
+msgstr "Պատկերի կերտում"
+
+#: ../nautilus-cd-burner.c:1899
+msgid "Create With File"
+msgstr "Կերտել ֆայլի հետ"
+
+#: ../nautilus-cd-burner.c:1902
+msgid ""
+"It appears that the disc, when created, will contain only disc image files.  "
+"Do you want to continue and write them to the disc as files?"
+msgstr ""
+"Հավանաբար սկավառակը, կերտման պահին պարունակում է միայն սկավառակի պատկերի ֆայլեր։ "
+"Դուք ցանկանու՞մ եք շարունակել և ձայնագրել դրանք սկավառակի վրա որպես ֆայլեր։"
+
+#: ../nautilus-cd-burner.c:1905
+msgid "Create disc containing only disc image files?"
+msgstr "Կերտե՞լ սկավառակ, որը պարունակում է միայն սկավառակի իմիջի ֆայլեր"
+
+#: ../nautilus-cd-burner.c:1909
+msgid "Create With Files"
+msgstr "Կերտել ֆայլերի հետ"
+
+#: ../nautilus-cd-burner.c:1940
+#, c-format
+msgid ""
+"The file '%s' is unreadable.  Do you wish to skip this file and continue?"
+msgstr ""
+"%s' ֆայլը անընթեռնելի է։  Դուք ցանկանու՞մ եք բաց թողնել այս ֆայլը և "
+"շարունակել։"
+
+#: ../nautilus-cd-burner.c:1943
+msgid "Skip unreadable file?"
+msgstr "Անընթեռնելի ֆայլը բա՞ց թողնել"
+
+#: ../nautilus-cd-burner.c:1948
+msgid "Skip"
+msgstr "Բաց թողնել"
+
+#: ../nautilus-cd-burner.c:1948
+msgid "Skip All"
+msgstr "Բաց թողնել ամբողջը"
+
+#: ../nautilus-cd-burner.c:1972
+msgid "No files selected"
+msgstr "Ընտրված ֆայլեր չկան"
+
+#: ../nautilus-cd-burner.c:1973
+msgid ""
+"You need to copy the files you want to write to disc to the CD/DVD Creator "
+"window."
+msgstr ""
+"Դուք պետք է պատճենեք ֆայլերը, որոնք դուք ցանկանում եք ձայնագրել սկավառակի վրա, "
+"CD/DVD կերտիչ պատուհանում"
+
+#: ../nautilus-cd-burner.c:1976
+msgid "Open CD/DVD Creator"
+msgstr "Բացել CD/DVD կերտիչը"
+
+#: ../nautilus-cd-burner.c:2013
+#, c-format
+msgid "The file '%s' is not a valid disc image."
+msgstr "Ֆայլ '%s' –ը սկավառակի համապատասխան իմիջ չէ"
+
+#: ../nautilus-cd-burner.c:2138
+#, c-format
+msgid "The specified device '%s' is not a valid CD/DVD drive."
+msgstr "Մասնավորեցված '%s' սարքը  համապատասխան CD/DVD շարժակ չէ"
+
+#: ../nautilus-cd-burner.c:2140
+msgid "Unable to read specified location"
+msgstr "Չի հաջողվել կարդալ մասնավոեցված տեղակայությունը"
+
+#: ../nautilus-cd-burner.c:2152
+msgid "No media available"
+msgstr "Մեդիան մատչելի չէ"
+
+#: ../nautilus-cd-burner.c:2153
+msgid "There doesn't seem to be any media in the selected drive."
+msgstr "Հավանաբար ընտրված շարժակում մեդիա չկա"
+
+#: ../nautilus-cd-burner.c:2257
+msgid "Use CD/DVD device as source instead of burn:///"
+msgstr "Օգտագործել CD/DVD սարքերը որպես աղբյուր ձայնագրման փոխարեն:///"
+
+#: ../nautilus-cd-burner.c:2259
+msgid "Use ISO image as source instead of burn:///"
+msgstr "Օգտագործել ISO իմիջը որպես աղբյուր ձայնագրելու փոխարեն:///"
+
+#: ../nautilus-cd-burner.c:2261
+msgid "Use CUE/TOC file as source instead of burn:///"
+msgstr "Օգտագործել CUE/TOC ֆայլը որպես աղբյուր ձայնագրելու փոխարեն:///"
+
+#: ../nautilus-cd-burner.c:2282
+msgid "Too many parameters"
+msgstr "Չափից ավելի պարամետրեր"
+
+#: ../nautilus-cd-burner.c:2283
+msgid "Too many parameters were passed to the application."
+msgstr "Չափից ավելի պարամետրեր են փոխանցվել կիրառական ծրագրին"
+
+#: ../ncb.schemas.in.h:1
+msgid "Default burn speed"
+msgstr "Ձայնագրման նախնական արագություն"
+
+#: ../ncb.schemas.in.h:2
+msgid "Default speed at which the media will be written."
+msgstr "Նախնական արագություն որով մեդիան պետք է ձայնագրվի"
+
+#: ../ncb.schemas.in.h:3
+msgid "Directory for the temporary ISO images"
+msgstr "Թղթապանակ ժամանակավոր ISO իմիջների համար"
+
+#: ../ncb.schemas.in.h:4
+msgid ""
+"Directory used for the temporary ISO images, leave blank to use the default "
+"system temporary directory."
+msgstr ""
+"ISO իմիջների համար օգտագործվող թղթապանակը դատարկ թողնել օգտագործելու նախնական "
+"համակարգի ժամանակավոր թղթապանակը"
+
+#: ../ncb.schemas.in.h:5
+msgid "Enable Burnproof option"
+msgstr "Միացնել ձայնագրման Burnproof տարբերակը"
+
+#: ../ncb.schemas.in.h:6
+msgid "Enable debug"
+msgstr "Միացնել դեֆեկտների վերացման ծրագիրը"
+
+#: ../ncb.schemas.in.h:7
+msgid "Enable overburn"
+msgstr "Միացնել overburn ֆունկցիան"
+
+#: ../ncb.schemas.in.h:8
+msgid "Whether to allow the data to exceed the size of the physical medium."
+msgstr "Թույլատրե՞լոր տեեկատվությունը գերազանցի ֆիզիկական միջինի չափսը"
+
+#: ../ncb.schemas.in.h:9
+msgid "Whether to enable the debugging for CD Recording."
+msgstr "Միացնե՞լ դեֆեկտների միացման ծրագիրը CD ձայնագրման համար"
+
+#: ../ncb.schemas.in.h:10
+msgid "Whether to use the Burnproof option available on some recorders."
+msgstr ""
+"Օգտագործե՞լ Burnproof տարբերակը, որոնք մատչելի են որոշ ձայնագրիչների վրա"
+
+#~ msgid "CD or DVD"
+#~ msgstr "CD կամ DVD"

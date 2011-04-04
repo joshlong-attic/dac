@@ -1,0 +1,76 @@
+# Dutch translation for nautilus-pastebin
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the nautilus-pastebin package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: nautilus-pastebin\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2009-12-01 22:02+0100\n"
+"PO-Revision-Date: 2010-01-23 16:00+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Dutch <nl@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-01-24 04:54+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: ../scripts/nautilus-pastebin.py:156
+msgid ""
+"The file will be sent to the selected pastebin: are you sure to continue?"
+msgstr ""
+"Het bestand zal verstuurd worden naar de geselecteerde pastebin: weet u "
+"zeker dat u wilt doorgaan?"
+
+#: ../scripts/nautilus-pastebin.py:174
+msgid "Unable to read or parse the result page."
+msgstr "Kon de resultaatpagina niet verwerkeen of lezen."
+
+#: ../scripts/nautilus-pastebin.py:175
+msgid "It could be a server timeout or a change server side. Try later."
+msgstr ""
+"Mogelijk trad er een servertime-out op, of is er iets aan de server "
+"veranderd. Probeer het later nog eens."
+
+#: ../scripts/nautilus-pastebin.py:212
+msgid "Pastebin"
+msgstr "Pastebin"
+
+#: ../scripts/nautilus-pastebin.py:213
+msgid "Send this file to a pastebin"
+msgstr "Dit bestand naar een pastebin versturen"
+
+#: ../scripts/nautilus-pastebin.py:229
+msgid "Unable to send the file"
+msgstr "Kan het bestand niet verzenden"
+
+#: ../scripts/nautilus-pastebin.py:229
+msgid "The selected file cannot be pasted."
+msgstr "Het geselecteerde bestand kan niet geplaatst worden."
+
+#: ../scripts/nautilus-pastebin-configurator.py:86
+#, python-format
+msgid "Can't find %s in any known prefix!"
+msgstr "Kan %s niet in de prefixes vinden!"
+
+#: ../data/nautilus-pastebin-configurator.glade.h:1
+msgid "<b>Ask to confirm</b>:"
+msgstr "<b>Vragen om te bevestigen</b>:"
+
+#: ../data/nautilus-pastebin-configurator.glade.h:2
+msgid "<b>Open browser</b>:"
+msgstr "<b>Browser openen</b>:"
+
+#: ../data/nautilus-pastebin-configurator.glade.h:3
+msgid "<b>Pastebin</b>:"
+msgstr "<b>Pastebin</b>:"
+
+#: ../data/nautilus-pastebin-configurator.glade.h:4
+msgid "<b>Show a notification</b>:"
+msgstr "<b>Een melding weergeven</b>:"
+
+#: ../data/nautilus-pastebin-configurator.glade.h:5
+msgid "Nautilus Pastebin configuration panel"
+msgstr "Configuratiepaneel voor Nautilus Pastebin"

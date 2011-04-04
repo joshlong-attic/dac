@@ -1,0 +1,105 @@
+# Description: Drop unnecessary dependencies and add some dependencies which
+# were previously indirect.
+# Origin: vendor
+# Bug-Debian: http://bugs.debian.org/525543
+# Bug-Ubuntu: https://bugs.launchpad.net/bugs/347971
+# Forwarded: no
+# Author:  Robert Ancell <robert.ancell@canonical.com>
+# Reviewed-By: Chow Loong Jin <hyperair@ubuntu.com>
+---
+
+ configure            |   20 ++++++++++----------
+ configure.in         |    2 +-
+ src/nautilus-share.c |    2 --
+ 3 files changed, 11 insertions(+), 13 deletions(-)
+
+
+diff --git a/configure b/configure
+index 0854909..0cf965a 100755
+--- a/configure
++++ b/configure
+@@ -20683,12 +20683,12 @@ if test -n "$PKG_CONFIG"; then
+         pkg_cv_NAUTILUS_CFLAGS="$NAUTILUS_CFLAGS"
+     else
+         if test -n "$PKG_CONFIG" && \
+-    { (echo "$as_me:$LINENO: \$PKG_CONFIG --exists --print-errors \"libnautilus-extension >= \$NAUTILUS_REQUIRED eel-2.0 >= \$EEL_REQUIRED\"") >&5
+-  ($PKG_CONFIG --exists --print-errors "libnautilus-extension >= $NAUTILUS_REQUIRED eel-2.0 >= $EEL_REQUIRED") 2>&5
++    { (echo "$as_me:$LINENO: \$PKG_CONFIG --exists --print-errors \"libnautilus-extension >= \$NAUTILUS_REQUIRED libgnomeui-2.0\"") >&5
++  ($PKG_CONFIG --exists --print-errors "libnautilus-extension >= $NAUTILUS_REQUIRED libgnomeui-2.0") 2>&5
+   ac_status=$?
+   echo "$as_me:$LINENO: \$? = $ac_status" >&5
+   (exit $ac_status); }; then
+-  pkg_cv_NAUTILUS_CFLAGS=`$PKG_CONFIG --cflags "libnautilus-extension >= $NAUTILUS_REQUIRED eel-2.0 >= $EEL_REQUIRED" 2>/dev/null`
++  pkg_cv_NAUTILUS_CFLAGS=`$PKG_CONFIG --cflags "libnautilus-extension >= $NAUTILUS_REQUIRED libgnomeui-2.0" 2>/dev/null`
+ else
+   pkg_failed=yes
+ fi
+@@ -20701,12 +20701,12 @@ if test -n "$PKG_CONFIG"; then
+         pkg_cv_NAUTILUS_LIBS="$NAUTILUS_LIBS"
+     else
+         if test -n "$PKG_CONFIG" && \
+-    { (echo "$as_me:$LINENO: \$PKG_CONFIG --exists --print-errors \"libnautilus-extension >= \$NAUTILUS_REQUIRED eel-2.0 >= \$EEL_REQUIRED\"") >&5
+-  ($PKG_CONFIG --exists --print-errors "libnautilus-extension >= $NAUTILUS_REQUIRED eel-2.0 >= $EEL_REQUIRED") 2>&5
++    { (echo "$as_me:$LINENO: \$PKG_CONFIG --exists --print-errors \"libnautilus-extension >= \$NAUTILUS_REQUIRED libgnomeui-2.0\"") >&5
++  ($PKG_CONFIG --exists --print-errors "libnautilus-extension >= $NAUTILUS_REQUIRED libgnomeui-2.0") 2>&5
+   ac_status=$?
+   echo "$as_me:$LINENO: \$? = $ac_status" >&5
+   (exit $ac_status); }; then
+-  pkg_cv_NAUTILUS_LIBS=`$PKG_CONFIG --libs "libnautilus-extension >= $NAUTILUS_REQUIRED eel-2.0 >= $EEL_REQUIRED" 2>/dev/null`
++  pkg_cv_NAUTILUS_LIBS=`$PKG_CONFIG --libs "libnautilus-extension >= $NAUTILUS_REQUIRED libgnomeui-2.0" 2>/dev/null`
+ else
+   pkg_failed=yes
+ fi
+@@ -20725,14 +20725,14 @@ else
+         _pkg_short_errors_supported=no
+ fi
+         if test $_pkg_short_errors_supported = yes; then
+-	        NAUTILUS_PKG_ERRORS=`$PKG_CONFIG --short-errors --errors-to-stdout --print-errors "libnautilus-extension >= $NAUTILUS_REQUIRED eel-2.0 >= $EEL_REQUIRED"`
++	        NAUTILUS_PKG_ERRORS=`$PKG_CONFIG --short-errors --errors-to-stdout --print-errors "libnautilus-extension >= $NAUTILUS_REQUIRED libgnomeui-2.0"`
+         else
+-	        NAUTILUS_PKG_ERRORS=`$PKG_CONFIG --errors-to-stdout --print-errors "libnautilus-extension >= $NAUTILUS_REQUIRED eel-2.0 >= $EEL_REQUIRED"`
++	        NAUTILUS_PKG_ERRORS=`$PKG_CONFIG --errors-to-stdout --print-errors "libnautilus-extension >= $NAUTILUS_REQUIRED libgnomeui-2.0"`
+         fi
+ 	# Put the nasty error message in config.log where it belongs
+ 	echo "$NAUTILUS_PKG_ERRORS" >&5
+ 
+-	{ { echo "$as_me:$LINENO: error: Package requirements (libnautilus-extension >= $NAUTILUS_REQUIRED eel-2.0 >= $EEL_REQUIRED) were not met:
++	{ { echo "$as_me:$LINENO: error: Package requirements (libnautilus-extension >= $NAUTILUS_REQUIRED libgnomeui-2.0) were not met:
+ 
+ $NAUTILUS_PKG_ERRORS
+ 
+@@ -20743,7 +20743,7 @@ Alternatively, you may set the environment variables NAUTILUS_CFLAGS
+ and NAUTILUS_LIBS to avoid the need to call pkg-config.
+ See the pkg-config man page for more details.
+ " >&5
+-echo "$as_me: error: Package requirements (libnautilus-extension >= $NAUTILUS_REQUIRED eel-2.0 >= $EEL_REQUIRED) were not met:
++echo "$as_me: error: Package requirements (libnautilus-extension >= $NAUTILUS_REQUIRED libgnomeui-2.0) were not met:
+ 
+ $NAUTILUS_PKG_ERRORS
+ 
+diff --git a/configure.in b/configure.in
+index 96cea69..9b8e90a 100644
+--- a/configure.in
++++ b/configure.in
+@@ -28,7 +28,7 @@ if test "x$HAVE_PKGCONFIG" = "xno"; then
+   AC_MSG_ERROR(you need to have pkgconfig installed !)
+ fi
+ 
+-PKG_CHECK_MODULES(NAUTILUS, libnautilus-extension >= $NAUTILUS_REQUIRED eel-2.0 >= $EEL_REQUIRED)
++PKG_CHECK_MODULES(NAUTILUS, libnautilus-extension >= $NAUTILUS_REQUIRED libgnomeui-2.0)
+ PKG_CHECK_MODULES(GLIB, glib-2.0 >= $GLIB_REQUIRED)
+ PKG_CHECK_MODULES(LIBGLADE, libglade-2.0 >= $LIBGLADE_REQUIRED)
+ 
+diff --git a/src/nautilus-share.c b/src/nautilus-share.c
+index 12afd34..f2105d4 100644
+--- a/src/nautilus-share.c
++++ b/src/nautilus-share.c
+@@ -35,8 +35,6 @@
+ #include <libgnomeui/libgnomeui.h>
+ #include "nautilus-share.h"
+ 
+-#include <eel/eel-vfs-extensions.h>
+-
+ #include <glib/gi18n-lib.h>
+ 
+ #include <gtk/gtktable.h>

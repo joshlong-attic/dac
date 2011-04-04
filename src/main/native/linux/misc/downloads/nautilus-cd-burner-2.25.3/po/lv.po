@@ -1,0 +1,996 @@
+# translation of lv.po to Latvian
+# nautilus-cd-burner for Latvian.
+# Copyright (C) 2002 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the nautilus-cd-burner package.
+#
+# Artis Trops <hornet@navigator.lv>, 2002.
+# Linux Centrs <info@linux.edu.lv>, 2006.
+# Raivis Dejus <orvils@gmail.com>, 2006, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: lv\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-04-03 11:14+0300\n"
+"PO-Revision-Date: 2007-04-03 12:11+0300\n"
+"Last-Translator: Raivis Dejus <orvils@gmail.com>\n"
+"Language-Team: Latvian <locale@laka.lv>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
+
+#: ../data/nautilus-cd-burner.desktop.in.h:1
+#: ../data/nautilus-cd-burner-open-iso.desktop.in.h:1
+msgid "CD/DVD Creator"
+msgstr "CD/DVD Veidotājs"
+
+#: ../data/nautilus-cd-burner.desktop.in.h:2
+msgid "Open a folder into which you can drag files to burn to a CD or DVD"
+msgstr "Atver mapi, kurā jūš varat pārvilkt failus un mapes, ko vēlaties ierakstīt CD vai DVD diskā"
+
+#: ../data/nautilus-cd-burner-open-iso.desktop.in.h:2
+msgid "Open the CD/DVD Creator"
+msgstr "Atvērt CD/DVD Veidotāju"
+
+#: ../data/nautilus-cd-burner.glade.h:1
+msgid "    "
+msgstr "    "
+
+#: ../data/nautilus-cd-burner.glade.h:2
+msgid "<b>Information</b>"
+msgstr "<b>Informācija</b>"
+
+#: ../data/nautilus-cd-burner.glade.h:3
+msgid "<b>Write Options</b>"
+msgstr "<b>Rakstīšanas iestatījumi</b>"
+
+#: ../data/nautilus-cd-burner.glade.h:4
+msgid "<big><b>Some files have invalid filenames</b></big>"
+msgstr "<big><b>Dažiem failiem ir nederīgi faila nosaukumi</b></big>"
+
+#: ../data/nautilus-cd-burner.glade.h:5
+msgid "<big><b>Writing files to disc</b></big>"
+msgstr "<big><b>Ierakstīt failus diskā</b></big>"
+
+#: ../data/nautilus-cd-burner.glade.h:6
+msgid "<i>Initializing...</i>"
+msgstr "<i>Inicializēju...</i>"
+
+#: ../data/nautilus-cd-burner.glade.h:7
+msgid "Data size:"
+msgstr "Datu izmērs:"
+
+#: ../data/nautilus-cd-burner.glade.h:8
+msgid "Disc _name:"
+msgstr "Diska _nosaukums:"
+
+#: ../data/nautilus-cd-burner.glade.h:9
+msgid "Label to identify disc"
+msgstr "Etiķete, ar ko identificēt disku"
+
+#: ../data/nautilus-cd-burner.glade.h:10
+msgid ""
+"The following filenames are not valid.  Please provide new names for each of "
+"them."
+msgstr "Sekojoši failu nosaukumi nav derīgi.  Lūdzu pārsauciet katru no tiem."
+
+#: ../data/nautilus-cd-burner.glade.h:11
+msgid "Write _speed:"
+msgstr "Rakstīšanas ātrum_s:"
+
+#: ../data/nautilus-cd-burner.glade.h:12
+msgid "Write disc _to:"
+msgstr "Raks_tīt disku:"
+
+#: ../data/nautilus-cd-burner.glade.h:13 ../src/ncb-operation.c:899
+msgid "Writing Files to Disc"
+msgstr "Rakstu failus diskā"
+
+#: ../data/nautilus-cd-burner.glade.h:14
+msgid "_Dummy write"
+msgstr "Iz_mēģinājuma ierakstīšana"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:1
+msgid "Default burn speed"
+msgstr "Noklusētais rakstīšanas ātrums"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:2
+msgid "Default speed at which the media will be written."
+msgstr "Noklusētais ātrums, ar kuru tiks ierakstīts."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:3
+msgid "Directory for the temporary ISO images"
+msgstr "Direktorija priekš pagaidu ISO attēliem"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:4
+msgid ""
+"Directory used for the temporary ISO images, leave blank to use the default "
+"system temporary directory."
+msgstr ""
+"Direktoriju priekš pagaidu ISO attēliem,atstāt neaizpildītu, lai lietotu "
+"noklusēto sistēmas pagaidu direktoriju."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:5
+msgid "Enable Burnproof option"
+msgstr "Aktivizēt rakstīšanas pārbaudes iespēju"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:6
+msgid "Enable debug"
+msgstr "Aktivizēt atkļūdošanu"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:7
+msgid "Enable overburn"
+msgstr "Aktivizēt pār-rakstīšanu"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:8
+msgid "Whether to allow the data to exceed the size of the physical medium."
+msgstr "Vai atļaut ierakstāmajiem datiem pārsniegt matricas fiziskos izmērus."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:9
+msgid "Whether to enable the debugging for CD Recording."
+msgstr "Vai atļaut atkļūdošanu CD rakstīšanai."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:10
+msgid "Whether to use the Burnproof option available on some recorders."
+msgstr "Vai lietot rakstīšanas pārbaudes iespēju pieejamu dažiem rakstītājiem."
+
+#: ../src/burn-extension.c:141 ../src/burn-extension.c:145
+msgid "Unable to launch the cd burner application"
+msgstr "Neizdevās palaist CD rakstīšanas programmu"
+
+#: ../src/burn-extension.c:396 ../src/burn-extension.c:406
+#: ../src/burn-extension.c:493
+msgid "_Write to Disc..."
+msgstr "_Rakstīt failus Diskā..."
+
+#: ../src/burn-extension.c:397
+msgid "Write disc image to a CD or DVD disc"
+msgstr "Rakstīt attēlu CD vai DVD diskā"
+
+#: ../src/burn-extension.c:407
+msgid "Write disc image cuesheet to a CD or DVD disc"
+msgstr "Rakstīt attēlu cue-lapu CD vai DVD diskā"
+
+#: ../src/burn-extension.c:454
+msgid "_Copy Disc..."
+msgstr "_Kopēt disku..."
+
+#: ../src/burn-extension.c:455
+msgid "Create a copy of this CD or DVD disc"
+msgstr "Izveidot CD vai DVD diska kopiju"
+
+#: ../src/burn-extension.c:494 ../src/nautilus-burn-bar.c:151
+msgid "Write contents to a CD or DVD disc"
+msgstr "Rakstīt saturu CD vai DVD diskā"
+
+#: ../src/make-iso.c:324
+msgid "Disable Microsoft Windows compatibility?"
+msgstr "Noņemt Microsoft Windows savietojamību?"
+
+#: ../src/make-iso.c:327
+msgid ""
+"Some files don't have a suitable name for a Windows-compatible CD.\n"
+"Do you want to continue with Windows compatibility disabled?"
+msgstr ""
+"Dažiem failiem nav piemērots nosaukums Windows savietojamībai.\n"
+"Vai vēlaties turpināt ar noņemto Windows savietojamību?"
+
+#: ../src/make-iso.c:328
+msgid "Windows compatibility"
+msgstr "Windows savietojamība"
+
+#: ../src/make-iso.c:725
+msgid " (invalid Unicode)"
+msgstr " (nederīgs Unikods)"
+
+#: ../src/make-iso.c:886
+#, c-format
+msgid ""
+"The selected location does not have enough space to store the disc image (%s "
+"MiB needed)."
+msgstr "Nepietiek vietas, lai saglabātu diska attēlu (nepieciešami %s megabaiti)."
+
+#: ../src/make-iso.c:1026 ../src/make-iso.c:1410
+#, c-format
+msgid "Could not run sub process: %s."
+msgstr "Nevar veikt apakšprocesu: %s."
+
+#: ../src/make-iso.c:1053
+msgid "The operation was cancelled by the user."
+msgstr "Lietotājs atcēla operāciju."
+
+#: ../src/make-iso.c:1154
+#, c-format
+msgid ""
+"Some files have invalid filenames: \n"
+"%s"
+msgstr ""
+"Dažiem failiem ir nederīgi faila nosaukumi: \n"
+"%s"
+
+#: ../src/make-iso.c:1167
+msgid "Unknown character encoding."
+msgstr "Nezināms simbolu kodējums."
+
+#: ../src/make-iso.c:1171
+msgid "There is no space left on the device."
+msgstr "Uz iekārtas vairs nav palikusi brīva vieta."
+
+#. TODO: get filename from error message
+#: ../src/make-iso.c:1176
+msgid "File too large for filesystem."
+msgstr "Fails ir pārak liels priekš failsitēmas."
+
+#: ../src/make-iso.c:1226
+msgid "The label for the image is too long."
+msgstr "Attēla apzīmējums ir pārāk liels."
+
+#: ../src/make-iso.c:1331
+msgid "There are no files to write to disc."
+msgstr "Neviens fails nav izvēlēts, lai rakstītu diskā."
+
+#: ../src/make-iso.c:1682
+msgid "Not a valid disc image."
+msgstr "Nav derīgs diska attēls."
+
+#: ../src/nautilus-burn-bar.c:137
+msgid "CD/DVD Creator Folder"
+msgstr "CD/DVD veidotāja mape"
+
+#: ../src/nautilus-burn-bar.c:141 ../src/ncb-selection-dialog.c:176
+msgid "Write to Disc"
+msgstr "Rakstīt failus diskā"
+
+#: ../src/nautilus-burn-drive.c:1256
+msgid "Could not determine media type because CD drive is busy"
+msgstr "Nevarēja noteikt nesēja tipu, jo CD lasītājs ir aizņemts"
+
+#: ../src/nautilus-burn-drive.c:1258
+msgid "Couldn't open media"
+msgstr "Nespēja atvērt nesēju"
+
+#: ../src/nautilus-burn-drive.c:1260
+msgid "Unknown Media"
+msgstr "Nezināms "
+
+#: ../src/nautilus-burn-drive.c:1262
+msgid "Commercial CD or Audio CD"
+msgstr "Komerciāls vai Audio CD"
+
+#: ../src/nautilus-burn-drive.c:1264
+msgid "CD-R"
+msgstr "CD-R"
+
+#: ../src/nautilus-burn-drive.c:1266
+msgid "CD-RW"
+msgstr "CD-RW"
+
+#: ../src/nautilus-burn-drive.c:1268
+msgid "DVD"
+msgstr "DVD"
+
+#: ../src/nautilus-burn-drive.c:1270
+msgid "DVD-R, or DVD-RAM"
+msgstr "DVD-R vai DVD-RAM"
+
+#: ../src/nautilus-burn-drive.c:1272
+msgid "DVD-RW"
+msgstr "DVD-RW"
+
+#: ../src/nautilus-burn-drive.c:1274
+msgid "DVD-RAM"
+msgstr "DVD-RAM"
+
+#: ../src/nautilus-burn-drive.c:1276
+msgid "DVD+R"
+msgstr "DVD+R"
+
+#: ../src/nautilus-burn-drive.c:1278
+msgid "DVD+RW"
+msgstr "DVD+RW"
+
+#: ../src/nautilus-burn-drive.c:1280
+msgid "DVD+R DL"
+msgstr "DVD+R DL"
+
+#: ../src/nautilus-burn-drive.c:1285
+msgid "Broken media type"
+msgstr "Bojāts nesējs"
+
+#: ../src/nautilus-burn-drive-monitor.c:452
+msgid "File image"
+msgstr "Faila attēls"
+
+#: ../src/nautilus-burn-drive-selection.c:107 ../src/ncb-selection.c:961
+msgid "Drive"
+msgstr "Disku lasītājs"
+
+#: ../src/nautilus-burn-drive-selection.c:237
+msgid "Unnamed CD/DVD Drive"
+msgstr "Nenosaukts CD/DVD disku lasītājs"
+
+#: ../src/nautilus-burn-recorder.c:602
+msgid "The recorder could not be accessed."
+msgstr "Rakstītājs nav pieejams."
+
+#: ../src/nautilus-burn-recorder.c:606
+msgid "Not enough space available on the disc."
+msgstr "Uz diska vairs nav pietiekami daudz vietas."
+
+#: ../src/nautilus-burn-recorder.c:610 ../src/nautilus-burn-recorder.c:614
+msgid "The files selected did not fit on the DVD."
+msgstr "Izvēlētie faili neietilpst uz DVD diska."
+
+#: ../src/nautilus-burn-recorder.c:626
+msgid "The target DVD drive is still in use."
+msgstr "Izvēlētais DVD nesējs vel aizvien ir lietošanā."
+
+#: ../src/nautilus-burn-recorder.c:632
+msgid "Unhandled error, aborting"
+msgstr "Neapstrādāta kļūda, pārtraucu"
+
+#: ../src/nautilus-burn-recorder.c:697
+msgid "The CD has already been recorded."
+msgstr "Disks jau ir ierakstīts."
+
+#: ../src/nautilus-burn-recorder.c:717
+msgid "The files selected did not fit on the CD."
+msgstr "Izvēlētie faili neietilpst CD diskā."
+
+#: ../src/nautilus-burn-recorder.c:721
+msgid "All audio files must be stereo, 16-bit digital audio with 44100Hz samples."
+msgstr "Visiem audio failiem jābut stereo, 16-bit digitālā audio ar 44100Hz nolasi."
+
+#: ../src/nautilus-burn-recorder.c:745
+msgid "Error while writing to disc.  Try a lower speed."
+msgstr "Kļūda rakstot diskā.  Mēģiniet ar mazāku ātrumu."
+
+#: ../src/nautilus-burn-recorder.c:750
+msgid "The system is too slow to write the CD at this speed. Try a lower speed."
+msgstr ""
+"Sistēma ir parāk lēna, lai rakstītu disku šādā ātrumā. Mēģiniet ar mazāku "
+"ātrumu."
+
+#: ../src/nautilus-burn-recorder.c:884
+msgid "You can only burn 99 tracks on one disc"
+msgstr "Jūs varat ierakstīt tikai 99 celiņus vienā diskā"
+
+#: ../src/nautilus-burn-recorder.c:891
+msgid "No tracks given to write"
+msgstr "Nav celiņu, ko rakstīt"
+
+#: ../src/nautilus-burn-recorder.c:896
+msgid "Burning CD/DVD"
+msgstr "Rakstu CD/DVD"
+
+#: ../src/nautilus-burn-recorder.c:1101
+msgid "Can only use growisofs on a single track"
+msgstr "Var lietot tikai growisofs vienam celiņam"
+
+#: ../src/nautilus-burn-recorder.c:1112
+msgid "Can only use growisofs on a data or graft list track"
+msgstr "Var lietot tikai growisofs uz datu vai graft saraksta celiņa"
+
+#: ../src/nautilus-burn-recorder.c:1477
+msgid "Blanking CD"
+msgstr "Dzēšu CD"
+
+#: ../src/nautilus-burn-recorder.c:1547
+msgid "Blanking DVD"
+msgstr "Dzēšu DVD"
+
+#: ../src/nautilus-burn-process.c:497
+#, c-format
+msgid "Could not run the necessary command: %s"
+msgstr "Nevarēja izpildīt nepieciešamo komandu: %s"
+
+#: ../src/nautilus-cd-burner.c:157
+#, c-format
+msgid "There was a problem displaying the help contents: %s."
+msgstr "Atgadījās kļūda attēlojot palīdzības saturu: %s."
+
+#: ../src/nautilus-cd-burner.c:158
+msgid "Cannot display help"
+msgstr "Nevar attēlot palīdzību"
+
+#: ../src/nautilus-cd-burner.c:298
+msgid "Use CD/DVD device as source instead of burn:///"
+msgstr "Izmantot CD/DVD ierīci kā avotu nevis burn:///"
+
+#: ../src/nautilus-cd-burner.c:298
+msgid "DEVICE"
+msgstr "Iekārta"
+
+#: ../src/nautilus-cd-burner.c:300
+msgid "Use ISO image as source instead of burn:///"
+msgstr "Lietot ISO attēlu kā avotu nevis burn:///"
+
+#: ../src/nautilus-cd-burner.c:300 ../src/nautilus-cd-burner.c:302
+msgid "FILENAME"
+msgstr "Faila nosaukums"
+
+#: ../src/nautilus-cd-burner.c:302
+msgid "Use CUE/TOC file as source instead of burn:///"
+msgstr "Lietot CUE/TOC failu kā avotu, nevis burn:///"
+
+#: ../src/ncb-selection.c:381
+msgid ""
+"It appears that the disc, when created, will contain a single disc image "
+"file.  Do you want to create a disc from the contents of the image or with "
+"the image file inside?"
+msgstr ""
+"Izskatās, ka disks, kad veidots, saturēs vienu diska attēla failu. Vai "
+"vēlaties izveidot disku ar attēla saturu vai attēla failu?"
+
+#: ../src/ncb-selection.c:384
+msgid "Create disc containing a single disc image file?"
+msgstr "Izveidot disku, kas saturēs vienu diska attēla failu?"
+
+#: ../src/ncb-selection.c:387
+msgid "Create From Image"
+msgstr "Izveidot no attēla"
+
+#: ../src/ncb-selection.c:389
+msgid "Create With File"
+msgstr "Izveidot kopā ar failu"
+
+#: ../src/ncb-selection.c:392
+msgid ""
+"It appears that the disc, when created, will contain only disc image files.  "
+"Do you want to continue and write them to the disc as files?"
+msgstr ""
+"Izskatās, ka disks, kad veidots, saturēs tikai diska attēla failus. Vai "
+"vēlaties turpināt tos rakstīt uz diska kā failus?"
+
+#: ../src/ncb-selection.c:395
+msgid "Create disc containing only disc image files?"
+msgstr "Izveidot disku, kas satur tikai diska attēla failus?"
+
+#: ../src/ncb-selection.c:399
+msgid "Create With Files"
+msgstr "Izveidot kopā ar failiem"
+
+#: ../src/ncb-selection.c:430
+#, c-format
+msgid "The file '%s' is unreadable.  Do you wish to skip this file and continue?"
+msgstr "Fails %s ir nelasāms. Vai vēlaties izlaist šo failu un turpināt?"
+
+#: ../src/ncb-selection.c:433
+msgid "Skip unreadable file?"
+msgstr "Izlaist nelasāmo failu?"
+
+#: ../src/ncb-selection.c:438
+msgid "Skip"
+msgstr "Izlaist"
+
+#: ../src/ncb-selection.c:438
+msgid "Skip All"
+msgstr "Izlaist visu"
+
+#: ../src/ncb-selection.c:461
+msgid "No files were selected."
+msgstr "Neviens fails nav izvēlēts."
+
+#: ../src/ncb-selection.c:492
+#, c-format
+msgid "The file '%s' is not a valid disc image."
+msgstr "Fails '%s' nav derīgs diska attēls."
+
+#: ../src/ncb-selection.c:567
+#, c-format
+msgid "The specified device '%s' is not a valid CD/DVD drive."
+msgstr "Norādītā iekārta '%s' nav derīgs CD/DVD diksu lasītājs."
+
+#: ../src/ncb-selection.c:591
+msgid "There doesn't seem to be any media in the selected drive."
+msgstr "Lūdzu ievietojiet tukšu nesēju savā CD rakstītājā."
+
+#: ../src/ncb-selection.c:598
+msgid "The media is blank."
+msgstr "CD ir tukšs."
+
+#: ../src/ncb-selection.c:631
+#, c-format
+msgid "File not found: %s"
+msgstr "Fails nav atrasts: %s"
+
+#: ../src/ncb-selection.c:640
+#, c-format
+msgid "File does not appear to be a valid CUE sheet: %s"
+msgstr "Fails nav derīga CUE lapa: %s"
+
+#.
+#. translators: see strftime man page for meaning of %b, %d and %Y
+#. the maximum length for this field is 32 bytes
+#.
+#: ../src/ncb-selection.c:684
+msgid "Personal Data, %b %d, %Y"
+msgstr "Personīgie dati, %b %d, %Y"
+
+#: ../src/ncb-selection.c:756
+msgid "Unable to create CD/DVD"
+msgstr "Nespēj izveidot CD/DVD disku"
+
+#: ../src/ncb-selection.c:920
+msgid "Source name"
+msgstr "Avota vārds"
+
+#: ../src/ncb-selection.c:927
+msgid "Source type"
+msgstr "Avota veids"
+
+#: ../src/ncb-selection.c:935
+msgid "Source size"
+msgstr "Avota izmērs"
+
+#: ../src/ncb-selection.c:944
+msgid "Disc label"
+msgstr "Diska etiķete"
+
+#: ../src/ncb-selection.c:951
+msgid "Write speed"
+msgstr "Rakstīšanas ātrums"
+
+#: ../src/ncb-selection-dialog.c:172
+msgid "Copy Disc"
+msgstr "Kopēt disku"
+
+#: ../src/ncb-selection-dialog.c:174
+msgid "Copy disc _to:"
+msgstr "Kopē_t disku:"
+
+#: ../src/ncb-selection-dialog.c:346
+msgid "Maximum possible"
+msgstr "Maksimāli iespējamais"
+
+#: ../src/ncb-selection-dialog.c:559
+msgid "Calculating..."
+msgstr "Aprēķinu..."
+
+#: ../src/ncb-selection-dialog.c:638
+msgid "_Write"
+msgstr "_Rakstīt"
+
+#: ../src/ncb-operation.c:239
+msgid "Preparing to write CD"
+msgstr "Gatavojos rakstīt CD"
+
+#: ../src/ncb-operation.c:241
+msgid "Preparing to write DVD"
+msgstr "Gatavojos rakstīt DVD"
+
+#: ../src/ncb-operation.c:246
+msgid "Writing CD"
+msgstr "Rakstu CD"
+
+#: ../src/ncb-operation.c:248
+msgid "Writing DVD"
+msgstr "Rakstu DVD"
+
+#: ../src/ncb-operation.c:253 ../src/ncb-operation.c:255
+msgid "Finishing write"
+msgstr "Pabeidzu rakstīt"
+
+#: ../src/ncb-operation.c:260
+msgid "Erasing CD"
+msgstr "Dzēšu CD"
+
+#: ../src/ncb-operation.c:262
+msgid "Erasing DVD"
+msgstr "Dzēšu DVD"
+
+#: ../src/ncb-operation.c:346
+msgid "None"
+msgstr "Neviens"
+
+#: ../src/ncb-operation.c:353
+msgid "Please make sure another application is not using the drive."
+msgstr "Pārliecinieties, ka citas aplikācijas nelieto disku lasītāju."
+
+#: ../src/ncb-operation.c:354
+msgid "Drive is busy"
+msgstr "Dzinis ir aizņemts"
+
+#: ../src/ncb-operation.c:356 ../src/ncb-operation.c:361
+#, c-format
+msgid ""
+"Please put a disc, with at least %s free, into the drive.  The following "
+"disc types are supported:\n"
+"%s"
+msgstr ""
+"Ielieciet disku lasītājā disku ar vismaz %s brīvas vietas.  Jūsu disku lasītājs atbalsta šādus disku veidus:\n"
+"%s"
+
+#: ../src/ncb-operation.c:359
+msgid "Insert a rewritable or blank disc"
+msgstr "Ievietojiet pārrakstāmu vai tukšu disku"
+
+#: ../src/ncb-operation.c:364
+msgid "Insert a blank disc"
+msgstr "Ievietojiet tukšu disku"
+
+#: ../src/ncb-operation.c:367 ../src/ncb-operation.c:373
+#, c-format
+msgid ""
+"Please replace the disc in the drive with a supported disc with at least %s "
+"free.  The following disc types are supported:\n"
+"%s"
+msgstr ""
+"Aizstājiet disku dzinī ar atbalstītu disku ar vismaz %s brīvas vietas. "
+"Sekojošie disku veidi tiek atbalstīti:\n"
+"%s"
+
+#: ../src/ncb-operation.c:370
+msgid "Reload a rewritable or blank disc"
+msgstr "Pārlādējiet pārrakstāmu vai tukšu disku"
+
+#: ../src/ncb-operation.c:376
+msgid "Reload a blank disc"
+msgstr "Pārlādējiet tukšu disku"
+
+#: ../src/ncb-operation.c:387
+msgid "_Eject"
+msgstr "I_zgrūst"
+
+#: ../src/ncb-operation.c:454
+#, c-format
+msgid "This %s appears to have information already recorded on it."
+msgstr "Šim %s jau ir infomācija ierakstīta."
+
+#: ../src/ncb-operation.c:458
+msgid "Erase information on this disc?"
+msgstr "Dzēst informāciju uz diska?"
+
+#: ../src/ncb-operation.c:466
+msgid "_Try Another"
+msgstr "Mē_ģiniet citu disku"
+
+#: ../src/ncb-operation.c:477
+msgid "_Erase Disc"
+msgstr "Dz_ēst disku"
+
+#: ../src/ncb-operation.c:509
+#, c-format
+msgid ""
+"There was an error writing to the disc:\n"
+"%s"
+msgstr ""
+"Atgadījās kļūda rakstot disku:\n"
+"%s"
+
+#: ../src/ncb-operation.c:512
+msgid "There was an error writing to the disc"
+msgstr "Atgadījās kļūda rakstot disku"
+
+#: ../src/ncb-operation.c:515
+msgid "Error writing to disc"
+msgstr "Kļūda rakstot disku"
+
+#: ../src/ncb-operation.c:570
+#, c-format
+msgid "A file named \"%s\" already exists.  Do you want to overwrite it?"
+msgstr "Fails ar nosaukumu \"%s\" jau eksistē.  Vai vēlaties to pārrakstīt?"
+
+#: ../src/ncb-operation.c:572
+msgid "Overwrite existing file?"
+msgstr "Pārrakstīt esošo failu?"
+
+#: ../src/ncb-operation.c:581
+msgid "_Overwrite"
+msgstr "_Pārrakstīt"
+
+#: ../src/ncb-operation.c:600
+msgid "Choose a filename for the disc image"
+msgstr "Izvēlieties faila nosaukumu diska attēlam"
+
+#. Translators: this is the filename of the image
+#: ../src/ncb-operation.c:736
+msgid "image.iso"
+msgstr "disks.iso"
+
+#: ../src/ncb-operation.c:757
+#, c-format
+msgid "You do not have permissions to overwrite that file (%s)."
+msgstr "Jums nav atļaujas, lai pārrakstītu failu (%s)."
+
+#: ../src/ncb-operation.c:758 ../src/ncb-operation.c:773
+#: ../src/ncb-operation.c:1499
+msgid "File image creation failed"
+msgstr "Faila attēla izveidošana neizdevās"
+
+#: ../src/ncb-operation.c:772
+#, c-format
+msgid "You do not have permissions to create that file (%s)."
+msgstr "Jums nav atļaujas, lai izveidotu failu (%s)."
+
+#: ../src/ncb-operation.c:837
+msgid "Complete"
+msgstr "Pabeigts"
+
+#: ../src/ncb-operation.c:840
+msgid "An error occurred while writing"
+msgstr "Rakstot atgadījās kļūda"
+
+#: ../src/ncb-operation.c:900
+msgid "Writing Files to a Disc Image"
+msgstr "Rakstīt failus diska attēlā"
+
+#: ../src/ncb-operation.c:901
+msgid "Writing Files to CD"
+msgstr "Rakstīt failus CD diskā"
+
+#: ../src/ncb-operation.c:902
+msgid "Writing Files to DVD"
+msgstr "Rakstīt failus DVD diskā"
+
+#: ../src/ncb-operation.c:905
+msgid "Writing Image to Disc"
+msgstr "Rakstīt attēlu diskā"
+
+#: ../src/ncb-operation.c:906
+msgid "Copying Disc Image"
+msgstr "Kopēju diska attēlu"
+
+#: ../src/ncb-operation.c:907
+msgid "Writing Image to CD"
+msgstr "Rakstu attēlu CD diskā"
+
+#: ../src/ncb-operation.c:908
+msgid "Writing Image to DVD"
+msgstr "Rakstu attēlu DVD diskā"
+
+#: ../src/ncb-operation.c:911
+msgid "Copying Disc"
+msgstr "Kopēju disku"
+
+#: ../src/ncb-operation.c:912
+msgid "Copying Disc to a Disc Image"
+msgstr "Kopē disku uz diska attēla"
+
+#: ../src/ncb-operation.c:913
+msgid "Copying Disc to CD"
+msgstr "Kopē disku CD diskā"
+
+#: ../src/ncb-operation.c:914
+msgid "Copying Disc to DVD"
+msgstr "Kopē disku DVD diskā"
+
+#: ../src/ncb-operation.c:918
+msgid "Writing files to disc"
+msgstr "Rakstu failus CD diskā"
+
+#: ../src/ncb-operation.c:919
+msgid "Writing files to a disc image"
+msgstr "Rakstu failus diska attēlā"
+
+#: ../src/ncb-operation.c:920
+msgid "Writing files to CD"
+msgstr "Rakstu failus CD diskā"
+
+#: ../src/ncb-operation.c:921
+msgid "Writing files to DVD"
+msgstr "Rakstu failus DVD diskā"
+
+#: ../src/ncb-operation.c:924
+msgid "Writing image to disc"
+msgstr "Rakstu attēlu diskā"
+
+#: ../src/ncb-operation.c:925
+msgid "Copying disc image"
+msgstr "Kopēju diska attēlu"
+
+#: ../src/ncb-operation.c:926
+msgid "Writing image to CD"
+msgstr "Rakstu attēlu CD diskā"
+
+#: ../src/ncb-operation.c:927
+msgid "Writing image to DVD"
+msgstr "Rakstu attēlu DVD diskā"
+
+#: ../src/ncb-operation.c:930
+msgid "Copying disc"
+msgstr "Kopēju disku"
+
+#: ../src/ncb-operation.c:931
+msgid "Copying disc to a disc image"
+msgstr "Kopēju disku uz diska attēla"
+
+#: ../src/ncb-operation.c:932
+msgid "Copying disc to CD"
+msgstr "Kopēju disku CD diskā"
+
+#: ../src/ncb-operation.c:933
+msgid "Copying disc to DVD"
+msgstr "Kopēju disku DVD diskā"
+
+#: ../src/ncb-operation.c:937
+msgid ""
+"The selected files are being written to a CD or DVD.  This operation may "
+"take a long time, depending on data size and write speed."
+msgstr ""
+"Izvēlētie faili tiek rakstīti CD vai DVD diskā. Šis process var aizņemt ilgu "
+"laiku, atkarībā no datu izmēra un rakstīšanas ātruma."
+
+#: ../src/ncb-operation.c:938
+msgid "The selected files are being written to a disc image file."
+msgstr "Izvēlētie faili tiek rakstīti diska attēla failā."
+
+#: ../src/ncb-operation.c:939
+msgid ""
+"The selected files are being written to a CD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr ""
+"Izvēlētie faili tiek rakstīti CD diskā. Šis process var aizņemt ilgu laiku, "
+"atkarībā no datu izmēra un rakstīšanas ātruma."
+
+#: ../src/ncb-operation.c:940
+msgid ""
+"The selected files are being written to a DVD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr ""
+"Izvēlētie faili tiek rakstīti DVD diskā. Šis process var aizņemt ilgu laiku, "
+"atkarībā no datu izmēra un rakstīšanas ātruma."
+
+#: ../src/ncb-operation.c:943
+msgid ""
+"The selected disc image is being written to a CD or DVD.  This operation may "
+"take a long time, depending on data size and write speed."
+msgstr ""
+"Izvēlētais diska attēls tiek rakstīts CD vai DVD diskā. Šis process var "
+"aizņemt ilgu laiku, atkarībā no datu izmēra un rakstīšanas ātruma."
+
+#: ../src/ncb-operation.c:944
+msgid "The selected disc image is being copied to a disc image file."
+msgstr "Izvēlētais diska attēls tiek kopēts uz diska attēla failu."
+
+#: ../src/ncb-operation.c:945
+msgid ""
+"The selected disc image is being written to a CD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr ""
+"Izvēlētais diska attēls tiek rakstīts CD diskā. Šis process var aizņemt ilgu "
+"laiku, atkarībā no datu izmēra un rakstīšanas ātruma."
+
+#: ../src/ncb-operation.c:946
+msgid ""
+"The selected disc image is being written to a DVD.  This operation may take "
+"a long time, depending on data size and write speed."
+msgstr ""
+"Izvēlētais diska attēls tiek rakstīts DVD diskā. Šis process var aizņemt "
+"ilgu laiku, atkarībā no datu izmēra un rakstīšanas ātruma."
+
+#: ../src/ncb-operation.c:949
+msgid ""
+"The selected disc is being copied to a CD or DVD.  This operation may take a "
+"long time, depending on data size and drive speed."
+msgstr ""
+"Izvēlētais disks tiek kopets uz CD vai DVD diska.  Šis process var aizņemt "
+"ilgu laiku, atkarībā no datu izmēra un dziņa ātruma."
+
+#: ../src/ncb-operation.c:950
+msgid ""
+"The selected disc is being copied to a disc image file.  This operation may "
+"take a long time, depending on data size and drive speed."
+msgstr ""
+"Izvēlētais disks tiek kopēts uz diska attēla.  Šis process var aizņemt ilgu "
+"laiku, atkarībā no datu izmēra un dziņa ātruma."
+
+#: ../src/ncb-operation.c:951
+msgid ""
+"The selected disc is being copied to a CD.  This operation may take a long "
+"time, depending on data size and drive speed."
+msgstr ""
+"Izvēlētais disks tiek kopēts uz CD diska.  Šis process var aizņemt ilgu "
+"laiku, atkarībā no datu izmēra un dziņa ātruma."
+
+#: ../src/ncb-operation.c:952
+msgid ""
+"The selected disc is being copied to a DVD.  This operation may take a long "
+"time, depending on data size and drive speed."
+msgstr ""
+"Izvēlētais disks tiek kopēts uz DVD diska.  Šis process var aizņemt ilgu "
+"laiku, atkarībā no datu izmēra un dziņa ātruma."
+
+#: ../src/ncb-operation.c:1009
+msgid "Burning CD"
+msgstr "Rakstu CD"
+
+#: ../src/ncb-operation.c:1164 ../src/ncb-operation.c:1311
+msgid "Creating disc image"
+msgstr "Veidoju diska attēlu"
+
+#: ../src/ncb-operation.c:1536
+#, c-format
+msgid "Completed writing %s"
+msgstr "Pabeidzu rakstīt %s"
+
+#: ../src/ncb-operation.c:1639
+msgid "Interrupt writing files to disc?"
+msgstr "Pārtraukt rakstīt failus diskā?"
+
+#: ../src/ncb-operation.c:1640
+msgid ""
+"Are you sure you want to interrupt the disc write operation? Some drives may "
+"require that you restart the computer to get them working again."
+msgstr ""
+"Vai esat pārliecināts, ka vēlaties pārtraukt CD rakstīšanas operāciju?Dažiem "
+"CD rakstītājiem var būt nepieciešams, ka jūs pārstartējat savu datoru, lai "
+"tie atkal varētu darboties."
+
+#: ../src/ncb-operation.c:1646
+msgid "Interrupt"
+msgstr "Pārtraukt"
+
+#: ../src/ncb-operation.c:1648
+msgid "Continue"
+msgstr "Turpināt"
+
+#: ../src/ncb-progress-dialog.c:146
+#, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d stunda"
+msgstr[1] "%d stundas"
+msgstr[2] "%d stundas"
+
+#: ../src/ncb-progress-dialog.c:148
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d minūte"
+msgstr[1] "%d minūtes"
+msgstr[2] "%d minūtes"
+
+#: ../src/ncb-progress-dialog.c:151
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d sekunde"
+msgstr[1] "%d sekundes"
+msgstr[2] "%d sekundes"
+
+#. hour:minutes:seconds
+#: ../src/ncb-progress-dialog.c:156
+#, c-format
+msgid "%s %s %s"
+msgstr "%s %s %s"
+
+#. minutes:seconds
+#: ../src/ncb-progress-dialog.c:159
+#, c-format
+msgid "%s %s"
+msgstr "%s %s"
+
+#. seconds
+#: ../src/ncb-progress-dialog.c:162
+#, c-format
+msgid "%s"
+msgstr "%s"
+
+#. 0 seconds
+#: ../src/ncb-progress-dialog.c:165
+msgid "0 seconds"
+msgstr "0 sekundes"
+
+#: ../src/ncb-progress-dialog.c:189
+#, c-format
+msgid "About %s left"
+msgstr "Atlicis aptuveni %s"
+
+#: ../src/ncb-progress-dialog.c:439
+msgid "_Make Another Copy"
+msgstr "Izveid_ot vēl vienu kopiju"
+
+#: ../src/ncb-rename-dialog.c:454
+msgid "C_ontinue"
+msgstr "T_urpināt"
+
+#: ../src/ncb-rename-dialog.c:482
+msgid "Filename"
+msgstr "Faila nosaukums"
+
+#: ../src/ncb-rename-dialog.c:498
+msgid "Rename file"
+msgstr "Pārsaukt failu"
+

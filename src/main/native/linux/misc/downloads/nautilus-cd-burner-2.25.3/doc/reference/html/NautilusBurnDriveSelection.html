@@ -1,0 +1,473 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>NautilusBurnDriveSelection</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.74.0">
+<link rel="home" href="index.html" title="libnautilus-burn Reference Manual">
+<link rel="up" href="ch01.html" title="libnautilus-burn Reference Manual">
+<link rel="prev" href="nautilus-cd-burner-nautilus-burn-drive.html" title="nautilus-burn-drive">
+<link rel="next" href="nautilus-cd-burner-nautilus-burn-drive-monitor.html" title="nautilus-burn-drive-monitor">
+<meta name="generator" content="GTK-Doc V1.10 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="chapter" href="ch01.html" title="libnautilus-burn Reference Manual">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="nautilus-cd-burner-nautilus-burn-drive.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">libnautilus-burn Reference Manual</th>
+<td><a accesskey="n" href="nautilus-cd-burner-nautilus-burn-drive-monitor.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts"><nobr><a href="#NautilusBurnDriveSelection.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#NautilusBurnDriveSelection.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#NautilusBurnDriveSelection.object-hierarchy" class="shortcut">Object Hierarchy</a>
+                   | 
+                  <a href="#NautilusBurnDriveSelection.implemented-interfaces" class="shortcut">Implemented Interfaces</a>
+                   | 
+                  <a href="#NautilusBurnDriveSelection.properties" class="shortcut">Properties</a>
+                   | 
+                  <a href="#NautilusBurnDriveSelection.signals" class="shortcut">Signals</a></nobr></td></tr>
+</table>
+<div class="refentry" lang="en">
+<a name="NautilusBurnDriveSelection"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="NautilusBurnDriveSelection.top_of_page"></a>NautilusBurnDriveSelection</span></h2>
+<p>NautilusBurnDriveSelection</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="NautilusBurnDriveSelection.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">
+typedef             <a class="link" href="NautilusBurnDriveSelection.html#NautilusBurnDriveSelectionPrivate" title="NautilusBurnDriveSelectionPrivate">NautilusBurnDriveSelectionPrivate</a>;
+                    <a class="link" href="NautilusBurnDriveSelection.html#NautilusBurnDriveSelection-struct" title="NautilusBurnDriveSelection">NautilusBurnDriveSelection</a>;
+<a
+href="/usr/share/gtk-doc/html/gtk/GtkWidget.html"
+>GtkWidget</a>*          <a class="link" href="NautilusBurnDriveSelection.html#nautilus-burn-drive-selection-new" title="nautilus_burn_drive_selection_new ()">nautilus_burn_drive_selection_new</a>   (void);
+void                <a class="link" href="NautilusBurnDriveSelection.html#nautilus-burn-drive-selection-set-active" title="nautilus_burn_drive_selection_set_active ()">nautilus_burn_drive_selection_set_active</a>
+                                                        (<a class="link" href="NautilusBurnDriveSelection.html" title="NautilusBurnDriveSelection">NautilusBurnDriveSelection</a> *selection,
+                                                         <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);
+<a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a>*  <a class="link" href="NautilusBurnDriveSelection.html#nautilus-burn-drive-selection-get-active" title="nautilus_burn_drive_selection_get_active ()">nautilus_burn_drive_selection_get_active</a>
+                                                        (<a class="link" href="NautilusBurnDriveSelection.html" title="NautilusBurnDriveSelection">NautilusBurnDriveSelection</a> *selection);
+const <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a>* <a class="link" href="NautilusBurnDriveSelection.html#nautilus-burn-drive-selection-get-drive" title="nautilus_burn_drive_selection_get_drive ()">nautilus_burn_drive_selection_get_drive</a>
+                                                        (<a class="link" href="NautilusBurnDriveSelection.html" title="NautilusBurnDriveSelection">NautilusBurnDriveSelection</a> *selection);
+void                <a class="link" href="NautilusBurnDriveSelection.html#nautilus-burn-drive-selection-set-device" title="nautilus_burn_drive_selection_set_device ()">nautilus_burn_drive_selection_set_device</a>
+                                                        (<a class="link" href="NautilusBurnDriveSelection.html" title="NautilusBurnDriveSelection">NautilusBurnDriveSelection</a> *selection,
+                                                         const char *device);
+const char*         <a class="link" href="NautilusBurnDriveSelection.html#nautilus-burn-drive-selection-get-device" title="nautilus_burn_drive_selection_get_device ()">nautilus_burn_drive_selection_get_device</a>
+                                                        (<a class="link" href="NautilusBurnDriveSelection.html" title="NautilusBurnDriveSelection">NautilusBurnDriveSelection</a> *selection);
+const char*         <a class="link" href="NautilusBurnDriveSelection.html#nautilus-burn-drive-selection-get-default-device" title="nautilus_burn_drive_selection_get_default_device ()">nautilus_burn_drive_selection_get_default_device</a>
+                                                        (<a class="link" href="NautilusBurnDriveSelection.html" title="NautilusBurnDriveSelection">NautilusBurnDriveSelection</a> *selection);
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="NautilusBurnDriveSelection.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  <a
+href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject"
+>GObject</a>
+   +----<a
+href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned"
+>GInitiallyUnowned</a>
+         +----<a
+href="/usr/share/gtk-doc/html/gtk/GtkObject.html"
+>GtkObject</a>
+               +----<a
+href="/usr/share/gtk-doc/html/gtk/GtkWidget.html"
+>GtkWidget</a>
+                     +----<a
+href="/usr/share/gtk-doc/html/gtk/GtkContainer.html"
+>GtkContainer</a>
+                           +----<a
+href="/usr/share/gtk-doc/html/gtk/GtkBin.html"
+>GtkBin</a>
+                                 +----<a
+href="/usr/share/gtk-doc/html/gtk/GtkComboBox.html"
+>GtkComboBox</a>
+                                       +----NautilusBurnDriveSelection
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="NautilusBurnDriveSelection.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+NautilusBurnDriveSelection implements
+ AtkImplementorIface,  <a
+href="/usr/share/gtk-doc/html/gtk/gtk-gtkbuildable.html#GtkBuildable"
+>GtkBuildable</a>,  <a
+href="/usr/share/gtk-doc/html/gtk/GtkCellLayout.html"
+>GtkCellLayout</a> and  <a
+href="/usr/share/gtk-doc/html/gtk/GtkCellEditable.html"
+>GtkCellEditable</a>.</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="NautilusBurnDriveSelection.properties"></a><h2>Properties</h2>
+<pre class="synopsis">
+  "<a class="link" href="NautilusBurnDriveSelection.html#NautilusBurnDriveSelection--device" title='The "device" property'>device</a>"                   <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"
+>gchar</a>*                : Read / Write
+  "<a class="link" href="NautilusBurnDriveSelection.html#NautilusBurnDriveSelection--drive" title='The "drive" property'>drive</a>"                    <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a>*    : Read / Write
+  "<a class="link" href="NautilusBurnDriveSelection.html#NautilusBurnDriveSelection--file-image" title='The "file-image" property'>file-image</a>"               <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>              : Read / Write
+  "<a class="link" href="NautilusBurnDriveSelection.html#NautilusBurnDriveSelection--show-recorders-only" title='The "show-recorders-only" property'>show-recorders-only</a>"      <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>              : Read / Write
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="NautilusBurnDriveSelection.signals"></a><h2>Signals</h2>
+<pre class="synopsis">
+  "<a class="link" href="NautilusBurnDriveSelection.html#NautilusBurnDriveSelection-device-changed" title='The "device-changed" signal'>device-changed</a>"                                 : Run Last
+  "<a class="link" href="NautilusBurnDriveSelection.html#NautilusBurnDriveSelection-drive-changed" title='The "drive-changed" signal'>drive-changed</a>"                                  : Run Last
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="NautilusBurnDriveSelection.description"></a><h2>Description</h2>
+<p>
+
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="NautilusBurnDriveSelection.details"></a><h2>Details</h2>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnDriveSelectionPrivate"></a><h3>NautilusBurnDriveSelectionPrivate</h3>
+<pre class="programlisting">typedef struct NautilusBurnDriveSelectionPrivate NautilusBurnDriveSelectionPrivate;
+</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnDriveSelection-struct"></a><h3>NautilusBurnDriveSelection</h3>
+<pre class="programlisting">typedef struct _NautilusBurnDriveSelection NautilusBurnDriveSelection;</pre>
+<p>
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-selection-new"></a><h3>nautilus_burn_drive_selection_new ()</h3>
+<pre class="programlisting"><a
+href="/usr/share/gtk-doc/html/gtk/GtkWidget.html"
+>GtkWidget</a>*          nautilus_burn_drive_selection_new   (void);</pre>
+<p>
+Create a new drive selector.</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> Newly allocated <a class="link" href="NautilusBurnDriveSelection.html" title="NautilusBurnDriveSelection"><span class="type">NautilusBurnDriveSelection</span></a> widget
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-selection-set-active"></a><h3>nautilus_burn_drive_selection_set_active ()</h3>
+<pre class="programlisting">void                nautilus_burn_drive_selection_set_active
+                                                        (<a class="link" href="NautilusBurnDriveSelection.html" title="NautilusBurnDriveSelection">NautilusBurnDriveSelection</a> *selection,
+                                                         <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a> *drive);</pre>
+<p>
+Set the current selected drive to that which corresponds to the
+specified drive.</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>selection</code></em> :</span></p></td>
+<td> <a class="link" href="NautilusBurnDriveSelection.html" title="NautilusBurnDriveSelection"><span class="type">NautilusBurnDriveSelection</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>drive</code></em> :</span></p></td>
+<td> <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a>
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since  2.14
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-selection-get-active"></a><h3>nautilus_burn_drive_selection_get_active ()</h3>
+<pre class="programlisting"><a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a>*  nautilus_burn_drive_selection_get_active
+                                                        (<a class="link" href="NautilusBurnDriveSelection.html" title="NautilusBurnDriveSelection">NautilusBurnDriveSelection</a> *selection);</pre>
+<p>
+Get the currently selected drive</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>selection</code></em> :</span></p></td>
+<td> <a class="link" href="NautilusBurnDriveSelection.html" title="NautilusBurnDriveSelection"><span class="type">NautilusBurnDriveSelection</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> currently selected <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a>.  The drive must be
+unreffed using nautilus_burn_drive_unref after use.
+
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since  2.14
+
+</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-selection-get-drive"></a><h3>nautilus_burn_drive_selection_get_drive ()</h3>
+<pre class="programlisting">const <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a>* nautilus_burn_drive_selection_get_drive
+                                                        (<a class="link" href="NautilusBurnDriveSelection.html" title="NautilusBurnDriveSelection">NautilusBurnDriveSelection</a> *selection);</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">nautilus_burn_drive_selection_get_drive</code> is deprecated and should not be used in newly-written code. Use <a class="link" href="NautilusBurnDriveSelection.html#nautilus-burn-drive-selection-get-active" title="nautilus_burn_drive_selection_get_active ()"><code class="function">nautilus_burn_drive_selection_get_active()</code></a> instead</p>
+</div>
+<p>
+Get the currently selected drive</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>selection</code></em> :</span></p></td>
+<td> <a class="link" href="NautilusBurnDriveSelection.html" title="NautilusBurnDriveSelection"><span class="type">NautilusBurnDriveSelection</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> currently selected <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive"><span class="type">NautilusBurnDrive</span></a>
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-selection-set-device"></a><h3>nautilus_burn_drive_selection_set_device ()</h3>
+<pre class="programlisting">void                nautilus_burn_drive_selection_set_device
+                                                        (<a class="link" href="NautilusBurnDriveSelection.html" title="NautilusBurnDriveSelection">NautilusBurnDriveSelection</a> *selection,
+                                                         const char *device);</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">nautilus_burn_drive_selection_set_device</code> is deprecated and should not be used in newly-written code. Use <a class="link" href="NautilusBurnDriveSelection.html#nautilus-burn-drive-selection-set-active" title="nautilus_burn_drive_selection_set_active ()"><code class="function">nautilus_burn_drive_selection_set_active()</code></a> instead</p>
+</div>
+<p>
+Set the current selected drive to that which corresponds to the
+specified block device name.</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>selection</code></em> :</span></p></td>
+<td> <a class="link" href="NautilusBurnDriveSelection.html" title="NautilusBurnDriveSelection"><span class="type">NautilusBurnDriveSelection</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>device</code></em> :</span></p></td>
+<td> block device name
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-selection-get-device"></a><h3>nautilus_burn_drive_selection_get_device ()</h3>
+<pre class="programlisting">const char*         nautilus_burn_drive_selection_get_device
+                                                        (<a class="link" href="NautilusBurnDriveSelection.html" title="NautilusBurnDriveSelection">NautilusBurnDriveSelection</a> *selection);</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">nautilus_burn_drive_selection_get_device</code> is deprecated and should not be used in newly-written code. Use <a class="link" href="NautilusBurnDriveSelection.html#nautilus-burn-drive-selection-get-active" title="nautilus_burn_drive_selection_get_active ()"><code class="function">nautilus_burn_drive_selection_get_active()</code></a> instead</p>
+</div>
+<p>
+Get the block device name that corresponds to the currently
+selected drive</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>selection</code></em> :</span></p></td>
+<td> <a class="link" href="NautilusBurnDriveSelection.html" title="NautilusBurnDriveSelection"><span class="type">NautilusBurnDriveSelection</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> String block device name that corresponds to the
+currently selected drive
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-drive-selection-get-default-device"></a><h3>nautilus_burn_drive_selection_get_default_device ()</h3>
+<pre class="programlisting">const char*         nautilus_burn_drive_selection_get_default_device
+                                                        (<a class="link" href="NautilusBurnDriveSelection.html" title="NautilusBurnDriveSelection">NautilusBurnDriveSelection</a> *selection);</pre>
+<div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
+<h3 class="title">Warning</h3>
+<p><code class="literal">nautilus_burn_drive_selection_get_default_device</code> is deprecated and should not be used in newly-written code. </p>
+</div>
+<p>
+Get the block device name that corresponds to the default drive.</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>selection</code></em> :</span></p></td>
+<td> <a class="link" href="NautilusBurnDriveSelection.html" title="NautilusBurnDriveSelection"><span class="type">NautilusBurnDriveSelection</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>
+
+
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1" lang="en">
+<a name="NautilusBurnDriveSelection.property-details"></a><h2>Property Details</h2>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnDriveSelection--device"></a><h3>The <code class="literal">"device"</code> property</h3>
+<pre class="programlisting">  "device"                   <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"
+>gchar</a>*                : Read / Write</pre>
+<p></p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnDriveSelection--drive"></a><h3>The <code class="literal">"drive"</code> property</h3>
+<pre class="programlisting">  "drive"                    <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a>*    : Read / Write</pre>
+<p></p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnDriveSelection--file-image"></a><h3>The <code class="literal">"file-image"</code> property</h3>
+<pre class="programlisting">  "file-image"               <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>              : Read / Write</pre>
+<p></p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnDriveSelection--show-recorders-only"></a><h3>The <code class="literal">"show-recorders-only"</code> property</h3>
+<pre class="programlisting">  "show-recorders-only"      <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>              : Read / Write</pre>
+<p></p>
+<p>Default value: FALSE</p>
+</div>
+</div>
+<div class="refsect1" lang="en">
+<a name="NautilusBurnDriveSelection.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnDriveSelection-device-changed"></a><h3>The <code class="literal">"device-changed"</code> signal</h3>
+<pre class="programlisting">void                user_function                      (<a class="link" href="NautilusBurnDriveSelection.html" title="NautilusBurnDriveSelection">NautilusBurnDriveSelection</a> *nautilusburndriveselection,
+                                                        <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"
+>gchar</a>                      *arg1,
+                                                        <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"
+>gpointer</a>                    user_data)                       : Run Last</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>nautilusburndriveselection</code></em> :</span></p></td>
+<td>the object which received the signal.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>arg1</code></em> :</span></p></td>
+<td>
+
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="NautilusBurnDriveSelection-drive-changed"></a><h3>The <code class="literal">"drive-changed"</code> signal</h3>
+<pre class="programlisting">void                user_function                      (<a class="link" href="NautilusBurnDriveSelection.html" title="NautilusBurnDriveSelection">NautilusBurnDriveSelection</a> *nautilusburndriveselection,
+                                                        <a class="link" href="nautilus-cd-burner-nautilus-burn-drive.html#NautilusBurnDrive">NautilusBurnDrive</a>          *arg1,
+                                                        <a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"
+>gpointer</a>                    user_data)                       : Run Last</pre>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>nautilusburndriveselection</code></em> :</span></p></td>
+<td>the object which received the signal.
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>arg1</code></em> :</span></p></td>
+<td>
+
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.10</div>
+</body>
+</html>

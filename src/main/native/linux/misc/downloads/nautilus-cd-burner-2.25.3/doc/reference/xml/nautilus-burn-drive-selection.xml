@@ -1,0 +1,292 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<refentry id="NautilusBurnDriveSelection">
+<refmeta>
+<refentrytitle role="top_of_page" id="NautilusBurnDriveSelection.top_of_page">NautilusBurnDriveSelection</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>NAUTILUS-CD-BURNER Library</refmiscinfo>
+</refmeta>
+
+<refnamediv>
+<refname>NautilusBurnDriveSelection</refname>
+<refpurpose></refpurpose>
+<!--[<xref linkend="desc" endterm="desc.title"/>]-->
+</refnamediv>
+
+<refsynopsisdiv id="NautilusBurnDriveSelection.synopsis" role="synopsis">
+<title role="synopsis.title">Synopsis</title>
+
+<synopsis>
+typedef             <link linkend="NautilusBurnDriveSelectionPrivate">NautilusBurnDriveSelectionPrivate</link>;
+                    <link linkend="NautilusBurnDriveSelection-struct">NautilusBurnDriveSelection</link>;
+<link linkend="GtkWidget">GtkWidget</link>*          <link linkend="nautilus-burn-drive-selection-new">nautilus_burn_drive_selection_new</link>   (void);
+<link linkend="void">void</link>                <link linkend="nautilus-burn-drive-selection-set-active">nautilus_burn_drive_selection_set_active</link>
+                                                        (<link linkend="NautilusBurnDriveSelection">NautilusBurnDriveSelection</link> *selection,
+                                                         <link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);
+<link linkend="NautilusBurnDrive">NautilusBurnDrive</link>*  <link linkend="nautilus-burn-drive-selection-get-active">nautilus_burn_drive_selection_get_active</link>
+                                                        (<link linkend="NautilusBurnDriveSelection">NautilusBurnDriveSelection</link> *selection);
+const <link linkend="NautilusBurnDrive">NautilusBurnDrive</link>* <link linkend="nautilus-burn-drive-selection-get-drive">nautilus_burn_drive_selection_get_drive</link>
+                                                        (<link linkend="NautilusBurnDriveSelection">NautilusBurnDriveSelection</link> *selection);
+<link linkend="void">void</link>                <link linkend="nautilus-burn-drive-selection-set-device">nautilus_burn_drive_selection_set_device</link>
+                                                        (<link linkend="NautilusBurnDriveSelection">NautilusBurnDriveSelection</link> *selection,
+                                                         const <link linkend="char">char</link> *device);
+const <link linkend="char">char</link>*         <link linkend="nautilus-burn-drive-selection-get-device">nautilus_burn_drive_selection_get_device</link>
+                                                        (<link linkend="NautilusBurnDriveSelection">NautilusBurnDriveSelection</link> *selection);
+const <link linkend="char">char</link>*         <link linkend="nautilus-burn-drive-selection-get-default-device">nautilus_burn_drive_selection_get_default_device</link>
+                                                        (<link linkend="NautilusBurnDriveSelection">NautilusBurnDriveSelection</link> *selection);
+</synopsis>
+</refsynopsisdiv>
+
+<refsect1 id="NautilusBurnDriveSelection.object-hierarchy" role="object_hierarchy">
+<title role="object_hierarchy.title">Object Hierarchy</title>
+<synopsis>
+  <link linkend="GObject">GObject</link>
+   +----<link linkend="GInitiallyUnowned">GInitiallyUnowned</link>
+         +----<link linkend="GtkObject">GtkObject</link>
+               +----<link linkend="GtkWidget">GtkWidget</link>
+                     +----<link linkend="GtkContainer">GtkContainer</link>
+                           +----<link linkend="GtkBin">GtkBin</link>
+                                 +----<link linkend="GtkComboBox">GtkComboBox</link>
+                                       +----NautilusBurnDriveSelection
+</synopsis>
+
+</refsect1>
+
+
+
+<refsect1 id="NautilusBurnDriveSelection.implemented-interfaces" role="impl_interfaces">
+<title role="impl_interfaces.title">Implemented Interfaces</title>
+<para>
+NautilusBurnDriveSelection implements
+ <link linkend="AtkImplementorIface">AtkImplementorIface</link>,  <link linkend="GtkBuildable">GtkBuildable</link>,  <link linkend="GtkCellLayout">GtkCellLayout</link> and  <link linkend="GtkCellEditable">GtkCellEditable</link>.</para>
+
+</refsect1>
+
+
+<refsect1 id="NautilusBurnDriveSelection.properties" role="properties">
+<title role="properties.title">Properties</title>
+<synopsis>
+  &quot;<link linkend="NautilusBurnDriveSelection--device">device</link>&quot;                   <link linkend="gchar">gchar</link>*                : Read / Write
+  &quot;<link linkend="NautilusBurnDriveSelection--drive">drive</link>&quot;                    <link linkend="NautilusBurnDrive">NautilusBurnDrive</link>*    : Read / Write
+  &quot;<link linkend="NautilusBurnDriveSelection--file-image">file-image</link>&quot;               <link linkend="gboolean">gboolean</link>              : Read / Write
+  &quot;<link linkend="NautilusBurnDriveSelection--show-recorders-only">show-recorders-only</link>&quot;      <link linkend="gboolean">gboolean</link>              : Read / Write
+</synopsis>
+</refsect1>
+
+<refsect1 id="NautilusBurnDriveSelection.signals" role="signal_proto">
+<title role="signal_proto.title">Signals</title>
+<synopsis>
+  &quot;<link linkend="NautilusBurnDriveSelection-device-changed">device-changed</link>&quot;                                 : Run Last
+  &quot;<link linkend="NautilusBurnDriveSelection-drive-changed">drive-changed</link>&quot;                                  : Run Last
+</synopsis>
+</refsect1>
+
+
+<refsect1 id="NautilusBurnDriveSelection.description" role="desc">
+<title role="desc.title">Description</title>
+<para>
+
+</para>
+</refsect1>
+
+<refsect1 id="NautilusBurnDriveSelection.details" role="details">
+<title role="details.title">Details</title>
+<refsect2 id="NautilusBurnDriveSelectionPrivate" role="typedef">
+<title>NautilusBurnDriveSelectionPrivate</title>
+<indexterm zone="NautilusBurnDriveSelectionPrivate"><primary>NautilusBurnDriveSelectionPrivate</primary></indexterm><programlisting>typedef struct NautilusBurnDriveSelectionPrivate NautilusBurnDriveSelectionPrivate;
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2 id="NautilusBurnDriveSelection-struct" role="struct">
+<title>NautilusBurnDriveSelection</title>
+<indexterm zone="NautilusBurnDriveSelection-struct"><primary>NautilusBurnDriveSelection</primary></indexterm><programlisting>typedef struct _NautilusBurnDriveSelection NautilusBurnDriveSelection;</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2 id="nautilus-burn-drive-selection-new" role="function">
+<title>nautilus_burn_drive_selection_new ()</title>
+<indexterm zone="nautilus-burn-drive-selection-new"><primary>nautilus_burn_drive_selection_new</primary></indexterm><programlisting><link linkend="GtkWidget">GtkWidget</link>*          nautilus_burn_drive_selection_new   (void);</programlisting>
+<para>
+Create a new drive selector.</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> Newly allocated <link linkend="NautilusBurnDriveSelection"><type>NautilusBurnDriveSelection</type></link> widget
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="nautilus-burn-drive-selection-set-active" role="function" condition="since:2.14">
+<title>nautilus_burn_drive_selection_set_active ()</title>
+<indexterm zone="nautilus-burn-drive-selection-set-active" role="2.14"><primary>nautilus_burn_drive_selection_set_active</primary></indexterm><programlisting><link linkend="void">void</link>                nautilus_burn_drive_selection_set_active
+                                                        (<link linkend="NautilusBurnDriveSelection">NautilusBurnDriveSelection</link> *selection,
+                                                         <link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);</programlisting>
+<para>
+Set the current selected drive to that which corresponds to the
+specified drive.</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>selection</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnDriveSelection"><type>NautilusBurnDriveSelection</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link>
+</simpara></listitem></varlistentry>
+</variablelist><para role="since">Since  2.14
+
+</para></refsect2>
+<refsect2 id="nautilus-burn-drive-selection-get-active" role="function" condition="since:2.14">
+<title>nautilus_burn_drive_selection_get_active ()</title>
+<indexterm zone="nautilus-burn-drive-selection-get-active" role="2.14"><primary>nautilus_burn_drive_selection_get_active</primary></indexterm><programlisting><link linkend="NautilusBurnDrive">NautilusBurnDrive</link>*  nautilus_burn_drive_selection_get_active
+                                                        (<link linkend="NautilusBurnDriveSelection">NautilusBurnDriveSelection</link> *selection);</programlisting>
+<para>
+Get the currently selected drive</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>selection</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnDriveSelection"><type>NautilusBurnDriveSelection</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> currently selected <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link>.  The drive must be
+unreffed using nautilus_burn_drive_unref after use.
+
+</simpara></listitem></varlistentry>
+</variablelist><para role="since">Since  2.14
+
+</para></refsect2>
+<refsect2 id="nautilus-burn-drive-selection-get-drive" role="function" condition="deprecated:Use nautilus_burn_drive_selection_get_active() instead">
+<title>nautilus_burn_drive_selection_get_drive ()</title>
+<indexterm zone="nautilus-burn-drive-selection-get-drive" role="deprecated"><primary>nautilus_burn_drive_selection_get_drive</primary></indexterm><programlisting>const <link linkend="NautilusBurnDrive">NautilusBurnDrive</link>* nautilus_burn_drive_selection_get_drive
+                                                        (<link linkend="NautilusBurnDriveSelection">NautilusBurnDriveSelection</link> *selection);</programlisting>
+<warning><para><literal>nautilus_burn_drive_selection_get_drive</literal> is deprecated and should not be used in newly-written code. Use <link linkend="nautilus-burn-drive-selection-get-active"><function>nautilus_burn_drive_selection_get_active()</function></link> instead</para></warning>
+<para>
+Get the currently selected drive</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>selection</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnDriveSelection"><type>NautilusBurnDriveSelection</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> currently selected <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link>
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="nautilus-burn-drive-selection-set-device" role="function" condition="deprecated:Use nautilus_burn_drive_selection_set_active() instead">
+<title>nautilus_burn_drive_selection_set_device ()</title>
+<indexterm zone="nautilus-burn-drive-selection-set-device" role="deprecated"><primary>nautilus_burn_drive_selection_set_device</primary></indexterm><programlisting><link linkend="void">void</link>                nautilus_burn_drive_selection_set_device
+                                                        (<link linkend="NautilusBurnDriveSelection">NautilusBurnDriveSelection</link> *selection,
+                                                         const <link linkend="char">char</link> *device);</programlisting>
+<warning><para><literal>nautilus_burn_drive_selection_set_device</literal> is deprecated and should not be used in newly-written code. Use <link linkend="nautilus-burn-drive-selection-set-active"><function>nautilus_burn_drive_selection_set_active()</function></link> instead</para></warning>
+<para>
+Set the current selected drive to that which corresponds to the
+specified block device name.</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>selection</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnDriveSelection"><type>NautilusBurnDriveSelection</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>device</parameter>&nbsp;:</term>
+<listitem><simpara> block device name
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="nautilus-burn-drive-selection-get-device" role="function" condition="deprecated:Use nautilus_burn_drive_selection_get_active() instead">
+<title>nautilus_burn_drive_selection_get_device ()</title>
+<indexterm zone="nautilus-burn-drive-selection-get-device" role="deprecated"><primary>nautilus_burn_drive_selection_get_device</primary></indexterm><programlisting>const <link linkend="char">char</link>*         nautilus_burn_drive_selection_get_device
+                                                        (<link linkend="NautilusBurnDriveSelection">NautilusBurnDriveSelection</link> *selection);</programlisting>
+<warning><para><literal>nautilus_burn_drive_selection_get_device</literal> is deprecated and should not be used in newly-written code. Use <link linkend="nautilus-burn-drive-selection-get-active"><function>nautilus_burn_drive_selection_get_active()</function></link> instead</para></warning>
+<para>
+Get the block device name that corresponds to the currently
+selected drive</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>selection</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnDriveSelection"><type>NautilusBurnDriveSelection</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> String block device name that corresponds to the
+currently selected drive
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="nautilus-burn-drive-selection-get-default-device" role="function" condition="deprecated:">
+<title>nautilus_burn_drive_selection_get_default_device ()</title>
+<indexterm zone="nautilus-burn-drive-selection-get-default-device" role="deprecated"><primary>nautilus_burn_drive_selection_get_default_device</primary></indexterm><programlisting>const <link linkend="char">char</link>*         nautilus_burn_drive_selection_get_default_device
+                                                        (<link linkend="NautilusBurnDriveSelection">NautilusBurnDriveSelection</link> *selection);</programlisting>
+<warning><para><literal>nautilus_burn_drive_selection_get_default_device</literal> is deprecated and should not be used in newly-written code. </para></warning>
+<para>
+Get the block device name that corresponds to the default drive.</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>selection</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnDriveSelection"><type>NautilusBurnDriveSelection</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara>
+
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+
+</refsect1>
+<refsect1 id="NautilusBurnDriveSelection.property-details" role="property_details">
+<title role="property_details.title">Property Details</title>
+<refsect2 id="NautilusBurnDriveSelection--device"><title>The <literal>&quot;device&quot;</literal> property</title>
+<indexterm zone="NautilusBurnDriveSelection--device"><primary>NautilusBurnDriveSelection:device</primary></indexterm><programlisting>  &quot;device&quot;                   <link linkend="gchar">gchar</link>*                : Read / Write</programlisting>
+<para></para><para>Default value: NULL</para>
+</refsect2>
+<refsect2 id="NautilusBurnDriveSelection--drive"><title>The <literal>&quot;drive&quot;</literal> property</title>
+<indexterm zone="NautilusBurnDriveSelection--drive"><primary>NautilusBurnDriveSelection:drive</primary></indexterm><programlisting>  &quot;drive&quot;                    <link linkend="NautilusBurnDrive">NautilusBurnDrive</link>*    : Read / Write</programlisting>
+<para></para></refsect2>
+<refsect2 id="NautilusBurnDriveSelection--file-image"><title>The <literal>&quot;file-image&quot;</literal> property</title>
+<indexterm zone="NautilusBurnDriveSelection--file-image"><primary>NautilusBurnDriveSelection:file-image</primary></indexterm><programlisting>  &quot;file-image&quot;               <link linkend="gboolean">gboolean</link>              : Read / Write</programlisting>
+<para></para><para>Default value: FALSE</para>
+</refsect2>
+<refsect2 id="NautilusBurnDriveSelection--show-recorders-only"><title>The <literal>&quot;show-recorders-only&quot;</literal> property</title>
+<indexterm zone="NautilusBurnDriveSelection--show-recorders-only"><primary>NautilusBurnDriveSelection:show-recorders-only</primary></indexterm><programlisting>  &quot;show-recorders-only&quot;      <link linkend="gboolean">gboolean</link>              : Read / Write</programlisting>
+<para></para><para>Default value: FALSE</para>
+</refsect2>
+
+</refsect1>
+
+<refsect1 id="NautilusBurnDriveSelection.signal-details" role="signals">
+<title role="signals.title">Signal Details</title>
+<refsect2 id="NautilusBurnDriveSelection-device-changed"><title>The <literal>&quot;device-changed&quot;</literal> signal</title>
+<indexterm zone="NautilusBurnDriveSelection-device-changed"><primary>NautilusBurnDriveSelection::device-changed</primary></indexterm><programlisting><link linkend="void">void</link>                user_function                      (<link linkend="NautilusBurnDriveSelection">NautilusBurnDriveSelection</link> *nautilusburndriveselection,
+                                                        <link linkend="gchar">gchar</link>                      *arg1,
+                                                        <link linkend="gpointer">gpointer</link>                    user_data)                       : Run Last</programlisting>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>nautilusburndriveselection</parameter>&nbsp;:</term>
+<listitem><simpara>the object which received the signal.
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>arg1</parameter>&nbsp;:</term>
+<listitem><simpara>
+
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>user_data</parameter>&nbsp;:</term>
+<listitem><simpara>user data set when the signal handler was connected.</simpara></listitem></varlistentry>
+</variablelist></refsect2><refsect2 id="NautilusBurnDriveSelection-drive-changed"><title>The <literal>&quot;drive-changed&quot;</literal> signal</title>
+<indexterm zone="NautilusBurnDriveSelection-drive-changed"><primary>NautilusBurnDriveSelection::drive-changed</primary></indexterm><programlisting><link linkend="void">void</link>                user_function                      (<link linkend="NautilusBurnDriveSelection">NautilusBurnDriveSelection</link> *nautilusburndriveselection,
+                                                        <link linkend="NautilusBurnDrive">NautilusBurnDrive</link>          *arg1,
+                                                        <link linkend="gpointer">gpointer</link>                    user_data)                       : Run Last</programlisting>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>nautilusburndriveselection</parameter>&nbsp;:</term>
+<listitem><simpara>the object which received the signal.
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>arg1</parameter>&nbsp;:</term>
+<listitem><simpara>
+
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>user_data</parameter>&nbsp;:</term>
+<listitem><simpara>user data set when the signal handler was connected.</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+</refsect1>
+
+
+
+</refentry>

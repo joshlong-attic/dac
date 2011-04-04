@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>nautilus-burn-init</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.74.0">
+<link rel="home" href="index.html" title="libnautilus-burn Reference Manual">
+<link rel="up" href="ch01.html" title="libnautilus-burn Reference Manual">
+<link rel="prev" href="ch01.html" title="libnautilus-burn Reference Manual">
+<link rel="next" href="nautilus-cd-burner-nautilus-burn-features.html" title="nautilus-burn-features">
+<meta name="generator" content="GTK-Doc V1.10 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="chapter" href="ch01.html" title="libnautilus-burn Reference Manual">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="ch01.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">libnautilus-burn Reference Manual</th>
+<td><a accesskey="n" href="nautilus-cd-burner-nautilus-burn-features.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts"><nobr><a href="#nautilus-cd-burner-nautilus-burn-init.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#nautilus-cd-burner-nautilus-burn-init.description" class="shortcut">Description</a></nobr></td></tr>
+</table>
+<div class="refentry" lang="en">
+<a name="nautilus-cd-burner-nautilus-burn-init"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="nautilus-cd-burner-nautilus-burn-init.top_of_page"></a>nautilus-burn-init</span></h2>
+<p>nautilus-burn-init</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="nautilus-cd-burner-nautilus-burn-init.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">
+<a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            <a class="link" href="nautilus-cd-burner-nautilus-burn-init.html#nautilus-burn-init" title="nautilus_burn_init ()">nautilus_burn_init</a>                  (void);
+<a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            <a class="link" href="nautilus-cd-burner-nautilus-burn-init.html#nautilus-burn-initialized" title="nautilus_burn_initialized ()">nautilus_burn_initialized</a>           (void);
+void                <a class="link" href="nautilus-cd-burner-nautilus-burn-init.html#nautilus-burn-shutdown" title="nautilus_burn_shutdown ()">nautilus_burn_shutdown</a>              (void);
+</pre>
+</div>
+<div class="refsect1" lang="en">
+<a name="nautilus-cd-burner-nautilus-burn-init.description"></a><h2>Description</h2>
+<p>
+
+</p>
+</div>
+<div class="refsect1" lang="en">
+<a name="nautilus-cd-burner-nautilus-burn-init.details"></a><h2>Details</h2>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-init"></a><h3>nautilus_burn_init ()</h3>
+<pre class="programlisting"><a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            nautilus_burn_init                  (void);</pre>
+<p>
+If nautilus-burn is not already initialized, initialize it. This must be
+called prior to performing any other nautilus-burn operations, and may
+be called multiple times without error.</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> <code class="literal">TRUE</code> if nautilus-burn is successfully initialized (or was
+already initialized).
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-initialized"></a><h3>nautilus_burn_initialized ()</h3>
+<pre class="programlisting"><a
+href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"
+>gboolean</a>            nautilus_burn_initialized           (void);</pre>
+<p>
+Detects if nautilus-burn has already been initialized (nautilus-burn must be
+initialized prior to using any methods or operations).</p>
+<p>
+
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td> <code class="literal">TRUE</code> if nautilus-burn has already been initialized.
+</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2" lang="en">
+<a name="nautilus-burn-shutdown"></a><h3>nautilus_burn_shutdown ()</h3>
+<pre class="programlisting">void                nautilus_burn_shutdown              (void);</pre>
+<p>
+Cease all active nautilus-burn operations.</p>
+<p>
+
+</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.10</div>
+</body>
+</html>

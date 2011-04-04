@@ -1,0 +1,221 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<refentry id="nautilus-cd-burner-nautilus-burn-drive-monitor">
+<refmeta>
+<refentrytitle role="top_of_page" id="nautilus-cd-burner-nautilus-burn-drive-monitor.top_of_page">nautilus-burn-drive-monitor</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>NAUTILUS-CD-BURNER Library</refmiscinfo>
+</refmeta>
+
+<refnamediv>
+<refname>nautilus-burn-drive-monitor</refname>
+<refpurpose></refpurpose>
+<!--[<xref linkend="desc" endterm="desc.title"/>]-->
+</refnamediv>
+
+<refsynopsisdiv id="nautilus-cd-burner-nautilus-burn-drive-monitor.synopsis" role="synopsis">
+<title role="synopsis.title">Synopsis</title>
+
+<synopsis>
+typedef             <link linkend="NautilusBurnDriveMonitorPrivate">NautilusBurnDriveMonitorPrivate</link>;
+<link linkend="void">void</link>                <link linkend="media-added">media_added</link>                         (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);
+<link linkend="void">void</link>                <link linkend="media-removed">media_removed</link>                       (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);
+<link linkend="void">void</link>                <link linkend="drive-connected">drive_connected</link>                     (<link linkend="NautilusBurnDriveMonitor">NautilusBurnDriveMonitor</link> *monitor,
+                                                         <link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);
+<link linkend="void">void</link>                <link linkend="drive-disconnected">drive_disconnected</link>                  (<link linkend="NautilusBurnDriveMonitor">NautilusBurnDriveMonitor</link> *monitor,
+                                                         <link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);
+<link linkend="NautilusBurnDriveMonitor">NautilusBurnDriveMonitor</link>* <link linkend="nautilus-burn-get-drive-monitor">nautilus_burn_get_drive_monitor</link>
+                                                        (void);
+<link linkend="GList">GList</link>*              <link linkend="nautilus-burn-drive-monitor-get-drives">nautilus_burn_drive_monitor_get_drives</link>
+                                                        (<link linkend="NautilusBurnDriveMonitor">NautilusBurnDriveMonitor</link> *monitor);
+<link linkend="GList">GList</link>*              <link linkend="nautilus-burn-drive-monitor-get-recorder-drives">nautilus_burn_drive_monitor_get_recorder_drives</link>
+                                                        (<link linkend="NautilusBurnDriveMonitor">NautilusBurnDriveMonitor</link> *monitor);
+<link linkend="NautilusBurnDrive">NautilusBurnDrive</link>*  <link linkend="nautilus-burn-drive-monitor-get-drive-for-device">nautilus_burn_drive_monitor_get_drive_for_device</link>
+                                                        (<link linkend="NautilusBurnDriveMonitor">NautilusBurnDriveMonitor</link> *monitor,
+                                                         const <link linkend="char">char</link> *path);
+<link linkend="NautilusBurnDrive">NautilusBurnDrive</link>*  <link linkend="nautilus-burn-drive-monitor-get-drive-for-image">nautilus_burn_drive_monitor_get_drive_for_image</link>
+                                                        (<link linkend="NautilusBurnDriveMonitor">NautilusBurnDriveMonitor</link> *monitor);
+</synopsis>
+</refsynopsisdiv>
+
+
+
+
+
+
+
+
+
+<refsect1 id="nautilus-cd-burner-nautilus-burn-drive-monitor.description" role="desc">
+<title role="desc.title">Description</title>
+<para>
+
+</para>
+</refsect1>
+
+<refsect1 id="nautilus-cd-burner-nautilus-burn-drive-monitor.details" role="details">
+<title role="details.title">Details</title>
+<refsect2 id="NautilusBurnDriveMonitorPrivate" role="typedef">
+<title>NautilusBurnDriveMonitorPrivate</title>
+<indexterm zone="NautilusBurnDriveMonitorPrivate"><primary>NautilusBurnDriveMonitorPrivate</primary></indexterm><programlisting>typedef struct NautilusBurnDriveMonitorPrivate NautilusBurnDriveMonitorPrivate;
+</programlisting>
+<para>
+
+</para></refsect2>
+<refsect2 id="media-added" role="function">
+<title>media_added ()</title>
+<indexterm zone="media-added"><primary>media_added</primary></indexterm><programlisting><link linkend="void">void</link>                media_added                         (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);</programlisting>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara>
+
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="media-removed" role="function">
+<title>media_removed ()</title>
+<indexterm zone="media-removed"><primary>media_removed</primary></indexterm><programlisting><link linkend="void">void</link>                media_removed                       (<link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);</programlisting>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara>
+
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="drive-connected" role="function">
+<title>drive_connected ()</title>
+<indexterm zone="drive-connected"><primary>drive_connected</primary></indexterm><programlisting><link linkend="void">void</link>                drive_connected                     (<link linkend="NautilusBurnDriveMonitor">NautilusBurnDriveMonitor</link> *monitor,
+                                                         <link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);</programlisting>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>monitor</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara>
+
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="drive-disconnected" role="function">
+<title>drive_disconnected ()</title>
+<indexterm zone="drive-disconnected"><primary>drive_disconnected</primary></indexterm><programlisting><link linkend="void">void</link>                drive_disconnected                  (<link linkend="NautilusBurnDriveMonitor">NautilusBurnDriveMonitor</link> *monitor,
+                                                         <link linkend="NautilusBurnDrive">NautilusBurnDrive</link> *drive);</programlisting>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>monitor</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>drive</parameter>&nbsp;:</term>
+<listitem><simpara>
+
+
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="nautilus-burn-get-drive-monitor" role="function" condition="since:2.16">
+<title>nautilus_burn_get_drive_monitor ()</title>
+<indexterm zone="nautilus-burn-get-drive-monitor" role="2.16"><primary>nautilus_burn_get_drive_monitor</primary></indexterm><programlisting><link linkend="NautilusBurnDriveMonitor">NautilusBurnDriveMonitor</link>* nautilus_burn_get_drive_monitor
+                                                        (void);</programlisting>
+<para>
+Get a reference to the drive monitor
+</para>
+<para>
+Returns a pointer to the <link linkend="NautilusBurnDriveMonitor"><type>NautilusBurnDriveMonitor</type></link> singleton.
+<link linkend="NautilusBurnDriveMonitor"><type>NautilusBurnDriveMonitor</type></link> is a singleton, this means it is guaranteed to
+exist and be valid until <link linkend="nautilus-burn-shutdown"><function>nautilus_burn_shutdown()</function></link> is called. Consequently,
+it doesn't need to be refcounted since nautilus-burn will hold a reference to
+it until it is shut down.  It is created by <link linkend="nautilus-burn-init"><function>nautilus_burn_init()</function></link>.</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> <link linkend="NautilusBurnDriveMonitor"><type>NautilusBurnDriveMonitor</type></link>
+
+</simpara></listitem></varlistentry>
+</variablelist><para role="since">Since  2.16
+</para></refsect2>
+<refsect2 id="nautilus-burn-drive-monitor-get-drives" role="function" condition="since:2.16">
+<title>nautilus_burn_drive_monitor_get_drives ()</title>
+<indexterm zone="nautilus-burn-drive-monitor-get-drives" role="2.16"><primary>nautilus_burn_drive_monitor_get_drives</primary></indexterm><programlisting><link linkend="GList">GList</link>*              nautilus_burn_drive_monitor_get_drives
+                                                        (<link linkend="NautilusBurnDriveMonitor">NautilusBurnDriveMonitor</link> *monitor);</programlisting>
+<para>
+Get the list of available <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link></para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>monitor</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnDriveMonitor"><type>NautilusBurnDriveMonitor</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> list of drives
+
+</simpara></listitem></varlistentry>
+</variablelist><para role="since">Since  2.16
+</para></refsect2>
+<refsect2 id="nautilus-burn-drive-monitor-get-recorder-drives" role="function" condition="since:2.16">
+<title>nautilus_burn_drive_monitor_get_recorder_drives ()</title>
+<indexterm zone="nautilus-burn-drive-monitor-get-recorder-drives" role="2.16"><primary>nautilus_burn_drive_monitor_get_recorder_drives</primary></indexterm><programlisting><link linkend="GList">GList</link>*              nautilus_burn_drive_monitor_get_recorder_drives
+                                                        (<link linkend="NautilusBurnDriveMonitor">NautilusBurnDriveMonitor</link> *monitor);</programlisting>
+<para>
+Get the list of available <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link> that are capable of recording</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>monitor</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnDriveMonitor"><type>NautilusBurnDriveMonitor</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> list of drives that can record
+
+</simpara></listitem></varlistentry>
+</variablelist><para role="since">Since  2.16
+</para></refsect2>
+<refsect2 id="nautilus-burn-drive-monitor-get-drive-for-device" role="function" condition="since:2.16">
+<title>nautilus_burn_drive_monitor_get_drive_for_device ()</title>
+<indexterm zone="nautilus-burn-drive-monitor-get-drive-for-device" role="2.16"><primary>nautilus_burn_drive_monitor_get_drive_for_device</primary></indexterm><programlisting><link linkend="NautilusBurnDrive">NautilusBurnDrive</link>*  nautilus_burn_drive_monitor_get_drive_for_device
+                                                        (<link linkend="NautilusBurnDriveMonitor">NautilusBurnDriveMonitor</link> *monitor,
+                                                         const <link linkend="char">char</link> *path);</programlisting>
+<para>
+Retrieve the <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link> that corresponds to device.</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>monitor</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnDriveMonitor"><type>NautilusBurnDriveMonitor</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>path</parameter>&nbsp;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> A new drive.
+
+</simpara></listitem></varlistentry>
+</variablelist><para role="since">Since  2.16
+</para></refsect2>
+<refsect2 id="nautilus-burn-drive-monitor-get-drive-for-image" role="function" condition="since:2.16">
+<title>nautilus_burn_drive_monitor_get_drive_for_image ()</title>
+<indexterm zone="nautilus-burn-drive-monitor-get-drive-for-image" role="2.16"><primary>nautilus_burn_drive_monitor_get_drive_for_image</primary></indexterm><programlisting><link linkend="NautilusBurnDrive">NautilusBurnDrive</link>*  nautilus_burn_drive_monitor_get_drive_for_image
+                                                        (<link linkend="NautilusBurnDriveMonitor">NautilusBurnDriveMonitor</link> *monitor);</programlisting>
+<para>
+Create a new <link linkend="NAUTILUS-BURN-DRIVE-TYPE-FILE:CAPS"><literal>NAUTILUS_BURN_DRIVE_TYPE_FILE</literal></link> <link linkend="NautilusBurnDrive"><type>NautilusBurnDrive</type></link>.</para>
+<para>
+
+</para><variablelist role="params">
+<varlistentry><term><parameter>monitor</parameter>&nbsp;:</term>
+<listitem><simpara> <link linkend="NautilusBurnDriveMonitor"><type>NautilusBurnDriveMonitor</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&nbsp;:</term><listitem><simpara> A new drive.
+
+</simpara></listitem></varlistentry>
+</variablelist><para role="since">Since  2.16
+</para></refsect2>
+
+</refsect1>
+
+
+
+
+</refentry>

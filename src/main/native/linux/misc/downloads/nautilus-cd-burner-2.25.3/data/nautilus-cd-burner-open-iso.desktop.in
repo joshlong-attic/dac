@@ -1,0 +1,17 @@
+[Desktop Entry]
+Encoding=UTF-8
+_Name=CD/DVD Creator
+_Comment=Open the CD/DVD Creator
+TryExec=nautilus-cd-burner
+Exec=nautilus-cd-burner --source-iso=%f
+Icon=nautilus-cd-burner
+Terminal=false
+StartupNotify=true
+MimeType=application/x-cd-image;
+Type=Application
+Categories=GNOME;Core;
+OnlyShowIn=GNOME;
+NoDisplay=true
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=nautilus-cd-burner
+X-GNOME-Bugzilla-Component=cd-burner

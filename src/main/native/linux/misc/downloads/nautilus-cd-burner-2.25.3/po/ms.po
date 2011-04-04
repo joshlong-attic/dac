@@ -1,0 +1,453 @@
+# Duit PPRT siapa yang kebas????      
+# Copyright (C) 2001 Free Software Foundation, Inc.
+# 1. Hasbullah Bin Pit (sebol) <sebol@ikhlas.com>, 2002-2003.
+# 2. MIMOS Open Source Group Development Group <azahaa@mimos.my>, 2003
+msgid ""
+msgstr ""
+"Project-Id-Version: nautilus-cd-burner\n"
+"POT-Creation-Date: 2004-08-23 22:38+0800\n"
+"PO-Revision-Date: 2004-08-23 22:42+0730\n"
+"Last-Translator: Hasbullah Bin Pit <sebol@my-penguin.org>\n"
+"Language-Team: Projek Gabai <gabai-penyumbang@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: bacon-cd-selection.c:187
+msgid "Unnamed CDROM"
+msgstr "CDROM tidakbernama"
+
+#: burn-extension.c:64
+msgid "Unable to launch the cd burner application"
+msgstr "Tak dapat melancar aplikasi pembakar cd"
+
+#: burn-extension.c:66
+msgid "Can't launch cd burner"
+msgstr "Tak dapat melancarkan pembakar cd"
+
+#: burn-extension.c:146
+#: burn-extension.c:173
+msgid "_Write to Disc..."
+msgstr "_Tulis ke CD..."
+
+#: burn-extension.c:147
+msgid "Write disc image to a CD or DVD disc"
+msgstr "Tulis imej cakera ke cakera  CD atau DVD"
+
+#: burn-extension.c:174
+#: burn-extension.c:203
+msgid "Write contents to a CD or DVD disc"
+msgstr "Tulis kandungan ke cakera CD atau DVD"
+
+#: burn-extension.c:202
+#: cdburn.glade.h:15
+msgid "Write to Disc"
+msgstr "Tulis ke Cakera"
+
+#: cd-drive.c:744
+#, c-format
+msgid "Unnamed SCSI Drive (%s)"
+msgstr "CDROM SCSI tidakbernama (%s)"
+
+#: cd-drive.c:1304
+msgid "File image"
+msgstr "Imej fail"
+
+#. This fits the "open64" and "open"-like messages
+#: cd-recorder.c:313
+msgid "The recorder could not be accessed"
+msgstr "Perekod tidak boleh dicapai"
+
+#: cd-recorder.c:316
+msgid "Not enough space available on the disc"
+msgstr "Tidak cukup ruang dalam cakera"
+
+#: cd-recorder.c:319
+#: cd-recorder.c:322
+#: cd-recorder.c:373
+msgid "The files selected did not fit on the CD"
+msgstr "Fail dipilih tidak muat pada CD"
+
+#: cd-recorder.c:330
+msgid "Unhandled error, aborting"
+msgstr "Ralat tak dikendali, henti paksa"
+
+#: cd-recorder.c:367
+msgid "The CD has already been recorded"
+msgstr "CD sudah pun direkod"
+
+#: cd-recorder.c:377
+msgid "All audio files must be stereo, 16-bit digital audio with 44100Hz samples"
+msgstr "Semua fail audio mesti audio streo, digital 16-bit dengan sampel 44100Hz"
+
+#: cd-recorder.c:384
+msgid "The system is too slow to write the CD at this speed. Try a lower speed."
+msgstr "Sistem terlalu perlahan untuk menulis CD pada kelajuan ini. Cuba dengan kelajuan lebih perlahan."
+
+#: cd-recorder.c:503
+msgid "You can only burn 99 tracks on one disc"
+msgstr "Anda hanya boleh membakar 99 trek pada satu cakera"
+
+#: cdburn.glade.h:1
+msgid "    "
+msgstr "    "
+
+#: cdburn.glade.h:2
+msgid "*"
+msgstr "*"
+
+#: cdburn.glade.h:3
+msgid "<b>After Writing</b>"
+msgstr "<b>Selepas Menulis</b>"
+
+#: cdburn.glade.h:4
+msgid "<b>Information</b>"
+msgstr "<b>Maklumat</b>"
+
+#: cdburn.glade.h:5
+msgid "<b>Write Options</b>"
+msgstr "<b>Opsyen Penulisan</b>"
+
+#: cdburn.glade.h:6
+msgid "<big><b>Writing files to disc progress</b></big>"
+msgstr "<big><b>Progres penulisan fail ke cakera</b></big>"
+
+#: cdburn.glade.h:7
+msgid "<i>Initializing...</i>"
+msgstr "<i>Menginitialisasi...</i>"
+
+#: cdburn.glade.h:8
+msgid "Data size:"
+msgstr "Saiz data:"
+
+#: cdburn.glade.h:9
+msgid "Disc _name:"
+msgstr "_Nama CD:"
+
+#: cdburn.glade.h:10
+msgid "E_ject disc"
+msgstr "_Lenting cakera"
+
+#: cdburn.glade.h:11
+msgid "Label to identify disc"
+msgstr "Label untuk mengenalpasti cakera"
+
+#: cdburn.glade.h:12
+msgid "Select the speed to use for the write"
+msgstr "Pilih kelajuan digunakan untuk menulis"
+
+#: cdburn.glade.h:13
+msgid "Selected files are to be written to a CD or DVD disc. This operation may take a long time, depending on data size and write speed."
+msgstr "Fail dipilih akan ditulis ke cakera CD atau DVD. Operasi ini akan mengambil masa agak lama, bergantung pada saiz data dan kelajuan menulis."
+
+#: cdburn.glade.h:14
+msgid "Write _speed:"
+msgstr "Ke_lajuan penulisan:"
+
+#: cdburn.glade.h:16
+msgid "Writing Files to Disc Progress"
+msgstr "Progres Penulisan Fail ke Cakera"
+
+#: cdburn.glade.h:17
+msgid "_Dummy write"
+msgstr "Tulis _bodoh"
+
+#: cdburn.glade.h:18
+msgid "_Reuse these files for another disc"
+msgstr "Guna _semula fail-fail untuk cakera lain"
+
+#: cdburn.glade.h:19
+msgid "_Write"
+msgstr "_Tulis"
+
+#: cdburn.glade.h:20
+msgid "_Write disc to:"
+msgstr "_Tulis cakera ke:"
+
+#: make-iso.c:251
+msgid ""
+"Some files don't have a suitable name for a Windows-compatible CD.\n"
+"Do you want to continue with Windows compatibility disabled?"
+msgstr ""
+"Terdapat fail yang tak mempunyai nama yg sesuai dengan CD serasi-Windows.\n"
+"Adakah anda ingin teruskan dengan keserasian Windows dimatikan?"
+
+#: make-iso.c:252
+msgid "Windows compatibility"
+msgstr "Keserasian Windows"
+
+#: make-iso.c:576
+msgid "No files selected to write to CD."
+msgstr "Tiada fail dipilih untuk ditulis ke CD."
+
+#: make-iso.c:578
+#: nautilus-cd-burner.c:1134
+msgid "No files selected"
+msgstr "Tiada fail dipilih"
+
+#: make-iso.c:659
+#: make-iso.c:664
+#, c-format
+msgid "Not enough space"
+msgstr "Tidak cukup ruang"
+
+#: make-iso.c:700
+msgid "Creating CD image"
+msgstr "Mencipta imej CD"
+
+#: nautilus-cd-burner.c:137
+msgid " (invalid Unicode)"
+msgstr "(Unicode tidak sah)"
+
+#: nautilus-cd-burner.c:283
+msgid "Preparing to write CD"
+msgstr "Bersedia untuk menulis CD"
+
+#: nautilus-cd-burner.c:285
+msgid "Preparing to write DVD"
+msgstr "Bersedia untuk menulis DVD"
+
+#: nautilus-cd-burner.c:290
+msgid "Writing CD"
+msgstr "Menulis CD"
+
+#: nautilus-cd-burner.c:292
+msgid "Writing DVD"
+msgstr "Menulis DVD"
+
+# Apokobondo fixating ni ?
+#: nautilus-cd-burner.c:297
+msgid "Fixating CD"
+msgstr "Menetapkan CD"
+
+# Apokobondo fixating ni ?
+#: nautilus-cd-burner.c:299
+msgid "Fixating DVD"
+msgstr "Menetapkan DVD"
+
+#: nautilus-cd-burner.c:304
+msgid "Erasing CD"
+msgstr "Memadam CD"
+
+#: nautilus-cd-burner.c:306
+msgid "Erasing DVD"
+msgstr "Memadam DVD"
+
+#: nautilus-cd-burner.c:332
+msgid "Please make sure another application is not using the disc."
+msgstr "SIla pastikan aplikasi lain tidak sedang menggunakan cakera."
+
+#: nautilus-cd-burner.c:333
+msgid "Disc is busy"
+msgstr "Cakera sibuk"
+
+#: nautilus-cd-burner.c:335
+msgid "Please insert a rewritable or blank media in the drive tray."
+msgstr "Sila masukkan media boleh tulis semula atau kosong ke dalam dulang pemacu."
+
+#: nautilus-cd-burner.c:336
+msgid "Insert rewritable or blank media"
+msgstr "Masukkan media boleh tulis semula atau kosong"
+
+#: nautilus-cd-burner.c:338
+msgid "Please insert a blank media in the drive tray."
+msgstr "Sila masukkan media kosong ke dalam dulang pemacu."
+
+#: nautilus-cd-burner.c:339
+msgid "Insert blank media"
+msgstr "Sisipkan media kosong"
+
+#: nautilus-cd-burner.c:341
+msgid "Please replace the in-drive media by a rewritable or blank media."
+msgstr "Sila gantikan media pemacu-dalam dengan media boleh tulis semula atau kosong."
+
+#: nautilus-cd-burner.c:342
+msgid "Reload rewritable or blank media"
+msgstr "Muat semula media boleh tulis semula atau kosong"
+
+#: nautilus-cd-burner.c:344
+msgid "Please replace the in-drive media by a blank media."
+msgstr "Sila gantikan media pemacu_dalam dengan media kosong."
+
+#: nautilus-cd-burner.c:345
+msgid "Reload blank media"
+msgstr "Muat semula media kosong"
+
+#: nautilus-cd-burner.c:373
+msgid "Disc writing error details"
+msgstr "Perincian ralat penulisan cakera"
+
+#: nautilus-cd-burner.c:379
+msgid "Detailed error output from cdrecord:"
+msgstr "Perincian output ralat drüd cdrecord:"
+
+#: nautilus-cd-burner.c:420
+#, c-format
+msgid ""
+"There was an error writing to the CD:\n"
+"%s"
+msgstr ""
+"Terdapat ralat menulis ke CD:\n"
+"%s"
+
+#: nautilus-cd-burner.c:421
+msgid "There was an error writing to the CD"
+msgstr "Terdapat ralat menulis ke CD itu"
+
+#: nautilus-cd-burner.c:422
+msgid "Error writing to CD"
+msgstr "ralat menulis ke CD"
+
+#: nautilus-cd-burner.c:428
+msgid "_Details"
+msgstr "_Perincian"
+
+#: nautilus-cd-burner.c:501
+#, c-format
+msgid ""
+"A file named \"%s\" already exists.\n"
+"Do you want to overwrite it?"
+msgstr ""
+"Fail bernama '%s' tersedia wujud.\n"
+"Adakah anda ingin menindihnya?"
+
+#: nautilus-cd-burner.c:503
+#: nautilus-cd-burner.c:512
+msgid "_Overwrite"
+msgstr "_Tindih"
+
+#: nautilus-cd-burner.c:530
+msgid "Choose a filename for the cdrom image"
+msgstr "Pilih satu namafail bagi imej cdrom"
+
+#: nautilus-cd-burner.c:585
+#, c-format
+msgid "You do not have permissions to overwrite that file (%s)."
+msgstr "Tak mempunyai keizinan untuk menindih fail itu (%s)."
+
+#: nautilus-cd-burner.c:586
+#: nautilus-cd-burner.c:599
+msgid "File image creation failed"
+msgstr "Penciptaan imej fail gagal"
+
+#: nautilus-cd-burner.c:598
+#, c-format
+msgid "You do not have permissions to create that file (%s)."
+msgstr "Tak mempunyai keizinan untuk mencipta fail (%s)."
+
+#: nautilus-cd-burner.c:661
+#, c-format
+msgid "Completed writing %s"
+msgstr "Menyempurnakan penulisan %s"
+
+#: nautilus-cd-burner.c:719
+msgid "Complete"
+msgstr "Lengkap"
+
+#: nautilus-cd-burner.c:782
+msgid "Maximum Possible"
+msgstr "Maksimum yang boleh"
+
+#: nautilus-cd-burner.c:859
+#, c-format
+msgid "%d MB"
+msgstr "%d MB"
+
+#.
+#. translators: see strftime man page for meaning of %b, %d and %Y
+#. the maximum length for this field is 32 bytes
+#.
+#: nautilus-cd-burner.c:887
+msgid "Personal Data, %b %d, %Y"
+msgstr "Data Peribadi, %b %d, %Y"
+
+#: nautilus-cd-burner.c:920
+msgid "Cancel write"
+msgstr "Batal tulis"
+
+#: nautilus-cd-burner.c:921
+msgid ""
+"Are you sure you want to cancel the disc write operation?\n"
+"Some optical media drives may require that you restart the machine to get it working again."
+msgstr ""
+"Anda pati untuk membatalkan operasi penulisan cakera?\n"
+"Terdapat pemacu media optikal memerlukan anda mengulanghidup mesin supaya dapat bekerja semula."
+
+#: nautilus-cd-burner.c:925
+msgid "Continue"
+msgstr "Teruskan"
+
+#: nautilus-cd-burner.c:977
+#, c-format
+msgid "There was a problem displaying the help contents: %s."
+msgstr "Terdapat masalah memaparkan kandungan bantuan:%s."
+
+#: nautilus-cd-burner.c:978
+msgid "Cannot display help"
+msgstr "Tak dapat memapar bantuan"
+
+#: nautilus-cd-burner.c:1093
+msgid "Too many parameters"
+msgstr "Terlalu banyak parameter"
+
+#: nautilus-cd-burner.c:1094
+msgid "Too many parameters were passed to the application."
+msgstr "Terlalu banyak parameter dihantar ke aplikasi itu."
+
+#: nautilus-cd-burner.c:1116
+#, c-format
+msgid "The file '%s' is not a valid CD image."
+msgstr "Fail '%s' bukanlah imej CD yang sah."
+
+#: nautilus-cd-burner.c:1119
+msgid "Not a valid CD image"
+msgstr "Bukan imej CD yang sah"
+
+#: nautilus-cd-burner.c:1135
+msgid "You need to copy the files you want to write to disc to the CD/DVD Creator window. Would you like to open it now?"
+msgstr "Anda perlu menyalin fail yang anda ingin tulis ke cakera ke tetingkap Pencipta CD/DVD. Adakah anda ingin membukanya sekarang?"
+
+#: nautilus-cd-burner.c:1137
+msgid "Open CD/DVD Creator"
+msgstr "Buka pencipta CD/DVD"
+
+#: ncb.schemas.in.h:1
+msgid "Default burn speed"
+msgstr "kelajuan pembakaran default"
+
+#: ncb.schemas.in.h:2
+msgid "Default speed at which the media will be written."
+msgstr "Kelajuan default apabila media ditulis."
+
+#: ncb.schemas.in.h:3
+msgid "Directory for the temporary ISO images"
+msgstr "Direktori bagi imej ISO sementara"
+
+#: ncb.schemas.in.h:4
+msgid "Directory used for the temporary ISO images, leave blank to use the default system temporary directory."
+msgstr "Direktori digunakan untuk imej ISO sementara, biarkan kosong untuk menggunakan direktori sementara sistem yg default."
+
+#: ncb.schemas.in.h:5
+msgid "Enable Burnproof option"
+msgstr "Hidupkan opsyen Burnproof"
+
+#: ncb.schemas.in.h:6
+msgid "Enable debug"
+msgstr "Hidupkan nyahpepijat"
+
+#: ncb.schemas.in.h:7
+msgid "Enable overburn"
+msgstr "Hidupkan overburn"
+
+#: ncb.schemas.in.h:8
+msgid "Whether to allow the data to exceed the size of the physical medium."
+msgstr "Samada mengizinkan data untuk melebihi saiz fizikal medium"
+
+#: ncb.schemas.in.h:9
+msgid "Whether to enable the debugging for CD Recording."
+msgstr "Samada menghidupkan pengnyahpepijatan bagi perekodan CD."
+
+#: ncb.schemas.in.h:10
+msgid "Whether to use the Burnproof option available on some recorders."
+msgstr "Samada menggunakan opesyen Burnroof yang ada pada sesetengah perekod"
+

@@ -1,0 +1,190 @@
+# Arabic translations for THIS package.
+# Copyright (C) 2007 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as THIS package.
+# Automatically generated, 2007.
+# Djihed Afifi <djihed@gmail.com>, 2007
+msgid ""
+msgstr ""
+"Project-Id-Version: Arabic\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-04-21 22:53+0100\n"
+"PO-Revision-Date: 2007-04-14 18:49+0100\n"
+"Last-Translator: Djihed Afifi <djihed@gmail.com>\n"
+"Language-Team: Arabeyes <doc@arabeyes.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/nautilus-share.c:128
+#, c-format
+msgid ""
+"Nautilus needs to add some permissions to your folder \"%s\" in order to "
+"share it"
+msgstr ""
+
+#: ../src/nautilus-share.c:136
+#, c-format
+msgid ""
+"The folder \"%s\" needs the following extra permissions for sharing to "
+"work:\n"
+"%s%s%sDo you want Nautilus to add these permissions to the folder "
+"automatically?"
+msgstr ""
+
+#: ../src/nautilus-share.c:140
+msgid "  - read permission by others\n"
+msgstr ""
+
+#: ../src/nautilus-share.c:141
+#, fuzzy
+msgid "  - write permission by others\n"
+msgstr "حرّر أذون الموقع"
+
+#: ../src/nautilus-share.c:142
+msgid "  - execute permission by others\n"
+msgstr ""
+
+#: ../src/nautilus-share.c:146
+#, fuzzy
+msgid "Add the permissions automatically"
+msgstr "تغيير السرعة آليا"
+
+#: ../src/nautilus-share.c:172
+#, fuzzy, c-format
+msgid "Could not change the permissions of folder \"%s\""
+msgstr "عفوا، لم يمكن تغيير تصاريح \"%s\"."
+
+#: ../src/nautilus-share.c:442
+#, fuzzy
+msgid "Share name is too long"
+msgstr "اسم المستخدم طويل جدا!"
+
+#: ../src/nautilus-share.c:476
+#, fuzzy
+msgid "The share name cannot be empty"
+msgstr "لا يمكن أن يكون أمر بدء التشغيل فارغا"
+
+#: ../src/nautilus-share.c:489
+#, fuzzy, c-format
+msgid "Error while getting share information: %s"
+msgstr "حدث خلل عند تخزين بيانات الملف"
+
+#: ../src/nautilus-share.c:499
+#, fuzzy
+msgid "Another share has the same name"
+msgstr "يوجد مسبقاً مكان بنفس الاسم"
+
+#: ../src/nautilus-share.c:645
+#, fuzzy
+msgid "There was an error while getting the sharing information"
+msgstr "حدث خطأ عند بدأ التطبيق."
+
+#: ../src/nautilus-share.c:737
+#, fuzzy
+msgid "Modify _Share"
+msgstr "عدّل الكلمة"
+
+#: ../src/nautilus-share.c:739
+#, fuzzy
+msgid "Create _Share"
+msgstr "أنشيء _قاعدة"
+
+#: ../src/nautilus-share.c:993
+#, fuzzy
+msgid "Share"
+msgstr "مشترك"
+
+#: ../src/nautilus-share.c:1093
+#, fuzzy
+msgid "Sharing Options"
+msgstr "خيارات التَّحذير"
+
+#: ../src/nautilus-share.c:1094
+#, fuzzy
+msgid "Share this Folder"
+msgstr "المجلدات المشتركة"
+
+#: ../src/shares.c:122
+#, c-format
+msgid "%s %s %s returned with signal %d"
+msgstr ""
+
+#: ../src/shares.c:131
+#, fuzzy, c-format
+msgid "%s %s %s failed for an unknown reason"
+msgstr "فشل الولوج لأسباب مجهولة: %s"
+
+#: ../src/shares.c:151
+#, fuzzy, c-format
+msgid "'net usershare' returned error %d: %s"
+msgstr "أرجع خادم NNTP %s رمز الخطأ %d: %s"
+
+#: ../src/shares.c:153
+#, fuzzy, c-format
+msgid "'net usershare' returned error %d"
+msgstr "أرجع خادم NNTP %s رمز الخطأ %d: %s"
+
+#: ../src/shares.c:184
+#, fuzzy
+msgid "the output of 'net usershare' is not in valid UTF-8 encoding"
+msgstr "قيمة %s ليست نص UTF-8 صالح"
+
+#: ../src/shares.c:418 ../src/shares.c:577
+msgid "Failed"
+msgstr "فشل"
+
+#: ../src/shares.c:512
+#, c-format
+msgid "Samba's testparm returned with signal %d"
+msgstr ""
+
+#: ../src/shares.c:518
+#, fuzzy
+msgid "Samba's testparm failed for an unknown reason"
+msgstr "فشل الولوج لأسباب مجهولة: %s"
+
+#: ../src/shares.c:533
+#, fuzzy, c-format
+msgid "Samba's testparm returned error %d: %s"
+msgstr "أرجع خادم NNTP %s رمز الخطأ %d: %s"
+
+#: ../src/shares.c:535
+#, c-format
+msgid "Samba's testparm returned error %d"
+msgstr ""
+
+#: ../src/shares.c:642
+#, c-format
+msgid "Cannot remove the share for path %s: that path is not shared"
+msgstr ""
+
+#: ../src/shares.c:688
+msgid ""
+"Cannot change the path of an existing share; please remove the old share "
+"first and add a new one"
+msgstr ""
+
+#: ../interfaces/share-dialog.glade.in.h:1
+#, fuzzy
+msgid "<big><b>Folder Sharing</b></big>"
+msgstr "<big><b>متصفح الملفات</b></big>"
+
+#: ../interfaces/share-dialog.glade.in.h:2
+msgid "Co_mment:"
+msgstr "ال_تعليق:"
+
+#: ../interfaces/share-dialog.glade.in.h:3
+#, fuzzy
+msgid "Share _name:"
+msgstr "اسم المشاركة:"
+
+#: ../interfaces/share-dialog.glade.in.h:4
+#, fuzzy
+msgid "Share this _folder"
+msgstr "_شارك المجلد"
+
+#: ../interfaces/share-dialog.glade.in.h:5
+#, fuzzy
+msgid "_Allow other people to write in this folder"
+msgstr "لا تملك الصلاحيات الكافية للكتابة في هذا المجلد."
+

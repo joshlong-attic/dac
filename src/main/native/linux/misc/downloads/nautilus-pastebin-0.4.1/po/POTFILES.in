@@ -1,0 +1,5 @@
+scripts/nautilus-pastebin.py
+scripts/nautilus-pastebin-configurator.py
+data/nautilus-pastebin-configurator.glade
+data/nautilus-pastebin-configurator.desktop
+data/nautilus-pastebin.schemas

@@ -1,0 +1,1011 @@
+# translation of ka.po to Georgian
+# Georgian translation of Nautilus CD Burner.
+# Copyright © 2006 Ubuntu Georgian Translators.
+# Tea Kharitonashvili თეა ხარიტონაშვილი <taya@convert.ge>
+#
+# Vladimer Sichinava ვლადიმერ სიჭინავა <vsichi@gnome.org>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: ka\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-09-23 02:47+0200\n"
+"PO-Revision-Date: 2007-09-23 03:01+0200\n"
+"Last-Translator: Vladimer Sichinava ვლადიმერ სიჭინავა <vsichi@gnome.org>\n"
+"Language-Team: Georgian <http://mail.gnome.org/mailman/listinfo/gnome-ge-list>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: ../data/nautilus-cd-burner.desktop.in.h:1
+#: ../data/nautilus-cd-burner-open-iso.desktop.in.h:1
+msgid "CD/DVD Creator"
+msgstr "CD/DVD შემქმნელი"
+
+#: ../data/nautilus-cd-burner.desktop.in.h:2
+msgid "Open a folder into which you can drag files to burn to a CD or DVD"
+msgstr "დასტის გახსნა, რომელშიც შეგეძლებათ ფაილების გადათრევა CD-ზე ან DVD-ზე ჩასაწერად"
+
+#: ../data/nautilus-cd-burner-open-iso.desktop.in.h:2
+msgid "Open the CD/DVD Creator"
+msgstr "გახსენი CD/DVD შემქმნელი"
+
+#: ../data/nautilus-cd-burner.glade.h:1
+msgid "    "
+msgstr "    "
+
+#: ../data/nautilus-cd-burner.glade.h:2
+msgid "<b>Information</b>"
+msgstr "<b>ინფორმაცია</b>"
+
+#: ../data/nautilus-cd-burner.glade.h:3
+msgid "<b>Write Options</b>"
+msgstr "<b>ჩაწერის პარამეტრები</b>"
+
+#: ../data/nautilus-cd-burner.glade.h:4
+msgid "<big><b>Some files have invalid filenames</b></big>"
+msgstr "<big><b>ზოგიერთ ფაილს გააჩნია დაუშვებელი ფაილ სახელი</b></big>"
+
+#: ../data/nautilus-cd-burner.glade.h:5
+msgid "<big><b>Writing files to disc</b></big>"
+msgstr "<big><b>ფაილების დისკზე ჩაწერა</b></big>"
+
+#: ../data/nautilus-cd-burner.glade.h:6
+msgid "<i>Initializing...</i>"
+msgstr "<i>ინიციალიზაცია...</i>"
+
+#: ../data/nautilus-cd-burner.glade.h:7
+msgid "Data size:"
+msgstr "მონაცემების ზომა:"
+
+#: ../data/nautilus-cd-burner.glade.h:8
+msgid "Disc _name:"
+msgstr "დისკის _სახელი:"
+
+#: ../data/nautilus-cd-burner.glade.h:9
+msgid "Label to identify disc"
+msgstr "დისკის წარწერა იდენტიფიკაციისთვის"
+
+#: ../data/nautilus-cd-burner.glade.h:10
+msgid ""
+"The following filenames are not valid.  Please provide new names for each of "
+"them."
+msgstr ""
+"მოცემული ფაილ სახელები არამართებულია. გთხოვთ ყოველ მათგანს მიუთითოთ "
+"ახალი სახელი."
+
+#: ../data/nautilus-cd-burner.glade.h:11
+msgid "Write _speed:"
+msgstr "ჩაწერის სი_ჩქარე:"
+
+#: ../data/nautilus-cd-burner.glade.h:12
+msgid "Write disc _to:"
+msgstr "დისკის ჩ_აწერა:"
+
+#: ../data/nautilus-cd-burner.glade.h:13 ../src/ncb-operation.c:899
+msgid "Writing Files to Disc"
+msgstr "ფაილების დისკზე ჩაწერა"
+
+#: ../data/nautilus-cd-burner.glade.h:14
+msgid "_Dummy write"
+msgstr "_ფიქტიური ჩაწერა"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:1
+msgid "Default burn speed"
+msgstr "ჩაწერის ნაგულისხმევი სიჩქარე"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:2
+msgid "Default speed at which the media will be written."
+msgstr "ნაგულისხმევი სიჩქარე, რომლითაც დისკი ჩაიწერება."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:3
+msgid "Directory for the temporary ISO images"
+msgstr "დროებითი ISO  ანარეკლის ფაილების დირექტორია"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:4
+msgid ""
+"Directory used for the temporary ISO images, leave blank to use the default "
+"system temporary directory."
+msgstr ""
+"დროებითი ISO  ანარეკლის ფაილების დირექტორია, დატოვეთ ცარელა და გამოყენებული "
+"იქნება სისტემის ნაგულისხმევი დროებით იდირექტორია."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:5
+msgid "Enable Burnproof option"
+msgstr "ჩაწერაზე შემოწმების პარამეტრის ჩართვა"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:6
+msgid "Enable debug"
+msgstr "შეცდომების გამოტანის ჩართვა"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:7
+msgid "Enable overburn"
+msgstr "დაშვებულზე მეტის ჩაწერის ჩართვა"
+
+#: ../data/nautilus-cd-burner.schemas.in.h:8
+msgid "Whether to allow the data to exceed the size of the physical medium."
+msgstr ""
+"დავუშვათ თუ არა, რომ ჩაწერილმა მონაცემებმა გადაააჭარბონ დისკის დასაშვებ "
+"ტევადობებს."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:9
+msgid "Whether to enable the debugging for CD Recording."
+msgstr "დავუშვათ თუ არა, რომ ვნახოთ შეცდომების გამონატანი CD-ს ჩაწერისას."
+
+#: ../data/nautilus-cd-burner.schemas.in.h:10
+msgid "Whether to use the Burnproof option available on some recorders."
+msgstr ""
+"გამოვიყენოთ თუ არა ჩაწერაზე შემოწმება, რომელიც ხელმისაწვდომია ზოგიერთ ჩამწერ "
+"მოწყობილობებში."
+
+#: ../src/burn-extension.c:141 ../src/burn-extension.c:145
+msgid "Unable to launch the cd burner application"
+msgstr "ვერ მოხერხდა დისკების ჩამწერი პროგრამის გაშვება"
+
+#: ../src/burn-extension.c:396 ../src/burn-extension.c:406
+#: ../src/burn-extension.c:493
+msgid "_Write to Disc..."
+msgstr "დისკზე ჩა_წერა..."
+
+#: ../src/burn-extension.c:397
+msgid "Write disc image to a CD or DVD disc"
+msgstr "დისკის ანარეკლის ჩაწერა CD ან DVD დისკზე"
+
+#: ../src/burn-extension.c:407
+msgid "Write disc image cuesheet to a CD or DVD disc"
+msgstr "დისკის ანარეკლის cuesheet CD ან DVD დისკზე ჩაწერა"
+
+#: ../src/burn-extension.c:454
+msgid "_Copy Disc..."
+msgstr "დისკის _ასლი..."
+
+#: ../src/burn-extension.c:455
+msgid "Create a copy of this CD or DVD disc"
+msgstr "მოცემული CD ან DVD დისკის კოპირება"
+
+#: ../src/burn-extension.c:494 ../src/nautilus-burn-bar.c:151
+msgid "Write contents to a CD or DVD disc"
+msgstr "შიგთავსის CD ან DVD დისკზე ჩაწერა"
+
+#: ../src/make-iso.c:324
+msgid "Disable Microsoft Windows compatibility?"
+msgstr "გავთიშოთ Microsoft Windows-თან თავსებადობა?"
+
+#: ../src/make-iso.c:327
+msgid ""
+"Some files don't have a suitable name for a Windows-compatible CD.\n"
+"Do you want to continue with Windows compatibility disabled?"
+msgstr ""
+"ზოგიერთ ფაილს არ აქვს Microsoft Windows დისკთან თავსებადი სახელი.\n"
+"გნებავთ გავაგრძელოთ ისე, რომ Microsoft Windows-თან თავსებადობა გათიშული "
+"დარჩეს?"
+
+#: ../src/make-iso.c:328
+msgid "Windows compatibility"
+msgstr "Windows-თან თავსებადობა"
+
+#: ../src/make-iso.c:725
+msgid " (invalid Unicode)"
+msgstr " (invalid Unicode)"
+
+#: ../src/make-iso.c:886
+#, c-format
+msgid ""
+"The selected location does not have enough space to store the disc image (%s "
+"MiB needed)."
+msgstr ""
+"ამორჩეულ მდებარეობზე არ აქვს საკმარისი ცარელა ადგილი დისკის ანარეკლის "
+"ჩასაწერად  (საჭიროა %s MiB)."
+
+#: ../src/make-iso.c:1026 ../src/make-iso.c:1410
+#, c-format
+msgid "Could not run sub process: %s."
+msgstr "ვერ მოხერხდა ქვეპროცესის გაშვება: %s."
+
+#: ../src/make-iso.c:1053
+#, c-format
+msgid "The operation was cancelled by the user."
+msgstr "მოქმედება იქნა შეწყვიტილი მომხმარებელის მიერ."
+
+#: ../src/make-iso.c:1154
+#, c-format
+msgid ""
+"Some files have invalid filenames: \n"
+"%s"
+msgstr ""
+"ზოგიერთი ფაილის სახელი მიუღებელია: \n"
+"%s"
+
+#: ../src/make-iso.c:1167
+msgid "Unknown character encoding."
+msgstr "უცნობი კოდირება."
+
+#: ../src/make-iso.c:1171
+msgid "There is no space left on the device."
+msgstr "მოწყობილობაზე არ არის თავისუფალი ადგილი."
+
+#. TODO: get filename from error message
+#: ../src/make-iso.c:1176
+msgid "File too large for filesystem."
+msgstr "ფაილის ზომა მიუღებელია ფაილური სისტემისთვის."
+
+#: ../src/make-iso.c:1226
+#, c-format
+msgid "The label for the image is too long."
+msgstr "ანარეკლის სათაური ძალიან გრძელია."
+
+#: ../src/make-iso.c:1331
+#, c-format
+msgid "There are no files to write to disc."
+msgstr "არავითარი დისკზე ჩასაწერი ფაილი."
+
+#: ../src/make-iso.c:1682
+msgid "Not a valid disc image."
+msgstr "არასწორი დისკის ანარეკლი."
+
+#: ../src/nautilus-burn-bar.c:137
+msgid "CD/DVD Creator Folder"
+msgstr "CD/DVD შემქმნელის დირექტორია"
+
+#: ../src/nautilus-burn-bar.c:141 ../src/ncb-selection-dialog.c:176
+msgid "Write to Disc"
+msgstr "დისკზე ჩაწერა"
+
+#: ../src/nautilus-burn-drive.c:1252
+msgid "Could not determine media type because CD drive is busy"
+msgstr ""
+"ვერ მოხერხდა მონაცემის ტიპის ნასაზღვრა, რადგან CD მოწყობილობას იყენებს სხვა "
+"პროგრამა"
+
+#: ../src/nautilus-burn-drive.c:1254
+msgid "Couldn't open media"
+msgstr "ვერ მოხერხდა დისკის გახსნა/დათვალიერება"
+
+#: ../src/nautilus-burn-drive.c:1256
+msgid "Unknown Media"
+msgstr "უცნობი მედია"
+
+#: ../src/nautilus-burn-drive.c:1258
+msgid "Commercial CD or Audio CD"
+msgstr "კომერციული CD ან აუდიო CD"
+
+#: ../src/nautilus-burn-drive.c:1260
+msgid "CD-R"
+msgstr "CD-R"
+
+#: ../src/nautilus-burn-drive.c:1262
+msgid "CD-RW"
+msgstr "CD-RW"
+
+#: ../src/nautilus-burn-drive.c:1264
+msgid "DVD"
+msgstr "DVD"
+
+#: ../src/nautilus-burn-drive.c:1266
+msgid "DVD-R, or DVD-RAM"
+msgstr "DVD-R, ან DVD-RAM"
+
+#: ../src/nautilus-burn-drive.c:1268
+msgid "DVD-RW"
+msgstr "DVD-RW"
+
+#: ../src/nautilus-burn-drive.c:1270
+msgid "DVD-RAM"
+msgstr "DVD-RAM"
+
+#: ../src/nautilus-burn-drive.c:1272
+msgid "DVD+R"
+msgstr "DVD+R"
+
+#: ../src/nautilus-burn-drive.c:1274
+msgid "DVD+RW"
+msgstr "DVD+RW"
+
+#: ../src/nautilus-burn-drive.c:1276
+msgid "DVD+R DL"
+msgstr "DVD+R DL"
+
+#: ../src/nautilus-burn-drive.c:1281
+msgid "Broken media type"
+msgstr "მონაცმეების ტიპი არასწორია"
+
+#: ../src/nautilus-burn-drive-monitor.c:452
+msgid "File image"
+msgstr "ფაილის ანარეკლი"
+
+#: ../src/nautilus-burn-drive-selection.c:107 ../src/ncb-selection.c:961
+msgid "Drive"
+msgstr "დისკწამყვანი"
+
+#: ../src/nautilus-burn-drive-selection.c:237
+msgid "Unnamed CD/DVD Drive"
+msgstr "უსახელო CD/DVD მოწყობილობა"
+
+#: ../src/nautilus-burn-recorder.c:602
+msgid "The recorder could not be accessed."
+msgstr "ვერ მოხერხდა დისკის ჩამწერთან წვდომა"
+
+#: ../src/nautilus-burn-recorder.c:606
+msgid "Not enough space available on the disc."
+msgstr "დისკზე არ არის საკმარისი ადგილი."
+
+#: ../src/nautilus-burn-recorder.c:610 ../src/nautilus-burn-recorder.c:614
+msgid "The files selected did not fit on the DVD."
+msgstr "ამორჩეული ფაილები არ ეტევა DVD დისკზე"
+
+#: ../src/nautilus-burn-recorder.c:626
+msgid "The target DVD drive is still in use."
+msgstr "ჩამწერი DVD დისკწამყვანი კვლავ დაკავებულია."
+
+#: ../src/nautilus-burn-recorder.c:632
+msgid "Unhandled error, aborting"
+msgstr "ფატალური შეცდომა, ჩაწერა შეტყდება"
+
+#: ../src/nautilus-burn-recorder.c:697
+msgid "The CD has already been recorded."
+msgstr "CD უკვე ჩაწერილია."
+
+#: ../src/nautilus-burn-recorder.c:717
+msgid "The files selected did not fit on the CD."
+msgstr "ამორჩეული ფაილები არ ეტევა CD დისკზე."
+
+#: ../src/nautilus-burn-recorder.c:721
+msgid "All audio files must be stereo, 16-bit digital audio with 44100Hz samples."
+msgstr "აუდიო ფაილები უნდა იყოს სტერეო, 16-ბიტი ციფრული აუდიო 44100ჰც მაგალითებით."
+
+#: ../src/nautilus-burn-recorder.c:745
+msgid "Error while writing to disc.  Try a lower speed."
+msgstr "დისკზე ჩაწერისას მოხდა შეცდომა.  სცადეთ უფრო დაბალი სიჩქარე."
+
+#: ../src/nautilus-burn-recorder.c:750
+msgid "The system is too slow to write the CD at this speed. Try a lower speed."
+msgstr ""
+"ამ სიჩქარით CD დისკის ჩაწერა შეუძლებელია, რადგან სისტემა არის ძალიან ნელი. "
+"აირჩიეთ უფრო დაბალი სიჩქარე."
+
+#  ეს track სიმღერაა თუ რა არის ვერ გავიგე.. მე სიმღერას დავწერ ყველგან, და შენ შეცვალე მერე....(ფუზითაც მოვნიშნავ რომ ადვილად იპოვო)
+#: ../src/nautilus-burn-recorder.c:884
+#, c-format
+msgid "You can only burn 99 tracks on one disc"
+msgstr "ერთ დისკზე შესაძლებელია მხოლოდ 99 სიმღერის ჩაწერა"
+
+#: ../src/nautilus-burn-recorder.c:891
+#, c-format
+msgid "No tracks given to write"
+msgstr "არცერთი სიმღერა მონიშნული ჩასაწერად"
+
+#: ../src/nautilus-burn-recorder.c:896
+msgid "Burning CD/DVD"
+msgstr "მიმდინარეობს CD/DVD-ს ჩაწერა"
+
+#: ../src/nautilus-burn-recorder.c:1101
+#, c-format
+msgid "Can only use growisofs on a single track"
+msgstr "growisofs გამოიყენება მხოლოდ ერთ ბილიკზე"
+
+#: ../src/nautilus-burn-recorder.c:1112
+#, c-format
+msgid "Can only use growisofs on a data or graft list track"
+msgstr "growisofs გამოიყენება მხოლოდ მონაცემების ან დამატებების სიის ბილიკისათვის"
+
+#: ../src/nautilus-burn-recorder.c:1477
+msgid "Blanking CD"
+msgstr "მიმდინარეობს CD-ს წაშლა"
+
+#: ../src/nautilus-burn-recorder.c:1547
+msgid "Blanking DVD"
+msgstr "მიმდინარეობს DVD-ს წაშლა"
+
+#: ../src/nautilus-burn-process.c:497
+#, c-format
+msgid "Could not run the necessary command: %s"
+msgstr "აუცილებელი ბრძანების გაშვება ვერ მოხერხდა: %s"
+
+#: ../src/nautilus-cd-burner.c:157
+#, c-format
+msgid "There was a problem displaying the help contents: %s."
+msgstr "ვერ მოხერხდა დახმარების ჩვენება: %s."
+
+#: ../src/nautilus-cd-burner.c:158
+msgid "Cannot display help"
+msgstr "ვერ მოხერხდა დახმარების ჩვენება"
+
+#: ../src/nautilus-cd-burner.c:298
+msgid "Use CD/DVD device as source instead of burn:///"
+msgstr "გამოიყენეთ CD/DVD მოწყობილობა როგორც საწყისი და არა როგორც ჩასაწერი:///"
+
+#: ../src/nautilus-cd-burner.c:298
+msgid "DEVICE"
+msgstr "DEVICE"
+
+#: ../src/nautilus-cd-burner.c:300
+msgid "Use ISO image as source instead of burn:///"
+msgstr "გამოიყენეთ ISO ანარეკლი როგორც საწყისი და არა როგორც ჩასაწერი:///"
+
+#: ../src/nautilus-cd-burner.c:300 ../src/nautilus-cd-burner.c:302
+msgid "FILENAME"
+msgstr "FILENAME"
+
+#: ../src/nautilus-cd-burner.c:302
+msgid "Use CUE/TOC file as source instead of burn:///"
+msgstr "გამოიყენეთ CUE/TOC  ფაილი როგორც საწყისი და არა როგორც ჩასაწერი:///"
+
+#: ../src/ncb-selection.c:381
+msgid ""
+"It appears that the disc, when created, will contain a single disc image "
+"file.  Do you want to create a disc from the contents of the image or with "
+"the image file inside?"
+msgstr ""
+"როგორც ჩანს, დისკის შევქმნის შემდეგ დისკზე იქნება მხოლო ერთი დისკის "
+"ანარეკლის ფაილი. გნებავთ რომ გავაგრძელოთ  და ჩავწეროთ დისკზე როგორც ფაილი?"
+
+#: ../src/ncb-selection.c:384
+msgid "Create disc containing a single disc image file?"
+msgstr "შევქმნათ დისკი, რომელიც შეიცავს ერთ დისკის ანარეკლის ფაილს?"
+
+#: ../src/ncb-selection.c:387
+msgid "Create From Image"
+msgstr "ანარეკლიდან შექმნა"
+
+#: ../src/ncb-selection.c:389
+msgid "Create With File"
+msgstr "ფაილით შექმნა"
+
+#: ../src/ncb-selection.c:392
+msgid ""
+"It appears that the disc, when created, will contain only disc image files.  "
+"Do you want to continue and write them to the disc as files?"
+msgstr ""
+"როგორც ჩანს, დისკის შევქმნის შემდეგ დისკზე იქნება მხოლო  დისკის ანარეკლის "
+"ფაილები. გნებავთ რომ გავაგრძელოთ  და ჩავწეროთ დისკზე როგორც ფაილები?"
+
+#: ../src/ncb-selection.c:395
+msgid "Create disc containing only disc image files?"
+msgstr "შევქმნათ დისკი, რომელზეც იქნება მხოლოდ დისკის ანარეკლის ფაილები?"
+
+#: ../src/ncb-selection.c:399
+msgid "Create With Files"
+msgstr "ფაილებით შექმნა"
+
+#: ../src/ncb-selection.c:430
+#, c-format
+msgid "The file '%s' is unreadable.  Do you wish to skip this file and continue?"
+msgstr "ვერ ხერხდება '%s'  ფაილსი წაკითხვა. გამოვტოვოთ ეს ფაილი და გავაგრძელოთ?"
+
+#: ../src/ncb-selection.c:433
+msgid "Skip unreadable file?"
+msgstr "გამოვტოვოთ ფაილები, რომელთაც ვერ ვკითხულობთ?"
+
+#: ../src/ncb-selection.c:438
+msgid "Skip"
+msgstr "გამოტოვება"
+
+#: ../src/ncb-selection.c:438
+msgid "Skip All"
+msgstr "ყველას გამოტოვება"
+
+#: ../src/ncb-selection.c:461
+#, c-format
+msgid "No files were selected."
+msgstr "ფაილები არ არის ამორჩეული."
+
+#: ../src/ncb-selection.c:492
+#, c-format
+msgid "The file '%s' is not a valid disc image."
+msgstr "'%s' ფაილი არ არის დისკის ანარეკლის ფაილი."
+
+#: ../src/ncb-selection.c:567
+#, c-format
+msgid "The specified device '%s' is not a valid CD/DVD drive."
+msgstr "'%s' მოწყობილობა არ არის CD/DVD მოწყობილობა."
+
+#: ../src/ncb-selection.c:591
+#, c-format
+msgid "There doesn't seem to be any media in the selected drive."
+msgstr "ამორჩეულ მოწყობილობაში არ დევს ჩასაწერი/სუფთა დისკი."
+
+#: ../src/ncb-selection.c:598
+#, c-format
+msgid "The media is blank."
+msgstr "მედია ცარიელია."
+
+#: ../src/ncb-selection.c:631
+#, c-format
+msgid "File not found: %s"
+msgstr "%s ფაილი ვერ მოიძებნა"
+
+#: ../src/ncb-selection.c:640
+#, c-format
+msgid "File does not appear to be a valid CUE sheet: %s"
+msgstr "%s ფაილი არ არის სწორი CUE  ცხრილი"
+
+#.
+#. translators: see strftime man page for meaning of %b, %d and %Y
+#. the maximum length for this field is 32 bytes
+#.
+#: ../src/ncb-selection.c:684
+msgid "Personal Data, %b %d, %Y"
+msgstr "პირადი მონაცემები, %b %d, %Y"
+
+#: ../src/ncb-selection.c:756
+msgid "Unable to create CD/DVD"
+msgstr "CD/DVD-ს შექმნა ვერ მოხერხდა"
+
+#: ../src/ncb-selection.c:920
+msgid "Source name"
+msgstr "წყაროს სახელი"
+
+#: ../src/ncb-selection.c:927
+msgid "Source type"
+msgstr "წყაროს ტიპი"
+
+#: ../src/ncb-selection.c:935
+msgid "Source size"
+msgstr "წყაროს ზომა"
+
+#: ../src/ncb-selection.c:944
+msgid "Disc label"
+msgstr "დისკის სახელი"
+
+#: ../src/ncb-selection.c:951
+msgid "Write speed"
+msgstr "ჩაწერის სიჩქარე"
+
+#: ../src/ncb-selection-dialog.c:172
+msgid "Copy Disc"
+msgstr "დისკის კოპირება"
+
+#: ../src/ncb-selection-dialog.c:174
+msgid "Copy disc _to:"
+msgstr "დისკის _კოპირება სად:"
+
+#: ../src/ncb-selection-dialog.c:346
+msgid "Maximum possible"
+msgstr "დასაშვები მაქსიმუმი"
+
+#: ../src/ncb-selection-dialog.c:559
+msgid "Calculating..."
+msgstr "გაანგარიშება..."
+
+#: ../src/ncb-selection-dialog.c:638
+msgid "_Write"
+msgstr "_ჩაწერა"
+
+#: ../src/ncb-operation.c:239
+msgid "Preparing to write CD"
+msgstr "მიმდინარეობს მზადება CD-ს ჩასაწერად"
+
+#: ../src/ncb-operation.c:241
+msgid "Preparing to write DVD"
+msgstr "მიმდინარეობს მზადება DVD-ს ჩასაწერად"
+
+#: ../src/ncb-operation.c:246
+msgid "Writing CD"
+msgstr "მიმდინარეობს CD-ს ჩაწერა"
+
+#: ../src/ncb-operation.c:248
+msgid "Writing DVD"
+msgstr "მიმდინარეობს DVD-ს ჩაწერა"
+
+#: ../src/ncb-operation.c:253 ../src/ncb-operation.c:255
+msgid "Finishing write"
+msgstr "ჩაწერა მთავრდება"
+
+#: ../src/ncb-operation.c:260
+msgid "Erasing CD"
+msgstr "მიმდინარეობს CD-ს წაშლა"
+
+#: ../src/ncb-operation.c:262
+msgid "Erasing DVD"
+msgstr "მმდინარეობს DVD-ს წაშლა"
+
+#: ../src/ncb-operation.c:346
+msgid "None"
+msgstr "არცერთი"
+
+#: ../src/ncb-operation.c:353
+msgid "Please make sure another application is not using the drive."
+msgstr "დარწმუნდით, რომ სხვა პროგრამა არ იყენებს დისკწამყვანს."
+
+#: ../src/ncb-operation.c:354
+msgid "Drive is busy"
+msgstr "მოწყობილობა დაკავებულია"
+
+#: ../src/ncb-operation.c:356 ../src/ncb-operation.c:361
+#, c-format
+msgid ""
+"Please put a disc, with at least %s free, into the drive.  The following "
+"disc types are supported:\n"
+"%s"
+msgstr ""
+"დისკწამყვანში ჩადეთ დისკი მინიმუმ %s თავისუფალი ადგილით.  დასაშვები დისკის "
+"ტიპებია:\n"
+"%s"
+
+#: ../src/ncb-operation.c:359
+msgid "Insert a rewritable or blank disc"
+msgstr "ჩადეთ მრავალჯერ-წერადი ან ცარელი დისკი"
+
+#: ../src/ncb-operation.c:364
+msgid "Insert a blank disc"
+msgstr "ჩადეთ ცარიელი დისკი"
+
+#: ../src/ncb-operation.c:367 ../src/ncb-operation.c:373
+#, c-format
+msgid ""
+"Please replace the disc in the drive with a supported disc with at least %s "
+"free.  The following disc types are supported:\n"
+"%s"
+msgstr ""
+"დისკწამყვანში მოათავსეთ ჩაწერისთვის დასაშვები დისკი მინიმუმ %s თავისუფალი "
+"ადგილით. დასაშვები დისკის ტიპებია:\n"
+"%s"
+
+#: ../src/ncb-operation.c:370
+msgid "Reload a rewritable or blank disc"
+msgstr "ხელახლა ჩადეთ მრავალჯერ-ჩასაწერი ან  ცარელა დისკი"
+
+#: ../src/ncb-operation.c:376
+msgid "Reload a blank disc"
+msgstr "ხელახლა ჩადეთ ცარელა დისკი"
+
+#: ../src/ncb-operation.c:387
+msgid "_Eject"
+msgstr "_გამოღება"
+
+#: ../src/ncb-operation.c:454
+#, c-format
+msgid "This %s appears to have information already recorded on it."
+msgstr "როგორც ჩანს, %s დისკზე უკვე ჩაწერილია გარკვეული ინფორმაცია."
+
+#: ../src/ncb-operation.c:458
+msgid "Erase information on this disc?"
+msgstr "წავშალოთ დისკზე ჩაწერილი ინფორმაცია?"
+
+#: ../src/ncb-operation.c:466
+msgid "_Try Another"
+msgstr "_ცადე სხვა"
+
+#: ../src/ncb-operation.c:477
+msgid "_Erase Disc"
+msgstr "დისკის _წაშლა"
+
+#: ../src/ncb-operation.c:509
+#, c-format
+msgid ""
+"There was an error writing to the disc:\n"
+"%s"
+msgstr ""
+"დისკზე ჩაწერისას მოხდა შეცდომა:\n"
+"%s"
+
+#: ../src/ncb-operation.c:512
+msgid "There was an error writing to the disc"
+msgstr "დისკზე ჩაწერისას მოხდა შეცდომა"
+
+#: ../src/ncb-operation.c:515
+msgid "Error writing to disc"
+msgstr "დისკზე ჩაწერისას მოხდა შეცდომა"
+
+#: ../src/ncb-operation.c:570
+#, c-format
+msgid "A file named \"%s\" already exists.  Do you want to overwrite it?"
+msgstr "ფაილი სახელად \"%s\" უკვე არსებობს. თავზე გადავაწეროთ?"
+
+#: ../src/ncb-operation.c:572
+msgid "Overwrite existing file?"
+msgstr "არსებულ ფაილს თავზე გადავაწეროთ?"
+
+#: ../src/ncb-operation.c:581
+msgid "_Overwrite"
+msgstr "_თავზე გადაწერა"
+
+#: ../src/ncb-operation.c:600
+msgid "Choose a filename for the disc image"
+msgstr "აირჩიეთ დისკის ანარეკლის ფაილის სახელი"
+
+#. Translators: this is the filename of the image
+#: ../src/ncb-operation.c:736
+msgid "image.iso"
+msgstr "image.iso"
+
+#: ../src/ncb-operation.c:757
+#, c-format
+msgid "You do not have permissions to overwrite that file (%s)."
+msgstr "თქვენ არ გაგაჩნიათ შესაბამისი უფლებები ამ ფაილის თავზე გადასაწერად (%s)."
+
+#: ../src/ncb-operation.c:758 ../src/ncb-operation.c:773
+#: ../src/ncb-operation.c:1509
+msgid "File image creation failed"
+msgstr "ვერ მოხერხდა ფაილის ანარეკლის შექმნა"
+
+#: ../src/ncb-operation.c:772
+#, c-format
+msgid "You do not have permissions to create that file (%s)."
+msgstr "თქვენ არ გაგაჩნიათ შესაბამისი უფლებები ამ ფაილის თავზე გადასაწერად (%s)."
+
+#: ../src/ncb-operation.c:837
+msgid "Complete"
+msgstr "დასრულებული"
+
+#: ../src/ncb-operation.c:840
+msgid "An error occurred while writing"
+msgstr "დისკის ჩაწერისას მოხდა შეცდომა"
+
+#: ../src/ncb-operation.c:900
+msgid "Writing Files to a Disc Image"
+msgstr "მიმდინარეობს ფაილების ჩაწერა დისკის ანარეკლში"
+
+#: ../src/ncb-operation.c:901
+msgid "Writing Files to CD"
+msgstr "მიმდინარეობს ფაილების ჩაწერა CD-ზე"
+
+#: ../src/ncb-operation.c:902
+msgid "Writing Files to DVD"
+msgstr "მიმდინარეობს ფაილების ჩაწერა DVD-ზე"
+
+#: ../src/ncb-operation.c:905
+msgid "Writing Image to Disc"
+msgstr "მიმდინარეობს ფაილების ჩაწერა დისკზე"
+
+#: ../src/ncb-operation.c:906
+msgid "Copying Disc Image"
+msgstr "მიმდინარეობს დიკის ანარეკლის კოპირება"
+
+#: ../src/ncb-operation.c:907
+msgid "Writing Image to CD"
+msgstr "მიმდინარეობს ანარეკლის ჩაწერა CD-ზე"
+
+#: ../src/ncb-operation.c:908
+msgid "Writing Image to DVD"
+msgstr "მიმდინარეობს ანარეკლის ჩაწერა DVD-ზე"
+
+#: ../src/ncb-operation.c:911
+msgid "Copying Disc"
+msgstr "მიმდინარეობს დისკის კოპირება"
+
+#: ../src/ncb-operation.c:912
+msgid "Copying Disc to a Disc Image"
+msgstr "მიმდინარეობს დისკის ჩაწერა დისკის ანარეკლში"
+
+#: ../src/ncb-operation.c:913
+msgid "Copying Disc to CD"
+msgstr "მიმდინარეობს დისკის ჩაწერა CD-ზე"
+
+#: ../src/ncb-operation.c:914
+msgid "Copying Disc to DVD"
+msgstr "მიმდინარეობს დისკის ჩაწერა DVD-ზე"
+
+#: ../src/ncb-operation.c:918
+msgid "Writing files to disc"
+msgstr "მიმდინარეობს ფაილების  ჩაწერა დისკზე"
+
+#: ../src/ncb-operation.c:919
+msgid "Writing files to a disc image"
+msgstr "მიმდინარეობს ფაილების  ჩაწერა დისკის ანარეკლში"
+
+#: ../src/ncb-operation.c:920
+msgid "Writing files to CD"
+msgstr "მიმდინარეობს ფაილების  ჩაწერა CD-ზე"
+
+#: ../src/ncb-operation.c:921
+msgid "Writing files to DVD"
+msgstr "მიმდინარეობს ფაილების  ჩაწერა DVD-ზე"
+
+#: ../src/ncb-operation.c:924
+msgid "Writing image to disc"
+msgstr "მიმდინარეობს ანარეკლის  ჩაწერა დისკზე"
+
+#: ../src/ncb-operation.c:925
+msgid "Copying disc image"
+msgstr "მიმდინარეობს დისკის ანარეკლის კოპირება"
+
+#: ../src/ncb-operation.c:926
+msgid "Writing image to CD"
+msgstr "მიმდინარეობს ანარეკლის  ჩაწერა CD-ზე"
+
+#: ../src/ncb-operation.c:927
+msgid "Writing image to DVD"
+msgstr "მიმდინარეობს ანარეკლის  ჩაწერა DVD-ზე"
+
+#: ../src/ncb-operation.c:930
+msgid "Copying disc"
+msgstr "მიმდინარეობს დისკის კოპირება"
+
+#: ../src/ncb-operation.c:931
+msgid "Copying disc to a disc image"
+msgstr "მიმდინარეობს დისკის  ჩაწერა დისკის ანარეკლში"
+
+#: ../src/ncb-operation.c:932
+msgid "Copying disc to CD"
+msgstr "მიმდინარეობს დისკის  ჩაწერა CD-ზე"
+
+#: ../src/ncb-operation.c:933
+msgid "Copying disc to DVD"
+msgstr "მიმდინარეობს დისკის  ჩაწერა DVD-ზე"
+
+#: ../src/ncb-operation.c:937
+msgid ""
+"The selected files are being written to a CD or DVD.  This operation may "
+"take a long time, depending on data size and write speed."
+msgstr ""
+"ამორჩეული ფაილები იწერება CD ან DVD-ზე. მონაცმეების ზომის და ჩაწერის "
+"სიჩქარის მიხედვით, ეს პროცესი შეიძლება გაგრძელდეს დიდი ხანი."
+
+#: ../src/ncb-operation.c:938
+msgid "The selected files are being written to a disc image file."
+msgstr "ამორჩეული ფაილები იწერება დისკის ანარეკლის ფაილში."
+
+#: ../src/ncb-operation.c:939
+msgid ""
+"The selected files are being written to a CD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr ""
+"ამორჩეული ფაილები იწერება CD-ზე. მონაცმეების ზომის და ჩაწერის სიჩქარის "
+"მიხედვით, ეს პროცესი შეიძლება გაგრძელდეს დიდი ხანი."
+
+#: ../src/ncb-operation.c:940
+msgid ""
+"The selected files are being written to a DVD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr ""
+"ამორჩეული ფაილები იწერება DVD-ზე. მონაცმეების ზომის და ჩაწერის სიჩქარის "
+"მიხედვით, ეს პროცესი შეიძლება გაგრძელდეს დიდი ხანი."
+
+#: ../src/ncb-operation.c:943
+msgid ""
+"The selected disc image is being written to a CD or DVD.  This operation may "
+"take a long time, depending on data size and write speed."
+msgstr ""
+"ამორჩეული დისკის ანარეკლი იწერება CD-ზე ან DVD-ზე. მონაცმეების ზომის და "
+"ჩაწერის სიჩქარის მიხედვით, ეს პროცესი შეიძლება გაგრძელდეს დიდი ხანი."
+
+#: ../src/ncb-operation.c:944
+msgid "The selected disc image is being copied to a disc image file."
+msgstr "ამორჩეული დისკის ანარეკლი იწერება დისკის ანარეკლის ფაილში."
+
+#: ../src/ncb-operation.c:945
+msgid ""
+"The selected disc image is being written to a CD.  This operation may take a "
+"long time, depending on data size and write speed."
+msgstr ""
+"ამორჩეული დისკის ანარეკლი იწერება CD-ზე. მონაცმეების ზომის და ჩაწერის "
+"სიჩქარის მიხედვით, ეს პროცესი შეიძლება გაგრძელდეს დიდი ხანი."
+
+#: ../src/ncb-operation.c:946
+msgid ""
+"The selected disc image is being written to a DVD.  This operation may take "
+"a long time, depending on data size and write speed."
+msgstr ""
+"ამორჩეული დისკის ანარეკლი იწერება DVD-ზე. მონაცმეების ზომის და ჩაწერის "
+"სიჩქარის მიხედვით, ეს პროცესი შეიძლება გაგრძელდეს დიდი ხანი."
+
+#: ../src/ncb-operation.c:949
+msgid ""
+"The selected disc is being copied to a CD or DVD.  This operation may take a "
+"long time, depending on data size and drive speed."
+msgstr ""
+"ამორჩეული დისკი იწერება CD-ზე ან DVD-ზე. მონაცმეების ზომის და ჩაწერის "
+"სიჩქარის მიხედვით, ეს პროცესი შეიძლება გაგრძელდეს დიდი ხანი."
+
+#: ../src/ncb-operation.c:950
+msgid ""
+"The selected disc is being copied to a disc image file.  This operation may "
+"take a long time, depending on data size and drive speed."
+msgstr ""
+"ამორჩეული დისკი იწერება დისკის ანარეკლის ფაილში. მონაცმეების ზომის და "
+"ჩაწერის სიჩქარის მიხედვით, ეს პროცესი შეიძლება გაგრძელდეს დიდი ხანი."
+
+#: ../src/ncb-operation.c:951
+msgid ""
+"The selected disc is being copied to a CD.  This operation may take a long "
+"time, depending on data size and drive speed."
+msgstr ""
+"ამორჩეული დისკი იწერება CD-ზე. მონაცმეების ზომის და ჩაწერის სიჩქარის "
+"მიხედვით, ეს პროცესი შეიძლება გაგრძელდეს დიდი ხანი."
+
+#: ../src/ncb-operation.c:952
+msgid ""
+"The selected disc is being copied to a DVD.  This operation may take a long "
+"time, depending on data size and drive speed."
+msgstr ""
+"ამორჩეული დისკი იწერება DVD-ზე. მონაცმეების ზომის და ჩაწერის სიჩქარის "
+"მიხედვით, ეს პროცესი შეიძლება გაგრძელდეს დიდი ხანი."
+
+#: ../src/ncb-operation.c:1009
+msgid "Burning CD"
+msgstr "მიმდინარეობს CD-ს ჩაწერა"
+
+#: ../src/ncb-operation.c:1176 ../src/ncb-operation.c:1333
+msgid "Creating disc image"
+msgstr "დისკის ანარეკლის შექმნა"
+
+#: ../src/ncb-operation.c:1546
+#, c-format
+msgid "Completed writing %s"
+msgstr "%s ჩაწერა დასრულებულია"
+
+#: ../src/ncb-operation.c:1649
+msgid "Interrupt writing files to disc?"
+msgstr "შევწყვიტოთ ფაილების დისკზე ჩაწერა?"
+
+#: ../src/ncb-operation.c:1650
+msgid ""
+"Are you sure you want to interrupt the disc write operation? Some drives may "
+"require that you restart the computer to get them working again."
+msgstr ""
+"დარწმუნებული ხართ, რომ გინდათ დისკის ჩაწერის შეწყვეტა?ზოგიერთი დისკწამყვანის "
+"კვლავ მუშაოშაო მდგომარეობაში მოსაყვანად შეიძლება მოგიწიოთ კომპიუტერის "
+"გდატვირთვა."
+
+#: ../src/ncb-operation.c:1656
+msgid "Interrupt"
+msgstr "შეწყვეტა"
+
+#: ../src/ncb-operation.c:1658
+msgid "Continue"
+msgstr "გაგრძელება"
+
+#: ../src/ncb-progress-dialog.c:146
+#, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d საათი"
+
+#: ../src/ncb-progress-dialog.c:148
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d წუთი"
+
+#: ../src/ncb-progress-dialog.c:151
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d წამი"
+
+#. hour:minutes:seconds
+#: ../src/ncb-progress-dialog.c:156
+#, c-format
+msgid "%s %s %s"
+msgstr "%s %s %s"
+
+#. minutes:seconds
+#: ../src/ncb-progress-dialog.c:159
+#, c-format
+msgid "%s %s"
+msgstr "%s %s"
+
+#. seconds
+#: ../src/ncb-progress-dialog.c:162
+#, c-format
+msgid "%s"
+msgstr "%s"
+
+#. 0 seconds
+#: ../src/ncb-progress-dialog.c:165
+msgid "0 seconds"
+msgstr "0 წამი"
+
+#: ../src/ncb-progress-dialog.c:189
+#, c-format
+msgid "About %s left"
+msgstr "რჩება დაახლოებით %s"
+
+#: ../src/ncb-progress-dialog.c:439
+msgid "_Make Another Copy"
+msgstr "_ჩაწერე კიდევ ერთი ასლი"
+
+#: ../src/ncb-rename-dialog.c:454
+msgid "C_ontinue"
+msgstr "გ_აგრძელება"
+
+#: ../src/ncb-rename-dialog.c:482
+msgid "Filename"
+msgstr "ფაილის სახელწოდება"
+
+#: ../src/ncb-rename-dialog.c:498
+msgid "Rename file"
+msgstr "ფაილის გარდაქმევა"
+

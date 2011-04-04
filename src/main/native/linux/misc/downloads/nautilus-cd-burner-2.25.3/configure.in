@@ -1,0 +1,226 @@
+AC_PREREQ(2.52)
+
+m4_define(nautilus_burn_version_major, 2)
+m4_define(nautilus_burn_version_minor, 25)
+m4_define(nautilus_burn_version_micro, 3)
+
+AC_INIT(nautilus-cd-burner,
+        nautilus_burn_version_major.nautilus_burn_version_minor.nautilus_burn_version_micro)
+
+AC_CONFIG_SRCDIR(src/nautilus-cd-burner.c)
+AC_CONFIG_HEADERS(config.h)
+
+AM_INIT_AUTOMAKE
+AC_SUBST(ACLOCAL_AMFLAGS, "\${ACLOCAL_FLAGS}")
+
+AC_DISABLE_STATIC
+AC_PROG_LIBTOOL
+IT_PROG_INTLTOOL([0.35.0])
+
+PKG_PROG_PKG_CONFIG
+
+# Before making a release, the BURN_LT_VERSION string should be modified.
+# The string is of the form C:R:A.
+# - If interfaces have been changed or added, but binary compatibility has
+#   been preserved, change to C+1:0:A+1
+# - If binary compatibility has been broken (eg removed or changed interfaces)
+#   change to C+1:0:0
+# - If the interface is the same as the previous version, change to C:R+1:A
+BURN_LT_VERSION=5:0:1
+AC_SUBST(BURN_LT_VERSION)
+
+NAUTILUS_BURN_VERSION_MAJOR=nautilus_burn_version_major
+NAUTILUS_BURN_VERSION_MINOR=nautilus_burn_version_minor
+NAUTILUS_BURN_VERSION_MICRO=nautilus_burn_version_micro
+AC_SUBST(NAUTILUS_BURN_VERSION_MAJOR)
+AC_SUBST(NAUTILUS_BURN_VERSION_MINOR)
+AC_SUBST(NAUTILUS_BURN_VERSION_MICRO)
+
+GETTEXT_PACKAGE=nautilus-cd-burner
+AC_SUBST(GETTEXT_PACKAGE)
+AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [gettext package])
+AC_DEFINE_UNQUOTED(GNOME_EXPLICIT_TRANSLATION_DOMAIN,"$GETTEXT_PACKAGE", [library gettext package])
+
+dnl Check for ngettext
+AC_CHECK_FUNCS(ngettext)
+
+dnl ===========================================================================
+dnl Checks for typedefs, structures, and compiler characteristics.
+AC_C_CONST
+AC_C_BIGENDIAN
+
+mkdtemp_missing=false
+AC_CHECK_FUNC(mkdtemp,
+    [AC_DEFINE([HAVE_MKDTEMP], 1, [Have GlibC function to make temp dirs])],
+    mkdtemp_missing=true)
+AM_CONDITIONAL(MKDTEMP_MISSING, test x$mkdtemp_missing = xtrue)
+
+dnl ===========================================================================
+dnl Minimum versions of the libraries
+GLIB_REQUIRED=2.17.4
+GTK_REQUIRED=2.5.4
+LIBGLADE_REQUIRED=2.0.0
+LIBGNOME_REQUIRED=2.14.0
+NAUTILUS_REQUIRED=2.22.2
+HAL_REQUIRED=0.5.7
+DBUS_REQUIRED=0.6
+
+dnl ===========================================================================
+dnl CD drive detection stuff
+
+dnl FreeBSD support
+AC_CHECK_LIB(cam, cam_open_spec_device)
+
+dnl SunOS/Solaris support
+AC_CHECK_LIB(volmgt, volmgt_symname)
+
+HAL="hal >= $HAL_REQUIRED dbus-glib-1 >= $DBUS_REQUIRED"
+AC_DEFINE([USE_HAL], 1, [Use the HAL library])
+
+dnl ===========================================================================
+dnl Check for modules and libraries
+
+PKG_CHECK_MODULES(DAEMON, glib-2.0 >= $GLIB_REQUIRED)
+AC_CHECK_LIB(socket, bind,
+    DAEMON_LIBS="$DAEMON_LIBS -lsocket",
+    :)
+
+PKG_CHECK_MODULES(GUI,
+ gio-2.0 >= $GLIB_REQUIRED dnl
+ gthread-2.0 >= $GLIB_REQUIRED dnl
+ libgnome-2.0 >= $LIBGNOME_REQUIRED dnl
+ gtk+-2.0 >= $GTK_REQUIRED dnl
+ libglade-2.0 >= $LIBGLADE_REQUIRED dnl
+ libgnomeui-2.0 >= $LIBGNOME_REQUIRED  dnl
+ $HAL)
+
+PKG_CHECK_MODULES(EXTENSION,
+ libnautilus-extension >= $NAUTILUS_REQUIRED dnl
+ $HAL)
+NAUTILUSDIR=`pkg-config --variable=extensiondir libnautilus-extension`
+AC_SUBST(NAUTILUSDIR)
+
+PKG_CHECK_MODULES(BURN,
+  glib-2.0 >= $GLIB_REQUIRED
+  gthread-2.0 >= $GLIB_REQUIRED dnl
+  gtk+-2.0 >= $GTK_REQUIRED
+  $HAL)
+
+AC_CHECK_HEADERS(mntent.h sys/mnttab.h sys/vfstab.h sys/cdio.h)
+
+AC_PATH_PROG(GCONFTOOL, gconftool-2)
+AM_GCONF_SOURCE_2
+
+AM_GLIB_GNU_GETTEXT
+AM_GLIB_DEFINE_LOCALEDIR([GNOMELOCALEDIR])
+
+dnl ===========================================================================
+dnl Check for gnome-mount
+
+msg_gnome_mount=no
+AC_ARG_ENABLE(gnome-mount,
+AC_HELP_STRING([--enable-gnome-mount],[use gnome-mount, if available]),
+[case $enableval in
+yes) ENABLE_GNOME_MOUNT=yes ;;
+no)  ENABLE_GNOME_MOUNT=no ;;
+*) AC_MSG_ERROR(bad value $enableval for --enable-gnome-mount) ;;
+esac],
+[ENABLE_GNOME_MOUNT=yes]) dnl Default value
+
+if test "$ENABLE_GNOME_MOUNT" = "yes"; then
+	PKG_CHECK_MODULES(GNOME_MOUNT, gnome-mount >= 0.4,
+		[ AC_DEFINE(USE_GNOME_MOUNT, 1, [defined if using gnome-mount])
+		  msg_gnome_mount="yes"],
+		[ USE_GNOME_MOUNT=""])
+else
+	USE_GNOME_MOUNT=""
+fi
+
+dnl Turn on the additional warnings last
+
+AC_ARG_ENABLE(more-warnings,
+  AC_HELP_STRING([--enable-more-warnings], [Maximum compiler warnings]),
+set_more_warnings="$enableval",[
+if test -f $srcdir/CVSVERSION; then
+	is_cvs_version=true
+	set_more_warnings=yes
+else
+	set_more_warnings=no
+fi
+])
+
+AC_MSG_CHECKING(for more warnings)
+if test "$set_more_warnings" != "no"; then
+    AC_MSG_RESULT(yes)
+
+    if test "$GCC" = "yes"; then
+        CFLAGS="\
+         -Wall \
+         -Wchar-subscripts -Wmissing-declarations -Wmissing-prototypes \
+       	 -Wnested-externs -Wpointer-arith \
+         -Wcast-align -Wsign-compare \
+         $CFLAGS"
+
+        for option in -Wsign-promo -Wno-sign-compare; do
+            SAVE_CFLAGS="$CFLAGS"
+            CFLAGS="$CFLAGS $VFS_CFLAGS $option"
+            AC_MSG_CHECKING([whether gcc understands $option])
+            AC_TRY_COMPILE([], [],
+              has_option=yes,
+              has_option=no,)
+            CFLAGS="$SAVE_CFLAGS"
+            if test $has_option = yes; then
+                VFS_CFLAGS="$VFS_CFLAGS $option"
+            fi
+            AC_MSG_RESULT($has_option)
+            unset has_option
+            unset SAVE_CFLAGS
+        done
+        unset option
+    fi
+
+else
+    AC_MSG_RESULT(no)
+
+    if test "$GCC" = "yes"; then
+        CFLAGS="-Wall $CFLAGS"
+    fi
+fi
+
+# check for gtk-doc
+GTK_DOC_CHECK(1.8)
+
+AC_CONFIG_FILES([
+Makefile
+data/Makefile
+data/icons/Makefile
+data/icons/16x16/Makefile
+data/icons/22x22/Makefile
+data/icons/24x24/Makefile
+data/icons/scalable/Makefile
+src/Makefile
+data/libnautilus-burn.pc
+src/nautilus-burn-features.h
+po/Makefile.in
+doc/Makefile
+doc/reference/Makefile
+doc/reference/version.xml
+])
+
+AC_OUTPUT
+
+
+echo "
+                    nautilus-cd-burner $VERSION
+                    ==========================
+
+        prefix:                   ${prefix}
+        libdir:                   ${libdir}
+        bindir:                   ${bindir}
+        sysconfdir:               ${sysconfdir}
+        source code location:     ${srcdir}
+        compiler:                 ${CC}
+        cflags:                   ${CFLAGS}
+
+        gnome-mount support:      $msg_gnome_mount
+"

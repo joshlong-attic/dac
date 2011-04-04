@@ -1,0 +1,383 @@
+Changes:
+
+revno: 3
+	Releasing 0.4.1
+
+revno: 2
+	Launchpad automatic translations update.
+
+revno: 1
+	Merge from 0.4 release
+
+revno: 0
+	Update copyright.
+
+revno: -1
+	Releasing 0.4.0
+
+revno: -2
+	Update TODO, add two broken presets
+
+revno: -3
+	Add TODO file
+
+revno: -4
+	Prepare to release 0.4.0~beta
+
+revno: -5
+	Clean up
+
+revno: -6
+	Add desktop files support; small adjustments
+
+revno: -7
+	Great code refactoring
+
+revno: -8
+	Add paste.lisp.org support (xml-rpc); fix paste.debian.net preset (xml-rpc)
+
+revno: -9
+	Update pot template
+
+revno: -10
+	Improve pastebin.com preset, add pastebin.mozilla.org preset
+
+revno: -11
+	Update changelog and setup.py
+
+revno: -12
+	First push to 0.4 release
+
+revno: -13
+	Fix pastie.org preset
+
+revno: -14
+	Fix pastie.org preset
+
+revno: -15
+	Bump version
+
+revno: -16
+	Add support for pastie.org
+
+revno: -17
+	Launchpad automatic translations update.
+
+revno: -18
+	Launchpad automatic translations update.
+
+revno: -19
+	Launchpad automatic translations update.
+
+revno: -20
+	Launchpad automatic translations update.
+
+revno: -21
+	0.3.0 release
+
+revno: -22
+	Commit translations
+
+revno: -23
+	Launchpad automatic translations update.
+
+revno: -24
+	Launchpad automatic translations update.
+
+revno: -25
+	Add i18n support for the configurator
+
+revno: -26
+	Add support for sources.list files to paste.ubuntu.com and paste.debian.net presets
+
+revno: -27
+	Improve almost all presets
+
+revno: -28
+	Fix translations POT template
+
+revno: -29
+	Improve new_release script
+
+revno: -30 [merge]
+	Fixing branch conflicts
+
+revno: -31
+	0.3.0 Release candidate
+
+revno: -32
+	Don't sleep at all, unnecessary.
+
+revno: -33
+	KNOWN ISSUE: sometime pastebin.com doesn't give back properly due to the spam filter
+
+revno: -34
+	Presets update
+
+revno: -35
+	Fix setup.py
+
+revno: -36
+	Set 0.3.0-beta as releae number
+
+revno: -37
+	Releasing 0.3.0-beta
+
+revno: -38
+	Translations update
+
+revno: -39
+	String change
+
+revno: -40
+	Update translations
+
+revno: -41
+	nautilus-pastebin-configurator is back\!
+
+revno: -42
+	Fix small typos
+
+revno: -43
+	Seek the right config options
+
+revno: -44
+	GConf-managed configuration, change class' name
+
+revno: -45
+	Found that fucking issue which didn't allow me to register the schema file\! YEAH\!
+
+revno: -46
+	Set the default pastebin
+
+revno: -47
+	update MANIFEST.in; add GConf schema, it would replace the .conf file; update POTFILES.in
+
+revno: -48
+	Presets now are in /usr/share/nautilus-pastebin/presets; there's no system-wide config file, defaults are embedded; remove configurator, needs-work; update setup.py; update MANIFEST.in; add example of config file; NEEDS-TESTING
+
+revno: -49
+	Remove configurator, needs more work
+
+revno: -50
+	Switch to the new configuration setup
+
+revno: -51
+	Change setup.py
+
+revno: -52
+	Update translations
+
+revno: -53
+	Low coupling between python package and nautilus extension; use new config paths
+
+revno: -54
+	Merge from 0.2
+
+revno: -55
+	Push
+
+revno: -56
+	Add maint script
+
+revno: -57
+	Releasing 0.2.1, only bugfixes
+
+revno: -58
+	Cleanup, renaming python package
+
+revno: -59
+	config: Extend support mimetypes list
+
+revno: -60
+	Refactoring
+
+revno: -61
+	Refactoring again
+
+revno: -62
+	Add utils module
+
+revno: -63
+	Fix manpage section
+
+revno: -64
+	Fix manpage
+
+revno: -65
+	Update NEWS, import translations
+
+revno: -66
+	Import translations from launchpad, update po/*
+
+revno: -67
+	Releasing 0.2
+
+revno: -68
+	Adjust new-line in configurator's script, otherwise it couldn't be translated
+
+revno: -69
+	MANIFEST.in: include pypastebin package. NEWS: add 0.1.5 entry. apply_me_before_release.diff: update. setup.py: adjust version
+
+revno: -70
+	Fix shebangs, change setup.py to install all the scripts into the right place
+
+revno: -71
+	Apply patch to improve configurator behaviour, also fixes some little bugs
+
+revno: -72
+	Update NEWS file, update apply_me_before_release, notifications now show icons, setup.py: install the PNG file into /usr/share/pixmaps/
+
+revno: -73
+	Add manpage for the config panel
+
+revno: -74
+	Add TODO file, update translations
+
+revno: -75
+	Add desktop file
+
+revno: -76
+	Code cleaning, update NEWS, create patch to apply before releasing a new version
+
+revno: -77
+	New features: added control panel, code refactoring, renamed nautilus_pastebin module to pypastebin
+
+revno: -78
+	The configuration panel now works! Update translations template, bump version into setup.py, update setup.py script to install the python shared package, start to update NEWS file
+
+revno: -79
+	Use MANIFEST.in
+
+revno: -80
+	Add configurator
+
+revno: -81
+	Update translation template
+
+revno: -82
+	Merge
+
+revno: -83
+	Experimental
+
+revno: -84 [merge]
+	Merge
+
+revno: -85
+	IMPORTANT: scripts/nautilus-pastebin.py: Don't replace tmp_page in website without counting the occurrences. data/nautilus-pastebin.conf: Fix all regexps, now all pastebins work fine! Also add a config entry for pastebot.ltsp.org
+
+revno: -86
+	PastebinValidatorFactory now creates dinamically the validator object. Add a mandatory option to pastebins' config sections.
+
+revno: -87
+	Update pot template
+
+revno: -88
+	Fix ask-user-to-confirm MessageDialog
+
+revno: -89
+	Start to develop new features: showing notifications is now optional, add open_browser feature, add ask-for-confirmation feature. Largest code refactoring, more changes will come with time. Add two options in [generals], see above. Fixed small config options (pastebins related).
+
+revno: -90
+	Release 0.1.3 - please-dont-freeze
+
+revno: -91
+	Update translations template
+
+revno: -92
+	Update NEWS
+
+revno: -93
+	Bump version to 0.1.2
+
+revno: -94
+	Check file's mimetype only after the mouse click, otherwise nautilus could freeze. setup.cfg: Remove unnecessary options.
+
+revno: -95
+	Update NEWS
+
+revno: -96
+	Add README, bump version to 0.1.1, add a short explanation in the config file, update mimetypes map
+
+revno: -97
+	Add license info into the setup.py file
+
+revno: -98
+	Re-delete ChangeLog
+
+revno: -99
+	Apply patch for setup.* files
+
+revno: -100
+	Update ChangeLog, setup.py
+
+revno: -101
+	The REAL 1st release
+
+revno: -102
+	First release: 0.1.0
+
+revno: -103
+	Prepare for the release
+
+revno: -104
+	Refactoring, use the 'map' keyword instead of 'formatMap'. Almost ready to be released.
+
+revno: -105
+	Add retrieve_changelog.py
+
+revno: -106
+	Large refactoring, change the syntax of the configuration file
+
+revno: -107
+	mimetypes could not be set
+
+revno: -108
+	Refactoring done! Adjusted config file, fix little mistakes
+
+revno: -109
+	Remove ChangeLog
+
+revno: -110
+	Largest refactoring in progress
+
+revno: -111
+	Add translations template.
+
+revno: -112
+	Log messages are not translatable, configure language files creation, update ChangeLog.
+
+revno: -113
+	Rename ConfigurationValidator to GlobalConfigurationValidator, load both user and system-wide configuration files, introduce new default_mime to make user able to upload any text file, don't pastebin empty files, remove unuseful functions.
+
+revno: -114
+	More comment, log messages. Adjust the use of the 'title' parameter
+
+revno: -115
+	Fix typo, fix clipboard
+
+revno: -116
+	Also paste the link to the clipboard
+
+revno: -117
+	Add NEWS file
+
+revno: -118
+	Add all pastebin wrappers, use a threaded model, polymorphism is the way
+
+revno: -119
+	Auto detect plugins path
+
+revno: -120
+	Add log(), retrieve config filename dynamically
+
+revno: -121
+	Second commit
+
+revno: -122
+	First commit
+
+Use --include-merges or -n0 to see merged revisions.
+	Use --include-merges or -n0 to see merged revisions.
+

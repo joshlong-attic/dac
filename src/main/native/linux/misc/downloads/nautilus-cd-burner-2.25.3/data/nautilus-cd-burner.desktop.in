@@ -1,0 +1,16 @@
+[Desktop Entry]
+Encoding=UTF-8
+_Name=CD/DVD Creator
+_Comment=Open a folder into which you can drag files to burn to a CD or DVD
+TryExec=nautilus
+Exec=nautilus --no-default-window --no-desktop burn:///
+Icon=nautilus-cd-burner
+Terminal=false
+StartupNotify=true
+MimeType=x-content/blank-cd;x-content/blank-dvd;x-content/blank-bd;x-content/blank-hddvd;
+Type=Application
+Categories=GNOME;GTK;System;
+OnlyShowIn=GNOME;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=nautilus-cd-burner
+X-GNOME-Bugzilla-Component=cd-burner
