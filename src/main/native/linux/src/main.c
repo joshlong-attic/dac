@@ -129,9 +129,10 @@ nautilus_module_list_types (const GType **types,
  */
  
 int main () {  
- note( "hello, world! " ) ; 	
- g_print ("Initializing nautilus-share extension\n"); 
 
+ note( "hello, world! " ) ; 	
+ 
+ g_print ("Initializing nautilus-share extension\n"); 
 } 
 
 
