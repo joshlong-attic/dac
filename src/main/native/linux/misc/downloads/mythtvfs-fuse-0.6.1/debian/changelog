@@ -1,0 +1,54 @@
+mythtvfs-fuse (0.6.1-1) unstable; urgency=low
+
+  * New upstream release, supports MythTV 0.22 (LP: #468429).
+    - 04_xopen_source.patch: dropped, taken upstream.
+
+ -- Kees Cook <kees@debian.org>  Fri, 11 Dec 2009 09:09:47 -0800
+
+mythtvfs-fuse (0.6.0-1) unstable; urgency=low
+
+  * New upstream release.
+    - 01_hostinfo-wipe.patch: dropped, taken upstream.
+    - 02_iso-airdate.patch: dropped, taken upstream.
+    - 03_pod-typos.patch: dropped, taken upstream.
+    - 04_xopen_source.patch: refreshed.
+  * debian/watch: updated for automatic uupdate.
+  * debian/control: update standards version:
+    - add README.source for cdbs patching.
+    - add Vcs-* tags for bzr and browser.
+
+ -- Kees Cook <kees@debian.org>  Tue, 18 Aug 2009 11:42:50 -0700
+
+mythtvfs-fuse (0.5.2-3) unstable; urgency=low
+
+  * 04_xopen_source.patch: allow pread/pwrite on GNU/kFreeBSD as well,
+    thanks to Cyril Brulebois (Closes: 540130).
+
+ -- Kees Cook <kees@debian.org>  Wed, 12 Aug 2009 09:17:09 -0700
+
+mythtvfs-fuse (0.5.2-2) unstable; urgency=low
+
+  * 01_hostinfo-wipe.patch: fix FTBFS on newer glibc.
+  * 02_iso-airdate.patch: correct AirDate which can be ISO-style.
+  * 03_pod-typos.patch: fix POD typos.
+
+ -- Kees Cook <kees@debian.org>  Thu, 12 Mar 2009 13:36:48 -0700
+
+mythtvfs-fuse (0.5.2-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Kees Cook <kees@outflux.net>  Mon, 02 Jun 2008 09:09:32 -0700
+
+mythtvfs-fuse (0.5.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Updated standards version.
+
+ -- Kees Cook <kees@outflux.net>  Sun, 20 Apr 2008 23:09:19 -0700
+
+mythtvfs-fuse (0.5.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #419474).
+
+ -- Kees Cook <kees@outflux.net>  Sun, 15 Apr 2007 14:25:47 -0700

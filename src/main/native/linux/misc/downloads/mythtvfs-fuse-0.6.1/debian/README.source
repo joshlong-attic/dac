@@ -1,0 +1,19 @@
+This package uses cdbs to manage all modifications to the upstream
+source.  Changes are stored in the source package as diffs in
+debian/patches and applied during the build in lexigraphic order.
+
+To get the fully patched source after unpacking the source package, cd to
+the root level of the source package and run:
+
+    debian/rules patch
+
+To add a patch to the package run:
+
+    cdbs-edit-patch NN-name-of-patch.patch
+
+This will spawn a sub-shell, where the files can be changed.  Follow the
+instructions, and "exit 0" when done.
+
+To remove patches that have already been applied, run:
+
+    debian/rules unpatch

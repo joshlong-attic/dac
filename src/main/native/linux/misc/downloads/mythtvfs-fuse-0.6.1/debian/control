@@ -1,0 +1,21 @@
+Source: mythtvfs-fuse
+Section: utils
+Priority: optional
+Maintainer: Kees Cook <kees@debian.org>
+Build-Depends: cdbs, debhelper (>= 5), autotools-dev, libglib2.0-dev, libfuse-dev, pkg-config
+Standards-Version: 3.8.2
+Homepage: http://outflux.net/software/pkgs/mythtvfs-fuse/
+Vcs-Bzr: lp:mythtvfs
+Vcs-Browser: http://bazaar.launchpad.net/~kees/mythtvfs/master/files
+
+Package: mythtvfs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, fuse-utils
+Description: userspace filesystem client for MythTV
+ mythtvfs implements a human-readable filesystem on top of an existing
+ MythTV tree.  It communicates with the MythTV backend to fill in the
+ recording details, so that recordings can be browsed easily with applications
+ that do not natively communicate with MythTV backends.
+ .
+ mythtvfs is based on FUSE (userspace filesystem framework for Linux),
+ thus you will have to prepare the fuse kernel module to be able to use it.

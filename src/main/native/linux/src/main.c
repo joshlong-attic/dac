@@ -15,15 +15,43 @@ http://taschenorakel.de/svn/repos/bulldozer/trunk/documentation/NautilusExtensio
  
 */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <errno.h>
-#include <sys/types.h>
-#include <sys/inotify.h>
-#include <malloc.h>
-#include <string.h> 
-#include <glib-object.h>
-#include <glib.h> 
+#define GETTEXT_PACKAGE "gtk-hello"
+#define LOCALEDIR "mo"
+
+#include <libnautilus-extension/nautilus-extension-types.h>
+#include <libnautilus-extension/nautilus-column-provider.h>
+#include <libnautilus-extension/nautilus-extension-types.h>
+#include <libnautilus-extension/nautilus-file-info.h>
+#include <libnautilus-extension/nautilus-info-provider.h>
+#include <libnautilus-extension/nautilus-menu-provider.h>
+#include <libnautilus-extension/nautilus-property-page-provider.h>
+
+#include <libgnomevfs/gnome-vfs-utils.h>
+ 
+
+//// todo what happened to this? apparently it was deprecated ? http://opensolaris.org/jive/thread.jspa?threadID=128265 
+//// #include <eel/eel-vfs-extensions.h> 
+
+#include <glib/gi18n-lib.h>
+//#include <glib/glib.h>
+
+
+#include <gtk/gtktable.h>
+#include <gtk/gtkvbox.h>
+#include <gtk/gtkhbox.h>
+#include <gtk/gtklabel.h>
+#include <gtk/gtk.h>
+#include <gtk/gtkentry.h>
+
+/// #include <glade/glade.h> 
+
+#include <string.h>
+#include <time.h>
+
+#include <unistd.h>
+#include <stdlib.h> 
+
+
 
 // utility functions 
 
@@ -33,30 +61,7 @@ void note(char * msg){
  
 // interface contract to be a nautilus extension provider 
 
-static GType provider_types[1];
-
-void
-nautilus_module_initialize (GTypeModule  *module) 
-{
-	foo_extension_register_type (module);
-
-	provider_types[0] = foo_extension_get_type ();
-}
-
-void 
-nautilus_module_shutdown (void)
-{
-	/* Any module-specific shutdown */
-}
-
-void
-nautilus_module_list_types (const GType **types,
-			    int *num_types)
-{
-	*types = provider_types;
-	*num_types = G_N_ELEMENTS (provider_types);
-}
-
+  /*
 
 // my implementation specific types
 static GType foo_extension_type;
@@ -82,7 +87,7 @@ foo_extension_register_type (GTypeModule *module)
 							  "FooExtension",
 							  &info, 0);
 
-        /* ... add interfaces ... */
+ 
 }
 
 GType
@@ -90,9 +95,42 @@ foo_extension_get_type (void)
 {
 	return foo_extension_type;
 }
+
+
+
+static GType provider_types[1];
+
+void
+nautilus_module_initialize (GTypeModule  *module) 
+{
+	foo_extension_register_type (module);
+
+	provider_types[0] = foo_extension_get_type ();
+}
+
+void 
+nautilus_module_shutdown (void)
+{ 
+}
+
+
+
+void
+nautilus_module_list_types (const GType **types,
+			    int *num_types)
+{
+
+
+
+	*types = provider_types;
+	*num_types = G_N_ELEMENTS (provider_types);
+}
+
+ */
  
 int main () {  
  note( "hello, world! " ) ; 	
+ g_print ("Initializing nautilus-share extension\n"); 
 
 } 
 

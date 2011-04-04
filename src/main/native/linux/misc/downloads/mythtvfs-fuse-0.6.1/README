@@ -1,0 +1,49 @@
+== MythTVfs ==
+Kees Cook <kees@outflux.net>
+
+This is a FUSE (http://fuse.sf.net/) server that was designed to communicate
+with a MythTV backend server.  It creates an overlay filesystem that
+encodes TV Program metadata (title, episode, description) into a filename
+so that systems that do not natively talk to MythTV can still get information
+about a given show.  The initial design goal is to make it compatible
+with the in-filename metadata extraction capabilities that will (hopefully)
+be in future versions of Galleon (http://galleon.sf.net/).
+
+=== Usage ===
+Several steps are required to make this application useful:
+* install the FUSE libraries and kernel module
+* enable NFS on your MythTV backend (if MythTVfs is run non-local to MythTV).
+* mount the MythTV video repository (usually /var/lib/mythtv) somewhere
+  locally (e.g. "/mnt/myth-native").
+* configure with "./configure"
+* compile with "make"
+* start MythTVfs with the MythTV backend server name and repository path:
+     ./mythtvfs -o host=mythtv.my.network /mnt/myth-native /mnt/mythtvfs
+  -or-
+      you can mount mythtvfs via fstab, for example:
+        mythtvfs#/mnt/mythtvfs /mnt/myth-native fuse noauto,host=mythtv.my.network 0 0"
+* if mounting the filesystem under Windows, you may want to add:
+      -o 'invalid-chars=<>|:?"*\' -o replacement-char=_
+
+
+=== Filename Structure ===
+Filenames in the MythTVfs filesystem are named based on their TV Program's
+metadata.  The elements are contained by the brace symbols ("{}") and have
+the original filename embedded, and then end with ".mpg".
+
+{SERIES_TITLE}{AIR_DATE}{EPISODE_TITLE}{RECORD_DATE}{CHANNEL}{DURATION}{DESCRIPTION}FILE.mpg
+
+Where "RECORD_DATE" has the format "07.15 PM Wed Mar 31, 2005", and "AIR_DATE"
+has the format "2005-03-31".  "DURATION" is measured in seconds, and "CHANNEL"
+is the shortened channel "callsign".  "FILE" is the original MythTV filename
+for storage (e.g. "1013_20051207210000_20051207220000.nuv").  The file ends
+with ".mpg" because Galleon will only recognize file extensions that it
+expects the TiVo to be able to play.
+
+=== Hooking to Galleon ===
+You'll need a version of Galleon that understands this file format layout.
+A patch against 2.1.0 is available on the MythTVfs homepage.  Just
+add a "GoBack" path that matches your MythTVfs mount point, and it will
+automatically extract all the metadata from the filename.
+
+EOF

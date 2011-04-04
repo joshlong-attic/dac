@@ -1,0 +1,56 @@
+0.6.1  2009-12-11  Kees Cook  <kees@outflux.net>
+
+	* mythtvfs.c: add protocol 50, implement program column width guesser
+
+0.6.0  2009-08-18  Kees Cook  <kees@outflux.net>
+
+	* mythtvfs.c: whitespace cleanups.
+	* mythtvfs.c: fix FTBFS in host struct clearing.
+	* mythtvfs.c: starting to add cutlist via .edl file support.
+	* mythtvfs.c: correct programinfo width and mappings.
+	* mythtvfs.c: use arbitrary formats via hashtables (based on
+                      excellent patch from Morty Abzug).
+	* mythtvfs.c: actually make thread-safe.
+	* mythtvfs.pod: update documentation.
+	* mythtvfs.init: example init script from Morty Abzug.
+
+0.5.2  2008-05-04  Kees Cook   <kees@outflux.net>
+
+	* mythtvfs.c: add "-o invalid-chars" and "-o replacement-char",
+	  inspired by patch from Joe Pruett.
+
+0.5.1  2008-04-20  Kees Cook   <kees@outflux.net>
+
+	* Manpage from Bryce Harrington.
+	* mythtvfs.c: add "-o backend-version=N" to force backend versions.
+	* mythtvfs.c: add "-o program-width=N" to force new program widths.
+	* mythtvfs.c: disallow "/" in filenames.
+
+0.5.0  2007-04-10  Kees Cook   <kees@outflux.net>
+
+	* mythtvfs.c: added code based on patches from Mark Sullivan for
+	  short filenames, and saner option handling.  Cleaned up whitespace.
+	* configure.ac: bumped to version 0.5.0 due to option changes.
+	* README: add notes on how to mount via fstab.
+
+2007-03-20  Kees Cook   <kees@outflux.net>
+
+	* mythtvfs.c: updated for newer FUSE and added version fallback code.
+
+2007-02-22  Kees Cook   <kees@outflux.net>
+
+	* mythtvfs.c: updated for myth 0.20 and fuse 2.6.3, thanks to Fa Yoeu.
+
+2006-05-12  Kees Cook   <kees@outflux.net>
+
+	* mythtvfs.c: updated protocol version matcher.
+	* mythtvfs.c, compat/*: added option handling
+
+2006-01-16	Kees Cook	<kees@outflux.net>
+
+	* mythtvfs.c: adjusted file format to match Galleon 2.1.0 + desc patch.
+
+2005-12-23	Kees Cook	<kees@outflux.net>
+
+	* Initial public release
+

@@ -1,0 +1,73 @@
+#!/bin/sh -e
+
+### BEGIN INIT INFO
+# Provides:          mythtvfs
+# Required-Start:    mythtv-backend
+# Required-Stop:     
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Start/Stop the MythTV filesytem
+### END INIT INFO
+
+# mythtvfs start/stop script suitable for init.d use
+# This script must be run *after* the mythtv-backend script (if the local
+# host is the one serving mythtv), and *after* the SOURCEDIR is mounted
+# (even if the local host is not the one serving mythtv).
+
+PATH=/usr/local/bin:/usr/bin:/bin
+umask 022
+
+# globals
+NAME=mythtvfs; # name of this script
+DESC="MythTV filesystem"; # description of this script
+CONF=/etc/default/mythtvfs; # where the config can be overridden
+
+# configurables.  Don't edit this script; instead edit $CONF file
+SOURCEDIR=/var/video; # where the recordings are
+MOUNTPOINT=/mythtvfs; # where the FS will be mounted
+OPTIONS="host=localhost,allow_other,format=%T - %S - %s - %c.mpg,datetime_format=%Y-%m-%d %H:%M"; # options for -o
+EXTRA_ARGS=""; # more options to pass to mythtvfs
+
+# load configuration overrides
+if [ -f $CONF ]; then . $CONF; fi
+
+# load standard init functions
+. /lib/lsb/init-functions
+
+usage(){ echo "Usage: $0 {start|stop|restart}" >&2; exit 1; }
+
+if [ "$#" -ne 1 ]; then usage; fi
+
+case "$1" in
+    start)
+        log_daemon_msg "Starting $DESC: $NAME "
+
+        mkdir -p "$MOUNTPOINT"
+        mythtvfs -o "$OPTIONS" $EXTRA_ARGS "$SOURCEDIR" "$MOUNTPOINT"
+
+        log_end_msg $?
+        ;;
+    stop)
+        log_daemon_msg "Stopping $DESC: $NAME "
+
+        fusermount -u $MOUNTPOINT
+
+        log_end_msg $?
+        ;;
+    restart|force-reload)
+        $0 stop || true
+        $0 start
+        ;;
+    status)
+        pidof mythtvfs >/dev/null && status=$? || status=$?
+        if [ "$status" = 0 ]; then
+            log_success_msg "$NAME is running"
+        else
+            log_failure_msg "$NAME is not running"
+        fi
+        exit $status
+        ;;
+    *)
+        usage;
+        ;;
+esac
